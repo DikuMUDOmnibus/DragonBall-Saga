@@ -1,0 +1,8160 @@
+#AREA   Nativlon Island~
+
+
+
+#VERSION 252
+#AUTHOR Raditz~
+
+#RANGES
+0 0 0 0
+$
+
+#PLANET 0
+
+#FLAGS
+0 30
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#20000
+Man~
+A coin seller~
+A man is here, selling coins
+~
+~
+67108865 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+100 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20001
+Blar~
+A Cabbit~
+A huge rat is scurrying around looking for some food.
+~
+~
+-2147482623 0 -1000 C
+1 0 300 1d20+0 2d5+0
+-1 12000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 20001
+~
+> death_prog 100~
+mpmload 20001
+~
+|
+#20002
+fighter~
+a newly created fighter~
+Some god abandoned a newly created fighter here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 10
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20004
+Nativlon~
+lady~
+A beautiful woman with the tail of a fish swims here, hunting for treasure.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20008
+female grey dragon~
+A grey dragon~
+A Tremendously huge grey female dragon is here, smiling.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 30000000000
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+0 0 0 0 1 1 7
+0 0 0 0 0 0 0 0
+> death_prog 10~
+mpoload 20010
+~
+|
+#20010
+Godliemn~
+Warrior~
+A gigantic warrior with the body of a horse guards the coral castle.
+~
+A warrior of unusual height with the body of a horse guards the coral
+castle. His glisten eyes detect every slight movement.  His muscular arms
+equip with an enormous sword and a shield of divine protection.  A single
+honorary gold plate hangs from his neck, dangles on his bare, well-shaped
+chest.  The plate reads, "To the most courageous warrior, Godliemn, I grant
+thee the power of immortality.  Kdorthea"
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20011
+Mermaid~
+A Mermaid~
+A Beautiful Mermaid-Nativlonian is swimming by here
+~
+~
+1 262144 0 C
+1 0 100 1d20+0 2d5+0
+-1 70000000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpoload 20268
+~
+|
+#20013
+Crole~
+Crole~
+Crole, the Saiyan Armorer stands here.
+~
+~
+1 0 0 C
+50 0 300 1d20+30000 2d5+0
+-1 1
+112 112 1
+10 10 10 10 0
+0 0 0 0 0
+0 0 0 0 2 1 0
+0 0 0 0 0 0 0 0
+#20022
+brown dragon~
+A brown dragon~
+A Huge Brown Dragon is here, curled up.
+~
+~
+161 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 200000000000
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+0 0 0 0 1 1 7
+0 0 0 0 0 0 0 0
+> death_prog 10~
+mpecho "Take this key to the towers of Nativlon and open Door 1 with it. Go, young soldier..."
+mpoload 20008
+~
+> fight_prog 50~
+mpecho &RA Massive Dragon strike's at you with his claws, ripping out your insides.
+mpdamage $n 10
+~
+|
+#20026
+maiden~
+A Maiden~
+A young maiden is here, holding a single Ceruleanrosa.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+tell $n Oi you!, rumur has it theres a marvelous dragon north, one of the ones that holds a key!!!
+whisper $n dont tell anyone!
+giggle
+~
+|
+#20030
+baby dragon~
+A baby dragon~
+A baby dragon is resting here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 130000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 20~
+mpoload 20030
+~
+> death_prog 20~
+mpoload 20031
+~
+|
+#20051
+Fisherman~
+A Fisherman~
+A fishermen is here, with a rod in his hand
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 50~
+mpoload 20268
+~
+|
+#20052
+Man~
+A small balled man~
+A small little balled man is handing out prizes here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20056
+Old Man~
+Old Man~
+An Old man is here, teaching the children Katas.
+~
+~
+1 2621440 0 C
+1 0 100 1d20+0 2d5+0
+-1 100000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20063
+Guard~
+A Guard~
+A Guard is here, with a stern look on his face
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 10000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20066
+icecream~
+a newly created icecream~
+Some god abandoned a newly created icecream here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20069
+A Bear~
+A Bear~
+A huge grizzly bear is sleeping here.
+~
+~
+1 0 0 C
+1 0 300 1d20+0 2d5+0
+-1 3500000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpforce crintel sac cou
+~
+|
+#20076
+Nativlon~
+a newly created Nativlon~
+A seductive Nativlon is here, singing a hauntingly beautiful melody.
+~
+~
+1 512 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 2
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20077
+Guard~
+A Guard~
+A Guard is here, guarding the prison cells with his life
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20079
+Guard~
+A Guard~
+A guard stands here, guarding the door.
+~
+~
+67108865 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+100 10 10 10 10
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hey man, Give me 300 thousand zeni and you can spam a mob, only if your an android
+~
+> act_prog p gives you A Virtual Training Coin.~
+if race($n) == android
+say Sure, Go right ahead
+mppurge coin
+smile
+unlock n door
+open n door
+mpforce $n n
+close n door
+lock n door
+else
+say Sorry, You are'nt an Android and thus you cannot enter.
+v
+say Here, I'm feeling nice, have yer' coin back
+give coin $n
+~
+|
+#20080
+man~
+a newly created man~
+Some god abandoned a newly created man here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20081
+coin~
+A Virtual Training Coin~
+A useless coin is here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20082
+Demon~
+A Demon Statue~
+A Grinning Demon Statue is standing here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20083
+Guard~
+a newly created Guard~
+A Guard is sleeping here
+~
+~
+1 131072 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20084
+Computer~
+A Computer~
+A computer is here
+~
+~
+1 2 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+close d door
+lock d door
+~
+|
+#20085
+man~
+A Man~
+A short, bald man is here, standing on a chair
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if race($n) == android
+say Ahh! Hello $n, Ready for your virtual training?
+say Simply say 'connect to computer' when you want to connect!
+else
+unlock s door
+open s door
+mpforce $n s
+close s door
+lock s door
+~
+|
+#20086
+Child~
+Child~
+A Young Nativlon is standing here, sparring an Old Man
+~
+~
+1 524288 0 C
+1 0 100 1d20+0 2d5+0
+-1 100000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20087
+Nativlonian~
+a newly created Nativlonian~
+Some god abandoned a newly created Nativlonian here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20088
+imp~
+An Imp~
+An Imp is here, cackling insanely.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog hell~
+mpecho &WHell
+mpecho &gAs if picked up by the scruff of your neck by a mighty hand, you find
+mpecho &gyourself unceremoniously dumped at a strange gateway.  Here is the
+mpecho &gplace which will determine your fate.  Whether you will be sent back
+mpecho &gto life as you once knew it, or proceed onto a far yet bleaker pathway.
+mpecho &gThe time has come for you to plead your case and await judgement for the
+mpecho &gcrimes that have been placed upon your head.  Speak wisely and choose
+mpecho &gyour words carefully, for your testimony will be written in the ledgers
+mpecho &gof the Gods, and will determine the path you will ultimately travel.
+mpecho &WExits none.
+mpecho &BA mystical spring flows majestically from a glowing circle of blue.
+mpecho &rA fountain of fresh blood flows in the corner.
+mpecho &OThe Punishment Comment Board is here.
+~
+> greet_prog 100~
+mpecho &WHell
+mpecho &gAs if picked up by the scruff of your neck by a mighty hand, you find
+mpecho &gyourself unceremoniously dumped at a strange gateway.  Here is the
+mpecho &gplace which will determine your fate.  Whether you will be sent back
+mpecho &gto life as you once knew it, or proceed onto a far yet bleaker pathway.
+mpecho &gThe time has come for you to plead your case and await judgement for the
+mpecho &gcrimes that have been placed upon your head.  Speak wisely and choose
+mpecho &gyour words carefully, for your testimony will be written in the ledgers
+mpecho &gof the Gods, and will determine the path you will ultimately travel.
+mpecho &WExits none.
+mpecho &BA mystical spring flows majestically from a glowing circle of blue.
+mpecho &rA fountain of fresh blood flows in the corner.
+mpecho &OThe Punishment Comment Board is here.
+~
+> greet_prog 100~
+say Welcome to Hell, Mortal scum
+cackle
+~
+|
+#20092
+Prisoner~
+A Prisoner~
+A skinny fragile human body shivers here
+~
+~
+33 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20097
+Piccolo~
+Piccolo~
+Piccolo, is giggling here
+~
+~
+67108865 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20100
+Imp~
+An Imp~
+A Red Imp is here, grinning.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog ~
+~
+> greet_prog 100~
+mpforce $n give key imp
+mpforce $n give key imp
+mpforce $n give key imp
+mpforce $n give key imp
+mpforce $n give key imp
+~
+> speech_prog mountain~
+say Bah! howd u guese that
+give key $n
+give key $n
+give key $n
+give key $n
+give key $n
+~
+> greet_prog 100~
+tell $n Muwahha i got your keys mortal, to get them back answer me this.
+tell $n What has roots that nobody sees, and is taller than trees.
+tell $n Up, up it goes, and yet it never grows.
+tell $n What is it?
+~
+> greet_prog 100~
+mpforce $n give key imp
+mpforce $n give key imp
+~
+|
+#20101
+Imp~
+An Imp~
+A Red Imp is here, grinning
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpforce $n give key imp
+mpforce $n give key imp
+mpforce $n give key imp
+mpforce $n give key imp
+mpforce $n give key imp
+tell $n Muwahhaha got your keys mortal, answer this riddle to get them back.
+tell $n This thing runs but cannot walk, sometimes sings but never talks.
+tell $n Lacks arms, has hands
+ lacks a head but has a face.
+tell $n What is it?
+~
+> speech_prog clock~
+say Bah, you guesed mine to! impossible
+sigh
+give key $n
+give key $n
+give key $n
+give key $n
+give key $n
+~
+|
+#20105
+Dailthoneon~
+Dailthoneon~
+Dailthoneon, west island general, stands here
+~
+~
+1 105390720 0 C
+1 0 100 1d20+0 2d5+10
+-1 1000000000000
+112 112 1
+100 100 100 100 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20108
+Man~
+An Old Man~
+A Short old man wonders the streets.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+tell $n Hello stranger! Have you slain all the dragons to collect all the keys to Nativlons lair! well rumur has it if you follow the path west all the way, you will find him!
+~
+|
+#20110
+Goku~
+A Saiyan~
+A male Saiyan with long &YYellow &chair hovers here, never second glancing.
+~
+~
+65537 524288&448 1000 C
+1 0 100 1d20+0 2d5+0
+-1 1000000000
+112 112 0
+100 100 100 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 1~
+mpechoat $n &RYou rip a Z-Fighters badge off the corpse of A Saiyan and smile with triumph.
+mpoload 20110
+else
+mpechoat &RA Saiyan looks at you with a smile and sais &C'You gave me the oppotunity to die in battle, Thank you, friend"
+~
+> death_prog 1~
+~
+> fight_prog 70~
+mpechoat $n &RGoku quickly zanzokens behind you.
+mpechoat $n &RGoku rears back his knee and swiftly strikes you in the back.
+mpdamage $n 5
+~
+|
+#20111
+Ring~
+a newly created Ring~
+Some god abandoned a newly created Ring here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20116
+Shop~
+A Shopkeeper~
+A Shopkeeper is standing here
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+100 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say $n, how can i help you?
+~
+|
+#20117
+Gladiator~
+a newly created Gladiator~
+A one armed gladiator is here, whimpering.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20120
+Morias~
+morias~
+Morias, Loyal knight and son of Nativlon stands here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20122
+Guard~
+A Guard~
+A Vigillant guard is here, protecting the lair.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+tell $n Ahh young traveler!! Nativlons lair be up through this cave, but be sure to have all the keys to get through the door!
+~
+|
+#20129
+Nativlon~
+Lord Nativlon~
+The Spirit of the Lord Nativlon Hovers here.
+~
+~
+67108867 524288&32 0 C
+1 0 100 100d100+100 100d5+100
+-1 1
+112 112 0
+100 100 100 10 100
+0 0 0 0 0
+0 0 0 0 1 1 6
+85 65 0 0 0 0 0 0
+> greet_prog 100~
+if rand (5)
+mpoload 20155
+close w door
+lock w door
+say Ahh, $n, have this as a reward for finding me.
+mpecho Lord Nativlon digs deep in his small pouch and produces a pair of Sparkling Gauntlets.
+give gauntlets $n
+mpsleep 1
+say Come back soon.
+mpsleep 1
+sm
+mpsleep 1
+say It gets boring up here.
+chuck
+mptransfer $n 20000
+mpat 20000 mpforce $n look
+else
+close w door
+lock w door
+mpsleep 1
+say $n, what are you doing here?  I do not have time for this!
+mptransfer $n 20000
+mpat 20000 mpforce $n look
+~
+> greet_prog 100~
+if rand (5)
+mpoload 20155
+mpforce $n give key nativlon
+mpforce $n give key nativlon
+mpforce $n give key nativlon
+mpforce $n give key nativlon
+mpforce $n give key nativlon
+mppurge key
+mppurge key
+mppurge key
+mppurge key
+mppurge key
+mpoload 20160
+close w door
+lock w door
+say Ahh, $n, have this as a reward for finding me.
+mpecho Lord Nativlon digs deep in his small pouch and produces a pair of Sparkling Gauntlets.
+give gauntlets $n
+mpsleep 1
+say Come back soon.
+mpsleep 1
+smile
+mpsleep 1
+say It gets boring up here.
+chuck
+mptransfer $n 20000
+mpat 20000 mpforce $n look
+else
+close w door
+lock w door
+mpforce $n give key nativlon
+mpforce $n give key nativlon
+mpforce $n give key nativlon
+mpforce $n give key nativlon
+mpforce $n give key nativlon
+mppurge key
+mppurge key
+mppurge key
+mppurge key
+mppurge key
+mpoload 20160
+mpsleep 1
+say $n, what are you doing here?  I do not have time for this!
+mptransfer $n 20000
+mpat 20000 mpforce $n look
+endif
+~
+|
+#20133
+Citizen~
+A Citizen~
+Bearing a small lantern, a citizen walks the city.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 1~
+mpoload 20080
+~
+|
+#20139
+dummy~
+a newly created dummy~
+A practicing dummy is standing still here.
+~
+~
+1 0 0 C
+1 0 1 1d20+0 2d5+0
+-1 10000000000000
+112 112 0
+1 10 1 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20147
+Monkey~
+A Stupid monkey dubbed 'Revtoid'~
+A Stupid monkey dubbed 'Revtoid'
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog ~
+~
+> greet_prog 100~
+shout IM A STUPID MONKEY:D:D:D:D:D:D:D
+~
+> greet_prog 100~
+yell IM A MONKEY
+~
+|
+#20148
+blue dragon~
+A blue dragon~
+A Massive Blue Dragon is here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 200000000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 10~
+mpoload 20013
+~
+> greet_prog 100~
+yell RRRRROOOOOOAAAAAAAAAARRRRRHHHHH!!!!
+mpecho $I blows a mass of blue flames at you.
+mppldamage $n 10 10
+~
+|
+#20156
+black dragon~
+A black dragon~
+A Massive Black Dragon is perched here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+0 0 0 0 1 1 7
+0 0 0 0 0 0 0 0
+> death_prog 10~
+mpecho "Take this key to the towers of Nativlon and open up the second door.  You're our only chance..."
+mpoload 20009
+~
+|
+#20157
+red dragon~
+A Red Dragon~
+A Huge Red Dragon is here, wrapped up in millions of chains.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 200000000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 10~
+mpoload 20011
+~
+> greet_prog 100~
+yell RRRROOOOOAAAAAAAAAAAAAAAAARRRRRRRRR!!!!!!!!!!!
+say LET ME OUT OF HERE!!!
+emote blows a mass of flames at you.
+mppldamage $n 10 10
+~
+|
+#20161
+smallchild~
+A small child~
+A child is shimmering in and out of the shadows here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20165
+chef~
+The chef~
+A tubby man with a white cap stands over a hot plate here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20169
+Key~
+A large Marble key~
+A large Marble key
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20170
+Coin~
+a newly created Coin~
+Some god abandoned a newly created Coin here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20172
+time~
+A Time Chamber coin~
+A Time Chamber coin
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20173
+Dean~
+The Dean~
+The Castles dean is here, drawing plans on the blackboard.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hiya, You'll need a ruler this year, Here have this one
+mpoload 20163
+give ruler $n
+~
+|
+#20174
+teacher~
+A teacher~
+A fustrated teacher attempts to control her students.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 5000000
+112 112 2
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20177
+Hologram~
+a newly created Hologram~
+Some god abandoned a newly created Hologram here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20179
+student~
+A student~
+A pesky kid with a cheeky grin on his face is running past here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20183
+Man~
+The Candy man~
+The Candy man is here, running around frantically, serving customers.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20186
+monkey~
+A Playful Monkey~
+A Playful Monkey
+~
+~
+1 2 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog now~
+unlock u door
+open u door
+~
+|
+#20190
+belt~
+a newly created belt~
+Some god abandoned a newly created belt here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20193
+Hotdog~
+a newly created Hotdog~
+Some god abandoned a newly created Hotdog here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20195
+Tanya~
+Tanya~
+Tanya is leaning on the counter here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+100 10 10 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpecho &CTanya says 'Hey sexy, What can i do for you?
+mpecho &cTanya winks suggestively at you.
+~
+|
+#20196
+Julia~
+Julia~
+Julia, the Kinky shop owner.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+100 10 10 10 0
+0 0 0 0 0
+2 2 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20197
+Adam~
+Adam~
+Adam the optometrist is here behind the counter.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+100 10 10 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20199
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20200
+Fighter~
+A Virtual fighter~
+A Virtual fighter Model 1 is here, awaiting your command
+~
+~
+1 128 0 C
+1 0 100 1d20+0 2d5+0
+-1 40000000
+112 112 0
+100 10 100 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpechoat $n &WThe swirling mist appears again and wraps around you, transfering you back to reality.
+mptransfer $n 20080
+mpat 20080 mpforce $n look
+~
+|
+#20201
+fighter~
+A Virtual fighter~
+A Virtual fighter Model 2 is here, awaiting your command.
+~
+~
+1 128 0 C
+1 0 100 1d20+0 2d5+0
+-1 100000000
+112 112 0
+100 10 100 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpechoat $n &WThe swirling mist appears again and wraps around you, transfering you back to reality.
+mptransfer $n 20080
+mpat 20080 mpforce $n look
+~
+|
+#20202
+fighter~
+A Virtual fighter~
+A Virtual fighter Model 3 is here, awaiting your command.
+~
+~
+1 128 0 C
+1 0 100 1d20+0 2d5+0
+-1 300000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpechoat $n &WThe swirling mist appears again and wraps around you, transfering you back to reality.
+mptransfer $n 20080
+mpat 20080 mpforce $n look
+~
+|
+#20203
+fighter~
+A Virtual fighter~
+A Virtual fighter Model 4 is here, awaiting your command
+~
+~
+1 128 0 C
+1 0 100 1d20+0 2d5+0
+-1 300000000
+112 112 0
+100 10 100 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpechoat $n &WThe swirling mist appears again and wraps around you, transfering you back to reality.
+mptransfer $n 20080
+mpat 20080 mpforce $n look
+~
+|
+#20204
+fighter~
+A Virtual fighter~
+A Virtual fighter Model 4 is here, awaiting your command.
+~
+~
+1 128 0 C
+1 0 100 1d20+0 2d5+0
+-1 800000000
+112 112 0
+100 10 100 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpechoat $n &WThe swirling mist appears again and wraps around you, transfering you back to reality.
+mptransfer $n 20080
+mpat 20080 mpforce $n look
+~
+|
+#20205
+fighter~
+A Virtual fighter~
+A Virtual fighter Model 5 is here, awaiting your command.
+~
+~
+1 128 0 C
+1 0 100 1d20+0 2d5+0
+-1 25000000000
+112 112 0
+100 10 100 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpechoat $n &WThe swirling mist appears again and wraps around you, transfering you back to reality.
+mptransfer $n 20080
+mpat 20080 mpforce $n look
+~
+|
+#20206
+fighter~
+A Virtual fighter~
+A Virtual fighter Model 6 is here, awaiting your command.
+~
+~
+1 128 0 C
+1 0 100 1d20+0 2d5+0
+-1 75000000000
+112 112 0
+100 10 100 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpechoat $n &WThe swirling mist appears again and wraps around you, transfering you back to reality.
+mptransfer $n 20080
+mpat 20080 mpforce $n look
+~
+|
+#20207
+fighter~
+A Virtual fighter~
+A Virtual fighter Model 7 is here, awaiting your command.
+~
+~
+1 128 0 C
+1 0 100 1d20+0 2d5+0
+-1 100000000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpechoat $n &WThe swirling mist appears again and wraps around you, transfering you back to reality.
+mptransfer $n 20080
+mpat 20080 mpforce $n look
+~
+|
+#20208
+fighter~
+A Virtual fighter~
+A Virtual fighter Model 8 is here, awaiting your command.
+~
+~
+1 128 0 C
+1 0 100 1d20+0 2d5+0
+-1 300000000000
+112 112 0
+100 10 100 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpechoat $n &WThe swirling mist appears again and wraps around you, transfering you back to reality.
+mptransfer $n 20080
+mpat 20080 mpforce $n look
+~
+|
+#20209
+fighter~
+A Virtual fighter~
+A Virtual fighter Model 9 is here, awaiting your command.
+~
+~
+1 128 0 C
+1 0 100 1d20+0 2d5+0
+-1 600000000000
+112 112 0
+100 10 100 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpechoat $n &WThe swirling mist appears again and wraps around you, transfering you back to reality.
+mptransfer $n 20080
+mpat 20080 mpforce $n look
+~
+|
+#20210
+fighter~
+A Virtual fighter~
+A Virtual fighter Model 10 is here, awaiting your command.
+~
+~
+1 128 0 C
+1 0 100 1d20+0 2d5+0
+-1 900000000000
+112 112 0
+100 10 100 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpechoat $n &WThe swirling mist appears again and wraps around you, transfering you back to reality.
+mptransfer $n 20080
+mpat 20080 mpforce $n look
+~
+|
+#20211
+fighter~
+A Virtual fighter~
+A Virtual fighter Model 11 is here, awaiting your command.
+~
+~
+1 128 0 C
+1 0 100 1d20+0 2d5+0
+-1 5000000000000
+112 112 0
+100 10 100 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpechoat $n &WThe swirling mist appears again and wraps around you, transfering you back to reality.
+mptransfer $n 20080
+mpat 20080 mpforce $n look
+~
+|
+#20235
+monkey~
+a newly created monkey~
+Some god abandoned a newly created monkey here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 500
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 30~
+mpecho &GA Monkey cups his hands and holds them to his side.
+mpsleep time
+mpsleep time
+mpsleep time
+mpsleep time
+mpecho &GA Monkey starts chanting and a blue ball appears in his hand 'KAMMMMMMEEEEE'
+mpsleep time
+mpsleep time
+mpsleep time
+mpsleep time
+mpecho &GA Monkey continues to chant 'HAMMMEEEEE'
+mpechoat $n &GWith all his might and energy, A Monkey points his cupped hands at you and fires a blue beam, screaming 'HAAAAAA'
+mpechoaround $n &GA Saiyan points his cupped hands towards $n, and screams 'HAAAAAAA'
+mpdamage $n 25
+~
+|
+#20239
+Icerian~
+An Icerian guide~
+An Icerian guide is here, helping the travelers.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20240
+predator~
+A predator~
+A predator appears and reappears within the shadows.
+~
+~
+65 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20241
+huntsmen~
+A Huntsmen~
+A Huntsmen is here, guiding travelers.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20245
+Icerian~
+An Icerian Warrior~
+An Icerian warrior is here, clad in battle armor.
+~
+~
+65 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 5000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20249
+nativlon soldier~
+A Nativlon Soldier~
+A Nativlon Soldier stands here, clad in battle-armor.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000000000
+112 112 0
+100 10 10 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20250
+Tiger~
+A vicious tiger~
+A large vicious tiger stands in a defensive position, planning his attack.
+~
+~
+65 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 5000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20251
+panther~
+A black panther~
+A black panther stands in the brushes, contemplating its next move.
+~
+~
+65 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 4000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20253
+monkey~
+A monkey~
+A small spider monkey is hanging from the tree's here, mocking you.
+~
+~
+65 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20254
+gecko~
+A small gecko~
+A small multi-coloured gecko is hiding here.
+~
+~
+65 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 2000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 10~
+mpoload 20202
+~
+|
+#20255
+huntsmen~
+A huntsmen~
+A huntsmen is here, with a bow and arrow slung over his back.
+~
+~
+65 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 10000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 10~
+mpoload 20235
+~
+|
+#20260
+majin adder snake~
+The Majin Adder~
+The Great Majin Adder slithers around, contemplating your destruction.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 2000000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+mpechoat $n &GThe Majin Adder Hiss's at you, Warning you.
+mpechoat $n &RMajin Adder swing's his gigantic tail your way, Striking home.
+mppldamage $n 10 10
+~
+> greet_prog 100~
+mpechoat $n &RThe Majin Adder stabs his tail through your shoulder.
+mppldamage $n 10
+cackle
+~
+> death_prog 5~
+mpechoat $n &GYou rip the head off Majin Adder and thrust it upon a stake, claiming his head.
+mpoload 20260
+~
+> death_prog 5~
+mpoload 20159
+~
+|
+#20261
+demon~
+A grinning demon~
+A grinning demon cackles at you.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpforce $n give rock demon
+say Oh, I'm sorry, Did you need this?
+mppurge rock
+cackle $n
+~
+|
+#20265
+rabbi~
+The Rabbi~
+A large fat rabbi stands here, reciting a massive book.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog "I wish to be jewish, Father rabbi"~
+mpsleep 3
+mpecho The rabbi looks up from his book and peers at you, he then closes it and addr
+ess you.
+mpsleep 3
+hrm
+mpsleep 3
+say Lets see here now, hmmmm....$n hey....You look like a young jewish boy to me.
+mpsleep 3
+say Welcome aboard
+mpsleep 2
+smile
+mpoload 20269
+give 20269 $n
+~
+> speech_prog "I wish to be jewish"~
+mpsleep 3
+mpecho The rabbi looks up from his book and peers at you, he then closes it and addr
+ess you.
+mpsleep 3
+hrm
+mpsleep 3
+say Lets see here now, hmmmm....$n hey....You look like a young jewish boy to me.
+mpsleep 3
+say Welcome aboard
+mpsleep 2
+smile
+mpoload 20269
+give cap $n
+~
+|
+#20266
+bald man~
+A short bald man~
+A short bald man stands here, awaiting your purchase
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpechoat $n &cA short bald man glances at you and smiles.
+say Welcome to my humble shop, $n, Feel free to look around
+~
+|
+#20269
+Bio-Android~
+A Bio-Android~
+A slimey wet moldy Bio-Android stands here, cackling.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000000000
+112 112 0
+10 500 10 10 0
+0 0 0 0 0
+6 6 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 9~
+mpoload 20112
+~
+> death_prog 100~
+mpecho &rIt thrashes around as its blood and guts explode all over the walls and yourself.
+~
+> rand_prog 30~
+mpecho &CA Bio-Android mutters to itself about the living conditions it has.
+~
+> fight_prog 50~
+'ki burst'
+~
+> fight_prog 60~
+charge 'ki burst'
+~
+> fight_prog 90~
+upper
+~
+> fight_prog 50~
+kame
+~
+> fight_prog 50~
+death
+~
+> fight_prog 50~
+dual
+~
+|
+#20278
+Raditz~
+Raditz, the unloved~
+Raditz, Melora i really need to talk to you =(
+~
+~
+67108865 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20279
+priest~
+A Jewish Priest~
+A Jewish Bar-Mitzvah Priest stands here, chanting unusual things.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#20299
+man~
+A VR team member~
+A VR team member is here, reading a magazine.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#20000
+Cart~
+A large Cart~
+A large Cart is here, riddled with coins~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#20001
+Adams Super Duper Battle Sword!~
+Adams Super Duper Battle Sword!~
+Some god dropped a newly created Adams Super Duper Battle Sword! here.~
+~
+13 0 8193
+0 0 0 0 0 0
+1 0 0
+ 0
+#20002
+A Large Bong~
+A Large Bong sits here, ready to be smoked~
+Some god dropped a newly created A Large Bong here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#20003
+helmet Golden Helm~
+a newly created helmet Golden Helm~
+Some god dropped a newly created helmet Golden Helm here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#20004
+gun blaster energy~
+A wrist-mounted energy blaster~
+What looks like a futuristic gun, strapped to a wristband, rests on the ground~
+~
+3 8194 16385
+75 10 10 -1 0 0
+1 10000 1000
+ 0
+'magic missile'
+#20008
+Key~
+A Brown Key [Key1]~
+A Brown Key [Key1]~
+~
+13 8192 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#20009
+Key~
+A Black Key [Key2]~
+Some god dropped a newly created Key here.~
+~
+13 8192 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#20010
+Key~
+A Grey Key [Key3]~
+A Key is here.~
+~
+13 8192 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#20011
+Key~
+A Red Key [Key4]~
+Some god dropped a newly created Key here.~
+~
+13 8192 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#20013
+key~
+A Blue Key [Key5]~
+A Blue key is here.~
+~
+13 8192 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#20029
+Dragon talon~
+A white dragon talon~
+A large dragon talon is here.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#20030
+black dagon horns~
+A black pair of dragon horns~
+A pair of dragon horns are embedded in the ground here.~
+~
+9 516096 17
+0 0 0 0 50 50
+1 17500 1750
+ 0
+A
+1 5
+#20031
+brown scaly skin~
+A brown, scaly skin~
+A layer of brown snakeskin is stretched out here~
+~
+9 1040384 1025 6
+0 0 0 0 500 500
+1 50000 5000
+ 0
+#20038
+Vines~
+A Mass of vines~
+A Mass of green moldy vines is tangled about the rocks here.~
+~
+15 0 0
+10 0 0 0 0 0
+1 200 20
+ 0
+#20052
+Man~
+A small balled man~
+A small little balled man is handing out prizes here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#20056
+Adams Super Duper Metal Wristband!~
+Adams Super Duper Metal Wristband!~
+Some god dropped a newly created Adams Super Duper Metal Wristband! here.~
+~
+13 0 4097
+0 0 0 0 0 0
+1 0 0
+ 0
+#20057
+Long Blade~
+&zA &rD&ze&rm&zo&rn&zs blade~
+&A &rD&ze&rm&zo&rn&zs blade~
+~
+13 0 8193
+0 0 0 0 0 0
+1 0 0
+ 0
+> sac_prog 100~
+mptransfer $n 5071
+~
+|
+#20066
+icecream~
+a newly created icecream~
+Some god dropped a newly created icecream here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#20069
+A Demons Blade~
+A Demons Blade~
+A Demons Blade~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#20079
+key~
+a newly created key~
+Some god dropped a newly created key here.~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#20080
+coin~
+A Virtual Training Coin~
+A useless coin is here.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#20088
+dildo~
+A Long, smooth dildo~
+A Long, smooth dildo~
+~
+19 0 16385
+0 0 0 0 0 0
+1 27747500 2774750
+ 0
+A
+1 2147483647
+A
+1 1000
+A
+2 10000
+A
+4 100
+#20097
+corpse~
+a newly created corpse~
+A dried human corpse is resting on the floor.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#20110
+Z fighters badge~
+An Offical &YZ&R-&YF&Ri&Yg&Rh&Yt&Re&Yr&Rs Badge.~
+A Shiny little badge sparkles in the dirt.~
+~
+13 0 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+> wear_prog 100~
+mpechoaround $n &R$n holds the badge, and proclaims $mself to be a member of the Z-Fighters
+mpechoat $n &RYou hold the badge in your hand and proclaim yourself a Z-Fighter!
+~
+|
+#20111
+sword~
+A Magnificent Blade of Pure &WWhite Light.~
+Some god dropped a newly created sword here.~
+~
+13 0 8192
+0 0 0 0 0 0
+1 0 0
+ 0
+#20112
+Ring~
+&zCharred Ring &Rof Twisted &YHalfbreed &gTendon~
+&GA Charred Ring of Twisted Halfbreed Tendon~
+~
+9 1032192 3
+0 0 0 0 0 0
+1 12500 1250
+ 1000000000
+A
+2 5
+> wear_prog 100~
+mpmload 20154
+~
+|
+#20113
+Adams Super Duper hat!~
+Adams Super Duper Hat!~
+Some god dropped a newly created Adams Super Duper hat! here.~
+~
+13 0 17
+1 1000 2000 2000 2000 2000
+1 0 0
+ 5
+#20114
+cap~
+a newly created cap~
+Some god dropped a newly created cap here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#20140
+cou~
+A COU Coin~
+A COU Coin.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 6900
+ 0
+> sac_prog 100~
+mpechoat $n &GA swirling mist slowly spirals up from around your feet. In a matter of seconds,    you're completely surrounded by it, unable to to see or do anything. When it finally clears, you're standing in the very center of the Universe.
+mptransfer $n 200
+mpat 200 mpforce $n look
+~
+|
+#20141
+Cave~
+A Bears Cave Coin~
+A Bears Cave Coin~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+> sac_prog 100~
+mptransfer rakoz 9007
+~
+|
+#20142
+beer~
+&B A Beer mug~
+A frosty beer has been left here.~
+~
+25 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#20143
+key~
+A Black key~
+Some god dropped a newly created key here.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#20150
+Coat~
+A Magician's Coat~
+A Magicians Coat.~
+~
+13 0 9
+0 0 0 0 0 0
+1 525000 3000000
+ 0
+A
+3 10
+A
+16 500
+#20155
+gauntlets sparkling diamond~
+&zThe &CD&ci&Ca&cm&Co&cn&Cd &zGauntlets~
+&zThe &CD&ci&Ca&cm&Co&cn&Cd &zGaunlets~
+~
+9 262144 129
+0 0 0 0 750 750
+1 112500 11250
+ 500000000
+A
+4 15
+> wear_prog 100~
+mpechoat $n &RFire explodes from your wrists as images from thousands of battles seer your vision.&D
+mpechoaround $n &RFire explodes from $n's wrists, $s eyes flickering as if watching something you cannot see.&D
+~
+|
+#20159
+bracer~
+A large metalic bracer~
+A large metalic purple bracer~
+~
+9 8519680 257
+0 0 0 0 0 0
+1 12500 66000
+ 0
+A
+4 5
+> wear_prog 100~
+mpecho The Bracer seems to come alive for a moment and clamps onto your arm.
+~
+|
+#20160
+key~
+A Marble key~
+A Marble key~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#20162
+Chest~
+A large chest~
+A large brown chest is in the corner~
+~
+15 0 0
+10 0 0 0 0 0
+1 200 20
+ 0
+#20163
+Ruler~
+A Large Vicious Ruler~
+A large peice of wood lies here.~
+~
+13 0 16385
+0 0 0 0 0 0
+1 0 0
+ 100000
+#20169
+Coin~
+A CoU Coin~
+A CoU Coin~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+> sac_prog 100~
+mptransfer $n 600
+~
+|
+#20170
+Coin~
+cou~
+Some god dropped a newly created Coin here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#20171
+Earth~
+A Earth Coin~
+A Earth Coin~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 6900
+ 0
+> sac_prog 100~
+mpechoat $n &GA swirling mist slowly spirals up from around your feet. In a matter of seconds,    your're completely surrounded by it, unable to see or do anything. When it finally clears, your standing in Friendship Square, Earth.
+mptransfer $n 9001
+mpat 9001 mpforce $n look
+~
+|
+#20172
+Namek~
+A Namek Coin~
+A Namek Coin~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 6900
+ 0
+> sac_prog 100~
+mpechoat $n &GA swirling mist slowly spirals up from around your feet. In a matter of seconds,    you're completely surrounded by it, unable to to see or do anything. When it finally clears, you're standing in Village Square, Namek.
+mptransfer $n 5003
+mpat 5003 mpforce $n look
+~
+|
+#20173
+time~
+A Time Chamber Coin~
+A Time Chamber Coin~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 6900
+ 0
+> sac_prog 100~
+mpechoat $n &GA swirling mist slowly spirals up from around your feet. In a matter of seconds,    you're completely surrounded by it, unable to to see or do anything. When it finally clears, you're standing in the entrance to the Time Chamber, Earth.
+mptransfer $n 2059
+mpat 2059 mpforce $n look
+~
+|
+#20174
+Roshi~
+A Master Roshi's House Coin~
+A Master Roshi's House Coin~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 6900
+ 0
+> sac_prog 100~
+mpechoat $n &GA swirling mist slowly spirals up from around your feet. In a matter of seconds,    you're completely surrounded by it, unable to to see or do anything. When it finally clears, you're standing in Master Roshi's House, Earth.
+mptransfer $n 2131
+mpat 2131 mpforce $n look
+~
+|
+#20180
+Candycane~
+A Large Candycane~
+A large circular pole is here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 100
+ 0
+#20181
+Hotdog~
+A large delicious hotdog~
+A Large hotdog is laying about.~
+~
+19 0 1
+0 0 0 0 0 0
+1 0 100
+ 0
+#20182
+pie~
+A delicious pie~
+A Large pie is laying about here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 100
+ 0
+#20183
+Man~
+a newly created Man~
+Some god dropped a newly created Man here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#20186
+Plague~
+a newly created Plague~
+Some god dropped a newly created Plague here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#20190
+belt~
+A black spikey belt~
+A belt is lieing here.~
+~
+13 0 2048
+0 0 0 0 0 0
+1 5000 200
+ 0
+A
+1 2
+#20191
+Collar~
+A kinky bondage dog collar~
+A dogs collar is here in the dirt.~
+~
+13 0 5
+0 0 0 0 0 0
+1 600000 200
+ 0
+A
+16 600
+#20192
+pajama~
+A silky pajama shirt~
+A silk pajama set lays about.~
+~
+13 0 1024
+0 0 0 0 0 0
+1 0 200
+ 0
+#20193
+jacket~
+A sexy leather jacket~
+A Leather jacket is laying about.~
+~
+13 0 8
+0 0 0 0 0 0
+1 400000 4000
+ 0
+A
+16 400
+#20194
+Blade~
+The Magnificent Blade of Odin~
+A Magnificent peice of work hovers here.~
+~
+5 0 16385
+0 0 0 0 0 0
+1 12500 1250
+ 0
+A
+1 5
+> get_prog 100~
+~
+> get_prog 100~
+~
+|
+#20195
+Lingerie~
+Sexy lacy lingerie~
+A Sexy bit of material is lieing here.~
+~
+13 0 9
+0 0 0 0 0 0
+1 0 1000
+ 0
+#20196
+Teddy~
+A silk teddy~
+A cute little teddy is here.~
+~
+13 0 16384
+0 0 0 0 0 0
+1 0 200
+ 0
+#20199
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#20200
+gi~
+A Long Black Gi~
+Some god dropped a newly created gi here.~
+~
+13 0 9
+0 0 0 0 0 0
+1 0 0
+ 0
+> wear_prog 100~
+mpechoat $n &rFury in its purest form surges into your body, threatening to tear you apart.  As quickly as it had come, it is now gone, leaving only a resonant power flowing through your being.
+~
+|
+#20202
+rock~
+A small key-shaped rock~
+A small key-shaped rock lays in the dirt.~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#20209
+key~
+A large key~
+A large key~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#20235
+bark~
+A brown peice of bark~
+A peice of brown bark lays about.~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#20260
+head stake~
+The head of Majin Adder impaled on a stake~
+A rottered head lays impaled on a stake here.~
+~
+13 0 16385
+0 0 0 0 200 200
+1 7500 750
+ 0
+A
+1 6
+A
+4 7
+A
+2 -10
+> wear_prog 100~
+mpechoaround $n &RThe smell of rot and decay emits the room as $n holds the stake.
+mpechoat $n &RThe smell of rot and decay emits the room as you hold the stake.
+~
+|
+#20268
+Blade~
+A long blade-like key~
+A large silver smartly crafted metal lies about.~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#20269
+cap~
+&RAn official Jewish Bar-Mitzvah Cap~
+A dusty old cap is here amongst the dirt.~
+~
+13 0 16401
+0 0 0 0 0 0
+1 7500 750
+ 34
+A
+3 3
+#0
+
+
+#ROOMS
+#20000
+A Landing Pad~
+As you get off the ship you sense terror in the air. Sand covers the
+ground completely, it seems so soft it could engulve you within an instant.
+The smell of herbs and weeds is overwhelming. Rocks surround you, big
+enough to block out the sun, and large lucious green bushes act as a wall
+around the Landing Pad. The path to the north east of here heads into the
+golden gates of the city of Daithoneon.
+~
+0 2097164 0
+D0
+~
+~
+0 -1 20184
+> rand_prog 5~
+mpecho &BThe soft sound of flowing sands echos through out the island.
+~
+|
+S
+#20001
+Trailing Out Into the Ocean~
+Rhythmic waves caress the shore of the island. The smooth sea surface reflects
+light from the sky, showing small eddies captured by deep puddles in the nearby
+rocks. Thrown by tidal waves and ocean currents, several bottles are trapped in
+this pools, many containing soggy notes to loved ones. The skeletal remains of
+an ancient pirate lies partially submerged, occasionally capturing oceanic
+debris within its watery grasp.
+~
+0 4 1
+D3
+~
+~
+0 -1 20053
+D5
+~
+~
+0 -1 20002
+S
+#20002
+Diving Under the Water~
+Diving into the blue-green seawater, schools of brilliantly colored fish swim
+lazily among the corals. These carnivorous fish have grown so accustomed to
+human flesh over the years that they have become as sensitive to and attracted
+by the scent of human blood as sharks. They often lurk around shiny objects on
+these ships in order to find food. Occasional sparkles of sunken treasures
+glitter silently in the cold water, yearning to tell their sad tales.
+~
+0 4 0
+D4
+~
+~
+0 -1 20001
+D5
+~
+~
+0 -1 20003
+S
+#20003
+Diving Under the Water~
+Deeper into the sea, the rotting hulks of many sunken ships can be seen lying
+on the seabed. Multicolored seaweed grows on all available surfaces, and sways
+gently in the light current. Osiirans, mermaid-like Nativlons, frequent this area.
+Concealed beneath their unearthly beauty is a bloodthirsty hatred for humanity,
+both vicious and insatiable. By night, they comb the depths in search of sunken
+treasures, leaving mankind to its own devices. However, by day, they take to
+the rocks to lure passing ships to their doom. A short distance away, the
+seabed drops abruptly and opens into a yawning chasm. No light penetrates the
+murky waters of this rift in the sea floor.
+~
+0 4 0
+D4
+~
+~
+0 -1 20002
+D5
+~
+~
+0 -1 20004
+S
+#20004
+In the Depths of the Chasm, Near the Sea Floor~
+The water in the chasm is dark and murky. Small, floating bits of seaweed
+obscure light sources and make it difficult to see more than a few feet in any
+direction. A few feet below lies the sea floor, where seaweed grows in the
+silty seabed and small creatures dart in and out of holes in the surrounding
+rocks. A massive coral reef can be seen to the north. Schools of fish and other
+creatures swarm around the reef, seeming to revel in the very fact that they
+exist. The reef is almost bursting with life, and glows faintly with an eerie
+light, a stark contrast to the gloomy waters of the rest of the chasm.
+~
+0 4 0
+D0
+~
+~
+0 -1 20005
+D4
+~
+~
+0 -1 20003
+S
+#20005
+A Massive, Blood-Red Coral Reef~
+Arriving in front of the immense coral reef, the truth has become disturbingly
+clear. The reef itself appears to be a living being, one that has grown
+sentient and clearly evil from the influx of human blood to the surrounding
+waters. The schools of small fish that appeared to be cavorting in the waters
+near the reef are in actuality fleeing from the reef itself, as strands of
+blood-red seaweed and stalks of deformed coral reach outward, attempting to
+snare unwary prey. The malevolence exuded from the reef permeates the water
+surrounding it, making it difficult to move. A gaping hole has been carved into
+the reef, apparently leading into its bowels. A sickly red glow pulses from
+within the reef, not unlike a heartbeat.
+~
+0 4 0
+D0
+~
+~
+0 -1 20006
+D2
+~
+~
+0 -1 20004
+D5
+~
+~
+0 -1 20007
+S
+#20006
+Within the Reef, at the Gates to the Coral Castle~
+A long, twisting tunnel leads from the hole in the surface of the reef to this
+area. The water is thick with a sense of hatred, as if the coral reef senses
+the presence of intruders. Small passages can be seen leading off to both the
+east and west. Thin, semi-transparent membranes cover the mouths of these
+passages, blocking access to the chambers beyond. A massive arch frames a
+gateway, leading deeper within the coral castle. Both the arch and gate are
+fashioned of sparkling, blood-red coral. No trace of damage can be found on the
+coral, it must have been shaped by magical means. The sight is both horrific
+and beautiful to behold.
+~
+0 4 0
+D0
+~
+~
+0 -1 20009
+D2
+~
+~
+0 -1 20005
+S
+#20007
+A Crooked Nook Beneath the Reef~
+The eerie moaning of water sloshing against the reef's structure lends an
+otherworldly aura to this darkened cavern. All along one wall is a high shelf,
+molded of coral and driftwood, hosting numerous containers and bottles. A tangy
+aroma wafts from the counter, informing any visitor of the contents. Debris
+from shipwrecks and lost cargo of storms have been arranged to provide seating.
+~
+0 4 0
+D3
+~
+~
+0 -1 20008
+D4
+~
+~
+0 -1 20005
+S
+#20008
+A Private Corner of Pleasure and Pain~
+A dark, quiet corner set apart from the tavern, this secluded nook is lined
+with plush pillows and warm tapestries. Concealed beneath the velvets and silks
+lie shackles and assorted implements of pleasure... or torture. Dim lighting
+from the few scattered candles keeps the room in shadows, allowing the
+occupants maximum privacy.
+~
+0 4 0
+D1
+~
+~
+0 -1 20007
+S
+#20009
+Crossing a Perilous Bridge~
+A sturdy drawbridge connects the gate with the castle wall. Unnaturally long
+and straight blood-red corals make up the body of the bridge. Collections of
+rarely seen seashells adorn the bridge, sparkling in rainbow colors. These
+seashells are as deadly as they are beautiful. Countless tiny, almost invisible
+poisonous thorns cover the surface of these seashells. These thorns inject
+colorless poison into the body when touched. The poison causes respiratory
+difficulty, which leaves the victims to drown in the icy ocean water.
+~
+0 4 1
+D0
+~
+~
+0 -1 20010
+D2
+~
+~
+0 -1 20006
+S
+#20010
+A Mystical Portcullis to the Realm of the Coral Castle~
+Two large torches made of beautifully carved ivory burn fiercely on both walls,
+lighting up the entrance to the castle. As if you are stepping into another
+realm, all water is forced from the interior rooms, allowing land creatures to
+breathe freely within. The corpses of various types of fish lie scattered upon
+the ground, having mistakenly crossed the invisible barrier to their doom.
+Under the lanterns' glow these coral walls emit an eerie red light.
+~
+0 4 1
+D0
+~
+~
+0 -1 20018
+D1
+~
+~
+0 -1 20011
+D2
+~
+~
+0 -1 20009
+D3
+~
+~
+0 -1 20014
+S
+#20011
+The Castle Wall~
+An eerie, still air fills the room, making breathing difficult. Two rolls of
+beautifully carved torches dot both sides of the long, winding stairs up to the
+castle lookout. The fires on the torches flicker ghastly, creating a horrid
+atmosphere. These coral walls have an unusual shade of crimson that attracts
+the eyes. Looking closer, it is actually blood that covers those walls.
+~
+0 4 1
+D3
+~
+~
+0 -1 20010
+D4
+~
+~
+0 -1 20012
+S
+#20012
+Crole's Armory~
+Piles of leather weigh down numerous casks and trunks, overflowing with armor
+and battle gear. Deep shelves line the walls of this large room, filled with
+helmets and boots, belts and gauntlets. Each item in the best possible
+condition from hard-working clerks, who polish and maintain it daily. Two half
+doors at both back corners of the room afford potential buyers some privacy as
+they try on the lighter garments. A long, low bench lies between the dressing
+room doors for fitting boots and leg plates. An official counter stands
+prominently in the center of the room, where the proprietor can monitor all
+activity.
+~
+0 4 1
+D1
+~
+~
+0 -1 20013
+D5
+~
+~
+0 -1 20011
+S
+#20013
+The Master's Workshop~
+A blazing furnace, deep pumping bellows, and several large anvils clutter the
+northern wall of the armory. Raw leather strips and chunks of various metals
+are stored in bins along the walls, ready to be transformed by the masterful
+hands of the Nativlon blacksmith. A huge vat of cool water sits in the center of
+the room, within easy reach of either anvil.
+~
+0 4 1
+D3
+~
+~
+0 -1 20012
+S
+#20014
+The Castle Wall~
+A bowl of fire stands erected in the middle of the room, burning radiantly. A
+few unlit torches hang loosely on a rack of fire, next to it. A dark winding
+stair leads up to the castle wall, taking up the north side of the circular
+room. A smooth, red coral handle contrasts brilliantly with the glittering,
+white marble steps of the stairs. Amidst the beauty of it all, the room has a
+thick stillness that saddens the heart.
+~
+0 4 1
+D1
+~
+~
+0 -1 20010
+D4
+~
+~
+0 -1 20015
+S
+#20015
+The Seduction Boutique~
+Sparkly seashells and glittering gemstones along the walls decorate the
+brightly lit boutique. Various kinds of garments for different occasions line
+up neatly on display tables. Beautiful accessories of all kinds occupy the
+crystal showcase next to the display tables. At the back of the boutique is a
+naturally formed alcove, which serves as the dressing room, concealed by a
+sheer white-laced curtain. A large full-length mirror is mounted on a wall,
+allowing the patrons to appreciate the apparel.
+~
+0 4 1
+D0
+~
+~
+0 -1 20016
+D5
+~
+~
+0 -1 20014
+S
+#20016
+A Cerulescent, Satin-Sheeted, Sequestered Alcove~
+From floor to ceiling, this spacious room is covered in silk and satin
+tapestries. Muted candelabras are attached to strategic sections of wall. Plump
+pillows and fluffy blankets cover the floor in luxurious comfort, beckoning
+visitors to relax and enjoy themselves fully. Murals of Nativlons at play and rest
+are painted across the ceiling, with dancing nymphs and sprites cavorting
+across a beautiful seascape.
+~
+0 4 1
+D2
+~
+~
+0 -1 20015
+D4
+~
+~
+0 -1 20017
+S
+#20017
+A Sunlit Attic Filled with Soft Pillows~
+Stacks upon stacks of fluffy linens and fragrant pillows line the walls of this
+spacious attic. A low chest near the ladder holds a large variety of candles to
+supply the Goddess with her favorite scents. Gathering plates for donations are
+stacked nearby, with a magically locked chest bearing Her Beloved's seal.
+~
+0 4 1
+D5
+~
+~
+0 -1 20016
+S
+#20018
+A Short Trip to Reverence~
+Light coral and dark obsidian tiles checkerboard the floor of this broad hall.
+Upon the walls are intricate paintings of beloved friends and valuable allies,
+forever remembered here. A bridge to the south covers rapidly running water. To
+the north, flickering light escapes the domed ceiling of the reception hall.
+~
+0 4 1
+D0
+~
+~
+0 -1 20019
+D2
+~
+~
+0 -1 20010
+S
+#20019
+A Majestic Reception into Glory and Infamy~
+Broad expanses of brightly hued coral line the walls and floor of this large
+courtyard. The domed ceiling allows ambient lighting from the sea above to
+filter through, flickering waves across paintings and statues throughout the
+hall. Mosaic displays of past triumphs and great feats are etched upon these
+walls in darkest obsidian, radiant turquoise, pure alabaster, and effervescent
+opal. To the south, soft illumination comes from a short hallway. Brilliant
+light beckons from the north, inviting visitors to explore. East and west
+corridors open up to small chambers.
+~
+0 4 1
+D0
+~
+~
+0 -1 20022
+D1
+~
+~
+0 -1 20029
+D2
+~
+~
+0 -1 20018
+D3
+~
+~
+0 -1 20027
+D4
+~
+~
+0 -1 20023
+S
+#20020
+Floating in a void~
+~
+0 4 1
+D2
+~
+~
+0 -1 20019
+S
+#20021
+Floating in a void~
+~
+0 4 1
+S
+#20022
+An Illuminated Hallway~
+Paintings line every inch of this corridor, depicting dragons in flight,
+dragons in combat, and dragons at rest. In several pictures, notable people
+stand or fight beside the flaming beasts, offering whatever aid is possible.
+Beloved Marlaise proudly astride a golden dragon, flying through the air.
+Valiant Jonias assisting in combat between bronze and red dragons. Dashing
+Kalvinus besieged by fiery creatures, while hunting for wicked dragons within
+their lair. To the south, a domed reception area calls visitors to attention.
+Northward lies a large memorial area to good friends.
+~
+0 2097156 1
+D2
+~
+~
+0 -1 20019
+S
+#20023
+A Dusty Attic on a Domed Ceiling~
+A dusty, forgotten attic reveals itself through a hidden trapdoor in the domed
+ceiling. Spider webs and dirt clog up the room and its furniture, burying their
+once-extravagant beauty. Small peek holes lie in strategic locations, allowing
+observers opportunity for careful surveillance. Another hidden exit on the
+ceiling functions as an entrance to this secret room.
+~
+0 4 1
+D4
+~
+~
+0 -1 20024
+D5
+~
+~
+0 -1 20019
+S
+#20024
+A Crooked Tunnel in the Earth~
+This muddy, stuffy tunnel serves as the only visible entrance to the hidden
+attic. Its width is only big enough to fit a slender body. Roots of trees,
+wiggling worms, and blood-red earth make up the cramped walls of the twisting
+tunnel. The tunnel seems to absorb any light source, allowing endless darkness
+to stretch above and below it.
+~
+0 4 1
+D4
+~
+~
+0 -1 20025
+D5
+~
+~
+0 -1 20023
+S
+#20025
+A Small Hole Underneath a Large Rock~
+The tunnel widens as a ray of light punches through a crack, revealing an
+abrupt end. At first glance, no obvious outlet can be found to explain the
+light. But a closer examination reveals a much more solid material near the
+light rather than by the circular walls of the tunnel. An enormous rock above
+the earth conceals the small, inconspicuous opening underground.
+~
+0 4 1
+D4
+~
+~
+0 -1 20026
+D5
+~
+~
+0 -1 20024
+S
+#20026
+Fountain of Dreams~
+A marble fountain with a sculpture of the wisdom goddess Iyliza sits next to a
+gigantic rock. Veins of Ceruleanrosa drape around Iyliza's body, fashioned into
+a blue and green robe. A plaque mounted on the base of the fountain reads,
+"True Wisdom Embraces a Divine Dream." Petals of Ceruleanrosa float on the
+crystal clear water. Brilliant jewels and gemstones, along with countless
+silver and gold coins tossed by wishmakers, sparkle under the sun on the bottom
+of the fountain. Cobblestone paths encircle the fountain and lead to different
+parts of the island.
+~
+0 4 1
+D0
+~
+~
+0 -1 20031
+D1
+~
+~
+0 -1 20046
+D5
+~
+~
+0 -1 20025
+S
+#20027
+A Blazing Chamber~
+A ring of blazing torches mounted on the ceiling lights up the chamber and
+provides warmth. A large tapestry displays a legend of a fearless warrior
+guarding the Nativlon Princess, their hands joined at the fingertips, faces tilted
+up towards a floating, bright star. In the center of the room is a large oak
+table covered by a magnificently embroidered cloth. A large hard-covered book
+lies open, inviting visitors to leave a short message to the spirits of the
+legends. A magical harp fills the air with music that reflects the mood of the
+visitors.
+~
+0 4 1
+D1
+~
+~
+0 -1 20019
+D3
+~
+~
+0 -1 20028
+S
+#20028
+The Seabed of Amorous Dreams~
+Stepping through a semi-transparent, flowing veil, a chamber of ethereal
+enchantment lies in front of you. Sparkles of golden flasks decorating the
+ice-cold marble floor twinkle frostily under the gentle candle flames. Numerous
+lavender candles, standing here and there all over the room, emit a soft, lilac
+fragrance. Rose petals dot the bewitching chamber, leading to a cozy, inviting
+bed of fluffy pillows and silky blankets. A miniature waterfall and pool sit
+next to the crib, serving as both ornaments and entertainment.
+~
+0 4 1
+D1
+~
+~
+0 -1 20027
+S
+#20029
+A Celestial Auditorium~
+The magnificent circular auditorium, dedicated to the great wizard Shadqar, has
+the capacity for three hundred people. The focus of attention is the stage in
+the center. Comfortable, pale blue, cushioned chairs follow the circular room,
+elevated to the heights that allow every seat a clear view of the stage. The
+floor is covered in exquisite white carpet of the softest fabrics. Beautiful,
+exotic tapestries of foreign sceneries fill the wall spaces. An enormous
+chandelier made of purest crystal from the depths of the earth hangs above the
+stage, serving as the only visible means of lighting to the auditorium.
+~
+0 4 1
+D1
+~
+~
+7 20029 20030
+D3
+~
+~
+0 -1 20019
+S
+#20030
+A Lil Haven in the Sky~
+A sense of langor overwhelms the senses of all who enter these puffy, silvery
+clouds. Drowsiness creeps over the eyes of visitors as these clouds beckon them
+to lie down upon their billowy softness. Surprisingly, these balls of fluff are
+capable of holding magnificent amounts of weight. The malleable clouds trace
+the bodies of whomever rests here, providing absolute relaxation and comfort. A
+preferred cloud with visible indentations made by the resident spirits floats
+on the right side of the room.
+~
+0 4 1
+D3
+~
+~
+1 20029 20029
+S
+#20031
+A Cobblestone Path on the Haunted Island~
+A cobblestone path cuts through the dense forest of the island. Small animals,
+dashing faster than eyesight can catch, roam in the depth of the woods. A
+glitter of sunlight can barely be seen over the towering trees, while the faint
+seductive melody of the Nativlons can still be heard above the chatter of the
+inhabitants. A weather-worn marble bench, swathed in Ceruleanrosa's veins,
+perches by the trees.
+~
+0 4 1
+D0
+~
+~
+0 -1 20032
+D2
+~
+~
+0 -1 20026
+S
+#20032
+A Cobblestone Path on the Haunted Island~
+Brilliantly colored wildflowers line both sides of the cobblestone path. Soft
+breeze animates the blossoms, swaying them in all directions. A faint mixture
+of floral and forest fragrance refreshes any exhausted spirit and body. The
+landscape slowly shifts from the dense tall forest into scattering woods.
+Further down the path, a picturesque green savanna stretches forward to the
+horizon.
+~
+0 4 1
+D2
+~
+~
+0 -1 20031
+D3
+~
+~
+0 -1 20033
+S
+#20033
+A Cobblestone Path on the Haunted Island~
+A pure spacious meadow with nothing but green grasses and wide sky lies out in
+front of you. A few interestingly shaped clouds dot the otherwise endless sky.
+Soft grasses, comparable to manmade carpet, invite all to rest and relax. The
+cobblestone path cuts through the savanna, leading toward a rising hill. The
+faint sound of splashing water is the only audible sound in the air.
+~
+0 4 1
+D0
+~
+~
+0 -1 20034
+D1
+~
+~
+0 -1 20032
+S
+#20034
+Before the Waterfall of Doom~
+The cobblestone path climbs the rising hill to the top, as the splash of water
+grows louder. A magnificent waterfall, as if plunging from the sky, forces an
+end to the path. Deafening water noise overwhelms every sense, bringing awe to
+the Mother Nature. The source and bottom of the waterfall are both
+indeterminable from this spot, indicating the enormous height of the fall. Wild
+Ceruleanrosa dominate the area.
+~
+0 4 1
+D0
+~
+~
+0 -1 20037
+D2
+~
+~
+0 -1 20033
+D4
+~
+~
+0 -1 20038
+D5
+~
+~
+0 -1 20035
+S
+#20035
+At the Foot of the Waterfall of Doom~
+The waterfall comes to an end at the foot of the mountain.  The river of
+water flows westward toward the ocean, breaking the suffocating force of
+the waterfall.  Large rocks line both banks of the river.  Various types of
+fish swim freely in the clear water.  Cool breeze from the ocean brings
+salty air to the valley. The waterfall comes to an end at the foot of the
+mountain.  The river of water flows down and north toward the ocean,
+breaking the suffocating force of the waterfall.  Large rocks line both
+banks of the river.  Various types of fish swim freely in the clear water.
+Cool breeze from the ocean brings salty air to the valley.
+~
+0 4 1
+D4
+~
+~
+0 -1 20034
+D5
+~
+~
+0 -1 20036
+S
+#20036
+The Start of the Stream~
+The heather-scented east-bound winds toss you on the calm waters of this narrow
+but deep stream. Its banks are thick with matted mosses, mushrooms, and water
+lilies, a few trees hover over the stream's edge collecting the silvery dew of
+the water spray.
+~
+0 4 0
+D0
+~
+~
+0 -1 20039
+D4
+~
+~
+0 -1 20035
+S
+#20037
+An Undiscovered Cavern behind the Waterfall of Doom~
+An irregular opening reveals a large cavern hidden by the raging waterfall. An
+oval-shaped pool occupies the center of the cavern. An arched stalagmite,
+resembling an ancient tree trunk, spurts from the bottom of the pool and
+connects to the ceiling. Next to the stalagmite, a small opening on the ceiling
+provides light for the cavern. Veins of Ceruleanrosa seep through cracks,
+decorating the bare walls. The sweet smell of Ceruleanrosa permeates the room,
+intoxicating all living beings.
+~
+0 4 1
+D2
+~
+~
+0 -1 20034
+S
+#20038
+Waterfall of Doom~
+Thunder-like noise of water accompanying the magnificent waterfall is
+awe-inspiring. Crystal clear water splashes in all directions, keeping the area
+moistened. Vivid green moss covers parts of the rocks and trees along the sides
+of the cascade. Chilly mists veil the area, dividing the world from the
+cataract. The raging waterfall drops into a seemingly endless abyss, giving it
+the name of Doom.
+~
+0 67108868 1
+D5
+~
+~
+0 -1 20034
+S
+#20039
+The Windy Stream~
+The heather-scented east-bound winds toss you on the calm waters of this narrow
+but deep stream. Its banks are thick with matted mosses, mushrooms, and water
+lilies, a few trees hover over the stream's edge collecting the silvery dew of
+the water spray.
+~
+0 4 0
+D2
+~
+~
+0 -1 20036
+D3
+~
+~
+0 -1 20040
+S
+#20040
+A Bend in the Stream~
+The small ripples of stream water lap curl and lap gently up on the bank of a
+small glade to the west. The smell of white lilies beckons you from that
+direction. To the north and south the stream continues silently on its way.
+~
+0 4 0
+D0
+~
+~
+0 -1 20043
+D1
+~
+~
+0 -1 20039
+D3
+~
+~
+0 -1 20041
+S
+#20041
+A Dense Glade of Water Cypress~
+A cool breeze, softened by passage through the trees, filters in, carrying
+pleasant scents of white lilies and aster. The light falls in hypnotic dappled
+patterns on the earthen floor of the glade, and birds sing their music from
+somewhere closeby and unseen. This looks like a wonderful place to spend an
+afternoon, or a cloudless starlit night.
+~
+0 4 1
+D1
+~
+~
+0 -1 20040
+S
+#20042
+Entrance to the VR Game Arcade~
+You here the Sounds of games, and kids voices to the north. As you
+glance in you see an endless array of games to choose from, and a long line
+of kids leading up to a counter. Into the north you see a Virtual Reality
+Game Room and there are stairs leading somewhere below. You get a wiff of
+some wonderful and fresh popcorn, hot dogs, and much more.
+~
+0 4 0
+D0
+~
+~
+0 -1 20051
+D1
+~
+~
+0 -1 20132
+S
+#20043
+A Windy Stream~
+To the north you can hear and smell the open sea. On both sides tree limbs have
+taken on the withered, shrunken look of vegetation surviving around salt, and
+the light from the sky reveals the landscape with few shadows.
+~
+0 4 1
+D0
+~
+~
+0 -1 20044
+D2
+~
+~
+0 -1 20040
+S
+#20044
+The Stream Opens Out to the Sea~
+Quite suddenly the narrow stream bed opens out and gives way to the broad
+northern sea, faithfully reflecting the whites and blues of the sky. In the
+distance, far offshore, you can barely make out the outline of a deadly pirate
+ship....but you feel safely unseen here, and there is no dock for them to land
+at this place. Some sort of thin path leads west over a rocky outcrop.
+~
+0 4 1
+D0
+~
+~
+0 -1 20045
+D2
+~
+~
+0 -1 20043
+D3
+~
+~
+1 -1 20202
+S
+#20045
+Along The Shoreline~
+You are on the beach. As you stroll along, your course through the
+sand is interrupted by large rock jetties, stretching far out into the
+pounding surf. Giant flumes of water shoot skyward, as the waves crash
+upon the rocks, filling the air with a salty taste. As you scamper across
+these jetties, you realize they are thick with wet, slippery algae, making
+movement treacherous. Small pools of water have formed, housing a
+multicolored wilderness of ocean creatures.
+~
+0 4 1
+D1
+~
+~
+0 -1 20049
+D2
+~
+~
+0 -1 20044
+S
+#20046
+A Small Pond Full of Water Lilies~
+The smell of water lilies wafts in the air, surrounding this quaint pond with
+serenity. A mother duck patiently teaches her babies how to swim and dive,
+quacking every so often in approval or discontent. To the left of the pond is a
+hammock, swaying gently in the breeze. Long branches of weeping willow dip into
+the water, sending ripples across the otherwise smooth surface in almost
+hypnotic waves. Calm and peaceful, the quiet tranquility of this area beckons
+visitors to rest, relax, lie upon the tender grass, or nap under a tree.
+~
+0 4 1
+D1
+~
+~
+0 -1 20047
+D2
+~
+~
+0 -1 20048
+D3
+~
+~
+0 -1 20026
+S
+#20047
+A Cobblestone Path on the Haunted Island~
+The cobblestone path meanders into a serene garden park adjacent to a pond of
+water lilies. Beds and beds of brilliantly colored flowers magically compose
+themselves into intricate patterns of ancient symbols. Clusters of trees
+mysteriously form shapes of animals, objects, and legendary figures, animating
+the park. The leaves and petals of these plants rustle constantly, as if alive,
+even without any breeze.
+~
+0 4 1
+D3
+~
+~
+0 -1 20046
+S
+#20048
+The Well of Tears~
+Standing upon bare earth and stone, an ancient well gathers chilly water from
+deep under the surface. The impenetrable darkness of the water hints at extreme
+depths. Echoes of weeping and mourning spring from the fathoms below, haunting
+listeners with melancholy. Barely visible etchings at the base of the well tell
+a tale of haunted souls captured by the Nativlons. The tears of the victims fill
+this basin.
+~
+0 4 1
+D0
+~
+~
+0 -1 20046
+S
+#20049
+Along The Shoreline~
+You are on the beach. As you stroll along, your course through the
+sand is interrupted by large rock jetties, stretching far out into the
+pounding surf. Giant flumes of water shoot skyward, as the waves crash
+upon the rocks, filling the air with a salty taste. As you scamper across
+these jetties, you realize they are thick with wet, slippery algae, making
+movement treacherous. Small pools of water have formed, housing a
+multicolored wilderness of ocean creatures.
+~
+0 4 1
+D0
+~
+~
+0 -1 20050
+D3
+~
+~
+0 -1 20045
+S
+#20050
+Along The Shoreline~
+You are on the beach. As you stroll along, your course through the
+sand is interrupted by large rock jetties, stretching far out into the
+pounding surf. Giant flumes of water shoot skyward, as the waves crash
+upon the rocks, filling the air with a salty taste. As you scamper across
+these jetties, you realize they are thick with wet, slippery algae, making
+movement treacherous. Small pools of water have formed, housing a
+multicolored wilderness of ocean creatures.
+~
+0 4 1
+D0
+~
+~
+0 -1 20156
+D1
+~
+~
+0 -1 20053
+D2
+~
+~
+0 -1 20049
+S
+#20051
+Inside the Arcade~
+All kinds of games sourround you.  You are constantly getting bumped by
+kids.  There has to be over one thousand games here.  To the east there is
+a long line of kids waiting to turn in their tickets for prizes.  The
+person behind the counter is running around franticaly.  To the north you
+see a Sign reading "The VR Game Room".  In front of you there is a stairway
+leading to The Lounge.  The scent of popcorn is getting stronger as you
+stand by the staircase, there must be some kind of Snack Bar below.  It's
+much quieter below, and you begin to wonder what is down there.
+~
+0 4 1
+D0
+~
+~
+0 -1 20080
+D1
+~
+~
+0 -1 20052
+D2
+~
+~
+0 -1 20042
+D5
+~
+~
+0 -1 20146
+S
+#20052
+The Prize Counter~
+You finally make your way through the long line of kids up to the
+Counter. The Wall behind the Counter has many interesting toys on it.  You
+see digueses, magicians costumes, and much much more. All of the items are
+for purchase, some costing more then others.
+~
+0 4 1
+D3
+~
+~
+0 -1 20051
+S
+#20053
+Along The Shoreline~
+You are on the beach. As you stroll along, your course through the
+sand is interrupted by large rock jetties, stretching far out into the
+pounding surf. Giant flumes of water shoot skyward, as the waves crash
+upon the rocks, filling the air with a salty taste. As you scamper across
+these jetties, you realize they are thick with wet, slippery algae, making
+movement treacherous. Small pools of water have formed, housing a
+multicolored wilderness of ocean creatures.
+~
+0 4 1
+D1
+~
+~
+0 -1 20001
+D2
+~
+~
+0 -1 20054
+D3
+~
+~
+0 -1 20050
+S
+#20054
+The Gate of Dailthoneon~
+The huge iron bars blocking the entrance to the city are very
+conspicuous indeed.  A group of guards is constantly on watch, admitting
+only those travelers who have been completely and thoroughly searched for
+illegal items of one form or another.  What could possibly be the reason
+for such extreme precautions?  The entire process is a very efficient one,
+and travelers pour in at a constant rate.  To the west you see an outdoor
+sparring arena
+~
+0 4 1
+D0
+~
+~
+0 -1 20053
+D3
+~
+~
+0 -1 20055
+S
+#20055
+The Entrance Of Dailthoneon~
+This section of the Dailthoneon is little different from the others, in
+that it is covered by the same cobblestone. But, the townspeople seem to be
+distancing themselves from a strange looking object in the center of the
+square. They whisper amongst themselves and throw a few glances at it, but
+their attitude seems to be one of awe and respect. Deciding to investigate
+further, you approach the strange shape, and are surprised to see it is but a
+huge, ornately decorated, golden harp. It stands about once again your height
+and hums with a soft, gentle sound.
+~
+0 4 1
+D1
+~
+~
+0 -1 20054
+D2
+~
+~
+0 -1 20108
+D3
+~
+~
+0 -1 20056
+S
+#20056
+The Practising Area, On the Beach~
+Giant flumes of water shoot skyward, as the waves crash upon the rocks,
+filling the air with a salty taste.  An old Man is here, teaching some
+child Nativlons the way of the sword A stand to the left holds long swords,
+bastard swords and short swords, to the right there are shields, gaunlets
+and all kinds of battle armor To the north lays a private Sparring room.
+~
+0 67108868 1
+D0
+~
+~
+0 -1 20057
+D1
+~
+~
+0 -1 20055
+D3
+~
+~
+0 -1 20150
+S
+#20057
+A Private Sparring room~
+The walls are carved out of the finest pearl stone, they stand five meters
+high and ten meters wide, the walls are littered with swords all carved by
+the finest craftmen, as you enter the room you cant help notice the clatter
+of metal against metal, the ceiling is transperent and diamonds embedded
+upon it Where there arent swords on the walls, there a tapestries full of
+dragons, sword fights and varius warlike things.
+~
+0 4 1
+D1
+~
+~
+0 -1 20058
+D2
+~
+~
+0 -1 20056
+S
+#20058
+A Spiral Staircase~
+This wide spiraling stairway of granite slabs serves to connect all five
+levels of this Tower. A small iron handrail helps you ascend or descend, and
+there are the ever-present torches in brackets to light your way. There are
+guards standing post along its entire length. Small cobwebs dust the corners,
+highlighted by smoke particles caught on the filaments.
+~
+0 4 1
+D3
+~
+~
+0 -1 20057
+D4
+~
+~
+0 -1 20059
+S
+#20059
+A Spiral Staircase~
+This wide spiraling stairway of granite slabs serves to connect all five
+levels of this Tower. A small iron handrail helps you ascend or descend, and
+there are the ever-present torches in brackets to light your way. There are
+guards standing post along its entire length, and the sound of heavy booted
+feet pounding the stairway echoes down from above.
+~
+0 4 1
+D4
+~
+~
+0 -1 20062
+D5
+~
+~
+0 -1 20058
+S
+#20060
+Floating in a void~
+~
+0 4 1
+D5
+~
+~
+0 -1 20059
+S
+#20061
+Floating in a void~
+~
+0 4 1
+S
+#20062
+A Spiral Staircase~
+This wide spiraling stairway of granite slabs serves to connect all five
+levels of this fortress. A small iron handrail helps you ascend or descend, and
+there are the ever-present torches in brackets to light your way. There are
+guards standing post along its entire length. Small cobwebs dust the corners,
+highlighted by smoke particles caught on the filaments.
+~
+0 4 1
+D1
+~
+~
+0 -1 20077
+D4
+~
+~
+0 -1 20063
+D5
+~
+~
+0 -1 20059
+S
+#20063
+A Spiral Staircase~
+This wide spiraling stairway of granite slabs serves to connect all five
+levels of this Tower. A small iron handrail helps you ascend or descend, and
+there are the ever-present torches in brackets to light your way. There are
+guards standing post along its entire length, and the sound of heavy booted
+feet pounding the stairway echoes down from above.
+~
+0 4 1
+D4
+~
+~
+0 -1 20064
+D5
+~
+~
+0 -1 20062
+S
+#20064
+A Spiral Staircase~
+This wide spiraling stairway of granite slabs serves to connect all five
+levels of this fortress.  A small iron handrail helps you ascend or
+descend, and there are the ever-present torches in brackets to light your
+way.  There are guards standing post along its entire length.  Small
+cobwebs dust the corners, highlighted by smoke particles caught on the
+filaments.  To the West is a sparring area for the more advanced people who
+possess the power to fly.
+~
+0 4 1
+D3
+~
+~
+64 -1 20065
+D5
+~
+~
+0 -1 20063
+S
+#20065
+High Above Coral Castle~
+Hovering high in the winds, you notice valleys below, and the outskirts
+of the Island, The view out to sea is truly remarkable, the waves crashing
+together sets a great scene, mountains to the west, land to the east, sea
+to the north, and more sea to the south, its quite chilly up here.
+~
+0 83886084 1
+D1
+~
+~
+0 -1 20064
+D2
+~
+~
+64 -1 20067
+D3
+~
+~
+0 -1 20066
+S
+#20066
+High Above Coral Castle~
+Hovering high in the winds, you notice valleys below, and the outskirts
+of the Island, The view out to sea is truly remarkable, the waves crashing
+together sets a great scene, mountains to the west, land to the east, sea
+to the north, and more sea to the south, its quite chilly up here.
+~
+0 67108868 1
+D1
+~
+~
+0 -1 20065
+D2
+~
+~
+64 -1 20068
+S
+#20067
+High Above Coral Castle~
+Hovering high in the winds, you notice valleys below, and the outskirts
+of the Island, The view out to sea is truly remarkable, the waves crashing
+together sets a great scene, mountains to the west, land to the east, sea
+to the north, and more sea to the south, its quite chilly up here.
+~
+0 83886084 1
+D0
+~
+~
+0 -1 20065
+D3
+~
+~
+0 -1 20068
+S
+#20068
+High Above Coral Castle~
+Hovering high in the winds, you notice valleys below, and the outskirts
+of the Island, The view out to sea is truly remarkable, the waves crashing
+together sets a great scene, mountains to the west, land to the east, sea
+to the north, and more sea to the south, its quite chilly up here.
+~
+0 83886084 1
+D0
+~
+~
+0 -1 20066
+D1
+~
+~
+0 -1 20067
+S
+#20069
+A Desolate Corridor Below the Castle~
+The narrow hallway twists through the foundation of the keep, nothing but dark,
+damp stone overhead and all around. From the west come muffled sounds of
+clanking metal, and a tiny sliver of light is visible in that direction. A
+long dead tallow candle sits in a sconce on the wall, held precariously to the
+stone with one rusting bracket.
+~
+0 4 1
+D1
+~
+~
+0 -1 20169
+D3
+~
+~
+0 -1 20070
+S
+#20070
+Beneath the Castle~
+Beyond an almost unnoticeable curve in the wall, the stairs meet a tiny hallway
+through the Castle's lowest cellar. The air is filled with dust, the tiny motes
+dancing in the occasional stream of light that filters in from above. Dampness
+coats the tightly fitted stone walls, and small patches of gray-green moss grow
+near the floor. The narrow hallway extends to the east and to the west.
+~
+0 4 1
+D1
+~
+~
+0 -1 20069
+D4
+~
+~
+0 -1 20071
+S
+#20071
+A Stone Staircase~
+A portrait on the eastern wall dominates this part of the staircase. The brass
+plaque under its frame is worn smooth, leaving the identity of the woman in the
+picture a complete mystery. As the staircase nears the cellar of the keep, the
+air becomes slightly musty with the various scents of work and leisure. The
+steps curve slightly, leading southward into a narrow basement hall.
+~
+0 4 1
+D4
+~
+~
+0 -1 20170
+D5
+~
+~
+0 -1 20070
+S
+#20072
+A Sandy Beach Along a Hidden Cavern on the Island~
+An endless stretch of white sand beach circumscribes the island.  Large
+palm trees sway in the cool sea breeze.  A large flat rock, called Maledet,
+with a smooth surface, has just enough space for two bodies to lie on top
+of it.  The rock bears the tragic legend of the Nativlon goddess Kdorthea.
+It is said that the rock can detect true love.  If two people lie on top of
+the rock under a full moon and are truly in love, they will be blessed and
+protected by Kdorthea. Otherwise, the couple will crumble into glittering
+white sand.
+~
+0 4 1
+D1
+~
+~
+0 -1 20076
+D2
+~
+~
+0 -1 20069
+D4
+~
+~
+0 -1 20073
+S
+#20073
+A Small Garden of Exotic Flowers~
+Delicate aquatic flora grows in abundance within the confines of this sheltered
+cove. Glimpses of sky peer through the semi-translucent roof of weather-beaten
+coral, allowing sun and wind and rain through, while still offering some
+resistance for the tender shoots and blossoms. Vivid blooms of bold colors line
+the walls, unrestrained. Tendrils of vines and soft, seeking roots spread
+downwards towards the beach below.
+~
+0 4 1
+D0
+~
+~
+0 -1 20075
+D5
+~
+~
+0 -1 20072
+S
+#20074
+Floating in a void~
+~
+0 4 1
+D0
+~
+~
+0 -1 20075
+S
+#20075
+A Private Room~
+Roses of all shades and sizes fill the area with a sweet scent. A sense of
+melancholy overcomes you as soft light hazes through a gentle mist of rain. A
+small white gazebo stands in the center of the garden, overlooking its
+serenity. Visitors are urged not to disturb the fluffy guardian, lest they
+incur its wrath.
+~
+0 4 1
+D2
+~
+~
+0 -1 20073
+S
+#20076
+A Sandy Beach Along a Hidden Cavern on the Island~
+Further down from the rock, nine huge palm trees form a circle on the
+beach. Every full moon, all the Nativlons, with their power at the
+strongest, congregate at the circle to perform different magic tricks.
+Some call the wind, some create lightning, and others rain fire.  The
+festival always concludes with a dance competition between nine selected
+Nativlons.  Each of the competitors has to design an unique dance to honor
+their goddess Kdorthea.  The prize for the best dancer is a golden bowl
+full of human blood.
+~
+0 4 1
+D3
+~
+~
+0 -1 20072
+S
+#20077
+Guards Quarters~
+The Guards Quarters is a dark place, rittled with paper and pens
+everywhere, swords and bucklers, to the right walla lays a huge black board
+that covers the wall, and several seats surrounding it. On the wall lay
+hundreds of certificates and merits.  A statue stands in the corner of a
+man with a long sword on his belt, leather breeches and his arm positioning
+a smart solute, to the east lays the guards sleeping quarters.
+~
+0 4 1
+D1
+~
+~
+0 -1 20078
+D3
+~
+~
+0 -1 20062
+S
+#20078
+A Hallway~
+Torches perched all over the wall in an orderly fasion.  Tapestries
+simbilising great wars and triumphes lay on the wall, the ground covered
+with a rich red carpet gives out a certain scent of comfortableness,
+statues of great demons are placed neatly along the wall.
+~
+0 4 1
+D1
+~
+~
+0 -1 20079
+D2
+~
+~
+3 -1 20157
+D3
+~
+~
+0 -1 20077
+S
+#20079
+A Brightly Lit Hallway~
+Torches perched all over the wall in an orderly fasion.  Tapestries
+simbilising great wars and triumphes lay on the wall, the ground covered
+with a rich red carpet gives out a certain scent of comfortableness,
+statues of great demons are placed neatly along the wall.
+~
+0 4 1
+D1
+~
+~
+0 -1 20082
+D2
+~
+~
+0 -1 20081
+D3
+~
+~
+0 -1 20078
+S
+#20080
+Center of the VR Game Room~
+Here are many different types of Virtual Reality Games.  All of them are
+Fighting based.  You notice the sign to the north of you reading "Android
+VR Training Room" there is a small sign to the side of the entrance reading
+"ANDROIDS ONLY".  To the east the sign reads Deamon's "VR Game Room", and
+to the west is "Godess's VR Game Room".  Both of these rooms allow you to
+virtually fight another fighter, and allow ALL races.
+~
+0 536870916 1
+D0
+~
+~
+7 20079 20084
+D1
+~
+~
+0 -1 20094
+D2
+~
+~
+0 -1 20051
+D3
+~
+~
+0 -1 20137
+S
+#20081
+The Guards Sleeping Chambers~
+The Guards sleeping chambers measures five meters long, a TV rest in the
+corner, and tapestries hung all over the wall, 1 torch in each corner,
+illuminating the room, four bunk beds lay one in each corner. Although not
+occupied, the bunks still seem to small for a human.  Above the bed lay a
+list of when the guards are on duty, and a desc lay littered with paper.
+~
+0 536870916 1
+D0
+~
+~
+0 -1 20079
+S
+#20082
+A Brightly Lit Hallway~
+Torches perched all over the wall in an orderly fasion.  Tapestries
+simbilising great wars and triumphes lay on the wall, the ground covered
+with a rich red carpet gives out a certain scent of comfortableness,
+statues of great demons are placed neatly along the wall.  To the West lay
+the Prison Cells
+~
+0 4 1
+D0
+~
+~
+0 -1 20083
+D1
+~
+~
+0 -1 20085
+D3
+~
+~
+0 -1 20079
+S
+#20083
+The Guards Sleeping Chambers~
+The Guards sleeping chambers measures five meters long, a TV rest in the
+corner, and tapestries hung all over the wall, 1 torch in each corner,
+illuminating the room, four bunk beds lay one in each corner. Although not
+occupied, the bunks still seem to small for a human.  Above the bed lay a
+list of when the guards are on duty, and a desc lay littered with paper.
+~
+0 4 1
+D2
+~
+~
+0 -1 20082
+S
+#20084
+The Android VR Game Room~
+A man stands up from his chair greeting you.  The room has a slight
+humming sound that eccoes through the room.  There are androids floating in
+the air surrounded my mystical spheres of data. It seems to sourround the
+Android like a bubble.  The game platform is a circle and the floor
+sparkles.  There are landing pads off to the side where you go when your
+done fighting the Virtual Fighters. The androids look silly fighting the
+air, but you notice they are accually taking damage.  An android colapses
+inside the sphere, it seems he has died.
+~
+0 536870916 1
+D2
+~
+~
+3 20079 20080
+> entry_prog 100~
+if race($n) == android
+mea $n _blu Hello $n, you have reached the virtual training facility.
+mpat $n mer $n _blu It seems like $n is receiving a message through $s cybertronic matrix...
+else
+mpforce $n south
+endif
+~
+> speech_prog connect to computer~
+mpechoat $n &WWhite swirling mist forms around you and you reappear in a cloude of fog.
+mptransfer $n 20186
+mpat 20186 mpforce $n look
+mpecho &CA Friendly Voice 'Welcome $n.'
+~
+|
+S
+#20085
+A Cellblock Corridor~
+The cellblock corridor is made of oversized red bricks. Symmetrical lines of
+torch holders hang from the walls and the floor is covered with old rotting hay
+and red sand. The moist ceiling is vaulted with a few abandoned cobwebs swaying
+slowly in the weak draft. A large hole has been made in the corner of the
+ceiling.
+~
+0 4 1
+D0
+~
+~
+0 -1 20097
+D1
+~
+~
+0 -1 20086
+D3
+~
+~
+0 -1 20082
+S
+#20086
+A Cellblock Corridor~
+A large iron cage has been built into the northern wall. Symmetrical lines of
+torch holders hang from the walls and the floor is covered with old rotting hay
+and red sand. The moist ceiling is vaulted and covered with soot from years of
+burning torches.
+~
+0 4 1
+D0
+~
+~
+0 -1 20096
+D1
+~
+~
+0 -1 20087
+D3
+~
+~
+0 -1 20085
+S
+#20087
+A Cellblock Corridor~
+A large iron cage has been built into the northern wall. Symmetrical lines of
+torch holders hang from the walls and the floor is covered with old rotting hay
+and red sand. The moist ceiling is vaulted and covered with soot from years of
+burning torches.
+~
+0 4 1
+D0
+~
+~
+0 -1 20095
+D1
+~
+~
+0 -1 20088
+D3
+~
+~
+0 -1 20086
+S
+#20088
+A Turn in the Corridor~
+A rusty iron cage has been built into the northern wall. Symmetrical lines of
+torch holders hang from the walls and the floor is covered with old rotting hay
+and red sand. The moist ceiling is vaulted and covered with thick layers of
+soot from years of burning torches.
+~
+0 4 1
+D0
+~
+~
+0 -1 20089
+D3
+~
+~
+0 -1 20087
+S
+#20089
+A Gladiators Hallway~
+This corridor is slightly narrower and more decorated than the others. Fake
+weapons and shields have been carved out of the walls. The floor shows signs of
+dragging, probably from the gladiators whose legs couldn't carry them out into
+the impending death of the arena outside.
+~
+0 4 1
+D0
+~
+~
+0 -1 20090
+D2
+~
+~
+0 -1 20088
+S
+#20090
+A Gladiators Hallway~
+This corridor is slightly narrower and more decorated than the others. Fake
+weapons and shields have been carved out of the walls. The floor shows signs of
+dragging, probably from the gladiators whose legs couldn't carry them out into
+the impending death of the arena outside.
+~
+0 4 1
+D0
+~
+~
+0 -1 20091
+D2
+~
+~
+0 -1 20089
+D3
+~
+~
+0 -1 20093
+S
+#20091
+A Gladiators Hallway~
+This corridor is slightly narrower and more decorated than the others. Fake
+weapons and shields have been carved out of the walls. The floor shows signs of
+dragging, probably from the gladiators whose legs couldn't carry them out into
+the impending death of the arena outside.
+~
+0 4 1
+D0
+~
+~
+0 -1 20098
+D2
+~
+~
+0 -1 20090
+D3
+~
+~
+0 -1 20092
+S
+#20092
+A Rusty Iron Cage~
+A small hay covered wooden bench, fastened to the wall by two chains, looks
+like it has been serving as a crude bed. A round excrement filled hole in the
+floor is sending out a nasty smell. Rotting hay covers the filthy stone floor.
+~
+0 4 1
+D1
+~
+~
+0 -1 20091
+S
+#20093
+A Rusty Iron Cage~
+A small hay covered wooden bench, fastened to the wall by two chains, looks
+like it has been serving as a crude bed. A round excrement filled hole in the
+floor is sending out a nasty smell. Rotting hay covers the filthy stone floor.
+~
+0 4 1
+D1
+~
+~
+0 -1 20090
+S
+#20094
+Deamon's VR Game Room~
+Here you can battle your partner virtually.  You see fighters and their
+partner stepping onto the Game's Platform.  The Operator puts a piece of
+head gear onto their heads, and instructs them to walk into the battle
+sphere.  You begin to hear them battle, soon after the sphere's are rotated
+and 2 free pods open you, you hear the instructor say "Next".
+~
+0 67108868 1
+D3
+~
+~
+0 -1 20080
+S
+#20095
+A Rusty Iron Cage~
+A small hay covered wooden bench, fastened to the wall by two chains, looks
+like it has been serving as a crude bed. A round excrement filled hole in the
+floor is sending out a nasty smell. Rotting hay covers the filthy stone floor.
+~
+0 4 1
+D2
+~
+~
+0 -1 20087
+S
+#20096
+A Rusty Iron Cage~
+A small hay covered wooden bench, fastened to the wall by two chains, looks
+like it has been serving as a crude bed. A round excrement filled hole in the
+floor is sending out a nasty smell. Rotting hay covers the filthy stone floor.
+~
+0 4 1
+D2
+~
+~
+0 -1 20086
+S
+#20097
+A Rusty Iron Cage~
+A small hay covered wooden bench, fastened to the wall by two chains, looks
+like it has been serving as a crude bed. A round excrement filled hole in the
+floor is sending out a nasty smell. Rotting hay covers the filthy stone floor.
+~
+0 4 1
+D2
+~
+~
+0 -1 20085
+S
+#20098
+A Gladiators Hallway~
+This corridor is slightly narrower and more decorated than the others. Fake
+weapons and shields have been carved out of the walls. The floor shows signs of
+dragging, probably from the gladiators whose legs couldn't carry them out into
+the impending death of the arena outside.
+~
+0 4 1
+D0
+~
+~
+0 -1 20099
+D2
+~
+~
+0 -1 20091
+S
+#20099
+A Gladiators Hallway~
+This corridor is slightly narrower and more decorated than the others. Fake
+weapons and shields have been carved out of the walls. The floor shows signs of
+dragging, probably from the gladiators whose legs couldn't carry them out into
+the impending death of the arena outside.
+~
+0 4 1
+D0
+~
+~
+0 -1 20100
+D2
+~
+~
+0 -1 20098
+S
+#20100
+A Gladiators Hallway~
+This corridor is slightly narrower and more decorated than the others. Fake
+weapons and shields have been carved out of the walls. The floor shows signs of
+dragging, probably from the gladiators whose legs couldn't carry them out into
+the impending death of the arena outside.
+~
+0 4 1
+D1
+~
+~
+0 -1 20101
+D2
+~
+~
+0 -1 20099
+S
+#20101
+A Gladiators Hallway~
+The decorated corridor comes to a halt as a set of steep stairs takes over.
+They lead up to a large iron grating. A huge boulder lies on top of the grating
+on the other side, making it impossible to open from this direction. A smaller
+grating is set in the floor, to drain out the blood that may flood down the
+stairs from the arena above.
+~
+0 4 1
+D3
+~
+~
+0 -1 20100
+D4
+~
+~
+0 -1 20102
+S
+#20102
+The Gladiator's Stairway~
+The stairs lead up to a large iron grating.  A huge boulder lies on top
+of the grating on the other side, making it impossible to open from this
+direction.  A smaller grating is set in the floor, to drain out the blood
+that may flood down the stairs from the arena above.
+~
+0 4 1
+D4
+~
+~
+0 -1 20103
+D5
+~
+~
+0 -1 20101
+S
+#20103
+The Gladiator's Stairway~
+The stairs lead up to a large iron grating.  A huge boulder lies on top
+of the grating on the other side, making it impossible to open from this
+direction.  A smaller grating is set in the floor, to drain out the blood
+that may flood down the stairs from the arena above.
+~
+0 4 1
+D4
+~
+~
+0 -1 20104
+D5
+~
+~
+0 -1 20102
+S
+#20104
+The Gladiator's Stairway~
+The stairs lead up to a large iron grating.  A huge boulder lies on top
+of the grating on the other side, making it impossible to open from this
+direction.  A smaller grating is set in the floor, to drain out the blood
+that may flood down the stairs from the arena above.  To the West is the
+Bloodsport Office
+~
+0 4 1
+D1
+~
+~
+0 -1 20106
+D3
+~
+~
+0 -1 20105
+D5
+~
+~
+0 -1 20103
+S
+#20105
+The Bloodsport Office~
+A simple office, complete with a sturdy wooden desk and a few chairs
+positioned along the walls, has been left almost unaffected by the mayhem
+outside. A few paintings, covered with dust and filth, are still hanging from
+the walls. A large, iron chandelier hanging from a massive chain lights up the
+room and fills the air around the ceiling with a thick black smoke.
+cobwebs swaying slowly in the weak draft.
+~
+0 4 1
+D1
+~
+~
+0 -1 20104
+S
+#20106
+The Main Arena~
+As you step into the Main Arena, you feel abit queezy and flashes of
+death and pain appear, blood reaps the ground, broken weapons everywhere,
+minimum light, but one window letting in alittle light, blood spreads the
+wall at shoulder height.  You can not help feel and imagine people
+littering the grandstands that surround you, this area could fit thousands
+of people into it The place reeks of blood and guts, obviously not cleaned
+from the last fight.
+~
+0 67108868 1
+D1
+~
+~
+0 -1 20107
+D3
+~
+~
+0 -1 20104
+S
+#20107
+The Main Arena~
+As you step into the Main Arena, you feel abit queezy and flashes of
+death and pain appear, blood reaps the ground, broken weapons everywhere,
+minimum light, but one window letting in alittle light, blood spreads the
+wall at shoulder height.  You can not help feel and imagine people
+littering the grandstands that surround you, this area could fit thousands
+of people into it The place reeks of blood and guts, obviously not cleaned
+from the last fight.
+~
+0 67108868 1
+D1
+~
+~
+0 -1 20117
+D3
+~
+~
+0 -1 20106
+S
+#20108
+The Start of MacMillan Street~
+Soft grey pigeons rise and fall from the street, gliding on their white-
+tipped wings, to catch the tidbits of food that get left and avoid the
+trammeling feet of oncoming townspeople.  They seem to find ample nesting
+along the ivory-carved rooftop up and to the east, where the Temple of
+Dailthoneon rises above the ground in splendor.  To the west lies the
+opening to MacMillan Street.
+~
+0 4 1
+D0
+~
+~
+0 -1 20055
+D1
+~
+~
+0 -1 20265
+D3
+~
+~
+0 -1 20109
+S
+#20109
+MacMillan Street~
+Soft grey pigeons rise and fall from the street, gliding on their white-
+tipped wings, to catch the tidbits of food that get left and avoid the
+trammeling feet of oncoming townspeople.  They seem to find ample nesting
+along the ivory-carved rooftop up and to the east, where the Temple of
+Dailthoneon rises above the ground in splendor.  To the west lies Mac
+Millan Street.
+~
+0 4 1
+D1
+~
+~
+0 -1 20108
+D3
+~
+~
+0 -1 20110
+S
+#20110
+A Bend in MacMillan Street~
+The high walls surrounding the city hamper your vision to the north and
+to the west.  It is quite odd that such a seemingly secure little city
+would have need of such staunch fortification as provided by these tall,
+formidable stone walls.  It seems that you are in the northwestern most
+part of Dailthoneon City.
+~
+0 4 1
+D1
+~
+~
+0 -1 20109
+D2
+~
+~
+0 -1 20111
+D3
+~
+~
+0 -1 20185
+> entry_prog 100~
+mpecho A Saiyan's power level is 1,300,000,000,000.
+~
+|
+S
+#20111
+Aliath Avenue~
+You see the rear of Dailthoneon's commercial section to your south, and the
+high, invincible city walls to your north.  The waste and trash left by
+the shopkeepers is strewn about the ground behind their buildings, and
+a fairly rancid odor can be detected in the air.  All manner of vermin
+crawl about through the garbage, only stopping to stare at you every so
+often.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 20110
+D2
+~
+~
+0 -1 20112
+D3
+~
+~
+0 -1 20115
+S
+#20112
+Merchant Avenue~
+From what you can see, the Merchant Circle is easily one of the busiest
+streets in Daithoneon, and certainly one of the most important to its
+economy.  As you walk along you see nearly every kind of shop imaginable,
+selling anything you could possibly ever need or desire.  To the north you
+see Aliath Avenue, and to the west you see an Armory shop.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 20111
+D1
+~
+~
+0 -1 20195
+D2
+~
+~
+0 -1 20113
+D3
+~
+~
+0 -1 20116
+S
+#20113
+Merchant Avenue~
+You are walking along the southern section of the Merchant Circle. Crowds of
+people, each moving with a distinct purpose, swirl about you as they go about
+their daily duties. The number of shops surrounding you is overwhelming...there
+is nothing you could not buy if you but had the money. Although no one seems to
+be staring at you openly, you can hear them murmuring as you pass.
+~
+0 4 1
+D0
+~
+~
+0 -1 20112
+D1
+~
+~
+0 -1 20196
+D3
+~
+~
+0 -1 20197
+S
+#20114
+Floating in a void~
+~
+0 4 1
+> speech_prog coins~
+mptransfer $n 20196
+mpat 20196 mpforce $n look
+~
+|
+S
+#20115
+Aliath Street~
+As you turn around the corner of Aliath Street and Merchant Avenue, you
+leave the hussle of merchants urging there sales upon you, and the smell of
+weird shops, to the northeast you see the invincible massive city walls
+luming in the background. You continue your path down the busy street, and
+notice masses of wagons on the side of the roads, the road continues west
+~
+0 2097156 1
+D1
+~
+~
+0 -1 20111
+D2
+~
+~
+0 -1 20130
+S
+#20116
+Mystic Steel Armor Shop~
+A large, room full of broken armor and weapons, with tools to repair them, lays
+out before you. Little bits and pieces, chips of metal, wood, and other
+materials litter the floor, so you must watch your step. The heat from a forge
+bakes your skin as you pass by it, and you splash some water from a basin over
+your face. It's not a pretty, well kept room, but it serves its functional
+purpose.
+~
+0 1028 1
+D1
+~
+~
+0 -1 20112
+S
+#20117
+A Gladiators Hospital~
+As you step into the miniture hospital, you see two nurses, if they can
+be considered nurses, both butch, and wearing old tatty cloths. To the
+right wall there is a sign which reads 'If you die, its not our fault',
+quite encouraging, isnt it?  You can barely make out a basin which contains
+all kind of liquids and chemicals, there are beds scattered everywhere
+~
+0 1028 1
+S
+#20118
+The Entrance to Nativlons Lair~
+The continuance of Aliath Street comes to an end in front of the
+entrance to a small but beautiful entrance to a massive hall, theres two
+statues made of stone th at simbolise to vicious dogs, one to the right of
+the door and one to the left.  Of what you can see, the door is made of
+Ancient Oak, but is covered in moss and vines, the dogs are also covered in
+moss, I dont think the participants want anybody entering
+~
+0 4 1
+D0
+~
+~
+0 -1 20135
+D2
+~
+~
+0 -1 20119
+S
+#20119
+The Hallway~
+As you enter the room you notice it very stuffy and dark, the torches to
+the left have all run out, and upon the wall you can read the words
+scattered everywhere 'You Will Die, Intruders'. A small sunroof lets in a
+little light for a little guidance, Although this is a small room, it
+connects to a massive room north
+~
+0 4 1
+D3
+~
+~
+0 -1 20120
+S
+#20120
+The Hallway~
+As you enter the room you notice it very stuffy and dark, the torches to
+the left have all run out, and upon the wall you can read the words
+scattered everywhere 'You Will Die, Intruders'. A small sunroof lets in a
+little light for a little guidance, Although this is a small room, it
+connects to a massive room north
+~
+0 4 1
+D0
+~
+~
+0 -1 20121
+D1
+~
+~
+0 -1 20119
+S
+#20121
+The Great Hall of Nativlon~
+A double doorway from the foyer opens onto an expansive great hall. Sections of
+the sloped roof are cut out and filled with intricate stained glass, so at any
+hour of the day or night, sunlight and moonlight sparkle on the floor in a
+myriad of colors. A dais on the west side of the room holds a long table.
+Before it is a smooth dance floor, tiled in complex patterns of hardwood
+parquet. Tables and chairs line the other sides of the hall, the tables bearing
+trays and goblets of purest silver. Sweet-smelling reeds cover the floor, and
+every step over them makes a soft swishing sound. The breeze from the foyer
+courses over the strings of harps and lyres stored in the orchestra area in the
+corner, making constant, quiet music.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 20122
+D1
+~
+~
+0 -1 20135
+D2
+~
+~
+0 -1 20164
+D3
+~
+~
+0 -1 20163
+S
+#20122
+The Stairs to Doom~
+The Start of the Hallway bears only one Desc in the corner, kept neatly,
+although it doesnt look like its been touched in years, Stone walls
+surround you, and breathing is nearly impossible in the start of a cave
+which journeys up. Rumor has it the cave leads to the lair of the spirit of
+the great Sir Nativlon
+~
+0 4 1
+D2
+~
+~
+0 -1 20121
+D4
+~
+~
+0 -1 20123
+S
+#20123
+Leading into the Cave~
+Leading into the cave you notice moss everywhere, all over the walls and
+ground, makes it hard to walk, and use the walls as a guide, its dark and
+the only guidance you have is the glow of your eyes. The cave has a scent
+of Death and Blood about it which sends shivers up your spine, you venture
+up to the contuance of the cave
+~
+0 2097156 1
+D4
+~
+~
+0 -1 20124
+D5
+~
+~
+0 -1 20122
+S
+#20124
+Middle of the Cave~
+Leading into the cave you notice moss everywhere, all over the walls and
+ground, makes it hard to walk, and use the walls as a guide, its dark and
+the only guidance you have is the glow of your eyes. The cave has a scent
+of Death and Blood about it which sends shivers up your spine, you venture
+up to the end of the cave.
+~
+0 2097156 1
+D4
+~
+~
+0 -1 20125
+D5
+~
+~
+0 -1 20123
+S
+#20125
+Middle of the Cave~
+Leading into the cave you notice moss everywhere, all over the walls and
+ground, makes it hard to walk, and use the walls as a guide, its dark and
+the only guidance you have is the glow of your eyes. The cave has a scent
+of Death and Blood about it which sends shivers up your spine, you venture
+up to the end of the cave.
+~
+0 4 1
+D1
+~
+~
+0 -1 20126
+D5
+~
+~
+0 -1 20124
+S
+#20126
+Middle of the Cave~
+Leading into the cave you notice moss everywhere, all over the walls and
+ground, makes it hard to walk, and use the walls as a guide, its dark and
+the only guidance you have is the glow of your eyes. The cave has a scent
+of Death and Blood about it which sends shivers up your spine, you venture
+up to the end of the cave.
+~
+0 2097156 1
+D3
+~
+~
+0 -1 20125
+D4
+~
+~
+0 -1 20127
+S
+#20127
+Middle of the Cave~
+Leading into the cave you notice moss everywhere, all over the walls and
+ground, makes it hard to walk, and use the walls as a guide, its dark and
+the only guidance you have is the glow of your eyes. The cave has a scent
+of Death and Blood about it which sends shivers up your spine, you venture
+east to the end of the cave
+~
+0 2097156 1
+D1
+~
+~
+0 -1 20128
+D5
+~
+~
+0 -1 20126
+S
+#20128
+Entrance to the Great Lair~
+The Entrance lays east, as the air becomes thick and easier to breath,
+the moss comes to a complete stop, small torches eliminate the room with a
+blue everlasting flame and red carpet begins at your feet and the moss on
+the wall reveals a rich red stone, or is it blood? To the east a wooden door leads into the Lair
+~
+0 4 1
+D1
+~
+closed~
+7 20008 20129
+D3
+~
+~
+0 -1 20127
+S
+#20129
+Step One to the Lair~
+Red Carpet fills the floors and the walls are painted white, its more
+formal in here then any other place on the island.  Torches are hung near
+the roof in a pattern to emit enough light for one to see, you see a door
+to the north with 'Door 2' written on it in black, and to the west is a
+door written on it 'Door 1' written in Brown.
+~
+0 4 1
+D0
+~
+~
+7 20009 20151
+D3
+~
+closed~
+7 20008 20128
+> greet_prog 100~
+mpforce $n close w doo
+mpforce $n lock w door
+~
+|
+S
+#20130
+Daith Street~
+Inside this massive hollow mountain is this wonderful bustling city.
+Along the streets are homes, shops, and other business buildings.  People
+move up and down the street quickly and happily trying to go about their
+business.  High intensity high beam lights line the sides of the street
+providing all the light that is needed to see.  There are quaint little
+benches on the sidewalk beside the street where some elderly couples sit
+and remember old times.  The streets are clean of leaves or trash and if
+some of the dust was wiped they would look like something out of a
+fairy-tale.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 20115
+D2
+~
+~
+0 -1 20131
+S
+#20131
+Daith Street~
+The street continues to the north and south inside this massive hollow
+mountain. Houses, shops and other business buildings thrive as people walk in
+and out browsing and buying. On the sides of the road are street lamps to light
+the way for pedestrians. Children run back and forth playing and doing the
+things children do. Couples walk up and down the street holding hands and
+smiling. On either side of the street, next to the lamps, are benches placed
+for those who wish to rest their feet.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 20130
+D2
+~
+~
+0 -1 20132
+S
+#20132
+Daith Street~
+Smooth cobblestones line the streets of the underground city which extends both
+north and south from this point. The many varied sounds of a city full of life
+filter through the air, whilst the inhabitants of the city go about their daily
+routines. Great hanging baskets of multi-colored blooms dangle outside the
+buildings that line the streets, providing a welcome burst of color into the
+subterranean gloom. To the south can be seen a great building, although its
+purpose cannot be determined from this vantage point.
+~
+0 4 1
+D0
+~
+~
+0 -1 20131
+D2
+~
+~
+0 -1 20133
+D3
+~
+~
+0 -1 20042
+D5
+~
+~
+0 -1 20144
+S
+#20133
+Daith Street~
+Smooth cobblestones line the streets of the underground city which extends both
+north and south from this point. The many varied sounds of a city full of life
+filter through the air, whilst the inhabitants of the city go about their daily
+routines. Great hanging baskets of multi-colored blooms dangle outside the
+buildings that line the streets, providing a welcome burst of color into the
+subterranean gloom. To the south can be seen a great building, although its
+purpose cannot be determined from this vantage point.
+~
+0 4 1
+D0
+~
+~
+0 -1 20132
+D2
+~
+~
+0 -1 20134
+S
+#20134
+Before the Sanctuary of Spirits~
+This small hallway functions as a conduit between the streets and the great
+temple that serves as the center of religious worship for the town. The floor
+is made of a pure diamond-like material under which can be seen strange
+engravings. A flood of water glowing with a luminescent light flows across the
+engravings beneath the material lending an otherworldly aspect to the room.
+Tall white columns line both sides of the walkway and strange sandstone
+pedestals form mysterious formations which arise up from beneath the material.
+The waters edge around the stones, repelled by an invisible energy which
+prevents its spread. Crystal statues of great dragons sit upon each pedestal in
+memory of those who have entered the spirit world. They hum quietly with
+energy, sparkling as they are embraced by an unknown source of light.
+~
+0 4 1
+D0
+~
+~
+0 -1 20133
+D2
+~
+~
+0 -1 20135
+S
+#20135
+Sanctuary of Spirits~
+A strange sphere weaves through the rising mist sending rays of light in all
+directions. Sparkling golden dust trails from above and disappears into a
+tranquil flow of water below, which ends abruptly, as though whisked away by an
+unseen force. An otherworldly song arises beautifully from a distance, the
+gentle voice slow and sweet, coaxing with it's soft loving melody and embracing
+the crystal altar which radiates with an inner light. A transparent dragon
+statue glows strongly, seemingly touched by the tune. It brightens and flares,
+sending a powerful beam of light towards the heavens and causing rainbows to
+swirl around it in a graceful dance, as energy seeps from the statue into it.
+~
+0 4 1
+D0
+~
+~
+0 -1 20134
+D3
+~
+~
+0 -1 20121
+S
+#20136
+YOOOOOOOOOOOOO~
+Bright orbs float in midair glowing with an inner light, filling the
+cobblestone street with silver and gold radiance. Sparkling diamond-like stones
+surround the edges of the cobblestone path, entwined with beautiful cyan leaves
+and bright blue flowers which appear to dance, as a glowing water flows
+westward within the transparent material from which they bloom. Lush green
+vines form an archway to the east and peculiarly beautiful flowers hang from
+them like a veil in an array of white and violet. The heavy perfumed scent of
+the flowers floats in the air, spread by a breeze with no direction and no
+reasonable source.
+~
+0 4 1
+S
+#20137
+Godess's VR Game Room~
+ Here you can battle your partner virtually.  You see fighters and their
+partner stepping onto the Game's Platform.  The Operator puts a piece of
+head gear onto their heads, and instructs them to walk into the battle
+sphere. You begin to hear them battle, soon after the sphere's are rotated
+and 2 free pods open you, you hear the instructor say "Next".
+~
+0 67108868 1
+D1
+~
+~
+0 -1 20080
+S
+#20138
+Wyrm Way~
+Bright orbs float in midair glowing with an inner light, filling the
+cobblestone street with silver and gold radiance. Sparkling diamond-like stones
+surround the edges of the cobblestone path, entwined with beautiful cyan leaves
+and bright blue flowers which appear to dance, as a glowing water flows
+westward within the transparent material from which they bloom. Lush green
+vines form an archway to the east and peculiarly beautiful flowers hang from
+them like a veil in an array of white and violet. The heavy perfumed scent of
+the flowers floats in the air, spread by a breeze with no direction and no
+reasonable source.
+~
+0 4 1
+D1
+~
+~
+0 -1 20137
+S
+#20139
+Virtual Practicing Room~
+There is a small dummy here, its just standing there waiting on you to
+do something. It shimmers slightly, as if it were a mere hologram. The
+walls have energy absorbing plates, as do the floors. The room is wide open
+and has a warm feel to it.  The walls are pure white, there is a small
+light above you, providing an adequete amount of light for you to see. The
+dummy shimmers again, it is just stareing at you...  Waiting for you to
+attack.
+~
+0 4 1
+S
+#20140
+Virtual Practicing Room~
+There is a small dummy here, its just standing there waiting on you to
+do something.  It shimmers slightly, as if it were a mere hologram.  The
+walls have energy absorbing plates, as do the floors.  The room is wide
+open and has a warm feel to it.  The walls are pure white, there is a small
+light above you, providing an adequete amount of light for you to see.  The
+dummy shimmers again, it is just stareing at you...  Waiting for you to
+attack.
+~
+0 4 1
+S
+#20141
+Virtual Practicing Room~
+There is a small dummy here, its just standing there waiting on you to
+do something.  It shimmers slightly, as if it were a mere hologram.  The
+walls have energy absorbing plates, as do the floors.  The room is wide
+open and has a warm feel to it.  The walls are pure white, there is a small
+ight above you, providing an adequete amount of light for you to see.  The
+dummy shimmers again, it is just stareing at you...  Waiting for you to
+attack.
+~
+0 4 1
+S
+#20142
+Hardbids Happy House of Ale~
+This narrow but deep room is dominated by a mammoth oak bar which runs the
+entire length of the tavern. Smoke from a great open fire fills the air and the
+smell mingles with that of stale sweat and spilt ale. A healthy crowd jostles
+one another in a desperate attempt to attract the barkeep's attention in the
+quest for a cool drink. The back of the tavern features a raised plinth upon
+which travelling minstrels entertain the crowd, whilst a small stairwell leads
+down, presumably to the cellars beneath. Seemingly scattered haphazardly around
+are a collection of well-worn stools and tables, all of which have seen far
+better days.
+~
+0 4 1
+D3
+~
+~
+0 -1 20132
+D5
+~
+~
+0 -1 20143
+S
+#20143
+Hardbids Cellar~
+Faint flickers of light trickle down from the tavern above but otherwise this
+cold, damp cellar is swathed in shadow and darkness. In the minimal light can
+be seen stacks of casks piled from floor to ceiling, each bearing a strange
+mark to distinguish the many varied brands and brewers. Although primarily
+stocked with casks, a small wine rack can just about be distinguished against a
+wall, filled almost to overflowing with a range of distinctive glass bottles,
+many of whom are covered in a thick layer of dust and cobwebs strongly
+indicating the preferences of the patrons in the tavern above. A faint rustling
+noise can be heard in the shadows although whether it is a rodent or simply a
+noise filtering down from the room above is impossible to tell.
+~
+0 4 1
+D1
+~
+~
+7 20143 20200
+D4
+~
+~
+0 -1 20142
+> entry_prog 100~
+mpecho &CA VR team member says 'Want to got to the VR Arcade to do some Virtual Fighting? I'll take you for 500 thousand zeni.
+mpecho &C A VR team member says 'But be warned, Only androids can get into the Virtual Fighting Arena, Theres sparring rooms in the Arcade for Non-Androids though.
+smile
+~
+|
+S
+#20144
+A Narrow Underground Tunnel~
+The tunnel begins to widen into a larger area and light can be seen coming from
+up ahead. The darkness from behind slowly fades away and more and more becomes
+visible. The tunnel slowly becomes more of a cavern-like area and the walls
+have changed from packed mud into solid stone. The floor is covered with small
+pebbles that definitely did not just appear out of nowhere. Possibly these
+pebbles came from the meadow or possibly from somewhere up ahead.
+~
+0 4 1
+D3
+~
+~
+0 -1 20147
+D4
+~
+~
+0 -1 20132
+S
+#20145
+Virtual Practicing Room~
+There is a small dummy here, its just standing there waiting on you to
+do something.  It shimmers slightly, as if it were a mere hologram.  The
+walls have energy absorbing plates, as do the floors.  The room is wide
+open and has a warm feel to it.  The walls are pure white, there is a small
+light above you, providing an adequete amount of light for you to see.  The
+dummy shimmers again, it is just stareing at you...  Waiting for you to
+attack.
+~
+0 4 1
+S
+#20146
+A Spiral Stairway~
+The Stairs lead down, twirling in a Spiral-like pattern, tiles litter
+the floor below.  Windows eliminate the stairwell, guiding the gamers down.
+Rails to both sides make for quick travel down the stairs to the lounge
+area.  A smell of food and Drink is begining to be nearly overwhelming, and
+are of the essence.
+~
+0 4 1
+D2
+~
+~
+0 -1 20192
+D4
+~
+~
+0 -1 20051
+S
+#20147
+A Narrow Underground Tunnel~
+The tunnel flattens out here still heading south. The darkness now completely
+surrounds everything. Above the tree roots have either disappeared or the
+ceiling has grown higher. The tunnel grows more humid and water drips from the
+ceiling here covering the ground with a very thin lair of wet mud. The area has
+stopped growing narrower for the moment and is easier to pass through. Every
+sound echos to the east and west making it hard to tell if any of the footsteps
+belong to others.
+~
+0 4 1
+D1
+~
+~
+0 -1 20144
+D3
+~
+~
+0 -1 20148
+S
+#20148
+A Narrow Underground Tunnel~
+As the tunnel continues deeper and farther beneath the surface the light in the
+tunnel is reduced to almost nothing. The tunnel narrows a bit ahead and
+continues downward at a slight decline. The roots of the plants above have
+turned into unmistakably the roots of the trees of the forest. The tunnel
+continues east into complete darkness and the unknown. The walls of the tunnel
+are covered in small holes, each just big enough to fit a finger into. This
+could possibly a way to tell where one is in the tunnel or they could just be
+the result of burrowing worms and insects.
+~
+0 4 1
+D0
+~
+~
+0 -1 20149
+D1
+~
+~
+0 -1 20147
+S
+#20149
+A Narrow Underground Tunnel~
+This tunnel leads deep under the meadow into the unknown. It appears to be
+man-made in nature and the ground here is made of packed down mud. Very little
+light filters down this far into the tunnel but there is a little from behind.
+The tunnel leads straight to south and narrows a little in some areas. Roots of
+the grass and bushes of the meadow can be seen above hanging out of the ground.
+They spread out across the ceiling of the tunnel strengthening it and soaking
+up moisture from the air in the tunnel, keeping it very dry.
+~
+0 4 1
+D2
+~
+~
+0 -1 20148
+D4
+~
+~
+0 -1 20150
+S
+#20150
+A Cavern Beneath the Pool~
+From above the tunnel was completely disguised by the meadow brook. It appeared
+to be a normal brook in every way, with swirling currents and the natural
+carved rocks and floor of one. Now, ripples of light filter down from the water
+above into the cavern you are now in. The cavern is completely devoid of water,
+and looking up there is only a thin sheet of water hovering magically overhead.
+Filtered light of the day ripples and wraps the contents of the tunnel in
+intricate pattern. Looking up the distortions are not of what was from where
+you previously came but of far off places enswathed in the changing currents of
+the waters. The tunnel continues down, fading into darkness.
+~
+0 4 1
+D1
+~
+~
+0 -1 20056
+D5
+~
+~
+0 -1 20149
+S
+#20151
+Step two to the Lair~
+Red Carpet fills the floors and the walls are painted white, its more
+formal in here then any other place on the island.  Torches are hung near
+the roof in a pattern to emit enough light for one to see, you see a door
+to the east with 'Door 3' written on it in grey, and to the south is a
+door written on it 'Door 2' written in black.
+~
+0 4 1
+D1
+~
+~
+7 20010 20152
+D2
+~
+~
+7 20009 20129
+S
+#20152
+Step three to the Lair~
+Red Carpet fills the floors and the walls are painted white, its more
+formal in here then any other place on the island.  Torches are hung near
+the roof in a pattern to emit enough light for one to see, you see a door
+to the north with 'Door 4' written on it in red , and to the west is a
+door written on it 'Door 2' written in black.
+~
+0 4 1
+D0
+~
+~
+7 20010 20153
+D3
+~
+~
+7 20010 20151
+> greet_prog 100~
+mpforce $n close w door
+lock w door
+~
+|
+S
+#20153
+Step four to the Lair~
+Red Carpet fills the floors and the walls are painted white, its more
+formal in here then any other place on the island.  Torches are hung near
+the roof in a pattern to emit enough light for one to see, you see a door
+to the south with 'Door 3' written on it in red, and to the north is a
+door written on it 'Door 5' written in blue.
+~
+0 4 1
+D0
+~
+~
+7 20013 20154
+D2
+~
+~
+7 20010 20152
+> greet_prog 100~
+mpforce $n close s door
+mpforce $n lock s door
+~
+|
+S
+#20154
+The Last Step~
+Red Carpet fills the floors and the walls are painted white, its more
+formal in here then any other place on the island.  Torches are hung near
+the roof in a pattern to emit enough light for one to see, you see a door
+to the south with 'Door 4' written on it in red, and to the west is a door
+written on it 'Death to you, mortal' written in Blood.
+~
+0 4 1
+D1
+~
+~
+7 20013 20155
+D2
+~
+~
+7 20013 20153
+> greet_prog 100~
+mpforce $n close s door
+mpforce $n lock s door
+~
+|
+S
+#20155
+The Last Step~
+,
+Red Carpet fills the floors and the walls are painted white, its more
+formal in here then any other place on the island.  Torches are hung near
+the roof in a pattern to emit enough light for one to see, you see a door to the east
+~
+0 2098180 1
+D1
+~
+~
+7 20008 20158
+D3
+~
+~
+7 20013 20154
+> greet_prog 100~
+mpforce $n close w door
+lock w door
+~
+|
+S
+#20156
+The Might Lair of the Black Dragon~
+Trees loome in the background as the sand runs out before you.  The
+scent of beach is still within the air, and the smell of dead, charred
+corpses illuminates your sense's. A massive nest lays in the middle riddled
+with corpses of travelers, the stench is overwhelming Backpacks and many
+varius human things lay in an area which seems was made just for them.
+~
+0 2097156 1
+D2
+~
+~
+0 -1 20050
+S
+#20157
+The Secret Cave of the Mighty Orange Dragon~
+You notice as you step into this small cavern one thing, blood.  Blood
+reeks the wall, of what wall you can acually can see due to minimum light
+coming through cracks in the roof, Big weapons of all sorts lie on the
+ground, with blood riddled all over them . Broken Chains lay all over the
+ground and diamons of all sorts are on the wall
+~
+0 4 1
+D0
+~
+~
+3 -1 20078
+S
+#20158
+The Last Step~
+Red Carpet fills the floors and the walls are painted white, its more
+formal in here then any other place on the island.  Torches are hung near
+the roof in a pattern to emit enough light for one to see, you see a door to the east
+~
+0 2097156 1
+D1
+~
+~
+1 20013 20159
+D3
+~
+~
+3 20008 20155
+S
+#20159
+The Last Step~
+Red Carpet fills the floors and the walls are painted white, its more
+formal in here then any other place on the island.  Torches are hung near
+the roof in a pattern to emit enough light for one to see
+~
+0 2097156 1
+D0
+~
+~
+0 -1 20161
+D1
+~
+~
+1 20160 20160
+D2
+~
+~
+0 -1 20162
+D3
+~
+~
+0 -1 20158
+S
+#20160
+Heart of the Dragon~
+Before you kneel to your glorious Lord Nativlon, strongest of the
+surviving memory of what once was.  Behind him his throne in all its glory,
+solid gold and platinum, with perfect red velvet carpet cascading it in
+every direction.  His powerful upward gaze never staggering always honoring
+his true strength.  A single blue tear trickles down his cheek and
+dissappears under his chin.  Before him stands the mage Prince Morias,
+loyal son and forever friend to his father the king.  His eyes glow with
+the most powerful magic his soul can bring forth. From the kings deepest
+memories he conjures a perfect image of the resting place of the eternal
+dragon. The midnight sky in all its glory streamed out into the endless
+unknown above his head.  A bright constellation in the unwavering shape of
+the eternal dragon rests directly in the middle.  You know in your heart
+that the king mourns, always mourns for his beloved friends. which all the
+gold in the world cannot bring back.  Just outside await the rest of the
+King's lineage, always waiting for his mourning to cease, always mourning
+at his side.
+~
+0 2097156 1
+D3
+~
+~
+1 20160 20159
+S
+#20161
+An Alcove in the Hallway~
+This small alcove is small indeed, red carpet spills in from the south.
+A desc is in corner and a lamp perched on top of it providing some light
+for the reader, there seems to be a chest holding some treasure. A
+Marvelous stained window lets in a little light and has a pattern of a
+beautiful woman embedded in it.
+~
+0 4 1
+D2
+~
+~
+0 -1 20159
+S
+#20162
+An Alcove in the Hallway~
+This small alcove is small indeed, red carpet spills in from the south.
+A desc is in corner and a lamp perched on top of it providing some light
+for the reader, there seems to be a chest holding some treasure. A
+Marvelous stained window lets in a little light and has a pattern of a
+beautiful woman embedded in it.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 20159
+S
+#20163
+The Grand Table~
+A massive table of dark wood runs nearly the entire length of the hall, its
+varnished and polished surface reflecting the colors of the glass above. The
+table is set for at least twenty diners, with thick silver plates and goblets
+set before each elaborate chair. Linen napkins sit folded into swans and stars,
+awaiting a magnificent meal.
+~
+0 4 1
+D1
+~
+~
+0 -1 20121
+S
+#20164
+A Service Hall~
+Doors just off the great hall lead into a wide hallway, brightly lit with
+burning torches in brackets on the wall. The delightful smells of cooking food
+come from the hallway's western end. Small, round windows are set high in the
+walls.
+~
+0 4 1
+D0
+~
+~
+0 -1 20121
+D3
+~
+~
+0 -1 20165
+S
+#20165
+The Kitchen~
+Just off the service hall lies the Castle's expansive kitchen. A bright, roaring
+fire burns in the hearth in the corner. Work tables and washtubs line the
+walls, and a small archway in the southern corner leads into the pantry. Large
+iron cauldrons hang over the fire, full to brimming with rich, hot stews and
+soups.
+~
+0 4 1
+D1
+~
+~
+0 -1 20164
+D2
+~
+~
+0 -1 20166
+S
+#20166
+A Well Stocked Pantry~
+Shelves and bins cover every inch of storage space on the walls of the pantry,
+leaving barely enough space to turn around. Bags of sugar, flour and rice are
+stacked on the floor. Dried fruits and vegetables hang from the rafters
+overhead, and a set of tiny shelves near the door holds countless jars and
+vials of spices and seasonings.
+~
+0 4 1
+D0
+~
+~
+0 -1 20165
+D5
+~
+~
+0 -1 20167
+S
+#20167
+Inside a Small passage~
+Some long-gone stonemason left a gap inside the wall of the Castle, allowing for
+a tiny passage that bypasses the lower floors. There is a bright light
+overhead, and you can make your way towards it, or towards the storage cellar
+below, by balancing on stones that jut out from the walls. Condensation and mud
+have collected between the stones, making the journey somewhat slippery and
+unstable.
+~
+0 4 1
+D4
+~
+~
+0 -1 20166
+D5
+~
+~
+0 -1 20168
+S
+#20168
+Inside a Small Passage~
+A dank and narrow storage room appears to have been carved out of the
+foundation of the Castle, far below the bustle and activity of the upper stories.
+Deep wood shelves line every wall of the cellar, packed with tightly sealed
+jars and canisters of rice and grain, sacks of potatoes and onions, jars of
+saffron and spices, crates of soap, dye, and nails, and boxes and bags of every
+possible description. A narrow passage in the ceiling barely conceals a
+dumbwaiter shaft.
+~
+0 4 1
+D2
+~
+~
+0 -1 20169
+D4
+~
+~
+0 -1 20167
+S
+#20169
+A Desolate Passage Below the Castle~
+The narrow corridor winds through the darkness below the keep. The stone walls
+are slick with moisture, and the floor underfoot is nothing more than
+hard-packed earth. A few broken and crumbling brackets on the walls hold the
+rotting remnants of candles.
+~
+0 4 1
+D0
+~
+~
+0 -1 20168
+D2
+~
+~
+0 -1 20171
+D3
+~
+~
+0 -1 20069
+S
+#20170
+A Stone Staircase~
+The staircase branches off the brightly lit hallway and leads downward, toward
+the Castle's expansive cellars, and upward toward a corridor of offices. There
+are several tapestries and portraits hung on hooks in the stone walls,
+depicting the adventures and lives of people unknown. Torches throw flickering
+light in every direction, making long and short shadows that appear to move
+constantly.
+~
+0 4 1
+D4
+~
+~
+0 -1 20175
+D5
+~
+~
+0 -1 20071
+S
+#20171
+A Desolate Passage Below the Castle~
+Far below the Castle's cellar lies a seemingly forgotten corridor lined with
+tiny, narrow doorways. The candles set in sconces on the wall no longer light
+the hallway, which has fallen into disrepair and neglect. Nothing can be seen
+around the corners or through the doorways but darkness and shadows.
+~
+0 4 1
+D0
+~
+~
+0 -1 20169
+D1
+~
+~
+0 -1 20172
+D3
+~
+~
+0 -1 20173
+S
+#20172
+A Disused Classroom~
+What was once a training room of the Castle has fallen steeply into disrepair.
+The maps and teaching materials that once hung on the walls have fallen down,
+leaving only bare, rusted nails overhead and crumpled piles of fragile,
+decaying parchment underfoot. The remains of a few desks, their wood frames
+rotten and covered with mildew, lie in the middle of the floor where they fell.
+Even the spiders that inhabit the lower hallways and dungeons of the Keep seem
+to have abandoned this room, leaving it forgotten entirely.
+~
+0 4 1
+D3
+~
+~
+0 -1 20171
+S
+#20173
+A Disused Classroom~
+This dusty classroom of the Castle has long been darkened and idle. The few
+rotting and mildewed desks that remain here are piled unkindly in the center of
+the room. Crumpled piles of decaying parchment are strewn about the floor where
+they fell from the walls, leaving only bare walls behind.
+~
+0 4 1
+D1
+~
+~
+0 -1 20171
+S
+#20174
+Floating in a void~
+~
+0 4 1
+S
+#20175
+A Stone Staircase~
+The torches mounted on brackets on the stone walls throw flickering shadows
+into the corners and onto the worn steps underfoot. Brighter light comes from
+the hallway to the south, where brass plaques are visible between the office
+doorways lining the walls. A portrait of the Castles dean hangs in the
+stairwell, and the moving shadows make his warm and wise eyes appear to follow
+you as you mount the stairs.
+~
+0 4 1
+D4
+~
+~
+0 -1 20176
+D5
+~
+~
+0 -1 20170
+S
+#20176
+A Stone Staircase~
+The talking and footsteps of the students and staff on the lower floors of the
+Castle can hardly be heard from the top of the staircase. Soft music seems to
+fill the air, subtly changing every few minutes from the dulcet melodies of a
+harp to the complex harmonies of voices raised in song. A wide, elegantly
+appointed corridor to the south leads toward a large, stately office.
+~
+0 4 1
+D2
+~
+~
+0 -1 20181
+D5
+~
+~
+0 -1 20175
+S
+#20177
+A Virtual Fighter Arena~
+Your sensors are as if they dont work, sending you no data, as if the
+room doesnt even exsist.  The room consists of an endless black void. The
+fighter stands there motionlessly, ready for you to attack.  The Virtual
+Fighter glows under a white mystical nothingness. It has basic human
+features, a head, torso, arms, legs, and feet.  It still awaits you to
+attack.
+~
+0 2097668 1
+D5
+~
+~
+0 -1 20188
+> speech_prog model1~
+mpmload 20200
+mpecho &WA Bright white flash eliminates the area and a Model 1 Virtual Fighter steps out to meet you.
+~
+> speech_prog model2~
+mpmload 20201
+mpecho &WA Bright white flash eliminates the area and a Model 2 Virtual Fighter steps out to meet you.
+~
+> speech_prog model3~
+mpmload 20202
+mpecho &WA Bright white flash eliminates the area and a Model 3 Virtual Fighter steps out to meet you.
+
+
+~
+> speech_prog model4~
+mpmload 20203
+mpecho &WA Bright white flash eliminates the area and a Model 4 Virtual Fighter steps out to meet you.
+~
+> speech_prog model5~
+mpmload 20205
+mpecho &WA Bright white flash eliminates the area and a Model 5 Virtual Fighter steps out to meet you.
+~
+> speech_prog model6~
+mpmload 20206
+mpecho &WA Bright white flash eliminates the area and a Model 6 Virtual Fighter steps out to meet you.
+~
+> speech_prog model7~
+mpmload 20207
+mpecho &WA Bright white flash eliminates the area and a Model 7 Virtual Fighter steps out to meet you.
+~
+> speech_prog model8~
+mpmload 20208
+mpecho &WA Bright white flash eliminates the area and a Model 8 Virtual Fighter steps out to meet you.
+~
+> speech_prog model9~
+mpmload 20209
+mpecho &WA Bright white flash eliminates the area and a Model 9 Virtual Fighter steps out to meet you.
+~
+> speech_prog model10~
+mpmload 20210
+mpecho &WA Bright white flash eliminates the area and a Model 10 Virtual Fighter steps out to meet you.
+~
+> speech_prog model11~
+mpmload 20211
+mpecho &WA Bright white flash eliminates the area and a Model 11 Virtual Fighter steps out to meet you.
+~
+> entry_prog 100~
+mpecho &BHello $n, Welcome to Virtual Training, to summon a Virtual Fighter simply say 'model<Version of Fighter>', IE..model10, Thank you.
+~
+|
+S
+#20178
+A Virtual Fighter Arena~
+Your sensors are as if they dont work, sending you no data, as if the
+room doesnt even exsist.  The room consists of an endless black void. The
+fighter stands there motionlessly, ready for you to attack.  The Virtual
+Fighter glows under a white mystical nothingness. It has basic human
+features, a head, torso, arms, legs, and feet.  It still awaits you to
+attack.
+~
+0 2097668 1
+D5
+~
+~
+0 -1 20189
+> speech_prog model1~
+mpmload 20200
+mpecho &WA Bright white flash eliminates the area and a Model 1 Virtual Fighter steps out to meet you.
+~
+> speech_prog model2~
+mpmload 20201
+mpecho &WA Bright white flash eliminates the area and a Model 2 Virtual Fighter steps out to meet you.
+~
+> speech_prog model3~
+mpmload 20202
+mpecho &WA Bright white flash eliminates the area and a Model 3 Virtual Fighter steps out to meet you.
+~
+> speech_prog model4~
+mpmload 20203
+mpecho &WA Bright white flash eliminates the area and a Model 4 Virtual Fighter steps out to meet you.
+~
+> speech_prog model5~
+mpmload 20205
+mpecho &WA Bright white flash eliminates the area and a Model 5 Virtual Fighter steps out to meet you.
+~
+> speech_prog model6~
+mpmload 20206
+mpecho &WA Bright white flash eliminates the area and a Model 6 Virtual Fighter steps out to meet you.
+~
+> speech_prog model7~
+mpmload 20207
+mpecho &WA Bright white flash eliminates the area and a Model 7 Virtual Fighter steps out to meet you.
+~
+> speech_prog model8~
+mpmload 20208
+mpecho &WA Bright white flash eliminates the area and a Model 8 Virtual Fighter steps out to meet you.
+~
+> speech_prog model9~
+mpmload 20209
+mpecho &WA Bright white flash eliminates the area and a Model 9 Virtual Fighter steps out to meet you.
+~
+> speech_prog model10~
+mpmload 20210
+mpecho &WA Bright white flash eliminates the area and a Model 10 Virtual Fighter steps out to meet you.
+~
+> speech_prog model11~
+mpmload 20211
+mpecho &WA Bright white flash eliminates the area and a Model 11 Virtual Fighter steps out to meet you.
+~
+> entry_prog 100~
+mpecho &B Hello $n, Welcome to Virtual Training, to summon a Virtual Fighter simply say model <Version of Fighter>', IE..model10, Thank you.
+~
+|
+S
+#20179
+A Virtual Fighter Arena~
+Your sensors are as if they dont work, sending you no data, as if the
+room doesnt even exsist.  The room consists of an endless black void. The
+fighter stands there motionlessly, ready for you to attack.  The Virtual
+Fighter glows under a white mystical nothingness. It has basic human
+features, a head, torso, arms, legs, and feet.  It still awaits you to
+attack.
+~
+0 2097668 1
+D5
+~
+~
+0 -1 20190
+> speech_prog model1~
+mpmload 20200
+mpecho &WA Bright white flash eliminates the area and a Model 1 Virtual Fighter steps out to meet you.
+~
+> speech_prog model2~
+mpmload 20201
+mpecho &WA Bright white flash eliminates the area and a Model 2 Virtual Fighter steps out to meet you.
+~
+> speech_prog model3~
+mpmload 20202
+mpecho &WA Bright white flash eliminates the area and a Model 3 Virtual Fighter steps out to meet you.
+~
+> speech_prog model4~
+mpmload 20203
+mpecho &WA Bright white flash eliminates the area and a Model 4 Virtual Fighter steps out to meet you.
+~
+> speech_prog model5~
+mpmload 20205
+mpecho &WA Bright white flash eliminates the area and a Model 5 Virtual Fighter steps out to meet you.
+~
+> speech_prog model6~
+mpmload 20206
+mpecho &WA Bright white flash eliminates the area and a Model 6 Virtual Fighter steps out to meet you.
+~
+> speech_prog model7~
+mpmload 20207
+mpecho &WA Bright white flash eliminates the area and a Model 7 Virtual Fighter steps out to meet you.
+~
+> speech_prog model8~
+mpmload 20208
+mpecho &WA Bright white flash eliminates the area and a Model 8 Virtual Fighter steps out to meet you.
+~
+> speech_prog model9~
+mpmload 20209
+mpecho &WA Bright white flash eliminates the area and a Model 9 Virtual Fighter steps out to meet you.
+~
+> speech_prog model10~
+mpmload 20210
+mpecho &WA Bright white flash eliminates the area and a Model 10 Virtual Fighter steps out to meet you.
+~
+> speech_prog model11~
+mpmload 20211
+mpecho &WA Bright white flash eliminates the area and a Model 11 Virtual Fighter steps out to meet you.
+~
+> entry_prog 100~
+mpecho &BHello $n, Welcome to Virtual Training, to summon a Virtual Fighter simply say 'model<Version of Fighter>', IE..model10, Thank you.
+~
+|
+S
+#20180
+A Virtual Fighter Arena~
+Your sensors are as if they dont work, sending you no data, as if the
+room doesnt even exsist.  The room consists of an endless black void. The
+fighter stands there motionlessly, ready for you to attack.  The Virtual
+Fighter glows under a white mystical nothingness. It has basic human
+features, a head, torso, arms, legs, and feet.  It still awaits you to
+attack.
+~
+0 2097668 1
+D5
+~
+~
+0 -1 20194
+> speech_prog model1~
+mpmload 20200
+mpecho &WA Bright white flash eliminates the area and a Model 1 Virtual Fighter steps out to meet you.
+~
+> speech_prog model2~
+mpmload 20201
+mpecho &WA Bright white flash eliminates the area and a Model 2 Virtual Fighter steps out to meet you.
+~
+> speech_prog model3~
+mpmload 20202
+mpecho &WA Bright white flash eliminates the area and a Model 3 Virtual Fighter steps out to meet you.
+~
+> speech_prog model4~
+mpmload 20203
+mpecho &WA Bright white flash eliminates the area and a Model 4 Virtual Fighter steps out to meet you.
+~
+> speech_prog model5~
+mpmload 20205
+mpecho &WA Bright white flash eliminates the area and a Model 5 Virtual Fighter steps out to meet you.
+~
+> speech_prog model6~
+mpmload 20206
+mpecho &WA Bright white flash eliminates the area and a Model 6 Virtual Fighter steps out to meet you.
+~
+> speech_prog model7~
+mpmload 20207
+mpecho &WA Bright white flash eliminates the area and a Model 7 Virtual Fighter steps out to meet you.
+~
+> speech_prog model8~
+mpmload 20208
+mpecho &WA Bright white flash eliminates the area and a Model 8 Virtual Fighter steps out to meet you.
+~
+> speech_prog model9~
+mpmload 20209
+mpecho &WA Bright white flash eliminates the area and a Model 9 Virtual Fighter steps out to meet you.
+~
+> speech_prog model10~
+mpmload 20210
+mpecho &WA Bright white flash eliminates the area and a Model 10 Virtual Fighter steps out to meet you.
+~
+> speech_prog model11~
+mpmload 20211
+mpecho &WA Bright white flash eliminates the area and a Model 11 Virtual Fighter steps out to meet you.
+~
+> entry_prog 100~
+mpecho &BHello $n, Welcome to Virtual Training, to summon a Virtual Fighter simply say 'model<Version of Fighter>', IE..model10, Thank you.
+~
+|
+S
+#20181
+An Elegant Corridor~
+Unlike the bare stone office corridors below, this one is paneled in dark,
+knurled wood and carpeted with a narrow runner of thick, deep midnight blue.
+Sconces of brass, polished to a shine that makes them gleam like gold, hold
+candles of the same dark blue, illuminating the corridor in gentle, calming
+light.
+~
+0 4 1
+D0
+~
+~
+0 -1 20176
+D2
+~
+~
+0 -1 20182
+S
+#20182
+An Elegant Corridor~
+The sounds of your footsteps are muffled by the thick blue rug that lines the
+corridor. Light comes from matching candles set into shining sconces on the
+wood-paneled walls. Music fills the air, just loud enough to hear, calming the
+senses and entertaining the mind while it covers the noise from the streets
+below. The corridor opens up to the south, where a stone archway leads into a
+spacious, elegantly appointed office.
+~
+0 4 1
+D0
+~
+~
+0 -1 20181
+D2
+~
+~
+1 -1 20183
+S
+#20183
+The Office of the Dean of the Castle~
+A massive, L-shaped desk of dark, knotted wood fills easily a quarter of the
+office. A crystal vase on the desk holds several quills of various colors and
+shapes, and a wooden filing box with dozens of compartments is filled with
+scrolls and parchment. A dark blue candle in a bronze holder sits next to a
+stick of gold sealing wax and a heavy brass sigil, used for sealing the Dean's
+correspondence. Paintings and portraits of previous deans and professors cover
+the walls, and their warm, knowing faces seem to follow you around the room. A
+soft and comfortable-looking chaise sits in one corner, and a magically glowing
+orb hovers over it, providing a cozy and bright reading space. One
+entire wall is devoted to bookshelves, where leather books as large as
+flagstones share space with silk-bound journals and ancient, stained tomes of
+magic.
+~
+0 4 1
+D0
+~
+~
+0 -1 20182
+S
+#20184
+Welcome to the Island Nativlon~
+A beautiful white sandy beach wraps itself around the water, the sand
+warm and inviting although the source of the warmth is not readily
+apparent.  The skyline glows the gold and red hues seen during a beautiful
+sunset, the tranquility and peace of the area a lure for the unwary.  The
+beach continues to the north, and the city starts to the east
+~
+0 4 1
+D1
+~
+~
+0 -1 20185
+D2
+~
+~
+0 -1 20000
+D3
+~
+~
+0 -1 20203
+S
+#20185
+The Golden Gates to the City of Daithoneon~
+The huge iron bars blocking the entrance to the city are very
+conspicuous indeed.  A group of guards is constantly on watch, admitting
+only those travelers who have been completely and thoroughly searched for
+illegal items of one form or another.  What could possibly be the reason
+for such extreme precautions?  The entire process is a very efficient one,
+and travelers pour in at a constant rate.  To the west you see an outdoor
+sparring arena
+~
+0 4 1
+D1
+~
+~
+0 -1 20110
+D3
+~
+~
+0 -1 20184
+S
+#20186
+Inside a Hallway~
+ There Entire Room is Pitch black, There are lights leading you around.
+There are ladders with a red inset leading you up to the Virtual Fighter.
+Your sensors dont detect anything!  As you scan up you notice he has the
+same Techlevel as you.  You Grab the ladder, feeling nothing, do you go up?
+~
+0 2097668 1
+D3
+~
+~
+0 -1 20188
+D4
+~
+~
+1 20209 20187
+> speech_prog disconnect~
+mpecho &WConnecting.......Establishing Connection........Target $n, Disconnecting.
+mptransfer $n 20080
+mpat 20080 mpechoat $n &WA Voice inside your head says 'Please, Come again'
+mpat 20080 mpforce $n look
+~
+> entry_prog 100~
+mpat 20186 mpforce $n up
+~
+|
+S
+#20187
+A Virtual Fighter Arena~
+Your sensors are as if they dont work, sending you no data, as if the
+room doesnt even exsist.  The room consists of an endless black void. The
+fighter stands there motionlessly, ready for you to attack.  The Virtual
+Fighter glows under a white mystical nothingness. It has basic human
+features, a head, torso, arms, legs, and feet.  It still awaits you to
+attack.
+~
+0 516 1
+D5
+~
+~
+1 20209 20186
+> speech_prog Model1~
+mpmload 20200
+mpecho &WA Bright white flash eliminates the area and a Model 1 Virtual Fighter steps out to meet you.
+~
+> speech_prog model2~
+mpmload 20201
+mpecho &WA Bright white flash eliminates the area and a Model 2 Virtual Fighter steps out to meet you.
+~
+> speech_prog model3~
+mpmload 20203
+mpecho &WA Bright white flash eliminates the area and a Model 3 Virtual Fighter steps out to meet you.
+~
+> speech_prog model4~
+mpmload 20204
+mpecho &WA Bright white flash eliminates the area and a Model 4 Virtual Fighter steps out to meet you.
+~
+> speech_prog model5~
+mpmload 20205
+mpecho &WA Bright white flash eliminates the area and a Model 5 Virtual Fighter steps out to meet you.
+~
+> speech_prog model6~
+mpmload 20206
+mpecho &WA Bright white flash eliminates the area and a Model 6 Virtual Fighter steps out to meet you.
+~
+> speech_prog model7~
+mpmload 20207
+mpecho &WA Bright white flash eliminates the area and a Model 7 Virtual Fighter steps out to meet you.
+~
+> speech_prog model8~
+mpmload 20208
+mpecho &WA Bright white flash eliminates the area and a Model 8 Virtual Fighter steps out to meet you.
+~
+> speech_prog model9~
+mpmload 20209
+mpecho &WA Bright white flash eliminates the area and a Model 9 Virtual Fighter steps out to meet you.
+~
+> speech_prog model10~
+mpmload 20210
+mpecho &WA Bright white flash eliminates the area and a Model 10 Virtual Fighter steps out to meet you.
+~
+> speech_prog model11~
+mpmload 20211
+mpecho &WA Bright white flash eliminates the area and a Model 11 Virtual Fighter steps out to meet you.
+~
+> speech_prog model12~
+mpmload 20212
+mpecho &WA Bright white flash eliminates the area and a Model 12 Virtual Fighter steps out to meet you.
+~
+> speech_prog model13~
+mpmload 20213
+mpecho &WA Bright white flash eliminates the area and a Model 13 Virtual Fighter steps out to meet you.
+~
+> entry_prog 100~
+mpecho &BHello $n, Welcome to Virtual Training, to summon a Virtual Fighter simply say 'model<Version of Fighter>', IE..model10, Thank you.
+~
+> entry_prog 100~
+mpclosepassage 20187 down 20186
+~
+> entry_prog 100~
+mpclosepassage 20187  20186 2
+~
+|
+S
+#20188
+Inside a Hallway~
+ There Entire Room is Pitch black, There are lights leading you around.
+There are ladders with a red inset leading you up to the Virtual Fighter.
+Your sensors dont detect anything!  As you scan up you notice he has the
+same Techlevel as you.  You Grab the ladder, feeling nothing, do you go up?
+~
+0 2097156 1
+D1
+~
+~
+0 -1 20186
+D3
+~
+~
+0 -1 20189
+D4
+~
+~
+0 -1 20177
+> speech_prog disconnect~
+mpecho &WConnecting.......Establishing Connection........Target $n, Disconnecting.
+mptransfer $n 20080
+mpat 20080 mpechoat $n &WA Voice inside your head says 'Please, Come again'
+mpat 20080 mpforce $n look
+~
+> entry_prog 100~
+mpat 20188 mpforce $n up
+~
+|
+S
+#20189
+Inside a Hallway~
+ There Entire Room is Pitch black, There are lights leading you around.
+There are ladders with a red inset leading you up to the Virtual Fighter.
+Your sensors dont detect anything!  As you scan up you notice he has the
+same Techlevel as you.  You Grab the ladder, feeling nothing, do you go up?
+~
+0 2097156 1
+D1
+~
+~
+0 -1 20188
+D3
+~
+~
+0 -1 20190
+D4
+~
+~
+0 -1 20178
+> entry_prog 100~
+mpat 20189 mpforce $n up
+~
+|
+S
+#20190
+Inside a Hallway~
+ There Entire Room is Pitch black, There are lights leading you around.
+There are ladders with a red inset leading you up to the Virtual Fighter.
+Your sensors dont detect anything!  As you scan up you notice he has the
+same Techlevel as you.  You Grab the ladder, feeling nothing, do you go up?
+~
+0 2097156 1
+D1
+~
+~
+0 -1 20189
+D3
+~
+~
+0 -1 20191
+D4
+~
+~
+0 -1 20179
+> entry_prog 100~
+mpat 20190 mpforce $n up
+~
+|
+S
+#20191
+Inside a Hallway~
+ There Entire Room is Pitch black, There are lights leading you around.
+There are ladders with a red inset leading you up to the Virtual Fighter.
+Your sensors dont detect anything!  As you scan up you notice he has the
+same Techlevel as you.  You Grab the ladder, feeling nothing, do you go up?
+~
+0 2097156 1
+D1
+~
+~
+0 -1 20190
+D3
+~
+~
+0 -1 20194
+D4
+~
+~
+0 -1 20299
+> entry_prog 100~
+mpat 20191 mpforce $n up
+~
+|
+S
+#20192
+The Lounge~
+The sent of popcorn, hot dogs, and any other kind of food you can
+immagine overwhelm you.  There are kids sitting at tables beside the wall.
+Looks like they have eaten quite a bit, and will probly go the The Big
+Couch to sleep a while. The line isn't too long, you should go get
+something to eat before the line gets too big. There is an attractive woman
+behind the counter.  With a man working the other half, maybe you should go
+and talk to her, maybe she will give you a deal...
+~
+0 536870916 1
+D0
+~
+~
+0 -1 20146
+D1
+~
+~
+0 -1 20193
+D2
+~
+~
+0 -1 20199
+S
+#20193
+The Snack Bar~
+You make you way up to the counter.  It is spotless and looks fairly
+new. There is a small Stove to the back, used for cooking.  To your right
+there is a Popcorn machine, poping popcorn non-stop.  You begin to drool
+from the smells of all the food.  You're hungry and want a bite to eat. The
+woman waits patiently for you to order, there begins to be a line forming
+behind you.  You better order before the other customers begin to complain.
+~
+0 4 1
+D3
+~
+~
+0 -1 20192
+> speech_prog model2~
+~
+|
+S
+#20194
+Inside a Hallway~
+ There Entire Room is Pitch black, There are lights leading you around.
+There are ladders with a red inset leading you up to the Virtual Fighter.
+Your sensors dont detect anything!  As you scan up you notice he has the
+same Techlevel as you.  You Grab the ladder, feeling nothing, do you go up?
+~
+0 2097156 1
+D1
+~
+~
+0 -1 20191
+D4
+~
+~
+0 -1 20180
+> entry_prog 100~
+mpat 20194 mpforce $n up
+~
+|
+S
+#20195
+Tanya's Clothes Shop~
+Clothing of all sorts litter the racks here.  Pop music erupts as you
+enter the room, loud enough to be considered a party in here. A hot chick
+called Tanya is sitting behind the counter waiting for a sale. Posters are
+dodgily hung upon the wall of varius artists and clothe designers.  To the
+back you can makeout a fitting room.
+~
+0 1028 1
+D3
+~
+~
+0 -1 20112
+S
+#20196
+Naughty but Nice~
+The kinky shop, kinky indeed is your first impression!  Sexy outfits
+hang about the racks and plastic models bearing some of them. Sex toys are
+contained into one little glassed shelf by the counter. The shop seems
+quite smaller then the others, its also quite shunned through out the
+island, people just walk by it, not noticing it. The occational couple
+walking in and out buying varius things to keep their sex life up to date.
+~
+0 1028 1
+D3
+~
+~
+0 -1 20113
+S
+#20197
+Adams Optomitrist~
+A sense of formality can be seen here, glasses fill glass shelves. And a
+door leading to the testing of patients area, and two waiting seats lay
+outside it. A receptionist is in the corner at her desk, answering phone
+calls. The carpet is an Aqua colour and the walls are white, more of a
+boring shop then any other kind of shop.
+~
+0 1028 1
+S
+#20198
+Floating in a void~
+~
+0 4 1
+S
+#20199
+The Big Couch~
+There are many Big Fluffy Comfortable Couches here. You see kids laying
+around having a few snacks from the Snack Bar.  All of then look really
+comfortable, some nearly falling asleep The couches have many different
+colors consisting of Red, Green, and Yellow.  There are posters of some of
+the games out in the Arcade, hanging above the couches. There is a circular
+table in the middle of the couches.  The couches are placed in a circle and
+there is a small opening where you enterd.  Go ahead lay down relax...
+~
+0 4 1
+D0
+~
+~
+0 -1 20192
+S
+#20200
+A Small Passage way~
+In this creepy small passage way, the smell of dead corpses wafts around
+you. There is what seems a huge drop to the left and right of you as you
+walk a platform to get to the other side. Rats make there way around your
+feet, trying to make you fall. Posters are hung everywhere, with VR logos
+all over them, no doubt this is a secret passageway to the Ancient VR
+Arcade.
+~
+0 0 1
+D1
+~
+~
+0 -1 20201
+D3
+~
+~
+7 20143 20143
+S
+#20201
+A Small Passageway~
+In this creepy small passage way, the smell of dead corpses wafts around
+you. There is what seems a huge drop to the left and right of you as you
+walk a platform to get to the other side. Rats make there way around your
+feet, trying to make you fall. Posters are hung everywhere, with VR logos
+all over them, no doubt this is a secret passageway to the Ancient VR
+Arcade.
+~
+0 0 1
+D3
+~
+~
+0 -1 20200
+S
+#20202
+A Slimey Sewerage Pipe~
+Slime reeks the walls along with an overwhelming smell of death.  What
+seems to be half human half saiyan corpses are scattered all over the
+ground. A pile of bones stands tall, blocking the sewerage pipe.  There
+seems to be a futile attempt for this to be turned into a 'home for one
+creepy monster thats for sure!
+~
+0 0 1
+D1
+~
+~
+1 -1 20044
+D3
+~
+~
+1 20202 20261
+S
+#20203
+Within a Dark Forest~
+Daylight sun pinpoints upon you, emiting the path ahead of you.  A mat
+of leaves has been strewn together over the years of excistence. A huge
+massive Oak Tree blocks your direction to the north, It seems a path was
+once there before. Weeds touch knee high scraping marks all up your legs.
+~
+0 0 1
+D1
+~
+~
+0 -1 20184
+D3
+~
+~
+0 -1 20204
+S
+#20204
+Within a Dark Forest~
+Daylight sun pinpoints upon you, emiting the path ahead of you.  A mat
+of leaves has been strewn together over the years of excistence. A huge
+massive Oak Tree blocks your direction to the north, It seems a path was
+once there before. Weeds touch knee high scraping marks all up your legs.
+~
+0 0 1
+D1
+~
+~
+0 -1 20203
+D2
+~
+~
+0 -1 20205
+S
+#20205
+Within a Dark Forest~
+Daylight sun pinpoints upon you, emiting the path ahead of you.  A mat
+of leaves has been strewn together over the years of excistence. A huge
+massive Oak Tree blocks your direction to the north, It seems a path was
+once there before. Weeds touch knee high scraping marks all up your legs.
+~
+0 0 1
+D0
+~
+~
+0 -1 20204
+D3
+~
+~
+0 -1 20206
+S
+#20206
+Within a Dark Forest~
+Daylight sun pinpoints upon you, emiting the path ahead of you.  A mat
+of leaves has been strewn together over the years of excistence. A huge
+massive Oak Tree blocks your direction to the north, It seems a path was
+once there before. Weeds touch knee high scraping marks all up your legs.
+~
+0 0 1
+D1
+~
+~
+0 -1 20205
+D3
+~
+~
+0 -1 20207
+S
+#20207
+Within a Dark Forest~
+Daylight sun pinpoints upon you, emiting the path ahead of you.  A mat
+of leaves has been strewn together over the years of excistence. A huge
+massive Oak Tree blocks your direction to the north, It seems a path was
+once there before. Weeds touch knee high scraping marks all up your legs.
+~
+0 0 1
+D1
+~
+~
+0 -1 20206
+D3
+~
+~
+0 -1 20208
+S
+#20208
+Within a Dark Forest~
+The worn-down trail turns here, guiding you through a cluster of birch trees to
+the north. Withered, copper foliage is strewn across the ground, producing a
+crunching sound when stepped on. The air in the woodlands is sweetly scented by
+the myriad plant life which grows around the area.
+~
+0 0 1
+D0
+~
+~
+0 -1 20209
+D1
+~
+~
+0 -1 20207
+D2
+~
+~
+0 -1 20218
+D3
+~
+~
+0 -1 20228
+S
+#20209
+Within a Dark Forest~
+Colossal trees grow to the east and west of you, preventing further travel in
+both directions. Pinpoints of light beam in through the canopy of intertwined
+tree branches and lavender leaves overhead, resembling needles as they shine
+down onto the forest floor. Rusted foliage is strewn across the ground,
+producing a crackling noise whenever stepped on.
+~
+0 0 1
+D0
+~
+~
+0 -1 20210
+D2
+~
+~
+0 -1 20208
+S
+#20210
+Within a Dark Forest~
+The worn-down trail turns here, guiding you through a cluster of birch trees to
+the north. Withered, copper foliage is strewn across the ground, producing a
+crunching sound when stepped on. The air in the woodlands is sweetly scented by
+the myriad plant life which grows around the area.
+~
+0 0 1
+D0
+~
+~
+0 -1 20211
+D2
+~
+~
+0 -1 20209
+S
+#20211
+Within a Dark Forest~
+Colossal trees grow to the east and west of you, preventing further travel in
+both directions. Pinpoints of light beam in through the canopy of intertwined
+tree branches and lavender leaves overhead, resembling needles as they shine
+down onto the forest floor. Rusted foliage is strewn across the ground,
+producing a crackling noise whenever stepped on.
+~
+0 0 1
+D0
+~
+~
+0 -1 20212
+D2
+~
+~
+0 -1 20210
+S
+#20212
+Within a Dark Forest~
+A heavy growth of plant life grows along the downward sloping hill to the east.
+A cluster of oak and pine trees has formed an impregnable wall to the north,
+preventing further travel in that direction. Foliage is strewn across this
+earthen, sinuous path in the woodlands which leads west and south. The common
+sounds of the wilderness can be heard in the fragrant air, reverberating off
+the massive boles and thick branches of trees.
+~
+0 0 1
+D2
+~
+~
+0 -1 20211
+D3
+~
+~
+0 -1 20213
+S
+#20213
+Deeper Into the Forest~
+Daylight sun pinpoints upon you, emiting the path ahead of you.  A mat
+of leaves has been strewn together over the years of excistence. A huge
+massive Oak Tree blocks your direction to the north, It seems a path was
+once there before. Weeds touch knee high scraping marks all up your legs.
+~
+0 0 1
+D1
+~
+~
+0 -1 20212
+D3
+~
+~
+0 -1 20214
+S
+#20214
+Deeper Into the Forest~
+Daylight sun pinpoints upon you, emiting the path ahead of you.  A mat
+of leaves has been strewn together over the years of excistence. A huge
+massive Oak Tree blocks your direction to the north, It seems a path was
+once there before. Weeds touch knee high scraping marks all up your legs.
+~
+0 0 1
+D1
+~
+~
+0 -1 20213
+D3
+~
+~
+0 -1 20215
+S
+#20215
+Deeper Into the Forest~
+Daylight sun pinpoints upon you, emiting the path ahead of you.  A mat
+of leaves has been strewn together over the years of excistence. A huge
+massive Oak Tree blocks your direction to the north, It seems a path was
+once there before. Weeds touch knee high scraping marks all up your legs.
+~
+0 0 1
+D1
+~
+~
+0 -1 20214
+D3
+~
+~
+0 -1 20216
+S
+#20216
+Deeper Into the Forest~
+Daylight sun pinpoints upon you, emiting the path ahead of you.  A mat
+of leaves has been strewn together over the years of excistence. A huge
+massive Oak Tree blocks your direction to the north, It seems a path was
+once there before. Weeds touch knee high scraping marks all up your legs.
+~
+0 0 1
+D1
+~
+~
+0 -1 20215
+D3
+~
+~
+0 -1 20217
+S
+#20217
+Deeper Into the Forest~
+Daylight sun pinpoints upon you, emiting the path ahead of you.  A mat
+of leaves has been strewn together over the years of excistence. A huge
+massive Oak Tree blocks your direction to the north, It seems a path was
+once there before. Weeds touch knee high scraping marks all up your legs.
+~
+0 0 1
+D1
+~
+~
+0 -1 20216
+S
+#20218
+Within a Dark Forest~
+Colossal trees grow to the east and west of you, preventing further travel in
+both directions. Pinpoints of light beam in through the canopy of intertwined
+tree branches and lavender leaves overhead, resembling needles as they shine
+down onto the forest floor. Rusted foliage is strewn across the ground,
+producing a crackling noise whenever stepped on.
+~
+0 0 1
+D0
+~
+~
+0 -1 20208
+D2
+~
+~
+0 -1 20219
+S
+#20219
+Within a Dark Forest~
+Colossal trees grow to the east and west of you, preventing further travel in
+both directions. Pinpoints of light beam in through the canopy of intertwined
+tree branches and lavender leaves overhead, resembling needles as they shine
+down onto the forest floor. Rusted foliage is strewn across the ground,
+producing a crackling noise whenever stepped on.
+~
+0 0 1
+D0
+~
+~
+0 -1 20218
+D2
+~
+~
+0 -1 20220
+S
+#20220
+Within a Dark Forest~
+Colossal trees grow to the east and west of you, preventing further travel in
+both directions. Pinpoints of light beam in through the canopy of intertwined
+tree branches and lavender leaves overhead, resembling needles as they shine
+down onto the forest floor. Rusted foliage is strewn across the ground,
+producing a crackling noise whenever stepped on.
+~
+0 0 1
+D0
+~
+~
+0 -1 20219
+D2
+~
+~
+0 -1 20221
+S
+#20221
+Within a Dark Forest~
+Colossal trees grow to the east and west of you, preventing further travel in
+both directions. Pinpoints of light beam in through the canopy of intertwined
+tree branches and lavender leaves overhead, resembling needles as they shine
+down onto the forest floor. Rusted foliage is strewn across the ground,
+producing a crackling noise whenever stepped on.
+~
+0 0 1
+D0
+~
+~
+0 -1 20220
+D2
+~
+~
+0 -1 20222
+S
+#20222
+Deeper Into the Forest~
+A tainted aura lingers in the air, making your flesh feel like its crawling.
+Unlike the woodlands to the east, not a pinpoint of the sky's light beams in
+through the twisted canopy of branches and leaves overhead. The muted sounds of
+birdsong can be heard, but they appear muffled, as if the singer was being
+strangled by an unseen force.
+~
+0 0 1
+D0
+~
+~
+0 -1 20221
+D3
+~
+~
+0 -1 20223
+S
+#20223
+Deeper Into the Forest~
+A tainted aura lingers in the air, making your flesh feel like its crawling.
+Unlike the woodlands to the east, not a pinpoint of the sky's light beams in
+through the twisted canopy of branches and leaves overhead. The muted sounds of
+birdsong can be heard, but they appear muffled, as if the singer was being
+strangled by an unseen force.
+~
+0 0 1
+D1
+~
+~
+0 -1 20222
+D3
+~
+~
+0 -1 20224
+S
+#20224
+Deeper Into the Forest~
+A tainted aura lingers in the air, making your flesh feel like its crawling.
+Unlike the woodlands to the east, not a pinpoint of the sky's light beams in
+through the twisted canopy of branches and leaves overhead. The muted sounds of
+birdsong can be heard, but they appear muffled, as if the singer was being
+strangled by an unseen force.
+~
+0 0 1
+D1
+~
+~
+0 -1 20223
+D3
+~
+~
+0 -1 20225
+S
+#20225
+Deeper Into the Forest~
+A tainted aura lingers in the air, making your flesh feel like its crawling.
+Unlike the woodlands to the east, not a pinpoint of the sky's light beams in
+through the twisted canopy of branches and leaves overhead. The muted sounds of
+birdsong can be heard, but they appear muffled, as if the singer was being
+strangled by an unseen force.
+~
+0 0 1
+D1
+~
+~
+0 -1 20224
+D3
+~
+~
+0 -1 20226
+S
+#20226
+Deeper Into the Forest~
+A tainted aura lingers in the air, making your flesh feel like its crawling.
+Unlike the woodlands to the east, not a pinpoint of the sky's light beams in
+through the twisted canopy of branches and leaves overhead. The muted sounds of
+birdsong can be heard, but they appear muffled, as if the singer was being
+strangled by an unseen force.
+~
+0 0 1
+D1
+~
+~
+0 -1 20225
+D3
+~
+~
+0 -1 20227
+S
+#20227
+Deeper Into the Forest~
+A tainted aura lingers in the air, making your flesh feel like its crawling.
+Unlike the woodlands to the east, not a pinpoint of the sky's light beams in
+through the twisted canopy of branches and leaves overhead. The muted sounds of
+birdsong can be heard, but they appear muffled, as if the singer was being
+strangled by an unseen force.
+~
+0 0 1
+D1
+~
+~
+0 -1 20226
+S
+#20228
+Deeper Into the Forest~
+An inky, tainted blackness wafts in the air of the Deepwood, touching your
+flesh with the foul aura it emanates. Some ash-colored leaves are strewn across
+the ground, having fallen from the branches of the blackened trees which
+surround the area. A canopy of interwoven, twisted branches has formed
+overhead, defying entrance to the sky's light.
+~
+0 0 1
+D1
+~
+~
+0 -1 20208
+D3
+~
+~
+0 -1 20229
+S
+#20229
+Deeper Into the Forest~
+An inky, tainted blackness wafts in the air of the Deepwood, touching your
+flesh with the foul aura it emanates. Some ash-colored leaves are strewn across
+the ground, having fallen from the branches of the blackened trees which
+surround the area. A canopy of interwoven, twisted branches has formed
+overhead, defying entrance to the sky's light.
+~
+0 0 1
+D0
+~
+~
+0 -1 20241
+D1
+~
+~
+0 -1 20228
+D3
+~
+~
+0 -1 20230
+S
+#20230
+Deeper Into the Forest~
+An inky, tainted blackness wafts in the air of the Deepwood, touching your
+flesh with the foul aura it emanates. Some ash-colored leaves are strewn across
+the ground, having fallen from the branches of the blackened trees which
+surround the area. A canopy of interwoven, twisted branches has formed
+overhead, defying entrance to the sky's light.
+~
+0 0 1
+D1
+~
+~
+0 -1 20229
+D3
+~
+~
+0 -1 20231
+S
+#20231
+Deeper Into the Forest~
+An inky, tainted blackness wafts in the air of the Deepwood, touching your
+flesh with the foul aura it emanates. Some ash-colored leaves are strewn across
+the ground, having fallen from the branches of the blackened trees which
+surround the area. A canopy of interwoven, twisted branches has formed
+overhead, defying entrance to the sky's light.
+~
+0 0 1
+D1
+~
+~
+0 -1 20230
+D3
+~
+~
+0 -1 20232
+S
+#20232
+Deeper Into the Forest~
+The thick branches of an enormous oak tree protrude from beneath the earthen
+ground, having eroded through the forest floor. The massive bole of the tree
+steeply slopes downward to the west, but is far too dangerous to attempt to
+climb or slide down it. A cluster of bushes and deciduous plant life grows to
+the north, impeding further travel in that direction.
+~
+0 0 1
+D1
+~
+~
+0 -1 20231
+D2
+~
+~
+0 -1 20233
+S
+#20233
+A Slant in the Path~
+This particular hill-like trail is covered in knee-high blades of bright
+lavender grass. Colossal trees, including oak, birch, maple, and pine, grow to
+the east and west of you. The trees' thick branches form an intertwined maze of
+confusion overhead, allowing only pinpoints of the sky's light to beam into the
+area. The path slopes downward to the south, and slants upwards to the north.
+~
+0 0 1
+D0
+~
+~
+0 -1 20232
+D2
+~
+~
+0 -1 20234
+S
+#20234
+Deeper Into the Forest~
+Immense trees with blackened bark grow to the north and west, forming
+impregnable walls which deny further movement in those two directions. A
+twisted, interwoven canopy of malformed tree branches is overhead, forming an
+impenetrable wall against the sky's light. The path which sinuously leads
+through the foreboding plant life curves here, guiding you west and north.
+~
+0 0 1
+D0
+~
+~
+0 -1 20233
+D3
+~
+~
+0 -1 20235
+S
+#20235
+Deeper Into the Forest~
+Immense trees with blackened bark grow to the north and west, forming
+impregnable walls which deny further movement in those two directions. A
+twisted, interwoven canopy of malformed tree branches is overhead, forming an
+impenetrable wall against the sky's light. The path which sinuously leads
+through the foreboding plant life curves here, guiding you east and south.
+~
+0 0 1
+D1
+~
+~
+0 -1 20234
+D2
+~
+~
+0 -1 20236
+S
+#20236
+Deeper Into the Forest~
+Immense trees with blackened bark grow to the north and west, forming
+impregnable walls which deny further movement in those two directions. A
+twisted, interwoven canopy of malformed tree branches is overhead, forming an
+impenetrable wall against the sky's light. The path which sinuously leads
+through the foreboding plant life curves here, guiding you west and north.
+~
+0 0 1
+D0
+~
+~
+0 -1 20235
+D3
+~
+~
+0 -1 20237
+S
+#20237
+Deeper Into the Forest~
+This sinuous path of petrified earth cuts through the haunting trees to the
+east. About twenty feet above your head is the canopy of the
+Deepwood, an interwoven maze of malformed branches which keeps the Deepwood
+devoid of the sky's light. An inky blackness wafts in the air like a fog,
+tainting your flesh with its foul, evil touch.
+~
+0 0 1
+D1
+~
+~
+0 -1 20236
+D3
+~
+~
+0 -1 20238
+S
+#20238
+Deeper Into the Forest~
+This sinuous path of petrified earth cuts through the haunting trees to the
+north and east. About twenty feet above your head is the canopy of the
+Deepwood, an interwoven maze of malformed branches which keeps the Deepwood
+devoid of the sky's light. An inky blackness wafts in the air like a fog,
+tainting your flesh with its foul, evil touch.
+~
+0 0 1
+D0
+~
+~
+0 -1 20239
+D1
+~
+~
+0 -1 20237
+S
+#20239
+Deeper Into the Forest~
+An inky, tainted blackness wafts in the air of the Deepwood, touching your
+flesh with the foul aura it emanates. Some ash-colored leaves are strewn across
+the ground, having fallen from the branches of the blackened trees which
+surround the area. A canopy of interwoven, twisted branches has formed
+overhead, defying entrance to the sky's light.
+~
+0 0 1
+D0
+~
+~
+0 -1 20240
+D2
+~
+~
+0 -1 20238
+S
+#20240
+A Path Shrouded in Complete Darkness~
+An inky, tainted blackness wafts in the air of the Deepwood, touching your
+flesh with the foul aura it emanates. Some ash-colored leaves are strewn across
+the ground, having fallen from the branches of the blackened trees which
+surround the area. A canopy of interwoven, twisted branches has formed
+overhead, defying entrance to the sky's light.
+~
+0 0 1
+D2
+~
+~
+0 -1 20239
+S
+#20241
+A Small Platform~
+Daylight sun pinpoints upon you, emiting the path ahead of you.  A mat
+of leaves has been strewn together over the years of excistence. A huge
+massive Oak Tree blocks your direction to the west, It seems a path was
+once there before. Weeds touch knee high scraping marks all up your legs.
+~
+0 0 1
+D0
+~
+~
+0 -1 20242
+D2
+~
+~
+0 -1 20229
+> entry_prog 100~
+mpecho &CA Huntsmen says 'Alas $n, The creatures in this area are slightly bigger then previously, They start at 1million powerlevel.'
+~
+|
+S
+#20242
+A Small Platform~
+Daylight sun pinpoints upon you, emiting the path ahead of you.  A mat
+of leaves has been strewn together over the years of excistence. A huge
+massive Oak Tree blocks your direction to the west, It seems a path was
+once there before. Weeds touch knee high scraping marks all up your legs.
+~
+0 0 1
+D0
+~
+~
+0 -1 20243
+D2
+~
+~
+0 -1 20241
+S
+#20243
+A Small Platform~
+Daylight sun pinpoints upon you, emiting the path ahead of you.  A mat
+of leaves has been strewn together over the years of excistence. A huge
+massive Oak Tree blocks your direction to the west, It seems a path was
+once there before. Weeds touch knee high scraping marks all up your legs.
+~
+0 0 1
+D0
+~
+~
+0 -1 20244
+D2
+~
+~
+0 -1 20242
+S
+#20244
+A Small Platform~
+Daylight sun pinpoints upon you, emiting the path ahead of you.  A mat
+of leaves has been strewn together over the years of excistence. A huge
+massive Oak Tree blocks your direction to the west, It seems a path was
+once there before. Weeds touch knee high scraping marks all up your legs.
+~
+0 0 1
+D0
+~
+~
+0 -1 20245
+D2
+~
+~
+0 -1 20243
+S
+#20245
+A Small Platform~
+Daylight sun pinpoints upon you, emiting the path ahead of you.  A mat
+of leaves has been strewn together over the years of excistence. A huge
+massive Oak Tree blocks your direction to the west, It seems a path was
+once there before. Weeds touch knee high scraping marks all up your legs.
+~
+0 0 1
+D0
+~
+~
+0 -1 20246
+D2
+~
+~
+0 -1 20244
+> entry_prog 100~
+mpecho &CAn Icerian Huntsmen says 'Alas $n, The creatures in this area are slightly bigger then previously, They start at 5million powerlevel.'
+~
+|
+S
+#20246
+A Small Platform~
+Daylight sun pinpoints upon you, emiting the path ahead of you.  A mat
+of leaves has been strewn together over the years of excistence. A huge
+massive Oak Tree blocks your direction to the west, It seems a path was
+once there before. Weeds touch knee high scraping marks all up your legs.
+~
+0 0 1
+D0
+~
+~
+0 -1 20247
+D2
+~
+~
+0 -1 20245
+S
+#20247
+A Small Platform~
+Daylight sun pinpoints upon you, emiting the path ahead of you.  A mat
+of leaves has been strewn together over the years of excistence. A huge
+massive Oak Tree blocks your direction to the west, It seems a path was
+once there before. Weeds touch knee high scraping marks all up your legs.
+~
+0 0 1
+D0
+~
+~
+0 -1 20248
+D2
+~
+~
+0 -1 20246
+S
+#20248
+A Small Platform~
+Daylight sun pinpoints upon you, emiting the path ahead of you.  A mat
+of leaves has been strewn together over the years of excistence. A huge
+massive Oak Tree blocks your direction to the west, It seems a path was
+once there before. Weeds touch knee high scraping marks all up your legs.
+~
+0 0 1
+D0
+~
+~
+0 -1 20249
+D2
+~
+~
+0 -1 20247
+S
+#20249
+A Small Platform~
+Daylight sun pinpoints upon you, emiting the path ahead of you.  A mat
+of leaves has been strewn together over the years of excistence. A huge
+massive Oak Tree blocks your direction to the north, It seems a path was
+once there before. Weeds touch knee high scraping marks all up your legs.
+~
+0 0 1
+D0
+~
+~
+0 -1 20250
+D2
+~
+~
+0 -1 20248
+S
+#20250
+A Small Platform~
+Daylight sun pinpoints upon you, emiting the path ahead of you.  A mat
+of leaves has been strewn together over the years of excistence. A huge
+massive Oak Tree blocks your direction to the east, It seems a path was
+once there before. Weeds touch knee high scraping marks all up your legs.
+~
+0 0 1
+D2
+~
+~
+0 -1 20249
+> speech_prog nativlon~
+mpechoat $n &OTwo large Rocks break apart before your eyes, the rumble of them is devastating, smoke rises around you, and an entrance opens up.
+mptransfer $n 20251
+mpforce $n look
+mpat 20251 mpforce $n look
+~
+|
+S
+#20251
+A Secret Cave~
+As you fall from somewhere, you notice a clump of hay which seems to
+break your fall....accept you completely missed it. Ancient cave pantings
+cover the ceiling above you as you look upon them with awe. Simbilising
+ancients myths of the island, or perhaps not of the island. Gold is
+scattered along the floor, this must be the ancient Nativlon treasure cave.
+~
+0 0 1
+D3
+~
+~
+0 -1 20252
+S
+#20252
+A Secret Cave~
+The narrow path continues from the east, the paintings never seize to
+amaze you. The dry air thats been brewed over thousands of years takes time
+to get use to. Treasure still continues to be thrown about here in a lazy
+fashion. The cave narrows into a smaller cave to the west.
+~
+0 0 1
+D1
+~
+~
+0 -1 20251
+D3
+~
+~
+0 -1 20253
+S
+#20253
+A Secret Cave~
+This seems to be a smaller, yet more formal part of the cave then
+previously. Its tidier then the previously tunnels, small light comes form
+torches hung on the cave wall, an everlasting flame. Ancient paintings
+start to form on the walls to the left and right of you, and even to the
+floor as you enter the path north.
+~
+0 0 1
+D0
+~
+~
+0 -1 20254
+D1
+~
+~
+0 -1 20252
+S
+#20254
+A Secret Cave~
+The paintings cover the entire room, depicting each and everything that
+has occured on this island, treasure lies on the floor in a neat pile.
+There must be someone guarding it?  The stench of corpses now forms in this
+part of the cave, making it an uncomfortable trip indeed.
+~
+0 0 1
+D0
+~
+~
+0 -1 20255
+D2
+~
+~
+0 -1 20253
+S
+#20255
+A Secret Cave~
+Paintings continue to cover the walls in this part of the cave.  Water
+seems to drip from above, no doubt a lake sits above this very cave. The
+drips of the water seem to form into a small hole that soaks in the water,
+letting the water continue on its path. Treasure seems to seize here on,
+replaced by bones of what seem to be....humans.
+~
+0 0 1
+D2
+~
+~
+0 -1 20254
+D3
+~
+~
+0 -1 20256
+S
+#20256
+A Secret Cave~
+Paintings continue to cover the walls in this part of the cave.  Water
+seems to drip from above, no doubt a lake sits above this very cave. The
+drips of the water seem to form into a small hole that soaks in the water,
+letting the water continue on its path. Treasure seems to seize here on,
+replaced by bones of what seem to be....humans.
+~
+0 0 1
+D1
+~
+~
+0 -1 20255
+D3
+~
+~
+0 -1 20257
+S
+#20257
+A Secret Cave~
+Paintings continue to cover the walls in this part of the cave.  Water
+seems to drip from above, no doubt a lake sits above this very cave. The
+drips of the water seem to form into a small hole that soaks in the water,
+letting the water continue on its path. Treasure seems to seize here on,
+replaced by bones of what seem to be....humans.
+~
+0 0 1
+D0
+~
+~
+0 -1 20258
+D1
+~
+~
+0 -1 20256
+S
+#20258
+A Secret Cave~
+Paintings continue to cover the walls in this part of the cave.  Water
+seems to drip from above, no doubt a lake sits above this very cave. The
+drips of the water seem to form into a small hole that soaks in the water,
+letting the water continue on its path. Treasure seems to seize here on,
+replaced by bones of what seem to be....humans.
+~
+0 0 1
+D0
+~
+~
+0 -1 20259
+D2
+~
+~
+0 -1 20257
+S
+#20259
+A Small Hole~
+You suddenly come upon a deep dark tunnel.  As you enter you notice it
+starts to get smaller and you can feel small things crawling up your legs.
+As you procced forward you find yourself on your knees crawling slowly
+through the damp dirt.  As you continue down the narrow path you hear
+rustling and look up, thousands of bats litter the tunnel above you.
+~
+0 0 1
+D2
+~
+~
+0 -1 20258
+D3
+~
+~
+1 20235 20260
+S
+#20260
+A Large Alcove~
+As you pop out of the small tunnel, you land in what seems to be a dark
+lair of some unknown creature.A Massive pile of skins takes up 50% of the
+room, they appear to be....giant snake skins, creepy huh?  This cavern
+seems to be the very lair of the Majin Adder himself.  Bones and fresh
+blood reap the walls and floors, where there isnt skin, of course.
+~
+0 0 1
+D1
+~
+~
+1 20235 20259
+S
+#20261
+A Sewerage Pipe~
+Slime reeks the walls along with an overwhelming smell of death.  What
+seems to be half human half saiyan corpses are scattered all over the
+ground. A pile of bones stands tall, blocking the sewerage pipe.  There
+seems to be a futile attempt for this to be turned into a 'home for one
+creepy monster thats for sure!
+~
+0 0 1
+D1
+~
+~
+1 20202 20202
+D2
+~
+~
+1 -1 20262
+S
+#20262
+A Sewerage Pipe~
+Slime reeks the walls along with an overwhelming smell of death.  What
+seems to be half human half saiyan corpses are scattered all over the
+ground. A pile of bones stands tall, blocking the sewerage pipe.  There
+seems to be a futile attempt for this to be turned into a 'home for one
+creepy monster thats for sure!
+~
+0 0 1
+D0
+~
+~
+1 -1 20261
+D3
+~
+~
+1 -1 20263
+S
+#20263
+A Sewerage Pipe~
+Slime reeks the walls along with an overwhelming smell of death.  What
+seems to be half human half saiyan corpses are scattered all over the
+ground. A pile of bones stands tall, blocking the sewerage pipe.  There
+seems to be a futile attempt for this to be turned into a 'home for one
+creepy monster thats for sure!
+~
+0 0 1
+D1
+~
+~
+1 -1 20262
+D2
+~
+~
+1 -1 20264
+S
+#20264
+A Sewerage Pipe~
+Slime reeks the walls along with an overwhelming smell of death.  What
+seems to be half human half saiyan corpses are scattered all over the
+ground. A pile of bones stands tall, blocking the sewerage pipe.  There
+seems to be a futile attempt for this to be turned into a 'home for one
+creepy monster thats for sure!
+~
+0 0 1
+D0
+~
+~
+1 -1 20263
+S
+#20265
+A Jewish Bar-Mitzvah House~
+This small room seems to hold jewish bar-mitzvah's, set up like a
+church, it has 5 rows of seats, a stand up the front, in which one will
+recite the bar-mitzvah requirements, and statues of their gods. The walls
+are made out of a white limestone which seems to reflect the light
+rebounding off the see-through part off the roof.
+~
+0 4 1
+D3
+~
+~
+0 -1 20108
+S
+#20266
+A Small Doll's Shop~
+Skill and Craftsmen ship hits you head on as you enter the shop, shelves
+literally covering the wall with magnificent sculptures of many varius
+things including Dolls, Ships Cards and Boats. A small bald man greets you
+as you enter, awaiting you to ask him for hiz service.  Of what you can see
+of the small room leading out that back, one can make it out to be a
+bedroom of some saught.
+~
+0 4 1
+S
+#20267
+Floating in a void~
+~
+0 4 1
+S
+#20268
+Floating in a void~
+~
+0 4 1
+S
+#20269
+Floating in a void~
+~
+0 4 1
+S
+#20270
+Floating in a void~
+~
+0 4 1
+S
+#20271
+Raditz's Lil' Brothel House~
+Chicks surround you as you enter the place, a sense of discomfort is
+over whelming here indeed. Poles are structured everywhere in a strategic
+position for dancers to.....dance on. A Counter lays in the corner, clusted
+with papers and girls clothing....kinky clothing. There appears to be many
+doors leading off to rooms where people are doing what the very point of
+this place is;)
+~
+0 0 1
+D0
+~
+~
+0 -1 20272
+> speech_prog kinky~
+mptransfer $n 20196
+mpat 20196 mpforce $n look
+~
+|
+S
+#20272
+A Private Room~
+A Bed in the corner is all thats in the room bar a couple of clothing, A
+hooker sits on the bed, awaiting you for some action. The room seems to be
+small, maybe because of the size of the bed.  A couple of paintings hang
+all over the wall seeming to be the only source of formality in this place.
+~
+0 0 1
+D2
+~
+~
+0 -1 20271
+S
+#20278
+A Jewish Bar-Mitzvah House~
+This small room seems to hold jewish bar-mitzvah's, set up like a
+church, it has 5 rows of seats, a stand up the front, in which one will
+recite the bar-mitzvah requirements, and statues of their gods. The walls
+are made out of a white limestone which seems to reflect the light
+rebounding off the see-through part off the roof.
+~
+0 4 1
+D3
+~
+~
+0 -1 20108
+S
+#20293
+Floating in a void~
+~
+0 4 1
+S
+#20299
+A Virtual Fighter Arena~
+Your sensors are as if they dont work, sending you no data, as if the
+room doesnt even exsist.  The room consists of an endless black void. The
+fighter stands there motionlessly, ready for you to attack.  The Virtual
+Fighter glows under a white mystical nothingness. It has basic human
+features, a head, torso, arms, legs, and feet.  It still awaits you to
+attack.
+~
+0 2097668 1
+D5
+~
+~
+0 -1 20191
+> speech_prog model1~
+mpmload 20200
+mpecho &WA Bright white flash eliminates the area and a Model 1 Virtual Fighter steps out to meet you.
+~
+> speech_prog model2~
+mpmload 20201
+mpecho &WA Bright white flash eliminates the area and a Model 2 Virtual Fighter steps out to meet you.
+~
+> speech_prog model3~
+mpmload 20202
+mpecho &WA Bright white flash eliminates the area and a Model 3 Virtual Fighter steps out to meet you.
+~
+> speech_prog model4~
+mpmload 20203
+mpecho &WA Bright white flash eliminates the area and a Model 4 Virtual Fighter steps out to meet you.
+~
+> speech_prog model5~
+mpmload 20205
+mpecho &WA Bright white flash eliminates the area and a Model 5 Virtual Fighter steps out to meet you.
+~
+> speech_prog model6~
+mpmload 20206
+mpecho &WA Bright white flash eliminates the area and a Model 6 Virtual Fighter steps out to meet you.
+~
+> speech_prog model7~
+mpmload 20207
+mpecho &WA Bright white flash eliminates the area and a Model 7 Virtual Fighter steps out to meet you.
+~
+> speech_prog model8~
+mpmload 20208
+mpecho &WA Bright white flash eliminates the area and a Model 8 Virtual Fighter steps out to meet you.
+~
+> speech_prog model9~
+mpmload 20209
+mpecho &WA Bright white flash eliminates the area and a Model 9 Virtual Fighter steps out to meet you.
+~
+> speech_prog model10~
+mpmload 20210
+mpecho &WA Bright white flash eliminates the area and a Model 10 Virtual Fighter steps out to meet you.
+~
+> speech_prog model11~
+mpmload 20211
+mpecho &WA Bright white flash eliminates the area and a Model 11 Virtual Fighter steps out to meet you.
+~
+|
+S
+#0
+
+
+#RESETS
+M 1 20105 1 20105
+M 1 20063 1 20064
+M 1 20063 1 20064
+M 1 20063 1 20063
+M 1 20063 1 20063
+M 1 20063 1 20062
+M 1 20063 1 20062
+M 1 20063 1 20059
+M 1 20063 1 20059
+M 1 20063 1 20058
+M 1 20063 1 20058
+M 1 20077 1 20098
+M 1 20077 1 20091
+M 1 20077 1 20090
+M 1 20077 1 20089
+M 1 20077 1 20088
+M 1 20077 1 20087
+M 1 20077 1 20086
+M 1 20077 1 20085
+M 1 20083 1 20083
+M 1 20083 1 20083
+M 1 20083 1 20081
+M 1 20083 1 20081
+M 1 20117 1 20117
+M 1 20063 1 20136
+M 1 20063 1 20141
+M 1 20026 1 20050
+M 1 20063 1 20134
+M 1 20063 1 20134
+M 1 20092 1 20092
+M 1 20092 1 20095
+M 1 20092 1 20096
+M 1 20092 1 20096
+O 1 20097 1 20096
+M 1 20092 1 20097
+M 1 20092 1 20093
+M 1 20092 1 20093
+O 1 20097 1 20093
+M 1 20122 1 20122
+D 0 20151 1 2
+D 0 20151 2 2
+D 0 20152 0 2
+D 0 20152 3 2
+D 0 20153 0 2
+D 0 20153 2 2
+D 0 20154 1 2
+D 0 20154 2 2
+M 1 20100 1 20155
+G 1 20013 1
+G 1 20011 1
+G 1 20010 1
+G 1 20009 1
+G 1 20008 1
+D 0 20155 1 2
+D 0 20155 3 2
+D 0 20129 0 2
+D 0 20129 3 2
+M 1 20022 1 20022
+G 1 20008 1
+M 1 20116 1 20116
+G 1 6015 1
+G 1 6014 1
+G 1 6013 1
+G 1 6012 1
+M 1 20195 1 20195
+G 1 9008 1
+G 1 6009 1
+G 1 6003 1
+G 1 6010 1
+G 1 6002 1
+G 1 6000 1
+G 1 20193 2
+G 1 20195 1
+M 1 20197 1 20197
+G 1 6021 1
+G 1 6020 1
+G 1 6019 1
+G 1 6018 1
+G 1 6017 1
+G 1 6016 1
+M 1 20196 1 20196
+G 1 20190 1
+G 1 20191 1
+G 1 20193 1
+G 1 20196 1
+G 1 20192 1
+G 1 20195 1
+M 1 20156 1 20156
+M 1 20008 1 20008
+M 1 20148 1 20148
+M 1 20129 1 20160
+G 1 20160 1
+G 1 20155 3
+D 0 20160 3 0
+M 1 20030 1 20030
+D 0 20030 3 0
+D 0 20029 1 2
+O 1 20038 1 20038
+M 1 20051 1 20053
+M 1 20245 1 20248
+M 1 20245 1 20248
+M 1 20245 1 20249
+M 1 20245 1 20249
+M 1 20245 1 20250
+M 1 20245 1 20250
+M 1 20254 1 20235
+M 1 20254 1 20235
+M 1 20255 1 20235
+M 1 20254 1 20236
+M 1 20254 1 20236
+M 1 20254 1 20237
+M 1 20254 1 20237
+M 1 20254 1 20238
+M 1 20254 1 20238
+M 1 20255 1 20239
+M 1 20255 1 20239
+M 1 20255 1 20240
+M 1 20255 1 20240
+M 1 20254 1 20234
+M 1 20254 1 20234
+M 1 20254 1 20233
+M 1 20254 1 20233
+M 1 20255 1 20233
+M 1 20253 1 20232
+M 1 20253 1 20232
+M 1 20253 1 20231
+M 1 20253 1 20231
+M 1 20253 1 20230
+M 1 20253 1 20230
+M 1 20255 1 20230
+M 1 20253 1 20229
+M 1 20253 1 20229
+M 1 20241 1 20241
+M 1 20240 1 20241
+M 1 20240 1 20241
+M 1 20240 1 20242
+M 1 20240 1 20242
+M 1 20240 1 20243
+M 1 20240 1 20243
+M 1 20240 1 20244
+M 1 20240 1 20244
+M 1 20245 1 20245
+M 1 20245 1 20245
+M 1 20239 1 20245
+M 1 20245 1 20246
+M 1 20245 1 20246
+M 1 20245 1 20247
+M 1 20245 1 20247
+M 1 20253 1 20228
+M 1 20253 1 20228
+M 1 20253 1 20208
+M 1 20253 1 20208
+M 1 20251 1 20209
+M 1 20251 1 20209
+M 1 20251 1 20210
+M 1 20251 1 20210
+M 1 20251 1 20211
+M 1 20251 1 20211
+M 1 20250 1 20212
+M 1 20250 1 20212
+M 1 20250 1 20213
+M 1 20250 1 20213
+M 1 20250 1 20214
+M 1 20250 1 20214
+M 1 20250 1 20215
+M 1 20250 1 20215
+M 1 20250 1 20216
+M 1 20250 1 20216
+M 1 20250 1 20217
+M 1 20250 1 20217
+D 0 20202 1 0
+M 1 20260 1 20260
+M 1 20249 1 20251
+M 1 20249 1 20251
+M 1 20249 1 20252
+M 1 20249 1 20252
+M 1 20249 1 20253
+M 1 20249 1 20253
+M 1 20249 1 20254
+M 1 20249 1 20254
+M 1 20249 1 20255
+M 1 20249 1 20255
+M 1 20249 1 20256
+M 1 20249 1 20256
+M 1 20249 1 20257
+M 1 20249 1 20257
+M 1 20249 1 20258
+M 1 20249 1 20258
+M 1 20249 1 20259
+M 1 20249 1 20259
+D 0 20259 3 0
+D 0 20187 5 0
+D 0 20186 4 0
+D 0 20143 1 2
+M 1 20269 1 20264
+D 0 20264 0 0
+M 1 20088 1 20184
+M 1 20079 1 20080
+G 1 20079 1
+D 0 20080 0 2
+M 1 20056 1 20056
+M 1 20056 1 20056
+M 1 20101 1 20158
+G 1 20160 2
+G 1 20008 1
+M 1 20101 1 20158
+D 0 20158 1 0
+D 0 20158 3 1
+M 1 20157 1 20157
+D 0 20157 0 1
+M 1 20173 1 20183
+M 1 20179 1 20168
+M 1 20179 1 20168
+M 1 20179 1 20069
+M 1 20179 1 20069
+M 1 20179 1 20070
+M 1 20179 1 20170
+M 1 20179 1 20170
+M 1 20179 1 20170
+M 1 20179 1 20170
+M 1 20179 1 20176
+M 1 20179 1 20176
+M 1 20179 1 20175
+M 1 20179 1 20175
+M 1 20174 1 20175
+M 1 20179 1 20071
+M 1 20179 1 20071
+M 1 20179 1 20071
+M 1 20174 1 20071
+M 1 20174 1 20071
+M 1 20179 1 20169
+M 1 20179 1 20169
+M 1 20174 1 20169
+M 1 20179 1 20173
+M 1 20179 1 20173
+M 1 20179 1 20173
+M 1 20174 1 20173
+M 1 20179 1 20172
+M 1 20174 1 20172
+M 1 20179 1 20172
+M 1 20174 1 20172
+M 1 20165 1 20165
+M 1 20133 1 20135
+M 1 20133 1 20135
+M 1 20133 1 20133
+M 1 20133 1 20133
+M 1 20063 1 20133
+M 1 20133 1 20133
+M 1 20133 1 20132
+M 1 20133 1 20132
+M 1 20063 1 20132
+M 1 20133 1 20131
+M 1 20063 1 20131
+M 1 20133 1 20131
+M 1 20133 1 20130
+M 1 20133 1 20130
+M 1 20063 1 20130
+M 1 20133 1 20130
+M 1 20133 1 20111
+M 1 20133 1 20111
+M 1 20063 1 20111
+M 1 20133 1 20111
+M 1 20133 1 20108
+M 1 20133 1 20108
+M 1 20161 1 20161
+M 1 20085 1 20084
+G 1 20079 1
+D 0 20084 2 1
+M 1 20110 1 20110
+E 1 20110 1 17
+E 1 20111 1 16
+M 1 20133 1 20110
+M 1 20133 1 20110
+M 1 20133 1 20185
+M 1 20133 1 20185
+M 1 20133 1 20109
+M 1 20133 1 20109
+M 1 20133 1 20055
+M 1 20133 1 20055
+M 1 20133 1 20055
+D 0 20128 1 2
+D 0 20159 1 0
+S
+
+
+#SHOPS
+ 20000    0  0  0  0  0   100  90         0 23    ; A coin seller
+ 20052    0  0  0  0  0   100  90         0 23    ; A small balled man
+ 20116    0  0  0  0  0   100  50         1  0    ; A Shopkeeper
+ 20183    0  0  0  0  0   100  90         0 23    ; The Candy man
+ 20195    0  0  0  0  0   100  90         0 23    ; Tanya
+ 20196    0  0  0  0  0   100  90         0 23    ; Julia
+ 20197    0  0  0  0  0   100  90         0 23    ; Adam
+ 20266    0  0  0  0  0   100  90         0 23    ; A short bald man
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

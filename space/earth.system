@@ -1,0 +1,51 @@
+#SPACE
+Name         Sol System~
+Filename     earth.system~
+Planet1      earth~
+Planet2      ~
+Planet3      ~
+Star1        Sol~
+Star2        ~
+Location1a      Kame's Lookout~
+Location1b      Satan City Docking Port Alpha~
+Location1c      Space Port Delta~
+Location2a       ~
+Location2b      ~
+Location2c      ~
+Location3a      ~
+Location3b      ~
+Location3c      ~
+Doc1a          2124
+Doc2a          0
+Doc3a          0
+Doc1b          3871
+Doc2b          0
+Doc3b          0
+Doc1c          9042
+Doc2c          0
+Doc3c          0
+P1x          3493
+P1y          4174
+P1z          2904
+P2x          0
+P2y          0
+P2z          0
+P3x          0
+P3y          0
+P3z          0
+S1x          1
+S1y          1
+S1z          1
+S2x          0
+S2y          0
+S2z          0
+Gravitys1     0
+Gravitys2     0
+Gravityp1     0
+Gravityp2     0
+Gravityp3     0
+Xpos          7296
+Ypos          11957
+End
+
+#END

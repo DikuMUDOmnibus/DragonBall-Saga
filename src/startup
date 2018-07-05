@@ -1,0 +1,105 @@
+#!/bin/csh -f
+
+# Set the port number.
+set port = 9000
+if ( "$1" != "" ) set port="$1"
+
+# Change to area directory.
+cd ../area
+
+# Set limits.
+nohup
+nice
+limit stack 1024k
+ulimit -Sc unlimited
+if ( -e shutdown.txt ) rm -f shutdown.txt
+
+while ( 1 )
+    # If you want to have logs in a different directory,
+    #   change the 'set logfile' line to reflect the directory name.
+
+#    rm ../log/syslog.9
+    # We have space to archive old log files now...
+    if ( -e ../log/syslog.9 ) then
+      set index = 1000
+      while ( 1 )
+        set archivefile = ../log/archived/$index.log
+            if ( ! -e $archivefile ) break
+            @ index++
+      end
+      mv ../log/syslog.9 $archivefile
+    endif
+
+    mv ../log/syslog.8 ../log/syslog.9
+    mv ../log/syslog.7 ../log/syslog.8
+    mv ../log/syslog.6 ../log/syslog.7
+    mv ../log/syslog.5 ../log/syslog.6
+    mv ../log/syslog.4 ../log/syslog.5
+    mv ../log/syslog.3 ../log/syslog.4
+    mv ../log/syslog.2 ../log/syslog.3
+    mv ../log/syslog.1 ../log/syslog.2
+    mv ../log/syslog.log   ../log/syslog.1
+    #touch ../log/syslog.log
+
+    # start DBSaga tarball backup
+#      cd ../../
+#        mv backup/dbsbackup.current.tar.gz backup/dbsbackup.previous.tar.gz
+#        tar -czf backup/dbsbackup.current.tar.gz -X backup/exclude.list ./dbs
+#      cd dbs/area
+	cd ../area
+    # end DBSaga tarball backup
+
+    cp ../system/hiscores.dat ../system/hiscores.bak
+
+	set logfile = ../log/syslog.log
+
+    # Record starting time
+    date > $logfile
+    date > ../area/boot.txt
+
+    # Record initial charges
+    # charges >> $logfile
+
+    # Run SMAUG.
+    # NO! Run DBSaga!
+    ../src/dbsaga $port >&! $logfile
+
+#    ../src/smaug 7654 >&! $logfile
+#    ../src/smaug $port >&! $logfile
+#    ../src/smaug >>&! $logfile
+
+    # Record ending charges
+    # charges >> $logfile
+
+#    # Delete this out if no adb.
+#    if ( -e core ) then
+#	    echo '$c' | adb ../src/smaug
+#    endif
+
+    # Let's see if this works...
+    # Using old index value, would be nice to have
+    # it be the date for the file name
+    if ( -e core ) then
+      set index = 1000
+      while ( 1 )
+        set crashfile = ../crash/$index.crash
+	    if ( ! -e $crashfile ) break
+	    @ index++
+      end
+      \mv core ../src
+      cd ../src
+      date > $crashfile
+      gdb -batch -x commands dbsaga core >> $crashfile
+#        mv core ../crash/core.$index
+      rm -f core
+      cd ../area
+    endif
+
+    # Restart, giving old connections a chance to die.
+    if ( -e shutdown.txt ) then
+	rm -f shutdown.txt
+	exit 0
+    endif
+    sleep 10
+end
+

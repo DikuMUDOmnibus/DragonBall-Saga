@@ -1,0 +1,57 @@
+DragonBall Saga Codebase Cygwin Install Instructions
+----------------------------------------------------
+1)  Download the Cygwin setup program from http://www.cygwin.com/
+
+2)  Run setup.exe
+
+3)  Select the following packages if they are not already:
+    Base
+     - zlib
+    Devel
+     - gcc-g++
+     - make
+     - patchutils
+    Libs
+     - crypt
+     - gmp
+    Shells
+     - tcsh
+
+4)  Select any other packages you wish to download.  I'd suggest getting
+    Devel->gdb also as it is a very useful debugging tool.
+
+5)  Wait while Cygwin downloads and installs.
+
+6)  After Cygwin is installed, run it and let Cygwin set up your home folder.
+
+7)  Copy the DBSC files to "C:\cygwin\home\username" (default location).
+
+8)  Open up and edit "dbsc/src/Makefile" and find the following lines:
+      #Uncomment if you wish to enable the Mud Client Compression Protocol
+      #Comment it out it if you are compiling with Cygwin
+      OPT_FLAG = -DMCCP
+    Comment out "OPT_FLAG = -DMCCP" by putting a pound (#) symbol just before
+    that line.  It should now look like this: 
+      #Uncomment if you wish to enable the Mud Client Compression Protocol
+      #Comment it out it if you are compiling with Cygwin
+      #OPT_FLAG = -DMCCP
+
+9)  Now in Cygwin just head over to the dbsc/src folder and type "make".
+
+10)  After DBSC is compiled, while still in the dbsc/src folder type "./startup"
+    or if you want to do other things in Cygwin while DBSC is running type
+    "nohup ./startup &"
+
+11) Finally start up your favorite MUD client and connect to the following
+    address: localhost and use "9000" as the port number.  If you want to change
+    what port DBSC starts on, open up and edit "dbsc/src/startup" and find the
+    following lines:
+      # Set the port number.
+      set port = 9000
+    Just change the "9000" to what ever number you want DBSC to use.  Most MUD's
+    use numbers between 1000 and 9999.
+
+=============================================
+               Last Update
+                May 2005
+---------------------------------------------

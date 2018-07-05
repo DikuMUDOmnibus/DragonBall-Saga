@@ -1,0 +1,114 @@
+#HISCORES
+#TABLE
+Keyword    powerlevel
+Desc       Strongest Warriors in the Universe~
+Vnum       -1
+MaxLength  50
+End
+
+#TABLE
+Keyword    plsaiyan
+Desc       Strongest Saiyans in the Universe~
+Vnum       -1
+MaxLength  50
+End
+
+#TABLE
+Keyword    plhuman
+Desc       Strongest Humans in the Universe~
+Vnum       -1
+MaxLength  50
+End
+
+#TABLE
+Keyword    plhalfbreed
+Desc       Strongest Halfbreeds in the Universe~
+Vnum       -1
+MaxLength  50
+End
+
+#TABLE
+Keyword    plnamek
+Desc       Strongest Nameks in the Universe~
+Vnum       -1
+MaxLength  50
+End
+
+#TABLE
+Keyword    plandroid
+Desc       Strongest Androids in the Universe~
+Vnum       -1
+MaxLength  50
+End
+
+#TABLE
+Keyword    plicer
+Desc       Strongest Icers in the Universe~
+Vnum       -1
+MaxLength  50
+End
+
+#TABLE
+Keyword    plbio-android
+Desc       Strongest Bio-Androids in the Universe~
+Vnum       -1
+MaxLength  50
+End
+
+#TABLE
+Keyword    played
+Desc       Most Hours Played~
+Vnum       -1
+MaxLength  50
+End
+
+#TABLE
+Keyword    pkill
+Desc       Greatest Pkillers~
+Vnum       -1
+MaxLength  50
+End
+
+#TABLE
+Keyword    deaths
+Desc       Most Visits to King Yamma~
+Vnum       -1
+MaxLength  50
+End
+
+#TABLE
+Keyword    sparwins
+Desc       Highest Spar Ranking~
+Vnum       -1
+MaxLength  50
+End
+
+#TABLE
+Keyword    sparloss
+Desc       Most Spar Losses~
+Vnum       -1
+MaxLength  50
+End
+
+#TABLE
+Keyword    mkills
+Desc       Most Mob Kills~
+Vnum       -1
+MaxLength  50
+End
+
+#TABLE
+Keyword    zeni
+Desc       Richest Players~
+Vnum       -1
+MaxLength  50
+End
+
+#TABLE
+Keyword    bounty
+Desc       Greatest Bounty Hunters~
+Vnum       -1
+MaxLength  50
+End
+
+#END

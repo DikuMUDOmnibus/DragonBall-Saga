@@ -1,0 +1,81 @@
+* common elvish dwarven pixie ogre orcish trollese rodent insectoid mammal
+* reptile dragon spiritual magical goblin god ancient halfling clan gith
+
+* structure is:
+* #language
+* pre-conversions~
+* alphabet~
+* conversions~
+
+#common
+~
+abcdefghijklmnopqrstuvwxyz~
+~
+
+#default * for any language without a table
+~
+ekjrugtlohfqbxyvndwmaczsip~
+~
+
+#saiyan
+~
+ekjrugtlohfqbxyvndwmaczsip~
+~
+
+#halfbreed
+~
+ekjrugtlohfqbxyvndwmaczsip~
+~
+
+#namek
+~
+ekjrugtlohfqbxyvndwmaczsip~
+~
+
+#android
+~
+ekjrugtlohfqbxyvndwmaczsip~
+~
+
+#icer
+~
+ekjrugtlohfqbxyvndwmaczsip~
+~
+
+#mutant
+~
+ekjrugtlohfqbxyvndwmaczsip~
+~
+
+#bio_android
+~
+ekjrugtlohfqbxyvndwmaczsip~
+~
+
+#magical   * emulate say_spell from magic.c
+'ar' 'abra'
+'au' 'kada'
+'bless' 'fido'
+'blind' 'nose'
+'bur' 'mosa'
+'cu' 'judi'
+'de' 'oculo'
+'en' 'unso'
+'light' 'dies'
+'lo' 'hi'
+'mor' 'zak'
+'move' 'sido'
+'ness' 'lacri'
+'ning' 'illa'
+'per' 'duda'
+'ra' 'gru'
+'re' 'candus'
+'son' 'sabru'
+'tect' 'infra'
+'tri' 'cula'
+'ven' 'nofo'
+~
+abqezyopuytrwiasdfghjzxnlk~
+~
+
+#end

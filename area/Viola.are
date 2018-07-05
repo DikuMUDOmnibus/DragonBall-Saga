@@ -1,0 +1,3978 @@
+#AREA   Ancient Lab Basement~
+
+
+
+#VERSION 251
+#AUTHOR Viola~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 4
+
+#RESETMSG A fine layer of dust starts to form on your clothing as you stand still for a moment.  You suddenly wonder if there's a section down here set aside for you...~
+
+#FLAGS
+4
+
+#ECONOMY 0 9125
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#100700
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#100701
+Android Six 6 old aged man~
+Android Six~
+What looks like a strange, metal, aged man rests here on a metal stool
+~
+This figure looks like an old man, made entirely from metal.  He
+clutches a thick cane in his knobby metal hands, a long, white beard
+flowing from his chin.  The top of his head is clear, showing through to a
+human brain.
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 50000000000
+112 112 1
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+cackle
+say Well...I see someone has finally come to check up on us.  Stuck down here now, ain't yah?
+say And got a big hunk of robot there, too?
+laugh
+say I don't mind helping you get out of here...believe me, you don't wanna be stuck down here.  You new-fangled, shiny thing.
+say Whenever you want my...'help'...getting out of here...just go ahead and tell me how many chunks of that old hunk of junk you have.
+snicker
+~
+> speech_prog one~
+if carryingvnum($n) 100708
+say So, who did Android 18 fight first after our 'great master' Gero let her free, mm?
+smirk
+else
+say What happened to the robot parts, hmm?
+endif
+~
+> speech_prog Vegeta~
+gasp
+say Why, the young whipper-snapper is right!
+say Well, head on out to meet one of the other captives here...if'n you can find it!
+laugh
+if carryingvnum($n) 100709
+say You already got one!
+else
+mpoload 100709
+give keycard $n
+endif
+~
+> speech_prog four~
+if carryingvnum($n) 100714
+say Well, well...the walking toaster did a good job!
+cackle
+say But, you know...bein' down his is sure boring.  You know what would just make me have a grand ol' time?
+grin
+say If'n you had to part with just about fifty thousand shiny zeni pieces.  They maybe I'll show you how to get the last keycard, youngster!
+laugh
+else
+say You lost a piece?
+endif
+~
+> bribe_prog 50000~
+if carryingvnum($n) 100714
+mpjunk all
+say Well, that's mighty kind of you...
+say Now, now...to prove yourself worthy...worthy...!
+snicker
+say To be 'worthy' of the last piece, you gotta defeat this here clankin' contraption.
+mpmload 100709
+mpecho &WA section of the wall suddenly spins around, revealing a large android that was waiting on the other side.&D
+mpecho &RHis eyes light up a bright red, systems coming online quickly, as he walks out to face $n.&D
+else
+say You ain't got it all yet, yah bucket of bolts!
+give 50000 zeni $n
+snort
+endif
+~
+|
+#100702
+Android Two 2 robot~
+Android Two~
+A small robot on treads stares up at you with a gleaming camera eye
+~
+This is a small robot, only about three feet tall, composed entirely of
+metal, which has mostly rusted.  It's covered with cobwebs and dust, and
+sports a deadly set of three clawed hands, on long arms.
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 3000000000
+112 112 0
+120 50 70 100 0
+0 0 0 0 0
+4 4 0 0 1 1 2
+0 0 0 0 0 0 2 0
+> fight_prog 30~
+mpecho &GAndroid Two opens a hatch on its body, shooting out a sudden blast of flame at $n.&D
+mppldamage $n 15
+~
+> death_prog 100~
+if rand(40)
+mpecho &RAndroid Two shudders, toppling over onto its side as it is defeated.  The robot shivers and emits sparks for a few moments, before exploding!&D
+mppldamage $n 30
+else
+endif
+if rand(50)
+mpecho $n &RAndroid Two goes dormant as you overload its systems, eye flickering out...&D
+mpecho $n &YAfter a few moments, it whirrs back to life, seeming fully repaired!&D
+mpmload 100702
+else
+mpoload 100708 $n
+mpoload 100707
+unlock n
+open n
+mpforce $n n
+close n
+lock n
+mppurge keycard
+endif
+~
+|
+#100703
+Android Three 3 humanoid robot~
+Android Three~
+A humanoid robot stands here, each arm a simple blade
+~
+This robot is of a rough humanoid size and shape, but with no
+determinable gender.  Its head is a simple egg shape with a few camera lens
+eyes in the front.  Both legs end with tread feet, its arms long, dull
+blades below the elbows.
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 20000000000
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+emote whirrs to life, a mechanical voice eminating from a hidden speaker, sounding rather raspy.
+say ...so...another Android.  You are new.  Android Six has sent you.  I understand.
+say How many of its pieces do you have, fellow Android?
+~
+> speech_prog one~
+if carryingvnum($n) 100708
+say Understood.  Who did the Bio-Android Cell absorb first to evolve into a more...perfect organism?
+else
+say Android, you...seem to have misplaced...it.
+endif
+~
+> speech_prog p Android 17~
+say Very well.  You know well...your history.
+if carryingvnum($n) 100710
+say Android...you already have...that piece.
+else
+mpoload 100710
+mpoload 100711
+give keycard $n
+give part $n
+say Search for...for Four.  If you wish to leave this place.
+endif
+~
+|
+#100704
+Android Four 4 female robot~
+Android Four~
+A female robot with strange body parts stands here
+~
+This android is definately female, as evidenced by it's curved form.
+Her body seems to be coated with a thick layer of some sort of purple
+rubber, which is covered in dust and cobwebs.  Her hands are simple metal
+pincers, her head just a security camera stuck on a thin, metal neck.
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 30000000000
+112 112 2
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+emote turns her camera slowly towards you, grinding and squeaking.  A speaker somewhere on her body crackles to life, as she speaks with a computerized attempt at a soft, female voice.
+say Oh...so are you here to be added to the collection?
+say No, no...I bet you wish to escape.  I wish I could leave as well.
+say How many parts do you have so far, android?
+~
+> speech_prog two~
+if carryingvnum($n) 100710
+say I see...mmm...
+say Who did that disgusting Cell first fight against?
+else
+say Missing something, hmm?
+endif
+~
+> speech_prog Piccolo~
+say Very good job...very good indeed.  If I could smile, I would.
+if carryingvnum($n) 100712
+say No, no...you already have this piece.
+else
+mpoload 100712
+mpoload 100713
+give part $n
+give keycard $n
+say Now you must find the fifth android Gero created...only to forget about...
+endif
+~
+|
+#100705
+Android Five 5 male~
+Android Five~
+A tall, male android stands here, waiting for something
+~
+This android is modeled after a tall, male human.  His face is a simple
+metal mask, immobile, red lights behind the eyes and a speaker inside the
+open lips. The rest of his body is sculpted as it were wearing metal
+clothing, his fingers all one piece, like a metal mitten.
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 40000000000
+112 112 1
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Ahh, another one?  Sent by the others.  Your last stop.
+say How much of it do you have now?
+~
+> speech_prog three~
+if carryingvnum($n) 100712
+say I suppose we move to the questions now.
+say So, who did Android 17 fight with before Cell arrived and attacked him?
+else
+say Forget something?
+endif
+~
+> speech_prog Piccolo~
+say The right answer.  Seems you know your stuff.
+if carryingvnum($n) 100714
+say Ahh...bad android.  You already have one.
+else
+mpoload 100714
+give part $n
+say Head back to the crazy old coot.  I have to wonder why Gero locked cyborgs like him down here...
+endif
+~
+|
+#100706
+metal head prototype android~
+Prototype Android Head~
+A metal head rests here on a short pillar
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+echo The disembodied head speaks up, mouth crinkling into a sneer.
+say So, found all my parts, did you?
+say Merely answer this last question, simpleton, to gain the final piece of the puzzle.
+laugh
+say Are you ready?
+~
+> speech_prog ready~
+if carryingvnum($n) 100714
+say So, tell me...which Android did the Prince of all Saiyans, Vegeta, so easily destroy?
+else
+say You fool!  You do not have the fourth piece, yet!
+endif
+~
+> speech_prog combine~
+get all
+if ovnuminv(100708) >= 1
+  if ovnuminv(100710) >= 1
+    if ovnuminv(100712) >= 1
+      if ovnuminv(100714) >= 1
+        If ovnuminv(100716) >= 1
+        cackle
+        say Finally, I shall be complete!
+mpecho &YThe pieces all disappear in a crackle of energy.  A moment later, a bright flash of light erupts from the next room.&D
+        mpgoto 100731
+        mpmload 100707
+        say Combine!
+        else
+        say NO!
+        drop all
+        endif
+      else
+      say NO!
+      drop all
+      endif
+     else
+     say NO!
+     drop all
+     endif
+   else
+   say NO!
+   drop all
+   endif
+else
+say NO!
+drop all
+endif
+~
+> speech_prog p Android 19~
+evilgrin
+say My, my...what a smart one you are.  Smart enough to get yourself trapped down here.
+if carryingvnum($n) 100714
+mpoload 100716
+drop leg
+say Well...simply drop all the pieces and say 'combine.'  They'll be put all together.
+cackle
+else
+say What, did you lose a piece already?  You fool!
+endif
+~
+|
+#100707
+Prototype Vegeta Saiyan android~
+Prototype Vegeta Android~
+A robotic copy of the Saiyan Vegeta floats here, laughing at your mistake
+~
+This short android seems to be an exact duplicate of the Saiyan prince.
+Of course, his parts are a little old and rusty.  A few pieces are not
+quite complete, but that cocky sneer is unmistakable. Oddly, one arm seems
+to have been unfinished, a laser cannon of some sort attached to it instead
+of a lower arm or hand.
+~
+1 524288 -1000 C
+1 0 100 1d20+0 2d5+0
+0 10000000000
+112 112 1
+125 100 90 80 20
+0 0 0 0 0
+4 4 0 0 1 1 3
+0 0 0 0 0 0 48 0
+> speech_prog Combine!~
+if isnpc($n)
+mppurge head
+endif
+~
+> fight_prog 20~
+mpecho &GVegeta flies into the air above $n, turning one side of his body towards $m.&D
+mpecho &GThe Saiyan robot sneers as he raises the laser cannon, a blue glow shining to life inside of it.&D
+mpecho &G"BIG BANG!"  A huge sphere of blue energy blasts towards $n, exploding on contact.&D
+mppldamage $n 30
+~
+> fight_prog 20~
+mpecho &GVegeta flies up into the air above $n, turning one side of his body towards $M.&D
+mpecho &GThe Saiyan robot sneers, as he raises the laser cannon, a blue glow shining to life inside of it.&D
+mpecho &G"BIG BANG!"  A huge sphere of blue energy blasts towards $n, exploding on contact.&D
+mppldamage $n 30
+~
+> fight_prog 10~
+'rocket punch'
+~
+> fight_prog 10~
+'eye beam'
+~
+> death_prog 100~
+if rand(10)
+mpoload 100703 $n
+endif
+if rand(10)
+mpechoat $n &BVegeta sneers as you injure him.  "No...NO!  It cannot be!  I will not be destroyed by the likes of you, tin man!  I AM THE PRINCE OF ALL SAIYANS!"&D
+mpechoaround $n &BVegeta sneers as $n injures him.  "No...NO!  It cannot be!  I will not be destroyed by the likes of you, tin man!  I AM THE PRINCE OF ALL SAIYANS!"&D
+mpechoat $n &RThe false Vegeta howls with rage, sparks flying from his body.  Streams of light begin to blast from every chink and crack in his metal body, power overloading.  Suddenly, he explodes in a giant column of pure energy, tearing you apart.&D
+mpechoaround $n &RVegeta howls with rage, sparks flying from his body.  Streams of light begin to blast from every chink and crack in his metal body before he explodes in a giant column of pure energy, nearly destroying you along with $n.&D
+mpslay $n
+endif
+~
+|
+#100708
+teleport robot~
+a teleport robot~
+A small robot waits here to teleport you to the next room
+~
+This small, shiny robot is made completely from some kind of space age
+metal.  There seems to be something very faintly engraved upon a plaque
+bolted to its chest. You barely make out instructions telling you to stand
+near the robot and say the word 'teleport' to transfer to the room beyond
+the window.  There's also a warning, stating that there is no way to
+teleport back to this room.
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog teleport~
+if ovnuminv(100709) >= 1
+    if ovnuminv(100711) >= 1
+      if ovnuminv(100713) >= 1
+        if ovnuminv(100715) >= 1
+        mpechoat $n &BYour vision flashes to black for a moment, before returning.  You notice you are no longer in the same room.&D
+        mpechoaround $n &B$n is suddenly gone, replaced by a pillar of blue light that quickly fades away.&D
+        mptransfer $n 100731
+        mpjunk all
+        else
+        say You must first deposit all the keycards you have collected in this storage area.
+        endif
+      else
+      say You must first deposit all the keycards you have collected in this storage area.
+      endif
+    else
+    say You must first deposit all the keycards you have collected in this storage area.
+    endif
+  else
+  say You must first deposit all the keycards you have collected in this storage area.
+  endif
+~
+|
+#100709
+Prototype Android 16 robot~
+Prototype Android 16~
+A very large, uncompleted android stands here, waiting for a challenge
+~
+This huge android stands head and shoulders above most average sized
+people, a large, metal mohawk adding to his height. His thick, metallic
+body is sculpted as if he were wearing some kind of battle armor, though
+many pieces are missing, showing through to the inner workings of the
+android.
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 7500000000
+112 112 1
+130 90 80 100 15
+0 0 0 0 0
+4 4 0 0 1 1 3
+0 0 0 0 0 0 48 0
+> fight_prog 45~
+'hells flash'
+~
+> fight_prog 20~
+'rocket punch'
+~
+> fight_prog 35~
+mpecho &GAndroid 16 detaches one of his fists, rockets firing as it blasts towards $n.  The fist suddenly opens, and grabs tightly onto $m arm, holding $n still.&D
+mpecho &GThe huge android rushes at $n, grabbing $s head in one huge hand.  The other hand reconnects to his body as he lifts $n into the air and runs towards a nearby wall, smashing his opponent into it hard!&D
+mppldamage $n 20
+if rand(50)
+mpecho &GSixteen drags $n across the wall, smashing $m into the corner before tossing $s battered body away.&D
+mppldamage $n 20
+endif
+~
+> death_prog 100~
+if rand(20)
+mpoload 100715
+endif
+~
+|
+#100710
+Android Seven 7 battle robot~
+Android Seven~
+A huge, menacing robot that seems built for battle looms over you here
+~
+This gigantic robot stands more than ten feet tall, nearly scraping the
+ceiling with the top of its head.  Its entire body is covered with
+weaponry.  Blades, claws, laser and gun barrels. This is simply a walking
+weapon, built for nothing but destruction.
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 25000000000
+112 112 0
+150 50 100 100 15
+0 0 0 0 0
+4 4 0 0 1 1 3
+0 0 0 0 0 0 18 0
+> fight_prog 30~
+mpecho &GThe huge android slashes with its deadly claws, scoring a particularly deep slash on $n.&D
+mppldamage 20
+if rand(30)
+mpecho &GAndroid Seven suddenly twists as a huge buzzsaw extends from its side, ripping into $n's body while $e is still stunned from the slash.&D
+mppldamage $n 30
+endif
+~
+> fight_prog 20~
+mpecho &GAndroid Seven suddenly activates its lasers, multiple beams of light shooting out to blast $n!&D
+mppldamage $n 15
+if rand(50)
+mpecho &GA soft hiss is heard before the huge android fires a huge blast of flame into $n's face.&D
+mppldamage $n 25
+endif
+~
+> death_prog 100~
+if rand(20)
+mpecho &RAndroid Seven shudders, toppling over onto its side as it is defeated, kicking up a huge cloud of dust.  The robot shivers and emits sparks for a few moments, before violently exploding!&D
+mppldamage $n 40
+endif
+if rand(50)
+mpecho $n &RAndroid Seven goes dormant as you overload its systems, slumping over lifelessly.&D
+mpecho $n &YAfter a few moments, it whirrs back to life, somehow ready for battle once more.&D
+mpmload 100710
+else
+mpoload 100719 $n
+mpoload 100718
+unlock n
+open n
+mpforce $n n
+close n
+lock n
+mppurge keycard
+endif
+~
+|
+#100711
+Android Twelve 12 robot lady~
+Android Twelve~
+A rather pretty young lady sits here at a quaint table
+~
+This particular android looks completely human.  Actually, she appears
+to be a very beautiful female human. Somehow, the modest blue dress she
+wears as managed to survive all her time down here, and she is completely
+free of dirt or cobwebs.
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 50000000000
+112 112 2
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+smile
+say Oh, my...an unknown android, come to visit us.
+say No, that's silly...you've probably become stuck down here too.  But I am so glad to see someone besides the androids Gero left down here.  We all have security devices installed to keep us trapped, but we wouldn't mind helping you get free.
+love
+say Just tell me how many pieces of that prototype you have found, and I'd be happy to offer whatever help I can.
+nod
+~
+> speech_prog one~
+if carryingvnum($n) 100719
+say Ready, then?  Answer my question, please...
+say Which member of the Red Ribbon Army was the assistant to Commander Red?
+else
+say Oh my goodness!  Have you lost a piece?
+endif
+~
+> speech_prog Black~
+if carryingvnum($n) 100720
+say You naughty robot!  You already have one.
+giggle
+else
+smile
+say Yes, that is correct.  What a bright child!
+mpoload 100720
+give keycard $n
+say Search out Android Nine next.  Please, be kind to her...
+endif
+~
+> speech_prog four~
+if carryingvnum($n) 100725
+sigh
+say Oh, well...I see.  I do not really wish to do this to you, but it is what I have been programmed to do.
+say I require one hundred thousand zeni in order to usher you closer to the exit of this lonely place.
+else
+say No, I don't think you have that many yet, hun.
+smile
+endif
+~
+> bribe_prog 100000~
+mpjunk all
+if carryingvnum($n) 100725
+say Very well then...
+mpecho &WThe lady android presses a section of her table, as you hear a rumbling noise from the room to the south.&D
+mpgoto 100764
+mpmload 100716
+mpgoto 100765
+say Good luck, I hope to see you again.
+sigh $n
+else
+say You seem to have lost a piece or two.  I'm very sorry...try again later?
+endif
+~
+|
+#100712
+Android Nine 9 cute girl~
+Android Nine~
+A cute little girl robot rests in one corner
+~
+This android is modled after a young, female human. She looks completely
+convincing, except the top of her head is a clear plastic dome exposing a
+human brain.  To either side sprout long, black pigtails. The android and
+her dress both seem in very good condition.
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 2
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpecho &CThe robot in the corner activates a moment after you enter, raising her head.&D
+say Oh, hi!  Someone new came to see me!
+tackle $n
+snuggle $n
+say I bet Miss Twelve sent you, right?  She's very nice to me...I hope one day she'll help me out of here.  So, funny robot...how many pieces of that thing do you have?
+~
+> speech_prog one~
+if carryingvnum($n) 100719
+say Okay dokay!
+giggle
+say So, which one of those silly Red Ribbon people was like, a ninja?
+else
+say Hey, meanie...you don't have that piece yet!
+pout
+endif
+~
+> speech_prog Purple~
+smile
+say That's right!  Wheee!!
+if carryingvnum($n) 100721
+say Too bad you already have that stuff.  You big silly!
+else
+mpoload 100722
+mpoload 100721
+give arm $n
+give keycard $n
+say Well, see you later?
+sniff
+endif
+~
+> rand_prog 5~
+emote looks like she could use a hug.
+sniff
+~
+> act_prog hugs~
+smile
+hug $n
+say Thank you!
+if rand(2)
+say Here...take this.  To remember me!
+mpoload 100728
+give doll $n
+nkiss $n
+endif
+~
+|
+#100713
+Android Ten 10 angry male robot~
+Android Ten~
+A very angry looking male robot has paced a trail into the floor
+~
+This android looks just like a large, muscular, male human, except for
+the fact that his skin is a dull silver. His bright red mop of spikey hair
+is a reminder of his firey attitude, as this robot seems to have quite a
+temper.
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 30000000000
+112 112 1
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+glare $n
+say Who are you?  Come to disturb me?
+say I won't stand for this...hurry up and tell me how many pieces you have, or get out!
+cruel
+~
+> speech_prog two~
+if carryingvnum($n) 100721
+roll
+say Oh, yes...good job.  Idiot.
+say Tell me, which of the generals was in charge of Muscle Tower?
+else
+snarl
+say Get out!  Come back when you have the correct pieces!
+endif
+~
+> speech_prog White~
+clap
+say Oh, what a good job.  A microwave would be smart enough to answer a question that easy.  Proud of yourself?
+if carryingvnum($n) 100723
+say We've been through this whole charade before.  Don't waste my time.
+else
+mpoload 100723
+mpoload 100724
+give arm $n
+give keycard $n
+say Yes, very well.  You have what you came for, now get out.  Go bother one of the other pieces of junk left to rot down here.
+endif
+~
+|
+#100714
+Android Eleven 11 professor man robot~
+Android Eleven~
+A robot that resembles a professor relaxes here in a comfy chair
+~
+This android looks just as humanoid as the others around this area,
+except his skin is a shiny copper tone. He wears a robe and sandals,
+looking rather relaxed as he sits in his chair and re-reads the same books
+over and over...
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 40000000000
+112 112 1
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+emote looks up from a book he was reading, smiling at $n.
+say Well, nice to see a new face down here.  I'm sure you want to get out of here, yes?  I'm rather comfy, myself...wish I had a few new books, though.
+say How many pieces do you have, now?
+~
+> speech_prog three~
+if carryingvnum($n) 100723
+nod
+say Yes, you seem to have it all there.
+say Now, what doctor supposedly created the androids, before Dr. Gero revealed himself to have been working for the Red Ribbon Army?
+else
+say Oh, goodness...no, I think you're missing something...
+endif
+~
+> speech_prog p Dr. Frappe~
+eyebrow
+say Well, well...that was a tough one, but you got it right.
+smile
+if carryingvnum($n) 100725
+say Too bad you've already got the piece?  Nice to know you still remember the answer, though.
+wink
+else
+mpoload 100725
+give leg $n
+say Well, all that's left it to head back to Miss Twelve and prepare yourself to leave.
+sigh
+say ...good luck.  You'll need it.
+emote shakes his head sadly, before going back to his book.
+endif
+~
+|
+#100715
+human head prototype android~
+Prototype Android Head~
+A human head with a mass of spikey hair rests on a pillar here
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+echo The disembodied head blinks a few times, then speaks.
+say Wow, so they helped you out?  That's wild.
+say Anyways, answer this last question for the final piece.
+smirk
+say Are you ready?
+~
+> speech_prog ready~
+if carryingvnum($n) 100725
+say All right then.  Who killed General Blue?
+else
+say Hey, sorry...looks like you're a few pieces short of a full robot.
+chuckle
+endif
+~
+> speech_prog p Tao Pai Pai~
+smile
+say Hey, good job.  Glad someone finally figured this all out.
+if carryingvnum($n) 100725
+mpoload 100727
+drop leg
+say Well, you just gotta drop all the other pieces and say 'combine.'  Then sit back and watch the magic happen.
+heh
+else
+say Hey, what's wrong?  Lose one of my pieces already?
+endif
+~
+> speech_prog combine~
+get all
+if ovnuminv(100719) >= 1
+  if ovnuminv(100721) >= 1
+    if ovnuminv(100723) >= 1
+      if ovnuminv(100725) >= 1
+        If ovnuminv(100727) >= 1
+        frown
+        say I wish it didn't have to be this way.  We're all just slaves to his perverted dream.
+        echo &YThe pieces all disappear in a crackle of energy, as a bright light erupts from the next room.&D
+        mpgoto 100760
+        mpmload 100717
+        say Combine!
+        else
+        say NO!
+        drop all
+        endif
+      else
+      say NO!
+      drop all
+      endif
+     else
+     say NO!
+     drop all
+     endif
+   else
+   say NO!
+   drop all
+   endif
+else
+say NO!
+drop all
+endif
+~
+|
+#100716
+Prototype Android 13 robot~
+Prototype Android 13~
+A musclebound android wearing a hat and suspenders stands here
+~
+This android is rather tall, his body covered in bulging muscles.  Most
+of his metal skeleton and frame is covered by false flesh, although in
+quite a few places you can see inside of his body.  He consantly sneers,
+his hat and clothing looking very poorly made.
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 60000000000
+112 112 1
+150 150 10 150 20
+0 0 0 0 0
+4 4 0 0 1 1 3
+0 0 0 0 0 0 48 0
+> fight_prog 40~
+ssd
+~
+> fight_prog 25~
+mpecho &GAndroid 13 grins as $n barely misses a punch at the robot, locking $s arm under his own, holding $m there as he repeatedly punches with his free hand.&D
+mppldamage $n 2
+mppldamage $n 5
+mppldamage $n 3
+mppldamage $n 2
+if rand(70)
+mpecho &GThe grinning android tosses $n away after he finishes his assault.&D
+else
+mpecho &GThe grinning android fires a blast of energy into $n's chest, sending $m flying away.&D
+mppldamage $n 20
+endif
+~
+> fight_prog 1~
+mpecho &GAndroid 13 laughs as he raises both hands, crackling spheres of energy surrounding them.&D
+mpecho &GThe robot clenches his hands into fists, making a sudden jerking motion.  $n gets a started look on $s face as $s main power source is suddenly ripped from $s body and tossed away like trash.&D
+mpslay $n
+mpsleep 5
+mptransfer $n 100700
+~
+> death_prog 100~
+if rand(30)
+mpoload 100726
+endif
+~
+|
+#100717
+Prototype USSJ2 Trunks Halfbreed android~
+Prototype Trunks~
+An android duplicate of a halfbreed waits here unhappily
+~
+This looks to be a near-exact duplicate of a legendary Halfbreed from
+the future named Trunks.  His fake muscles are grossly oversized, bulging
+with metal, wires, and the flow of energy.  It seems a holographic
+projection system has been installed on this android, causing realistic
+aura affects to surround his body.
+~
+3 524288&-1073741760 0 C
+1 0 100 1d20+0 2d5+0
+0 90000000000
+112 112 1
+250 120 60 200 10
+0 0 0 0 0
+4 4 0 0 1 1 3
+0 0 0 0 0 0 48 0
+> speech_prog Combine!~
+if isnpc($n)
+mppurge head
+endif
+~
+> fight_prog 30~
+'finishing buster'
+~
+> fight_prog 15~
+'burning attack'
+~
+> fight_prog 35~
+mpecho &WTrunks growls.  "I don't want to have to hurt you.  Damn you Dr. Gero!"&D
+mpecho &GThe Halfbreed warrior flies at $n, suddenly knocking $m up into the air with a powerful uppercut.&D
+mppldamage $n 10
+if rand(75)
+mpecho &GTrunks flies upwards, after the android, rising above $m.  He clenches both powerful hands into a double axe-handle, smashing $n back down towards the ground.&D
+mppldamage $n 15
+  if rand(50)
+  mpecho &GHe continues his assault, moving with blurring speed to get below $n as $m falls, ramming a knee hard up into $s belly.&D
+  mppldamage $n 20
+    if rand(25)
+    mpecho &GTrunks grunts as he shoves his elbow down into $n's back, before tossing $m away.&D
+    mppldamage $n 20
+    endif
+  endif
+endif
+say I'm sorry...I can't control my programming...
+~
+> death_prog 100~
+if rand(10)
+mpecho &BAs Trunks is defeated, you are somehow teleported away...&D
+mptransfer $n 100766
+else
+  if rand(10)
+  mpecho &RTrunks is destroyed in a magnificant explosion!&D
+  mpechoat $n &G...or so you thought.  Suddenly you hear the whisper of a blade slicing through the air, turning around at the last moment to see Trunks holding a sword.  Your body is sliced clean in half, exploding a few moments later.&D
+  mpechoaround $n &GYou realize the explosion was merely a hologram, as Trunks suddenly appears behind $n, slicing through $m with a sword he holds.  Both androids explode a few moments later.&D
+  mpslay $n
+  endif
+endif
+~
+|
+#100718
+teleport robot~
+a teleport robot~
+A small robot waits here to teleport you to the next room
+~
+This small, shiny robot is made completely from some kind of space age
+metal.  There seems to be something very faintly engraved upon a plaque
+bolted to its chest.  You barely make out instructions telling you to stand
+near the robot and say the word 'teleport' to transfer to the room beyond
+the window.  There's also a warning, stating that there is no way to
+teleport back to this room.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog teleport~
+if ovnuminv(100720) >= 1
+    if ovnuminv(100722) >= 1
+      if ovnuminv(100724) >= 1
+        if ovnuminv(100726) >= 1
+        mpechoat $n &BYour vision flashes to black for a moment, before returning.  You notice you are no longer in the same room.&D
+        mpechoaround $n &B$n is suddenly gone, replaced by a pillar of blue light that quickly fades away.&D
+        mptransfer $n 100760
+        mpjunk all
+        else
+        say You must first deposit all the keycards you have collected in this storage area.
+        endif
+      else
+      say You must first deposit all the keycards you have collected in this storage area.
+      endif
+    else
+    say You must first deposit all the keycards you have collected in this storage area.
+    endif
+  else
+  say You must first deposit all the keycards you have collected in this storage area.
+  endif
+~
+|
+#100719
+Android One 1 small robot monitor~
+Android One~
+A very small, simple robot with a set of monitors connected to it
+~
+This robot is only a few feet tall, looking almost like a little tank.
+A metal box on treads, basically.  There are no arms to manipulate
+anything, only a small slot for inserting or receiving items. A circular
+bank of small monitors wraps around a pole sticking out of the top of the
+robot, with one main one facing toward its front.
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+emote whirrrs to life, his main monitor flickering to life as it displays a scrolling message.
+mpecho &CTo enter the storage area, present the designated keycard.  Speak the password to activate the lift.&D
+if carryingvnum($n) 100703
+mpechoat $n &CIf you wish to upgrade your V-1 Chip, present the chip and the upgrade kit.  Then say 'upgrade v-1'.&D
+endif
+if carryingvnum($n) 100706
+mpechoat $n &CIf you wish to upgrade your V-2 Chip, present the chip and the upgrade kit.  Then say 'upgrade v-2'.&D
+endif
+~
+> speech_prog p upgrade v-1~
+if race($n) == android
+mpforce $n give v-1 one
+mpforce $n give 'chip upgrade kit one' one
+  if ovnuminv(100702) >= 1
+    if ovnuminv(100703) >= 1
+    mpjunk all
+    mpoload 100701
+    give vm-1 $n
+    else
+    mpechoat $n &CPresent both items.&D
+    drop all
+    endif
+  else
+  mpechoat $n &CPresent both items.&D
+  drop all
+  endif
+endif
+~
+> speech_prog p upgrade v-2~
+if race($n) == android
+mpforce $n give v-2 one
+mpforce $n give 'chip upgrade kit two' one
+  if ovnuminv(100706) >= 1
+    if ovnuminv(100705) >= 1
+    mpjunk all
+    mpoload 100704
+    give vm-2 $n
+    else
+    mpechoat $n &CPresent both items.&D
+    drop all
+    endif
+  else
+  mpechoat $n &CPresent both items.&D
+  drop all
+  endif
+endif
+~
+> speech_prog p Major Metallitron~
+if race($n) == android
+mpforce $n give storage one
+  if ovnuminv(storage) >=1
+  mpecho &BSuddenly, a section of the floor that looked perfectly normal before rises up, revealing a type of elevator.&D
+  mpecho &CAs $n steps into the elevator, it decends into the floor, sealing up one more behind the android.&D
+mptransfer $n 100700
+  else
+  mpecho &wA new message scrolls across Android One's screen : &CError.  Please present designated keycard.&D
+  endif
+else
+mpecho &wA new message scrolls across Android One's screen : &CError.  Only Androids are allowed into the storage area.&D
+endif
+~
+|
+#100720
+rusty skeletal robot android~
+A Rusty Skeletal Robot~
+A rusty skeletal robot is standing in the center of the dais and waving its tubelike arms in the air.
+~
+~
+3 0 0 C
+1 0 35 1d20+5 2d8+4
+0 75000000000
+112 112 0
+200 150 150 150 10
+0 0 0 0 0
+4 4 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpsleep 5
+say &YI... am the &rbzzzt&Y mas... master of &rBZZORT&Y this &rbzz... bzzt&Y master of this domain&rBZZT&Y domain.
+~
+> speech_prog domain~
+say &YLong.. &rbzzzizzzort&Y Gero aban&rbzzt&Y abandoned us and &rbzzt&Y since then I&r bzzit&Y have become &rbzzz....&Y become master here.
+mpsleep 10
+say &YYou may &rbzzzt&Y not leave.&D
+~
+> fight_prog 40~
+~
+> fight_prog 40~
+say &YI have&R bzzt &Yupgraded myself since &rbzzt &Ymy intial creation!
+mea $n &GA Rusty Skeletal Robot places its primitive-looking hands on opposite sides of your head, and bolts of shining blue electricity course through your circuitry!
+mer $n &GA Rusty Skeletal Robot places its primitive-looking hands on opposite sides of $n's head, and bolts of shining blue electricity course through $s circuitry!
+mppldamage $n 20
+~
+> death_prog 100~
+if rand(50)
+mpoload 100730
+endif
+~
+|
+#100721
+trashed damaged android extremely old body~
+A Trashed Android~
+An extremely damaged and very old android body is sprawled out at the end of the tunnel, motionless.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> act_prog p gives you A reddish metal box.~
+if ovnuminv(100730) > 0
+mpjunk all
+mpmload 100723
+mpgoto 70199
+endif
+~
+> death_prog 100~
+mea $n &WWell, you smashed the scrap of an android to bits with a single blow. That wasn't very productive...&D
+~
+|
+#100722
+Android Zero 0 metal box~
+Android Zero~
+A dull metal box with an open receptacle and a speaker grill is sitting on the ground, touching the south wall.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+4 4 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if wasinroom($n) == 100791
+mpsleep 20
+mpe A crackly voice emanates from the box's speaker grill.
+say Hello... I am called Android Zero. If you want to get through here, you'll need three different items.
+say I'd like to help you out of here, even though I can't leave myself. Say "check me" if you want me to scan you to see if you possess all three.
+endif
+~
+> speech_prog p check me~
+if carryingvnum($n) 100731
+   if carryingvnum($n) 100732
+      if carryingvnum($n) 100733
+         say You have them all! Now just put them into my receptacle and I'll use them to transport you to the exit!
+         say Say 'continue' to inform me once you've given me them all. Don't say it unless you're sure I have them all.
+      else
+         say You don't have them all.
+      endif
+   else
+      say You don't have them all.
+   endif
+else
+   say You don't have them all.
+endif
+~
+> speech_prog continue~
+if ovnuminv(100731) > 0
+   if ovnuminv(100732) > 0
+      if ovnuminv(100733) > 0
+         mptransfer $n 100799
+      endif
+   endif
+endif
+mpjunk all
+say Are you still here? You must not have given me them all. Now they're gone. Tough luck, I guess.
+~
+|
+#100723
+energized android~
+An energized android~
+A quite damaged android is standing here, with a reddish humming power pack in its chest.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 3d7+3
+0 110000000000
+112 112 0
+200 200 200 100 0
+0 0 0 0 0
+4 4 0 0 0 0 2
+0 0 0 0 0 0 0 0
+> fight_prog 45~
+mea $n &GThe android points its finger at you and shoots an arcing stream of green electrical bolts at you!&D
+mer $n &GThe android points its finger at $n and shoots an arcing stream of green electrical bolts at $m!&D
+if rand(20)
+mea $n &GYou manage to dodge them all!&D
+else
+if rand(35)
+mppldamage $n 15
+mpdamage $n 10
+else
+if rand(70)
+mppldamage $n 15
+else
+mppldamage $n 8
+endif
+endif
+endif
+~
+> fight_prog 20~
+uppercut
+~
+> death_prog 100~
+if rand(40)
+mpoload 100732
+endif
+~
+|
+#100724
+rusted spherical robot~
+A rusted spherical robot~
+A giant spherical robot with tiny hands and feet is clumsily wandering around.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 3d6+5
+0 90000000000
+112 112 0
+200 200 200 250 0
+0 0 0 0 0
+4 4 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> fight_prog 35~
+mea $n &GThe giant spherical robot rolls right over you, trying to crush you flat!
+mer $n &GThe giant spherical robot rolls over $n, trying to crush $m flat!
+mppldamage $n 26
+~
+> fight_prog 40~
+mea $n &GThe spherical robot shoots a green beam of crackling energy at you out of a hole in its chest!
+mer $n &GThe spherical robot shoots a green beam of crackling energy at $n out of a hole in its chest!
+mppldamage $n 30
+~
+> death_prog 100~
+if rand(40)
+mpoload 100733
+endif
+~
+|
+#100799
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#100700
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#100701
+VM-1 variable mod chip~
+&PVM-1 Chip&D~
+A small, modified chip has been left here~
+~
+9 1818627 513 2
+0 0 0 0 100 100
+1 500000 50000
+ 575000000
+A
+3 14
+A
+1 14
+A
+2 14
+A
+4 14
+> wear_prog 100~
+if rand(7)
+mpechoat $n &pAs you install the VM-1 chip you feel a sudden surge of power coursing through your body.  Energy begins to crackle and surge around your body.&D
+mpechoaround $n &pAs $n installs the VM-1 chip a surge of energy crackles around $s body.&D
+mpplmult $n 14
+else
+mpechoat $n &pA soft glow fills your vision for a moment as you install the VM-1 chip.&D
+mpechoaround $n &p$n's eyes glow for a moment, as $e installs the VM-1 chip.&D
+mpplmult $n 10
+endif
+~
+> rand_prog 1~
+mpecho &pA bolt of electricity crackles through the air.&D
+~
+|
+#100702
+Chip Upgrade Kit One small metal item~
+Chip Upgrade Kit One~
+A small, metal item that could be anything~
+~
+8 0 1 128
+0 0 0 0 0 0
+1 500000 25000
+ 0
+#100703
+V-1 variable chip~
+&pV-1 Chip&D~
+A small microchip is resting on the floor here~
+~
+9 1818626 513
+0 0 0 0 80 80
+1 100000 10000
+ 125000000
+A
+3 10
+A
+2 10
+A
+1 10
+A
+4 10
+> wear_prog 100~
+mpechoat $n &pA soft glow fills your vision for a moment as you install the V-1 chip.&D
+mpechoaround $n &p$n's eyes glow for a moment, as $e installs the V-1 chip.&D
+mpplmult $n 10
+~
+|
+#100704
+VM-2 variable mod chip~
+&PVM-2 Chip&D~
+A small, modified chip rests here~
+~
+9 1818627 513
+0 0 0 0 750 750
+1 1250000 125000
+ 5000000000
+A
+3 22
+A
+1 22
+A
+4 22
+A
+2 22
+> wear_prog 100~
+if rand(7)
+mpechoat $n &PAs you install the VM-2 chip you feel a huge surge of power coursing through your body.  A crackling aura of purple electricity begins to surge around your body, your hair standing on end.&D
+mpechoaround $n &PAs $n installs the VM-2 chip you feel a huge surge of energy fill the air, a loud boom echoing as you're pushed back slightly.  A crackling aura of purple electricity surrounds $n's body, $s hair standing on end.&D
+mpplmult $n 22
+else
+mpechoat $n &PA bright glow fills your vision as you install the VM-2 chip, trails of purple energy leaking from your eyes.&D
+mpechoaround $n &P$n's eyes glow brightly as $e installs the VM-2 chip, seeming to leak trails of purple energy.&D
+mpplmult $n 18
+endif
+~
+> rand_prog 1~
+mpecho &PA flash of purple electricity crackles through the air, causing everyone's hair to stand on end.&D
+~
+|
+#100705
+Chip Upgrade Kit Two small metal item~
+Chip Upgrade Kit Two~
+A small metal item that could be anything~
+~
+8 0 1
+0 0 0 0 0 0
+1 1000000 50000
+ 0
+#100706
+V-2 variable chip~
+&pV-2 Chip&D~
+A small microchip rests here~
+~
+9 1818626 513
+0 0 0 0 300 300
+1 750000 75000
+ 1500000000
+A
+3 18
+A
+1 18
+A
+2 18
+A
+4 18
+> wear_prog 100~
+mpechoat $n &PA bright glow fills your vision as you install the V-2 chip, trails of purple energy leaking from your eyes.&D
+mpechoaround $n &P$n's eyes glow brightly as $e installs the V-2 chip, seeming to leak trails of purple energy.&D
+mpplmult $n 18
+~
+|
+#100707
+Two Keycard card~
+Two Keycard~
+A metal keycard with a large '2' logo on it~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100708
+android torso robot part~
+An android's torso~
+A large, metal torso lies forgotten here~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100709
+Three Keycard card~
+Three Keycard~
+A metal keycard with a large '3' logo on it~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100710
+android arm robot part~
+An android's arm~
+A large, metal arm lies forgotten here~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100711
+Four Keycard card~
+Four Keycard~
+A large, metal keycard with a '4' logo on it~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100712
+android laser arm robot part~
+An android's arm, equipped with a laser~
+A large, metal arm ending in a strange tube lies here~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100713
+Five Keycard card~
+Five Keycard~
+A metal keycard with a large '5' logo on it is here~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100714
+android right leg robot part~
+An android's right leg~
+A large, metal leg lies here~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100715
+Six Keycard card~
+Six Keycard~
+A metal keycard with a large '6' logo on it~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100716
+android left leg robot part~
+An android's left leg~
+A large, metal leg is lying on the floor here~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100717
+data jack wall hole~
+a data jack~
+One wall has a small hole in it, lined with metal contacts~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+data jack wall hole~
+Looking inside of this hole, you get a strange urge.  Almost as if
+hidden programming were suddenly kicking in. You raise your hand and stick
+one finger in, as a sudden surge of information enters you.
+
+"Android, stand upon the teleporter and say 'return' to leave this storage
+area and teleport back to my main laboratory."
+~
+#100718
+Seven Keycard card~
+Seven Keycard~
+A metal keycard with a large '7' logo on it~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100719
+android muscular torso robot part~
+An android's muscular torso~
+A thick, muscular android's torso is forgotten here~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100720
+Nine Keycard card~
+Nine Keycard~
+A thick metal keycard with a '9' logo on it~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100721
+android muscular right arm~
+A muscular right arm~
+A muscular right arm lies on the floor for some reason~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100722
+Ten Keycard card~
+Ten Keycard~
+A metal keycard with a large '10' logo on it~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100723
+android muscular left arm~
+A muscular left arm~
+A muscular left arm is here, for some reason~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100724
+Eleven Keycard card~
+Eleven Keycard~
+A metal keycard with a large '11' logo on it~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100725
+android muscular right leg~
+A muscular right leg~
+A muscular right leg is here, for some misbegotten reason~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100726
+Twelve Keycard card~
+Twelve Keycard~
+A thick metal keycard with a large '12' logo on it~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100727
+android muscular left leg~
+A muscular left leg~
+A muscular left leg is here, because Viola is weird~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100728
+Android Nine plushie doll~
+&PAn Android Nine plushie&D~
+A cute plushie that looks like Android Nine~
+~
+9 770048 16385
+0 0 0 0 75 75
+1 0 0
+ 10000000000
+A
+3 5
+A
+1 -10
+> wear_prog 100~
+mpecho &PAs $n holds onto the doll, it squeaks cutely.  Awwww....&D
+mpforce $n sniff
+mpforce $n say I wuv you Nine!
+~
+|
+#100729
+storage access pass security ID~
+Storage Security ID~
+An ID card for accessing a storage area lies here~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+storage access pass security ID~
+This plastic card looks to be a form of identification.  There is a
+small loop and button at the top, for clipping it to someone's clothing. On
+the front is a picture of a rather large man's face.  The stoic man has
+brown hair, and is wearing a pair of dark black sunglasses. Below the
+picture is a barcode of some type, along with a set of ID numbers.  The
+original owner's name seems to have been partially scratched off over time,
+the only readable part being, "M...jo...eta...on"
+~
+#100730
+glowing power pack reddish rectangular box~
+A reddish metal box~
+A small reddish rectangular box is sitting on the ground.~
+~
+8 1 1
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+reddish metal box power pack~
+This box is about 6 inches by 3 inches by 1 inch. It's a metallic red
+color, and it's very dense. There are two small rounded silvery nubs
+sticking out of one of the small sides. These nubs are half an inch in
+diameter. On both of the large flat sides, there's a stamped insignia.
+~
+E
+stamped insignia~
+The insignia consists of a fancy curlique pattern swirling around a few
+words, namely:
+"Jed-Co Power Pack Supplies - Model jf9-beta"
+~
+#100731
+fused wires~
+A bunch of fused wiring~
+A bunch of wires fused together into a square shape are sitting on the ground.~
+~
+8 0&256 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100732
+cracked keycard~
+A cracked keycard~
+A keycard with a big crack in it has been left on the ground.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100733
+processor chip~
+A processor chip~
+A tiny little processor chip has been left on the ground.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100734
+cylinder button~
+A cylindrical button~
+A cylinder with a button on the top of it is jutting from the ground.~
+~
+39 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+> push_prog 100~
+mea $n As you push the button, there's a small chiming noise, and a little chip falls from a hole in the ceiling. You feel compelled to grab it, and as you do, there's a warping of space around you. You find yourself somewhere else, holding the chip.
+mpoload 100706 $n
+mptransfer $n 2307
+mpat 100799 pull button
+~
+|
+#100799
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#100700
+Entrance~
+A quick breeze that chills the bone quickly, making it clear that this
+room hasn't been accessed in a very very long time.  Stray wires and random
+bits of debris make it difficult to move around.  The dust has settled to
+the ground, giving the room a more aged feel.  Combined with gravel and
+rock walls, it seems that this could be a greater discovery than even
+grave-diggers could imagine.  There's a small passage to the south.
+~
+0 2097161&16 0
+D0
+~
+~
+0 -1 100701
+S
+#100701
+Near the entrance~
+The thick stone walls only amplify the chill darkness of this
+underground area.  Nothing to be seen but dust and cobwebs, every surface
+coated by something you'd rather not touch.  Further up ahead, the hallway
+seems to split in two different directions.
+~
+0 606076937&16 0
+D0
+~
+~
+0 -1 100702
+D2
+~
+~
+0 -1 100700
+S
+#100702
+Where it splits up~
+The corridor splits into a 'T' intersection here, pathways running in
+three directions, all disappearing into darkness.  A soft breeze disturbs
+the cobwebs here, so there must be some sort of ventilation set up, very
+well hidden.  Or it could just be coming from the entrance to this area,
+further to the south.
+~
+0 2097161&16 0
+D1
+~
+~
+0 -1 100704
+D2
+~
+~
+0 -1 100701
+D3
+~
+~
+0 -1 100703
+S
+#100703
+Corner~
+The hallway snakes around here, immediately turning to continue north
+after it split into two at the earlier intersection.  Nothing stands out
+here, so it's probably best to continue down the dark hallway and see what
+else there is to find.
+~
+0 2097161&16 0
+D0
+~
+~
+0 -1 100705
+D1
+~
+~
+0 -1 100702
+S
+#100704
+Corner~
+The hallway snakes around here, immediately turning to continue north
+after it split into two at the earlier intersection.  Nothing stands out
+here, so it's probably best to continue down the dark hallway and see what
+else there is to find.
+~
+0 2097161&16 0
+D0
+~
+~
+0 -1 100736
+D3
+~
+~
+0 -1 100702
+S
+#100705
+Snaking along~
+The tight, dusty corridor takes a turn here, angling in another
+direction.  The dim light cast by the odd bulbs mounted on the stone walls
+makes it nearly impossible to discern where you are going, or where you've
+been.  A few scraps of metal litter the floor, cobwebs and wiring obscuring
+the roof of this basement room.
+~
+0 2097160&16 0
+D2
+~
+~
+0 -1 100703
+D3
+~
+~
+0 -1 100706
+S
+#100706
+Hallway~
+This stretch of floor continues on in either direction, the dust your
+travels kick up threatening to clog up your filters and sensative devices.
+The stone underfoot is as cool and untouched as the stone walls, covered in
+dirt and dust.  Everything was undisturbed, thickly layered over years and
+years, until you entered.
+~
+0 2097160&16 0
+D1
+~
+~
+0 -1 100705
+D3
+~
+~
+0 -1 100707
+S
+#100707
+Continuing on~
+As you enter this section of corridor, you find yet another
+disappointment.  Empty, dusty, nothing but blank stone walls.  Bits of
+metal and wire littering the ground.  Just like every other room.  Where is
+the buried treasure, the hidden secrets?  This entire place seems deserted,
+unless you count the spiders and other bugs that have somehow made a living
+down here.
+~
+0 2097160&16 0
+D1
+~
+~
+0 -1 100706
+D3
+~
+~
+0 -1 100708
+S
+#100708
+Before a large door~
+Finally, one room stands out a bit.  There is a large, steel door to the
+north, here, impeding further progress. The dust is slightly lighter around
+and over this door, and on the floor near it.  It seems at some point in
+time this door has been opened, for whatever reason.
+~
+0 2097160&16 0
+D0
+~
+~
+7 100707 100709
+D1
+~
+~
+0 -1 100707
+S
+#100709
+Trapped beyond the metal door~
+The other side of this door looks just like the side nearer the entrance
+to this basement.  Dust, dirt, stone.  The musty smell of an area left to
+rot in the quiet underbelly of the world.  Lights flicker from beneath the
+layer of filth, but never completely go out.
+~
+0 2097160&16 0
+D0
+~
+~
+0 -1 100710
+D2
+~
+~
+7 -1 100708
+S
+#100710
+Corridor~
+This stretch of floor continues on in either direction, the dust your
+travels kick up threatening to clog up your filters and sensative devices.
+The stone underfoot is as cool and untouched as the stone walls, covered in
+dirt and dust.  Everything was undisturbed, thickly layered over years and
+years, until you entered.
+~
+0 2097160&16 0
+D0
+~
+~
+0 -1 100711
+D2
+~
+~
+0 -1 100709
+S
+#100711
+Corner~
+Another dusty room, another few minutes of your life wasted.  There's
+nothing much to see here, as usual.  Flickering lights, a slight crack in
+the eastern wall, a few cobwebs threatening to detach from the ceiling and
+fall right onto you.  Disgusting.  This underground area seems to be a huge
+bust.
+~
+0 2097160&16 0
+D1
+~
+~
+2055 100709 100712
+D2
+~
+~
+0 -1 100710
+D3
+~
+~
+0 -1 100713
+S
+#100712
+Android Three's room~
+This room looks almost like a diagnostic area, a few small machines
+standing around near its android occupant.  Some are hooked up to it, a few
+others knocked over onto their sides, all of the machines and the android
+are covered in filth and dust.  It looks like nothing has moved in here for
+years.
+~
+0 2097160&16 0
+D3
+~
+~
+7 100709 100711
+S
+#100713
+Hallway~
+Descending deeper, it becomes increasingly evident that this chamber is
+incredibly old, due to its musty, stale stench.  The stone walls seem
+moist, water somehow leaking in from the surface, occassionally making an
+drip that echoes throughout the corridor.  The flickering lights overhead
+make it difficult to navigate through the dusty hall.
+~
+0 2097160&16 0
+D1
+~
+~
+0 -1 100711
+D3
+~
+~
+0 -1 100714
+S
+#100714
+Corner~
+This section of the secret, underground area looks like nothing to write
+home about.  The corridor curves and turns in another direction, dust
+coating the floor.  If there's anything down here, it doesn't move around
+much. Mounted on the western wall is one slightly larger bulb, which seems
+to be broken, adding to the darkness of this deserted basement.
+~
+0 2097160&16 0
+D0
+~
+~
+0 -1 100716
+D1
+~
+~
+0 -1 100713
+D3
+~
+~
+2055 0 100715
+S
+#100715
+Android Four's room~
+This room is just a simple cube of rock, almost a cell, locking the
+half-finished android inside. The robot doesn't seem to move around the
+room at all, just standing near the back wall, apparently waiting for
+something. Or someone.  Could she be waiting for you to help her escape?
+~
+0 2097160&16 0
+D1
+~
+~
+7 0 100714
+S
+#100716
+Corridor~
+As you enter this section of corridor, you find yet another
+disappointment.  Empty, dusty, nothing but blank stone walls.  Bits of
+metal and wire littering the ground.  Just like every other room.  Where is
+the buried treasure, the hidden secrets?  This entire place seems deserted,
+unless you count the spiders and other bugs that have somehow made a living
+down here.
+~
+0 2097161&16 0
+D0
+~
+~
+0 -1 100717
+D2
+~
+~
+0 -1 100714
+S
+#100717
+Hallway~
+This stretch of floor continues on in either direction, the dust your
+travels kick up threatening to clog up your filters and sensative devices.
+The stone underfoot is as cool and untouched as the stone walls, covered in
+dirt and dust.  Everything was undisturbed, thickly layered over years and
+years, until you entered.
+~
+0 2097161&16 0
+D0
+~
+~
+0 -1 100718
+D2
+~
+~
+0 -1 100716
+S
+#100718
+Corner~
+An abrupt end causes you to stop, the dust you stir up slowly settling
+down.  The room seems to snake around yet remains undisturbed regardless of
+it's age.  Random indentions in the wall give evidence that a struggle or
+some sort of argument was exchanged.  The walls show signs of decay and
+could crumble at the slightest touch.  You feel like any quick movements or
+loud sounds could bring the entire place down.
+~
+0 2097160&16 0
+D1
+~
+~
+0 -1 100719
+D2
+~
+~
+0 -1 100717
+S
+#100719
+Corridor~
+Just another random few feet of this basement, nothing special at all.
+The stone floor has a thick layer of brown dirt, for some reason.  There
+doesn't seem to be any holes in the walls or ceilings, but the multitude of
+cobwebs, wires is too thick to see through well.  The dim light provided by
+the infrequently appearing, widely scattered bulbs does not help either.
+~
+0 2097160&16 0
+D1
+~
+~
+0 -1 100720
+D3
+~
+~
+0 -1 100718
+S
+#100720
+Hallway~
+A small whirring noise echoes through the halls, followed by a clang.
+The lights hum as they give off a gentle glow, discarded parts and assorted
+junk from scrapped experiments littering the ground. Strangely, along with
+the dusty air a gentle mist rests on the floor, dispersing at even the
+slightest step.  There seems to be evidence all over this area, that a
+nearby water source is leaking into the hidden basement...
+~
+0 2097160&16 0
+D1
+~
+~
+0 -1 100721
+D3
+~
+~
+0 -1 100719
+S
+#100721
+Coming to a 'T' intersection~
+The corridor continues on in the same direction, but there is also
+another hallway angling off to the north.  Oddly, from that direction you
+can hear a soft hissing noise, that doesn't immediately disappear like the
+other strange noises you have heard.  The floor heading that way also seems
+to turn from dirt and rock to metal.
+~
+0 2097161&16 0
+D0
+~
+~
+0 -1 100724
+D1
+~
+~
+0 -1 100722
+D3
+~
+~
+0 -1 100720
+S
+#100722
+Deadend~
+The dusty corridor comes to a deadend here, a blank stone wall covered
+in cobwebs and blinking lightbulbs all there is to see here.  A slight
+draft seems to be coming from the south, probably part of the ventilation
+system that seems to be trying its hardest to keep this deserted area from
+becoming too musty.  It doesn't seem to be helping much, though.
+~
+0 2097160&16 0
+D2
+~
+~
+2055 0 100723
+D3
+~
+~
+0 -1 100721
+S
+#100723
+Android Five's room~
+This hidden room is nothing more than a simple cube, no furniture or
+markings.  Its occupant doesn't move around at all, it seems, cobwebs and
+dust covering his body.  There isn't really anything else to look at
+besides the exit.
+~
+0 2097160&16 0
+D0
+~
+~
+7 0 100722
+S
+#100724
+A bizarre, metal room~
+This room is pure metal, strangely different from the rest of the
+underground you have passed through.  One wall is filled with knobs and
+switches that seem to do nothing at all, if you wanted to claw through the
+thick cobwebs to get to them.  The other wall sports a large monitor that
+displays a crackling picture of static under all the dust coating it.  To
+the north and south, the metal floors and walls return to dirt and rock.
+~
+0 2097160&16 0
+D0
+~
+~
+0 -1 100725
+D2
+~
+~
+0 -1 100721
+S
+#100725
+Coming to a 'T' intersection~
+This hallway continues in both directions, but a thin hallway also juts
+off to the south.  Oddly, the floors and walls leading that way seem to
+switch from dirt and rock to a type of metal. Strangely a loud, hissing,
+crackling noise is heard steadily eminating from that room.  What could be
+there?  There's only one way to find out, of course.
+~
+0 2097161&16 0
+D1
+~
+~
+0 -1 100726
+D2
+~
+~
+0 -1 100724
+D3
+~
+~
+0 -1 100728
+S
+#100726
+Short hallway~
+This stretch of floor continues on in either direction, the dust your
+travels kick up threatening to clog up your filters and sensative devices.
+The stone underfoot is as cool and untouched as the stone walls, covered in
+dirt and dust.  Everything was undisturbed, thickly layered over years and
+years, until you entered.
+~
+0 2097161&16 0
+D1
+~
+~
+0 -1 100727
+D3
+~
+~
+0 -1 100725
+S
+#100727
+Corner~
+A soft breeze can be felt for a moment the theoried ventilation system
+most likely responsible.  The walls seem to be decaying and crumbling more
+rapidly, as if there was some sort of change in the climate of the area as
+it becomes a bit more humid.  A soft whirring sound is heard for a moment,
+before it quickly stops.  It seems there is more life than once previously
+thought.
+~
+0 2097161&16 0
+D0
+~
+~
+0 -1 100732
+D3
+~
+~
+0 -1 100726
+S
+#100728
+Corner~
+A soft breeze can be felt for a moment the theoried ventilation system
+most likely responsible.  The walls seem to be decaying and crumbling more
+rapidly, as if there was some sort of change in the climate of the area as
+it becomes a bit more humid.  A soft whirring sound is heard for a moment,
+before it quickly stops.  It seems there is more life than once previously
+thought.
+~
+0 2097161&16 0
+D0
+~
+~
+0 -1 100729
+D1
+~
+~
+0 -1 100725
+S
+#100729
+Deadend~
+This section of the secret, underground area looks like nothing to write
+home about.  The corridor deadends, nothing to see but the dust coating the
+floor.  If there's anything down here, it doesn't move around much. Mounted
+on the western wall is one slightly larger bulb, which seems to be broken,
+adding to the darkness of this deserted basement.
+~
+0 69206025&16 0
+D2
+~
+~
+0 -1 100728
+D3
+~
+~
+2055 100715 100730
+S
+#100730
+Last piece of the puzzle~
+This room seems to be in much better condition than all the others.  The
+floor and all other surfaces are somehow free of dust and cobwebs. A small
+pillar juts up from the center of the room, and a large, thick, window
+seperates this room from the one to the west. The window is apparently much
+stronger than it looks, with no way to break it down.
+~
+0 2097160&16 0
+D1
+~
+~
+7 100715 100729
+D3
+~
+~
+7 -1 100731
+S
+#100731
+Teleport Chamber~
+The more advanced, metallic design of the previous room is repated in
+this one.  However, a good portion of the floor is taken up by a slightly
+raised, circular platform. The top of said platform is covered in a thick
+glass, revealing several odd lights and devices inside of the black
+platform. Nearby the platform is a bank of strage flat monitors and
+symbols.  Apparently this device is worked by touching the surface and
+running your fingers over.  A small speaker of obviously different design
+has been crudely attached to the back of the control bank, facing the glass
+pad.
+~
+0 2097160&16 0
+D1
+~
+~
+7 -1 100730
+> speech_prog return~
+mpechoat $n &BYour vision flashes to black for a moment, before returning.  You notice you are no longer in the same room.&D
+mpechoaround $n &B$n is suddenly gone, replaced by a pillar of blue light that quickly fades away.&D
+mptransfer $n 100700
+~
+|
+S
+#100732
+Beginning of a longer hallway~
+A small whirring noise echoes through the halls, followed by a clang.
+The lights hum as they give off a gentle glow, discarded parts and assorted
+junk from scrapped experiments littering the ground. Strangely, along with
+the dusty air a gentle mist rests on the floor, dispersing at even the
+slightest step.  There seems to be evidence all over this area, that a
+nearby water source is leaking into the hidden basement...
+~
+0 2097160&16 0
+D0
+~
+~
+0 -1 100733
+D2
+~
+~
+0 -1 100727
+S
+#100733
+Long hallway~
+Just another random few feet of this basement, nothing special at all.
+The stone floor has a thick layer of brown dirt, for some reason.  There
+doesn't seem to be any holes in the walls or ceilings, but the multitude of
+cobwebs, wires is too thick to see through well.  The dim light provided by
+the infrequently appearing, widely scattered bulbs does not help either.
+~
+0 2097160&16 0
+D0
+~
+~
+0 -1 100735
+D2
+~
+~
+0 -1 100732
+S
+#100734
+Viola's Security Room - I'm Watching You!~
+This room looks like something you'd see a security guard positioned at
+in a bad movie, sleeping instead of watching the huge array of monitors
+that run along one wall. A few comfy, leather chairs on rollers are set up
+facing the monitors, the desk in front of them littered with empty cups of
+coffee or bottles of soda. Crumpled bags of fast food and empty boxes that
+once held donuts are scattered about as well. On the opposite wall there is
+simply a large red case with a glass window set in the front. Inside of the
+case is a strange glove and a very large mallet.  Something is written on
+the glass in red letters : Break in case of stupid players.
+~
+0 2097164&16 0
+S
+#100735
+Android Six's room~
+This room seems rather battered.  There are marks all over the stone
+walls, where someone or something has battered against it.  A slightly
+indention has been worn in a section of the floor, probbaly from the
+android pacing over the years.  The dust is slightly less present here than
+in the other rooms, though it still coats everything.
+~
+0 538968072&16 0
+D2
+~
+~
+0 -1 100733
+S
+#100736
+Snaking along~
+The tight, dusty corridor takes a turn here, angling in another
+direction.  The dim light cast by the odd bulbs mounted on the stone walls
+makes it nearly impossible to discern where you are going, or where you've
+been.  A few scraps of metal litter the floor, cobwebs and wiring obscuring
+the roof of this basement room.
+~
+0 2097160&16 0
+D1
+~
+~
+0 -1 100737
+D2
+~
+~
+0 -1 100704
+S
+#100737
+Hallway~
+This stretch of floor continues on in either direction, the dust your
+travels kick up threatening to clog up your filters and sensative devices.
+The stone underfoot is as cool and untouched as the stone walls, covered in
+dirt and dust.  Everything was undisturbed, thickly layered over years and
+years, until you entered.
+~
+0 2097160&16 0
+D1
+~
+~
+0 -1 100738
+D3
+~
+~
+0 -1 100736
+S
+#100738
+Continuing on~
+As you enter this section of corridor, you find yet another
+disappointment.  Empty, dusty, nothing but blank stone walls.  Bits of
+metal and wire littering the ground.  Just like every other room.  Where is
+the buried treasure, the hidden secrets?  This entire place seems deserted,
+unless you count the spiders and other bugs that have somehow made a living
+down here.
+~
+0 2097160&16 0
+D1
+~
+~
+0 -1 100739
+D3
+~
+~
+0 -1 100737
+S
+#100739
+Before a large door~
+Finally, one room stands out a bit.  There is a large, steel door to the
+north, here, impeding further progress.  The dust is slightly lighter
+around and over this door, and on the floor near it.  It seems at some
+point in time this door has been opened, for whatever reason.
+~
+0 2097160&16 0
+D0
+~
+~
+7 100718 100740
+D3
+~
+~
+0 -1 100738
+S
+#100740
+Trapped beyond the metal door~
+The other side of this door looks just like the side nearer the entrance
+to this basement. Dust, dirt, stone.  The musty smell of an area left to
+rot in the quiet underbelly of the world.  Lights flicker from beneath the
+layer of filth, but never completely go out.
+~
+0 2097160&16 0
+D0
+~
+~
+0 -1 100741
+D2
+~
+~
+7 100718 100739
+S
+#100741
+Corridor~
+This stretch of floor continues on in either direction, the dust your
+travels kick up threatening to clog up your filters and sensative devices.
+The stone underfoot is as cool and untouched as the stone walls, covered in
+dirt and dust.  Everything was undisturbed, thickly layered over years and
+years, until you entered.
+~
+0 2097160&16 0
+D0
+~
+~
+0 -1 100742
+D2
+~
+~
+0 -1 100740
+S
+#100742
+Corner~
+This section of the secret, underground area looks like nothing to write
+home about.  The corridor curves and turns in another direction, dust
+coating the floor.  If there's anything down here, it doesn't move around
+much. Mounted on the western wall is one slightly larger bulb, which seems
+to be broken, adding to the darkness of this deserted basement.
+~
+0 2097160&16 0
+D1
+~
+~
+0 -1 100744
+D2
+~
+~
+0 -1 100741
+D3
+~
+~
+2055 -1 100743
+S
+#100743
+Android Nine's room~
+This room is amazingly clean, compared to most of the others down here.
+A cute scene of little ducks and bunnies playing has been painstakingly
+etched into the walls, to try and brighten the atmosphere. A small, metal
+chair where the android girl sits is in one corner, a metal box in another.
+The box is filled to the brim with toys made out of bits of metal, a stack
+of children's books piled up next to it.
+~
+0 2097160&16 0
+D1
+~
+~
+7 -1 100742
+S
+#100744
+Hallway~
+Descending deeper, it becomes increasingly evident that this chamber is
+incredibly old, due to its musty, stale stench.  The stone walls seem
+moist, water somehow leaking in from the surface, occassionally making an
+drip that echoes throughout the corridor.  The flickering lights overhead
+make it difficult to navigate through the dusty hall.
+~
+0 2097160&16 0
+D1
+~
+~
+0 -1 100745
+D3
+~
+~
+0 -1 100742
+S
+#100745
+Corner~
+Another dusty room, another few minutes of your life wasted.  There's
+nothing much to see here, as usual.  Flickering lights, a slight crack in
+the eastern wall, a few cobwebs threatening to detach from the ceiling and
+fall right onto you.  Disgusting.  This underground area seems to be a huge
+bust.
+~
+0 2097160&16 0
+D0
+~
+~
+0 -1 100747
+D1
+~
+~
+2055 -1 100746
+D3
+~
+~
+0 -1 100744
+S
+#100746
+Android Ten's room~
+This room is completely bare, no furnishings or anything to look at
+besides the android that calls it home.  There is a rut in the floor where
+the android has been pacing around the room.  Also, there are many large
+cracks in the wall, as well as deep tears and slashes.  The scattered bits
+of rock and debris are testament to the android's firey temper being taken
+out on the room inself.
+~
+0 2097160&16 0
+D3
+~
+~
+7 -1 100745
+S
+#100747
+Corridor~
+As you enter this section of corridor, you find yet another
+disappointment.  Empty, dusty, nothing but blank stone walls.  Bits of
+metal and wire littering the ground.  Just like every other room.  Where is
+the buried treasure, the hidden secrets?  This entire place seems deserted,
+unless you count the spiders and other bugs that have somehow made a living
+down here.
+~
+0 2097161&16 0
+D0
+~
+~
+0 -1 100748
+D2
+~
+~
+0 -1 100745
+S
+#100748
+Hallway~
+This stretch of floor continues on in either direction, the dust your
+travels kick up threatening to clog up your filters and sensative devices.
+The stone underfoot is as cool and untouched as the stone walls, covered in
+dirt and dust.  Everything was undisturbed, thickly layered over years and
+years, until you entered.
+~
+0 2097161&16 0
+D0
+~
+~
+0 -1 100749
+D2
+~
+~
+0 -1 100747
+S
+#100749
+Corner~
+An abrupt end causes you to stop, the dust you stir up slowly settling
+down.  The room seems to snake around yet remains undisturbed regardless of
+it's age.  Random indentions in the wall give evidence that a struggle or
+some sort of argument was exchanged.  The walls show signs of decay and
+could crumble at the slightest touch.  You feel like any quick movements or
+loud sounds could bring the entire place down.
+~
+0 2097160&16 0
+D2
+~
+~
+0 -1 100748
+D3
+~
+~
+0 -1 100750
+S
+#100750
+Corridor~
+Just another random few feet of this basement, nothing special at all.
+The stone floor has a thick layer of brown dirt, for some reason.  There
+doesn't seem to be any holes in the walls or ceilings, but the multitude of
+cobwebs, wires is too thick to see through well.  The dim light provided by
+the infrequently appearing, widely scattered bulbs does not help either.
+~
+0 2097160&16 0
+D1
+~
+~
+0 -1 100749
+D3
+~
+~
+0 -1 100751
+S
+#100751
+Hallway~
+A small whirring noise echoes through the halls, followed by a clang.
+The lights hum as they give off a gentle glow, discarded parts and assorted
+junk from scrapped experiments littering the ground. Strangely, along with
+the dusty air a gentle mist rests on the floor, dispersing at even the
+slightest step.  There seems to be evidence all over this area, that a
+nearby water source is leaking into the hidden basement...
+~
+0 2097160&16 0
+D1
+~
+~
+0 -1 100750
+D3
+~
+~
+0 -1 100752
+S
+#100752
+Coming to a 'T' intersection~
+The corridor continues on in the same direction, but there is also
+another hallway angling off to the north.  Oddly, from that direction you
+can hear a soft hissing noise, that doesn't immediately disappear like the
+other strange noises you have heard.  The floor heading that way also seems
+to turn from dirt and rock to metal.
+~
+0 2097161&16 0
+D0
+~
+~
+0 -1 100755
+D1
+~
+~
+0 -1 100751
+D3
+~
+~
+0 -1 100753
+S
+#100753
+Deadend~
+The dusty corridor comes to a deadend here, a blank stone wall covered
+in cobwebs and blinking lightbulbs all there is to see here.  A slight
+draft seems to be coming from the south, probably part of the ventilation
+system that seems to be trying its hardest to keep this deserted area from
+becoming too musty.  It doesn't seem to be helping much, though.
+~
+0 2097160&16 0
+D1
+~
+~
+0 -1 100752
+D2
+~
+~
+2055 -1 100754
+S
+#100754
+Android Eleven's room~
+This room looks much cleaner than the outside area, the occupant
+apparently willing and able to take at least some care of it.  Three of the
+walls are lined with bookshelves, crammed full of thick books.  In the
+middle of the room, a plush, comfortable chair rests.  A colorful, if faded
+rug is stuck beneath it.
+~
+0 2097160&16 0
+D0
+~
+~
+7 -1 100753
+S
+#100755
+A bizarre, metal room~
+This room is pure metal, strangely different from the rest of the
+underground you have passed through.  One wall is filled with knobs and
+switches that seem to do nothing at all, if you wanted to claw through the
+thick cobwebs to get to them.  The other wall sports a large monitor that
+displays a crackling picture of static under all the dust coating it.  To
+the north and south, the metal floors and walls return to dirt and rock.
+~
+0 2097160&16 0
+D0
+~
+~
+0 -1 100756
+D2
+~
+~
+0 -1 100752
+S
+#100756
+Coming to a 'T' intersection~
+This hallway continues in both directions, but a thin hallway also juts
+off to the south.  Oddly, the floors and walls leading that way seem to
+switch from dirt and rock to a type of metal. Strangely a loud, hissing,
+crackling noise is heard steadily eminating from that room.  What could be
+there?  There's only one way to find out, of course.
+~
+0 2097161&16 0
+D1
+~
+~
+0 -1 100757
+D2
+~
+~
+0 -1 100755
+D3
+~
+~
+0 -1 100761
+S
+#100757
+Corner~
+A soft breeze can be felt for a moment the theoried ventilation system
+most likely responsible.  The walls seem to be decaying and crumbling more
+rapidly, as if there was some sort of change in the climate of the area as
+it becomes a bit more humid.  A soft whirring sound is heard for a moment,
+before it quickly stops.  It seems there is more life than once previously
+thought.
+~
+0 2097161&16 0
+D0
+~
+~
+0 -1 100758
+D3
+~
+~
+0 -1 100756
+S
+#100758
+Deadend~
+Another dusty room, another few minutes of your life wasted.  There's
+nothing much to see here, as usual.  Flickering lights, a slight crack in
+the eastern wall, a few cobwebs threatening to detach from the ceiling and
+fall right onto you.  Disgusting.  This underground area seems to be a huge
+bust.
+~
+0 69206024&16 0
+D1
+~
+~
+2055 -1 100759
+D2
+~
+~
+0 -1 100757
+S
+#100759
+Last piece of the puzzle~
+This room seems to be in much better condition than all the others.  The
+floor and all other surfaces are somehow free of dust and cobwebs.  A small
+pillar juts up from the center of the room, and a large, thick, window
+seperates this room from the one to the west.  The window is apparently
+much stronger than it looks, with no way to break it down.
+~
+0 2097160&16 0
+D1
+~
+~
+7 -1 100760
+D3
+~
+~
+7 -1 100758
+S
+#100760
+Teleport Chamber~
+The more advanced, metallic design of the previous room is repated in
+this one.  However, a good portion of the floor is taken up by a slightly
+raised, circular platform.  The top of said platform is covered in a thick
+glass, revealing several odd lights and devices inside of the black
+platform.  Nearby the platform is a bank of strage flat monitors and
+symbols.  Apparently this device is worked by touching the surface and
+running your fingers over.  A small speaker of obviously different design
+has been crudely attached to the back of the control bank, facing the glass
+pad.
+~
+0 2097160&16 0
+D3
+~
+~
+7 -1 100759
+> speech_prog return~
+mpechoat $n Your vision flashes to black for a moment, before returning.  You notice you are no longer in the same room.
+mpechoaround $n $n is suddenly gone, replaced by a pillar of blue light that quickly fades away.
+mptransfer $n 100700
+~
+|
+S
+#100761
+Corridor~
+This stretch of floor continues on in either direction, the dust your
+travels kick up threatening to clog up your filters and sensative devices.
+The stone underfoot is as cool and untouched as the stone walls, covered in
+dirt and dust.  Everything was undisturbed, thickly layered over years and
+years, until you entered.
+~
+0 2097161&16 0
+D1
+~
+~
+0 -1 100756
+D3
+~
+~
+0 -1 100762
+S
+#100762
+Corner~
+A soft breeze can be felt for a moment the theoried ventilation system
+most likely responsible.  The walls seem to be decaying and crumbling more
+rapidly, as if there was some sort of change in the climate of the area as
+it becomes a bit more humid.  A soft whirring sound is heard for a moment,
+before it quickly stops.  It seems there is more life than once previously
+thought.
+~
+0 2097161&16 0
+D0
+~
+~
+0 -1 100763
+D1
+~
+~
+0 -1 100761
+S
+#100763
+Beginning of a longer hallway~
+A small whirring noise echoes through the halls, followed by a clang.
+The lights hum as they give off a gentle glow, discarded parts and assorted
+junk from scrapped experiments littering the ground. Strangely, along with
+the dusty air a gentle mist rests on the floor, dispersing at even the
+slightest step.  There seems to be evidence all over this area, that a
+nearby water source is leaking into the hidden basement...
+~
+0 2097160&16 0
+D0
+~
+~
+0 -1 100764
+D2
+~
+~
+0 -1 100762
+S
+#100764
+Long hallway~
+Just another random few feet of this basement, nothing special at all.
+The stone floor has a thick layer of brown dirt, for some reason.  There
+doesn't seem to be any holes in the walls or ceilings, but the multitude of
+cobwebs, wires is too thick to see through well.  The dim light provided by
+the infrequently appearing, widely scattered bulbs does not help either.
+~
+0 2097160&16 0
+D0
+~
+~
+0 -1 100765
+D2
+~
+~
+0 -1 100763
+S
+#100765
+Android Twelve's room~
+This room is incredibly different from most all of the others in this
+underground lair. Every surface seems cleaned and polished to the best of
+its occupants abilities, with her limited tools. One wall is taken up by a
+very large bookshelf, which is filled with books that are in as good shape
+as the lady who reads them. The table sitting in the middle of the room is
+equipped with a group of chairs, which all seem recently used.
+~
+0 538968072&16 0
+D2
+~
+~
+0 -1 100764
+S
+#100766
+A very dim intersection~
+This intersection is exceedingly out of use. There used to be lots of
+high-tech machinery all along the walls and floor, but now it's all been
+rendered utterly useless by the ravaging passage of time. The most high
+tech use that most of this scrap can be used for is clubbing in someone's
+skull. Everything is covered with a layer of dust nearly one inch thick.
+In addition, there's very little light, and the air is filled with a dusty
+particulate matter all around, further obscuring all forms of vision.
+~
+0 2097160&16 0
+D0
+~
+~
+0 -1 100767
+D8
+~
+~
+0 -1 100768
+D9
+~
+~
+0 -1 100769
+S
+#100767
+A Twisted Dead End~
+This corridor abruptly stops, due to an enormous pile of debris blocking
+the way. The variety of this junk is incredible, it seems bizarre how
+it all gets down here. There are huge steel girders that don't appear to
+be anywhere in the contruction of this basement, there are long skinny
+metal poles with curious engraved channels on the sides. Broken glass
+and shards of twisted and deformed metal scrapings cover the floor.
+~
+0 2097160&16 0
+D2
+~
+~
+0 -1 100766
+> entry_prog 100~
+if wasinroom($n) == 100782
+mea $n &wYou keep pushing through the little tunnel, and finally burst out
+mea $n &won the other side! A mini-avalanche of metal fragments falls into
+mea $n &wthe cavity left by your body, blocking the way back in.
+endif
+~
+|
+S
+#100768
+A Relatively Clear Patch of Hallway~
+Nearly anywhere else, this hallway would seem to be an ancient and
+decrepit walkway filled with innumerable pieces of scrap metal, but in
+the context of the corridors around it it seems pristine. There are
+only a few very large chunks of debris, and you barely have to go out of
+your way to get around them.
+~
+0 2097160&16 0
+D7
+~
+~
+0 -1 100766
+D8
+~
+~
+0 -1 100790
+S
+#100769
+A Corridor with Sputtering Electrical Junk~
+The large chunks of rusty metal scrap jutting out of the walls, and the
+piles of it on the ground barely leave room to walk in the center of the
+hallway. Some of the junk sputters with a jolt of crackling electricity
+every several seconds, so stepping on the stuff might be quite shocking...
+It is relatively easy to avoid doing, however.
+~
+0 2097160&16 0
+D2
+~
+~
+0 -1 100785
+D3
+~
+~
+0 -1 100770
+D6
+~
+~
+0 -1 100766
+> entry_prog 100~
+if rand(2)
+mea $n &YAs you're walking through this corridor, you accidentally brush
+mea $n &Yagainst an old piece of metal equipment at exactly the same time
+mea $n &Yas as it sparks brightly with electricity! &RYeeowch! &YYou got
+mea $n &Ya nasty shock.
+mer $n &Y$n gets shocked as $e brushes against a piece of crackling metal!&D
+mpdamage $n 12
+endif
+~
+|
+S
+#100770
+Next to a Rusted-Open Pipe~
+There's a gigantic metal pipe completely obscuring the west wall here.
+Perhaps the pipe was designed to be the wall. In any case, with what have
+been undoubtably countless hours of total disrepair, the pipe has
+corroded open, making its still-flowing contents open to the air. It's
+not clear exactly -what- the fluid in the pipe is, or what the source
+of it is, but it seems pretty clear that it would be a dangerous idea
+to climb through the hole, which is quite a bit above the "waterline"
+in the pipe.
+~
+0 2097160&16 0
+D1
+~
+~
+0 -1 100769
+D10
+~
+hole~
+722944 -1 100771
+S
+#100771
+Inside a Steel Pipe!~
+It really was not a safe idea to enter this pipe.  The nasty liquid
+chemical flowing through the pipe is highly corrosive, causing damage to
+whatever is in it.  Considering the amount of damage it's causing to your
+body, it's a surprise that the pipe still even exists.  It must be
+specially treated to withstand this chemical. There's a heavy grate to the
+south, preventing passage in that direction.
+~
+0 2097160&16 0
+D0
+~
+~
+0 -1 100772
+D10
+~
+hole~
+788480 -1 100770
+> entry_prog 100~
+if ispc($n)
+if rand(80)
+mea $n &YThe toxic yellow sludge eats away at your mechanical frame, doing significant, although slight, structural damage!&D
+mpdamage $n 12
+endif
+endif
+~
+|
+S
+#100772
+In the Large Fast-Flowing Pipe~
+The pipe goes straight in both directions for quite a way here, and the
+volatile chemical brew running through it picks up quite a bit of speed
+northward. There's a constant hissing noise, as if of the stuff doing
+damage to the pipe walls. The air is filled with a misty yellow vapor
+that would certainly not be healthy for organic life to breathe.
+~
+0 2097160&16 0
+D0
+~
+~
+0 -1 100773
+D2
+~
+~
+0 -1 100771
+> entry_prog 100~
+if ispc($n)
+if rand(80)
+mea $n &YThe toxic yellow sludge eats away at your mechanical frame, doing significant, although slight, structural damage!&D
+mpdamage $n 12
+endif
+endif
+~
+|
+S
+#100773
+A Curve In the Pipe~
+The nasty liquid chemical stuff runs through the curving pipe here. The
+flow speed is quite high, even though the liquid is almost sludgy. On the
+inside surface of the pipe there's a lot of corrosion, and there are also
+several electronic devices affixed to the pipe wall. Part of the pipe
+looks like it had been corroded away at one point, but reinforced with
+a big patch made of a piece of sheet metal. Near that spot there is an
+inwardly hinged panel.
+~
+0 2097160&16 0
+D2
+~
+~
+0 -1 100772
+D6
+~
+~
+0 -1 100774
+D10
+~
+panel~
+526339 -1 100783
+> entry_prog 100~
+if ispc($n)
+if rand(80)
+mea $n &YThe toxic yellow sludge eats away at your mechanical frame, doing significant, although slight, structural damage!&D
+mpdamage $n 12
+endif
+endif
+~
+|
+S
+#100774
+Twisting Pipe Turn~
+The pipe curves sharply here. To the north, it looks like there might be
+an end to the pipe of some kind, and to the south, it curves again. The
+yellowish chemical inside this pipe is as bad here as anywhere else. If
+any electronic equipment were exposed to these vapors for an extended
+period, they'd doubtless be severely damaged.
+~
+0 2097160&16 0
+D0
+~
+~
+0 -1 100775
+D9
+~
+~
+0 -1 100773
+> entry_prog 100~
+if ispc($n)
+if rand(80)
+mea $n &YThe toxic yellow sludge eats away at your mechanical frame, doing significant, although slight, structural damage!&D
+mpdamage $n 12
+endif
+endif
+~
+|
+S
+#100775
+The Pipe Comes to an End~
+The pipe comes up against another thick metal grate at this point, and
+the yellow sludge drops forward as the pipe turns sharply downward past
+the grate. There's a huge section of pipe cut right out of the east wall,
+and it'd be very easy to walk in and out of the pipe at that point. The
+yellow waste sloshes up against the ground, causing there to be a large
+accumulation of filthy yellow crud on the ground outside the pipe. A
+small corridor stretches eastward.
+~
+0 2097160&16 0
+D1
+~
+~
+0 -1 100776
+D2
+~
+~
+0 -1 100774
+> entry_prog 100~
+if ispc($n)
+if wasinroom($n) == 100774
+if rand(80)
+mea $n &YThe toxic yellow sludge eats away at your mechanical frame, doing significant, although slight, structural damage!&D
+mpdamage $n 12
+endif
+endif
+endif
+~
+|
+S
+#100776
+Angled Corridors~
+This is a very thin, very dusty corridor. It forks, going both to the
+southeast and the southwest. There's also a large split heading to the
+west, over to a giant metal pipe with a hole in the side. The thin
+corrdors have blank silverish walls that are covered with dust. There
+isn't any of the metal scrap adorning the floor that is so common in
+the other part of this structure; it's much "cleaner", even with the
+prodigious amount of grime on the walls and floor. There doesn't appear
+to be anything of significance visible nearby.
+~
+0 2097160&16 0
+D3
+~
+~
+16777216 -1 100775
+D8
+~
+~
+0 -1 100779
+D9
+~
+~
+0 -1 100780
+D10
+~
+~
+0 -1 100777
+E
+significance~
+There's nothing of significance, I said! Nothing! Move along!
+~
+S
+#100777
+Floating in a void~
+~
+0 2097160&16 0
+D1
+~
+~
+0 -1 100776
+S
+#100778
+Floating in a void~
+~
+0 2097164&16 0
+S
+#100779
+A Very Sharp Corner~
+This 45-degree angled corner is filled with scrap and junk. It's piled
+all over. Nothing about it seems very different than any of the other
+junk. It consists of steel girders, mostly, with other metal scrap. There
+are some big pieces of whitish plastic mixed in with the metal.
+~
+0 2097160&16 0
+D3
+~
+~
+0 -1 100781
+D7
+~
+~
+0 -1 100776
+S
+#100780
+A Very Sharp Corner~
+This 45-degree angled corner is filled with scrap and junk. It's piled
+all over. Nothing about it seems very different than any of the other
+junk. It consists of steel girders, mostly, with other metal scrap. There
+are some big pieces of whitish plastic mixed in with the metal.
+~
+0 2097160&16 0
+D1
+~
+~
+0 -1 100781
+D6
+~
+~
+0 -1 100776
+S
+#100781
+A Wall of Twisted Scrap~
+The wall to the north and the wall to the south are extremely different.
+To the north, the wall is a big flat metal surface. Its surface has a
+layer of dust pasted all over it. To the south, though, there's a wall
+of metal scrap. Big steel beams are toppled all over each other, along
+with other twisted and warped pieces of scrap metal, to make a nearly
+solid tall wall of junk. The ceiling is very high here, almost two
+dozen feet, and the wall of junk extends all the way up to the top.
+It's as if the wall was knocked out and replaced with this scrap metal
+in some sort of insane recycling project, or that there was a huge
+explosion that destroyed the wall, and scrap was pushed up against it
+as a makeshift repair job.
+~
+0 2097160&16 0
+D1
+~
+~
+0 -1 100779
+D3
+~
+~
+0 -1 100780
+D10
+~
+crawl~
+17303552 -1 100782
+E
+junk wall scrap~
+Upon closer inspection, you can see that there's a small hole at knee
+level that might just be small enough to crawl through, if one so
+desired.
+~
+S
+#100782
+Pushing Through Packed Scrap~
+Inside this huge pile of scrap metal and plastic, it's not a very pleasant
+place. It's somewhat difficult to push through it, because the stuff is
+packed in really hard, and it's really dense, but the application of a
+little force is enough to move enough out of the way to move past. It
+settles down and gets packed more whenever any big piece is moved, which
+raises the question of just how much scrap is in this pile. It's a lot.
+~
+0 2097160&16 0
+D2
+~
+~
+0 -1 100767
+> entry_prog 100~
+if wasinroom($n) == 100781
+mea $n &wYou scrunch down really small, and crawl through the hole in the scrap
+mea $n &wwall. You have to really work to push your way through, because there's
+mea $n &wa lot of blockage and there's a lot of force pushing down on you.
+mea $n &wSuddenly, a chunk of scrap falls behind he, blocking the path to
+mea $n &wthe rear.
+endif
+~
+|
+S
+#100783
+Stone Tunnel~
+This gray tunnel is dug parallel alongside the giant pipe for about 20
+feet, and then diverges just slightly westward, although still going
+in a northerly direction. The tunnel is almost perfectly round, as if
+it was dug by a giant drill bit. The stone of the walls is a dark grey,
+with some darker black mottled colors running through it. Drops of water
+fall from the ceiling into a little puddle down the center of the tunnel,
+sometimes, making a quiet "Bloop" sound.
+~
+0 2097161&16 0
+D0
+~
+~
+0 -1 100784
+D10
+~
+panel~
+526339 -1 100773
+S
+#100784
+End of the Stone Tunnel~
+The tunnel ends abruptly with a perfect semicircular curve in the front
+wall. There's some scrap metal sitting around at the very end of the tunnel.
+The scrap seems as if it's slightly less old and in better condition
+(for scrap) than the junk that's in the main part of the complex.
+~
+0 2097160&16 0
+D2
+~
+~
+0 -1 100783
+S
+#100785
+Cleared Area Around a Large Hole~
+This part of the long-disused floor is a dead-end room from the corridor
+to the north. Its walls look like they were once covered with computers
+and scientific devices. There are giant thick plastic cylinders that
+probably once contained something, and many other esoteric devices that
+have been destroyed by the wear of time. There is also ubiquitous metal
+scrap scattered all around the floor. In the very middle of the room,
+there's a rough, ragged hole in the floor. It's quite forboding.
+~
+0 2097160&16 0
+D0
+~
+~
+0 -1 100769
+D5
+~
+~
+0 -1 100786
+E
+forboding rough ragged hole~
+As you peer into the depths of the ragged hole in the floor, you notice
+that the edge of the opening is not very stable. Inside the hole, some
+sort of movement is visible. It's very dark, and it's nearly impossible
+to see anything at all, but there are dark swirls and rapid swooshes,
+but it's not clear what they actually are. Occasionally, a screeching
+noise emanates up from in the hole.
+~
+> entry_prog 100~
+if wasinroom($n) == 100789
+mea $n &wFinally! You got out of there!&D
+endif
+~
+|
+S
+#100786
+In a Dark Hole~
+It's dark. The only thing visible is the floor and anything that may
+be on it, which is mostly scrap. The air is filled with an extremely
+thick metallic dust, which is swirling around in extremely rapid currents
+of air, which buffets against you. There's also the occasional big chunk
+of metal flying through the air. Yikes!
+~
+0 2097160&16 0
+D0
+~
+~
+2048 -1 100788
+D1
+~
+~
+2048 -1 100787
+D2
+~
+~
+2048 -1 100788
+D3
+~
+~
+2048 -1 100787
+D4
+~
+~
+2048 -1 100787
+D5
+~
+~
+2048 -1 100788
+D6
+~
+~
+2048 -1 100786
+D7
+~
+~
+2048 -1 100787
+D8
+~
+~
+2048 -1 100788
+D9
+~
+~
+2048 -1 100786
+> entry_prog 100~
+if rand(15)
+mea $n &RAs you wander around in the swirling fog, a chunk of levitating metal slams into you, knocking you to the ground, and then flies away!
+mpdamage $n 15
+endif
+~
+|
+S
+#100787
+In a Dark Hole~
+It's dark. The only thing visible is the floor and anything that may
+be on it, which is mostly scrap. The air is filled with an extremely
+thick metallic dust, which is swirling around in extremely rapid currents
+of air, which buffets against you. There's also the occasional big chunk
+of metal flying through the air. Yikes!
+~
+0 2097160&16 0
+D0
+~
+~
+2048 -1 100788
+D1
+~
+~
+2048 -1 100786
+D2
+~
+~
+2048 -1 100787
+D3
+~
+~
+2048 -1 100786
+D4
+~
+~
+2048 -1 100786
+D5
+~
+~
+2048 -1 100786
+D6
+~
+~
+2048 -1 100787
+D7
+~
+~
+2048 -1 100788
+D8
+~
+~
+2048 -1 100786
+D9
+~
+~
+2048 -1 100786
+> entry_prog 100~
+if rand(15)
+mea $n &RAs you wander around in the swirling fog, a chunk of levitating metal slams into you, knocking you to the ground, and then flies away!&D
+mpdamage $n 15
+endif
+~
+|
+S
+#100788
+In a Dark Hole~
+It's dark. The only thing visible is the floor and anything that may
+be on it, which is mostly scrap. The air is filled with an extremely
+thick metallic dust, which is swirling around in extremely rapid currents
+of air, which buffets against you. There's also the occasional big chunk
+of metal flying through the air. Yikes!
+~
+0 2097160&16 0
+D0
+~
+~
+2048 -1 100786
+D1
+~
+~
+2048 -1 100787
+D2
+~
+~
+2048 -1 100786
+D3
+~
+~
+2048 -1 100787
+D4
+~
+~
+2048 -1 100787
+D5
+~
+~
+2048 -1 100787
+D6
+~
+~
+2048 -1 100789
+D7
+~
+~
+2048 -1 100788
+D8
+~
+~
+2048 -1 100787
+D9
+~
+~
+2048 -1 100788
+> entry_prog 100~
+if rand(15)
+mea $n &RAs you wander around in the swirling fog, a chunk of levitating metal slams into you, knocking you to the ground, and then flies away!&D
+mpdamage $n 15
+endif
+~
+|
+S
+#100789
+In a Dark Hole~
+It's dark. The only thing visible is the floor and anything that may
+be on it, which is mostly scrap. The air is filled with an extremely
+thick metallic dust, which is swirling around in extremely rapid currents
+of air, which buffets against you. There's also the occasional big chunk
+of metal flying through the air. Yikes!
+~
+0 2097160&16 0
+D0
+~
+~
+2048 -1 100786
+D1
+~
+~
+2048 -1 100786
+D2
+~
+~
+2048 -1 100786
+D3
+~
+~
+2048 -1 100786
+D4
+~
+~
+2048 -1 100785
+D5
+~
+~
+2048 -1 100786
+D6
+~
+~
+2048 -1 100786
+D7
+~
+~
+2048 -1 100786
+D8
+~
+~
+2048 -1 100786
+D9
+~
+~
+2048 -1 100786
+> entry_prog 100~
+if rand(25)
+mea $n &RAs you wander around in the swirling fog, a chunk of levitating metal slams into you, knocking you to the ground, and then flies away!&D
+mpdamage $n 15
+endif
+~
+|
+S
+#100790
+A Curved Debris Hallway~
+Without the scrap machinery in this hallway, it looks like the curve
+of it might have been smooth and somewhat aesthetically pleasing. Now,
+of course, that's not even visible because of the crap that nearly blocks
+the way entirely. It's still pretty easy to go through, but if a few more
+big chunks were strategically placed, it would be pretty well impassable.
+~
+0 2097160&16 0
+D1
+~
+~
+0 -1 100791
+D7
+~
+~
+0 -1 100768
+S
+#100791
+Messy Floor Area~
+It doesn't look like this spot used to be a corridor, but it's effectively
+been made so by the piles of rusty electrical equipment. Some of it's
+really really old. There are a few antique looking "personal computers"
+in the pile. One of them has a little sticker on it. There's a huge crack
+in the steel wall on the east. Past the obscuring junk, there's clearly a
+crevice in the wall. Perhaps it's from an earthquake.
+~
+0 2097160&16 0
+D0
+~
+~
+0 -1 100792
+D3
+~
+~
+0 -1 100790
+D6
+~
+~
+0 -1 100795
+D10
+~
+murder~
+526336 -1 100798
+E
+sticker personal computer intel~
+The little sticker on the antique's little plastic case says "I te  ns de"
+It's quite a cryptic label. Looking at the rest of the ancient computer,
+you can see that it even has a matching antique monitor and keyboard.
+~
+E
+keyboard~
+This keyboard is in exceptionally poor condition. The space under the
+keys is crammed tight full of dust; there's so much dust that it looks
+like the keys could hardly be pressed. It's not like the keyboard would
+work, anyway. Curiously, the surfaces of a few of the keys don't have
+any dust on them at all.
+~
+E
+monitor~
+The computer monitor has a big crack with a hole right in the middle of
+the screen. Hmm, it looks like a message has been written in the dust
+on the screen.
+~
+E
+writing message screen~
+Somebody wrote on the monitor screen with their finger:
+"To enter, just type ..."
+The last bit is a smudge. How frustrating.
+~
+E
+smudge~
+Peering closer at it, you think you can make out that the first letter
+was an 'M'. That's slightly helpful...
+
+
+
+Wait a minute! There's something else written underneath it! If the big
+inscription was written with a finger, this one was done with a miniature
+Q-tip. It's so tiny...
+~
+E
+tiny~
+The tiny message reads:
+"To kill unlawfully."
+Hmmm...
+~
+> entry_prog 100~
+if wasinroom($n) == 100798
+mea $n &wYou steel yourself, and step through the quivering energy field. You come out the other side unharmed.&D
+endif
+~
+|
+S
+#100792
+Viewing a Giant Shattered Computer Terminal~
+The north wall is dominated by the shattered remnant of a huge screen.
+It's got twisted steel beams jutting out of the broken remains of the
+glass. Charred burn marks cover the sides inside where the screen was.
+There are smashed and utterly destroyed bits of computer hardware mounted
+in the wall around the former screen. Everything has long been totally
+broken, and it's all choked with dust.
+~
+0 2097160&16 0
+D2
+~
+~
+0 -1 100791
+D6
+~
+~
+0 -1 100794
+D7
+~
+~
+0 -1 100793
+S
+#100793
+Curvy Corridor~
+The air here is particularly filthy. Dust is everywhere, covering every
+surface. The scrap piled nearby here mostly consists of robotic arms and
+legs. They range in quality from crude hexagonal pincers to semi-realistic
+arms with articulated fingers and rubber flesh. It's all decrepit and
+very old.
+~
+0 2097160&16 0
+D6
+~
+~
+0 -1 100796
+D8
+~
+~
+0 -1 100792
+S
+#100794
+By a Big Crack in the Wall~
+The floor, in addition to having big metal chunks of trash on it, is
+covered with tiny 1-inch glass spheres. They're covered in dust, and it's
+not even possible to see what color they are. The source of these little
+beads is not apparent. Many are broken; shattered into tiny glass shards.
+~
+0 2097160&16 0
+D2
+~
+~
+0 -1 100795
+D7
+~
+~
+0 -1 100796
+D9
+~
+~
+0 -1 100792
+S
+#100795
+Inside a Crack in the Wall~
+This is a really tight fit. Sometime in the past, something caused this
+wall to split open, and you're inside it right now. The inside of the
+wall is quite interesting. There's lots of tubing and wires running
+willy-nilly through the wall. An electrician who had to work on anything
+in here would have been driven mad. Perhaps that's why Dr. Gero is so
+evil? Astonishingly, in addition to the metal and plastic material in the
+wall, there are bricks. Yes, bricks.
+~
+0 2097160&16 0
+D0
+~
+~
+0 -1 100794
+D9
+~
+~
+0 -1 100791
+E
+brick bricks~
+This is a brick. It's a pretty regular brick. It's red, and crumbly. It's
+also covered in dust. There's another brick here, too.
+~
+E
+another~
+All in all, it's just another brick in the wall.
+~
+S
+#100796
+A Scrap Metal Dais~
+A bunch of thin steel girders and long metal pipes have been bent and
+shaped and assembled together into a dais, a little raised platform, in
+the middle of this room. The top of the dais is several feet across, and
+it's about 18 inches high. The surface consists of strips of ragged
+sheet metal woven in a crosshatch pattern into a metal surface. There's
+considerably less other scrap nearby, probably because it was used to
+build the dais. Little cramped doorways lead to the southeast and south-
+west. Both are partially blocked by junk, but navigable.
+~
+0 2097160&16 0
+D8
+~
+~
+0 -1 100794
+D9
+~
+~
+0 -1 100793
+D10
+~
+~
+0 -1 100797
+S
+#100797
+Floating in a void~
+~
+0 2097160&16 0
+D10
+~
+~
+0 -1 100796
+S
+#100798
+An Isolated Room~
+This room is quite different from the rest of the complex, mostly in
+its lack of mechanical garbage, and in its method of access. It actually
+has bright, working lights, in the form of glowing wall panels. The walls
+are still covered with dust. There's a strange transparent energy field
+of some sort to the north. Through it can be seen the corridor with the
+wrecked computer parts near a crack in the wall.
+~
+0 2097164&16 0
+D0
+~
+~
+0 -1 100791
+> entry_prog 100~
+mea $n &WYou type out the word "Murder" on the ancient keyboard, and then
+mea $n &Wyou're engulfed by a bright white light! Suddenly your surroundings
+mea $n &Wchange, and you find yourself somewhere else.
+mea $n &WHow any piece of machinery is still working in this place is a mystery
+mea $n &W(Especially a teleporter!)
+~
+|
+S
+#100799
+A Glowing Chamber~
+This tiny room is filled with glowing light from some semi-high tech light
+panels on the wall and ceiling. The brightness (compared to the rest of
+the complex) doesn't cut down on the amount of dust. Dust is settled over
+every surface, heavily. In the center of the room, there's a metal cylinder
+about 4 inches wide that sticks up halfway to the ceiling. It has a gray
+button on the top.
+~
+0 2097164&16 0
+S
+#0
+
+
+#RESETS
+M 1 100701 1 100735
+D 0 100709 2 2
+D 0 100711 1 2
+D 0 100714 3 2
+D 0 100722 2 2
+M 1 100703 1 100712
+D 0 100712 3 2
+M 1 100704 1 100715
+D 0 100715 1 2
+M 1 100705 1 100723
+D 0 100723 0 2
+M 1 100702 1 100708
+D 0 100708 0 2
+M 1 100706 1 100730
+M 1 100708 1 100730
+D 0 100730 1 2
+D 0 100730 3 2
+O 1 100717 1 100731
+D 0 100731 1 2
+D 0 100729 3 2
+D 0 100745 1 2
+D 0 100742 3 2
+D 0 100740 2 2
+M 1 100710 1 100739
+D 0 100739 0 2
+D 0 100753 2 2
+D 0 100758 1 2
+M 1 100711 1 100765
+M 1 100712 1 100743
+D 0 100743 1 2
+M 1 100713 1 100746
+D 0 100746 3 2
+M 1 100714 1 100754
+D 0 100754 0 2
+O 1 100717 1 100760
+D 0 100760 3 2
+M 1 100715 1 100759
+M 1 100718 1 100759
+D 0 100759 1 2
+D 0 100759 3 2
+M 1 100720 1 100796
+G 1 100731 1
+D 0 100773 10 1
+O 1 100732 1 100786
+M 1 100724 1 100779
+M 1 100722 1 100798
+O 1 100734 1 100799
+M 1 100721 1 100784
+D 0 100783 10 1
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

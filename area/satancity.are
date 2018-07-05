@@ -1,0 +1,7584 @@
+#AREA   Satan City~
+
+
+
+#VERSION 252
+#AUTHOR Goku~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 4
+
+#RESETMSG The sounds of traffic and the bustle of commerce fade in and out around you~
+
+#FLAGS
+0 5
+
+#CLIMATE 3 2 1
+
+#MOBILES
+#3700
+bank robber~
+a bank robber~
+A bank robber is here shooting at a police officer.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 200000
+112 112 1
+10 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3701
+nervous looking gang leader~
+A nervous looking gang leader~
+A nervous looking gang leader is sticking up a teller here.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 250
+112 112 1
+10 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+#3702
+pretty saleswoman woman~
+a pretty saleswoman~
+A pretty saleswoman is stocking shelves.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 2
+500 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3703
+Mr. Satan~
+Mr. Satan~
+Mr. Satan is walking around here, giving tips to his students.
+~
+~
+1539 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 10000000
+112 112 1
+10 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 1~
+mpecho $I holds up a V for victory.
+~
+|
+#3704
+bank teller~
+a bank teller~
+A bank teller is here counting out some zeni.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 2
+10 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3705
+ryiuko girl~
+Ryiuko~
+An attractive looking girl is here selling flowers.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 2
+10 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3706
+the tea and things owner~
+the tea and things owner~
+The Tea and Things owner is here tending to his shop.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+500 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3707
+gap employee~
+a gap employee~
+A gap employee is here looking over the merchandise.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+500 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3708
+old priest~
+an old priest~
+An old, funny looking priest sits here looking at you through a slatted metal screen.
+~
+~
+67108883 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+10 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3709
+police officer~
+a police officer~
+A police officer is engaged in a gunfight with two criminals.
+~
+~
+3 0 500 C
+1 0 100 1d20+0 2d5+0
+-1 200000
+112 112 1
+10 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+#3710
+attractive young teacher~
+an attractive young teacher~
+An attractive young teacher is here with her nose buried in a book.
+~
+~
+515 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100
+112 112 2
+10 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3711
+attentive student~
+an attentive student~
+An attentive student is here focusing on his studies.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+10 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 1~
+mpecho _whi An attentive student raises his hand.
+~
+|
+#3712
+principal~
+the principal~
+The principal is looking over some papers on his desk.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 200000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+#3713
+chief police~
+the chief of police~
+The chief of police is sitting behind his desk, eating a donut.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1100
+112 112 1
+10 10 10 10 6
+0 0 0 0 0
+1 1 0 0 1 1 2
+0 0 0 0 0 0 0 0
+#3714
+cheerful looking bartender~
+the cheerful looking bartender~
+A cheerful looking bartender is here drying out a glass.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+500 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 25~
+if ispc($n)
+ if age($n) < 50
+  sigh
+  say I guess I better card ya.  You never know, right?
+  if carryingvnum($n)3863
+   mpechoat $n &cYou show $I your fake I.D.
+   mpechoaround $n &c$n shows $I $s I.D.
+   give _scfakeid $i
+   if rand(15)
+    say HEY!  This is a fake I.D.!
+    mpjunk _scfakeid
+    mpechoat $n &c$I tears up your fake I.D.
+    mpechoaround $n &c$I tears up $n's fake I.D.
+    mpechoat $n &c$I escorts you out of the bar.
+    mpechoaround $n &c$I escorts $n out of the bar.
+    mpforce $n south
+   else
+    say Ok, thank you $n.
+    give _scfakeid $n
+   endif
+  else
+   mpechoat $n &cYou show $I your I.D.
+   mpechoaround $n &c$n shows $I $s I.D.
+   if age($n) < 21
+    mpecho &C$I says 'Sorry $n, you'll have to come back some other time when I'm not carding people.'
+    mpechoat $n &c$I escorts you out of the bar.
+    mpechoaround $n &c$I escorts $n out of the bar.
+    mpforce $n west
+   else
+    say Ok, thank you $n.
+   endif
+  endif
+ endif
+endif
+~
+|
+#3715
+police captain~
+a police captain~
+A police captain is standing behind a desk taking peoples complaints.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 500000
+112 112 1
+10 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+#3716
+stray dog~
+a stray dog~
+A stray dog is wandering around, looking for some trash to nose through.
+~
+~
+16777413 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 50000
+112 112 1
+10 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3717
+attendant~
+an elevator attendant~
+An elevator attendant is directing people to their proper floors.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+10 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3718
+jeweler~
+a jeweler~
+A jeweler is displaying some of the more expensive items.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+500 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3719
+patrol officer~
+a patrol officer~
+A patrol officer is scouting the area for signs of trouble.
+~
+~
+65 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 350
+112 112 1
+10 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3720
+sharpener~
+Sharpener~
+Sharpener is goofing off while the teacher is away.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 150000
+112 112 1
+10 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3721
+eliza young girl~
+Eliza~
+An attractive young girl is sitting here twirling her hair around her finger.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100000
+112 112 2
+10 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 3 ~
+mpecho _whi $I giggles.
+~
+|
+#3722
+citizen~
+a citizen of Satan City~
+A citizen of Satan City is here going about their business.
+~
+~
+16777413 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100000
+112 112 1
+10 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3723
+worried scientist~
+A worried looking scientist~
+A worried looking scientist is here glancing over his notes.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 750
+112 112 1
+10 10 10 10 6
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+#3724
+ticket clerk~
+A ticket clerk~
+A ticket clerk sits here behind a small window.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3725
+cashier~
+A cashier~
+A cashier is here ringing up people's purchases.
+~
+~
+67108871 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100
+112 112 1
+500 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3726
+suspicious man~
+A suspicious looking man~
+A suspicious looking man in a trenchcoat is standing here.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+500 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> act_prog p looks at you.~
+mpsleep 5
+whisper $n Might you be interested in some of my wares?
+mpecho &c$I opens up his trenchcoat reveling what's inside...
+mpforce $n list
+~
+|
+#3727
+high priest~
+The high priest~
+The high priest is here, read to sacrifice a young girl.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 75000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3728
+young girl~
+A frightened young girl~
+A frightened young girl is lying here upon a large, stone alter.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 50000
+112 112 2
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3729
+robed priest~
+A robed priest~
+A robed priest is here, chanting.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 70000
+112 112 1
+10 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+#3730
+news anchor~
+A well-dressed news anchor~
+A well-dressed news anchor sits behind a large desk here.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 25000
+112 112 1
+10 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3731
+receptionist~
+A receptionist~
+A receptionist is here typing out a long document.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 35000
+112 112 2
+10 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3732
+Don Calzone~
+Don Calzone~
+Don Calzone is sitting behind a large desk, mumbling to himself.
+~
+~
+67108871 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3733
+razen burly man ~
+Razen~
+A burly looking man in a tailored suit stands here, arms crossed.
+~
+~
+67108875 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3734
+hotel manager~
+The hotel manager~
+The hotel manager is here shmoozing with the guests.
+~
+~
+67108871 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+10 10 10 10 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3800
+liquor owner old lady~
+The liquor store owner~
+The liquor store owner is standing here behind her counter.
+~
+~
+67108931 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 2
+500 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if ispc($n)
+ say Excuse me, I need to see your I.D. before you can enter.
+ if carryingvnum($n)3863
+  mpechoat $n &cYou show $I your fake I.D.
+  mpechoaround $n &c$n shows $I $s I.D.
+  give _scfakeid $i
+  mpechoat $n &cYou show $I your I.D.
+  mpechoaround $n &c$n shows $I $s I.D.
+  if rand(25)
+   say HEY!  This is a fake I.D.!
+   mpjunk _scfakeid
+   mpechoat $n &c$I tears up your fake I.D.
+   mpechoaround $n &c$I tears up $n's fake I.D.
+   mpechoat $n &c$I tosses you out of the store!
+   mpechoaround $n &c$I tosses $n out of the store!
+   mpforce $n south
+  else
+   say Ok, thank you $n.
+   give _scfakeid $n
+  endif
+ else
+  if age($n) < 21
+   mpecho &C$I says 'Hey!  You're not 21 $n!  Get outa here!'
+   mpechoat $n &c$I tosses you out of the store!
+   mpechoaround $n &c$I tosses $n out of the store!
+   mpforce $n south
+  else
+   say Ok, thank you $n.
+  endif
+ endif
+endif
+~
+|
+#3801
+clerk teenage~
+The clerk~
+A teenage clerk is standing behind the counter.
+~
+~
+67108931 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+500 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3802
+bouncer~
+the bouncer~
+A huge bouncer stands here with his arms folded.
+~
+~
+67108931 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Sorry, but the casino is closed for renovations.  You'll have to leave.
+~
+|
+#3803
+repair guy~
+the repair guy~
+The repair guy is sitting at his desk working on something.
+~
+~
+67108931 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+500 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3804
+man owner~
+the armor shop owner~
+A big strong man is standing here checking out his armor supply.
+~
+~
+67108931 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+500 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3805
+girl owner~
+the capsule store owner~
+A pretty, young girl is standing behind the counter.
+~
+~
+67108931 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 2
+500 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3806
+store owner~
+the store owner~
+The equipment store owner is here looking at his supplies.
+~
+~
+67108931 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+500 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3807
+super pimp~
+the super pimp~
+The super pimp is bopping down the street.
+~
+~
+16777281 0 0 C
+1 0 75 1d20+0 2d5+0
+-1 500000
+112 112 1
+20 20 20 20 0
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+mpecho $n &G$I powers up his &pPimp Stomp&G attack and attacks!&D
+mppldammage $n 20
+~
+> fight_prog 10~
+mpecho $n &G$I reaches his hand back and launches his &pPimp Smack&G attack!&D
+mppldammage $n 25
+~
+> death_prog 5~
+mpoload 3813
+~
+> death_prog 5~
+mpoload 3812
+~
+> death_prog 5~
+mpoload 3811
+~
+> death_prog 5~
+mpoload 3810
+~
+> death_prog 5~
+mpoload 3809
+~
+> death_prog 5~
+mpoload 3806
+~
+> death_prog 5~
+mpoload 3808
+~
+> death_prog 5~
+mpoload 3807
+~
+|
+#3808
+young teenager~
+a young teenager~
+A young teenager is walking down the street with a dazed look on his face.
+~
+~
+16777409 0 150 C
+1 0 100 1d20+0 2d5+0
+-1 90000
+112 112 1
+15 15 15 15 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+punch
+~
+> fight_prog 10~
+'energy ball'
+~
+> fight_prog 10~
+'destructo disk'
+~
+|
+#3809
+school girl~
+a school girl~
+A cute school girl in a plaid skirt is skipping down the street.
+~
+~
+16777409 0 200 C
+1 0 100 1d20+0 2d5+0
+-1 90000
+112 112 2
+15 15 15 15 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+punch
+~
+> fight_prog 10~
+'energy ball'
+~
+> fight_prog 10~
+'destructo disk'
+~
+|
+#3810
+punk teenager~
+a teenage punk~
+A teenage punk is causing some trouble here.
+~
+~
+16777409 0 -100 C
+1 0 100 1d20+0 2d5+0
+-1 95000
+112 112 1
+15 15 15 15 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+punch
+~
+> fight_prog 10~
+'energy ball'
+~
+> fight_prog 10~
+'destructo disk'
+~
+|
+#3811
+business man~
+a business man~
+A business man seems to be trying to get some where quickly.
+~
+~
+16777409 0 100 C
+1 0 100 1d20+0 2d5+0
+-1 100000
+112 112 1
+15 15 15 15 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+punch
+~
+> fight_prog 10~
+'energy ball'
+~
+> fight_prog 10~
+'destructo disk'
+~
+|
+#3812
+business woman~
+a business woman~
+A business woman seems to be trying to get some where quickly.
+~
+~
+16777409 0 125 C
+1 0 100 1d20+0 2d5+0
+-1 100000
+112 112 2
+15 15 15 15 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+punch
+~
+> fight_prog 10~
+'energy ball'
+~
+> fight_prog 10~
+'destructo disk'
+~
+|
+#3813
+traffic cop~
+a traffic cop~
+A thin traffic cop is looking for someone to give a ticket to.
+~
+~
+16777281 0 175 C
+1 0 100 1d20+0 2d5+0
+-1 200000
+112 112 1
+20 20 20 20 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+punch
+~
+> fight_prog 10~
+'energy ball'
+~
+> fight_prog 10~
+'destructo disk'
+~
+|
+#3814
+patrol officer~
+a patrol officer~
+A patrol officer is helping citizens and keeping the peace.
+~
+~
+65 0 250 C
+1 0 100 1d20+0 2d5+0
+-1 300000
+112 112 1
+20 20 20 20 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+punch
+~
+> fight_prog 10~
+'energy ball'
+~
+> fight_prog 10~
+'destructo disk'
+~
+|
+#3815
+goon~
+a goon~
+A local goon to the mob is standing here looking suspicious.
+~
+~
+16777409 0 -250 C
+1 0 100 1d20+0 2d5+0
+-1 400000
+112 112 1
+20 20 20 20 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+punch
+~
+> fight_prog 10~
+'energy ball'
+~
+> fight_prog 10~
+'destructo disk'
+~
+|
+#3816
+police detective~
+a police detective~
+A police detective is looking around for clues.
+~
+~
+65 0 250 C
+1 0 100 1d20+0 2d5+0
+-1 500000
+112 112 1
+20 20 20 20 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+punch
+~
+> fight_prog 10~
+'energy ball'
+~
+> fight_prog 10~
+'destructo disk'
+~
+|
+#3817
+police lieutenant~
+a police lieutenant~
+A police lieutenant is walking around eating a doughnut.
+~
+~
+16777281 0 275 C
+1 0 100 1d20+0 2d5+0
+-1 600000
+112 112 1
+20 20 20 20 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+punch
+~
+> fight_prog 10~
+'energy ball'
+~
+> fight_prog 10~
+'destructo disk'
+~
+|
+#3818
+police sergeant~
+a police sergeant~
+A police sergeant is walking around drinking some coffee.
+~
+~
+16777281 0 275 C
+1 0 100 1d20+0 2d5+0
+-1 700000
+112 112 1
+20 20 20 20 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+punch
+~
+> fight_prog 10~
+'energy ball'
+~
+> fight_prog 10~
+'destructo disk'
+~
+|
+#3819
+gangster~
+a gangster~
+A gangster from the local mob is standing around fliping a coin.
+~
+~
+16777281 0 -275 C
+1 0 100 1d20+0 2d5+0
+-1 800000
+112 112 1
+20 20 20 20 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+punch
+~
+> fight_prog 10~
+'energy ball'
+~
+> fight_prog 10~
+'destructo disk'
+~
+|
+#3820
+deputy sheriff~
+a deputy sheriff~
+A deputy sheriff is out on patrol looking for violations of the law.
+~
+~
+16777281 0 300 C
+1 0 100 1d20+0 2d5+0
+-1 900000
+112 112 1
+20 20 20 20 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+punch
+~
+> fight_prog 10~
+'energy ball'
+~
+> fight_prog 10~
+'destructo disk'
+~
+|
+#3821
+police chief~
+the chief of police~
+The chief of police is sitting behind his desk doing paper work.
+~
+~
+16777281 0 350 C
+1 0 100 1d20+0 2d5+0
+-1 1000000
+112 112 1
+25 25 25 25 0
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+punch
+~
+> fight_prog 10~
+'energy ball'
+~
+> fight_prog 10~
+'destructo disk'
+~
+> fight_prog 10~
+kamehameha
+~
+|
+#3822
+fbi agent~
+a FBI agent~
+A FBI agent is flashing his badge to everyone he can find.
+~
+~
+16777281 0 250 C
+1 0 100 1d20+0 2d5+0
+-1 2000000
+112 112 1
+25 25 25 25 0
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+punch
+~
+> fight_prog 10~
+'energy ball'
+~
+> fight_prog 10~
+'destructo disk'
+~
+> fight_prog 10~
+kamehameha
+~
+|
+#3823
+sheriff~
+the sheriff~
+The sheriff of Satan City is making sure everyone respects his authority.
+~
+~
+16777281 0 100 C
+1 0 100 1d20+0 2d5+0
+-1 5000000
+112 112 1
+25 25 25 25 0
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+punch
+~
+> fight_prog 10~
+'energy ball'
+~
+> fight_prog 10~
+'destructo disk'
+~
+> fight_prog 10~
+kamehameha
+~
+|
+#3824
+boss mob~
+the mob boss~
+The boss of the Satan City mob is mumbling something about "the family".
+~
+~
+16777281 0 -350 C
+1 0 100 1d20+0 2d5+0
+-1 5000000
+112 112 1
+25 25 25 25 0
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+punch
+~
+> fight_prog 10~
+'energy ball'
+~
+> fight_prog 10~
+'destructo disk'
+~
+> fight_prog 10~
+kamehameha
+~
+|
+#3825
+undertaker~
+The undertaker~
+The undertaker is here examining dead bodies.
+~
+~
+67108867&2 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3900
+housekeeper~
+a newly created housekeeper~
+Some god abandoned a newly created housekeeper here.
+~
+~
+1073741825 2 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3999
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 1
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#3700
+large marble fountain~
+a large marble fountain~
+A large marble fountain dominates the center of the square.~
+~
+25 0 0
+9999 9999 0 0 0 0
+1 0 0
+ 0
+#3701
+statue satan~
+a statue of Mr. Satan~
+An enormous statue of Mr. Satan sits high atop a gigantic pedestal.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#3702
+pair tan khaki pants~
+a pair of tan khaki pants~
+A pair of stylish khaki pants lie here.~
+~
+9 0 33 8
+0 0 0 0 10 10
+1 1000 20
+ 0
+#3703
+pair baggy blue jeans~
+a pair of baggy blue jeans~
+A ruffled up pair of jeans is lying here.~
+~
+9 0 33 8
+0 0 0 0 12 12
+1 1200 30
+ 0
+#3704
+stylish tan jacket~
+a stylish tan jacket~
+A pile of tan material is wadded up on the floor.~
+~
+9 0 1025 64
+0 0 0 0 13 13
+1 1300 50
+ 0
+#3705
+tight-fitting black miniskirt~
+a tight-fitting black miniskirt~
+A sexy looking skirt is bunched up on the floor here.~
+~
+9 0 33 8
+0 0 0 0 8 8
+1 800 40
+ 0
+#3706
+pair silken socks~
+a pair of silken socks~
+A pair of soft looking socks has been left here.~
+~
+9 0 65 2
+0 0 0 0 2 2
+1 200 20
+ 0
+#3707
+thick blue capsule corp jacket~
+a thick blue capsule corp jacket~
+A capsule corp brand jacket is lying on the ground.~
+~
+9 8192 1025 64
+0 0 0 0 13 13
+2 1300 70
+ 0
+#3708
+pair attractive looking sandals~
+a pair of attractive looking sandals~
+A pair of sandals has been left here.~
+~
+13 0 65 64
+0 0 0 0 3 3
+1 0 40
+ 0
+#3709
+thigh-high leather boots~
+some thigh-high leather boots~
+An expensive pair of leather boots is lying here.~
+~
+9 0 65 64
+0 0 0 0 7 7
+1 700 90
+ 0
+#3710
+pair hushpuppies~
+a pair of hushpuppies~
+An expensive pair of shoes is lying here.~
+~
+9 0 65 64
+0 0 0 0 4 4
+1 400 60
+ 0
+#3711
+cup tea~
+a cup of tea~
+A steaming cup of tea is sitting here.~
+~
+17 0 1
+1 1 11 0 0 0
+1 0 4
+ 0
+#3712
+cup juice~
+a cup of juice~
+A cup of orange liquid is sitting here.~
+~
+17 0 1
+1 1 8 0 0 0
+1 0 4
+ 0
+#3713
+glass milk~
+a glass of milk~
+A glass of milk sits here.~
+~
+17 0 1
+2 2 10 0 0 0
+1 0 4
+ 0
+#3714
+chocolate chip cookie~
+a chocolate chip cookie~
+Someone has left a delicious looking cookie on the ground.~
+~
+19 0 1
+2 0 0 0 0 0
+1 0 2
+ 0
+#3715
+delicious chocolate cake~
+a delicious looking chocolate cake~
+A large cake has is lying on the ground.~
+~
+19 0 1
+8 0 0 0 0 0
+1 0 10
+ 0
+#3716
+blueberry muffin~
+a blueberry muffin~
+A delicious looking muffin is lying on the ground.~
+~
+19 0 1
+4 0 0 0 0 0
+1 0 3
+ 0
+#3718
+chocolate ice cream cone~
+a chocolate ice cream cone~
+An ice cream cone is melting here.~
+~
+19 0 1
+4 0 0 0 0 0
+1 0 5
+ 0
+#3719
+vanilla ice cream cone~
+a vanilla ice cream cone~
+An ice cream cone is melting here.~
+~
+19 0 1
+4 0 0 0 0 0
+1 0 5
+ 0
+#3720
+single red rose~
+&ga single &Rred &grose&Y~
+A beautiful red rose has been dropped here.~
+~
+19 0 16401
+1 0 0 1 0 0
+1 0 2
+ 0
+#3721
+single violet~
+&ga single &Bviolet&Y~
+A beautiful violet has been dropped here.~
+~
+19 0 16401
+1 0 0 1 0 0
+1 0 2
+ 0
+#3722
+beautiful bouquet red roses~
+&ga beautiful bouquet of &Rred roses&Y~
+A bunch of roses litter the ground.~
+~
+19 0 1
+1 0 0 1 0 0
+1 0 10
+ 0
+#3723
+large bouquet of tulips~
+&ga large bouquet of &Ytulips&Y~
+A bunch of tulips litter the ground.~
+~
+19 0 1
+1 0 0 1 0 0
+1 0 10
+ 0
+#3724
+beautiful white wedding bouquet~
+&ga beautiful, &Wwhite &gwedding bouquet&Y~
+Someones precious wedding memento is lying here.~
+~
+19 0 1
+1 0 0 1 0 0
+1 0 20
+ 0
+#3725
+multicolored bouquet~
+&ga &Bm&Ru&Pl&Yt&Bi&Rc&Po&Yl&Bo&Rr&Pe&Yd &gbouquet&Y~
+A colorful assortment of flowers is lying here.~
+~
+19 0 1
+1 0 0 1 0 0
+1 0 30
+ 0
+#3726
+extravagant white wedding dress~
+an extravagant, white wedding dress~
+A beautiful, white wedding dress is lying here.~
+~
+9 0 1025 64
+0 0 0 0 5 5
+1 500 500
+ 0
+#3727
+pair silk panties~
+a pair of silk panties~
+A pair of womens unmentionables is lying here.~
+~
+9 0 33 2
+0 0 0 0 1 1
+1 100 30
+ 0
+#3728
+sexy bra~
+a sexy bra~
+A sexy bra is caressing the ground here.~
+~
+9 0 9 2
+0 0 0 0 1 1
+1 100 30
+ 0
+#3729
+sexy lace teddy~
+a sexy lace teddy~
+A sexy looking piece of lingerie is lying here.~
+~
+9 0 9 4
+0 0 0 0 2 2
+1 200 60
+ 0
+#3730
+pair silk boxers~
+a pair of silk boxers~
+A rumpled up pile of silk is lying here.~
+~
+9 0 33 2
+0 0 0 0 1 1
+1 100 30
+ 0
+#3731
+pair white cotton panties~
+a pair of white, cotton panties~
+A pair of panties are lying here.~
+~
+9 0 33 2
+0 0 0 0 1 1
+1 100 20
+ 0
+#3732
+pair stockings~
+a pair of stockings~
+A long pair of stockings lies stretched out on the ground here.~
+~
+9 0 33 4
+0 0 0 0 2 2
+1 200 15
+ 0
+#3733
+black tuxedo jacket~
+a black tuxedo jacket~
+Someone has dropped a fancy looking jacket here.~
+~
+9 0 1025 64
+0 0 0 0 7 7
+1 700 250
+ 0
+#3734
+black tuxedo pants~
+some black tuxedo pants~
+A pair of pants lies here getting wrinkled.~
+~
+9 0 33 8
+0 0 0 0 7 7
+1 700 150
+ 0
+#3735
+capsule corp baseball cap~
+a capsule corp baseball cap~
+A sturdy looking baseball cap is lying here.~
+~
+9 0 17
+0 0 0 0 3 3
+1 300 15
+ 0
+#3736
+black bow tie~
+a black bow tie~
+A stylish bow tie is lying here.~
+~
+9 0 5
+0 0 0 0 0 0
+1 0 7
+ 0
+#3737
+pair black stiletto heels ~
+a pair of black stiletto heels~
+A wicked looking pair of heels is dominating the floor here.~
+~
+9 0 65 64
+0 0 0 0 6 6
+1 600 75
+ 0
+#3738
+pair white high heels~
+a pair of white high heels~
+A nice looking pair of womens shoes is lying here.~
+~
+9 0 65 64
+0 0 0 0 3 3
+1 300 50
+ 0
+#3739
+holy bible~
+the holy bible~
+The word of the lord lies here.~
+~
+9 0 16385
+0 0 0 0 0 0
+1 0 100
+ 0
+#3740
+pair boxer shorts~
+a pair of boxer shorts~
+A pair of handsome silk boxers is lying here.~
+~
+9 0 33 2
+0 0 0 0 1 1
+1 100 15
+ 0
+#3741
+small steel key~
+a small steel key~
+A small key is lying here.~
+~
+18 8388608 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#3742
+bottle beer~
+a bottle of beer~
+A bottle of beer is lying on the ground here.~
+~
+17 0 1
+2 2 1 0 0 0
+1 0 5
+ 0
+#3743
+specialty~
+the house specialty~
+A glass of house specialty is lying here.~
+~
+17 0 1
+2 2 8 0 0 0
+1 0 7
+ 0
+#3744
+shot whisky~
+a shot of whisky~
+A shot of whisky is begging you to drink it.~
+~
+17 0 1
+1 1 5 0 0 0
+1 0 5
+ 0
+#3745
+glass ale~
+a glass of ale~
+A tall glass of ale is sitting here.~
+~
+17 0 1
+3 3 3 0 0 0
+1 0 7
+ 0
+#3746
+glass dark ale~
+a glass of dark ale~
+A tall glass of dark ale is sitting here.~
+~
+17 0 1
+3 3 4 0 0 0
+1 0 7
+ 0
+#3747
+shot firebreather~
+a shot of firebreather~
+A potent looking shot of firebreather is here begging you to drink it.~
+~
+17 0 1
+1 1 7 0 0 0
+1 0 5
+ 0
+#3748
+small round button~
+a small round button~
+A small round button is set into a smooth metal panel in the wall.~
+~
+39 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+> push_prog 100~
+mpechoat $n The elevator doors makes a sharp ringing sound as
+mpechoat $n they slowly slide open, allowing you to enter before
+mpechoat $n quickly snapping shut again.
+mpechoaround $n The elevator doors make a sharp ringing sound as
+mpechoaround $n they slowly slide open, allowing $n to enter before
+mpechoaround $n quickly snapping shut again.
+mpopenpassage  3860 3867 0
+mpforce $n north
+mpclosepassage 3860 0
+mpat 3860 pull button
+~
+|
+#3749
+sparkling ruby ring~
+a sparkling ruby ring~
+A glittering red ring is lying here.~
+~
+9 0 3
+0 0 0 0 2 2
+1 200 50000
+ 0
+#3750
+pearl necklace~
+a pearl necklace~
+A long string of pearls is scattered here.~
+~
+9 0 5
+0 0 0 0 1 1
+1 100 65000
+ 0
+#3751
+pair of diamond studs~
+a pair of diamond studs~
+A pair of sparkling diamonds has been dropped here.~
+~
+9 0 65537
+0 0 0 0 1 1
+1 100 60000
+ 0
+#3752
+loaf bread~
+A loaf of bread~
+A loaf of bread is getting dirty here.~
+~
+19 0 1
+12 0 0 0 0 0
+1 0 12
+ 0
+#3753
+bottle Jolt Cola~
+A bottle of Jolt Cola~
+A bottle of brownish looking liquid is sitting here.~
+~
+17 0 1
+3 3 0 0 0 0
+1 0 6
+ 0
+#3754
+bottle milk~
+A bottle of milk~
+A frosty bottle of milk is sitting here.~
+~
+17 0 1
+3 3 0 0 0 0
+1 0 10
+ 0
+#3755
+bag rice~
+A bag of rice~
+A bag of long white rice is lying here.~
+~
+19 0 1
+12 0 0 0 0 0
+1 0 20
+ 0
+#3756
+dozen eggs~
+A dozen eggs~
+A dozen eggs has been left here.~
+~
+19 0 1
+12 0 0 0 0 0
+1 0 12
+ 0
+#3757
+block cheese~
+A block of cheese~
+A block of cheese is lying here.~
+~
+19 0 1
+6 0 0 0 0 0
+1 0 7
+ 0
+#3758
+bottle water~
+A bottle of water~
+A bottle of water is sitting here.~
+~
+17 0 1
+3 3 0 0 0 0
+1 0 5
+ 0
+#3759
+package noodles~
+A package of noodles~
+A package of thick looking noodles is lying here.~
+~
+19 0 1
+8 0 0 0 0 0
+1 0 25
+ 0
+#3760
+manhole cover~
+A manhole cover~
+A dirty manhole cover can be seen here.~
+~
+38 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+> pull_prog 100~
+mpechoat $n &WYou pull the manhole cover up as you slowly slink into the depths below.
+mpecho &WThe manhole cover clinks loudly as it is put back into place.
+mptransfer $n 3919
+mpat 3918 push manhole
+~
+|
+#3761
+can coke coca-cola~
+A can of Coca-Cola~
+Someone has left a cold refreshing can of Coca-Cola here.~
+~
+17 0 1
+2 2 0 0 0 0
+1 0 6
+ 0
+#3788
+noodles~
+a newly created noodles~
+A plate of delicious looking noodles lies here, waiting to be devoured.~
+~
+19 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#3800
+dumpster~
+a dumpster~
+A dumpster, filled with trash, is up against the ally wall.~
+~
+15 0 0
+1000 0 0 0 0 0
+500 20000 2000
+ 0
+E
+dumpster~
+This is a huge dumpster that looks like it could hold a lot of
+garbage.  There is still a lot of room inside of it where you
+could drop off some trash if you wanted to.
+~
+#3801
+trash cans~
+some trans cans~
+Some trash cans are here, packed completely full of garbage.~
+~
+38 0 0
+10000 0 0 0 0 0
+30 0 0
+ 0
+E
+trash cans~
+The trash cans are overflowing with all kinds of strange and nasty
+things.  The smell coming from the trash smells just as it looks,
+bad!  Looking closer though, you notice that these trash cans seem
+to be covering something here in the middle of the ally.  You could
+probably move the trash cans to see what it is, IF you want to touch
+that nasty garbage!
+~
+> push_prog 100~
+mpechoat $n You push the trash cans aside.
+mpecho $n moves some trash cans around.
+mpoload 3760
+~
+> pull_prog 100~
+mpechoat $n You move the trash cans back to where they were.
+mpecho $n moves some trash cans around.
+mppurge manhole
+~
+|
+#3802
+trash cans~
+some trash cans~
+Some trash cans have been set next to the dumpster.~
+~
+15 0 0
+50 0 0 0 0 0
+10 1000 100
+ 0
+E
+trash cans~
+Whoa that's nasty!  There's still some room left in the trash cans
+if you wanted to be a good citizen and throw away your garbage.
+~
+#3805
+black trench coat~
+a long black trench coat~
+There is a long black coat here on the ground.~
+~
+9 0 1025 48
+0 0 0 0 50 50
+3 5000 1600
+ 75000
+#3806
+pimp hat~
+a pimp hat~
+A fly looking pimp hat has been left on the ground.~
+~
+9 0 17
+0 0 0 0 5 5
+1 500 20
+ 0
+#3807
+pimp coat~
+a pimp coat~
+A fly looking pimp coat has been left on the ground.~
+~
+9 0 1025 16
+0 0 0 0 25 25
+1 2500 100
+ 0
+#3808
+pimp pants~
+some pimp pants~
+Some fly looking pimp pants have been left on the ground.~
+~
+9 0 33 2
+0 0 0 0 10 10
+1 1000 50
+ 0
+#3809
+pimp shoes~
+some pimp shoes~
+Some fly looking pimp shoes have been left on the ground.~
+~
+9 0 65 2
+0 0 0 0 5 5
+1 500 25
+ 0
+#3810
+pimp belt~
+a pimp belt~
+A fly looking pimp belt have been left on the ground.~
+~
+9 0 2049 1
+0 0 0 0 0 0
+1 0 10
+ 0
+#3811
+pimp shirt~
+a pimp shirt~
+A fly looking pimp shirt have been left on the ground.~
+~
+9 0 9 1
+0 0 0 0 5 5
+1 500 10
+ 0
+#3812
+Pimp Cane~
+A Pimp Cane~
+A fly looking pimp cain have been left on the ground.~
+~
+8 0 16385
+0 0 0 0 0 0
+1 0 250
+ 0
+#3813
+pimp sun glasses~
+pimp sun glasses~
+Some fly looking pimp sun glasses have been left on the ground.~
+~
+9 0 131073 1
+0 0 0 0 0 0
+1 0 10
+ 0
+#3814
+diamond ring~
+a diamond ring~
+An expensive looking diamond ring is on the ground.~
+~
+9 0 3
+0 0 0 0 0 0
+1 0 70000
+ 0
+#3815
+glass ring~
+a glass ring~
+An nice looking glass ring is on the ground.~
+~
+9 0 3
+0 0 0 0 0 0
+1 0 500
+ 0
+#3816
+toy ring~
+a toy ring~
+An cheep toy ring has been tossed on the ground.~
+~
+9 0 3
+0 0 0 0 0 0
+1 0 50
+ 0
+#3817
+rolex watch~
+a rolex watch~
+An expensive rolex watch has been tossed on the ground.~
+~
+9 0 4097
+0 0 0 0 0 0
+1 0 20000
+ 0
+> exa_prog 100~
+mpforce $n time
+~
+|
+#3818
+wedding band~
+a wedding band~
+A wedding band has been tossed on the ground.~
+~
+9 0 3
+0 0 0 0 0 0
+1 0 3000
+ 0
+#3819
+gold ankle bracelet~
+a gold ankle bracelet~
+A gold ankle bracelet has been tossed on the ground.~
+~
+9 0 2097153
+0 0 0 0 0 0
+1 0 1000
+ 0
+#3820
+silver ankle bracelet~
+a silver ankle bracelet~
+A silver ankle bracelet has been tossed on the ground.~
+~
+9 0 2097153
+0 0 0 0 0 0
+1 0 750
+ 0
+#3821
+can mountian dew~
+a can of Mountain Dew~
+Someone has left a cold refreshing can of Mountain Dew here.~
+~
+17 0 1
+3 3 0 0 0 0
+1 0 6
+ 0
+#3822
+can dr. pepper~
+a can of Dr. Pepper~
+Someone has left a cold refreshing can of Dr. Pepper here.~
+~
+17 0 1
+3 3 0 0 0 0
+1 0 6
+ 0
+#3823
+can pepsi pepsi-cola~
+a can of Pepsi-Cola~
+Someone has left a cold refreshing can of Pepsi-Cola here.~
+~
+17 0 1
+3 3 0 0 0 0
+1 0 6
+ 0
+#3824
+fifth bottle jack daniels jd~
+a fifth of Jack Daniels~
+Someone left a bottle of whiskey on the ground.~
+~
+17 0 1
+10 10 5 0 0 0
+1 0 1000
+ 0
+#3825
+fifth bottle vodka~
+a fifth of vodka~
+Someone left a bottle of vodka on the ground.~
+~
+17 0 1
+10 10 5 0 0 0
+1 0 250
+ 0
+#3826
+fifth bottle tequila~
+a fifth of tequila~
+Someone left a bottle of tequila on the ground.~
+~
+17 0 1
+10 10 5 0 0 0
+1 0 250
+ 0
+#3827
+sixer six-pack pack beer~
+a six-pack of beer~
+Someone left a six-pack of beer on the ground.~
+~
+17 0 1
+6 6 1 0 0 0
+1 0 100
+ 0
+#3828
+fifth bottle rum~
+a fifth of rum~
+Someone left a bottle of rum on the ground.~
+~
+17 0 1
+10 10 5 0 0 0
+1 0 250
+ 0
+#3829
+fifth bottle whiskey~
+a fifth of whiskey~
+Someone left a bottle of whiskey on the ground.~
+~
+17 0 1
+10 10 5 0 0 0
+1 0 500
+ 0
+#3830
+fifth bottle jose cuervo tequila~
+a fifth of Jose Cuervo~
+Someone left a bottle of Jose Cuervo on the ground.~
+~
+17 0 1
+10 10 5 0 0 0
+1 0 500
+ 0
+#3831
+fifth bottle gin~
+a fifth of gin~
+Someone left a bottle of gin on the ground.~
+~
+17 0 1
+10 10 5 0 0 0
+1 0 250
+ 0
+#3832
+fifth bottle tanqueray gin~
+a fifth of Tanqueray~
+Someone left a bottle of Tanqueray on the ground.~
+~
+17 0 1
+10 10 5 0 0 0
+1 0 1000
+ 0
+#3833
+fifth bottle cristall vodka~
+a fifth of Cristall~
+Someone left a bottle of Cristall on the ground.~
+~
+17 0 1
+10 10 5 0 0 0
+1 0 750
+ 0
+#3834
+bottle old english 40oz oe malt liquor~
+a 40oz bottle of Old English~
+Someone left a bottle of malt liquor on the ground.~
+~
+17 0 1
+3 3 1 0 0 0
+1 0 10
+ 0
+#3835
+fifth bottle sake~
+a fifth of sake~
+Someone left a bottle of sake on the ground.~
+~
+17 0 1
+10 10 5 0 0 0
+1 0 250
+ 0
+#3836
+bottle wine~
+a bottle of wine~
+Someone left a bottle of wine on the ground.~
+~
+17 0 1
+10 10 2 0 0 0
+1 0 250
+ 0
+#3837
+fifth bottle brandy~
+a fifth of brandy~
+Someone left a bottle of brandy on the ground.~
+~
+17 0 1
+10 10 5 0 0 0
+1 0 250
+ 0
+#3838
+fifth bottle courvoisier brandy~
+a fifth of Courvoisier~
+Someone left a bottle of Courvoisier on the ground.~
+~
+17 0 1
+10 10 5 0 0 0
+1 0 1000
+ 0
+#3839
+fifth bottle bacardi rum~
+a fifth of Bacardi~
+Someone left a bottle of Bacardi on the ground.~
+~
+17 0 1
+10 10 5 0 0 0
+1 0 750
+ 0
+#3840
+black cargo pants~
+black cargo pants~
+A pair of black cargo pants have been left on the ground here.~
+~
+9 0 33 2
+0 0 0 0 0 0
+1 0 75
+ 0
+#3841
+tank top shirt~
+a white tank top shirt~
+A white tank top shirt has been left on the ground here.~
+~
+9 0 9 1
+0 0 0 0 0 0
+1 0 10
+ 0
+#3842
+hip hugger jeans~
+hip hugger jeans~
+A pair of hip hugger jeans have been left on the ground here.~
+~
+9 0 33 2
+0 0 0 0 0 0
+1 0 120
+ 0
+#3843
+short denim skirt~
+a short denim skirt~
+A short denim skirt has been left on the ground here.~
+~
+9 0 33 2
+0 0 0 0 0 0
+1 0 80
+ 0
+#3844
+cutoffs jean shorts~
+cutoff jean shorts~
+A pair of cutoff jean shorts have been left on the ground here.~
+~
+9 0 33 2
+0 0 0 0 0 0
+1 0 75
+ 0
+#3845
+manly bro~
+a manly bro~
+A manly bro has been left on the ground here.~
+~
+9 0 9 1
+0 0 0 0 0 0
+1 0 50
+ 0
+E
+manly bro~
+It looks like a bra, but it's designed for a man.
+~
+#3846
+underwear whitie tighties~
+whitie tighties~
+Someones whitie tighties have been left on the ground here.~
+~
+9 0 33 1
+0 0 0 0 0 0
+1 0 10
+ 0
+#3847
+black hoodie~
+a black hoodie~
+A black hoodie has been left on the ground here.~
+~
+9 0 1025 16
+0 0 0 0 0 0
+1 0 40
+ 0
+#3848
+black bandana~
+a black bandana~
+A black bandana has been left on the ground here.~
+~
+9 0 17
+0 0 0 0 0 0
+15 0 10
+ 0
+#3849
+steel helmet~
+a steel helmet~
+A steel helmet has been left on the ground here.~
+~
+9 0 17
+0 0 0 0 50 50
+1 5000 1500
+ 75000
+#3850
+dark crimson cape~
+a dark crimson cape~
+A dark crimson cape has been left on the ground here.~
+~
+9 0 1025 16
+0 0 0 0 0 0
+1 0 250
+ 0
+#3851
+PASGT helmet~
+a PASGT helmet~
+A PASGT helmet has been left on the ground here.~
+~
+9 0 17
+0 0 0 0 75 75
+5 7500 2500
+ 100000
+#3852
+heavy combat boots~
+heavy combat boots~
+A pair of heavy combat boots have been left on the ground here.~
+~
+9 0 65 2
+0 0 0 0 75 75
+3 7500 2000
+ 100000
+#3853
+white karate gi~
+a white karate gi~
+A white karate gi has been left on the ground here.~
+~
+9 0 9 4
+0 0 0 0 600 600
+1 67500 4800
+ 100000
+A
+2 3
+#3854
+white karate pants~
+white karate pants~
+A pair of white karate pants have been left on the ground here.~
+~
+9 0 33 2
+0 0 0 0 100 100
+1 17500 3300
+ 100000
+A
+2 3
+#3855
+riot helmet~
+a riot helmet~
+A riot helmet has been left on the ground here.~
+~
+9 0 17
+0 0 0 0 150 150
+3 12500 5500
+ 500000
+A
+2 -1
+#3856
+riot gloves~
+riot gloves~
+A pair of riot gloves have been left on the ground here.~
+~
+9 0 129 2
+0 0 0 0 25 25
+1 0 5100
+ 500000
+A
+2 -1
+#3857
+riot body armor~
+riot body armor~
+Some riot body armor has been left on the ground here.~
+~
+9 0 9 12
+0 0 0 0 900 900
+25 87500 8000
+ 500000
+A
+2 -1
+#3858
+riot leg armor~
+riot leg armor~
+Some riot leg armor has been left on the ground here.~
+~
+9 0 33 12
+0 0 0 0 150 150
+10 12500 5500
+ 500000
+A
+2 -1
+#3859
+riot boots~
+riot boots~
+A pair of riot boots have been left on the ground here.~
+~
+9 0 65 2
+0 0 0 0 75 75
+3 5000 5300
+ 500000
+A
+2 -1
+#3860
+riot elbow pads~
+riot elbow pads~
+A pair of riot helmet have been left on the ground here.~
+~
+9 0 257 32
+0 0 0 0 25 25
+1 0 5100
+ 500000
+A
+2 -1
+#3861
+riot knee pads~
+riot knee pads~
+A pair of riot knee pads have been left on the ground here.~
+~
+9 0 33 32
+0 0 0 0 25 25
+1 0 5100
+ 500000
+A
+2 -1
+#3862
+riot sleeves~
+riot sleeves~
+A pair of riot sleeves have been left on the ground here.~
+~
+9 0 257 12
+0 0 0 0 150 150
+5 12500 5500
+ 500000
+A
+2 -1
+#3863
+fake id i.d. _scfakeid~
+a fake I.D.~
+Someone left their drivers license on the ground here.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 5500
+ 100
+#3864
+night vision goggles~
+night vision goggles~
+Someone dropped a pair of night vision goggles on the ground here.~
+~
+9 8193 131073
+0 0 0 0 0 0
+1 -100663296 5500
+ 50000
+A
+24 4194304
+#3865
+infrared goggles~
+infrared goggles~
+Someone dropped a pair of infrared goggles on the ground here.~
+~
+9 8193 131073
+0 0 0 0 0 0
+1 512000 2000
+ 50000
+A
+24 512
+#3866
+apartment key~
+an apartment key~
+An apartment key lies on the ground here.~
+~
+18 128 1
+3905 0 0 0 0 0
+1 0 0
+ 0
+#3867
+apartment key~
+an apartment key~
+An apartment key lies on the ground here.~
+~
+18 128 1
+3905 0 0 0 0 0
+1 0 0
+ 0
+#3868
+apartment key~
+an apartment key~
+An apartment key lies on the ground here.~
+~
+18 128 1
+3905 0 0 0 0 0
+1 0 0
+ 0
+#3904
+Enron's House Key~
+Enron's House Key~
+Some god dropped a newly created Enron's House Key here.~
+~
+8 0 16385
+3904 0 0 0 0 0
+1 0 0
+ 1
+#3999
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#3700
+The Entrance to Satan City~
+This is the entrance to the areas capital city.  Once called Orange Star
+City, it is the home to our heroic Savior Mr. Satan for whom it was later
+renamed after.  A large, slightly faded wooden sign has been posted on the
+right side of the road, depicting the hero.  The faint noise of the city
+can be heard to the north.
+~
+0 4 2
+D0
+~
+~
+0 -1 3701
+S
+#3701
+Justice Road~
+Moving across the well-maintained road you can hear the sounds of small
+children playing gleefully as their faint echoes ring out like small bells in
+the distance.  Rows of neatly trimmed hedges line the left and right sides of
+the street, giving it a warm friendly appearance.  A long driveway juts down
+sharply from the curb to the west while the road continues to the north.
+~
+0 0 1
+D0
+~
+~
+0 -1 3702
+D2
+~
+~
+0 -1 3700
+D3
+~
+door~
+1 -1 3915
+S
+#3702
+Justice Road~
+Moving across the well-maintained road you can hear the sounds of small
+children playing gleefully as their faint echoes ring out like small bells in
+the distance.  Rows of neatly trimmed hedges line the left and right sides of
+the street, giving it a warm friendly appearance.  The road continues to the
+north and south.
+~
+0 0 1
+D0
+~
+~
+0 -1 3703
+D2
+~
+~
+0 -1 3701
+S
+#3703
+Justice Road~
+Moving across the well-maintained road you can hear the sounds of small
+children playing gleefully as their faint echoes ring out like small bells in
+the distance.  Rows of neatly trimmed hedges line the left and right sides of
+the street, giving it a warm friendly appearance.  The road continues to the
+north and south.
+~
+0 0 1
+D0
+~
+~
+0 -1 3704
+D2
+~
+~
+0 -1 3702
+S
+#3704
+Justice Road~
+The warm concrete vibrates beneath you as automobiles and  people scurry
+frantically about their business, leaving traces of soft echoes hanging in
+the cool breeze which careens and swirls  around you.  A quaint looking
+white building can be seen to the east.
+~
+0 0 1
+D0
+~
+~
+0 -1 3705
+D1
+~
+door~
+1 -1 3819
+D2
+~
+~
+0 -1 3703
+S
+#3705
+Justice Road~
+The long well-maintained street runs south towards the entrance to the city
+and north approaching a large intersection.
+~
+0 0 1
+D0
+~
+~
+0 -1 3706
+D2
+~
+~
+0 -1 3704
+S
+#3706
+Intersection of Saiyaman Street and Justice Road~
+You have reached a large intersection, connecting the busy streets which
+run throughout the city.  A traffic cop diligently helps people  cross
+street, heavy with automobiles.
+~
+0 0 1
+D1
+~
+~
+0 -1 3707
+D2
+~
+~
+0 -1 3705
+D3
+~
+~
+0 -1 3711
+S
+#3707
+Saiyaman Street~
+Many small stores and buildings line the traffic filled street.  People
+are walking around and looking busy.  Some of them are talking on cell
+phones others are just chatting with other people.  A few of the buildings
+look rather old.
+~
+0 0 1
+D1
+~
+~
+0 -1 3708
+D3
+~
+~
+0 -1 3706
+S
+#3708
+Saiyaman Street~
+Buildings here seem to look different than a lot of others around town.
+These look older as if they have been around for awhile.  They are still
+kept up quite well.  Many people seem to be hanging out around here.
+Either talking on cell phones or just hanging out with friends.
+~
+0 0 1
+D1
+~
+~
+0 -1 3709
+D3
+~
+~
+0 -1 3707
+S
+#3709
+Saiyaman Street~
+Older style buildings continue to populate this area.  People around here
+seem to enjoy these styles of buildings.  A few trees and bushes separate
+the sidewalk and the road by nicely decorating the walk ways.
+~
+0 0 1
+D1
+~
+~
+0 -1 3710
+D3
+~
+~
+0 -1 3708
+S
+#3710
+Saiyaman Street~
+A few older looking buildings are mixed in with the newer style here.
+Many people wonder around seemingly busy.  The trees that line the
+sidewalks add a nice, small town feeling to this heavily populated city.
+~
+0 0 1
+D1
+~
+~
+0 -1 3716
+D3
+~
+~
+0 -1 3709
+S
+#3711
+Saiyaman Street~
+Greenery is abundant along side the road here.  Lush green trees and grass
+help add a country feeling to this place.  People stroll along looking
+happy and traffic seems to flow effortlessly making this a pretty peaceful
+place to be.
+~
+0 0 1
+D1
+~
+~
+0 -1 3706
+D3
+~
+~
+0 -1 3712
+S
+#3712
+Saiyaman Street~
+This street is named after the protector of the city, the often imitated
+but never duplicated, Saiyaman!  It's obvious it is held in high regard
+here and very well kept.  It is swept and the hedges planted along the
+sides are neatly trimmed.
+~
+0 0 1
+D1
+~
+~
+0 -1 3711
+D3
+~
+~
+0 -1 3713
+S
+#3713
+Saiyaman Street~
+The song of a few birds can be heard over the light sounds of people and
+traffic.  The green grass and trees here help make this place like more of
+a small town.  There are a few people pleasantly walking on the sidewalk
+enjoying this place.
+~
+0 0 1
+D1
+~
+~
+0 -1 3712
+D3
+~
+~
+0 -1 3714
+S
+#3714
+Saiyaman Street~
+It is a lot different here then from the rest of the city.  Trees, grass,
+bushes and flowers have been planted all over to make this place look nice
+and beautiful.  Almost everyone here seems to be smiling and enjoying
+themselves.
+~
+0 0 1
+D1
+~
+~
+0 -1 3713
+D3
+~
+~
+0 -1 3715
+S
+#3715
+Saiyaman Street~
+There seems to be quite a few people moving around here.  They all seem
+like they are trying to go somewhere but their not sure where.  Light
+traffic moves though the streets along side the people on the sidewalks. A
+few pieces of litter have been tossed aside dirtying up the streets.
+~
+0 0 1
+D0
+~
+~
+0 -1 3717
+D1
+~
+~
+0 -1 3714
+S
+#3716
+Saiyaman Street~
+The buildings here are a few stories high and the streets are filling up
+with traffic.  Many people move around on the sidewalks trying to get to
+where they are going.  Some are busy talking on cell phones, while others
+are walking to work.
+~
+0 0 1
+D0
+~
+~
+0 -1 3721
+D3
+~
+~
+0 -1 3710
+S
+#3717
+Dragon Drive~
+Tall buildings tower high in this part of the city.  Many people wonder in
+and out looking as if they have too many things to do.  They all seem to
+crowd the sidewalk making it difficult to walk.  The traffic doesn't seem
+very bad here since it seems most people walk to where they are going in
+this part of town.
+~
+0 0 1
+D0
+~
+~
+0 -1 3718
+D2
+~
+~
+0 -1 3715
+S
+#3718
+Dragon Drive~
+Citizens of Satan City pack the sidewalk while trying to get to where they
+are going.  Large buildings seem to make this place even more
+claustrophobic.  There doesn't seem to be too much traffic here even
+though parked cars line the edge of the road.
+~
+0 0 1
+D0
+~
+~
+0 -1 3719
+D2
+~
+~
+0 -1 3717
+S
+#3719
+Dragon Drive~
+Light traffic flows though the street very smoothly.  Hardly creating as
+much noise pollution as in some parts of Satan City.  It seems most people
+walk to where they need to go here, even though it causes the sidewalks to
+be packed full.
+~
+0 0 1
+D0
+~
+~
+0 -1 3720
+D2
+~
+~
+0 -1 3718
+S
+#3720
+Intersection of Orange Avenue and Dragon Drive~
+Many parked cars cover the side of the road with light traffic moving up
+and down the road.  It's sort of peaceful here, if you don't count all of
+the foot traffic on the sidewalk.  There are so many enormous buildings
+here almost making it feel like being deep inside a large jungle.
+~
+0 0 1
+D0
+~
+~
+0 -1 3748
+D1
+~
+~
+0 -1 3731
+D2
+~
+~
+0 -1 3719
+D3
+~
+~
+0 -1 3732
+S
+#3721
+Star Boulevard~
+The dusty windswept street leads south towards Saiyaman Street and further
+north on Star Boulevard.  The street signs look fairly new and the road is
+sparsely populated.
+~
+0 0 1
+D0
+~
+~
+0 -1 3722
+D2
+~
+~
+0 -1 3716
+S
+#3722
+Star Boulevard~
+Citizens rush past you as you survey the street.  Star Boulevard  continues
+to the north and to the south where you can make out some  sort of
+intersection.
+~
+0 0 1
+D0
+~
+~
+0 -1 3723
+D2
+~
+~
+0 -1 3721
+S
+#3723
+Star Boulevard~
+You are standing in the center of Star Boulevard.  Commerce and busy people
+flowing all around you.  The road continues south towards the entrance to
+the city and north towards a large intersection.
+~
+0 0 1
+D0
+~
+~
+0 -1 3737
+D2
+~
+~
+0 -1 3722
+S
+#3724
+Intersection of Orange Avenue and Star Boulevard~
+This is the intersection of Orange Avenue and Star Boulevard.  Roads run in
+all directions, creeping towards different parts of the city.
+~
+0 0 1
+D0
+~
+~
+0 -1 3762
+D1
+~
+~
+0 -1 3736
+D3
+~
+~
+0 -1 3725
+S
+#3725
+Orange Avenue~
+Traveling further down hard, asphalt road you find yourself nearing  large
+white building to the west, alive with activity.  The avenue  continues
+west and east towards an intersection.  A liquor store is to the north.
+~
+0 0 1
+D0
+~
+~
+0 -1 3921
+D1
+~
+~
+0 -1 3724
+D3
+~
+~
+0 -1 3726
+S
+#3726
+Orange Avenue~
+You find yourself in front of a large eggshell-colored building housing a
+large sign atop it which reads [Satan City Market].  People shuffle in and
+out carrying their shopping lists or goods they have just purchased; your
+stomach begins to rumble.  The avenue continues in both directions while
+the entrance to the market awaits you to the north.
+~
+0 4 1
+D0
+~
+door~
+1 -1 3917
+D1
+~
+~
+0 -1 3725
+D3
+~
+~
+0 -1 3727
+S
+#3727
+Orange Avenue~
+You continue down the avenue, the smell of freshly cut grass wafting in the
+breeze around you.  The traffic on this part of the street is particularly
+heavy, you should be cautious.  A small mini-mart is to the north.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 3922
+D1
+~
+~
+0 -1 3726
+D3
+~
+~
+0 -1 3728
+S
+#3728
+Intersection of Orange Avenue and Justice Road~
+This intersection is packed tight with a traffic jam that continues all the
+way up and down. The stores all along the sides are advertising some sort
+of food or drink, nothing else. The sidewalks are nearly as packed with
+people as the street is with cars. Most of the people are just trying to
+get something to fill their hunger.
+~
+0 4 1
+D0
+~
+~
+0 -1 3755
+D1
+~
+~
+0 -1 3727
+D3
+~
+~
+0 -1 3729
+S
+#3729
+Orange Avenue~
+The traffic is just horrible!  It's tough to get any where in this city.
+People are yelling and screaming at each other.  The side walks are a bit
+calmer, if only the yelling from people in traffic would stop.
+~
+0 0 1
+D1
+~
+~
+0 -1 3728
+D3
+~
+~
+0 -1 3730
+S
+#3730
+Orange Avenue~
+Orange Avenue continues west and east, however, a huge traffic jam lies to
+the east.  You can't see from here what's causing it all you hear is lots
+of honking and yelling.  There is also a small ally to the north-west.
+~
+0 0 1
+D1
+~
+~
+0 -1 3729
+D3
+~
+~
+0 -1 3731
+D7
+~
+~
+0 -1 3918
+S
+#3731
+Orange Avenue~
+Heavy traffic pollutes the road.  You can hear loud honking and yelling
+coming from the east.  It seems like there is probably a traffic jam over
+there.  You can see an intersection to the west that also seems quite
+busy.
+~
+0 0 1
+D1
+~
+~
+0 -1 3730
+D3
+~
+~
+0 -1 3720
+S
+#3732
+Orange Avenue~
+The sidewalks packed with people seem to be thinning out a little now.
+The traffic in the street is slightly starting to pick up as well.  The
+buildings around here tower above the people and cars almost like
+mountains.
+~
+0 0 1
+D1
+~
+~
+0 -1 3720
+D3
+~
+~
+0 -1 3733
+S
+#3733
+Orange Avenue~
+This part of the avenue is bustling with activity.  People run back and
+fourth doing their daily chores while trying to avoid the steady stream of
+traffic that is flowing in both directions.  Businesses can be located to
+the north and south of the busy ave.
+~
+0 0 1
+D0
+~
+~
+0 -1 3805
+D1
+~
+~
+0 -1 3732
+D2
+~
+~
+0 -1 3806
+D3
+~
+~
+0 -1 3734
+> rand_prog 5~
+mpecho _whi Gunshots ring out through the air.
+~
+|
+S
+#3734
+Orange Avenue~
+All kinds of vehicles are driving in the road now, driving to where ever
+they need to go.  Many citizens stroll up and down the sidewalk, they all
+seem very focused on something or other.  There are many large businesses
+in side the tall buildings that surround the road.
+~
+0 0 1
+D1
+~
+~
+0 -1 3733
+D3
+~
+~
+0 -1 3735
+S
+#3735
+Orange Avenue and Morning Star Lane~
+Traffic is pretty bad here.  Cars, trucks, vans, and busses are trying to
+get to where ever it is they are trying to go.  People seem to be
+strolling around window shopping.  There seem to be a few nice sales going
+on.
+~
+0 0 1
+D0
+~
+~
+0 -1 3740
+D1
+~
+~
+0 -1 3734
+S
+#3736
+Orange Avenue~
+So many different kinds of vehicles drive the streets here and all they
+seem to do is drive and honk.  It appears that a traffic jam is beginning
+to form here.  The sound of people on the street yelling back at the cars
+is barely audible from the rest of the noise here.
+~
+0 0 1
+D1
+~
+~
+0 -1 3737
+D3
+~
+~
+0 -1 3724
+S
+#3737
+Orange Avenue~
+The flow of traffic is at a complete stand still here.  Satan City is
+famous for it's huge traffic jams.  Cars are honking, truck drivers are
+swearing and people walking on the street cover their ears.
+~
+0 0 1
+D1
+~
+~
+0 -1 3738
+D2
+~
+~
+0 -1 3723
+D3
+~
+~
+0 -1 3736
+S
+#3738
+Orange Avenue~
+Traffic is at a total stand still here.  People inside their cars are
+swearing and truck drivers are honking in futile attempts to get traffic
+moving again. A few citizens of this city famous for it's traffic jams are
+yelling right back at all the vehicles in hopes that maybe they won't be
+so loud.
+~
+0 0 1
+D1
+~
+~
+0 -1 3739
+D3
+~
+~
+0 -1 3737
+S
+#3739
+Intersection of Orange Avenue and Main Street~
+The traffic isn't any better here, it's still all jammed up.  Citizens
+walking try to ignore the horrible sounds of angry drivers on the road,
+but there isn't must else they can do other than cover their ears.
+~
+0 0 1
+D0
+~
+~
+0 -1 3769
+D3
+~
+~
+0 -1 3738
+S
+#3740
+Morning Star Lane~
+Traffic is at a total stand still here.  People inside their cars are
+swearing and truck drivers are honking in futile attempts to get traffic
+moving again. A few citizens of this city famous for it's traffic jams are
+yelling right back at all the vehicles in hopes that maybe they won't be
+so loud.
+~
+0 0 1
+D0
+~
+~
+0 -1 3741
+D2
+~
+~
+0 -1 3735
+S
+#3741
+Morning Star Lane~
+It looks like traffic is slowing down here.  There seems to be another
+traffic jam forming.  Satan City is famous for it's horrible traffic jams.
+The drivers never stop honking or swearing at other drivers.  Many people
+walking on the side of the road sigh and just keep going.
+~
+0 0 1
+D0
+~
+~
+0 -1 3742
+D2
+~
+~
+0 -1 3740
+S
+#3742
+Morning Star Lane~
+The distant sounds of honking and yelling echo though these streets.
+People wonder the street looking for something to buy.  Some are window
+shopping others are just talking.  It looks like there's a lot of trash
+littered on the sidewalk careless people.
+~
+0 0 1
+D0
+~
+~
+0 -1 3743
+D2
+~
+~
+0 -1 3741
+S
+#3743
+Intersection of Satan Way and Morning Star Lane~
+Many small stores and buildings line the traffic filled street.  People
+are walking around and looking busy.  Some of them are talking on cell
+phones others are just chatting with other people.  A few of the buildings
+look rather old.
+~
+0 0 1
+D0
+~
+~
+0 -1 3772
+D1
+~
+~
+0 -1 3744
+D2
+~
+~
+0 -1 3742
+S
+#3744
+Satan Way~
+Buildings here seem to look different than a lot of others around town.
+These look older as if they have been around for awhile.  They are still
+kept up quite well.  Many people seem to be hanging out around here.
+Either talking on cell phones or just hanging out with friends.
+~
+0 0 1
+D1
+~
+~
+0 -1 3745
+D3
+~
+~
+0 -1 3743
+S
+#3745
+Satan Way~
+Older style buildings continue to populate this area.  People around here
+seem to enjoy these styles of buildings.  A few trees and bushes separate
+the sidewalk and the road by nicely decorating the walk ways.
+~
+0 0 1
+D1
+~
+~
+0 -1 3746
+D3
+~
+~
+0 -1 3744
+S
+#3746
+Satan Way~
+A few older looking buildings are mixed in with the newer style here.
+Many people wonder around seemingly busy.  The trees that line the
+sidewalks add a nice, small town feeling to this heavily populated city.
+~
+0 0 1
+D1
+~
+~
+0 -1 3747
+D3
+~
+~
+0 -1 3745
+S
+#3747
+Intersection of Satan Way and Dragon Drive~
+Greenery is abundant along side the road here.  Lush green trees and grass
+help add a country feeling to this place.  People stroll along looking
+happy and traffic seems to flow effortlessly making this a pretty peaceful
+place to be.
+~
+0 0 1
+D0
+~
+~
+0 -1 3781
+D1
+~
+~
+0 -1 3751
+D2
+~
+~
+0 -1 3750
+D3
+~
+~
+0 -1 3746
+S
+#3748
+Dragon Drive~
+The song of a few birds can be heard over the light sounds of people and
+traffic.  The green grass and trees here help make this place like more of
+a small town.  There are a few people pleasantly walking on the sidewalk
+enjoying this place.
+~
+0 0 1
+D0
+~
+~
+0 -1 3749
+D2
+~
+~
+0 -1 3720
+S
+#3749
+Dragon Drive~
+It is a lot different here then from the rest of the city.  Trees, grass,
+bushes and flowers have been planted all over to make this place look nice
+and beautiful.  Almost everyone here seems to be smiling and enjoying
+themselves.  There is an ally to the south-east.
+~
+0 0 1
+D0
+~
+~
+0 -1 3750
+D2
+~
+~
+0 -1 3748
+D8
+~
+~
+0 -1 3918
+S
+#3750
+Dragon Drive~
+There seems to be quite a few people moving around here.  They all seem
+like they are trying to go somewhere but their not sure where.  Light
+traffic moves though the streets along side the people on the sidewalks. A
+few pieces of litter have been tossed aside dirtying up the streets.
+~
+0 0 1
+D0
+~
+~
+0 -1 3747
+D2
+~
+~
+0 -1 3749
+S
+#3751
+Satan Way~
+The buildings here are a few stories high and the streets are filling up
+with traffic.  Many people move around on the sidewalks trying to get to
+where they are going.  Some are busy talking on cell phones, while others
+are walking to work.
+~
+0 0 1
+D1
+~
+~
+0 -1 3752
+D3
+~
+~
+0 -1 3747
+S
+#3752
+Satan Way~
+Quite a bit of trash has been littered around by careless people making
+things look messy.  Lots of people pack the sidewalk making this place
+feel cramped and crowed.  There are a few very tall buildings that look
+like offices.  The Satan City Dojo is to the north.
+~
+0 0 1
+D0
+~
+~
+0 -1 3807
+D1
+~
+~
+0 -1 3753
+D3
+~
+~
+0 -1 3751
+S
+#3753
+Satan Way~
+Many tall office buildings line the street here.  People are filing in and
+out of them at an incredible pace.  The road is packed full of different
+kinds of vehicles driving around looking for parking spaces that are not
+taken.
+~
+0 0 1
+D1
+~
+~
+0 -1 3754
+D3
+~
+~
+0 -1 3752
+S
+#3754
+Satan City Central Square~
+You are now standing in the great expanse of the legendary Satan City
+square, the center of the home of our savior Mr. Satan.  A large stone
+statue of the great one sits high atop a marble base which forms a circular
+fountain, spewing fourth a cool blue stream of crisp, refreshing water.
+You can see streets in every direction, despite the tall shrubs which
+create a border around the entire square.
+~
+0 0 1
+D0
+~
+~
+0 -1 3789
+D1
+~
+~
+0 -1 3758
+D2
+~
+~
+0 -1 3757
+D3
+~
+~
+0 -1 3753
+S
+#3755
+Justice Road~
+Parked cars and vans lay between the sidewalk and the street in the shadow
+of the towering buildings.  The sidewalk is packed full of people in
+business suites and other nice looking people.  The traffic in the street
+isn't any better.  It's jammed full of cars trying to get some where as
+quickly as possible.
+~
+0 0 1
+D0
+~
+~
+0 -1 3756
+D2
+~
+~
+0 -1 3728
+S
+#3756
+Justice Road~
+Tall buildings tower high in this part of the city.  Many people wonder in
+and out looking as if they have too many things to do.  They all seem to
+crowd the sidewalk making it difficult to walk.  The traffic doesn't seem
+very bad here since it seems most people walk to where they are going in
+this part of town.  There is an ally to the north-east.
+~
+0 0 1
+D0
+~
+~
+0 -1 3757
+D2
+~
+~
+0 -1 3755
+D6
+~
+~
+0 -1 3923
+S
+#3757
+Justice Road~
+Citizens of Satan City pack the sidewalk while trying to get to where
+they are going.  Large buildings seem to make this place even more
+claustrophobic.  There doesn't seem to be too much traffic here even though
+parked cars line the edge of the road. There's a sign next to the door to
+the west. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3754
+D2
+~
+~
+0 -1 3756
+D3
+~
+~
+0 -1 210000
+E
+sign~
+"The Satan City Sanitarium is closed for redecoration."
+~
+S
+#3758
+Satan Way~
+Light traffic flows though the street very smoothly.  Hardly creating as
+much noise pollution as in some parts of Satan City.  It seems most people
+walk to where they need to go here, even though it causes the sidewalks to
+be packed full.
+~
+0 0 1
+D1
+~
+~
+0 -1 3759
+D3
+~
+~
+0 -1 3754
+S
+#3759
+Satan Way~
+Many parked cars cover the side of the road with light traffic moving up
+and down the road.  It's sort of peaceful here, if you don't count all of
+the foot traffic on the sidewalk.  There are so many enormous buildings
+here almost making it feel like being deep inside a large jungle.  There
+is an ally to the south-west.
+~
+0 0 1
+D1
+~
+~
+0 -1 3760
+D3
+~
+~
+0 -1 3758
+D9
+~
+~
+0 -1 3923
+S
+#3760
+Satan Way~
+The sidewalks packed with people seem to be thinning out a little now.
+The traffic in the street is slightly starting to pick up as well.  The
+buildings around here tower above the people and cars almost like
+mountains.
+~
+0 0 1
+D1
+~
+~
+0 -1 3761
+D3
+~
+~
+0 -1 3759
+S
+#3761
+Intersection of Satan Way and Star Boulevard~
+All kinds of vehicles are driving in the road now, driving to where ever
+they need to go.  Many citizens stroll up and down the sidewalk, they all
+seem very focused on something or other.  There are many large businesses
+in side the tall buildings that surround the road.
+mr. satan's house
+north
+~
+0 0 1
+D0
+~
+~
+0 -1 3809
+D1
+~
+~
+0 -1 3765
+D2
+~
+~
+0 -1 3764
+D3
+~
+~
+0 -1 3760
+S
+#3762
+Star Boulevard~
+Traffic is pretty bad here.  Cars, trucks, vans, and busses are trying to
+get to where ever it is they are trying to go.  People seem to be
+strolling around window shopping.  There seem to be a few nice sales going
+on.  There is a huge television station building to the north-east.
+~
+0 0 1
+D0
+~
+~
+0 -1 3763
+D2
+~
+~
+0 -1 3724
+D6
+~
+~
+0 -1 3872
+S
+#3763
+Star Boulevard~
+So many different kinds of vehicles drive the streets here and all they
+seem to do is drive and honk.  It appears that a traffic jam is beginning
+to form here.  The sound of people on the street yelling back at the cars
+is barely audible from the rest of the noise here.
+~
+0 0 1
+D0
+~
+~
+0 -1 3764
+D2
+~
+~
+0 -1 3762
+S
+#3764
+Star Boulevard~
+The flow of traffic is at a complete stand still here.  Satan City is
+famous for it's huge traffic jams.  Cars are honking, truck drivers are
+swearing and people walking on the street cover their ears.
+~
+0 0 1
+D0
+~
+~
+0 -1 3761
+D2
+~
+~
+0 -1 3763
+S
+#3765
+Satan Way~
+The traffic isn't any better here, it's still all jammed up.  Citizens
+walking try to ignore the horrible sounds of angry drivers on the road,
+but there isn't must else they can do other than cover their ears.
+~
+0 0 1
+D1
+~
+~
+0 -1 3766
+D3
+~
+~
+0 -1 3761
+S
+#3766
+Satan Way~
+Traffic is at a total stand still here.  People inside their cars are
+swearing and truck drivers are honking in futile attempts to get traffic
+moving again. A few citizens of this city famous for it's traffic jams are
+yelling right back at all the vehicles in hopes that maybe they won't be
+so loud.
+~
+0 0 1
+D1
+~
+~
+0 -1 3767
+D3
+~
+~
+0 -1 3765
+S
+#3767
+Satan Way~
+It looks like traffic is slowing down here.  There seems to be another
+traffic jam forming.  Satan City is famous for it's horrible traffic jams.
+The drivers never stop honking or swearing at other drivers.  Many people
+walking on the side of the road sigh and just keep going.
+~
+0 0 1
+D1
+~
+~
+0 -1 3768
+D3
+~
+~
+0 -1 3766
+S
+#3768
+Intersection of Satan Way and Main Street~
+The distant sounds of honking and yelling echo though these streets.
+People wonder the street looking for something to buy.  Some are window
+shopping others are just talking.  It looks like there's a lot of trash
+littered on the sidewalk careless people.
+~
+0 0 1
+D0
+~
+~
+0 -1 3801
+D2
+~
+~
+0 -1 3771
+D3
+~
+~
+0 -1 3767
+S
+#3769
+Main Street~
+Many small stores and buildings line the traffic filled street.  People
+are walking around and looking busy.  Some of them are talking on cell
+phones others are just chatting with other people.  A few of the buildings
+look rather old.
+~
+0 0 1
+D0
+~
+~
+0 -1 3770
+D2
+~
+~
+0 -1 3739
+S
+#3770
+Main Street~
+Buildings here seem to look different than a lot of others around town.
+These look older as if they have been around for awhile.  They are still
+kept up quite well.  Many people seem to be hanging out around here.
+Either talking on cell phones or just hanging out with friends.  The
+Satan City police station is to the east.
+~
+0 0 1
+D0
+~
+~
+0 -1 3771
+D1
+~
+~
+0 -1 3831
+D2
+~
+~
+0 -1 3769
+S
+#3771
+Main Street~
+Older style buildings continue to populate this area.  People around here
+seem to enjoy these styles of buildings.  A few trees and bushes separate
+the sidewalk and the road by nicely decorating the walk ways.
+~
+0 0 1
+D0
+~
+~
+0 -1 3768
+D2
+~
+~
+0 -1 3770
+S
+#3772
+Morning Star Lane~
+A few older looking buildings are mixed in with the newer style here.
+Many people wonder around seemingly busy.  The trees that line the
+sidewalks add a nice, small town feeling to this heavily populated city.
+~
+0 0 1
+D0
+~
+~
+0 -1 3773
+D2
+~
+~
+0 -1 3743
+S
+#3773
+Morning Star Lane~
+Greenery is abundant along side the road here.  Lush green trees and grass
+help add a country feeling to this place.  People stroll along looking
+happy and traffic seems to flow effortlessly making this a pretty peaceful
+place to be.
+~
+0 0 1
+D0
+~
+~
+0 -1 3774
+D2
+~
+~
+0 -1 3772
+S
+#3774
+Morning Star Lane~
+The song of a few birds can be heard over the light sounds of people and
+traffic.  The green grass and trees here help make this place like more of
+a small town.  There are a few people pleasantly walking on the sidewalk
+enjoying this place.  Orange Star High School is to the west.
+~
+0 0 1
+D0
+~
+~
+0 -1 3775
+D2
+~
+~
+0 -1 3773
+D3
+~
+~
+0 -1 3823
+S
+#3775
+Morning Star Lane~
+It is a lot different here then from the rest of the city.  Trees, grass,
+bushes and flowers have been planted all over to make this place look nice
+and beautiful.  Almost everyone here seems to be smiling and enjoying
+themselves.
+~
+0 0 1
+D0
+~
+~
+0 -1 3776
+D2
+~
+~
+0 -1 3774
+S
+#3776
+Morning Star Lane~
+There seems to be quite a few people moving around here.  They all seem
+like they are trying to go somewhere but their not sure where.  Light
+traffic moves though the streets along side the people on the sidewalks. A
+few pieces of litter have been tossed aside dirtying up the streets.
+~
+0 0 1
+D1
+~
+~
+0 -1 3777
+D2
+~
+~
+0 -1 3775
+S
+#3777
+Morning Star Lane~
+The buildings here are a few stories high and the streets are filling up
+with traffic.  Many people move around on the sidewalks trying to get to
+where they are going.  Some are busy talking on cell phones, while others
+are walking to work.
+~
+0 0 1
+D1
+~
+~
+0 -1 3778
+D3
+~
+~
+0 -1 3776
+S
+#3778
+Morning Star Lane~
+Quite a bit of trash has been littered around by careless people making
+things look messy.  Lots of people pack the sidewalk making this place
+feel cramped and crowed.  There are a few very tall buildings that look
+like offices.
+~
+0 0 1
+D1
+~
+~
+0 -1 3779
+D3
+~
+~
+0 -1 3777
+S
+#3779
+Morning Star Lane~
+Many tall office buildings line the street here.  People are filing in and
+out of them at an incredible pace.  The road is packed full of different
+kinds of vehicles driving around looking for parking spaces that are not
+taken.
+~
+0 0 1
+D1
+~
+~
+0 -1 3780
+D3
+~
+~
+0 -1 3778
+S
+#3780
+Intersection of Morning Star Lane and Dragon Drive~
+Parked cars and vans lay between the sidewalk and the street in the shadow
+of the towering buildings.  The sidewalk is packed full of people in
+business suites and other nice looking people.  The traffic in the street
+isn't any better.  It's jammed full of cars trying to get some where as
+quickly as possible.
+~
+0 0 1
+D0
+~
+~
+0 -1 3835
+D1
+~
+~
+0 -1 3785
+D2
+~
+~
+0 -1 3784
+D3
+~
+~
+0 -1 3779
+S
+#3781
+Dragon Drive~
+Tall buildings tower high in this part of the city.  Many people wonder in
+and out looking as if they have too many things to do.  They all seem to
+crowd the sidewalk making it difficult to walk.  The traffic doesn't seem
+very bad here since it seems most people walk to where they are going in
+this part of town.  The fress smell of flowers comes from a flower shop to
+the west.
+~
+0 0 1
+D0
+~
+~
+0 -1 3782
+D2
+~
+~
+0 -1 3747
+D3
+~
+~
+0 -1 3816
+S
+#3782
+Dragon Drive~
+Citizens of Satan City pack the sidewalk while trying to get to where they
+are going.  Large buildings seem to make this place even more
+claustrophobic.  There doesn't seem to be too much traffic here even
+though parked cars line the edge of the road.
+~
+0 0 1
+D0
+~
+~
+0 -1 3783
+D2
+~
+~
+0 -1 3781
+S
+#3783
+Dragon Drive~
+Light traffic flows though the street very smoothly.  Hardly creating as
+much noise pollution as in some parts of Satan City.  It seems most people
+walk to where they need to go here, even though it causes the sidewalks to
+be packed full.  There is a small tea shop to the west.
+~
+0 0 1
+D0
+~
+~
+0 -1 3784
+D2
+~
+~
+0 -1 3782
+D3
+~
+~
+0 -1 3817
+S
+#3784
+Dragon Drive~
+Many parked cars cover the side of the road with light traffic moving up
+and down the road.  It's sort of peaceful here, if you don't count all of
+the foot traffic on the sidewalk.  There are so many enormous buildings
+here almost making it feel like being deep inside a large jungle.
+~
+0 0 1
+D0
+~
+~
+0 -1 3780
+D2
+~
+~
+0 -1 3783
+S
+#3785
+Morning Star Lane~
+The sidewalks packed with people seem to be thinning out a little now.
+The traffic in the street is slightly starting to pick up as well.  The
+buildings around here tower above the people and cars almost like
+mountains.
+~
+0 0 1
+D1
+~
+~
+0 -1 3786
+D3
+~
+~
+0 -1 3780
+S
+#3786
+Morning Star Lane~
+All kinds of vehicles are driving in the road now, driving to where ever
+they need to go.  Many citizens stroll up and down the sidewalk, they all
+seem very focused on something or other.  There are many large businesses
+in side the tall buildings that surround the road.  There is an ally to
+the north-west.
+~
+0 0 1
+D1
+~
+~
+0 -1 3787
+D3
+~
+~
+0 -1 3785
+D7
+~
+~
+0 -1 3925
+S
+#3787
+Morning Star Lane~
+Traffic is pretty bad here.  Cars, trucks, vans, and busses are trying to
+get to where ever it is they are trying to go.  People seem to be
+strolling around window shopping.  There seem to be a few nice sales going
+on.
+~
+0 0 1
+D1
+~
+~
+0 -1 3788
+D3
+~
+~
+0 -1 3786
+S
+#3788
+Intersection of Morning Star Lane and Justice Road~
+So many different kinds of vehicles drive the streets here and all they
+seem to do is drive and honk.  It appears that a traffic jam is beginning
+to form here.  The sound of people on the street yelling back at the cars
+is barely audible from the rest of the noise here.
+~
+0 0 1
+D0
+~
+~
+0 -1 3845
+D1
+~
+~
+0 -1 3793
+D2
+~
+~
+0 -1 3792
+D3
+~
+~
+0 -1 3787
+S
+#3789
+Justice Road~
+The flow of traffic is at a complete stand still here.  Satan City is
+famous for it's huge traffic jams.  Cars are honking, truck drivers are
+swearing and people walking on the street cover their ears.
+~
+0 0 1
+D0
+~
+~
+0 -1 3790
+D2
+~
+~
+0 -1 3754
+S
+#3790
+Justice Road~
+The traffic isn't any better here, it's still all jammed up.  Citizens
+walking try to ignore the horrible sounds of angry drivers on the road,
+but there isn't must else they can do other than cover their ears.
+~
+0 0 1
+D0
+~
+~
+0 -1 3791
+D2
+~
+~
+0 -1 3789
+S
+#3791
+Justice Road~
+Traffic is at a total stand still here.  People inside their cars are
+swearing and truck drivers are honking in futile attempts to get traffic
+moving again. A few citizens of this city famous for it's traffic jams are
+yelling right back at all the vehicles in hopes that maybe they won't be
+so loud.  The Satan City casino is to the east.
+~
+0 0 1
+D0
+~
+~
+0 -1 3792
+D1
+~
+~
+0 -1 3924
+D2
+~
+~
+0 -1 3790
+S
+#3792
+Justice Road~
+It looks like traffic is slowing down here.  There seems to be another
+traffic jam forming.  Satan City is famous for it's horrible traffic jams.
+The drivers never stop honking or swearing at other drivers.  Many people
+walking on the side of the road sigh and just keep going.
+~
+0 0 1
+D0
+~
+~
+0 -1 3788
+D2
+~
+~
+0 -1 3791
+S
+#3793
+Morning Star Lane~
+The distant sounds of honking and yelling echo though these streets.
+People wonder the street looking for something to buy.  Some are window
+shopping others are just talking.  It looks like there's a lot of trash
+littered on the sidewalk careless people.
+~
+0 0 1
+D1
+~
+~
+0 -1 3794
+D3
+~
+~
+0 -1 3788
+S
+#3794
+Morning Star Lane~
+Many small stores and buildings line the traffic filled street.  People
+are walking around and looking busy.  Some of them are talking on cell
+phones others are just chatting with other people.  A few of the buildings
+look rather old.  A capsule shop is down to the south.
+~
+0 0 1
+D1
+~
+~
+0 -1 3795
+D2
+~
+~
+0 -1 3929
+D3
+~
+~
+0 -1 3793
+S
+#3795
+Morning Star Lane~
+Buildings here seem to look different than a lot of others around town.
+These look older as if they have been around for awhile.  They are still
+kept up quite well.  Many people seem to be hanging out around here.
+Either talking on cell phones or just hanging out with friends.
+~
+0 0 1
+D1
+~
+~
+0 -1 3796
+D3
+~
+~
+0 -1 3794
+S
+#3796
+Intersection of Morning Star Lane and Star Boulevard~
+Older style buildings continue to populate this area.  People around here
+seem to enjoy these styles of buildings.  A few trees and bushes separate
+the sidewalk and the road by nicely decorating the walk ways.
+~
+0 0 1
+D0
+~
+~
+0 -1 3852
+D1
+~
+~
+0 -1 3797
+D3
+~
+~
+0 -1 3795
+S
+#3797
+Morning Star Lane~
+A few older looking buildings are mixed in with the newer style here.
+Many people wonder around seemingly busy.  The trees that line the
+sidewalks add a nice, small town feeling to this heavily populated city.
+There is an armor shop to the south of here.
+~
+0 0 1
+D1
+~
+~
+0 -1 3798
+D2
+~
+~
+0 -1 3930
+D3
+~
+~
+0 -1 3796
+S
+#3798
+Morning Star Lane~
+Greenery is abundant along side the road here.  Lush green trees and grass
+help add a country feeling to this place.  People stroll along looking
+happy and traffic seems to flow effortlessly making this a pretty peaceful
+place to be.  There is an ally to the north-east of here.
+~
+0 0 1
+D1
+~
+~
+0 -1 3799
+D3
+~
+~
+0 -1 3797
+D6
+~
+~
+0 -1 3926
+S
+#3799
+Morning Star Lane~
+The song of a few birds can be heard over the light sounds of people and
+traffic.  The green grass and trees here help make this place like more of
+a small town.  There are a few people pleasantly walking on the sidewalk
+enjoying this place.
+~
+0 0 1
+D1
+~
+~
+0 -1 3800
+D3
+~
+~
+0 -1 3798
+S
+#3800
+Intersection of Morning Star Lane and Main Street~
+It is a lot different here then from the rest of the city.  Trees, grass,
+bushes and flowers have been planted all over to make this place look nice
+and beautiful.  Almost everyone here seems to be smiling and enjoying
+themselves.
+~
+0 0 1
+D0
+~
+~
+0 -1 3859
+D2
+~
+~
+0 -1 3804
+D3
+~
+~
+0 -1 3799
+S
+#3801
+Main Street~
+There seems to be quite a few people moving around here.  They all seem
+like they are trying to go somewhere but their not sure where.  Light
+traffic moves though the streets along side the people on the sidewalks. A
+few pieces of litter have been tossed aside dirtying up the streets.
+~
+0 0 1
+D0
+~
+~
+0 -1 3802
+D2
+~
+~
+0 -1 3768
+S
+#3802
+Main Street~
+The buildings here are a few stories high and the streets are filling up
+with traffic.  Many people move around on the sidewalks trying to get to
+where they are going.  Some are busy talking on cell phones, while others
+are walking to work.  A old looking bar is to the east of here.
+~
+0 0 1
+D0
+~
+~
+0 -1 3803
+D1
+~
+~
+0 -1 3834
+D2
+~
+~
+0 -1 3801
+S
+#3803
+Main Street~
+Quite a bit of trash has been littered around by careless people making
+things look messy.  Lots of people pack the sidewalk making this place
+feel cramped and crowed.  There are a few very tall buildings that look
+like offices.
+~
+0 0 1
+D0
+~
+~
+0 -1 3804
+D2
+~
+~
+0 -1 3802
+S
+#3804
+Main Street~
+Many tall office buildings line the street here.  People are filing in and
+out of them at an incredible pace.  The road is packed full of different
+kinds of vehicles driving around looking for parking spaces that are not
+taken.
+~
+0 0 1
+D0
+~
+~
+0 -1 3800
+D2
+~
+~
+0 -1 3803
+S
+#3805
+Satan City Bank~
+The bank has a very businesslike feel about it.  A large wooden counter
+with various separations to accommodate the different tellers runs the
+length of the northern wall, giving customers easy access to their funds.
+The smell of paper and ink fills the air, along with the sounds of tellers
+shuffling papers and documents.  The exit consists of two large glass doors
+located south.
+~
+0 8 1
+D2
+~
+~
+0 -1 3733
+S
+#3806
+The Gap~
+The interior here is extremely trendy.  All the latest fashions can be
+found hanging from, or neatly folded on large shelves and wracks placed
+between the bulky pieces of sickening art-deco.  A set of wooden double
+doors with a sign reading "WOMEN ONLY" also beckons your attention to the
+east as you become increasingly curious.
+~
+0 8 1
+D0
+~
+~
+0 -1 3733
+D1
+~
+~
+0 -1 3818
+S
+#3807
+Satan City Dojo~
+The sound of people grunting, as well as the pungent aroma of sweat
+greet you as you enter the main training area of the acclaimed Satan City
+Dojo.  Various machines and workout devices litter the area, a perfect
+place for you to bulk up and work on your mental and physical attributes.
+The sparring mat is found to the west.
+~
+0 8 1
+D2
+~
+~
+0 -1 3752
+D3
+~
+~
+0 -1 3808
+S
+#3808
+Dojo Sparring Mat~
+You find yourself standing on a large blue, slightly torn mat. This is
+where the students of the legendary Mr. Satan prove  their strength by
+competing against one another to gain their masters favor.  It looks like a
+good place for a fight.
+~
+0 67108872 1
+D1
+~
+~
+0 -1 3807
+S
+#3809
+Mr. Satan's House~
+The interior here is even bigger than it looks on the outside.  Large
+potted plants and precious antique collectibles have been sparsely placed
+around the room, complimenting the overall flair and elegance of it all.  A
+large winding staircase leads up to the second floor and the front door can
+be found behind you.
+~
+0 8 1
+D1
+~
+~
+0 -1 3810
+D2
+~
+~
+0 -1 3761
+D3
+~
+~
+0 -1 3811
+D4
+~
+~
+0 -1 3812
+S
+#3810
+The Eastern Wing~
+The eastern wing of the house seems to be more quiet than the rest. Large
+bay windows placed smartly throughout the hall, emitting an old victorian
+feel while the soft velvet tapestries sharply contrast the mood. A small
+wooden door with hearts painted on it can be seen further ahead.
+~
+0 8 1
+D1
+~
+door~
+3 -1 3813
+D3
+~
+~
+0 -1 3809
+S
+#3811
+The Western Wing~
+This is the grand west wing of Mr. Satan's fabulous mansion.  Maids and
+servants run frantically about cleaning and dusting the precious pieces of
+art and collectibles which is the major motif for the house. A huge, heavy
+looking wooden door can be seen towards the end of  the hall, while the
+bustling of activity can be heard to the east.
+~
+0 8 1
+D0
+~
+door~
+3 -1 3814
+D1
+~
+~
+0 -1 3809
+S
+#3812
+Top Floor~
+The staircase ends at a large hallway, filled with valuables, stylishly
+displayed in thick glass showcases.  The creaky wooden hallway  leads back
+down to the grand staircase and north to Mr. Satans  personal gym, the most
+acclaimed training center in the city.
+~
+0 0 1
+D0
+~
+door~
+3 -1 3815
+D5
+~
+~
+0 -1 3809
+S
+#3813
+Videl's Room~
+The faint scent of perfume hangs in the air here, roughly contrasted by the
+uncommon surroundings.  This appears to be a womans room, but shows  no
+sign of the stereotypical female decorations.  Large weights sit on a
+short bench placed next to an oversized punching bag, giving the impression
+of training dojo.  The only ouch here that gives indication of female
+occupancy is the queen-sized, heart-shaped bed set up against the eastern
+wall, you wonder who on earth could live here.
+~
+0 0 1
+D3
+~
+door~
+3 -1 3810
+S
+#3814
+Mr. Satan's Room~
+This appears to be the master bedroom, taking up a large portion of  the
+western wing.  A king size bed decorates the center of the room,  nicely
+matching the quilted wall hangings and warm comfortable  atmosphere which
+seems to circulate throughout the vicinity.  A quaint oaken dresser
+completes the set nicely, making you feel right at home.
+~
+0 0 1
+D2
+~
+door~
+3 -1 3811
+S
+#3815
+Mr. Satan's Personal Gym~
+This room is a personal fitness lovers dream.  Countless large machines and
+weights have been set up at even intervals around the room, allowing you to
+get the maximum effective workout for your time.  The heavy weights and
+glinting steel around you is almost as overwhelming as the expensive
+persian carpets and the priceless oil paintings which also reside here.
+~
+0 0 1
+D2
+~
+door~
+3 -1 3812
+S
+#3816
+Ryiuko's Flower Shop~
+The sweet smell of jasmine fills your nose as you enter this tiny shop.
+Beautiful flowers of every variety fill several baskets, shelves and displays
+placed throughout the room.  An attractive young lady noticed you and flashes
+you a quick smile before offering you some assistance.
+~
+0 8 1
+D1
+~
+~
+0 -1 3781
+S
+#3817
+Tea and Things~
+This is the famous Tea and Things sweet shop.  A veritable cornucopia of
+confectionery bliss lies before your eyes, handsomely displayed in two,
+individually locked glass cases.  Juices and jams, teas and cakes, its
+almost too much for your senses to handle.  A jolly old man sits contentedly
+behind the counter, ringing up peoples purchases.
+~
+0 8 1
+D1
+~
+~
+0 -1 3783
+S
+#3818
+The Lingerie Department~
+This part of the store is far different from the section you just came
+from.  The sweet scent of perfume permeates everything around you and
+assaults your senses as you gaze around at the large variety of leather and
+lace displayed around you.  Suddenly ...  You notice the angry and
+underpaid employee watching you with a rather untrusting look, it might be
+best to hurry up and make a purchase or leave.
+~
+0 8 1
+D3
+~
+~
+0 -1 3806
+S
+#3819
+Inside Small Wedding Chapel~
+The air is calm here.  Rows of benches have been placed in four sections,
+creating a long isle leading up to tall wooden alter standing in the eastern
+part of the room.  You notice doors to the north and the south, as well as
+the double doors to the west.
+~
+0 8 1
+D0
+~
+door~
+3 -1 3820
+D1
+~
+door~
+1 -1 3822
+D2
+~
+door ~
+3 -1 3821
+D3
+~
+door~
+1 -1 3704
+S
+#3820
+Groom's Waiting Room~
+You are in a small, uninteresting room.  A small table with a mirror
+attached along with a large poster advertising the chapels monthly charity
+drive are the only decorations to speak of.  The door is located to the
+south.
+~
+0 8 1
+D2
+~
+door~
+3 -1 3819
+S
+#3821
+Bride's Waiting Room~
+You admire the tastefully set decor here, from the light floral wallpaper
+to the large vanity mirror adorning the center of the room, this room was
+done with comfort in mind.  You wonder why it has gotten so quiet, it might
+be best if you didn't wait here long.  The door is located to the north.
+~
+0 8 1
+D0
+~
+door ~
+3 -1 3819
+S
+#3822
+A Small Confession Booth~
+This is a small, cramped booth separated by a thin wooden wall and
+decorated with a shiny metal screen, allowing your voice to be clearly
+heard on the other side.  You attempt to make yourself comfortable,
+shifting around on the  tiny bench beneath you, covered in a thin layer of
+dust as you prepare to bare your mortal soul.  The door is behind you to
+the west.
+~
+0 264 1
+D3
+~
+door~
+1 -1 3819
+S
+#3823
+Orange Star High school~
+This large building towers above the surrounding structures, its peak
+seeming to touch the skyline above.  You can see the city outside through
+large, polished glass windows on every floor.  A directory in the center of
+the room shows the different quads and services around the
+facility.
+~
+0 8 1
+D0
+~
+~
+0 -1 3824
+D1
+~
+~
+0 -1 3774
+D2
+~
+~
+0 -1 3825
+D3
+~
+door~
+1 -1 3827
+D4
+~
+~
+0 -1 3826
+S
+#3824
+The Eastern Quad~
+This is the eastern quad that connects the main Orange Star building to the
+east sub-building.  Students push busily past you on the way to their next
+class.
+~
+0 8 1
+D1
+~
+door~
+1 -1 3828
+D2
+~
+~
+0 -1 3823
+S
+#3825
+The Western Quad~
+This is the western quad that connects the main Orange Star building to the
+west sub-building.  Students push busily past you on the way to the next
+class on their schedule, eager to be the first ones there.
+~
+0 8 1
+D0
+~
+~
+0 -1 3823
+D3
+~
+door~
+1 -1 3829
+S
+#3826
+The Upper Hallways~
+The long, dimly-lit hallway stretches silently to the east and west. Rows
+of faded lockers line the walls, making the space between more narrow,
+casting shadows on the newly polished tile floor.  There seems to be a
+light coming from up ahead to the west.
+~
+0 8 1
+D3
+~
+door~
+1 -1 3830
+D5
+~
+~
+0 -1 3823
+S
+#3827
+The Baseball Field~
+The large baseball diamond is freshly painted on the hard orange clay
+beneath you.  Soft padded based placed at the four corners of the diamond,
+and the center where the pitching mound is located.  The trail to the
+school is east of the field.
+~
+0 0 1
+D1
+~
+door~
+1 -1 3823
+S
+#3828
+A Large Classroom~
+A soft breeze blows from an open window through the large auditorium style
+classroom.  The teacher prattles on, his voice echoing through the room
+while the students seem to be attending to their own business.  It looks
+like there is class going on, perhaps its better to not disturb them.
+~
+0 8 1
+D3
+~
+door~
+1 -1 3824
+S
+#3829
+A Large Classroom~
+This classroom seems to be abandoned, except for two stragglers who have
+remained after the bell has rung.  The teachers desk is cluttered with
+messily written papers and documents, obviously written by some good
+intentioned students.  There is an isle leading up through the rows of
+seats and one leading to the classroom exit to the east.
+~
+0 8 1
+D1
+~
+door~
+1 -1 3825
+S
+#3830
+The Principals Office~
+This is a small office decorated with solid oak paneling, making it look
+retro.  Also adding to the effect is the plush shag carpet with crushes
+softly beneath your feet.  The principal is sitting at his desk in the
+center of the room, shuffling through some important papers.
+~
+0 8 1
+D1
+~
+door~
+1 -1 3826
+S
+#3831
+Satan City Police Headquarters~
+This is the main hub of the Satan City police station.  A large wooden desk
+separates the waiting area and the back rooms from the public.  Screams and
+yelling can be heard coming from the small hallway to the east while a
+dimly lit office can be seen to the south.
+~
+0 8 1
+D1
+~
+door~
+1 3741 3832
+D2
+~
+door~
+1 -1 3833
+D3
+~
+~
+0 -1 3770
+D5
+~
+~
+0 -1 3933
+S
+#3832
+A Cramped Holding Cell~
+The smell here is almost unbearable.  Roaches scuttle by you and up the
+grime-covered walls, momentarily distracted you from the horrible stench
+wafting from the small filthy toilet which sits in the northeast corner of
+the room.  You thank your maker that you are not sentenced to this
+festering hole.
+~
+0 8 1
+D3
+~
+door~
+1 3741 3831
+S
+#3833
+The Chiefs Office~
+This room is straight out of a detective story.  Large filing cabinets have
+been pushed against the eastern and western walls, making the room half as
+large as it once was.  Further adding to the nuance is a large wooden desk
+topped with a small lamp which barely aluminates the desktop.  From the
+large amount of important looking documents scattered about the room you
+surmise this must be the chiefs office.
+~
+0 8 1
+D0
+~
+door~
+1 -1 3831
+S
+#3834
+A Dark, Smokey Bar~
+Your eyes burn slightly due to the large amount of smoke in this
+"establishment".  Everything around you seems to be soaked in a thin layer
+of beer, from the unpolished hardwood floors to the wobbly red tables which
+hardly match the thick, peeling lime green paint which coats the walls
+around you.  You can barely make out the sound of muffled conversations
+over the large blaring jukebox which sits in the eastern corner of the bar.
+~
+0 8 1
+D3
+~
+~
+0 -1 3802
+S
+#3835
+Dragon Drive~
+Parked cars and vans lay between the sidewalk and the street in the shadow
+of the towering buildings.  The sidewalk is packed full of people in
+business suites and other nice looking people.  The traffic in the street
+isn't any better.  It's jammed full of cars trying to get some where as
+quickly as possible.
+~
+0 0 1
+D0
+~
+~
+0 -1 3836
+D2
+~
+~
+0 -1 3780
+S
+#3836
+Dragon Drive~
+Tall buildings tower high in this part of the city.  Many people wonder in
+and out looking as if they have too many things to do.  They all seem to
+crowd the sidewalk making it difficult to walk.  The traffic doesn't seem
+very bad here since it seems most people walk to where they are going in
+this part of town.  There is an ally to the south-east of here.
+~
+0 0 1
+D0
+~
+~
+0 -1 3837
+D2
+~
+~
+0 -1 3835
+D8
+~
+~
+0 -1 3925
+S
+#3837
+Dragon Drive~
+Citizens of Satan City pack the sidewalk while trying to get to where they
+are going.  Large buildings seem to make this place even more
+claustrophobic.  There doesn't seem to be too much traffic here even
+though parked cars line the edge of the road.
+~
+0 0 1
+D0
+~
+~
+0 -1 3838
+D2
+~
+~
+0 -1 3836
+S
+#3838
+Dragon Drive~
+Light traffic flows though the street very smoothly.  Hardly creating as
+much noise pollution as in some parts of Satan City.  It seems most people
+walk to where they need to go here, even though it causes the sidewalks to
+be packed full.
+~
+0 0 1
+D1
+~
+~
+0 -1 3839
+D2
+~
+~
+0 -1 3837
+S
+#3839
+Dragon Drive~
+Many parked cars cover the side of the road with light traffic moving up
+and down the road.  It's sort of peaceful here, if you don't count all of
+the foot traffic on the sidewalk.  There are so many enormous buildings
+here almost making it feel like being deep inside a large jungle.  The
+hospital of Satan City is to the north of here.
+~
+0 0 1
+D0
+~
+~
+0 -1 3860
+D1
+~
+~
+0 -1 3840
+D3
+~
+~
+0 -1 3838
+S
+#3840
+Dragon Drive~
+The sidewalks packed with people seem to be thinning out a little now.
+The traffic in the street is slightly starting to pick up as well.  The
+buildings around here tower above the people and cars almost like
+mountains.
+~
+0 0 1
+D1
+~
+~
+0 -1 3841
+D3
+~
+~
+0 -1 3839
+S
+#3841
+Dragon Drive~
+All kinds of vehicles are driving in the road now, driving to where ever
+they need to go.  Many citizens stroll up and down the sidewalk, they all
+seem very focused on something or other.  There are many large businesses
+in side the tall buildings that surround the road.  A nice looking jewelry
+store is to the south of here.
+~
+0 0 1
+D1
+~
+~
+0 -1 3842
+D2
+~
+~
+0 -1 3869
+D3
+~
+~
+0 -1 3840
+S
+#3842
+Intersection of Dragon Drive and Justice Road~
+Traffic is pretty bad here.  Cars, trucks, vans, and busses are trying to
+get to where ever it is they are trying to go.  People seem to be
+strolling around window shopping.  There seem to be a few nice sales going
+on.
+~
+0 0 1
+D1
+~
+~
+0 -1 3846
+D2
+~
+~
+0 -1 3843
+D3
+~
+~
+0 -1 3841
+S
+#3843
+Justice Road~
+So many different kinds of vehicles drive the streets here and all they
+seem to do is drive and honk.  It appears that a traffic jam is beginning
+to form here.  The sound of people on the street yelling back at the cars
+is barely audible from the rest of the noise here.
+~
+0 0 1
+D0
+~
+~
+0 -1 3842
+D2
+~
+~
+0 -1 3844
+S
+#3844
+Justice Road~
+The flow of traffic is at a complete stand still here.  Satan City is
+famous for it's huge traffic jams.  Cars are honking, truck drivers are
+swearing and people walking on the street cover their ears.  An equipment
+store is to the west of here.
+~
+0 0 1
+D0
+~
+~
+0 -1 3843
+D2
+~
+~
+0 -1 3845
+D3
+~
+~
+0 -1 3931
+S
+#3845
+Justice Road~
+The traffic isn't any better here, it's still all jammed up.  Citizens
+walking try to ignore the horrible sounds of angry drivers on the road,
+but there isn't must else they can do other than cover their ears.
+~
+0 0 1
+D0
+~
+~
+0 -1 3844
+D2
+~
+~
+0 -1 3788
+S
+#3846
+Dragon Drive~
+Traffic is at a total stand still here.  People inside their cars are
+swearing and truck drivers are honking in futile attempts to get traffic
+moving again. A few citizens of this city famous for it's traffic jams are
+yelling right back at all the vehicles in hopes that maybe they won't be
+so loud.
+~
+0 0 1
+D1
+~
+~
+0 -1 3847
+D3
+~
+~
+0 -1 3842
+S
+#3847
+Dragon Drive~
+It looks like traffic is slowing down here.  There seems to be another
+traffic jam forming.  Satan City is famous for it's horrible traffic jams.
+The drivers never stop honking or swearing at other drivers.  Many people
+walking on the side of the road sigh and just keep going.  An odd looking
+shop is to the south of here.
+~
+0 0 1
+D1
+~
+~
+0 -1 3848
+D2
+~
+~
+0 -1 3932
+D3
+~
+~
+0 -1 3846
+S
+#3848
+Dragon Drive~
+The distant sounds of honking and yelling echo though these streets.
+People wonder the street looking for something to buy.  Some are window
+shopping others are just talking.  It looks like there's a lot of trash
+littered on the sidewalk careless people.
+~
+0 0 1
+D1
+~
+~
+0 -1 3849
+D3
+~
+~
+0 -1 3847
+S
+#3849
+Intersection of Dragon Drive and Star Boulevard~
+Many small stores and buildings line the traffic filled street.  People
+are walking around and looking busy.  Some of them are talking on cell
+phones others are just chatting with other people.  A few of the buildings
+look rather old.  The entrance to a huge night club is to the south-east of
+here.
+~
+0 0 1
+D1
+~
+~
+0 -1 3853
+D2
+~
+~
+0 -1 3850
+D3
+~
+~
+0 -1 3848
+S
+#3850
+Star Boulevard~
+Buildings here seem to look different than a lot of others around town.
+These look older as if they have been around for awhile.  They are still
+kept up quite well.  Many people seem to be hanging out around here.
+Either talking on cell phones or just hanging out with friends.
+~
+0 0 1
+D0
+~
+~
+0 -1 3849
+D2
+~
+~
+0 -1 3851
+S
+#3851
+Star Boulevard~
+Older style buildings continue to populate this area.  People around here
+seem to enjoy these styles of buildings.  A few trees and bushes separate
+the sidewalk and the road by nicely decorating the walk ways.  A large
+hotel is to the south-west of here.
+~
+0 0 1
+D0
+~
+~
+0 -1 3850
+D2
+~
+~
+0 -1 3852
+D9
+~
+~
+0 -1 3876
+S
+#3852
+Star Boulevard~
+A few older looking buildings are mixed in with the newer style here.
+Many people wonder around seemingly busy.  The trees that line the
+sidewalks add a nice, small town feeling to this heavily populated city.
+~
+0 0 1
+D0
+~
+~
+0 -1 3851
+D2
+~
+~
+0 -1 3796
+S
+#3853
+Dragon Drive~
+Greenery is abundant along side the road here.  Lush green trees and grass
+help add a country feeling to this place.  People stroll along looking
+happy and traffic seems to flow effortlessly making this a pretty peaceful
+place to be.
+~
+0 0 1
+D1
+~
+~
+0 -1 3854
+D3
+~
+~
+0 -1 3849
+S
+#3854
+Dragon Drive~
+The song of a few birds can be heard over the light sounds of people and
+traffic.  The green grass and trees here help make this place like more of
+a small town.  There are a few people pleasantly walking on the sidewalk
+enjoying this place.
+~
+0 0 1
+D1
+~
+~
+0 -1 3855
+D3
+~
+~
+0 -1 3853
+S
+#3855
+Dragon Drive~
+It is a lot different here then from the rest of the city.  Trees, grass,
+bushes and flowers have been planted all over to make this place look nice
+and beautiful.  Almost everyone here seems to be smiling and enjoying
+themselves.
+~
+0 0 1
+D1
+~
+~
+0 -1 3856
+D3
+~
+~
+0 -1 3854
+S
+#3856
+Intersection of Dragon Drive and Main Street~
+There seems to be quite a few people moving around here.  They all seem
+like they are trying to go somewhere but their not sure where.  Light
+traffic moves though the streets along side the people on the sidewalks. A
+few pieces of litter have been tossed aside dirtying up the streets.
+~
+0 0 1
+D2
+~
+~
+0 -1 3857
+D3
+~
+~
+0 -1 3855
+S
+#3857
+Main Street~
+The buildings here are a few stories high and the streets are filling up
+with traffic.  Many people move around on the sidewalks trying to get to
+where they are going.  Some are busy talking on cell phones, while others
+are walking to work.  The check-in station for the airport is to the east
+of here.
+~
+0 0 1
+D0
+~
+~
+0 -1 3856
+D1
+~
+~
+0 -1 3870
+D2
+~
+~
+0 -1 3858
+S
+#3858
+Main Street~
+Quite a bit of trash has been littered around by careless people making
+things look messy.  Lots of people pack the sidewalk making this place
+feel cramped and crowed.  There are a few very tall buildings that look
+like offices.  There is an ally to the south-west.
+~
+0 0 1
+D0
+~
+~
+0 -1 3857
+D2
+~
+~
+0 -1 3859
+D9
+~
+~
+0 -1 3926
+S
+#3859
+Main Street~
+Many tall office buildings line the street here.  People are filing in and
+out of them at an incredible pace.  The road is packed full of different
+kinds of vehicles driving around looking for parking spaces that are not
+taken.
+~
+0 0 1
+D0
+~
+~
+0 -1 3858
+D2
+~
+~
+0 -1 3800
+S
+#3860
+Satan City Hospital~
+This is the main reception area of the Satan city hospital. A large desk
+sign-in desk greets those who have come seeking medical attention.  You
+notice a line of people shuffling towards a small booth set up in the
+eastern corner of the room, probably a way station for gathering medical
+information before being treated.  You see that the room branches into
+separate east and west hallways which are blocked from the public by two
+large swinging wooden gates.
+~
+0 8 1
+D1
+~
+~
+0 -1 3861
+D2
+~
+~
+0 -1 3839
+D3
+~
+~
+0 -1 3862
+S
+#3861
+The Eastern Wing~
+There is a thunderous silence here, even the slightest sound creates a loud
+booming echo which can be heard throughout the entire eastern wing.  The
+walls are smooth and white and covered with various awards and plaques of
+recognition, you feel more at ease.  Examination rooms can be found to the
+north and south.
+~
+0 8 1
+D0
+~
+door~
+1 -1 3863
+D2
+~
+door~
+1 -1 3864
+D3
+~
+~
+0 -1 3860
+S
+#3862
+The Western Wing~
+There is a thunderous silence here, even the slightest sound creates a loud
+booming echo which can be heard throughout the entire western wing.  The
+walls are smooth and white and covered with various awards and plaques of
+recognition, you feel more at ease.  Examination rooms can be found to the
+north and south.
+~
+0 8 1
+D0
+~
+door~
+1 -1 3865
+D1
+~
+~
+0 -1 3860
+D2
+~
+door~
+1 -1 3866
+S
+#3863
+A Spotless Hospital Room~
+Your footwear makes tiny squeaking sounds on the spotless white tile
+beneath you as you enter this quaint hospital room.  Paintings of warm
+country landscapes are hung on the walls around you, almost making you
+forget the sharp instruments lying on the short steel table in the center
+of the room.  You should probably take a seat and rest if you wish to be
+attended to by the doctor.
+~
+0 536871176 1
+D2
+~
+door~
+1 -1 3861
+S
+#3864
+A Spotless Hospital Room~
+Your footwear makes tiny squeaking sounds on the spotless white tile
+beneath you as you enter this quaint hospital room.  Paintings of warm
+country landscapes are hung on the walls around you, almost making you
+forget the sharp instruments lying on the short steel table in the center
+of the room.  You should probably take a seat and rest if you wish to be
+attended to by the doctor.
+~
+0 536871176 1
+D0
+~
+door~
+1 -1 3861
+S
+#3865
+A Spotless Hospital Room~
+Your footwear makes tiny squeaking sounds on the spotless white tile
+beneath you as you enter this quaint hospital room.  Paintings of warm
+country landscapes are hung on the walls around you, almost making you
+forget the sharp instruments lying on the short steel table in the center
+of the room.  You should probably take a seat and rest if you wish to be
+attended to by the doctor.
+~
+0 536871176 1
+D2
+~
+door~
+1 -1 3862
+S
+#3866
+A Spotless Hospital Room~
+Your footwear makes tiny squeaking sounds on the spotless white tile
+beneath you as you enter this quaint hospital room.  Paintings of warm
+country landscapes are hung on the walls around you, almost making you
+forget the sharp instruments lying on the short steel table in the center
+of the room.  You should probably take a seat and rest if you wish to be
+attended to by the doctor.
+~
+0 536871176 1
+D0
+~
+door~
+1 -1 3862
+S
+#3867
+A Spacious Elevator~
+Soft music plays through the small speakers set into the tall steel
+walls of this large elevator.  The room shakes slightly as the elevator
+begins its ascent to the scientific research laboratory above, causing
+a sudden sinking feeling in your stomach.  You notice a smooth metal
+panel set into the wall in front of you.
+~
+0 12 1
+S
+#3868
+The Scientific Research Department~
+Everything around you seems to have been sanitized to more efficiently
+maintain this laboratory.  Several workstations filled with beakers and
+vials of every shape and size have been set up around the room, a
+controlled environment where the employees can conduct their
+important tests and experiments.
+~
+0 12 1
+S
+#3869
+An Upscale Jewelry Store~
+Posh diamonds and luxurious stones glitter all around you, like small glass
+teardrops falling from heaven.  You glance around to see several cases and
+displays housing many different sizes, cuts and prices to suit even the most
+choosy customers needs.  A sign displayed on the northern wall reads "Speak
+to the shopkeeper for purchases."
+~
+0 8 1
+D0
+~
+~
+0 -1 3841
+S
+#3870
+The Check-in Terminal~
+The sounds of muffled conversations ring out through this large enclosure,
+almost filtering out the loud beeping that is resonating from large touch
+pad computer screens which have been built into the walls, displaying
+departures and arrivals of government owned and operated vessels.  You try
+and keep your balance as a horde of stampeding passengers push their way
+past you and through the shinney silver turnstiles which block passage to
+the boarding area.  A giant landing pad can been seen to the northeast.
+~
+0 8 1
+D3
+~
+~
+0 -1 3857
+D6
+~
+~
+0 -1 3871
+S
+#3871
+Space Port Alpha~
+You find yourself looking down at a large circular platform, lit brightly
+by large strips of softly glowing landing-lights. Fixed into the center of
+the platform is a large soft pad which is used to soften the landing of the
+smaller more uncontrollable ships.  You can barely make out the sounds of
+people talking to the west over the thunderous sounds of jet engines around
+you.
+~
+0 0 1
+D9
+~
+~
+0 -1 3870
+S
+#3872
+The Satan City Television Station~
+Upon entering the large glass doors you see a lone receptionist sorting and
+filing different papers, all the while talking on a small telephone
+headset. You approach her with the intentions to obtain help in finding
+your way around, yet she seems to be unresponsive.  Several awards for
+excellence hang proudly on the wall behind her and lead your eye towards a
+large staircase winding up towards the second floor.
+~
+0 8 1
+D4
+~
+~
+0 -1 3873
+D9
+~
+~
+0 -1 3762
+S
+#3873
+The Executive Hallway~
+A short, rather plain looking hallway connects two brightly lit doors at
+opposite ends of the hall.  Grips and assistant producers rush busily
+past you, getting everything ready for call time.
+~
+0 8 1
+D0
+~
+~
+0 -1 3874
+D2
+~
+~
+0 -1 3875
+D5
+~
+~
+0 -1 3872
+S
+#3874
+A Large Sound Stage~
+You can smell the news in the air here, runners are busy scurrying about
+gathering up last minute details before the big broadcast, while the two
+well-dressed gentlemen behind the desk sit calmly checking their hair.
+A multitude of television monitors flicker brightly in the background, each
+displaying a different news network, the competition is definitely  tough.
+~
+0 8 1
+D2
+~
+~
+0 -1 3873
+S
+#3875
+A Big Elaborate Set~
+A show is being taped here for Satan City TV, it appears to be an Aztec
+warrior flick.  Large foam stones have been placed diligently into large
+columns, giving the appearance of a temple while small, brightly burning
+lamps covered with red paper give the illusion of torches.  Looks like you
+walked in at the part where the priest sacrifices the scared young virgin.
+~
+0 8 1
+D0
+~
+~
+0 -1 3873
+S
+#3876
+Hotel Satan~
+The subtle yet brilliant architecture of the hotel shows in it's quality
+woodwork, as well as it's smartly coordinated interior which indicates
+early turn of the century japanese influences.  A solid oaken staircase
+spirals up towards the second floor landing towards the rent-controlled
+sweets.  Suddenly a short, slick-haired little man folds his hands neatly
+on the counter and exclaims, "If you need anything simply ring the bell
+and I will get to you as soon as possible."
+~
+0 8 1
+D4
+~
+~
+0 -1 3877
+D6
+~
+~
+0 -1 3851
+S
+#3877
+The Center of Hotel Satan Hallway~
+The long, curving hallways are carefully plastered in green and gold
+wallpaper, hoping to exude a dignified feel to the interior. Your feet
+barely sink into the tough matted carpet beneath you giving you a better
+idea of the hotels real age.  The corridors stretch in every direction
+while the long oaken staircase leads down towards the lobby.
+~
+0 8 1
+D1
+~
+~
+0 -1 3883
+D3
+~
+~
+0 -1 3878
+D4
+~
+~
+0 -1 3890
+D5
+~
+~
+0 -1 3876
+D6
+~
+~
+25166887 -1 3907
+D7
+~
+~
+25166887 -1 3908
+D8
+~
+~
+25166887 -1 3909
+D9
+~
+~
+25166887 -1 3910
+S
+#3878
+A Long Hallway~
+It's quiet here.  Doors surround you on all sides of the large, dimly-lit
+hallway.  Accommodations can be arranged at the front desk.
+~
+0 8 1
+D0
+~
+~
+0 -1 3891
+D1
+~
+~
+0 -1 3877
+D2
+~
+~
+25166887 -1 3892
+D3
+~
+~
+0 -1 3879
+S
+#3879
+A Long Hallway~
+It's quiet here.  Doors surround you on all sides of the large, dimly-lit
+hallway.  Accommodations can be arranged at the front desk.
+~
+0 8 1
+D0
+~
+~
+7 -1 3879
+D1
+~
+~
+0 -1 3878
+D2
+~
+~
+0 -1 3882
+D3
+~
+~
+25166887 -1 3880
+S
+#3880
+&bHome &xOf &gThe &WSuper Human &RX&Ba&Rn&Bu&Rs~
+&WHere is a plane appartment with a &BBong &Wand a &BPot Plant &Win the corner.  you notice
+a huge &RBed &Win the room with &bSilk Sheets &Won it. and a &BFridge &Wat the foot of the bed
+as you open the fridge you notice it is full of &PBeer &Wand &PTequila. &Wsuddenly something
+catches your &Ge&Cy&Ge &Wand you look over at the wall and gasp at astonishment as you
+examine the walls closer you see &wPictures &Wof hot girls pasted all up on the walls. some
+of them even look like pictures of your &rSister&W.  On the back of the door you see a &cPlayboy&W
+&cCalendar&W.  As you look on the floor you notice trash thrown about the room.  Looks
+like a tornado went through the room.  It is a total mess and needs a maid bad.
+
+~
+0 3146760 0
+D1
+~
+~
+25166887 -1 3879
+S
+#3881
+&RTRON&r's &pH&Pug-Hut!~
+Yajirobe hugs you.
+Maelthra hugs you
+Xireth hugs you.
+Dredd hugs you.
+Koronto hugs you.
+Krillin cuddles you.
+Tapion hugs you.
+Dabura hugs you.
+Goten hugs you.
+(CLAN) Frieza: -- '*hugs Tron, tightly'
+Frieza hugs you.
+Nilsai hugs you.
+Zarbon hugs you
+Bardock hugs you.
+Saiyr hugs you.
+Meiman hugs you.
+Someone hugs you.
+[WAR] Krystin: -- '-hugs tirion-'
+[WAR] Frieza *hugs Tirion*
+[OOC] Krillin *hugs Tirion*
+[WAR] Someone *huggles Tirion*
+Dabura hugs you all in a big group hug.  How sweet!
+[WAR] Kona *h|_|65 t3h Tron*
+[WAR] Bob *hugs tirion*
+[WAR] Choco *hugs Tirion*
+Zillah tells you 'Zillah hugs you.'
+Gurr tells you 'Gurr Hugs you'
+Lolo tells you '*hugs you*'
+Lena hugs you.
+Gojron tells you '*hugs you.... IN THE PANTS!*'
+Rahoz tells you '*hugs you*'
+Suzaku tells you '*hugs you*'
+[WAR] Kavner *hugs Tirion*
+[FOS] Raditz *hugs =P*
+Jecht gives you a great big bearhug. Ooooof!
+Inca hugs you.
+Karias hugs you.
+Nixon hugs you.
+Tabs tells you '*Hugs You*'
+[WAR] Homer *hugs tirion*
+Suki hugs you.
+Tau hugs you.
+[WAR] Ramza *hugs tron*
+Clerve hugs you.
+Berg hugs you.
+Dragoon hugs you.
+Kachiko hugs you.
+Levex hugs you.
+Monolith hugs you.
+Jeru hugs you.
+Espian hugs you.
+Anima hugs you.
+Aldken hugs you.
+Shirion hugs you.
+Etruc hugs you.
+~
+0 0 1
+D2
+~
+~
+0 -1 3879
+S
+#3882
+Vacant Residence~
+~
+0 0&32 0
+D0
+~
+~
+0 -1 3879
+S
+#3883
+A Long Hallway~
+It's quiet here.  Doors surround you on all sides of the large, dimly-lit
+hallway.  Accommodations can be arranged at the front desk.
+~
+0 8 1
+D0
+~
+~
+0 -1 3888
+D1
+~
+~
+0 -1 3884
+D2
+~
+~
+25166887 -1 3889
+D3
+~
+~
+0 -1 3877
+S
+#3884
+A Long Hallway~
+It's quiet here.  Doors surround you on all sides of the large, dimly-lit
+hallway.  Accommodations can be arranged at the front desk.
+~
+0 8 1
+D0
+~
+~
+7 -1 3886
+D1
+~
+~
+25166887 -1 3885
+D2
+~
+~
+25166887 -1 3887
+D3
+~
+~
+0 -1 3883
+S
+#3885
+&RThe &BHome &GOf &WThe &OGreat &RSaiyan &BP&RE&BR&RO&BE&BN  ~
+A room surrounds you, filled with the dirt and filth of previous tenants.
+A spray painted frame of the last tenant can be seen on the floor in a
+far corner.
+~
+0 3146760 0
+D3
+~
+~
+25166887 -1 3884
+S
+#3886
+An Empty Apartment~
+You are standing in an empty apartment.
+~
+0 0 1
+D2
+~
+~
+0 -1 3884
+S
+#3887
+&GH&Oo&Gm&Oe &RO&Bf &CT&ch&CE &PB&pi&PO&p-&PD&pr&Po&pi&PD &xM&zA&xR&zC&xI&zU&xS&R......~
+~
+0 3146760 0
+D0
+~
+~
+25166887 -1 3884
+S
+#3888
+&GN&geiji's &GN&gamekian &GP&garadise~
+&gThe quaint apartment brings a sense of inner peace to one's very soul. A
+spotless &Wwhite carpet &gcovers the entire living area, contrasting with
+the room's &Ggreen walls&g. The room seems to have a &Gt&gr&Go&gp&Gi&gc&Ga&gl 'theme' as
+&Bb&Ri&Yr&Gd&Cs &Bo&Rf &Ya&Gl&Cl &Bc&Ro&Yl&Gl&Co&Br&Rs &gflutter about in their cages. The aroma of dew
+covered foilage fills the air. Over to the side runs &Ba small river
+&gruns through the room, ending its trail within a small bathtub.
+A sign over to the side reads &Y"Home Is Where the Heart Is"&g.
+~
+0 0 0
+D2
+~
+~
+0 -1 3883
+S
+#3889
+&RFASHBINDER &CPRODUCTION &GHEADQUARTERS ~
+People from everywhere bow down and worship you. You are Fashbinder! God in his own right.
+~
+0 3146760 0
+D0
+~
+~
+25166887 -1 3883
+S
+#3890
+The Second Floor Hallway~
+It's quiet here.  Doors surround you on all sides of the large, dimly-lit
+hallway.  Accommodations can be arranged at the front desk.
+~
+0 8 1
+D1
+~
+~
+0 -1 3893
+D3
+~
+~
+0 -1 3896
+D5
+~
+~
+0 -1 3877
+D6
+~
+~
+25166887 -1 3911
+D7
+~
+~
+25166887 -1 3912
+D8
+~
+~
+25166887 -1 3913
+D9
+~
+~
+0 -1 3914
+S
+#3891
+&RS&zh&ru&Wg&Ro&z'&rs &WD&Ro&zr&rm~
+Tis be teh mozt rawkz0rizziest dorm u hav evar seed wid j00 eiz, tis be da PIMP DADDAY HOUSE DORM THANG MAHOOIST!
+~
+0 0 0
+D2
+~
+~
+0 -1 3878
+S
+#3892
+&rR&Ri&zk&Wi&R'&ws &zr&Ro&wo&rm&z.~
+Upon entering this room, You notice everything in here is made from
+solid gold, Must be the room of someone very wealthy and strong.  In the
+center of the room is a large double bed, and warddrobes in the corner.
+~
+0 3146760 0
+D0
+~
+~
+25166887 -1 3878
+S
+#3893
+A Long Hallway~
+It's quiet here.  Doors surround you on all sides of the large, dimly-lit
+hallway.  Accommodations can be arranged at the front desk.
+~
+0 8 1
+D0
+~
+~
+25166887 -1 3903
+D1
+~
+~
+0 -1 3894
+D2
+~
+~
+25166887 3904 3904
+D3
+~
+~
+0 -1 3890
+S
+#3894
+A Long Hallway~
+It's quiet here.  Doors surround you on all sides of the large, dimly-lit
+hallway.  Accommodations can be arranged at the front desk.
+~
+0 8 1
+D0
+~
+~
+0 -1 3905
+D1
+~
+~
+25166887 3868 3895
+D2
+~
+~
+25166887 -1 3906
+D3
+~
+~
+0 -1 3893
+S
+#3895
+&BG&Co&Bj&Cr&Bo&Cn&B'&Cs &Bp&Ce&Ba&Cc&Be&Cf&Bu&Cl &Bs&Ca&Bn&Cc&Bt&Cu&Ba&Cr&By&w.... &rO&RF &rP&RA&rI&RN&r!~
+penis penis penis penis penis penis penis penis penis penis penis penis
+penispenis penis penis penis penis penis penis  penis penis penis  penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+nreuaifpjaieo
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+penis penis penis penis penis penis penis penis penis penis penis penis
+~
+0 3146760 0
+D3
+~
+~
+25166887 3868 3894
+S
+#3896
+A Long Hallway~
+It's quiet here.  Doors surround you on all sides of the large, dimly-lit
+hallway.  Accommodations can be arranged at the front desk.
+~
+0 8 1
+D0
+~
+~
+25166887 3867 3901
+D1
+~
+~
+0 -1 3890
+D2
+~
+~
+25166887 -1 3902
+D3
+~
+~
+0 -1 3897
+S
+#3897
+A Long Hallway~
+It's quiet here.  Doors surround you on all sides of the large, dimly-lit
+hallway.  Accommodations can be arranged at the front desk.
+~
+0 8 1
+D0
+~
+~
+25166887 -1 3899
+D1
+~
+~
+0 -1 3896
+D2
+~
+~
+7 -1 3900
+D3
+~
+~
+25166887 -1 3898
+S
+#3898
+Highki's Apartment~
+A room surrounds you, filled with the dirt and filth of previous tenants.
+A spray painted frame of the last tenant can be seen on the floor in a
+far corner.
+~
+0 3146760 0
+D1
+~
+~
+25166887 -1 3897
+S
+#3899
+&RHome &BOf &GThe &xDragon Gundam~
+&WThe appartment is filled to the brim of &BGundam Wing&W Model kits.   they are all
+over the shelves. and a huge &wAngelic &bWing&rZero&W is up aghenst the wall.   the bed
+is shaped like the &PCockpit &Wof a &OGundam&W.  It has &YLevers &Wand &Ybuttons &Wall over the rails.
+and has a &xTV &Wattached to the bottom of the bed.   and has a &BPlayStation 2  &Whooked
+to it.  You examine the walls and notice they are covered in &RWallpaper &Win the design
+of outerspace.
+~
+0 3146760 0
+D2
+~
+~
+25166887 -1 3897
+S
+#3900
+An Empty Apartment~
+You are standing in an empty apartment.
+~
+0 0 1
+D0
+~
+~
+0 -1 3897
+S
+#3901
+Jaraid's pad is filled with junk~
+A room surrounds you, filled with the dirt and filth of previous tenants.
+A spray painted frame of the last tenant can be seen on the floor in a
+far corner.
+~
+0 3146760 0
+D2
+~
+~
+25166887 3867 3896
+S
+#3902
+&RGhredok's House of Blinding Pain!~
+^O&PAt first there seems to be nothing of real big interest here.  You
+can see a few pieces of furniture and a couple of tables in this room.  It
+seems quite simple and ordinary for someone who is always trying to save
+the world.  Upon closer inspection of the room, you can see a very old
+ancestral sword that is in a golden sheath.  Next to it on a wall you can
+see a full Saiya-jin body Armor also glowing gold.  Other trinkets and
+items from what looks like different battles cover the walls of his room.
+You look around to see all of the other things that involve this curious
+Saiya-jin's life.
+~
+0 3146760 0
+D0
+~
+~
+25166887 -1 3896
+S
+#3903
+&zRaeyu's Apartment~
+A room surrounds you, filled with the dirt and filth of previous tenants.
+A spray painted frame of the last tenant can be seen on the floor in a
+far corner.
+~
+0 3146760 0
+D2
+~
+~
+25166887 -1 3893
+S
+#3904
+&WE&wn&Wr&wo&Wn's &rProstitution &wO&Wf&wf&Wi&wc&We~
+You have entered Satan's citys Local Prostitution house, Owned by the sex beast Enron
+~
+0 3146760 0
+D0
+~
+~
+25166887 3904 3893
+S
+#3905
+Vacant Residence~
+~
+0 0 0
+D2
+~
+~
+0 -1 3894
+S
+#3906
+&RR&YO&RA&YN&W'&RS  &W-&CApartment&W-~
+As you enter the Apartment you are amazed at it's futurific appearance.
+There is a large, flat, plasma TV hanging from the wall, with a large,
+green sofa sitting directly in front of it.  There is also a Playstation 2,
+and a Gamecube sitting below the TV. There is a Xenosaga poster on the far
+wall, covering almost the whole thing.There is a odd, yet cool looking
+fireplace in a corner of the room, and there is a desk sitting beside it.
+Atop of the desk is the most bad-ass AleinWare computer you could ever
+find.  There is a refridgerator and a stove sitting beside one another, and
+there is a dishwasher below the sink.
+~
+0 3146760 0
+D0
+~
+~
+25166887 -1 3894
+D1
+~
+~
+0 -1 9007
+S
+#3907
+&B(&OB&ru&Or&rn&Oi&rn&Og&r&B)&RRanmyaku's &bLair~
+&z This is basically..cliche hell. Tongues of flame lick at you from
+every shadow. And the apartment is filled with shadow. Pentagrams
+painted in red and black are all over the walls and floor. A rack
+of stained and ancient weapons completes the apartment in the corner
+of the room.
+
+ On close inspecation, its noticable that dark clouds shift in and otu
+of tiny cracks. Shrunken heads try to scream as they roll and burn on
+the hard wooden floor. The walls also seem cavernous and stony.
+~
+0 3146760 0
+D9
+~
+~
+25166887 -1 3877
+S
+#3908
+&gThe &CPlayboy &cMansion~
+As if picked up by the scruff of your neck by a mighty hand, you find
+yourself unceremoniously dumped at a strange gateway.  Here is the
+place which will determine your fate.  Whether you will be sent back
+to life as you once knew it, or proceed onto a far yet bleaker pathway.
+The time has come for you to plead your case and await judgement for the
+crimes that have been placed upon your head.  Speak wisely and choose
+your words carefully, for your testimony will be written in the ledgers
+of the Gods, and will determine the path you will ultimately travel.
+                L|J(_)
+            )    | (")      (
+            ,(.  |`/ \- y  (,`)
+           )' (' | \ /\/  ) (.
+          (' ),) | _W_   (,)' ).
+
+&c(&WRRA&c) Anavel &gis Known as &c"The Nightmare of Solomon" is hovering here.
+ &P*&WAnavel has a halo above his head.
+ &P*&YAnavel has energy flickering around him.
+ &P*&YAnavel has a huge golden aura and extremely long, yellow hair.
+ &P*&YAnavel's muscles are bulging with awesome energy.
+ &P*&BAnavel is surrounded by random bolts of electricity.
+ &P*&BAnavel is hovering here in mid air.
+~
+0 3146760 0
+D8
+~
+~
+25166887 -1 3877
+S
+#3909
+Flare's Small Lil' Piece of Heaven~
+This is the place Flare Destiny calls home.  There is a small bed in the
+corner of the room with a store-bought quilt on it.  Armor and other
+various articles of clothing are strewn across the floor.  A decent
+portrait of Flare is hung upon the wall, he is wearing a muscle shirt and
+dog tags are hung from his neck.  On his table, there is a thick tablet of
+paper with many scouter frequencies and phone numbers scrawled on it. There
+is a picture of Tarfen taped to the mirror which is autgraphed, "To Flare -
+From Tarfen, 'I'm not bottig!  '".
+
+~
+0 3146760 0
+D7
+~
+~
+25166887 -1 3877
+S
+#3910
+&BTarfen's well-lit, but cluttered apartment~
+A simple room, about twelve feet to a side, crammed more or less to
+capacity with variouse belongings.  A small stove, microwave, and
+refrigerator stand in one corner, beside a small desk with an old computer.
+In the opposite corner, a tiny, unmade twin-size bed stands.  Laundry and
+various pieces of electronic equipment are scattered across the floor, and
+a set of old saiyan battle armor is hung over the back of a chair before
+the computer desk.  It looks very lived-in, the owner obviously not the
+neatest person.
+~
+0 3146760 0
+D6
+~
+~
+25166887 -1 3877
+S
+#3911
+Catcher's Pad~
+A room surrounds you, filled with the dirt and filth of previous tenants.
+A spray painted frame of the last tenant can be seen on the floor in a
+far corner.
+Welcome to Catcher's Pad!  As you focus on the home, you see a sign
+on the door reading "Veni, Vidi, Vici!"  Weird...
+~
+0 3146760 0
+D9
+~
+~
+25166887 -1 3890
+S
+#3912
+&RThe Center of the Magnificent Shadow Realm..~
+&z The Shadow Realm holds its last standing clasp around this very room,
+it spreads its horror, and essentially its nightmare of darkness.  The
+temperature is hotter then ever in the shadow realm, a sense of both cold
+and heat interact, leaving the shadow realm most uncomfortable.  However,
+those who are evil seem to be of comfort, such as Enkarn the Great, the
+lord of Destruction.  Enkarn has learned to manipulate the shadow realm
+according to his needs, manipulation so complex as changing the actual
+color base of the shadow realm.  Ancient evil fills this room with its very
+presence, you can touch it amongst your sensors...
+~
+0 3146760 0
+D8
+~
+~
+25166887 -1 3890
+S
+#3913
+Seraphim's Apartment~
+A room surrounds you, filled with the dirt and filth of previous tenants.
+A spray painted frame of the last tenant can be seen on the floor in a
+far corner.
+~
+0 3146760 0
+D7
+~
+~
+25166887 -1 3890
+S
+#3914
+Vacant Residence~
+~
+0 0 0
+D6
+~
+~
+0 -1 3890
+S
+#3915
+The Satan City Train Station~
+This is a rather small, plain looking building.  Shelves and racks of various
+sizes have been set up around the room, carrying atlases and maps of the
+surrounding area.  This seems to be the only place you can buy a ticket for
+the outgoing train, perhaps the weathered elderly gentleman behind the
+ticket window can help you.
+~
+0 8 1
+D1
+~
+door~
+1 -1 3701
+D4
+~
+~
+0 -1 3916
+S
+#3916
+The Boarding Platform~
+You are standing on a wide, slightly-elevated scaffolding, the boarding
+platform for all of the in and outgoing trains.  A row of benches pushed
+against the southern wall of the platform provide a comfortable resting
+place for weary travelers and those waiting to greet their loved ones.
+A set of thin iron stairs leads down to the train station.
+~
+0 0 1
+D5
+~
+~
+0 -1 3915
+S
+#3917
+Satan City Market~
+A heavy must smell hangs in the air, probably a result of all the dry
+goods around you.  Isles stocked with a multitude of different culinary
+choices catch your eye as the store owner greets you with a warm smile.
+You attempt to do your shopping through the mob of customers pushing
+and shoving their way through the tightly packed isles, trying to get the
+early day coupon specials.
+~
+0 8 1
+D2
+~
+door~
+1 -1 3726
+S
+#3918
+A Dark Alley~
+The light is very dim here, you can barely see a foot in front of your
+nose. Shadows hang menacingly above you as you step lightly on the cracked
+cement beneath you, sounding a small echo.  Your attention is turned
+suddenly to a shaggy looking man who goes to open his trenchcoat, what
+could he be doing???  The alley ends to the northwest, and to the southeast.
+~
+0 0 1
+D7
+~
+~
+0 -1 3749
+D8
+~
+~
+0 -1 3730
+S
+#3919
+A Dank Hall~
+A thick greenish mist blankets the cement floor of this dimly lit room. The
+walls are bare except for some very odd stains and a few different pictures
+of people on wanted posters.  The only way out of this room is back up
+though the manhole.
+~
+0 1024 1
+D4
+~
+~
+0 -1 3918
+S
+#3920
+A Tastefully Decorated Office~
+~
+0 0 1
+D2
+~
+door~
+1 -1 3919
+S
+#3921
+Liquor Store~
+The smell of alcohol floods this place.  Looking around you see many
+different types and brands of booze.  They seem to have a large supply
+of beer, wine, and whiskey.  There is also a sign on the front door
+reading "You must be over 21 years of age to enter."
+~
+0 8 1
+D2
+~
+~
+0 -1 3725
+S
+#3922
+Mini-Mart~
+This is a small mini-mart with isles of random snacks and candy.  In
+the back there is a huge cooler filled with many different kinds of
+refreshing drinks.
+~
+0 12 1
+D2
+~
+~
+0 -1 3727
+S
+#3923
+A Strange Ally~
+This is a very strange ally.  It is dark, creepy and strange sounds
+echo throughout this place.  It looks like even the homeless people
+of Satan City will not even stay here.
+~
+0 0 1
+D6
+~
+~
+0 -1 3759
+D9
+~
+~
+0 -1 3756
+S
+#3924
+The Lobby to Satan City Casino~
+This is the lobby to the famous Satan City casino.  It seems like every
+thing is lined with gold here.  The doors, walls, and it even looks
+like the floor has gold lining.  The main entrance to the casino floor
+is right ahead, to the east.
+~
+0 1024 1
+D3
+~
+~
+0 -1 3791
+S
+#3925
+A Quiet Ally~
+This ally looks like your typical ally.  Trash litters the street
+and all kinds of junk have been tossed around.  However, it is very
+quiet here, almost too quiet...
+~
+0 0 1
+D7
+~
+~
+0 -1 3836
+D8
+~
+~
+0 -1 3786
+S
+#3926
+A Back Ally~
+This is a relatively clean ally compared to some in Satan City.  There
+are a few people here that either look beaten up, or passed out.  The
+loud sound of dance music can be heard echoing though the ally.
+~
+0 0 1
+D6
+~
+~
+0 -1 3858
+D9
+~
+~
+0 -1 3798
+S
+#3927
+Large Dance Floor~
+There seems to be at least 100 people here on the dance floor.  Most
+are dancing to loud techno music, but there are some who are standing
+around watching the others dance.
+~
+0 8 1
+D0
+~
+~
+0 -1 3928
+D8
+~
+door~
+3 -1 3926
+S
+#3928
+The Underground~
+This is "The Underground" bar.  All the pretty people from all over
+Satan City come here to dance, drink, and talk about their hair.
+There is a huge dance floor to the south packed full of people having
+fun dancing.
+~
+0 8 1
+D2
+~
+~
+0 -1 3927
+D7
+~
+~
+0 -1 3849
+S
+#3929
+Capsule Shop~
+Capsules, capsules, and more capsules!  There doesn't seem to be
+anything other than capsules here.  This place must have every single
+capsule ever created.
+~
+0 8 1
+D0
+~
+~
+0 -1 3794
+S
+#3930
+Armor Shop~
+Talk about selection!  This place has enough armor and protective gear
+to last a life time.  They've got simple kevlar shirts to strange looking
+stuff that you couldn't even begin to imagine where it came from.
+~
+0 8 1
+D0
+~
+~
+0 -1 3797
+S
+#3931
+Equipment Store~
+This is a well furnished shop for all your adventuring needs.  Capsules
+line the walls with tiny labels underneath each one describing what
+it is.  Jackets, boots, helmets and just about everything you might
+ever need seems to be in stock here.
+~
+0 8 1
+D1
+~
+~
+0 -1 3844
+S
+#3932
+Busted Stuff Repair Shop~
+This is a nice clean room, if you don't count all the scattered junk
+every where.  There are broken TV sets, radios and computers amongst
+countless other pieces of junk.  There doesn't seem to be a single
+thing here that isn't broken.
+~
+0 8 1
+D0
+~
+~
+0 -1 3847
+S
+#3933
+The Morgue~
+This is a very cold room.  Medical equipment, tables and lots of
+weird creepy things cover this room.  It looks as if there are
+bodies underneath some cloths on a few of the tables.
+~
+0 4 1
+D4
+~
+~
+0 -1 3831
+S
+#3934
+Corpse Holding Room~
+~
+0 4&8 1
+S
+#3935
+Floating in a void~
+~
+0 2097156 1
+S
+#3936
+Floating in a void~
+~
+0 2097156 1
+S
+#3937
+Floating in a void~
+~
+0 2097156 1
+S
+#3938
+Floating in a void~
+~
+0 2097156 1
+S
+#3939
+Floating in a void~
+~
+0 2097156 1
+S
+#3940
+Floating in a void~
+~
+0 2097156 1
+S
+#3941
+Floating in a void~
+~
+0 2097156 1
+S
+#3942
+Floating in a void~
+~
+0 2097156 1
+S
+#3943
+Floating in a void~
+~
+0 2097156 1
+S
+#3944
+Floating in a void~
+~
+0 2097156 1
+S
+#3945
+Floating in a void~
+~
+0 2097156 1
+S
+#3946
+Floating in a void~
+~
+0 2097156 1
+S
+#3947
+Floating in a void~
+~
+0 2097156 1
+S
+#3948
+Floating in a void~
+~
+0 2097156 1
+S
+#3949
+Floating in a void~
+~
+0 2097156 1
+S
+#3950
+Floating in a void~
+~
+0 2097156 1
+S
+#3951
+Floating in a void~
+~
+0 2097156 1
+S
+#3952
+Floating in a void~
+~
+0 2097156 1
+S
+#3953
+Floating in a void~
+~
+0 2097156 1
+S
+#3954
+Floating in a void~
+~
+0 2097156 1
+S
+#3955
+Floating in a void~
+~
+0 2097156 1
+S
+#3956
+Floating in a void~
+~
+0 2097156 1
+S
+#3957
+Floating in a void~
+~
+0 2097156 1
+S
+#3958
+Floating in a void~
+~
+0 2097156 1
+S
+#3959
+Floating in a void~
+~
+0 2097156 1
+S
+#3960
+Floating in a void~
+~
+0 2097156 1
+S
+#3961
+Floating in a void~
+~
+0 2097156 1
+S
+#3962
+Floating in a void~
+~
+0 2097156 1
+S
+#3963
+Floating in a void~
+~
+0 2097156 1
+S
+#3964
+Floating in a void~
+~
+0 2097156 1
+S
+#3965
+Floating in a void~
+~
+0 2097156 1
+S
+#3966
+Floating in a void~
+~
+0 2097156 1
+S
+#3967
+Floating in a void~
+~
+0 2097156 1
+S
+#3968
+Floating in a void~
+~
+0 2097156 1
+S
+#3969
+Floating in a void~
+~
+0 2097156 1
+S
+#3970
+Floating in a void~
+~
+0 2097156 1
+S
+#3971
+Floating in a void~
+~
+0 2097156 1
+S
+#3972
+Floating in a void~
+~
+0 2097156 1
+S
+#3973
+Floating in a void~
+~
+0 2097156 1
+S
+#3974
+Floating in a void~
+~
+0 2097156 1
+S
+#3975
+Floating in a void~
+~
+0 2097156 1
+S
+#3976
+Floating in a void~
+~
+0 2097156 1
+S
+#3977
+Floating in a void~
+~
+0 2097156 1
+S
+#3978
+Floating in a void~
+~
+0 2097156 1
+S
+#3979
+Floating in a void~
+~
+0 2097156 1
+S
+#3980
+Floating in a void~
+~
+0 2097156 1
+S
+#3981
+Floating in a void~
+~
+0 2097156 1
+S
+#3982
+Floating in a void~
+~
+0 2097156 1
+S
+#3983
+Floating in a void~
+~
+0 2097156 1
+S
+#3984
+Floating in a void~
+~
+0 2097156 1
+S
+#3985
+Floating in a void~
+~
+0 2097156 1
+S
+#3986
+Floating in a void~
+~
+0 2097156 1
+S
+#3987
+Floating in a void~
+~
+0 2097156 1
+S
+#3988
+Floating in a void~
+~
+0 2097156 1
+S
+#3989
+Floating in a void~
+~
+0 2097156 1
+S
+#3990
+Floating in a void~
+~
+0 2097156 1
+S
+#3991
+Floating in a void~
+~
+0 2097156 1
+S
+#3992
+Floating in a void~
+~
+0 2097156 1
+S
+#3993
+Floating in a void~
+~
+0 2097156 1
+S
+#3994
+Floating in a void~
+~
+0 2097156 1
+S
+#3995
+Satan City Police Spawning Room Upper Level 4~
+You don't even want to look in this room with a name like
+"Spawning Room"...
+~
+0 2097152 1
+D5
+~
+~
+0 -1 3996
+S
+#3996
+Satan City Police Spawning Room Upper Level 3~
+You don't even want to look in this room with a name like
+"Spawning Room"...
+~
+0 2097152 1
+D4
+~
+~
+0 -1 3995
+D5
+~
+~
+0 -1 3997
+S
+#3997
+Satan City Police Spawning Room Upper Level 2~
+You don't even want to look in this room with a name like
+"Spawning Room"...
+~
+0 2097152 1
+D4
+~
+~
+0 -1 3996
+D5
+~
+~
+0 -1 3998
+S
+#3998
+Satan City Police Spawning Room Upper Level 1~
+You don't even want to look in this room with a name like
+"Spawning Room"...
+~
+0 2097152 1
+D4
+~
+~
+0 -1 3997
+D5
+~
+~
+0 -1 3999
+S
+#3999
+Satan City Police Spawning Room~
+You don't even want to look in this room with a name like
+"Spawning Room"...
+~
+0 2097152 1
+D4
+~
+~
+0 -1 3998
+D5
+~
+~
+0 -1 3831
+S
+#0
+
+
+#RESETS
+D 0 3701 3 0
+M 1 3716 2 3711
+D 0 3726 0 0
+M 1 3709 1 3733
+M 1 3700 2 3733
+M 1 3700 2 3733
+M 1 3722 4 3743
+O 1 3701 1 3754
+O 1 3700 1 3754
+M 1 3722 4 3757
+M 1 3722 4 3794
+M 1 3701 1 3805
+M 1 3704 1 3805
+M 1 3703 1 3807
+D 0 3810 1 1
+D 0 3811 0 1
+D 0 3812 0 1
+D 0 3813 3 1
+D 0 3814 2 1
+D 0 3815 2 1
+M 1 3705 1 3816
+G 1 3725 1
+G 1 3722 1
+G 1 3724 1
+G 1 3723 1
+G 1 3721 1
+G 1 3720 1
+M 1 3706 1 3817
+G 1 3716 1
+G 1 3714 1
+G 1 3718 1
+G 1 3712 1
+G 1 3711 1
+G 1 3715 1
+G 1 3713 1
+G 1 3719 1
+D 0 3819 0 1
+D 0 3819 1 0
+D 0 3819 2 1
+D 0 3819 3 0
+D 0 3820 2 1
+D 0 3821 0 1
+M 1 3708 1 3822
+G 1 3739 1
+D 0 3822 3 0
+D 0 3823 3 0
+D 0 3824 1 0
+D 0 3825 3 0
+D 0 3826 3 0
+D 0 3827 1 0
+M 1 3710 1 3828
+M 1 3711 3 3828
+M 1 3711 3 3828
+M 1 3711 3 3828
+D 0 3828 3 0
+M 1 3720 1 3829
+M 1 3721 1 3829
+D 0 3829 1 0
+M 1 3712 1 3830
+D 0 3830 1 0
+M 1 3715 1 3831
+G 1 3741 1
+D 0 3831 1 0
+D 0 3831 2 0
+D 0 3832 3 0
+M 1 3714 1 3834
+G 1 3742 1
+G 1 3745 1
+G 1 3746 1
+G 1 3747 1
+G 1 3744 1
+G 1 3743 1
+M 1 3722 4 3834
+M 1 3716 2 3851
+D 0 3861 0 0
+D 0 3861 2 0
+D 0 3862 0 0
+D 0 3862 2 0
+D 0 3863 2 0
+D 0 3864 0 0
+D 0 3865 2 0
+D 0 3866 0 0
+M 1 3717 1 3867
+M 1 3723 2 3868
+M 1 3723 2 3868
+M 1 3731 1 3872
+M 1 3730 2 3874
+M 1 3730 2 3874
+M 1 3727 1 3875
+M 1 3728 1 3875
+M 1 3729 2 3875
+M 1 3729 2 3875
+M 1 3734 1 3876
+M 1 3724 1 3915
+D 0 3915 1 0
+M 1 3733 1 3919
+M 1 3732 1 3920
+D 0 3920 2 0
+M 1 3726 1 3918
+G 1 6021 1
+G 1 6020 1
+G 1 6019 1
+G 1 6018 1
+G 1 6017 1
+G 1 6016 1
+G 1 3863 1
+O 1 3800 1 3918
+O 1 3801 1 3918
+M 1 3802 1 3924
+D 0 3927 8 1
+O 1 3800 1 3925
+O 1 3802 1 3925
+O 1 3800 1 3923
+O 1 3802 1 3923
+M 1 3803 1 3932
+M 1 3805 1 3929
+M 1 3718 1 3869
+G 1 3749 1
+G 1 3751 1
+G 1 3750 1
+G 1 3814 1
+G 1 3815 1
+G 1 3819 1
+G 1 3817 1
+G 1 3820 1
+G 1 3816 1
+G 1 3818 1
+M 1 3801 1 3922
+G 1 3753 1
+G 1 3754 1
+G 1 3758 1
+G 1 3761 1
+G 1 3822 1
+G 1 3821 1
+G 1 3823 1
+M 1 3725 1 3917
+G 1 3755 1
+G 1 3757 1
+G 1 3753 1
+G 1 3754 1
+G 1 3758 1
+G 1 3756 1
+G 1 3752 1
+G 1 3759 1
+D 0 3917 2 0
+M 1 3800 1 3921
+G 1 3834 1
+G 1 3839 1
+G 1 3838 1
+G 1 3833 1
+G 1 3824 1
+G 1 3830 1
+G 1 3832 1
+G 1 3837 1
+G 1 3831 1
+G 1 3828 1
+G 1 3835 1
+G 1 3826 1
+G 1 3825 1
+G 1 3829 1
+G 1 3836 1
+G 1 3827 1
+M 1 3707 1 3818
+G 1 3737 1
+G 1 3730 1
+G 1 3727 1
+G 1 3732 1
+G 1 3738 1
+G 1 3731 1
+G 1 3728 1
+G 1 3729 1
+G 1 3843 1
+G 1 3705 1
+G 1 3726 1
+G 1 3844 1
+G 1 3842 1
+G 1 3709 1
+M 1 3804 1 3930
+G 1 3855 1
+G 1 3857 1
+G 1 3859 1
+G 1 3860 1
+G 1 3856 1
+G 1 3861 1
+G 1 3858 1
+G 1 3862 1
+G 1 3853 1
+G 1 3854 1
+M 1 3821 1 3833
+D 0 3833 0 0
+M 1 3822 1 3995
+M 1 3822 1 3995
+M 1 3822 1 3995
+M 1 3822 1 3995
+M 1 3822 1 3995
+M 1 3822 1 3995
+M 1 3822 1 3995
+M 1 3822 1 3995
+M 1 3822 1 3995
+M 1 3822 1 3995
+M 1 3822 1 3995
+M 1 3822 1 3995
+M 1 3822 1 3995
+M 1 3822 1 3995
+M 1 3822 1 3995
+M 1 3822 1 3995
+M 1 3822 1 3995
+M 1 3822 1 3995
+M 1 3822 1 3995
+M 1 3822 1 3995
+M 1 3820 1 3996
+M 1 3820 1 3996
+M 1 3820 1 3996
+M 1 3820 1 3996
+M 1 3820 1 3996
+M 1 3820 1 3996
+M 1 3820 1 3996
+M 1 3820 1 3996
+M 1 3820 1 3996
+M 1 3820 1 3996
+M 1 3820 1 3996
+M 1 3820 1 3996
+M 1 3820 1 3996
+M 1 3820 1 3996
+M 1 3820 1 3996
+M 1 3820 1 3996
+M 1 3820 1 3996
+M 1 3820 1 3996
+M 1 3820 1 3996
+M 1 3820 1 3996
+M 1 3818 1 3997
+M 1 3818 1 3997
+M 1 3818 1 3997
+M 1 3818 1 3997
+M 1 3818 1 3997
+M 1 3818 1 3997
+M 1 3818 1 3997
+M 1 3818 1 3997
+M 1 3818 1 3997
+M 1 3818 1 3997
+M 1 3818 1 3997
+M 1 3818 1 3997
+M 1 3818 1 3997
+M 1 3818 1 3997
+M 1 3818 1 3997
+M 1 3818 1 3997
+M 1 3818 1 3997
+M 1 3818 1 3997
+M 1 3818 1 3997
+M 1 3818 1 3997
+M 1 3817 1 3998
+M 1 3817 1 3998
+M 1 3817 1 3998
+M 1 3817 1 3998
+M 1 3817 1 3998
+M 1 3817 1 3998
+M 1 3817 1 3998
+M 1 3817 1 3998
+M 1 3817 1 3998
+M 1 3817 1 3998
+M 1 3817 1 3998
+M 1 3817 1 3998
+M 1 3817 1 3998
+M 1 3817 1 3998
+M 1 3817 1 3998
+M 1 3817 1 3998
+M 1 3817 1 3998
+M 1 3817 1 3998
+M 1 3817 1 3998
+M 1 3817 1 3998
+M 1 3816 1 3999
+M 1 3816 1 3999
+M 1 3816 1 3999
+M 1 3816 1 3999
+M 1 3816 1 3999
+M 1 3816 1 3999
+M 1 3816 1 3999
+M 1 3816 1 3999
+M 1 3816 1 3999
+M 1 3816 1 3999
+M 1 3816 1 3999
+M 1 3816 1 3999
+M 1 3816 1 3999
+M 1 3816 1 3999
+M 1 3816 1 3999
+M 1 3816 1 3999
+M 1 3816 1 3999
+M 1 3816 1 3999
+M 1 3816 1 3999
+M 1 3816 1 3999
+M 1 3815 1 3702
+M 1 3808 1 3704
+D 0 3704 1 0
+M 1 3819 1 3701
+M 1 3810 1 3702
+M 1 3813 1 3703
+M 1 3809 1 3704
+M 1 3722 1 3704
+M 1 3811 1 3705
+M 1 3814 1 3706
+M 1 3812 1 3707
+M 1 3815 1 3708
+M 1 3808 1 3709
+M 1 3722 1 3709
+M 1 3819 1 3710
+M 1 3810 1 3711
+M 1 3813 1 3712
+M 1 3809 1 3713
+M 1 3811 1 3714
+M 1 3814 1 3715
+M 1 3812 1 3716
+M 1 3722 1 3716
+M 1 3815 1 3717
+M 1 3808 1 3718
+M 1 3819 1 3719
+M 1 3810 1 3720
+M 1 3813 1 3721
+M 1 3809 1 3722
+M 1 3811 1 3723
+M 1 3814 1 3724
+M 1 3722 1 3724
+M 1 3812 1 3725
+M 1 3815 1 3726
+M 1 3808 1 3727
+M 1 3819 1 3728
+M 1 3810 1 3729
+M 1 3813 1 3730
+M 1 3809 1 3731
+M 1 3811 1 3732
+M 1 3722 1 3732
+M 1 3814 1 3733
+M 1 3812 1 3734
+M 1 3815 1 3735
+M 1 3808 1 3736
+M 1 3819 1 3737
+M 1 3810 1 3738
+M 1 3813 1 3739
+M 1 3809 1 3740
+M 1 3722 1 3740
+M 1 3811 1 3741
+M 1 3814 1 3742
+M 1 3812 1 3743
+M 1 3815 1 3744
+M 1 3808 1 3745
+M 1 3819 1 3746
+M 1 3810 1 3747
+M 1 3813 1 3748
+M 1 3809 1 3749
+M 1 3811 1 3750
+M 1 3722 1 3750
+M 1 3814 1 3751
+M 1 3812 1 3752
+M 1 3815 1 3753
+M 1 3808 1 3754
+M 1 3819 1 3755
+M 1 3810 1 3756
+M 1 3813 1 3757
+M 1 3722 1 3757
+M 1 3809 1 3758
+M 1 3811 1 3759
+M 1 3814 1 3760
+M 1 3812 1 3761
+M 1 3815 1 3762
+M 1 3808 1 3763
+M 1 3722 1 3763
+M 1 3819 1 3764
+M 1 3810 1 3765
+M 1 3813 1 3766
+M 1 3809 1 3767
+M 1 3811 1 3768
+M 1 3814 1 3769
+M 1 3812 1 3770
+M 1 3815 1 3771
+M 1 3808 1 3772
+M 1 3819 1 3773
+M 1 3810 1 3774
+M 1 3813 1 3775
+M 1 3809 1 3776
+M 1 3722 1 3776
+M 1 3811 1 3777
+M 1 3814 1 3778
+M 1 3812 1 3779
+M 1 3815 1 3780
+M 1 3808 1 3781
+M 1 3819 1 3782
+M 1 3810 1 3783
+M 1 3813 1 3784
+M 1 3722 1 3784
+M 1 3809 1 3785
+M 1 3811 1 3786
+M 1 3814 1 3787
+M 1 3812 1 3788
+M 1 3815 1 3789
+M 1 3808 1 3790
+M 1 3819 1 3791
+M 1 3810 1 3792
+M 1 3722 1 3792
+M 1 3813 1 3793
+M 1 3809 1 3794
+M 1 3811 1 3795
+M 1 3814 1 3796
+M 1 3812 1 3797
+M 1 3815 1 3798
+M 1 3808 1 3799
+M 1 3722 1 3799
+M 1 3819 1 3800
+M 1 3810 1 3801
+M 1 3813 1 3802
+M 1 3809 1 3803
+M 1 3811 1 3804
+M 1 3814 1 3835
+M 1 3812 1 3836
+M 1 3815 1 3837
+M 1 3722 1 3837
+M 1 3808 1 3838
+M 1 3819 1 3839
+M 1 3810 1 3840
+M 1 3813 1 3841
+M 1 3809 1 3842
+M 1 3811 1 3843
+M 1 3814 1 3844
+M 1 3812 1 3845
+M 1 3815 1 3846
+M 1 3808 1 3847
+M 1 3819 1 3848
+M 1 3722 1 3848
+M 1 3810 1 3849
+M 1 3813 1 3850
+M 1 3809 1 3851
+M 1 3811 1 3852
+M 1 3814 1 3853
+M 1 3812 1 3854
+M 1 3815 1 3855
+M 1 3808 1 3856
+M 1 3819 1 3857
+M 1 3810 1 3858
+M 1 3813 1 3859
+M 1 3702 1 3806
+G 1 3736 1
+G 1 3847 1
+G 1 3733 1
+G 1 3735 1
+G 1 3845 1
+G 1 3708 1
+G 1 3703 1
+G 1 3740 1
+G 1 3710 1
+G 1 3706 1
+G 1 3702 1
+G 1 3704 1
+G 1 3707 1
+G 1 3841 1
+G 1 3840 1
+G 1 3734 1
+G 1 3846 1
+M 1 3806 1 3931
+G 1 3851 1
+G 1 3852 1
+G 1 3805 2
+G 1 3849 1
+G 1 3865 1
+G 1 3864 1
+G 1 3848 1
+G 1 3850 1
+M 1 3807 1 3926
+O 1 3800 1 3926
+O 1 3802 1 3926
+M 1 3825 1 3933
+S
+
+
+#SHOPS
+ 3702    0  0  0  0  0   100  50         1  0    ; a pretty saleswoman
+ 3705   19  0  0  0  0   100  50         1  0    ; Ryiuko
+ 3706   19 17  0  0  0   100  50         0 23    ; the tea and things owner
+ 3707    0  0  0  0  0   100  50         0 23    ; a gap employee
+ 3708    0  0  0  0  0   120  50         1  0    ; an old priest
+ 3714    0  0  0  0  0   120  50         1  0    ; the cheerful looking bartender
+ 3718    8  0  0  0  0   100  50         0 23    ; a jeweler
+ 3725   17  0  0  0  0   100  50         1  0    ; A cashier
+ 3726   65  0  0  0  0   120  50         1  0    ; A suspicious looking man
+ 3800    0  0  0  0  0   100  50         0 23    ; The liquor store owner
+ 3801    0  0  0  0  0   100  50         0 23    ; The clerk
+ 3804    0  0  0  0  0   100  50         0 23    ; the armor shop owner
+ 3805    0  0  0  0  0   100  50         0 23    ; the capsule store owner
+ 3806    0  5 65  8 19   100  50         0 23    ; the store owner
+0
+
+
+#REPAIRS
+ 3702    9  0  0         100   1         1  0    ; a pretty saleswoman
+ 3803    9  5  0         100   1         0 23    ; the repair guy
+0
+
+
+#SPECIALS
+S
+
+
+#$

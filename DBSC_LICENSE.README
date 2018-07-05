@@ -1,0 +1,58 @@
+This is the DragonBall Saga Codebase (DBSC) License file.  It explains what
+is required legally to use this code.
+
+I'm going to just explain this is simple terms instead of all kinds of
+legal BS.  It'll be easier to follow and easier to read that way I believe.
+
+1) You must follow the SMAUG license.
+2) You must follow the MERC license.
+3) You must follow the DIKU license.
+
+I have no control over those things.  Since the DBSC is based on SMAUG and
+all the others you've got to follow their licenses too.
+
+DBSC Terms
+----------
+1) I *request* that you give credit where it's due.  I would like you to
+leave the following names in the greeting at a minimum:
+Goku (or Warren), Guava (or Steven), Saiyr and Ubuu.
+These are the most influential people in the history of DBS and have helped
+formed it into the great MUD that it was.
+
+2) Other names that *should* be left in are:
+Koronto, Melora, Islvin, Viola, Krillin and Karma.
+All of these people have also done tons of work for DBS and all deserve
+credit for their work.
+
+3) If you decide to keep an area file that's part of the DBSC release, you
+should also give credit to the author of that area.  All authors names are
+listed in the area files.
+
+4) If you are just using parts of the code and porting them into your own
+MUD, just send me an e-mail telling me what your using (I'm just curious
+what you're using) and put the persons name who coded the section of code
+you're using into your credits file.  If you don't know, then either add
+my name or thank "The coders of the DragonBall Saga".
+
+If you decide to leave out credit to any us that's fine (although you're
+being an ass hole).  It's not like you're fooling anyone into believing
+that you did all this work your self.  So you might as well AT THE VERY
+LEAST put our names in the credits file.
+
+That's about all the requirements I have for you to use the DBSC. If you
+have any questions or you just want to say hi, you may contact me though
+e-mail.
+
+-Goku
+RazorZeroX at yahoo.com
+
+=============================================
+             DBSC License v1.0
+               December 2004
+---------------------------------------------
+Applies to all versions of the DBSC released.
+---------------------------------------------
+We reserve the right  to change and/or update
+this file and  information at any  time, with
+or without notice for any  reason we see fit.
+=============================================

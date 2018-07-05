@@ -1,0 +1,55 @@
+#SHIP
+Name         Heavy Fighter FS4-025~
+Filename     heavy_fighter_fs4-025.ship~
+Description  A large fighter ship equiped with lazers and missles.~
+Owner        Public~
+Pilot        ~
+Copilot      ~
+Class        0
+Tractorbeam  0
+Shipyard     3871
+Hanger       0
+Turret1      0
+Turret2      0
+Statet0      0
+Statet1      0
+Statet2      0
+Lasers       2
+Missiles     8
+Maxmissiles  8
+Rockets     2
+Maxrockets  2
+Torpedos     4
+Maxtorpedos  4
+Lastdoc      3871
+Firstroom    1104
+Lastroom     1104
+Shield       0
+Maxshield    250
+Hull         200
+Maxhull      200
+Maxenergy    8000
+Hyperspeed   75
+Comm         0
+Chaff        5
+Maxchaff     5
+Sensor       0
+Astro_array  0
+Realspeed    40
+Type         0
+Cockpit      1104
+Coseat       1104
+Pilotseat    1104
+Gunseat      1104
+Navseat      1104
+Engineroom   0
+Entrance     1104
+Shipstate    0
+Missilestate 0
+Energy       8000
+Manuever     20
+Cost         25000000
+Home         corperate~
+End
+
+#END

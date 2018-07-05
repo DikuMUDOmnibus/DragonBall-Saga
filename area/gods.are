@@ -1,0 +1,857 @@
+#AREA   Gods~
+
+
+
+#VERSION 252
+#AUTHOR ROD~
+
+#RANGES
+51 65 0 65
+$
+
+#PLANET 1
+
+#RESETMSG A beautiful, rainbow mist washes over the land.~
+
+#FLAGS
+0
+
+#CLIMATE 2 2 2
+
+#NEIGHBOR Limbo~
+
+#MOBILES
+#1200
+mobile~
+a mobile~
+A mobile is here.
+~
+~
+1073741825 0 0 C
+1 50 0 0d0+0 0d0+0
+-1 4000
+112 112 0
+13 13 13 13 0
+0 0 0 0 0
+3 0 0 0 131073 1 0
+0 0 0 0 0 0 0 0
+#1201
+small frog~
+A Small Frog~
+A Small Frog sits here croaking wildly
+~
+~
+67 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 1
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#1202
+fat toad~
+A Fat Toad~
+A Fat Toad Sits here, snoozing
+~
+~
+67 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 1
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#1203
+small hermit~
+A Small Hermit~
+A small hairy man sits here.
+~
+~
+1 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 1
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#1234
+earth eternal dragon shenron~
+The Eternal Dragon 'Shenron'~
+&GThe Eternal Dragon 'Shenron' floats ominously in the sky here.
+~
+~
+67108867 524288 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000000000000000000
+112 112 0
+500 500 500 500 0
+0 0 0 0 0
+3 3 0 0 1 1 10
+0 0 0 0 0 0 0 0
+#1298
+anti-bug bug~
+The anti-bug bug~
+The anti-bug bug is crawling around here.
+~
+~
+67 2 0 C
+1 0 100 0d0+0 1d5+0
+-1 1
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#1337
+Sigma~
+Sigma~
+&c(&wRonin&c) Sigma &r- Deus Ex Machina. Machina Exterminatus.&c is hovering here.
+~
+~
+16777219 524416&0&544 -1000 C
+1 0 100 1d20+0 2d5+0
+-1 50000000000000
+112 112 1
+250 250 250 250 0
+0 0 0 0 0
+4 4 0 0 1 1 6
+0 0 0 0 0 0 0 0
+> death_prog 100~
+if pl($n) <= 100000000000000
+  if rand(1)
+    if rand(33)
+      mpoload 1337
+    else
+      mpmload 1337
+      mpecho _red Bolts of crimson electricity begin to arc across Sigma's battered remains.
+      mpecho _dch The android's wounds suddenly repair themselves.
+      mpecho _red Sigma's eyes go from a dead black, back to a seething crimson as he jumps
+      mpecho _red to his feet.
+      cackle
+    endif
+  else
+    mpmload 1337
+    mpecho _red Bolts of crimson electricity begin to arc across Sigma's battered remains.
+    mpecho _dch The android's wounds suddenly repair themselves.
+    mpecho _red Sigma's eyes go from a dead black, back to a seething crimson as he jumps
+    mpecho _red to his feet.
+    cackle
+  endif
+else
+  mpmload 1337
+  mpecho _red Bolts of crimson electricity begin to arc across Sigma's battered remains.
+  mpecho _dch The android's wounds suddenly repair themselves.
+  mpecho _red Sigma's eyes go from a dead black, back to a seething crimson as he jumps
+  mpecho _red to his feet.
+  cackle
+endif
+~
+> fight_prog 60~
+ssd
+~
+> fight_prog 75~
+'electric hell ball'
+~
+> fight_prog 50~
+mad
+cackle
+mpecho _blu Sigma disappears in a flash of light!
+mpecho _blu Sigma suddenly appears directly infront of $n, thrusting his
+mpecho _blu left arm through $n's torso.
+mpecho _red As blood flows down from $n's mouth, Sigma grabs $n's head in
+mpecho _red his right hand and squeezes down with incredible force.
+mpecho _red $n's head suddenly explodes in a spray of blood, bone, and brain matter.
+mpslay $n
+~
+|
+#1399
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1073741825 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#1200
+immortal board~
+the immortal board~
+The Admin board is floating here.~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 1
+ 0
+#1201
+small laptop~
+A Small Laptop~
+A Small Laptop is here bleeping quietly.~
+~
+1 0 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+laptop~
+On the screen you seea database for people Salamander has killed.
+
+~
+#1202
+blender~
+A Frog Blender~
+A Frog Blender lays here covered in goo.~
+~
+8 0 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+blender~
+The blender is covered in goo, probably from its last victim.
+~
+#1203
+a Petrol Bomb~
+a Petrol Bomb~
+A Petrol Bomb lies here.~
+~
+13 0 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+A Glass bottle filled with petrol, it has a rag pushed in at the top to stop
+
+the petrol spilling.~
+~
+E
+petrol bomb~
+A glass bottle filled with petrol, there is a rag pushed in at
+the top to keep the petrol from spilling.
+~
+#1205
+dragon radar~
+&wA Dragonball Radar Device&D~
+&wA small, circular, flat device has been left on the ground here.&D~
+~
+67 8388608 16385
+0 0 0 0 0 0
+1 0 250000
+ 1000000
+#1210
+kaio shirt~
+&WA Kaio Shirt&D~
+&WA shirt made of incredibly fine material has been left here.&D~
+~
+9 1073742080&324 9
+0 0 0 0 400 400
+1 50000 5000
+ 0
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+#1211
+kaio pants~
+&WKaio Pants&D~
+&WA pair of pants made of incredibly fine material has been left here.&D~
+~
+9 1073742080&324 33
+0 0 0 0 200 200
+1 30000 3000
+ 0
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+#1212
+kaio vest~
+&WKaio Vest&D~
+&WA vest made of incredibly fine material has been left here.&D~
+~
+9 1073742080&324 1025
+0 0 0 0 1250 1250
+1 135000 13500
+ 0
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+#1213
+kaio belt~
+&WA Kaio Belt&D~
+&WA belt made of incredibly fine material has been left here.&D~
+~
+9 1073742080&324 2049
+0 0 0 0 75 75
+1 17500 1750
+ 0
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+#1214
+kaio sleeves~
+&WKaio Sleeves&D~
+&WA pair of sleeves made of incredibly fine material has been left here.&D~
+~
+9 1073742080&324 257
+0 0 0 0 250 250
+1 35000 3500
+ 0
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+#1215
+kaio boots~
+&WKaio Boots&D~
+&WA pair of boots made of incredibly strong, yet incredibly fine material have been left here.&D~
+~
+9 1073742080&324 65
+0 0 0 0 0 0
+1 10000 1000
+ 0
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+#1222
+Imm EQ Prototype~
+a newly created Imm EQ Prototype~
+Some god dropped a newly created Imm EQ Prototype here.~
+~
+13 0&4 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#1250
+Yajirobe's House Key~
+Yajirobe's House Key~
+Some god dropped a newly created Yajirobe's House Key here.~
+~
+8 0 16385
+1250 0 0 0 0 0
+1 0 0
+ 1
+#1260
+Dual Demon Scimitars~
+&wD&zual &wD&zemon &wS&zcimitars&D~
+&zA pair of demon-crafted scimitars with bone handles lay discarded here.&D~
+~
+5 1082130432&772 8193
+0 2 4 1 0 0
+1 18000 1800
+ 5000000
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+#1261
+Demon Shortsword~
+&wD&zemon &wS&zhortsword&D~
+&zA demon-crafted shortsword with a bone handle lays discarded here.&D~
+~
+5 1082130432&772 8193
+0 2 4 3 0 0
+1 18000 1800
+ 5000000
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+#1262
+Demon Longsword~
+&wD&zemon &wL&zongsword&D~
+&zA demon-crafted longsword with a bone handle lays discarded here.&D~
+~
+5 1082130432&772 8193
+0 2 4 3 0 0
+1 18000 1800
+ 5000000
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+#1263
+Demon Broadsword~
+&wD&zemon &wB&zroadsword&D~
+&zA demon-crafted broadsword with a bone handle lays discarded here.&D~
+~
+5 1082130432&772 8193
+0 2 4 3 0 0
+1 18000 1800
+ 5000000
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+#1264
+Demon Lance~
+&wD&zemon &wL&zance&D~
+&zA demon-crafted lance with a bone handle lays discarded here.&D~
+~
+5 1082130432&772 8193
+0 2 4 11 0 0
+1 18000 1800
+ 5000000
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+#1265
+Demon Maul~
+&wD&zemon &wM&zaul&D~
+&zA demon-crafted maul with a bone handle lays discarded here.&D~
+~
+5 1082130432&772 8193
+0 2 4 8 0 0
+1 18000 1800
+ 5000000
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+#1280
+one star earth dragon ball~
+&OThe One-Star Dragonball (&gEarth&O)&D~
+&OA small, orange, glass-like ball with a single star lays here.&D~
+~
+66 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#1281
+two star earth dragon ball~
+&OThe Two-Star Dragonball (&gEarth&O)&D~
+&OA small, orange, glass-like ball with two stars lays here.&D~
+~
+66 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#1282
+three star earth dragon ball~
+&OThe Three-Star Dragonball (&gEarth&O)&D~
+&OA small, orange, glass-like ball with three stars lays here.&D~
+~
+66 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#1283
+four star earth dragon ball~
+&OThe Four-Star Dragonball (&gEarth&O)&D~
+&OA small, orange, glass-like ball with four stars lays here.&D~
+~
+66 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#1284
+five star earth dragon ball~
+&OThe Five-Star Dragonball (&gEarth&O)&D~
+&OA small, orange, glass-like ball with five stars lays here.&D~
+~
+66 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#1285
+six star earth dragon ball~
+&OThe Six-Star Dragonball (&gEarth&O)&D~
+&OA small, orange, glass-like ball with six stars lays here.&D~
+~
+66 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#1286
+seven star earth dragon ball~
+&OThe Seven-Star Dragonball (&gEarth&O)&D~
+&OA small, orange, glass-like ball with seven stars lays here.&D~
+~
+66 0&3840 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#1337
+sentient chip~
+&zA Sentient Computer Chip&D~
+&zA single computer chip lies alone on the floor, sparking with energy?...&D~
+~
+9 8388610 4194305
+0 0 0 0 1000 1000
+1 375000 37500
+ 2000000000
+A
+1 25
+A
+2 30
+A
+3 30
+A
+4 25
+> wear_prog 100~
+if race($n) == saiyan
+  mpplmult $n 30
+else
+if race($n) == halfbreed
+  mpplmult $n 24
+else
+if race($n) == human
+  mpplmult $n 25
+else
+if race($n) == namek
+  mpplmult $n 26
+else
+if race($n) == icer
+  mpplmult $n 26
+else
+if race($n) == android
+  mpplmult $n 22
+else
+if race($n) == super-android
+  mpplmult $n 25
+else
+if race($n) == bio-android
+  mpplmult $n 27
+else
+if race($n) == kaio
+  mpplmult $n 20
+else
+if race($n) == demon
+  mpplmult $n 24
+else
+  mpplmult $n 24
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+if race($n) == android
+  mpechoat $n &zYou hold the chip to your forehead. Suddenly, it
+  mpechoat $n &zdigs down into your circuitry. Energy immediately floods
+  mpechoat $n &zevery part in your body as it transforms into a higher
+  mpechoat $n &ztechnology. You have been transformed into a Meta Being.
+  mpechoaround $n &z$n places a small computer chip to $s forehead.
+  mpechoaround $n &zThe chip suddenly takes over $s body and transforms
+  mpechoaround $n &z$n into a Meta Being.
+else
+if race($n) == super-android
+  mpechoat $n &zYou hold the chip to your forehead. Suddenly, it
+  mpechoat $n &zdigs down into your circuitry. Energy immediately floods
+  mpechoat $n &zevery part in your body as it transforms into a higher
+  mpechoat $n &ztechnology. You have been transformed into a Meta Being.
+  mpechoaround $n &z$n places a small computer chip to $s forehead.
+  mpechoaround $n &zThe chip suddenly takes over $s body and transforms
+  mpechoaround $n &z$n into a Meta Being.
+else
+  mpechoat $n &zYou hold the chip to your forehead. Suddenly, it
+  mpechoat $n &zdigs down into your flesh. Energy immediately floods
+  mpechoat $n &zevery cell in your body as your flesh turns to metal.
+  mpechoat $n &zYou have been transformed into a Meta Being.
+  mpechoaround $n &z$n places a small computer chip to $s forehead.
+  mpechoaround $n &zThe chip suddenly takes over $s body and transforms
+  mpechoaround $n &z$n into a Meta Being.
+endif
+endif
+~
+> remove_prog 100~
+if hps($n) < 100
+  mpechoat $n &RYou cannot remove this chip till your are fully healed.&D
+  mpforce $n wear sentient
+else
+  mpechoat $n &RYou drop to within an inch of your life as you return to normal.&D
+  mpechoaround $n &R$n is mortally wounded by removing the chip.&D
+  mpdamage $n 99
+  mpplmult $n 1
+  mpforce $n remove all
+endif
+~
+|
+#1399
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0&1 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#1200
+The Parlour of the Immortals~
+You are lounging in a quiet cosy parlour, warmed by a gentle magical fire
+which twinkles happily in a warm fireplace.
+
+~
+0 3145740 0
+S
+#1201
+Goku's Hangout~
+   You find yourself in a cozy little room.  This is where Goku comes when
+he needs break from all the chaos that goes on in the universe. On the wall
+you can see a small monitor that is constantly beeping with text scrolling
+down the screen.  There is also a small desk in the corner that has, on top
+of it, a small computer terminal.  The computer terminal is making a lot of
+noise.
+~
+0 -1607455220 0
+E
+monitor~
+This is a wall display monitor.  All it seems to do is beep and
+display text.  You move a little closer to read what's on the
+screen...
+
+*BEEP* Please fix my problem Goku.
+*BEEP* Please fix my problem Goku.
+*BEEP* Please fix my problem Goku.
+*BEEP* Please fix my problem Goku.
+*BEEP* Please fix my problem Goku.
+
+It just keeps going on like that...
+~
+E
+computer terminal~
+You see lines and lines of code on the screen.  Your only guess
+as to what it could possiably mean is that this is the DragonBall
+Saga's source code being displayed on the screen.  If that's true
+then where is Goku?  Shouldn't he be fixing all the bugs?
+~
+S
+#1202
+Guava's Hut~
+This is my HUT.
+There are many HUTS like this HUT.
+But this one is mine.
+
+The HUT Creed - One must live by the creed to live in a hut.
+~
+0 1073741828 1
+S
+#1203
+Guava's Hut~
+~
+0 4 1
+D3
+~
+Gym~
+0 -1 1202
+S
+#1204
+Ubuu's Foyer~
+~
+0 1075838976 1
+D1
+~
+~
+0 -1 1206
+D3
+~
+~
+0 -1 1207
+D5
+~
+~
+0 -1 1208
+S
+#1205
+Scyrok's lil house of horrors~
+Everywhere there are rolled up parchments and bottles of black india ink.
+A huge world map is projected holographically above a table where a
+mysterious young punk is currently scribbling furiously...
+~
+0 1073741828 1
+S
+#1206
+A luxurious Bedroom~
+~
+0 1075838976 0
+D3
+~
+~
+0 -1 1204
+S
+#1207
+A Huge Whirlpool Spa~
+Steam sensually fills the room as jets of hot rippling water churn all
+around you, making you feel comfortable and relaxed.  Accenting the
+atmosphere further is a thin blanket of rose petals swirling and dancing
+about on the waters surface, creating a flowing beautifull ballet.
+~
+0 1075838976 1
+D1
+~
+~
+0 -1 1204
+S
+#1208
+Ubuu's Dojo~
+~
+0 807403524 1
+D4
+~
+~
+0 -1 1204
+S
+#1209
+Kalia's Hiz-ouse~
+~
+0 1073741828 1
+S
+#1210
+ChiChi's Kitchen~
+~
+0 1073741828 1
+S
+#1211
+Melora's Refuge~
+A place for everything and everything in its place.  This room is neat
+and tidy to a fault.  Everything thing is marked with a tag designating
+what it does, including the unmarked tags!  Over in one corner is what
+almost looks like a small child's toy, but that couldn't be!  It's out
+of place!?!?!?!
+~
+0 1075838988 0
+S
+#1220
+Floating in a void~
+omjpop get out of saiyr's laboratory
+~
+0 1073741836 1
+S
+#1222
+Koji's Penthouse~
+This is where Koji brings his tranny prostitutes to hang out.
+~
+0 1073741828 1
+S
+#1250
+Hells Gates~
+As the name suggests, these are the gates of hell.  The burning heat
+comming from all directions is overwhelming.  A large desk made of
+Brimstone stands on its lonesome here.  There appears to be some charred
+papers on the desk here, along with a very large pen with the carved head
+of a dragon on the end.  In the distance there is a perpetual heavy black
+storm swirling around a large and demeaning looking tower.  The voices of
+the forever tormented souls wail from all directions, beconing all to join
+them in there endless punnishment for there lives before them.
+~
+0 1076888588 0
+S
+#1299
+The Pathway to Krillin's Mind...~
+Appearing in such a place causes a moment of confusion before the feel
+of gravity slips away, giving off the feeling of helplesness only to follow
+with a sudden realization that you're not in 'Kansas' anymore. Strange
+pulses of light emit from the far distances, like shooting stars, passing
+by in all distances. Amist the center of the vast void would be a mirror,
+plain and true. Upon closer inspection, it looks shattered, yet together
+like a puzzle, completed like a life-long ordeal. Glimpses of light run
+through the cracks, sealing it together to form a single pane of glass,
+only to shatter at the slightest touch...
+~
+0 1073741828 1
+S
+#1337
+Sigma's 1337 Room~
+This is Karma/Sigma's office, fools.  Thus it must have the almighty
+vnum 1337.  Nothing less is worthy of such a great name.  Bwahahahahaha. 
+:b 
+~
+0 1073741836&32 0
+S
+#1399
+Floating in a void~
+~
+0 1073742852 1
+S
+#0
+
+
+#RESETS
+M 1 1298 1 1200
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

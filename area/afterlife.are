@@ -1,0 +1,290 @@
+#AREA   The After Life~
+
+
+
+#VERSION 252
+#AUTHOR Goku~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 2
+
+#FLAGS
+0
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#1500
+king yamma demon lord~
+King Yamma, the Demon Lord~
+King Yamma, the Demon Lord sits behind his desk.
+~
+~
+67108931 0 0 C
+1 0 100 0d0+0 2d5+0
+-1 10000000
+112 112 1
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog 'send me home'~
+mpecho _whi $I says, 'Very well, I shall return you to your home world.'
+mppardon $n dead
+mptransfer $n 9001
+~
+|
+#1599
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#1500
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#1599
+Geese's House Key~
+Geese's House Key~
+Some god dropped a newly created Geese's House Key here.~
+~
+8 0 16385
+1599 0 0 0 0 0
+1 0 0
+ 1
+#0
+
+
+#ROOMS
+#1500
+A misty void~
+Well, it looks like you died. You're floating in a vast misty void.
+Looks like there's only one way to go from here.
+There's a bright light in front of you.
+~
+0 2098176&16 1
+D0
+~
+~
+0 -1 100493
+S
+#1501
+A Long Hallway~
+As you follow all the sprits you find your self in a long hallway.
+You're not sure how much longer this hallway is, since you can't see
+the end of it.
+ 
+~
+0 2098176&16 1
+D0
+~
+~
+0 -1 1502
+D2
+~
+~
+0 -1 1500
+S
+#1502
+The End of the Hallway~
+Wow, this is a long hallway!  You can now see the end of it though.
+You can see that there is a huge door way up ahead.  Hmm... You wonder
+what kind of creature needs a door way that big.
+ 
+~
+0 2098176&16 1
+D0
+~
+~
+0 -1 1503
+D2
+~
+~
+0 -1 1501
+S
+#1503
+King Yamma's Office~
+You enter the huge door way only to find an equaly big person.  He's
+almost as tall as the room, and this is a big room.  You think you've
+heard of him before.  King Yamma, the Demon Lord.  He is the person that
+decided what happends to your soul when you die.  If you lead a good life
+then he will let you go to heaven.  How every, if you lead a life of evil
+then he will send you to hell.  Rumor has it that King Yamma knows the
+way to King Kai's Planet.  If you wish to be returned home just say,
+'send me home'.
+ 
+~
+0 2098176&16 1
+D2
+~
+~
+0 -1 1502
+D4
+~
+~
+0 -1 1504
+D5
+~
+~
+0 -1 1505
+S
+#1504
+The Second Floor~
+You can see sprits heading off to the north.  However there doesn't
+seem to be any activity to the west.
+ 
+~
+0 2097152&16 1
+D0
+~
+~
+0 -1 1507
+D3
+~
+~
+0 -1 1506
+D5
+~
+~
+0 -1 1503
+S
+#1505
+The Path to Hell~
+You see a long line of sprits heading towards a strange machine
+off to the east.
+ 
+~
+0 2097152&16 1
+D4
+~
+~
+0 -1 1503
+S
+#1506
+Entrance to Snake Way~
+~
+0 2097152&16 1
+D1
+~
+~
+0 -1 1504
+S
+#1507
+Flight to Heaven~
+~
+0 2097152&16 1
+D2
+~
+~
+0 -1 1504
+S
+#1508
+Eighteen's Room!~
+A plug in the wall.
+~
+0 3146760 0
+D1
+~
+~
+0 -1 1511
+D2
+~
+~
+25166887 1599 1599
+S
+#1509
+Frieza's Gete Star!~
+&pD&zecorating &pt&zhe &pw&zalls &pa&zre &ps&zeveral &pS&zaiyan &ph&zeads, &pm&zounted &pa&zs &pt&zrophies. &pI&zn &pt&zhe &pf&zar &ps&zhadows &po&zf &pt&zhe &pr&zoom &pi&zs &za &ps&zpikey &pt&zhrone &pm&zade &po&zf &Cice&z.
+~
+0 3146760 0
+D3
+~
+~
+25166887 1599 1599
+S
+#1510
+Kitchen!~
+&z As you enter the room an array of smells hit your nose like a mac truck. A smile twists upon your lips as you try and peak around to see what's cooking. In the center of the room is an island cluttered with different cooking
+&z utinsles as well as ingreidients. As you walk to the island a table becomes visible to your left, cabinets to your right. Behind the island are more cabinets, a large stove in the center, radiating heat. At the end of the
+&z cabinets sits a large silver refridgerator, full of goodies and drinks.
+~
+0 3146760 0
+D1
+~
+~
+25166887 1599 1599
+S
+#1511
+Goten's Shack!~
+&z Around you is an enourmous room with different types of &Ylights &zand such sitting on random objects. A large bed sits against the far well, calling your name every so often, wanting you to grave it with your presence. The carpet
+&z feels soft to the toes, especially after a hard day of fighting. Go ahead, lay down, a few minutes wont hurt.
+~
+0 3146760 0
+D3
+~
+~
+0 -1 1508
+S
+#1599
+A Great Dojo~
+This room is a traditional Japanese dojo, and several wall hangings are
+abound, depicting ancient Confucian sayings.  On one end is a sparring
+dummy, on the other, a fully functional wet bar.  It appears the procurator
+has a fine taste for brandy. 
+~
+0 3146764 0
+D0
+~
+~
+25166887 1599 1508
+D1
+~
+~
+25166887 1599 1509
+D3
+~
+~
+25166887 1599 1510
+S
+#0
+
+
+#RESETS
+M 1 1500 1 1503
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

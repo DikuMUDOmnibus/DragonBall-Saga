@@ -1,0 +1,10 @@
+#PLANET
+Name         Namek~
+Filename     namek.planet~
+BaseValue    0
+Flags        1
+PopSupport   0
+Area         hw_namek.are~
+End
+
+#END

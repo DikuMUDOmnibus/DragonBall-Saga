@@ -1,0 +1,2734 @@
+#SKILL
+Name         alertness~
+Type         Spell
+Info         0
+Flags        0
+Target       3
+Minpos       111
+Slot         102
+Mana         60
+CanCharge    0
+Rounds       15
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You are suddenly less alert.~
+Hitvict      You suddenly feel alert.~
+Hitroom      $N's eyes dart about the room in an alert manner.~
+Affect       'l*15' 27 '1024' -1
+Minlevel     0
+End
+
+#SKILL
+Name         bite~
+Type         unknown
+Info         0
+Flags        0
+Minpos       105
+CanCharge    0
+Rounds       8
+Code         spell_smaug
+Dammsg       bite~
+Minlevel     0
+End
+
+#SKILL
+Name         detect evil~
+Type         Spell
+Info         0
+Flags        0
+Target       3
+Minpos       110
+Slot         18
+Mana         5
+CanCharge    0
+Rounds       12
+Code         spell_smaug
+Dammsg       ~
+Wearoff      The red outlines fade from your vision.~
+Hitvict      Traces of red outline all evil in plain sight.~
+Hitroom      A tint of red appears in $N's eyes, mirroring his own vision.~
+Affect       'l*24' 26 'detect evil' 2
+Minlevel     0
+End
+
+#SKILL
+Name         detect hidden~
+Type         Spell
+Info         0
+Flags        0
+Target       3
+Minpos       112
+Slot         44
+Mana         5
+CanCharge    0
+Rounds       12
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You feel less aware of your surroundings.~
+Hitvict      Your senses are heightened to those of an animal.~
+Hitroom      $N's senses are heightened to those of an animal.~
+Affect       'l*24' 26 'detect hidden' 5
+Minlevel     0
+End
+
+#SKILL
+Name         detect invis~
+Type         Spell
+Info         0
+Flags        0
+Target       3
+Minpos       105
+Slot         19
+Mana         5
+CanCharge    0
+Rounds       12
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You no longer see invisible objects.~
+Hitvict      Your eyes fixate as they gain the Spell to see the unseen.~
+Hitroom      $N's eyes fixate as they gain the Spell to see the unseen.~
+Affect       'l*24' 26 'detect invis' 3
+Minlevel     0
+End
+
+#SKILL
+Name         heal~
+Type         Spell
+Info         0
+Flags        0
+Target       2
+Minpos       107
+Slot         28
+Mana         50
+CanCharge    0
+Rounds       12
+Code         spell_smaug
+Dammsg       ~
+Wearoff      !Heal!~
+Hitchar      You lay a hand of healing upon $N.~
+Hitvict      A warm feeling fills your body.~
+Affect       '' 13 '100' -1
+Minlevel     0
+End
+
+#SKILL
+Name         infravision~
+Type         Spell
+Info         0
+Flags        0
+Target       2
+Minpos       109
+Slot         77
+Mana         5
+CanCharge    0
+Rounds       18
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You no longer see in the dark.~
+Hitchar      $N's eyes dart about as they grow accustomed to infravision.~
+Hitvict      Heat appears red through your eyes.~
+Hitroom      $N's eyes dart about as they grow accustomed to infravision.~
+Affect       'l*24' 26 'infravision' 9
+Minlevel     0
+End
+
+#SKILL
+Name         magic missile~
+Type         Spell
+Info         340
+Flags        0
+Minpos       109
+Slot         32
+Mana         7
+CanCharge    0
+Rounds       6
+Range        2
+Code         spell_smaug
+Dammsg       magic missile~
+Wearoff      !Magic Missile!~
+Minlevel     0
+End
+
+#SKILL
+Name         mass invis~
+Type         Spell
+Info         0
+Flags        8192
+Target       2
+Minpos       112
+Slot         69
+Mana         20
+CanCharge    0
+Rounds       24
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You are no longer invisible.~
+Hitvict      You fade from existence.~
+Hitroom      $N fades from existence.~
+Affect       'l*11' 26 'mass invis' 1
+Minlevel     0
+End
+
+#SKILL
+Name         scry~
+Type         Spell
+Info         0
+Flags        0
+Target       2
+Minpos       109
+Slot         91
+Mana         20
+CanCharge    0
+Rounds       12
+Code         spell_smaug
+Dammsg       ~
+Wearoff      Your clairvoyance slowly disintegrates...~
+Hitchar      $N's eyes glaze over as $E endures a vision...~
+Hitvict      You receive a revelatory vision...~
+Hitroom      $N's eyes glaze over as $E endures a vision...~
+Affect       'l*23' 26 'scry' 24
+Minlevel     0
+End
+
+#SKILL
+Name         sensu bean~
+Type         Spell
+Info         0
+Flags        0
+Minpos       106
+CanCharge    0
+Rounds       25
+Code         spell_sensu_bean
+Dammsg       sensu_bean~
+Minlevel     0
+End
+
+#SKILL
+Name         shield~
+Type         Spell
+Info         0
+Flags        0
+Target       2
+Minpos       109
+Slot         67
+Mana         12
+CanCharge    0
+Rounds       18
+Code         spell_smaug
+Dammsg       ~
+Wearoff      Your force shield shimmers then fades away.~
+Hitchar      A force shield of shimmering blue surrounds $N.~
+Hitvict      A force shield of shimmering blue surrounds you.~
+Hitroom      A force shield of shimmering blue surrounds $N.~
+Affect       'l*24' 17 '-20' -1
+Minlevel     0
+End
+
+#SKILL
+Name         aggressive style~
+Type         Skill
+Info         0
+Flags        0
+Minpos       195
+CanCharge    0
+Rounds       4
+Code         spell_null
+Dammsg       ~
+Wearoff      !aggressive style!~
+Minlevel     0
+End
+
+#SKILL
+Name         aid~
+Type         Skill
+Info         0
+Flags        0
+Minpos       107
+CanCharge    0
+Rounds       12
+Code         do_aid
+Dammsg       ~
+Wearoff      !Aid!~
+Minlevel     0
+End
+
+#SKILL
+Name         bash~
+Type         Skill
+Info         0
+Flags        0
+Target       1
+Minpos       105
+CanCharge    0
+Rounds       8
+Code         do_bash
+Dammsg       bash~
+Wearoff      !Bash!~
+Minlevel     0
+End
+
+#SKILL
+Name         berserk style~
+Type         Skill
+Info         0
+Flags        0
+Minpos       110
+CanCharge    0
+Rounds       4
+Code         spell_null
+Dammsg       ~
+Wearoff      !berserk style!~
+Minlevel     0
+End
+
+#SKILL
+Name         blitz~
+Type         Skill
+Info         9096
+Flags        6144
+Target       1
+Minpos       105
+CanCharge    0
+Rounds       8
+Code         spell_smaug
+Dammsg       Blitz~
+Hitchar      You attack $N with a set of furious blows.~
+Dice         l/2 { 40~
+Minlevel     0
+End
+
+#SKILL
+Name         block~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         charge L1~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         charge L2~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         charge L3~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         charge L4~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         claw~
+Type         Skill
+Info         0
+Flags        0
+Target       1
+Minpos       105
+CanCharge    0
+Rounds       8
+Code         spell_null
+Dammsg       slash~
+Minlevel     0
+End
+
+#SKILL
+Name         dcd~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         defensive style~
+Type         Skill
+Info         0
+Flags        0
+CanCharge    0
+Rounds       4
+Code         spell_null
+Dammsg       ~
+Wearoff      !defensive style!~
+Minlevel     0
+End
+
+#SKILL
+Name         dodge~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Wearoff      !Dodge!~
+Minlevel     0
+End
+
+#SKILL
+Name         elbow~
+Type         Skill
+Info         8584
+Flags        6144
+Target       1
+Minpos       107
+CanCharge    0
+Rounds       8
+Code         spell_smaug
+Dammsg       elbow~
+Hitchar      You raise your elbow and strike out at $N.~
+Dice         l/2 { 25~
+Minlevel     0
+End
+
+#SKILL
+Name         enhanced damage~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Wearoff      !Enhanced Damage!~
+Minlevel     0
+End
+
+#SKILL
+Name         evasive style~
+Type         Skill
+Info         0
+Flags        0
+CanCharge    0
+Rounds       4
+Code         spell_null
+Dammsg       ~
+Wearoff      !evasive style!~
+Minlevel     0
+End
+
+#SKILL
+Name         fifth attack~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Wearoff      !Fifth Attack!~
+Minlevel     0
+End
+
+#SKILL
+Name         fourth attack~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Wearoff      !Fourth Attack!~
+Minlevel     0
+End
+
+#SKILL
+Name         gouge~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+CanCharge    0
+Rounds       10
+Code         do_gouge
+Dammsg       gouge~
+Wearoff      !Gouge!~
+Minlevel     0
+End
+
+#SKILL
+Name         headbutt~
+Type         Skill
+Info         9096
+Flags        6144
+Target       1
+Minpos       105
+CanCharge    0
+Rounds       8
+Code         spell_smaug
+Dammsg       headbutt~
+Hitchar      You charge straight into $N and ram $M with your head!~
+Hitvict      $n headbutts you!~
+Dice         l/2 { 35~
+Minlevel     0
+End
+
+#SKILL
+Name         hide~
+Type         Skill
+Info         0
+Flags        0
+Target       3
+Minpos       112
+CanCharge    0
+Rounds       12
+Code         do_hide
+Dammsg       ~
+Wearoff      You are no longer hidden.~
+Hitvict      You attempt to hide.~
+Misschar     You attempt to hide.~
+Affect       'l*23' 26 'hide' 16
+Minlevel     0
+End
+
+#SKILL
+Name         hitall~
+Type         Skill
+Info         0
+Flags        65536
+Minpos       112
+CanCharge    0
+Rounds       12
+Code         do_hitall
+Dammsg       hit~
+Teachers     25199~
+Minlevel     0
+End
+
+#SKILL
+Name         jab~
+Type         Skill
+Info         9096
+Flags        6144
+Target       1
+Minpos       107
+CanCharge    0
+Rounds       8
+Code         spell_smaug
+Dammsg       jab~
+Hitchar      You jab at $N with your fist.~
+Hitvict      $n jabs at you with a fist.~
+Dice         l/2 { 20~
+Minlevel     0
+End
+
+#SKILL
+Name         kick~
+Type         Skill
+Info         0
+Flags        0
+Target       1
+Minpos       105
+Mana         15
+Focus        2
+CanCharge    0
+Rounds       5
+Code         do_kick
+Dammsg       kick~
+Minlevel     0
+End
+
+#SKILL
+Name         knee~
+Type         Skill
+Info         8584
+Flags        6144
+Target       1
+Minpos       107
+CanCharge    0
+Rounds       8
+Code         spell_smaug
+Dammsg       knee~
+Hitchar      You strike out at $N with your knee.~
+Dice         l/2 { 25~
+Minlevel     0
+End
+
+#SKILL
+Name         leap~
+Type         Skill
+Info         904
+Flags        6144
+Target       1
+Minpos       105
+CanCharge    0
+Rounds       8
+Code         spell_smaug
+Dammsg       leap~
+Hitchar      You leap into the air and hit $N with your feet!~
+Dice         l/2 { 35~
+Minlevel     0
+End
+
+#SKILL
+Name         lunge~
+Type         Skill
+Info         8584
+Flags        6144
+Target       1
+Minpos       107
+CanCharge    0
+Rounds       8
+Code         spell_smaug
+Dammsg       lunge~
+Hitchar      You lunge toward $N with your weapon.~
+Dice         l/2 { 35~
+Minlevel     0
+End
+
+#SKILL
+Name         meditate~
+Type         Skill
+Info         0
+Flags        530432
+Target       3
+Minpos       106
+CanCharge    0
+Rounds       5
+Code         do_meditate
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         pummel~
+Type         Skill
+Info         9096
+Flags        6144
+Target       1
+Minpos       105
+CanCharge    0
+Rounds       8
+Code         spell_smaug
+Dammsg       pummel~
+Hitchar      You pummel $N with your fists!~
+Hitvict      You are pummeled across the room!~
+Dice         l/1 { 40~
+Minlevel     0
+End
+
+#SKILL
+Name         punch~
+Type         Skill
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         15
+Focus        2
+CanCharge    0
+Rounds       5
+Code         do_punch
+Dammsg       punch~
+Minlevel     0
+End
+
+#SKILL
+Name         punt~
+Type         Skill
+Info         9096
+Flags        6144
+Target       1
+Minpos       109
+CanCharge    0
+Rounds       8
+Code         spell_smaug
+Dammsg       punt~
+Hitchar      You carefully aim a kick toward $N.~
+Dice         l/2 { 25~
+Minlevel     0
+End
+
+#SKILL
+Name         rescue~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+CanCharge    0
+Rounds       12
+Code         do_rescue
+Dammsg       ~
+Wearoff      !Rescue!~
+Minlevel     0
+End
+
+#SKILL
+Name         roundhouse~
+Type         Skill
+Info         9096
+Flags        6144
+Target       1
+Minpos       107
+CanCharge    0
+Rounds       8
+Code         spell_smaug
+Dammsg       roundhouse~
+Hitchar      You strike at $N with a vicious roundhouse blow!~
+Dice         l/2 { 30~
+Minlevel     0
+End
+
+#SKILL
+Name         search~
+Type         Skill
+Info         0
+Flags        0
+Minpos       112
+CanCharge    0
+Rounds       20
+Code         do_search
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         second attack~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         shoulder~
+Type         Skill
+Info         9096
+Flags        6144
+Target       1
+Minpos       109
+CanCharge    0
+Rounds       8
+Code         spell_smaug
+Dammsg       shoulder~
+Hitchar      You lean into $N and hit $M with your shoulder.~
+Dice         l/2 { 25~
+Minlevel     0
+End
+
+#SKILL
+Name         sneak~
+Type         Skill
+Info         0
+Flags        0
+Target       3
+Minpos       112
+CanCharge    0
+Rounds       1
+Code         spell_smaug
+Dammsg       ~
+Hitvict      You attempt to move silently.~
+Misschar     You attempt to move silently.~
+Affect       'l*23' 26 'sneak' 15
+Minlevel     0
+End
+
+#SKILL
+Name         spinkick~
+Type         Skill
+Info         9096
+Flags        6144
+Target       1
+Minpos       109
+CanCharge    0
+Rounds       12
+Code         spell_smaug
+Dammsg       spinkick~
+Wearoff      !spinkick!~
+Hitchar      You whirl in a circle and hit $N with a kick.~
+Misschar     Your spinkick misses $N.~
+Missvict     $n narrowly misses you with a spinkick.~
+Dice         l/2 { 30~
+Minlevel     0
+End
+
+#SKILL
+Name         standard style~
+Type         Skill
+Info         0
+Flags        0
+CanCharge    0
+Rounds       4
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         strike~
+Type         Skill
+Info         8584
+Flags        6144
+Target       1
+Minpos       107
+CanCharge    0
+Rounds       8
+Code         spell_smaug
+Dammsg       strike~
+Hitchar      You strike out at $N.~
+Dice         l/2 { 20~
+Minlevel     0
+End
+
+#SKILL
+Name         stun~
+Type         Skill
+Info         0
+Flags        0
+Target       1
+Minpos       107
+CanCharge    0
+Rounds       8
+Code         do_stun
+Dammsg       stun~
+Wearoff      You regain consciousness.~
+Minlevel     0
+End
+
+#SKILL
+Name         swat~
+Type         Skill
+Info         9096
+Flags        6144
+Target       1
+Minpos       109
+CanCharge    0
+Rounds       8
+Code         spell_smaug
+Dammsg       swat~
+Hitchar      You swat at $N.~
+Hitvict      $n swats at you with a hand.~
+Dice         l/2 { 15~
+Minlevel     0
+End
+
+#SKILL
+Name         swipe~
+Type         Skill
+Info         9096
+Flags        6144
+Target       1
+Minpos       109
+CanCharge    0
+Rounds       8
+Code         spell_smaug
+Dammsg       swipe~
+Hitchar      You swipe at $N with your hand.~
+Hitvict      $n swipes at you with $s hand.~
+Dice         l/2 { 20~
+Minlevel     0
+End
+
+#SKILL
+Name         tail~
+Type         Skill
+Info         0
+Flags        0
+Target       1
+Minpos       109
+Slot         95
+Mana         95
+CanCharge    0
+Rounds       8
+Code         spell_null
+Dammsg       tail~
+Wearoff      !Tail!~
+Minlevel     0
+End
+
+#SKILL
+Name         tail attack~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         tend~
+Type         Skill
+Info         0
+Flags        0
+Target       2
+Minpos       108
+Mana         60
+CanCharge    0
+Rounds       12
+Code         spell_smaug
+Dammsg       ~
+Hitchar      You kneel down and tend to $N's wounds.~
+Hitvict      Your wounds are soothed and lessened.~
+Components   V@65~
+Affect       '' 13 '8d5' -1
+Minlevel     0
+End
+
+#SKILL
+Name         tentacle attack~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         third attack~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         track~
+Type         Skill
+Info         0
+Flags        0
+Minpos       112
+CanCharge    0
+Rounds       14
+Code         do_track
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         trance~
+Type         Skill
+Info         0
+Flags        530432
+Target       3
+Minpos       106
+CanCharge    0
+Rounds       32
+Code         spell_smaug
+Dammsg       ~
+Hitvict      You enter a peaceful trance, collecting mana from the cosmos.~
+Missvict     You spend several minutes in a deep trance, but fail to collect any mana.~
+Affect       '' 12 '50' -1
+Minlevel     0
+End
+
+#SKILL
+Name         true sight~
+Type         Skill
+Info         0
+Flags        0
+Target       3
+Minpos       112
+Slot         235
+Mana         70
+CanCharge    0
+Rounds       12
+Code         spell_smaug
+Dammsg       ~
+Wearoff      Your vision descends to the material plane.~
+Hitvict      Your vision is elevated to the highest plane.~
+Hitroom      $N's eyes begin to glow a soft white.~
+Affect       'l-10' 26 'truesight' 22
+Minlevel     0
+End
+
+#SKILL
+Name         uppercut~
+Type         Skill
+Info         8584
+Flags        6144
+Target       1
+Minpos       109
+Mana         25
+Focus        4
+CanCharge    0
+Rounds       8
+Code         do_uppercut
+Dammsg       uppercut~
+Minlevel     0
+End
+
+#SKILL
+Name         vault~
+Type         Skill
+Info         9096
+Flags        6144
+Target       1
+Minpos       105
+CanCharge    0
+Rounds       8
+Code         spell_smaug
+Dammsg       vault~
+Hitchar      You vault into $N!~
+Hitvict      $n vaults into you!~
+Dice         l/2 { 40~
+Minlevel     0
+End
+
+#SKILL
+Name         2nd form~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         300
+CanCharge    0
+Rounds       6
+Code         do_icer_transform_2
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         3rd form~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         500
+CanCharge    0
+Rounds       6
+Code         do_icer_transform_3
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         4th form~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         1500
+CanCharge    0
+Rounds       6
+Code         do_icer_transform_4
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         5th form~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         2500
+CanCharge    0
+Rounds       6
+Code         do_icer_transform_5
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         absorb~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       106
+Focus        4
+CanCharge    0
+Rounds       8
+Code         do_absorb
+Dammsg       absorb~
+Minlevel     0
+End
+
+#SKILL
+Name         battery~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       106
+Focus        25
+CanCharge    0
+Rounds       8
+Code         do_battery
+Dammsg       battery~
+Minlevel     0
+End
+
+#SKILL
+Name         big bang kamehameha~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         2000
+Focus        50
+CanCharge    1
+Rounds       8
+Code         do_bbk
+Dammsg       big bang kamehameha~
+Minlevel     0
+End
+
+#SKILL
+Name         bigbang~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         1000
+Focus        20
+CanCharge    1
+Rounds       8
+Code         do_big_bang
+Dammsg       bigbang~
+Minlevel     0
+End
+
+#SKILL
+Name         blast zone~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         800
+Focus        25
+CanCharge    1
+Rounds       8
+Code         do_blast_zone
+Dammsg       blast zone~
+Minlevel     0
+End
+
+#SKILL
+Name         burning attack~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         700
+Focus        15
+CanCharge    1
+Rounds       8
+Code         do_burning_attack
+Dammsg       burning attack~
+Minlevel     0
+End
+
+#SKILL
+Name         candy blast~
+Type         Ability
+Info         0
+Flags        0
+Minpos       107
+Mana         1000
+Focus        25
+CanCharge    0
+Rounds       8
+Code         do_candy_blast
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         cleaver~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         400
+Focus        18
+CanCharge    0
+Rounds       8
+Code         do_cleaver
+Dammsg       cleaver~
+Minlevel     0
+End
+
+#SKILL
+Name         clone~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         2000
+CanCharge    0
+Rounds       6
+Code         do_clone
+Dammsg       clone~
+Minlevel     0
+End
+
+#SKILL
+Name         cruise punch~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         275
+Focus        15
+CanCharge    0
+Rounds       8
+Code         do_cruise_punch
+Dammsg       cruise punch~
+Minlevel     0
+End
+
+#SKILL
+Name         darkness flare~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         1000
+Focus        20
+CanCharge    0
+Rounds       8
+Code         do_darkness_flare
+Dammsg       darkness flare~
+Wearoff      The darkness fades away and you can see again.~
+Minlevel     0
+End
+
+#SKILL
+Name         death ball~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         1000
+Focus        35
+CanCharge    1
+Rounds       8
+Code         do_death_ball
+Dammsg       death ball~
+Minlevel     0
+End
+
+#SKILL
+Name         demon wave~
+Type         Ability
+Info         0
+Flags        0
+Minpos       107
+Mana         450
+Focus        20
+CanCharge    1
+Rounds       8
+Code         do_demon_wave
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         demon weapon~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         99999
+CanCharge    0
+Rounds       6
+Code         do_demonweapon
+Dammsg       demon weapon~
+Minlevel     0
+End
+
+#SKILL
+Name         demonic eclipse~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         3000
+Focus        35
+CanCharge    1
+Rounds       8
+Code         do_demonic_eclipse
+Dammsg       demonic eclipse~
+Minlevel     0
+End
+
+#SKILL
+Name         destructive wave~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         150
+Focus        10
+CanCharge    1
+Rounds       8
+Code         do_destructive_wave
+Dammsg       destructive wave~
+Minlevel     0
+End
+
+#SKILL
+Name         destructo disk~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         175
+Focus        10
+CanCharge    0
+Rounds       8
+Code         do_dd
+Dammsg       destructo disk~
+Minlevel     0
+End
+
+#SKILL
+Name         divine wrath~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         3000
+Focus        35
+CanCharge    1
+Rounds       8
+Code         do_divinewrath
+Dammsg       divinewrath~
+Minlevel     0
+End
+
+#SKILL
+Name         dodon ray~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         600
+Focus        12
+CanCharge    1
+Rounds       8
+Code         do_dodon_ray
+Dammsg       dodon ray~
+Minlevel     0
+End
+
+#SKILL
+Name         double rocket punch~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       106
+Mana         1500
+Focus        25
+CanCharge    0
+Rounds       8
+Code         do_drp
+Dammsg       double rocket punch~
+Minlevel     0
+End
+
+#SKILL
+Name         dual destructo disk~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         400
+Focus        18
+CanCharge    0
+Rounds       8
+Code         do_ddd
+Dammsg       dual desucto disk~
+Minlevel     0
+End
+
+#SKILL
+Name         duplicate~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       106
+Mana         50
+CanCharge    0
+Rounds       8
+Code         do_duplicate
+Dammsg       duplicate~
+Minlevel     0
+End
+
+#SKILL
+Name         electric hell ball~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         7500
+Focus        50
+CanCharge    1
+Rounds       6
+Code         do_ehb
+Dammsg       electric hell ball~
+Minlevel     0
+End
+
+#SKILL
+Name         electric shield~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       106
+Mana         500
+CanCharge    0
+Rounds       8
+Code         do_electric_shield
+Dammsg       electric shield~
+Wearoff      Your electric shield fades~
+Minlevel     0
+End
+
+#SKILL
+Name         energy ball~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         75
+Focus        7
+CanCharge    1
+Rounds       8
+Code         do_energy_ball
+Dammsg       energy ball~
+Minlevel     0
+End
+
+#SKILL
+Name         enhance~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       106
+Mana         300
+CanCharge    0
+Rounds       8
+Code         do_enhance
+Dammsg       enhance~
+Minlevel     0
+End
+
+#SKILL
+Name         evil boost~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         150
+CanCharge    0
+Rounds       6
+Code         do_evilboost
+Dammsg       evil boost~
+Minlevel     0
+End
+
+#SKILL
+Name         evil overload~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         300
+CanCharge    0
+Rounds       6
+Code         do_eviloverload
+Dammsg       evil overload~
+Minlevel     0
+End
+
+#SKILL
+Name         evil surge~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         300
+CanCharge    0
+Rounds       6
+Code         do_evilsurge
+Dammsg       evil surge~
+Minlevel     0
+End
+
+#SKILL
+Name         extreme~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         4500
+CanCharge    0
+Rounds       6
+Code         do_extreme
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         eye beam~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         250
+Focus        13
+CanCharge    0
+Rounds       8
+Code         do_eye_beam
+Dammsg       eye beam~
+Minlevel     0
+End
+
+#SKILL
+Name         final flash~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         1500
+Focus        35
+CanCharge    1
+Rounds       8
+Code         do_ff
+Dammsg       final flash~
+Minlevel     0
+End
+
+#SKILL
+Name         finger beam~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         325
+Focus        15
+CanCharge    1
+Rounds       8
+Code         do_finger_beam
+Dammsg       finger beam~
+Minlevel     0
+End
+
+#SKILL
+Name         finishing buster~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         1500
+Focus        40
+CanCharge    1
+Rounds       8
+Code         do_finishing_buster
+Dammsg       finishing buster~
+Minlevel     0
+End
+
+#SKILL
+Name         fly~
+Type         Ability
+Info         0
+Flags        0
+Target       2
+Minpos       109
+Mana         75
+CanCharge    0
+Code         do_fly
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         gallic gun~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         750
+Focus        20
+CanCharge    1
+Rounds       8
+Code         do_gallic_gun
+Dammsg       gallic gun~
+Minlevel     0
+End
+
+#SKILL
+Name         giant size~
+Type         Ability
+Info         0
+Flags        0
+Target       2
+Minpos       107
+Mana         2500
+CanCharge    0
+Rounds       8
+Code         do_giant_size
+Dammsg       ~
+Wearoff      !giant size!~
+Minlevel     0
+End
+
+#SKILL
+Name         growth~
+Type         Ability
+Info         0
+Flags        0
+Target       2
+Minpos       107
+Mana         300
+CanCharge    0
+Rounds       8
+Code         do_growth
+Dammsg       ~
+Wearoff      !growth!~
+Minlevel     0
+End
+
+#SKILL
+Name         heaven-splitter cannon~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         1000
+Focus        30
+CanCharge    1
+Rounds       8
+Code         do_heaven_splitter_cannon
+Dammsg       heaven-splitter cannon~
+Minlevel     0
+End
+
+#SKILL
+Name         hells flash~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         800
+Focus        25
+CanCharge    1
+Rounds       8
+Code         do_hells_flash
+Dammsg       hells flash~
+Minlevel     0
+End
+
+#SKILL
+Name         hellzone grenade~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         50
+Focus        5
+CanCharge    0
+Rounds       8
+Code         do_hellzone_grenade
+Dammsg       hellzone grenade~
+Minlevel     0
+End
+
+#SKILL
+Name         hyper~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         1500
+CanCharge    0
+Rounds       6
+Code         do_hyper
+Dammsg       ~
+Teachers     2008~
+Minlevel     0
+End
+
+#SKILL
+Name         instant transmission~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       106
+Mana         5000
+CanCharge    0
+Rounds       5
+Code         do_instant_trans
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         kaio create~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         99999
+CanCharge    0
+Rounds       6
+Code         do_kaiocreate
+Dammsg       kaio create~
+Minlevel     0
+End
+
+#SKILL
+Name         kaioken~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+CanCharge    0
+Rounds       6
+Code         do_kaioken
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         kamehameha~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         375
+Focus        15
+CanCharge    1
+Rounds       8
+Code         do_kamehameha
+Dammsg       kamehameha~
+Teachers     2008~
+Minlevel     0
+End
+
+#SKILL
+Name         ki absorb~
+Type         Ability
+Info         0
+Flags        0
+Minpos       105
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         ki burst~
+Type         Ability
+Info         0
+Flags        0
+Minpos       107
+Mana         1000
+Focus        35
+CanCharge    1
+Rounds       8
+Code         do_ki_burst
+Dammsg       ki burst~
+Minlevel     0
+End
+
+#SKILL
+Name         ki heal~
+Type         Ability
+Info         0
+Flags        0
+Target       2
+Minpos       106
+Mana         700
+CanCharge    0
+Rounds       8
+Code         do_ki_heal
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         kid transformation~
+Type         Ability
+Info         0
+Flags        0
+Minpos       107
+Mana         1000
+CanCharge    0
+Rounds       6
+Code         spell_smaug
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         makosen~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         500
+Focus        15
+CanCharge    1
+Rounds       8
+Code         do_makosen
+Dammsg       makosen~
+Minlevel     0
+End
+
+#SKILL
+Name         malice ray~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         350
+Focus        13
+CanCharge    1
+Rounds       8
+Code         do_maliceray
+Dammsg       malice ray~
+Minlevel     0
+End
+
+#SKILL
+Name         masenko~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         150
+Focus        13
+CanCharge    1
+Rounds       8
+Code         do_masenko
+Dammsg       masenko~
+Minlevel     0
+End
+
+#SKILL
+Name         multi disk~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         100
+Focus        12
+CanCharge    0
+Rounds       10
+Code         do_multi_disk
+Dammsg       multi disk~
+Teachers     100297~
+Minlevel     0
+End
+
+#SKILL
+Name         multi eye beam~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         100
+Focus        12
+CanCharge    0
+Rounds       8
+Code         do_multi_eye
+Dammsg       multi eye beam~
+Minlevel     0
+End
+
+#SKILL
+Name         multi-form~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         1500
+CanCharge    0
+Rounds       6
+Code         do_multi_form
+Dammsg       multi-form~
+Minlevel     0
+End
+
+#SKILL
+Name         mystic~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         250
+CanCharge    0
+Rounds       6
+Code         do_mystic
+Dammsg       mystic~
+Minlevel     0
+End
+
+#SKILL
+Name         oozaru mouth cannon~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+CanCharge    0
+Rounds       8
+Code         do_monkey_gun
+Dammsg       oozaru mouth cannon~
+Minlevel     0
+End
+
+#SKILL
+Name         perfect form~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         800
+CanCharge    0
+Rounds       6
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         preservation~
+Type         Ability
+Info         0
+Flags        0
+CanCharge    0
+Code         spell_null
+Dammsg       preservation~
+Minlevel     0
+End
+
+#SKILL
+Name         psionic blast~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         1500
+Focus        20
+CanCharge    1
+Rounds       8
+Code         do_psiblast
+Dammsg       psiblast~
+Minlevel     0
+End
+
+#SKILL
+Name         railgun~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         25000
+Focus        50
+CanCharge    1
+Rounds       8
+Code         do_railgun
+Dammsg       railgun~
+Minlevel     0
+End
+
+#SKILL
+Name         regeneration~
+Type         Ability
+Info         0
+Flags        0
+CanCharge    0
+Code         spell_null
+Dammsg       regeneration~
+Minlevel     0
+End
+
+#SKILL
+Name         rocket punch~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       106
+Mana         275
+Focus        15
+CanCharge    0
+Rounds       8
+Code         do_rocket_punch
+Dammsg       rocket punch~
+Minlevel     0
+End
+
+#SKILL
+Name         scatter shot~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         20
+Focus        4
+CanCharge    0
+Rounds       8
+Code         do_scatter_shot
+Dammsg       scatter shot~
+Minlevel     0
+End
+
+#SKILL
+Name         scattered finger beam~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         100
+Focus        12
+CanCharge    0
+Rounds       8
+Code         do_scattered_finger_beam
+Dammsg       scattered finger beam~
+Minlevel     0
+End
+
+#SKILL
+Name         self destruct~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       106
+Mana         5000
+Focus        50
+CanCharge    0
+Rounds       8
+Code         do_self_destruct
+Dammsg       self destruct~
+Minlevel     0
+End
+
+#SKILL
+Name         semi-perfect form~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         400
+CanCharge    0
+Rounds       6
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         sense~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       106
+Mana         15
+CanCharge    0
+Rounds       8
+Code         do_sense
+Dammsg       sense~
+Minlevel     0
+End
+
+#SKILL
+Name         shockwave~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         1000
+Focus        12
+CanCharge    1
+Rounds       8
+Code         do_shockwave
+Dammsg       shockwave~
+Minlevel     0
+End
+
+#SKILL
+Name         skga~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         1000
+Focus        3
+CanCharge    0
+Rounds       8
+Code         do_skga
+Dammsg       skga~
+Minlevel     0
+End
+
+#SKILL
+Name         skin trap~
+Type         Ability
+Info         0
+Flags        0
+Minpos       107
+Mana         750
+Focus        20
+CanCharge    0
+Rounds       8
+Code         do_skin_trap
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         solar flare~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         1000
+Focus        20
+CanCharge    0
+Rounds       8
+Code         do_solar_flare
+Dammsg       solar flare~
+Wearoff      Your eyes finally adjust and you can see again.~
+Minlevel     0
+End
+
+#SKILL
+Name         special beam cannon~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         350
+Focus        13
+CanCharge    1
+Rounds       8
+Code         do_sbc
+Dammsg       special beam cannon~
+Minlevel     0
+End
+
+#SKILL
+Name         spirit ball~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         800
+Focus        22
+CanCharge    1
+Rounds       8
+Code         do_spirit_ball
+Dammsg       spirit ball~
+Minlevel     0
+End
+
+#SKILL
+Name         spirit bomb~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         99999
+Focus        100
+CanCharge    0
+Rounds       10
+Code         do_spirit_bomb
+Dammsg       spirit bomb~
+Minlevel     0
+End
+
+#SKILL
+Name         split-form~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         500
+CanCharge    0
+Rounds       6
+Code         do_split_form
+Dammsg       split-form~
+Minlevel     0
+End
+
+#SKILL
+Name         ssd bomber~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         5000
+Focus        40
+CanCharge    1
+Rounds       8
+Code         do_ssd_bomber
+Dammsg       ssd bomber~
+Minlevel     0
+End
+
+#SKILL
+Name         ssj1~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         500
+CanCharge    0
+Rounds       6
+Code         do_ssj
+Dammsg       ~
+Teachers     90~
+Minlevel     0
+End
+
+#SKILL
+Name         ssj2~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         1000
+CanCharge    0
+Rounds       6
+Code         do_ssj2
+Dammsg       ~
+Teachers     90~
+Minlevel     0
+End
+
+#SKILL
+Name         ssj3~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         3500
+CanCharge    0
+Rounds       6
+Code         do_ssj3
+Dammsg       ~
+Teachers     90~
+Minlevel     0
+End
+
+#SKILL
+Name         ssj4~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         6000
+CanCharge    0
+Rounds       6
+Code         do_ssj4
+Dammsg       ~
+Teachers     90~
+Minlevel     0
+End
+
+#SKILL
+Name         super android~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         20000
+CanCharge    0
+Rounds       6
+Code         do_superandroid
+Dammsg       super android~
+Minlevel     0
+End
+
+#SKILL
+Name         super namek~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         200
+CanCharge    0
+Rounds       6
+Code         do_super_namek
+Dammsg       ~
+Teachers     2000 100292~
+Minlevel     0
+End
+
+#SKILL
+Name         super transformation~
+Type         Ability
+Info         0
+Flags        0
+Minpos       107
+Mana         1000
+CanCharge    0
+Rounds       6
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         suppress~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         25
+CanCharge    0
+Rounds       6
+Code         do_suppress
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         thin transformation~
+Type         Ability
+Info         0
+Flags        0
+Minpos       107
+Mana         1000
+CanCharge    0
+Rounds       6
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         trap ball~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         1000
+Focus        25
+CanCharge    1
+Rounds       8
+Code         do_trap_ball
+Dammsg       trap ball~
+Minlevel     0
+End
+
+#SKILL
+Name         tri-beam~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         2500
+Focus        25
+CanCharge    1
+Rounds       8
+Code         do_tribeam
+Dammsg       tribeam~
+Minlevel     0
+End
+
+#SKILL
+Name         tri-form~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         1000
+CanCharge    0
+Rounds       6
+Code         do_tri_form
+Dammsg       tri-form~
+Minlevel     0
+End
+
+#SKILL
+Name         ultra-perfect form~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         5000
+CanCharge    0
+Rounds       6
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         upgraded absorb L1~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       106
+Focus        8
+CanCharge    0
+Rounds       8
+Code         spell_null
+Dammsg       upgraded absorb L1~
+Minlevel     0
+End
+
+#SKILL
+Name         upgraded shield L1~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       106
+Mana         1000
+CanCharge    0
+Rounds       8
+Code         spell_null
+Dammsg       electric shield~
+Wearoff      Your electric shield fades~
+Minlevel     0
+End
+
+#SKILL
+Name         upgraded shield L2~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       106
+Mana         2500
+CanCharge    0
+Rounds       8
+Code         spell_null
+Dammsg       electric shield~
+Wearoff      Your electric shield fades~
+Minlevel     0
+End
+
+#SKILL
+Name         upgraded shield L3~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       106
+Mana         7500
+CanCharge    0
+Rounds       8
+Code         spell_null
+Dammsg       electric shield~
+Wearoff      Your electric shield fades~
+Minlevel     0
+End
+
+#SKILL
+Name         ussj1~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         750
+CanCharge    0
+Rounds       6
+Code         do_ussj
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         ussj2~
+Type         Ability
+Info         0
+Flags        0
+Target       3
+Minpos       107
+Mana         1250
+CanCharge    0
+Rounds       6
+Code         do_ussj2
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         weapon soul seppuku~
+Type         Ability
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         2500
+Focus        25
+CanCharge    0
+Rounds       8
+Code         do_wss
+Dammsg       weapon soul seppuku~
+Minlevel     0
+End
+
+#SKILL
+Name         none~
+Type         Weapon
+Info         0
+Flags        0
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         android~
+Type         Tongue
+Info         0
+Flags        0
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         bio-android~
+Type         Tongue
+Info         0
+Flags        0
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         common~
+Type         Tongue
+Info         0
+Flags        0
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         demon~
+Type         Tongue
+Info         0
+Flags        0
+CanCharge    0
+Code         spell_smaug
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         halfbreed~
+Type         Tongue
+Info         0
+Flags        0
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         icer~
+Type         Tongue
+Info         0
+Flags        0
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         kaio~
+Type         Tongue
+Info         0
+Flags        0
+CanCharge    0
+Code         spell_smaug
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         mutant~
+Type         Tongue
+Info         0
+Flags        0
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         namek~
+Type         Tongue
+Info         0
+Flags        0
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         saiyan~
+Type         Tongue
+Info         0
+Flags        0
+CanCharge    0
+Code         spell_null
+Dammsg       ~
+Minlevel     0
+End
+
+#SKILL
+Name         wizard~
+Type         Tongue
+Info         0
+Flags        0
+CanCharge    0
+Code         spell_smaug
+Dammsg       ~
+Minlevel     0
+End
+
+#END

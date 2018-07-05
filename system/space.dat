@@ -1,0 +1,25 @@
+#FLIGHT
+Name	war~
+Port1	10050
+Port2	10051
+Ship	10052
+Dist	1
+Ddist	1
+Wait	2
+Dwait	2
+Location 1
+End
+
+#FLIGHT
+Name	earth~
+Port1	10000
+Port2	10001
+Ship	10002
+Dist	2
+Ddist	2
+Wait	1
+Dwait	1
+Location 3
+End
+
+#END

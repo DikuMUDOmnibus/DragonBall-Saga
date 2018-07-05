@@ -1,0 +1,6091 @@
+#AREA   Western Desert~
+
+
+
+#VERSION 251
+#AUTHOR Koronto~
+
+#RANGES
+0 0 0 0
+$
+
+#PLANET 0
+
+#FLAGS
+0
+
+#ECONOMY 0 32786763
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#70000
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#70001
+small scorpion~
+A small scorpion~
+A small scorpion scuttles around on the ground
+~
+This scorpion is approximately one foot long, and it has a very nasty
+looking curved stinger on the end of its tail. The color of its 
+carapace is mostly red, with some mottled brown color mixed in.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 200000
+112 112 1
+10 10 15 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 65541 0 0 0 0 0
+#70002
+tiny scorpion~
+A tiny scorpion~
+A tiny scorpion scuttles around on the ground
+~
+This 9-inch long scorpion looks very fierce for its small size. It's
+constantly scuttling about at a high speed, and the stinger on the tail
+looks like it could delier some damage with ease.
+~
+65 0 0 C
+1 0 100 1d20+0 2d5+0
+0 75000
+112 112 0
+10 10 13 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 65541 0 0 0 0 0
+#70003
+large scorpion~
+A large scorpion~
+A large scorpion scuttles around on the ground
+~
+This monstrously large scorpion is the size of a dog. The dry, chitonous
+shell makes a crackling and snapping noise as it moves around across the
+desert floor. The main body of this scorpion is reddish with some green
+stripes, while the legs and tail are solid blood-red.
+~
+65 0 0 C
+1 0 100 1d20+0 2d5+0
+0 750000
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 65541 0 0 0 0 0
+#70004
+giant scorpion~
+A giant scorpion~
+A giant scorpion is standing here.
+~
+This gigantic creature is almost as large as a dining room table! The
+legs are like small tree trunks that move with sometimes blinding speed 
+to propel the scorpion around at a high velocity. Most of the scorpion
+is various shades of brown, save for the claws and tail, which are 
+reddish, possibly with the stain of human blood.
+~
+35 0 0 C
+1 0 100 1d20+0 2d5+0
+0 2000000
+112 112 0
+25 10 15 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 65541 0 0 0 0 0
+#70005
+mother scorpion~
+A giant mother scorpion~
+A bloated mother scorpion spews eggs onto the ground in a constant stream
+~
+This huge, bloated thing is hardly recognizable as a scorpion, although
+upon inspection it clearly is. In front of the immense egg-sac is the bulky
+body of a "normal" scorpion, if scorpions normally are the size of small
+cars. It still has wicked claws and a vicious tail, but its legs are
+atrophied to the point of uselessness. Occasionally one of them scrabbles
+against the ground, but it does nothing to budge the massive bulk of the
+scorpion from the ground.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 7500000
+112 112 2
+25 10 20 10 5
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 65541 0 0 0 0 0
+#70006
+skinny bandit~
+A skinny bandit~
+A skinny looking bandit walks around with his chest puffed out
+~
+This very thin man is wearing large baggy white pants and a tight brown
+shirt, the attire of a group of bandits known to operate in the desert.
+He doesn't look too sure of himself, as he appears to be a weakling. 
+~
+69 0 0 C
+1 0 100 1d20+0 2d5+0
+250 2500000
+112 112 1
+15 10 15 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#70007
+angry bandit~
+An angry bandit~
+An angry bandit storms around, furious!
+~
+This person, dressed in the brown shirt and baggy white pants of a
+notorious group of bandits who live in the desert, is very angry at 
+something. He's storming around gesticulating with his arms to himself,
+and mumbling under his breath violently. His face is cherry red, all this
+anger and stress must be very bad for his heart...
+~
+69 0 0 C
+1 0 100 1d20+0 2d5+0
+125 10000000
+112 112 1
+20 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#70008
+grizzled veteran bandit~
+A grizzled bandit~
+A grizzled veteran bandit stands here filled with quiet confidence.
+~
+This man is wearing a tight brown shirt and baggy white pants, the
+trademark dress of a group of bandits in the desert. His unshaven face
+is constantly scowling, and it looks like he might indeed have something
+to scowl about. His face is covered in all sorts of scars, from a huge
+one that goes from his chin to his left eyebrow, to many other tiny
+scars only half and inch long, and everything in between. He's quite
+old for a bandit, possibly in his 50's. 
+~
+7 0 0 C
+1 0 100 1d20+0 2d5+0
+550 15000000
+112 112 1
+20 10 25 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#70009
+fat bandit~
+A fat bandit~
+A fat bandit stands here unsteadily.
+~
+Most of the bandits in this desert wear a tight brown shirt and baggy
+white pants. Well, this bandit's shirt is incredibly tight, and his pants
+fit very well. That's because this bandit is a very large person. He
+has a lot of musculature in some places, namely his arms, that make it
+clear that this man is more adept at combat than a typical overweight
+person.
+~
+7 0 0 C
+1 0 100 1d20+0 2d5+0
+0 7500000
+112 112 1
+20 10 20 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#70010
+short bandit~
+A short bandit~
+A short bandit walks around with a permanent crick in his neck
+~
+This very short bandit doesn't seem to be too happy about his station
+in life. He has a sort of depressed, sad look on his face, and his
+clothes are that of the group of bandits that are in the desert. 
+Regardless of him being short, he does look like he could hold his own in
+a fight.
+~
+69 0 0 C
+1 0 100 1d20+0 2d5+0
+100 3500000
+112 112 1
+15 15 15 15 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#70011
+tall bandit~
+A tall bandit~
+A tall bandit strides around.
+~
+Wearing the brown shirt and baggy pants that marks him as a bandit of
+this desert, this man must be at least seven feet tall. He's also gangly
+and he looks quite young. His arms and legs aren't spindly, but they aren't
+thick and muscular either. His long hair is light brown, and reaches to
+below his shoulders.
+~
+69 0 0 C
+1 0 100 1d20+0 2d5+0
+375 5000000
+112 112 1
+15 10 20 10 2
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#70012
+bandit chief~
+The bandit chief~
+The chief bandit stands here, grinning evilly.
+~
+The bandit chief is an overconfident, blustery fellow. He's grinning
+and laughing constantly, but it's clear that there is some strength behind
+his wall of bluff. He moves with the grace of a martial artist, and he
+must have been strong enough to assume leadership of a pretty large group
+of bandits. He's well muscled, but lithe and fast looking.
+~
+3 0 -500 C
+1 0 100 1d20+0 2d5+0
+0 25000000
+112 112 1
+25 20 30 25 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if rand(50)
+mea $n The bandit chief snickers at you in total contempt.
+mer $n The bandit chief snickers at $n in total contempt.
+else
+mea $n The bandit chief sizes you up, and decides that you must be weak.
+mer $n The bandit chief sizes up $n, and decides that $e must be weak.
+say You wanna fight, punk!
+ready
+endif
+~
+|
+#70013
+bandit cook~
+The bandit cook~
+The bandit cook stands here flipping burgers.
+~
+The bandit cook sports an enourmous black moustache on his greasy upper
+lip. He looks like a very poorly groomed man, and he's wearing a dirty
+white apron and a classic chef's hat, albeit covered in grime. He's a
+cheerful looking fellow, with creases at the edge of his mouth from years
+of wide smiles. What he's doing in a camp of vicious bandits is not clear.
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1000000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mea $n The cook grins at you and gestures to several food items laid out.
+mea $n &CThe bandit cook says "You want anything?"&d
+~
+|
+#70014
+mutant coyote~
+A mutant coyote~
+A mutant coyote lopes around looking for prey.
+~
+Whether this pitiful creature is the result of scientific
+experimentation or merely the result of mutation-causing pollutants dumped
+in the wilderness is not clear.  What is clear is that this coyote is not
+natural. It has festering open wounds all over its body that it seems to
+ignore, and it also has several huge green growths on its back, sides, and
+shoulders. The growths seem to pulsate and throb to some inner rhythm.  The
+coyote's claws are long and curved, and drip with a strange black fluid. 
+Its eyes are red and blootshot, and its pants expel a greyish green mist
+into the air. 
+~
+65 0 0 C
+1 0 100 1d20+0 2d5+0
+0 30000000
+112 112 0
+25 10 25 50 5
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 50~
+emote growls deep in the back of its throat.
+~
+> greet_prog 10~
+mea $n &RA mutant coyote snarls savagely! It foams at the mouth and leaps at you!
+mer $n &RA mutant coyote snarls savagely! It foams at the mouth and pounces on $n!
+mpkill $n
+~
+|
+#70015
+sand monster~
+A sand monster~
+A huge insectoid sand monster is partially buried under a pile of sand.
+~
+This bizarre beast is mostly concealed under a large pile of sand, but
+what is visible looks large and mean. Seven huge tentacle-like legs
+are sticking out of the ground. These legs are multi-jointed and very
+flexible, capable of pointing in any direction. The tips of the legs
+are equipped with a nastly looking needle-like spine. The sides of the
+spine are transparent, and there's a glowing green liquid sloshing
+around inside the spikes. Occasionally, in the center of the ring of
+tentacles, a head or body is visible under the shifting sands, but
+not long enough to get a good view.
+~
+3 0 0 C
+1 0 65 1d20+0 2d5+0
+0 40000000
+112 112 0
+35 20 25 20 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+if rand(2)
+   mpoload 70023
+endif
+~
+|
+#70016
+bandit guard~
+A bandit guard~
+A lazy bandit guard rests against a rock, half-asleep.
+~
+This man wearing the outfit of the bandits that operate from the desert
+is asleep against a large rock. His guard duties abandoned, he occasionally
+emits a sputtering snore and shifts position.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1500000
+112 112 1
+25 10 20 25 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 50~
+mpechoaround The half-asleep guard notices $n's arrival and wakes with a start!
+mpechoat The half-asleep guard notices your arrival and wakes with a start!
+say An intruder! RAAAAAAA!!!
+mpkill $n
+~
+|
+#70017
+lazy resting man~
+A Resting Man~
+A lazy young man is lying under the shade of a palm tree, resting.
+~
+Resting under a shady palm tree is this young man. He's enjoying the
+cool shade and the view of the beatiful blue oasis. He's wearing a blue
+shirt and khaki pants, and a white hat with a floppy brim. Anyone would
+be tempted to sit next to him and enjoy the shade.
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#70018
+door locker~
+A door locker~
+A door locker is here to lock the door after someone goes in
+~
+~
+69206019 4194306 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#70019
+massive gila monster~
+A Massive Gila Monster~
+A massive gila monster is lazily resting on the ground, soaking up the sun.
+~
+The gila monster is 6 feet long, from the tip of its nose to its tail.
+The lizard has several large lumpy spikes on its back, and a very large
+snout that has some very sharp teeth in it. The gila monster is low to
+the ground for its length, only about a foot and a half tall.
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+0 50000000
+112 112 0
+75 10 25 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if wasinroom($n) == 70085
+   mpkill $n
+endif
+~
+> death_prog 100~
+if rand(5)
+   mpoload 70019
+endif
+~
+|
+#70020
+sand monstrosity dark silhouette figure~
+The Sand Monstrosity~
+A dark silhouette of a human figure is surrounded by a swirling cyclone of sand!
+~
+Inside a miniature sandstorm inside a pit, there is this tall humanoid
+shape. It looks almost ten feet tall, and its body doesn't look like it's
+proportioned quite right. The arms are too long, the legs are too short, 
+and the torso is too high. No detail is visible because of the swirling
+thick sand, but it definately does not look like a natural creature.
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+750 75000000
+112 112 0
+40 35 35 40 4
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+mea $n &YThe sand monstrosity sweeps its arm at you, sending a blast
+mea $n &Yof hot sand slamming into your body!
+mer $n &YA sand monstrosity sweeps its arm at $n, slamming hot sand into
+mer $n &Y$m!
+mppldamage $n 22
+~
+> greet_prog 100~
+mea $n &YThe rapidly spinning cyclone blasts hot air and sand into your
+mea $n &Yface and body!
+~
+> death_prog 100~
+if rand(5)
+   mpoload 70024
+endif
+~
+|
+#70021
+giant lizard~
+A Giant Lizard~
+A giant lizard is lazing around, absorbing sunlight.
+~
+This very large lizard is tall, long, and bright green.  Its scales
+shine brightly in the light of the sun or moon.  It has a big bony and
+strong looking jaw, with sharp stubby teeth.  The lizards tail is thick and
+meaty and it looks capable of smashing through a weak person's body.  It
+moves about slowly, and seemingly with great confidence. 
+~
+65 0 0 C
+1 0 100 1d20+0 2d5+0
+0 20000000
+112 112 0
+25 10 20 25 5
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#70022
+circling vulture~
+A Vulture~
+A vulture is circling in the sky above, searching for carrion to feed on.
+~
+This vulture is a very very large bird. It's wingspan approaches ten feet,
+and it's body looks somehow twisted and sickly, but that's how all
+vultures look. The beak of this animal is curved and mean looking. It's
+designed to tear apart dead flesh, but it could tear up living flesh, too...
+~
+65 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1000000
+112 112 0
+25 25 25 25 7
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#70023
+bandit quartermaster~
+A Bandit Quartermaster~
+A bandit quartermaster is here checking over his inventory.
+~
+This man isn't wearing the garb of the bandits, but he's in the middle
+of their camp, so he's most likely affiliated with them. His fingers
+are adorned with many rings of different colors, and he's got nice,
+fancy clothes that have semi-precious stones woven into them. 
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpsleep 10
+say Hey, $n, I'm really not supposed to sell to outsiders, but if you hand me some zeni, an item of some kind might *cough* fall into your hands.
+~
+> bribe_prog 15000000~
+emote looks the other way as he drops something into your hand and sweeps the zeni into a bag.
+mpoload 70029
+give monkey $n
+~
+> bribe_prog 1000000~
+emote coughs loudly while he quickly hands you a pair of sandals and takes your money
+mpoload 70026
+give sand $n
+~
+> bribe_prog 500000~
+emote takes your zeni and surreptitiously hands you a pair of very tall boots.
+mpoload 70028
+give boots $n
+~
+> bribe_prog 100000~
+emote puts your zeni into his pocket and quickly puts a vest into your hands.
+mpoload 70027
+give vest $n
+~
+> bribe_prog 1~
+say That's not quite the amount of zeni I'm looking for, but thanks anyway!
+grin
+~
+|
+#70027
+dropper mob~
+An Unknown Force~
+A dropper mob (unknown force)
+~
+~
+67108865 2 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpforce $n drop 'red rune'
+mpforce $n drop 'blue rune'
+mpforce $n drop 'yellow rune'
+~
+|
+#70028
+smoke being humanoid form~
+A Smoke Being~
+A humanoid form made of smoke is floating around!
+~
+Barely visible, there is a human form made of red smoke floating in the
+air. The bottom of it melds into a wide cloud of smoke that trails along
+the floor. It leaves wisps and trails of smoke behind it as it slowly
+drifts around the room. The wisps disappear after several seconds. The
+outline that the smoke forms is that of a man, about six feet tall. Facial
+features are almost visible on the smoky face, but not quite defined
+enough to make a definite face.
+~
+3 0 -350 C
+1 0 75 1d20+0 3d5+0
+0 2500000000000
+112 112 0
+150 100 325 125 65
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+mppldamage $n 30
+mea $n The smoke being puts its "arms" forward, aiming them at you, and
+mea $n unleashes a blast of swirling red smoke! It flies at your face,
+mea $n knocking you back, searing your skin, and causing you to violently
+mea $n choke!
+mer $n The smoke being fires a blast of red smoke at $n!
+~
+> fight_prog 20~
+destructive
+~
+|
+#70030
+rock golem~
+A Rock Golem~
+A large human shaped chunk of rock is standing in the corner.
+~
+This seemingly crudely carved human statue is about 12 feet tall. It is
+slowly walking around, and its footsteps shake the floor. Its eyeless
+visage stares into your eyes, and it seems to pierce into your soul.
+~
+3 0 0 C
+1 0 50 1d20+0 2d5+0
+0 1000000000000
+112 112 0
+185 120 175 225 25
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mer $n The rock golem lifts its arm and points its hand, palm forward at $n.
+mea $n The rock golem raises its arm horizontally, palm forward at you. It glares into your face with its crude looking stone visage.
+~
+> fight_prog 7~
+mea $n &YThe golem puts its hands together in front of its chest, and 
+ mea $n &Ya green sphere of energy quickly forms. It pulls its arms sideways
+mea $n  &Yand the ball stretches into a horizontal line. The golem pushes forward,
+mea $n  &Yand the line of crackling green energy flies at you with incredible speed!
+mppldamage $n 46
+mer $n &YThe golem forms a horizontal line of crackling green energy and
+mer $n &Yflings it at $n with incredible speed!
+~
+> death_prog 100~
+if rand(2)
+   mpforce $n drop 'red rune'
+   mpoload 70030
+else
+if rand(2)
+   mpoload 70042
+endif
+~
+|
+#70031
+gray robed old man~
+A robed old man~
+An old man in gray robes is standing motionless.
+~
+This robed man is ancient. He's clean shaven, which exposes the deep
+creased wrinkles all over his face. His flabby, pale skin droops in
+places. The robe he's wearing is very long. It covers his legs and all
+of his body. The robe itself looks smooth and soft, but thick. 
+~
+3 0 1000 C
+1 0 65 1d20+0 2d5+0
+5000 20000000000000
+112 112 1
+275 300 300 300 100
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mea $n As you strike the killing blow to the gray-robed man, his flesh
+mea $n jiggles and dissolves into gas. The gas floats away, leaving
+mea $n only his gray robes to fall to the floor.
+if rand(5)
+mpmload 70035
+endif
+if rand(5)
+mpmload 70031
+endif
+~
+> greet_prog 100~
+mea $n The old man stares through you with a glazed over, slackjawed look on his face.
+mer $n As $n arrives the old man shifts his gaze to $m and vacantly stares.
+~
+> fight_prog 40~
+uppercut
+~
+> fight_prog 20~
+mea $n &GThe gray-robed man grabs your arm with lightning speed and
+mea $n &Gcontorts his face into a twisted shell. It looks like he's
+mea $n &Gscreaming, but there's no sound. Suddenly, it feels like your
+mea $n &Garm is melting from an intense wave of heat! [30]
+mppldamage $n 35
+mer $n &GThe gray-robed man grabs $n's arm with lightning speed and
+mer $n &Gcontorts his face into a twisted shell, as if he's screaming
+mer $n &Gbut there's no sound. Suddenly, a reddish wave of heat
+mer $n &Gblasts out from $n's arm.
+~
+> fight_prog 15~
+final
+~
+|
+#70032
+crystal formation~
+A crystal formation~
+A spiky crystal formation has taken shape on the floor.
+~
+The crystal formation is on the floor, near one wall. It looks as if it
+has been formed by water dripping from the ceiling. The crystal looks
+like ice, it's clear and a little bluish, and it casts miniature rainbows
+around the room, like a prism.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpe &bAs the crystal formation is smashed into shards, they partially
+mpe &bmelt and run together into a single clump, which then rises up into
+mpe &ba humanoid form!
+mpmload 70033
+mpforce 'crystal creature' mpkill $n
+~
+|
+#70033
+crystal creature~
+A Crystal Creature~
+A stunted creature made of transparent crystal shakily stands here.
+~
+~
+3 0 0 C
+1 0 80 1d20+0 2d5+0
+0 2500000000000
+112 112 0
+150 150 175 250 30
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mea $n &bYour killing blow shatters the creature into miniscule particles
+mea $n &bof crystal dust.
+if rand(10)
+   mea $n &BAgain, the shards run together into a pile, and out of this pile
+   mea $n &Brises an immensely tall hulking behemoth of crystal!!
+   mpmload 70034
+   mpforce 'crystal behemoth' mpkill $n
+endif
+~
+|
+#70034
+crystal behemoth~
+A Crystal Behemoth~
+A huge crystal behemoth angrily thrashes around the room.
+~
+~
+1 0 0 C
+1 0 80 1d20+0 2d5+0
+0 8500000000000
+112 112 0
+225 175 200 250 80
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+if rand(2)
+   mpoload 70032
+endif
+if rand(4)
+   mpoload 70039
+endif
+mea $n &bYour killing blow shatters the Crystal Behemoth into miniscule shards of blue crystal!
+~
+> fight_prog 15~
+'big bang'
+~
+> fight_prog 15~
+mea $n &GThe Crystal Behemoth points its arms straight at you and unleashes
+mea $n &Ga furious storm of razor sharp crystal shards from its hands!
+mea $n &GThey slash into your skin and cause terrible pain!
+mer $n &GThe Crystal Behemoth unleashes a fury of crystal shards at $n!
+mppldamage $n 21
+~
+|
+#70035
+small floating metal sphere~
+A Floating Metal Sphere~
+A small floating metal sphere zips around through the air!
+~
+This shiny metal sphere is whizzing around through the air at a fair clip.
+It's emitting a constant low buzzing sound. The main part of it is just
+a simple sphere about a foot in radius. The surface is refelctive, but
+it's pitted and corroded in parts, while other areas of its surface are
+still shiny. Around the equator of the sphere are eight very sharp spikes
+with what look like razor sharp edges.
+~
+65 524288 0 C
+1 0 75 1d20+0 2d5+0
+1750 750000000000
+112 112 0
+100 100 150 125 20
+0 0 0 0 0
+4 4 0 0 1 1 4
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if rand(25)
+   say "BZZT! Intruder... alert.... BZZZT!"
+   mpe The metal sphere emits a high pitched squeal, and crashes into the floor!
+   mppurge sphere
+else
+if rand(50)
+   say "Intruder alert! Intruder alert!"
+   mpkill $n
+endif
+~
+> death_prog 5~
+mpoload 70041
+~
+> fight_prog 10~
+mea $n &GThe floating metal sphere begins to emit a sharp humming noise as it
+mea $n &Gbegins to spin even more rapidly. It flies straight at you, gouging
+mea $n &Gdeep channels in your flesh with its razor sharp spikes!
+mer $n &GThe floating metal sphere spins rapidly and flies at $n, gouging
+mer $n &Gdeep channels in $s flesh with its razor sharp spikes!
+mppldamage $n 28
+~
+|
+#70036
+living shadow~
+A Living Shadow~
+A human shaped shadow is darting around, without a human shape to cast it!
+~
+A shadow without anything to cast it is what this being appears to be.
+Shadows of a man are cast around the room by the light in the air, and
+there isn't a man visible in the room. On close examination, there is,
+however, a dark region of space near the center of the room. It is
+moving around as if it were a person, and if you look at it the right
+way, it almost looks like it has the shape of a man.
+~
+3 0 -750 C
+1 0 70 1d20+0 2d5+0
+0 3000000000000
+112 112 0
+150 175 350 350 50
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> death_prog 100~
+if rand(1)
+   if rand(1)
+      mea $n &zYou find a strange pair of pants on the shadow corpse!
+      mpoload 70038 $n
+   endif
+endif
+~
+> fight_prog 20~
+makosen
+~
+|
+#70117
+A computer voice~
+A computer voice~
+A computer voice
+~
+~
+69206017 2 0 C
+30 0 100 1d20+0 2d5+0
+1000000 99999999999999991611392
+112 112 0
+400 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog check_your_inv~
+if ovnuminv(70014) > 0
+   if rand(30)
+      mpe The computer sizzles loudly and bright sparks shoot out!
+   else
+   if rand(60)
+      drop 25000 coins
+   else
+   if rand(99)
+      mpe &YBright yellow flames shoot out of the hole!
+   else
+   mpoload 70090
+   drop note
+   endif
+endif
+~
+|
+#70118
+hole checker~
+A hole checker~
+A hole checker
+~
+~
+69206017 2 0 C
+1 0 100 1d20+0 2d5+0
+1000000 10000000000000000904921088
+112 112 0
+400 10 10 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog lever~
+if number($n) == 70117
+   if ovnuminv(70041) > 0
+   mpjunk all
+   if rand(10)
+   drop 45000 zeni
+   else
+   if rand(1)
+   mpoload 70040
+   put typo in hole
+   else
+   if rand(1)
+   mpoload 70090
+   put note in hole
+   else
+   mpe &RBright red flames shoot out of the hole in the computer!
+   endif
+   endif
+endif
+~
+|
+#70137
+shades dropper~
+a newly created shades dropper~
+The shades dropped is here to put the shades in the box
+~
+~
+1 2 0 S
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+> time_prog 12~
+if rand(10)
+mpoload 70037
+put shades in box
+endif
+~
+|
+#70199
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#70000
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#70001
+rusty brass key~
+A rusty brass key~
+A large and rusted brass key lies on the ground.~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+rusty brass key~
+This key is about 7 inches long and very corroded. It looks like it
+might be made of brass, and it still appears usable as a key, if there
+is a lock that it fits somewhere.
+~
+#70002
+wooden chest~
+A wooden chest~
+A wooden chest sits on the floor.~
+~
+15 0 0
+10 0 0 0 0 0
+1 0 0
+ 0
+> exa_prog 100~
+mpforce 'bandit chief' say $n, now you have to die!!
+mpforce 'bandit chief' mpkill $n
+mpat 70045 mpforce 'tall bandit' south
+mpforce 'tall bandit' mpkill $n
+~
+|
+#70003
+tiny steel key~
+A tiny steel key~
+A tiny steel key sparkles on the ground.~
+~
+13 0 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+#70004
+oak dresser~
+An oak dresser~
+A quite large oak dresser sits on the ground~
+~
+15 0 0
+5 0 0 0 0 0
+1 0 0
+ 0
+> exa_prog 100~
+mea $n The inside of this dresser is filled with an incredible amount
+mea $n of junk. Little bits of string, writing utensils, pieces of wood,
+mea $n slivers of plastic, and loads of other little pieces of trash fill the
+mea $n drawers.
+~
+|
+#70005
+foot locker~
+A metal foot locker~
+A metal foot locker sits at the end of the bed.~
+~
+15 0 0
+9999 29 70006 0 0 0
+1 0 0
+ 0
+#70006
+orange key~
+&wAn &OOrange &wKey&d~
+A small orange-painted key has been left on the ground.~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#70007
+cactus~
+A large cactus~
+A large cactus protrudes from the wide flat plain.~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+cactus~
+This is a very tall saguaro cactus. It stands about 15 feet high, and the
+main body of it is two feet wide. It has a myriad of huge needles jabbing
+out from it, and 4 wide arms jutting from the sides and turning upward.
+~
+#70008
+head pole~
+A head on a pole~
+A decapitated head on a sharp pole drips &rblood &Oon the ground.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+decapitated head blood~
+Some poor unlucky soul had his head chopped off and mounted on a stick.
+This is obviously a warning that somebody doesn't want any visitors, but
+whether they are far weaker than you or incredibly stronger is unsure.
+~
+#70009
+skull cross bones sign~
+A skull and crossbones sign~
+A large skull and crossbones sign warns "&RDO NOT ENTER!&O"~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+large skull crossbones sign~
+Nailed to a tree is a black wooden plank with the skull and crossbones
+painted on it, also sporting a warning to stay out. There must be
+someone through this pass that doesn't want to deal with people hassling them.
+~
+#70010
+tracks boulder outcrop knobby~
+Some tracks~
+There are some tracks on the ground here.~
+~
+36 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+tracks~
+&gThese tracks are gathered around a large &Oboulder &g, in a clay-like patch of dirt.
+~
+E
+boulder~
+&gThere's a very large boulder here, flush against the mountain wall. 
+Some tracks are on the ground around the boulder. On the front surface,
+jutting out, there is a small round knobby outcrop. Close examination
+reveals a hairline crack all the way around the outcrop.
+~
+> push_prog 100~
+mea $n 
+mea $n You push hard against the knobby outcrop on the front of the 
+mea $n boulder. It slowly slides inward, and part of the face of the
+mea $n boulder rotates around a central pivot. You, just having been
+mea $n pushing really hard, fall forward into the opening. The rock
+mea $n face rotates shut behind you.
+mer $n $n pushes against a boulder, the front rotates open, $e falls 
+mer $n through, and it rotates shut again. How odd...
+mpopenpassage 70074 70086 5
+mpforce $n down
+mpclosepassage 70074 5
+mpat 70074 pull tracks
+~
+|
+#70011
+boulder~
+a newly created boulder~
+Some god dropped a newly created boulder here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#70012
+swirling green portal~
+A swirling green portal~
+&BA &Ggreen &Bswirling portal sits against the north wall.~
+~
+46 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+swirling green portal~
+On the north wall of this room there is a large green portal. It is
+spaced about 3 inches from the brownish stone wall, and the edges of
+the portal are made of stone as well. The stone part of the portal is
+carved with many small runes that glow red or green very faintly. The
+portal itself is a bright emerald green swirling field of energy. There's
+an occasional crackle and spark from the center of the portal. The
+swirling is hypnotic, and the center of the portal draws the eye to it.
+It's hard to look away.
+~
+#70013
+carved lettering~
+Carved Lettering~
+Some lettering that looks very strange is carved on the wall.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+strange lettering carved~
+On the wall to the southwest, in between where the corridor splits,
+there are 3 lines of text carved in the wall in a very odd script. It
+looks totally foreign, and upon close examination, there is an
+extremely soft green light emanating from the carving.
+~
+> exa_prog 100~
+mea $n
+mea $n The strange lettering reads: &g(. : > )' < < (' ). )' > | | (. )' ). ('&d
+~
+|
+#70014
+Lump of metal~
+A lump of metal~
+A small lump of dull metal is here.~
+~
+13 0 1
+0 0 0 0 0 0
+3 0 0
+ 0
+E
+lump metal~
+This lump of metal is dense, it feels like it's probably made of lead.
+It is misshapen and rough, shaped somewhat like a potato, but smaller.
+~
+#70015
+shish kebab~
+A shish-kebab~
+A meaty shish-kebab lies here.~
+$n chow$q down on a yummy-looking shish-kebab.~
+19 0 1
+0 0 0 0 0 0
+1 50 5
+ 0
+#70016
+hamburger~
+A hamburger~
+A big juicy hamburger is here.~
+$n take$q a big bite out of a hamburger.~
+19 0 1
+0 0 0 0 0 0
+1 100 10
+ 0
+#70017
+open topped steel box~
+A Steel Box~
+An open topped steel box is flat on the ground.~
+~
+15 0 0
+100 0 0 0 0 0
+1 0 0
+ 0
+#70018
+blood stain~
+&rA bloodstain&d~
+&rA huge dark red spray of dried blood has dried on the wall long ago.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+blood stain spray bloodstain~
+Apparently someone suffered a very violent death here long ago, as this
+bloodstain is enormous! It covers nearly half the wall, and seems to have
+permanently left its mark on the stone. The pattern indicates a single
+huge spray coming from one source, probably from one slash or blow.
+~
+#70019
+gila monster tooth~
+&wA Gila Monster Tooth&d~
+A very large curved tooth is on the ground.~
+~
+13 0 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+gila monster tooth~
+This is the tooth of a giant gila monster, a very savage and aggressive
+beast. Just the look of its tooth is enough to put a lump in almost 
+anyone's throat!
+~
+A
+1 2
+#70020
+ancient iron chest~
+An Ancient Iron Chest~
+An ancient iron chest is sitting on the inside of the huge safe.~
+~
+15 0 0
+9999 29 70003 0 0 0
+1 0 0
+ 0
+#70021
+lead boots~
+Lead Boots~
+A very heavy looking pair of lead boots is here on the ground.~
+~
+13 0 65
+0 0 0 0 65 65
+20 1250000 125000
+ 0
+E
+lead boots~
+These boots are made from thick, heavy lead. Wearing them would slow
+you down immensely.
+~
+A
+2 -5
+A
+1 5
+#70022
+antique diving helmet~
+An Antique Diving Helmet~
+An antique diving helmet is sitting on the ground.~
+~
+9 0 17
+0 0 0 0 750 750
+30 1500000 150000
+ 10000000
+E
+antique diving helmet~
+This is an old-style diving helmet. It's made of brass, with a glass
+faceplate in front, and it covers the head and shoulders.
+~
+A
+2 -10
+#70023
+carapace belt~
+&gCarapace Belt&d~
+The central portion of an insect's carapace has been left on the ground.~
+~
+9 0 2049
+0 0 0 0 15 15
+1 0 0
+ 0
+E
+carapace belt~
+This belt is made out of chitin plates from a very large insect of some
+kind. They're connected together by a thick organic skin. It would fit
+snugly and tight on anyone, since the skin is stretchy and elastic.
+~
+A
+1 5
+A
+2 -3
+A
+3 -3
+A
+4 5
+#70024
+thin dark gloves hatred~
+&zDark gloves of Hatred&d~
+A pair of very thin dark gloves is sitting on the ground.~
+~
+9 0 129
+0 0 0 0 5 5
+1 1500000 150000
+ 0
+E
+dark gloves hatred~
+This pair of thin gloves feel as if they're freezing cold and intensely
+hot at the same time. They are solid black in color, and as you look at
+them, you inexplicably begin to feel a strong anger, toward nothing in
+particular. It's a strage sensation.
+~
+A
+1 1
+A
+2 1
+#70025
+elastic wristband~
+An Elastic Wristband~
+A small elastic band is sitting on the ground.~
+~
+9 0 4097
+0 0 0 0 5 5
+1 5000 500
+ 15000
+A
+2 1
+#70026
+jewel encrusted sandals~
+Jewel Encrusted Sandals~
+A pair of sandals that is encrusted with priceless jewels has been left here.~
+~
+9 1 65
+0 0 0 0 150 150
+1 0 200000
+ 100000
+E
+jewel encrusted sandals~
+These sandals have huge precious jewels seated into the leather of the
+sandals all over the surface. The jewels all glow with a soft light that
+shifts in color slowly. 
+~
+#70027
+leather vest~
+A Thin Leather Vest~
+A thin leather vest has been left here.~
+~
+9 0 9
+0 0 0 0 50 50
+5 0 3500
+ 10000
+E
+leather vest~
+This leather vest is very finely made. It's a soft, smooth leather, and
+the front has beautiful designs sewn into it. It's a fine piece of
+clothing.
+~
+A
+2 1
+A
+4 1
+#70028
+smugglers boots~
+Smugglers' Boots~
+A bulky pair of thigh-high boots has been left here.~
+~
+15 0 65
+6 0 0 0 0 0
+1 0 75000
+ 0
+E
+smugglers boots~
+These boots were designed to smuggle goods. They're nearly thigh-high,
+and they have bulky hidden compartments along the sides.
+~
+A
+2 -5
+#70029
+monkeys paw~
+&rA Monkey's Paw&d~
+A withered, shrunken, curled up paw of a monkey has been left here.~
+~
+8 0 16385
+0 0 0 0 0 0
+1 0 4500000
+ 1000000000
+E
+monkeys paw~
+This shriveled hand is the paw from a monkey. It's apparently been 
+preserved in the same manner as shrunken heads. It's tiny and withered.
+Rumor has it that monkey's paws such as this one bring good luck.
+It didn't help the monkey much.
+~
+A
+29 3
+A
+3 2
+#70030
+red rune~
+&RA glowing red rune&d~
+&RA glowing red rune~
+~
+41 8194&260 1
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+red rune~
+This red rune is made of a very strange material. It feels sort of like
+rubber, but it is nearly weightless. It's a very strange shape, similar
+to a japanese character, but extruded into three dimensions. It's about
+the size of an average man's hand.
+~
+#70031
+blue rune~
+&BA glowing blue rune&d~
+&BA glowing blue rune~
+~
+41 8194&260 1
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+blue rune~
+This blue rune is made of a very strange material. It feels sort of like
+rubber, but it is nearly weightless. It's a very strange shape, similar
+to a japanese character, but extruded into three dimensions. It's about
+the size of an average man's hand.
+~
+#70032
+yellow rune~
+&YA glowing yellow rune&d~
+&YA glowing yellow rune~
+~
+41 8194&260 1
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+yellow rune~
+This yellow rune is made of a very strange material. It feels sort of like
+rubber, but it is nearly weightless. It's a very strange shape, similar
+to a japanese character, but extruded into three dimensions. It's about
+the size of an average man's hand.
+~
+#70033
+ruby orb~
+A ruby orb~
+Red swirls shift and shimmer beneath the surface of a ruby orb.~
+~
+8 0 16385
+0 0 0 0 0 0
+1 0 0
+ 2000000000
+E
+ruby orb~
+This orb is very bright red. It gives off a whole lot of red light, and
+also a lot of heat. It's about the size of a baseball, and it has the
+texture of stone. Beneath the surface are moving swirls of what looks
+like red liquid.
+~
+A
+1 -5
+A
+2 5
+A
+3 10
+A
+4 5
+> wear_prog 100~
+mea $n &RYou feel power well up within you as you hold a ruby orb!
+mer $n &R$n begins to emanate power as $e holds a ruby orb.
+~
+> sac_prog 10~
+mpe &RAs a ruby orb is sacrificed, it implodes with a soft *pop* sound.
+mpe &RA hole tears in space and an &GEmerald Orb&R slips through!
+mpoload 70034 1
+mpforce $n get emerald
+~
+|
+#70034
+emerald orb~
+An emerald orb~
+An emerald orb is fainty vibrating and shimmering.~
+~
+8 0 16385
+0 0 0 0 0 0
+1 0 0
+ 2000000000
+E
+emerald orb~
+This bright green sphere is about the size of a golf ball. It feels
+cool to the touch, but it shines very brightly. Beneath the surface of
+the orb, different shades of green swirl about very fast. It almost looks
+as if the orb itself is turning, even though it clearly is not.
+~
+A
+1 -25
+A
+2 10
+A
+3 25
+A
+4 5
+> wear_prog 100~
+mea $n &GYou feel intense power flow through you as you hold an emerald orb!
+mer $n &GPower begins to flow through $n as $e holds an emerald orb.
+~
+|
+#70035
+thick iron necklace~
+A Thick Iron Necklace~
+A thick iron necklace has been left on the ground.~
+~
+9 0 5
+0 0 0 0 10 10
+15 1000000 100000
+ 1000000000
+E
+thick iron necklace~
+This necklace is basically just a very thick, very solid iron chain.
+The links are flexible relative to each other, so it can flex around in
+any direction, and it's big enough for anyone to wear around their neck.
+~
+A
+4 5
+> wear_prog 100~
+if race($n) == human
+mpoload 70036 $n
+   mpforce $n remove 'iron necklace'
+   mpforce $n wear medallion
+   mea $n
+   mea $nAs you wear the iron necklace, it melts and reforms into an iron
+   mea $nmedallion!
+   mer $n
+   mer $nAs $n wears an iron necklace, it melts and reforms into an iron
+   mer $nmedallion!
+   mpforce $n drop 'iron necklace'
+   mppurge 'iron necklace'
+endif
+~
+|
+#70036
+iron medallion~
+An Iron Medallion~
+An iron medallion has been left on the ground.~
+~
+9 0 5
+0 0 0 0 20 20
+15 1000000 100000
+ 1000000000
+E
+iron medallion~
+A metal disk is mounted on a very thick iron chain. The disk is about
+six inches across, and it features a carved pentagram on the surface, with
+an equilateral triangle carved inside the inner pentagon of the pentagram.
+~
+A
+4 10
+> remove_prog 100~
+mpoload 70035 $n
+mea $n
+mea $n As you remove it from your neck, the iron medallion disintegrates
+mea $n into dust, leaving only the chain.
+mer $n
+mer $nAs $n removes it, an iron medallion disintegrates into dust, 
+mer $nleaving only the chain.
+mpforce $n drop 'iron medallion'
+mppurge 'iron medallion'
+~
+|
+#70037
+cool shades~
+Cool Shades~
+An incredibly cool pair of shades is laying on the ground.~
+~
+65 0 131073
+0 0 0 0 0 0
+1 0 0
+ 1000000000
+E
+cool shades~
+These shades are most definately very cool. They're black and shiny, and
+the frames are uniquely shaped. They're sure to add to the style factor
+of anybody wearing them.
+~
+A
+2 5
+A
+29 1
+> wear_prog 100~
+mea $n As you put on the shades, you feel an incredible rush of pure
+mea $n coolness, you must be the coolest person around!
+mer $n As $n puts on the shades, $e becomes so incredibly cool it is
+mer $n hard for you to believe!
+~
+|
+#70038
+shadow fabric pants~
+&zA Pair Of Shadow Fabric Pants&d~
+&zThere is a shadow of a pair of pants laid out on the floor, but there are no pants there.~
+~
+9 262144 33
+0 0 0 0 600 100
+1 3000000 300000
+ 2000000000
+E
+shadow pants~
+These pants seem to somehow be woven from threads of shadow, however
+impossible that seems. They're incredibly light, soft, and they stretch
+very far and then elastically snap back into position.
+~
+A
+2 4
+#70039
+crystal ring~
+&CA Crystal Ring&d~
+A small crystal ring is on the ground refracting light into tiny rainbows.~
+~
+9 0 3
+0 0 0 0 0 0
+1 0 0
+ 10000000
+E
+crystal ring~
+This circular disk is about the width of a thick human finger, so it could
+be slipped over anyone's finger. It's has many small facets, and looking
+into it gives an interesting perspecitve, with images from all around the
+room reflected in miniature.
+~
+A
+1 2
+A
+2 2
+A
+3 2
+A
+4 2
+#70040
+intentional intentioanl typo~
+&YAn Intentioanl Typo&d~
+Somebody left an intentioanl typo here on the ground!~
+~
+8 0 2117925
+0 0 0 0 0 0
+1 0 0
+ 0
+#70041
+strange token~
+A Strange Token~
+A strange metal disk has been left on the ground.~
+~
+13 0 1
+0 0 0 0 0 0
+3 0 0
+ 0
+E
+strange token~
+This circular disk is an inch and a half across and half an inch thick.
+It's made of a plastic-like material that's very light, and it has swirly
+curved designs all over the surface.
+~
+#70060
+receptacle hole~
+A receptacle~
+Near the working computer equipment there is a dusty hole in which to place something.~
+~
+15 0 0
+4 0 0 0 0 0
+1 0 0
+ 0
+> exa_prog 100~
+if number($n) == 70117
+   mpforce 'lever puller' get all hole
+   mpforce 'lever puller' drop all
+~
+|
+#70061
+ancient lever~
+A lever~
+An ancient lever sticks out of the side of the computer.~
+~
+37 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+> pull_prog 100~
+mpforce 'a computer voice' push lever
+if str($n) >= 50
+   mea $n
+   mea $n You exert hard on pulling the lever, and it slowly grinds into the 
+   mea $n down position, and then pops back up on its own.
+   mer $n $n pulls on the lever, and it slides back up slowly on its own.
+   mpforce 'hole checker' get all hole
+   mpmset 70117 affected invisible
+   mpforce 'a computer voice' say Lever pull detected.
+   mpmset 70117 affected invisible
+else
+   mea $n You try as hard as you can, but you're just not strong enough to move
+   mea $n the lever!
+   mer $n $n tries to pull on the lever, and fails.
+endif
+~
+|
+#70090
+billion bank note~
+A One Billion Zeni Bank Note~
+A very valuable looking piece of paper is fluttering around.~
+~
+8 0 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+billion bank note~
+This large piece of thick paper is clearly marked in very large print as
+"&GONE BILLION ZENI&d". It is green, blue, and orange colored, with many
+intricate designs all over both sides. The designs are little loops, whirls
+and zigzag patterns, very small and very detailed. The central portrait
+is of a young human man with glasses, identified below the picture as
+"Koronto". In small print on the back of the note is printed: "Redeemable
+at any branch of the Cyaran National Bank. We'll be there! Cyaran National
+Bank: The perfect place for all your financial needs!" This bank note has
+an advertisement shpeal printed on the actual note! How low can you go?
+~
+#70198
+snorkel~
+Red PK Flag~
+A blue and green snorkel ~
+~
+9 0 1048593
+0 0 0 0 10000 10000
+1 0 0
+ 0
+A
+1 300
+A
+2 300
+A
+3 300
+A
+4 300
+> wear_prog 100~
+if name($n) != koronto
+mpforce $n remove snorkel
+mea $n What'ch you doing wearing Koronto's imm eq, punk?
+mea koronto $n has your snorkel eq.
+~
+|
+#70199
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#70000
+Koronto's hideout~
+This room is located at the very top of a tower that is on the peak of
+a tall mountain. Outside the barred windows, there is a perpetual heavy
+black storm swirling around the tower. Inside, there's a huge desk with
+tons of stuff on it, such as a very advanced looking quantum computer,
+several unfinished woodworking projects, and many little miscellaneous
+pieces of junk that have not been thrown away due to laziness. The walls
+are covered in shelves filled with tools, computer parts, books, and
+abstract sculptures.
+~
+0 2097156 0
+S
+#70001
+Wasteland~
+ The barren landscape between South City and the desert is rocky and 
+uninviting. There are no tracks anywhere, no sign that anyone comes
+here. A few lizards and insects crawl lazily around on the ground.
+~
+0 4 1
+D1
+~
+~
+0 -1 9040
+D3
+~
+~
+0 -1 70002
+S
+#70002
+Wasteland~
+The ground here is hard and dry. Some small plants manage to eke out
+a living here, but there aren't many. Little of the desert to the west
+can be seen, because the heat and glare of the sun blurs it. There are,
+however, several huge rock outcroppings that are so large they can be seen 
+from here.
+~
+0 0 1
+D1
+~
+~
+0 -1 70001
+D3
+~
+~
+0 -1 70004
+D7
+~
+~
+1 -1 70005
+D9
+~
+~
+0 -1 70003
+S
+#70003
+Beginning of desert~
+The solid rock ground is barely covered in a thin layer of desert sand.
+There is not much of anything here. Besides the occasional scorpion or
+lizard, nothing stirs. The desert is barren.
+~
+0 0 1
+D0
+~
+~
+0 -1 70004
+D3
+~
+~
+0 -1 70006
+D6
+~
+~
+0 -1 70002
+D7
+~
+~
+0 -1 70007
+D9
+~
+~
+0 -1 70009
+S
+#70004
+Beginning of desert~
+A thin layer of sand covers the rock beneath it. There is not a single
+bit of plant life, the desert is nearly lifeless. Many small boulders
+lay strewn about, and to the west is visible a gargantuan outcrop of
+stone. South City is barely visible to the east.
+~
+0 0 1
+D0
+~
+~
+0 -1 70005
+D1
+~
+~
+0 -1 70002
+D2
+~
+~
+0 -1 70003
+D3
+~
+~
+0 -1 70007
+D7
+~
+~
+0 -1 70008
+D9
+~
+~
+0 -1 70006
+S
+#70005
+Beginning of desert~
+The desert is just a wasteland. There is nothing here at all, save for
+sand and rock. South City is barely visible to the east, but nothing
+else can be seen except for huge rocks in the distance further into the
+desert.
+~
+0 0 1
+D2
+~
+~
+0 -1 70004
+D3
+~
+~
+0 -1 70008
+D7
+~
+~
+0 -1 70033
+D8
+~
+~
+0 -1 70002
+D9
+~
+~
+0 -1 70007
+S
+#70006
+Passing by a huge rock~
+From here, a huge expanse of desert is visible to the south. It goes on
+pretty far, and there are mountains farther south. The desert terrain is
+bleak and empty, just sand dune after sand dune.
+~
+0 0 1
+D0
+~
+~
+1 -1 70007
+D1
+~
+~
+0 -1 70003
+D2
+~
+~
+0 -1 70009
+D6
+~
+~
+0 -1 70004
+S
+#70007
+Giant rock~
+There's a very large rock sticking up out of the ground just to the
+west. It's about the size of a hill, and very jagged looking and rough.
+Something shines brightly at the very top...
+~
+0 0 1
+D0
+~
+~
+67108864 -1 70008
+D1
+~
+~
+0 -1 70004
+D2
+~
+~
+0 -1 70006
+D3
+~
+~
+0 -1 70014
+D6
+~
+~
+0 -1 70005
+D8
+~
+~
+0 -1 70003
+S
+#70008
+Next to a big rock~
+The desert sands run up against a huge rock to the west. It is brown
+and jagged-looking, harsh and forbidding. Otherwise, there is nothing
+in the vicinity. 
+~
+0 0 1
+D0
+~
+~
+0 -1 70033
+D1
+~
+~
+0 -1 70005
+D2
+~
+~
+0 -1 70007
+D8
+~
+~
+0 -1 70004
+S
+#70009
+Some plant life~
+There must be some water underground here, because there are a few
+tiny plants surviving in the lee of a smooth boulder. The ground is a
+little harder at that spot. Other than that, it's desolate.
+~
+0 0 1
+D0
+~
+~
+0 -1 70006
+D3
+~
+~
+0 -1 70010
+D6
+~
+~
+0 -1 70003
+S
+#70010
+Small Dune~
+There's the first of many sand dunes in the desert right here. It's
+small and gently sloped. The dune is shifting even now, as the wind
+blows away some of the sand and deposits it elsewhere. It's empty and
+quiet.
+~
+0 0 1
+D1
+~
+~
+0 -1 70009
+D3
+~
+~
+0 -1 70011
+S
+#70011
+Just south of a big rock~
+The giant rock is right to the north of here, and a huge expanse of
+dunes lies to the south. The air is blazingly hot, as if it were the
+inside of an oven. There's little to see, just endless piles of sand.
+~
+0 0 1
+D0
+~
+~
+0 -1 70012
+D1
+~
+~
+0 -1 70010
+D2
+~
+~
+0 -1 70078
+D3
+~
+~
+0 -1 70017
+D7
+~
+~
+0 -1 70068
+D9
+~
+~
+0 -1 70015
+S
+#70012
+Climbing on a rock~
+The huge rock is easily climbed at this spot. It is sloped to the south,
+and the main bulk of the rock is to the north. From here, something can
+be seen shining brightly at the very top. The desert seems to stretch 
+endlessly to the south. Big rolling dunes cover the whole southern 
+horizon.
+~
+0 0 1
+D0
+~
+~
+0 -1 70013
+D2
+~
+~
+0 -1 70011
+D3
+~
+~
+0 -1 70068
+D9
+~
+~
+0 -1 70017
+S
+#70013
+Broken Ladder~
+The rock steepens immensely to the north, so it is totally unclimbable.
+There was a ladder of handholds carved into the side of the rock face, 
+but almost all of the lower 'rungs' are broken off. It's not even
+remotely possible to climb.
+~
+0 0 1
+D1
+~
+~
+0 -1 70014
+D2
+~
+~
+0 -1 70012
+D4
+~
+~
+64 -1 70039
+S
+#70014
+Climbing a big rock~
+Right here the rock is gently sloped, easily climbable. The rock is
+very irregular and oddly shaped everywhere. Deep grooves have been
+carved into every surface by the harsh wind and sand. 
+~
+0 0 1
+D1
+~
+~
+0 -1 70007
+D3
+~
+~
+0 -1 70013
+S
+#70015
+Gaping Hole~
+The ground slopes down on all sides into a large hole right here. The
+hole is dark and gloomy looking, and it looks like it goes down quite
+far, below the level of the desert sand, even. Quiet chattering is 
+barely audible...
+~
+0 4 1
+D0
+~
+~
+0 -1 70017
+D1
+~
+~
+0 -1 70078
+D2
+~
+~
+0 -1 70073
+D3
+~
+~
+0 -1 70069
+D5
+~
+~
+0 -1 70018
+D6
+~
+~
+0 -1 70011
+D7
+~
+~
+0 -1 70016
+D8
+~
+~
+0 -1 70079
+D9
+~
+~
+0 -1 70071
+S
+#70016
+A Cactus~
+Right here is a wide empty plain of sand. Dunes lie all around to the
+south and right around this area. Much of the plain consists of small
+rocks and pebbles instead of fine sand, and several small misshapen
+boulders rest on the ground.
+~
+0 0 1
+D0
+~
+~
+0 -1 70024
+D1
+~
+~
+0 -1 70017
+D2
+~
+~
+0 -1 70069
+D3
+~
+~
+0 -1 70021
+D6
+~
+~
+0 -1 70068
+D7
+~
+~
+0 -1 70023
+D8
+~
+~
+0 -1 70015
+D9
+~
+~
+0 -1 70070
+S
+#70017
+Desert~
+This is the middle of the desert, and there's close to nothing here
+but sand. To the north is a huge rock, but otherwise the desert is
+featureless and barren. The sand is incredibly hot and the air sizzles
+with heat.
+~
+0 0 1
+D0
+~
+~
+0 -1 70068
+D1
+~
+~
+0 -1 70011
+D2
+~
+~
+0 -1 70015
+D3
+~
+~
+0 -1 70016
+D6
+~
+~
+0 -1 70012
+D7
+~
+~
+0 -1 70024
+D8
+~
+~
+0 -1 70078
+D9
+~
+~
+0 -1 70069
+S
+#70018
+Scorpions!~
+Light streams into a pit filled with thousands of tiny scorpions! They
+chatter non-stop, and crawl all over each other in a writhing mass.
+The pit turns into a sloping tunnel, and it is pitch-black deeper in.
+~
+0 0 13
+D4
+~
+~
+0 -1 70015
+D8
+~
+~
+0 -1 70019
+S
+#70019
+Scorpion Lair~
+The whole tunnel is nearly packed with baby scorpions and other, larger
+ones. The chattering and clicking noises of carapaces rubbing against
+each other fills the air with a cacophonous din. The tunnel continues to
+slope down to the east, with even more scorpions everywhere.
+~
+0 0 13
+D1
+~
+~
+0 -1 70020
+D7
+~
+~
+0 -1 70018
+S
+#70020
+Nesting Chamber~
+The tunnel widens out and ends in a bulbous chamber. The floor at the
+back of the chamber is covered in scorpion eggs, and the clicking noise
+is even more unbearable from the thousands of tiny scorpions.
+~
+0 0 13
+D3
+~
+~
+0 -1 70019
+S
+#70021
+Near Mountains~
+There's a very tall mountain range just to the west. It runs north and
+south very far, and the tops of the mountains are bright white, light
+reflected from perpetual snow. It's a sharp contrast to the searing heat
+down here in the desert.
+~
+0 0 1
+D0
+~
+~
+0 -1 70023
+D1
+~
+~
+0 -1 70016
+D2
+~
+~
+0 -1 70070
+D6
+~
+~
+0 -1 70024
+D7
+~
+~
+0 -1 70022
+D8
+~
+~
+0 -1 70069
+D9
+~
+~
+0 -1 70074
+S
+#70022
+Entry to small mountain pass~
+The ground of the desert slopes up into a small mountain pass that
+leads to the west. In the pass is some sparse vegetation on the sides
+of a well trodden pathway.
+~
+0 4 1
+D1
+~
+~
+0 -1 70023
+D3
+~
+~
+16777216 -1 70042
+D6
+~
+~
+0 -1 70026
+D8
+~
+~
+0 -1 70021
+S
+#70023
+Tall Dune~
+From the vantage of an exceptionally tall dune, lots more of the desert
+can be seen. There's not much to see. There are wide expanses of sand
+and dunes, and a mountain range just west of here. A huge boulder is
+visible on the east, and the rest is just yellow dunes. The wind is
+sharp and biting up high like this, and it is constantly blowing sand
+around at a high velocity.
+~
+0 0 1
+D0
+~
+~
+0 -1 70026
+D1
+~
+~
+0 -1 70024
+D2
+~
+~
+0 -1 70021
+D3
+~
+~
+0 -1 70022
+D6
+~
+~
+0 -1 70025
+D8
+~
+~
+0 -1 70016
+S
+#70024
+The Empty Desert~
+Nothing is here. The interior of the desert is an empty, barren place,
+with almost no life and nothing interesting to see. The endless sand
+is shifty and soft, feet sink in quite a way. The dunes are wide and
+tall, some are short, and all are very hot. The sun is constantly
+beating down with endless heat that makes the air scalding hot.
+~
+0 0 1
+D0
+~
+~
+0 -1 70025
+D1
+~
+~
+0 -1 70068
+D2
+~
+~
+0 -1 70016
+D3
+~
+~
+0 -1 70023
+D7
+~
+~
+0 -1 70026
+D8
+~
+~
+0 -1 70017
+D9
+~
+~
+0 -1 70021
+S
+#70025
+Between a Huge Rock and Mountains~
+This strip of land runs straight in between a tall, harsh, rugged 
+mountain range on the west and an enormous boulder on the east. There's
+nothing in this area but sand dunes and strange wind patterns in the sand.
+There isn't even variation in the type of sand, it is all an even yellow
+color that apparently all came from the exact same kind of rock.
+~
+0 0 1
+D2
+~
+~
+0 -1 70024
+D3
+~
+~
+0 -1 70026
+D6
+~
+~
+0 -1 70027
+D9
+~
+~
+0 -1 70023
+S
+#70026
+Next to Mountainous Outcrop~
+There's a large mountain just north that is significantly far away from
+any of the other mountains. It's extremely steep; the side just plunges
+out of the desert sands at a ridiculous angle. The sides of the mountain
+are bare rock, and the peak is capped with snow.
+~
+0 0 1
+D1
+~
+~
+0 -1 70025
+D2
+~
+~
+0 -1 70023
+D8
+~
+~
+0 -1 70024
+D9
+~
+~
+0 -1 70022
+S
+#70027
+Interior Of Desert~
+This is the deep interior of the desert. Here, in the desert, there is
+almost nothing to see. It's barren and mostly empty, and the rolling
+yellow dunes just keep going. The air has been superheated by the sun
+into a parched, dry gas. It burns the throat to breathe air this hot.
+~
+0 0 1
+D0
+~
+~
+0 -1 70028
+D6
+~
+~
+0 -1 70029
+D7
+~
+~
+0 -1 70058
+D9
+~
+~
+0 -1 70025
+S
+#70028
+The Desert and Rocks~
+The desert plain is mostly featureless, but that doesn't stop there from
+being some interesting sights. The enormous boulder near here is one such
+sight. There are many other such boulders in the desert, but none 
+even approach the magnitude of this one. It is hundreds of feet across,
+while the nearest comparable other boulder is five.
+~
+0 0 1
+D0
+~
+~
+0 -1 70031
+D1
+~
+~
+0 -1 70029
+D2
+~
+~
+0 -1 70027
+D3
+~
+~
+0 -1 70058
+D6
+~
+~
+0 -1 70030
+D7
+~
+~
+0 -1 70059
+S
+#70029
+Near giant rock~
+The huge rock is just to the southeast. Right here, there are a ton of
+small rocks on the ground, making it an interesting place to walk 
+around. Tiny boulders jut up from the sand, and many more are buried
+beneath.
+~
+0 0 1
+D0
+~
+~
+0 -1 70030
+D1
+~
+~
+0 -1 70032
+D3
+~
+~
+0 -1 70028
+D6
+~
+~
+0 -1 70035
+D7
+~
+~
+0 -1 70032
+D9
+~
+~
+0 -1 70027
+S
+#70030
+Deep Desert~
+Huge dunes lay all around in the deep desert, and there is hardly any
+life to be seen anywhere. Beating down, the light of the sun is
+incredibly sweltering and hot. There's nothing here, the desert is dull
+and barren.
+~
+0 0 1
+D0
+~
+~
+0 -1 70037
+D1
+~
+~
+0 -1 70035
+D2
+~
+~
+0 -1 70029
+D3
+~
+~
+0 -1 70031
+D6
+~
+~
+0 -1 70038
+D7
+~
+~
+0 -1 70036
+D8
+~
+~
+0 -1 70032
+D9
+~
+~
+0 -1 70028
+S
+#70031
+In The Desert~
+This is part of a seemingly endless stretch of desert. It is smack dab
+in the middle of absolutely nowhere, and there's nothing to see but
+the sky, the sand, and mountains. The mountains are a nice sight, but
+they do get old after a while.
+~
+0 0 1
+D0
+~
+~
+0 -1 70036
+D1
+~
+~
+0 -1 70030
+D2
+~
+~
+0 -1 70028
+D3
+~
+~
+0 -1 70059
+D6
+~
+~
+0 -1 70037
+D7
+~
+~
+0 -1 70034
+D9
+~
+~
+0 -1 70058
+S
+#70032
+North of the rock~
+The huge rock just to the south casts an enormous shadow to the north,
+and it's a pleasant change from the immense heat of the sun beating down.
+Small chunks occasionally fall from the top of the rock, which lists
+slightly north.
+~
+0 0 1
+D0
+~
+~
+0 -1 70035
+D1
+~
+~
+0 -1 70033
+D3
+~
+~
+0 -1 70029
+D7
+~
+~
+0 -1 70030
+D8
+~
+~
+0 -1 70029
+S
+#70033
+Desert~
+The sandy ground is grainy and unstable. To the northwest, the desert
+stretches on for quite a way. Nothing relieves the barren monotony of
+the desert itself, though. Big shifting sand dunes are almost all that 
+marks terrain, except for a huge rock just to the southwest.
+~
+0 0 1
+D2
+~
+~
+0 -1 70008
+D3
+~
+~
+0 -1 70032
+D7
+~
+~
+0 -1 70035
+D8
+~
+~
+0 -1 70005
+S
+#70034
+Near A Mountain Range~
+The desert borders here on a high mountain range. It goes miles and miles
+straight north from here. Some of the mountain peaks are very tall,
+covered in ice year-round. The ice reflects the bright light of the sun
+constantly, making it difficult to even look in the general direction of
+the mountains without eye protection. There aren't many foothills or 
+smaller mountains between the desert and the really high peaks, they just
+stick straight out of the ground, which is pretty odd.
+~
+0 0 1
+D0
+~
+~
+0 -1 70054
+D1
+~
+~
+0 -1 70036
+D6
+~
+~
+0 -1 70055
+D8
+~
+~
+0 -1 70031
+S
+#70035
+Deep desert~
+Deep into the desert, there is little to help find one's way. There's a
+big rock to the south, but nothing else can be seen but desert. 
+To the far east and south there is a mountain range.
+~
+0 0 1
+D0
+~
+~
+0 -1 70038
+D2
+~
+~
+0 -1 70032
+D3
+~
+~
+0 -1 70030
+D7
+~
+~
+0 -1 70037
+D8
+~
+~
+0 -1 70033
+D9
+~
+~
+0 -1 70029
+S
+#70036
+Dry Flats~
+The center of a huge expanse of flat desert is not a very hospitable
+place, which is most likely to be the reason why there are very few people
+or other living things here.  It's almost totally empty, as if it were the
+surface of the moon or an uninhabited planet.  There are a few landmarks
+somewhat nearby, such as large rocks sticking out of the ground, and there
+is a large mountain range just west of here, but that's it.  
+~
+0 0 1
+D0
+~
+~
+0 -1 70055
+D1
+~
+~
+0 -1 70037
+D2
+~
+~
+0 -1 70031
+D3
+~
+~
+0 -1 70034
+D6
+~
+~
+0 -1 70056
+D7
+~
+~
+0 -1 70054
+D8
+~
+~
+0 -1 70030
+S
+#70037
+The Site of a Wreck~
+Right smack dab in the middle of this huge empty desert plain, somebody
+drove a car and wrecked it, somehow. There's a gutted carcass of what used
+to be an automobile. It appears there was an explosion, because little bits
+of warped shrapnel are scattered in a large radius around the wrecked car
+itself. The car was very nice, an expensive luxury convertible, but it's not
+worth anything anymore!
+~
+0 0 1
+D0
+~
+~
+0 -1 70056
+D1
+~
+~
+0 -1 70038
+D2
+~
+~
+0 -1 70030
+D3
+~
+~
+0 -1 70036
+D6
+~
+~
+0 -1 70057
+D7
+~
+~
+0 -1 70055
+D8
+~
+~
+0 -1 70035
+D9
+~
+~
+0 -1 70031
+S
+#70038
+Long Stretch of Desert~
+The ground here and bordering here to the east is a very wide, very flat
+desert plain. There is sand and yellowish dirt packed down solidly, making
+it a total wasteland, with no plants able to grow anywhere, and no variance
+in the terrain. It's just flat for miles.
+~
+0 0 1
+D0
+~
+~
+0 -1 70057
+D2
+~
+~
+0 -1 70035
+D3
+~
+~
+0 -1 70037
+D7
+~
+~
+0 -1 70056
+D9
+~
+~
+0 -1 70030
+S
+#70039
+Top of the huge rock.~
+This is the top of a really big rock hill. Just south is a very steep
+slope down to a shelf partway up the side. The view is nice from here,
+there are mountains west, desert north and south, and desert fading
+into a grassland-ish area to the east. Just southwest of here the top of
+the rock slopes up some more, and there looks like there's a little
+building there.
+~
+0 0 1
+D3
+~
+~
+0 -1 70040
+D5
+~
+~
+0 -1 70013
+S
+#70040
+Sloped area~
+This near the very top point of the huge rock in the desert. The ground
+slopes up to the southwest, and there's a little hut there, at the very
+top. On the top of the hut there's some sort of shiny rod pointing up
+to the sky.
+~
+0 0 1
+D1
+~
+~
+0 -1 70039
+D9
+~
+~
+0 -1 70041
+S
+#70041
+A small thatched brown hut~
+A very small hut is on the very top point of this giant rock hill. The hut
+is made of a dark brown wood and what looks like dried mud. There's a
+4 foot high doorway with an animal skin of some kind hanging over the 
+front of it. Scattered around the hut on the ground are several tiny
+bones, that look like they come from some tiny animal.
+There's a thick glass rod sticking out of the center of the top of the hut.
+It catches the light of the sun well, and shines brightly.
+~
+0 0 1
+D3
+~
+~
+0 -1 70085
+D6
+~
+~
+0 -1 70040
+S
+#70042
+Small Mountain Pass~
+This small pathway winds its way around small trees and big rocks. 
+There's a sheer rock face just to the north of the path, and it's
+covered in blobby rock formations. The ground is mostly hard-packed
+dirt, with many tiny piles of sand all around.
+~
+0 0 1
+D1
+~
+~
+0 -1 70022
+D9
+~
+~
+0 -1 70043
+S
+#70043
+Small Valley~
+This is the north end of a very small valley in the mountains. There's
+a little pathway winding its way around to the northeast, and off to the
+south is a group of several tents. Skinny trees and small cacti thrive
+in the little valley, and clumps of grass sprout out of little mounds of
+sand all around.
+~
+0 0 1
+D2
+~
+~
+0 -1 70044
+D6
+~
+~
+0 -1 70042
+S
+#70044
+Bandit Hideout~
+There's a big smoldering firepit in the center of a circle of tents. 
+Many logs are set out around the campfire as seats, and there are lots
+of food remnants lying around. Lots of footprints are everywhere, the
+ground is tramped down very much.
+~
+0 0 1
+D0
+~
+~
+0 -1 70043
+D1
+~
+~
+0 -1 70051
+D2
+~
+~
+0 -1 70045
+D3
+~
+~
+0 -1 70047
+D6
+~
+~
+0 -1 70050
+D7
+~
+~
+0 -1 70046
+D8
+~
+~
+0 -1 70052
+S
+#70045
+In Front of a Large Tent~
+There is a big tent to the south, and two smaller tents to the west and
+east. They are both, however, bigger than the tents in the large circle
+just to the north. The large tent is fancily decorated, with lots of
+animal pelts and other small flourishes. The flap is open.
+~
+0 0 1
+D0
+~
+~
+0 -1 70044
+D1
+~
+~
+0 -1 70053
+D2
+~
+~
+0 -1 70049
+D3
+~
+~
+0 -1 70048
+S
+#70046
+Striped Tent~
+The walls of this tent are painted a garish combination of neon green
+and pale orange. The colors assault the sense of vision with a concerted
+attack. A very nice looking bed with silk sheets and several thick
+blankets lies against the left wall of the tent.
+~
+0 8 0
+D8
+~
+~
+0 -1 70044
+> death_prog 100~
+if number($n) == 70009
+   if rand(10)
+      mpoload 70006 $n
+   endif
+endif
+~
+|
+S
+#70047
+Round Tent~
+On the far side of this little tent is a short cot that looks quite
+uncomfortable. All around on the inside of the tent there are pictures
+of extremely attractive women taped up. The tent is mostly empty
+otherwise, with nothing else evident.
+~
+0 8 0
+D1
+~
+~
+0 -1 70044
+S
+#70048
+Armory~
+This tent has 3 large weapon racks against the sides of the tent. Each
+rack is filled with finely crafted steel swords. On a small table in the
+middle of the tent are a few semi-automatic pistols, and there's an ammo
+crate under the table. All of this weaponry is well cared for and in
+excellent condition.
+~
+0 8 0
+D1
+~
+~
+0 -1 70045
+S
+#70049
+Chief's Tent~
+This is clearly the tent of the chief of the bandits. It is very large,
+with many supporting poles spaced evenly around. There are a few stone
+statues at the edges of the tent, and there is a large comfortable 
+looking bed at the back. The entry flap is propped open with a stick.
+~
+0 12 0
+D0
+~
+~
+0 -1 70045
+S
+#70050
+Round Tent~
+This is a round, wide tent that is quite new and in excellent condition.
+It's made of some space-age plastic and is colored brownish green. The
+inside is totally organized and neat, everything put in its exact proper
+place. The plastic floor of the tent has been swept clean of the tent and
+appears to have been washed with soap within the last 24 hours.
+~
+0 8 0
+D9
+~
+~
+0 -1 70044
+S
+#70051
+Old Tent~
+This tent is very old, very ratty, and very leaky. There is an actual
+puddle of mud and water right in the middle of the floor. The roof of
+the tent is sagging in at the middle, and there are several holes. The
+sides of the tent are torn up and stained. This tent has seen mush use.
+~
+0 8 0
+D3
+~
+~
+0 -1 70044
+S
+#70052
+Small Tent~
+This tent is small, brown, and mostly empty.  A bandit's uncomfortable
+looking cot is set up, and there are some clothes and mechanic's tools
+scattered around, tools like wrenches, hammers, vice grips, and
+screwdrivers. None of it looks particularly valuable. 
+~
+0 8 0
+D7
+~
+~
+0 -1 70044
+S
+#70053
+Bandit Kitchen~
+The food for the bandit camp to eat is obviously prepared in this tent.
+There are several grills and small stoves in the tent, and many crates
+full of food are stacked in the corner. The tent is long and skinny, and
+rectangular.
+~
+0 8 0
+D3
+~
+~
+0 -1 70045
+S
+#70054
+Thin Desert~
+The edge of the desert is very near to the north, this spot still has
+some plants growing all around, like sagebrush and some cacti. To the 
+south in the deeper desert, there's almost no life such as this visible.
+To the north is a light green plain with many rocky formations sticking
+out of the ground all around. It's very rough country.
+~
+0 0 1
+D1
+~
+~
+0 -1 70055
+D2
+~
+~
+0 -1 70034
+D6
+~
+~
+0 -1 70065
+D8
+~
+~
+0 -1 70036
+S
+#70055
+Strange Rock Spires~
+Here, in the center of a particularly featureless area of desert, a
+totally flat plain without sand dunes and with solid ground, there is
+an odd rock formation. About 20 tall rock spires are clustered together
+in a group, like a grove of trees. The spires are jet black and jagged.
+They twist around in strange contorted shapes and narrow to tiny points
+at the tips. There is no clue whatsoever as to how they ended up here in
+the desert or how they were formed.
+~
+0 0 1
+D0
+~
+~
+0 -1 70065
+D1
+~
+~
+0 -1 70056
+D2
+~
+~
+0 -1 70036
+D3
+~
+~
+0 -1 70054
+D6
+~
+~
+0 -1 70066
+D8
+~
+~
+0 -1 70037
+D9
+~
+~
+0 -1 70034
+S
+#70056
+Ancient Building~
+There used to be a large building here, sometime in the past. It's been
+abandoned to the desert long ago. The roof and most of two walls have
+fallen in or been knocked down. Sand fills everything and piles up
+against the exterior walls in huge piles. Most of what was the building
+is currently under the sand, but it shifts around a lot. It might have been
+a store, or some sort of commercial establishment, because there aren't
+any things that would be indicative of it being a house. There are no beds
+or dressers, but there are rotting file cabinets and a few desks. Anything
+of value from the ruin has long been looted.
+~
+0 0 1
+D0
+~
+~
+0 -1 70066
+D1
+~
+~
+0 -1 70057
+D2
+~
+~
+0 -1 70037
+D3
+~
+~
+0 -1 70055
+D7
+~
+~
+0 -1 70065
+D8
+~
+~
+0 -1 70038
+D9
+~
+~
+0 -1 70036
+S
+#70057
+Flat Desert Plains~
+The ground is just flat and dry here, caked and cracked in places and
+totally barren. This part of the desert is without dunes, without hilly
+spots, or mountains, or even rocks. The flatness and emptiness seems to
+stretch into eternity, while the air wavers with intense heat. It is
+a very unforgiving place.
+~
+0 0 1
+D2
+~
+~
+0 -1 70038
+D3
+~
+~
+0 -1 70056
+D7
+~
+~
+0 -1 70066
+D9
+~
+~
+0 -1 70037
+S
+#70058
+Mirage to the west?~
+To the west is a bright shiny patch of what appears to be water! It could
+be a mirage, however, or a heat-induced hallucination. The desert is very
+hot and it often bakes people's brains. It could also be a desert mirage
+caused by light being bent, but it does look like there are trees, as well!
+It must be a real oasis! Unless it's hallucinatory...
+~
+0 0 1
+D0
+~
+~
+0 -1 70059
+D1
+~
+~
+0 -1 70028
+D3
+~
+~
+0 -1 70061
+D6
+~
+~
+0 -1 70031
+D7
+~
+~
+0 -1 70060
+D8
+~
+~
+0 -1 70027
+S
+#70059
+Mirage to the west?~
+To the west is a bright shiny patch of what appears to be water! It could 
+be a mirage, however, or a heat-induced hallucination. The desert is very 
+hot and it often bakes people's brains. It could also be a desert mirage 
+caused by light being bent, but it does look like there are trees, as well!
+It must be a real oasis! Unless it's hallucinatory...
+~
+0 0 1
+D1
+~
+~
+0 -1 70031
+D2
+~
+~
+0 -1 70058
+D3
+~
+~
+0 -1 70060
+D8
+~
+~
+0 -1 70028
+D9
+~
+~
+0 -1 70061
+S
+#70060
+Near An Oasis~
+Just to the southwest is an a picture perfect image of the typical
+'desert oasis'. There is a large blue pond of clear, fresh water, 
+surrounded by palm trees and lush green fronds. The oasis is surrounded by
+flat yellow desert on all sides. The only thing different than the desert
+in all directions is a mountain range to the west. Nothing else breaks
+the monotony of the desert.
+~
+0 0 1
+D1
+~
+~
+0 -1 70059
+D2
+~
+~
+0 -1 70061
+D3
+~
+~
+0 -1 70064
+D8
+~
+~
+0 -1 70058
+D9
+~
+~
+0 -1 70063
+S
+#70061
+Water!~
+The waters of the beautiful desert oasis gently lap at the shore with the
+gentle wind. The water is a deep blue color reflected from the sky, and 
+it's very clear. Bright green, healthy plants vie for space at the edge
+of the oasis and for the water. A few frogs and fish can be seen through
+the crystal clear water eating insects and swimming around. It is very
+peaceful. The oasis is just to the west, and it's quite large.
+~
+0 0 1
+D0
+~
+~
+0 -1 70060
+D1
+~
+~
+0 -1 70058
+D3
+~
+~
+64 -1 70063
+D6
+~
+~
+0 -1 70059
+D7
+~
+~
+0 -1 70064
+D9
+~
+~
+0 -1 70062
+S
+#70062
+Lots of plants~
+Dozens of palm trees and other lush plant life thrive next to the
+watery oasis. Tall grass sways in the wind and little animals eat bits
+of plants. The shade of the trees provides a welcome respite from the
+hot sun, as well.
+~
+0 0 1
+D0
+~
+~
+64 -1 70063
+D6
+~
+~
+0 -1 70061
+S
+#70063
+Floating Above Oasis~
+Wind blows hard in the air above the oasis, and the water reflects the
+deep blue of the sky. There are lots of water grasses and various plants
+growing in and around the water. A few small fish can be barely seen 
+swimming around in the shallows, and one occasionally leaps out to eat
+an insect or other bit of food. The center of the oasis is a deep dark blue,
+and it goes down deeper than is visible.
+~
+0 0 1
+D0
+~
+~
+0 -1 70064
+D1
+~
+~
+0 -1 70061
+D2
+~
+~
+0 -1 70062
+D5
+~
+~
+0 -1 70083
+D6
+~
+~
+0 -1 70060
+S
+#70064
+Near Oasis~
+There's a whole lot of plant life here! (compared to the rest of the
+desert) Several palm trees are growing out of the bank of an oasis just
+to the south. There are also many small bushes and other bits of
+foliage that are lush and green. The wide and empty desert stretches flat
+and featureless for miles upon miles to the north and west.
+~
+0 0 1
+D1
+~
+~
+0 -1 70060
+D2
+~
+~
+64 -1 70063
+D8
+~
+~
+0 -1 70061
+S
+#70065
+Northern Part of Desert~
+The desert goes off far to the south and southwest, and it ends over to
+the north. It slowly turns into a rocky grassland, there. There are some
+short dunes in this part of the desert, but they are not very tall or 
+very steep. Very little life is present here, everything is baked by the
+sun and dry.
+~
+0 0 1
+D0
+~
+~
+0 -1 70067
+D1
+~
+~
+0 -1 70066
+D2
+~
+~
+0 -1 70055
+D8
+~
+~
+0 -1 70056
+D9
+~
+~
+0 -1 70054
+S
+#70066
+Northern Part of Desert~
+The desert goes off far to the south and southwest, and it ends over to
+the north. It slowly turns into a rocky grassland, there. There are some
+short dunes in this part of the desert, but they are not very tall or
+very steep. Very little life is present here, everything is baked by the
+sun and dry.
+~
+0 0 1
+D2
+~
+~
+0 -1 70056
+D3
+~
+~
+0 -1 70065
+D7
+~
+~
+0 -1 70067
+D8
+~
+~
+0 -1 70057
+D9
+~
+~
+0 -1 70055
+S
+#70067
+North Edge Of Desert~
+This is approximately the rough boundary line between a desert to the south
+and a rocky grassland to the north. There are enormous mesas and other
+weirdly shaped rock formations dotting the landscape off to the north.
+To the south, the desert stretches far, and there's not much to see but
+yellow sand and a few dunes.
+~
+0 0 1
+D2
+~
+~
+0 -1 70065
+D8
+~
+~
+0 -1 70066
+S
+#70068
+On a Flat Rock Shelf~
+At this point there is a wide, flat rock shelf that is about 10 feet off
+the ground. It slopes up gently at one edge, and is partially covered
+with sand. The mass of the gigantic boulder is just north of here. On top
+of it, there's a little flashing light that is visible down here, but
+it's not clear what it is.
+~
+0 0 1
+D1
+~
+~
+0 -1 70012
+D2
+~
+~
+0 -1 70017
+D3
+~
+~
+0 -1 70024
+D8
+~
+~
+0 -1 70011
+D9
+~
+~
+0 -1 70016
+S
+#70069
+Strange Rock~
+On the ground there is a strange rock. It is a semispherical dome and
+very smooth. The surface is brownish-black and incredibly shiny. There's
+nothing around the rock or anywhere else in sight to indicate what it
+is or how it got here.
+~
+0 0 1
+D0
+~
+~
+0 -1 70016
+D1
+~
+~
+0 -1 70015
+D2
+~
+~
+0 -1 70071
+D3
+~
+~
+0 -1 70070
+D6
+~
+~
+0 -1 70017
+D7
+~
+~
+0 -1 70021
+D8
+~
+~
+0 -1 70073
+D9
+~
+~
+0 -1 70072
+S
+#70070
+In the Middle of the Desert~
+Inside the middle of the desert where there is neither shade nor shelter
+from the sun and the ground is exposed al through the day to the bright
+sunlight, it is almost impossibly hot.  This must be the location of some
+of the hottest temperatures in the world!  The air around you seems to
+sizzle and hiss with the intense temperature.  It's HOT!  
+~
+0 0 1
+D0
+~
+~
+0 -1 70021
+D1
+~
+~
+0 -1 70069
+D2
+~
+~
+0 -1 70072
+D3
+~
+~
+0 -1 70074
+D6
+~
+~
+0 -1 70016
+D8
+~
+~
+0 -1 70071
+S
+#70071
+In The Deep Desert~
+This stretch of desert is much the same as any other. There are dunes
+all around and the hot sun beats down nearly constantly. There happen to
+be some strange discolorations in the sand right here, but they don't
+look like they mean anything. Desert surrounds this area, and the
+mountain range to the west is easily visible.
+~
+0 0 1
+D0
+~
+~
+0 -1 70069
+D1
+~
+~
+0 -1 70073
+D2
+~
+~
+0 -1 70076
+D3
+~
+~
+0 -1 70072
+D6
+~
+~
+0 -1 70015
+D7
+~
+~
+0 -1 70070
+D8
+~
+~
+0 -1 70077
+D9
+~
+~
+0 -1 70075
+S
+#70072
+Near Mountains~
+Rising up out of the desert is a large mountain range. The peaks are
+jagged and tall, stretching into the sky. The mountains extend far to
+the north and south, and they are just as irregular and spiky for the
+whole length. The desert goes quite a way to the east, and there is 
+little to be seen but dunes.
+~
+0 0 1
+D0
+~
+~
+0 -1 70070
+D1
+~
+~
+0 -1 70071
+D2
+~
+~
+0 -1 70075
+D6
+~
+~
+0 -1 70069
+D7
+~
+~
+0 -1 70074
+D8
+~
+~
+0 -1 70076
+S
+#70073
+Within The Desert~
+This is the deep interior of the desert. There is nothing in this
+barren wasteland but endless sand dunes and an occasional small rock.
+The tedium of the empty surroundings is mind-blowing, and the heat is
+incredibly intense.
+~
+0 0 1
+D0
+~
+~
+0 -1 70015
+D1
+~
+~
+0 -1 70079
+D2
+~
+~
+0 -1 70077
+D3
+~
+~
+0 -1 70071
+D6
+~
+~
+0 -1 70078
+D7
+~
+~
+0 -1 70069
+D8
+~
+~
+0 -1 70080
+D9
+~
+~
+0 -1 70076
+S
+#70074
+Curve in Mountain Range~
+A mountain range curves around this spot to the north and to the south.
+Wind from the desert has piled up tons of sand into a huge sloping pile
+that goes up into the mountain range. At the top of this hill of sand,
+there are many large pieces of rock lying scattered around, and little
+else, as the pile does not reach to the top of the mountain face. The 
+view to the east is very nice, the desert stretches out far, and a city
+is visible past it.
+~
+0 0 1
+D1
+~
+~
+0 -1 70070
+D6
+~
+~
+0 -1 70021
+D8
+~
+~
+0 -1 70072
+> entry_prog 100~
+if wasinroom($n) == 70086
+mea $n You push the boulder face open and emerge into the desert.
+mer $n $n walks out of a large boulder sitting right next to the mountain wall!
+endif
+~
+|
+S
+#70075
+Foothills~
+The many sand dunes of the desert slowly change into more solid hilly
+terrain as you go west. These are the foothills of the big mountain
+range here, and the hills are covered in sand, but the solid dirt and
+rock beneath is easily felt. The desert spreads to the east.
+~
+0 0 1
+D0
+~
+~
+0 -1 70072
+D1
+~
+~
+0 -1 70076
+D6
+~
+~
+0 -1 70071
+D8
+~
+~
+0 -1 70081
+> entry_prog 100~
+if wasinroom($n) == 70115
+mea $n &GYou step through the portal, and find yourself hurtling through the air
+mea $n &Gat high speed! You hit the sand with a *THUD*, unharmed, and get up.
+mer $n $n is apparently launched out of the mountainside! How odd...
+endif
+~
+|
+S
+#70076
+Flat Desert~
+There's a patch of desert ground that goes almost perfectly flat, with
+no little hills or holes in the ground. It's perfectly smooth, and there
+are a few patches of glass where the sand had been melted by some 
+intense heat or energy.
+~
+0 0 1
+D0
+~
+~
+0 -1 70071
+D1
+~
+~
+0 -1 70077
+D2
+~
+~
+0 -1 70081
+D3
+~
+~
+0 -1 70075
+D6
+~
+~
+0 -1 70073
+D7
+~
+~
+0 -1 70072
+D8
+~
+~
+0 -1 70082
+S
+#70077
+Wide, Shallow Sandpit~
+A very wide pit is dug down about 10 feet into the ground. It is very
+shallowly sloped, and there are dunes all around it. In the middle of
+the pit there are scattered bones and shredded clothing. Dried blood
+is spattered all around. There's a single wagon in the depression
+near the bones, filled with rotted food.
+~
+0 0 1
+D0
+~
+~
+0 -1 70073
+D1
+~
+~
+0 -1 70080
+D2
+~
+~
+0 -1 70082
+D3
+~
+~
+0 -1 70076
+D6
+~
+~
+0 -1 70079
+D7
+~
+~
+0 -1 70071
+D9
+~
+~
+0 -1 70081
+S
+#70078
+Desert~
+This is the crest of a huge sand dune. At the very top there is a
+huge skeleton of a carnivorous dinosaur. The bones are bleached bright
+white from the constant sun, and all the sharp edges have been worn
+down by the constant erosion of the sand. The dune slopes sharply down
+to the west at a very steep angle.
+~
+0 0 1
+D0
+~
+~
+0 -1 70011
+D2
+~
+~
+0 -1 70079
+D3
+~
+~
+0 -1 70015
+D7
+~
+~
+0 -1 70017
+D9
+~
+~
+0 -1 70073
+S
+#70079
+Desert~
+The desert expanse stretches off to the west, and the sand slowly gives
+way to hard packed dirt to the east.  The heat of the desert sun causes
+rippling, blurring effects in the air over the sand in the distance. In
+this area of the desert, there are many tiny razor-sharp rock slivers mixed
+in with the sand. 
+~
+0 0 1
+D0
+~
+~
+0 -1 70078
+D2
+~
+~
+0 -1 70080
+D3
+~
+~
+0 -1 70073
+D7
+~
+~
+0 -1 70015
+D9
+~
+~
+0 -1 70077
+S
+#70080
+Edge Of Desert~
+There's a cliff edge to the south and beyond is a plain. To the north
+is still the wide and dry desert. There are many dunes in this area, and
+they are all tall, broad, and shallowly sloped. An immense volume of sand
+is in these dunes, and it is moved around constantly by the wind. 
+~
+0 0 1
+D0
+~
+~
+0 -1 70079
+D3
+~
+~
+0 -1 70077
+D7
+~
+~
+0 -1 70073
+D9
+~
+~
+0 -1 70082
+S
+#70081
+Small Cliff ~
+Just south there is a cliff edge affording a nice view of a wide plain.
+It becomes less like a desert and more like a grassland as one goes
+south. Just to the northwest is a tall mountain range that goes north.
+All else to the north, as well as this location, is sandy desert, with 
+many dunes.
+~
+0 0 1
+D0
+~
+~
+0 -1 70076
+D1
+~
+~
+0 -1 70082
+D6
+~
+~
+0 -1 70077
+D7
+~
+~
+0 -1 70075
+S
+#70082
+Small Cliff Edge~
+There's a 30 foot cliff edge running east-west here, and beyond it is a
+wide plain, mostly desert-ish nearer to the cliff, and grassland farther
+out. To the north is a large desert that goes farther than can be seen,
+and there's a mountain range running north from here on the west side.
+The mountains peter out into small foothills past the cliff.
+~
+0 0 1
+D0
+~
+~
+0 -1 70077
+D3
+~
+~
+0 -1 70081
+D6
+~
+~
+0 -1 70080
+D7
+~
+~
+0 -1 70076
+S
+#70083
+Underwater in the Oasis~
+The water is bright blue and very transparent. There are lots of small
+reeds and grasses growing out of the bank at the shallow edges of the
+oasis, but there are not any plants growing out of the very bottom near
+the middle, where the ground slopes down very sharply into a deep pit.
+There's a large rusted metal door in the side of the wide pit at the
+bottom.
+~
+0 4 8
+D1
+~
+~
+0 -1 70061
+D3
+~
+~
+70007 70001 70084
+D4
+~
+~
+64 -1 70063
+S
+#70084
+Inside A Huge Metal Safe~
+Someone decided a long time ago to put a huge steel safe at the bottom
+of this desert oasis. The safe is huge and made of steel that is not
+stainless, for it's incredibly rusted. Almost the entire surface area, in
+and out, is covered with a thick layer of rust.
+~
+0 2099204 0
+D4
+~
+~
+0 -1 70083
+> entry_prog 100~
+mpat 70083 close w
+mpat 70083 mpforce 'door locker' lock w
+~
+|
+S
+#70085
+Inside a small hut~
+The inside of this hut is cluttered and messy. A tiny bed in the corner
+is covered with little various bits of junk, stuff in bags, twisted
+chunks of metal, and various pointy things. Most surfaces in the hut are
+covered in dust, and it doesn't look like anyone has lived here for quite
+some time.
+~
+0 2097164 0
+D1
+~
+~
+0 -1 70041
+S
+#70086
+Underground Passage~
+This is a small cramped corridor.  There's a false wall on the east that
+is an entrance from the desert.  The corridor is made of light beige
+colored stone, and is lit diffusely by no clear source.  There just seems
+to be a yellowish light emanating dimly from the air.  There's a small
+amount of sand on the floor, and the ceiling and walls are very smooth with
+rounded corners.  The floor has a shallow dip in the center, as if worn
+away by lots of traffic.  This whole place gives off a feeling of being
+very, very old. 
+~
+0 8 0
+D1
+~
+~
+0 -1 70074
+D7
+~
+~
+0 -1 70087
+D9
+~
+~
+0 -1 70088
+S
+#70087
+Curve In Corridor~
+The corridor gradually bends in a very wide circular turn. The 
+mysterious light emanating from the air is less strong to the west, and
+stronger to the southeast. Any variation in the smooth walls is sparse,
+there are only a few little spots or random discolorations on the walls.
+The color is almost totally unvarying. 
+~
+0 8 0
+D3
+~
+~
+0 -1 70091
+D8
+~
+~
+0 -1 70086
+S
+#70088
+Fork In Corridor~
+The small corridor splits here into two other ways to go. Each passage
+is equally small and dim. There's nothing to distinguish any of the
+passages from each other at this point. The air is stuffy and smells
+old. Dust covers every surface in the corridors with a thick coat of
+gray powder. 
+~
+0 8 0
+D2
+~
+~
+0 -1 70090
+D3
+~
+~
+0 -1 70089
+D6
+~
+~
+0 -1 70086
+S
+#70089
+Tall Room~
+Right here the ceiling shoots up about 15 feet into an approximately
+square room. On the north wall, there are lots of large sweeping curves
+and loops carved into the stone. The air in that direction seems to 
+faintly hum with power. Parts of the floor are cracked and damaged in
+that vicinity.
+~
+0 8 0
+D1
+~
+~
+0 -1 70088
+D9
+~
+~
+0 -1 70096
+> time_prog 1~
+if mobinroom(70030) == 0
+   if rand(35)
+   mpe The runes and inscriptions on the wall start to glow with intense light
+   mpe as boulders and small chunks of rock start to extrude from the wall!
+   mpe The rock that seems to magically appear (the wall behind it is unchanged)
+   mpe merges together into a huge human shaped rock golem!
+   mpmload 70030
+   endif
+endif
+~
+|
+S
+#70090
+Hazy Corridor~
+The air is filled with a strange smoke, or haze. It disappears outside of
+a radius of about 4 feet from the intersection. It looks like there's a
+tiny hole at the top of a wall that's shooting out a powder. The stench
+is massive, and it's difficult to breathe. This gritty smoke is rough, and
+it burns while breathing.
+~
+0 8 0
+D0
+~
+~
+0 -1 70088
+D8
+~
+~
+0 -1 70094
+D9
+~
+~
+0 -1 70095
+> entry_prog 50~
+mea $n &rThe dusty smoke in the air gets in your lungs; you cough and choke!&d
+mer $n &n coughs and chokes on the nasty air here!
+mpdamage $n 10
+~
+|
+S
+#70091
+Split Corridor~
+The cramped little corridor splits at this point, the junction corners
+are very smooth and rounded. There doesn't appear to be anything 
+of note here, it's just like everywhere else. All these little corridors
+seem the same no matter where they are, they're all tiny and cramped, made
+of the same beige stone and with the same mysterious glowing air.
+~
+0 8 0
+D1
+~
+~
+0 -1 70087
+D3
+~
+~
+0 -1 70092
+D9
+~
+~
+0 -1 70093
+S
+#70092
+Mural Room~
+The corridor fans out into a semicircular room with a very large mural
+on the curved wall. It is carved into the wall and also made from 
+different colored stones that are inlaid in the wall.
+The mural depicts a very large group of people involved in a construction
+project in the side of a mountain. Most of them look human, but some have
+very strange features and arrangements of body parts. They are digging
+an underground structure. It shows them finishing it, and then leaving.
+A few stay behind and possibly stay for an extended period of time. It's
+hard to tell. Sometime later, someone of importance comes to the place. 
+He/she/it is larger-than-life and has an aura around them. Three people
+each give this person a strangely shaped small object, and then the person
+has a red circle hovering above him. The person crushes the red circle
+between their hands. A green circle is then hovering in front of him. The
+person flies away through the sky holding the green circle. That is the end
+of the mural.
+~
+0 8 0
+D1
+~
+~
+0 -1 70091
+S
+#70093
+Straight Corridor~
+The corridor runs straight for a long way here. There are a few deep
+red splotches that might be bloodstains on the floor and walls near the
+middle of the corridor. The dust on the floor is nearly undisturbed,
+and very few feet have stepped here for a long, long time.
+~
+0 8 0
+D6
+~
+~
+0 -1 70091
+D9
+~
+~
+0 -1 70097
+S
+#70094
+Turning Corridor~
+This tiny cramped corridor is just like all the others in this place.
+It very gradually bends, and doesn't have any sharp corners or edges
+where the walls meet the ceiling. There is a vague glow suffusing the
+air in this area, like in many other parts of this strange place.
+~
+0 8 0
+D1
+~
+~
+0 -1 70114
+D7
+~
+~
+0 -1 70090
+S
+#70095
+Y-Junction~
+Three corridors of equal size meet at a Y-junction here. The illumination
+from the air is steady and solid in all directions, and the corridors
+are indistinguishable from one another. The corners are rounded like all
+the other corners in the structure. Nothing special seems to be here,
+but there's no way to be sure.
+~
+0 8 0
+D2
+~
+~
+0 -1 70100
+D6
+~
+~
+0 -1 70090
+D7
+~
+~
+0 -1 70096
+S
+#70096
+Cross Junction~
+Two small cramped corridors intersect here. The diffuse glow of the air
+in this place is the same in all four directions. The air is stifling
+in here, and the walls are unadorned and plain. The stone is a yellowish
+tan color, with a few off color parts, but very few. The construction was
+very, very well done; all the walls are perfectly smooth and this place is
+obviously very old. It has stood up to time. 
+~
+0 8 0
+D2
+~
+~
+0 -1 70099
+D6
+~
+~
+0 -1 70089
+D7
+~
+~
+0 -1 70097
+D8
+~
+~
+0 -1 70095
+S
+#70097
+Sharp Turn And A Door~
+The corridor makes a pretty sharp turn, but the corners are still very
+rounded and smooth, just like all the other corners in here. Right at the
+spot where the turn is, there is a doorway on the west wall. The strange
+luminescence that is present in the air is absent through the doorway, it
+extends into gloomy black darkness.
+~
+0 8 0
+D3
+~
+~
+0 -1 70098
+D6
+~
+~
+0 -1 70093
+D8
+~
+~
+0 -1 70096
+S
+#70098
+Leaky Room~
+The ceiling has been damaged in this small room, and some source of
+water has been dripping in for what must have been a long time. The
+steady source of minerals has caused a fairly large stalactite, and there
+are crystalline formations all over the room, almost every surface
+sparkles and shines with refracted light. The crystal breaks up the light
+into rainbow streaks, like a prism.
+~
+0 8 0
+D1
+~
+~
+0 -1 70097
+S
+#70099
+Ninety Degree Turn~
+The corridor turns at a sharp 90 degrees, but the actual corner is still
+rounded out and there is not actually a "corner". It just curves smoothly.
+The other corridor that splits off in between, at 45 degrees, is slightly
+wider and taller than the other corridors, and a light source shines
+brightly from within it, illuminating the area out here very brightly.
+~
+0 8 0
+D0
+~
+~
+0 -1 70096
+D3
+~
+~
+0 -1 70102
+D7
+~
+~
+0 -1 70103
+S
+#70100
+T-Junction~
+Two corridors intersect at a right angle here. The walls and floor are
+marked up at this point, there are little nicks and chunks knocked out
+of the stone, something not present in the other corridors. Most of the
+walls are very smooth, but here it is very rough. There is also some dirt
+strewn around on the floor as well as small rocks. There's really no clue
+as to how the dirt got here, but the rocks were probably formerly part
+of the wall.
+~
+0 8 0
+D0
+~
+~
+0 -1 70095
+D2
+~
+~
+0 -1 70104
+D3
+~
+~
+0 -1 70101
+S
+#70101
+Straight Corridor~
+The corridor goes straight a long way, here. It has nothing special at
+all. That's right, nothing at all. No secrets or anything. There is not
+a secret passage, so just forget about it! Keep moving along! Just go.
+There is absolutely nothing to see here! Come on! Walk away. Slowly.
+~
+0 8 0
+D1
+~
+~
+0 -1 70100
+D3
+~
+~
+0 -1 70105
+S
+#70102
+S-curving Corridor~
+The corridor takes a wide, shallow S-curve here, also widening to the
+south and thinning to the north. On the walls of the S-curve there are
+some symbols and shapes carved, possibly for decoration or possibly for
+some purpose. They are very large and simple, like triangles and semi-
+circles. There are also a few pentagons and other polygons with many
+sides. This seems odd, as there is little to no decoration at all in the
+rest of this structure, so the shapes might actually mean something.
+~
+0 8 0
+D1
+~
+~
+0 -1 70099
+D2
+~
+~
+0 -1 70105
+S
+#70103
+Reflective Walls~
+All the walls, the ceiling, and the floor in this room are mirrored! The
+mirrors are covered with dust, but the light emanating from the air still
+bounces around countless times, reflecting repeatedly, making the light
+level in this room exceedingly high. It hurts the eyes to look anywhere!
+Thousands of mirror images of anyone in the room face in all directions,
+from all angles, and it is very disorienting. It's not quite easy to tell
+how large the room actually is, but it's pretty small.
+~
+0 8 0
+D8
+~
+~
+0 -1 70099
+S
+#70104
+A Ladder Down~
+The corridor ends abruptly, with an edge that drops off about 20 feet
+down. There are stone ladder rungs carved into the face of the drop-off,
+it would be a very easy climb down. The corridor does not widen out or
+anything like that, it stays the same thin width after the dropoff, and
+the ceiling does not fall. The floor and ceiling south of the ladder
+are separated by about 25 feet or more. The glowing air in this place does
+not continue down the ladder, it fades to black downward and outward.
+~
+0 0 0
+D0
+~
+~
+0 -1 70100
+D5
+~
+~
+0 -1 70118
+S
+#70105
+Triangular Junction~
+The corridors intersecting here form a giant triangle, with a thin 
+pillar in the very center. The corridors to the southwest and east are
+both the same as all the other corridors, while the one to the north is
+very wide. The pillar in the center is a different color of stone than 
+the walls and floor, it is a dark brown, almost black. It has circles
+carved around the edge at regular spaced intervals from the ceiling to
+the floor. Other than that, this room seems to be empty.
+~
+0 8 0
+D0
+~
+~
+0 -1 70102
+D1
+~
+~
+0 -1 70101
+D9
+~
+~
+0 -1 70106
+S
+#70106
+Dark Hole In The Floor~
+This cylindrical room looks to have its only contents a hole in the 
+ground. This hole is round, a few feet across, and pitch black. The
+room itself is more spacious and large than most other rooms and
+corridors in this underground complex. The hole is in the exact
+center of the room, and it's very close to a perfect circle, although 
+the edges are worn and smooth.
+~
+0 8 0
+D5
+~
+~
+0 -1 70107
+D6
+~
+~
+0 -1 70105
+S
+#70107
+Under A Hole~
+The hole in the ceiling falls about 15 feet to this room. The floor is
+strange, it has alternating patches of normal stone floor and patches
+of savage razor sharp spikes! The spikes are almost all stained a deep
+red from many injuries inflicted on people who have fallen through the
+hole in the roof.
+~
+0 12 0
+D0
+~
+~
+0 -1 70108
+D4
+~
+~
+64 -1 70106
+> entry_prog 100~
+if wasinroom($n) == 70106
+if isflying($n)
+mea $n &BYou slowly float down the hole to a lower level and land on the stone floor.
+else
+mea $n &rYou step over the hole and fall through it! It is deep, and you land hard.
+mpdamage $n 20
+if rand(35)
+mea $n &rUnfortunately for you, you happen to land on a patch of floor with spikes! &ROUCH!&d
+mpdamage $n 15
+endif
+endif
+~
+|
+S
+#70108
+Huge Circular Pillar~
+The short corridor leading from the spike room goes into this sort of
+massive chamber, or it could be thought of as a tall circular corridor.
+There is a huge perfectly smooth stone cylinder in the middle of the
+chamber reaching up to the ceiling. The room is almost circular, and has
+several little alcoves and nooks in the walls at irregular intervals. All
+the nooks are empty.
+~
+0 8 0
+D2
+~
+~
+0 -1 70107
+D6
+~
+~
+0 -1 70111
+D7
+~
+~
+0 -1 70109
+S
+#70109
+Split Off From Huge Room~
+A semi-corridor extends out of the huge pillar room to the west here, and
+it's not quite a corridor, it seems more like an extension of the room.
+Whatever it is called, it goes a short way and apparently ends. The path
+around the pillar also continues unobstructed.
+~
+0 8 0
+D3
+~
+~
+0 -1 70117
+D6
+~
+~
+0 -1 70110
+D8
+~
+~
+0 -1 70108
+S
+#70110
+North Side Of Huge Pillar~
+This huge room branches off again, to the north. Some very bright green
+light is being cast onto the large pillar in the outline of the north 
+doorway. Something through that door is giving off a whole lot of very
+bright green colored light. On the side of the pillar facing the door,
+there are three vertical lines carved from floor to ceiling, glowing
+bright red, blue, and yellow, respectively. The carved lines seem to pulse
+with strong power, and the glow casts off a lot of heat.
+~
+0 8 0
+D0
+~
+~
+0 -1 70115
+D8
+~
+~
+0 -1 70111
+D9
+~
+~
+0 -1 70109
+> entry_prog 100~
+if carryingvnum($n) 70030
+   if carryingvnum($n) 70031
+      if carryingvnum($n) 70032
+      mea $n &GAs you approch this intersection, you can feel the three runes
+       mea $n &Gin your possession begin to glow hot! Suddenly, there is a flash
+      mea $n &Gand you feel some force wrenching at the fabric of reality!
+      mea $n &GYou appear inside a small room.
+      mer $n &G$n approaches this intersection when they abruptly flash with a bright light!
+      mpopenpassage 70110 70112 5
+       mpforce $n down
+      mpclosepassage 70110 5
+      endif
+   endif
+endif
+~
+|
+S
+#70111
+Split Off From Huge Room~
+A semi-corridor extends out of the huge pillar room to the east here, and
+it's not quite a corridor, it seems more like an extension of the room
+Whatever it is called, it goes a short way and apparently ends. The path
+around the pillar also continues unobstructed.
+~
+0 8 0
+D1
+~
+~
+0 -1 70116
+D7
+~
+~
+0 -1 70110
+D9
+~
+~
+0 -1 70108
+S
+#70112
+A Very Tiny Room~
+The power of the three runes has transported you to this small room, if
+it can be called a room. The ceiling is only about 4 feet high, and the
+walls are very close together. In the exact center of the floor is a
+glowing pedestal that seems to radiate power. Resting on the top of the
+pedestal in a carved round hole is a bright red orb. The air around it
+wavers and shimmers, as if it is warping reality.
+~
+0 2098180 1
+D0
+~
+~
+0 -1 70110
+> entry_prog 100~
+mpoload 70033 'dropper mob'
+mpmset 'dropper mob' affected invis
+mpforce 'dropper mob' drop ruby
+mpmset 'dropper mob' affected invisible
+~
+|
+S
+#70113
+Floating in a void~
+~
+0 4 1
+S
+#70114
+A once lived-in room~
+This little cozy room looks like it might be someone's home, but it's
+in a state of extreme disrepair. There is a comfy chair with almost all
+of the stuffing it once had fallen out or eaten by insects. Various
+little things like coffee mugs and pencils are scattered around on some
+little tables and small bookshelves. Everything is totally covered
+with a thick, thick layer of dust. The room only had one apparent exit, 
+to the west.
+~
+0 8 0
+D3
+~
+~
+0 -1 70094
+> time_prog 8~
+if mobinroom(70031) == 0
+   if rand(35)
+      mpe Suddenly, a cloud of mist begins to coalesce in the center of the room,
+      mpe and a man in dark gray robes steps out of it. He looks around the room,
+      mpe and then sighs gently as the misty vapor disappears.
+      mpmload 70031
+   endif
+endif
+~
+|
+S
+#70115
+Portal Room~
+The cramped corridor to the south leads into this huge room. It has a
+vaulted ceiling with wide support beams running across the top of the
+room. The center of the north wall has a huge glowing sphere mounted about
+7 feet up from the ground. The sphere casts bright white light into the
+room, but the corners of the room are shrouded in pitch-black shadow
+nonetheless. There's a mystifying green portal just under the glowing
+sphere. It's bright green and it swirls very fast around the center.
+~
+0 12 0
+D2
+~
+~
+0 -1 70110
+D10
+~
+portal~
+131072 -1 70075
+S
+#70116
+Stone Cubes~
+This wide, shallow room has tall stone cubes sitting everywhere! Some are
+sitting flat, some are leaning against the wall or against other cubes,
+and many are taller than they are wide, which technically makes them
+rectangular prisms. The shadows cast by these cubes are very interesting,
+as for some reason the light in this room does not emanate from the air
+evenly, it shifts and changes in patches. This causes the shadows of the
+cube, and anyone in the room, to constantly shift in bizarre patterns.
+~
+0 8 1
+D3
+~
+~
+0 -1 70111
+> death_prog 100~
+if number($n) == 70036
+   mpe &zThe shadow's corpse dissipates into the air...
+   mppurge 'living shadow'
+endif
+~
+|
+S
+#70117
+A Very Strange Machine~
+The medium sized room is dominated by a huge bank of ancient computers.
+There are little lights that long since stopped flashing and spools
+of magnetic tape that quit spinning a very long time ago. There are
+digital readouts that will never read out again, and buttons that have
+been smashed or worn out, levers that have been broken off, and keypads
+missing almost all of the keys. However, in one corner, there is a tiny
+section of the computer still running! It seems to consist of a red light
+that slowly flashes, a quiet speaker that beeps in time with the light,
+and possibly a lever just next to them.
+~
+0 8 1
+D1
+~
+~
+0 -1 70109
+S
+#70118
+Down The Ladder~
+This very tall and thin corridor is almost like a chasm, but it is finely
+built of the same beige stone as the rest of the structure. The corners
+and edges here are not as worn and rounded out as in the previous areas,
+perhaps this was an addition? The corridor stretches straight for quite
+a long way, and then comes to an end. There is a tall doorway, and it is
+bordered by a thick band of carvings on the stone. They are very deeply
+carved into the rock, and they rhythmically pulse with a very strong red
+light.
+~
+0 4 1
+D2
+~
+~
+0 -1 70119
+D4
+~
+~
+0 -1 70104
+> entry_prog 100~
+if wasinroom($n) != 70104
+   if wasinroom($n) != 70137
+      mpdamage $n 45
+      mea $n You went the wrong way! You feel a gut-wrenching twist, and find
+      mea $n yourself back at the pulsing red doorway, bleeding from a
+      mea $n massive chest wound!
+   endif
+endif
+~
+|
+S
+#70119
+A Dark Maze~
+You are inside a maze of some kind, and nothing is visible at all.
+There is very thick black smoke and fog swirling everywhere, but it
+is still breathable. Whenever you take any turn at all, you feel like
+you have been spun around and turned inside out! It's very 
+disorienting and confusing.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 70118
+D1
+~
+~
+0 -1 70118
+D2
+~
+~
+0 -1 70118
+D3
+~
+~
+0 -1 70118
+D6
+~
+~
+0 -1 70118
+D7
+~
+~
+0 -1 70118
+D8
+~
+~
+0 -1 70118
+D9
+~
+~
+0 -1 70120
+S
+#70120
+A Dark Maze~
+You are inside a maze of some kind, and nothing is visible at all.
+There is very thick black smoke and fog swirling everywhere, but it
+is still breathable. Whenever you take any turn at all, you feel like
+you have been spun around and turned inside out! It's very 
+disorienting and confusing.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 70118
+D1
+~
+~
+0 -1 70118
+D2
+~
+~
+0 -1 70118
+D3
+~
+~
+0 -1 70121
+D6
+~
+~
+0 -1 70118
+D7
+~
+~
+0 -1 70118
+D8
+~
+~
+0 -1 70118
+D9
+~
+~
+0 -1 70118
+S
+#70121
+A Dark Maze~
+You are inside a maze of some kind, and nothing is visible at all.
+There is very thick black smoke and fog swirling everywhere, but it
+is still breathable. Whenever you take any turn at all, you feel like
+you have been spun around and turned inside out! It's very 
+disorienting and confusing.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 70122
+D1
+~
+~
+0 -1 70118
+D2
+~
+~
+0 -1 70118
+D3
+~
+~
+0 -1 70118
+D6
+~
+~
+0 -1 70118
+D7
+~
+~
+0 -1 70118
+D8
+~
+~
+0 -1 70118
+D9
+~
+~
+0 -1 70118
+S
+#70122
+A Dark Maze~
+You are inside a maze of some kind, and nothing is visible at all.
+There is very thick black smoke and fog swirling everywhere, but it
+is still breathable. Whenever you take any turn at all, you feel like
+you have been spun around and turned inside out! It's very 
+disorienting and confusing.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 70118
+D1
+~
+~
+0 -1 70118
+D2
+~
+~
+0 -1 70118
+D3
+~
+~
+0 -1 70118
+D6
+~
+~
+0 -1 70123
+D7
+~
+~
+0 -1 70118
+D8
+~
+~
+0 -1 70118
+D9
+~
+~
+0 -1 70118
+S
+#70123
+A Dark Maze~
+You are inside a maze of some kind, and nothing is visible at all.
+There is very thick black smoke and fog swirling everywhere, but it
+is still breathable. Whenever you take any turn at all, you feel like
+you have been spun around and turned inside out! It's very 
+disorienting and confusing.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 70118
+D1
+~
+~
+0 -1 70118
+D2
+~
+~
+0 -1 70124
+D3
+~
+~
+0 -1 70118
+D6
+~
+~
+0 -1 70118
+D7
+~
+~
+0 -1 70118
+D8
+~
+~
+0 -1 70118
+D9
+~
+~
+0 -1 70118
+S
+#70124
+A Dark Maze~
+You are inside a maze of some kind, and nothing is visible at all.
+There is very thick black smoke and fog swirling everywhere, but it
+is still breathable. Whenever you take any turn at all, you feel like
+you have been spun around and turned inside out! It's very 
+disorienting and confusing.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 70118
+D1
+~
+~
+0 -1 70118
+D2
+~
+~
+0 -1 70125
+D3
+~
+~
+0 -1 70118
+D6
+~
+~
+0 -1 70118
+D7
+~
+~
+0 -1 70118
+D8
+~
+~
+0 -1 70118
+D9
+~
+~
+0 -1 70118
+S
+#70125
+A Dark Maze~
+You are inside a maze of some kind, and nothing is visible at all.
+There is very thick black smoke and fog swirling everywhere, but it
+is still breathable. Whenever you take any turn at all, you feel like
+you have been spun around and turned inside out! It's very 
+disorienting and confusing.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 70118
+D1
+~
+~
+0 -1 70118
+D2
+~
+~
+0 -1 70118
+D3
+~
+~
+0 -1 70118
+D6
+~
+~
+0 -1 70118
+D7
+~
+~
+0 -1 70126
+D8
+~
+~
+0 -1 70118
+D9
+~
+~
+0 -1 70118
+S
+#70126
+A Dark Maze~
+You are inside a maze of some kind, and nothing is visible at all.
+There is very thick black smoke and fog swirling everywhere, but it
+is still breathable. Whenever you take any turn at all, you feel like
+you have been spun around and turned inside out! It's very 
+disorienting and confusing.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 70118
+D1
+~
+~
+0 -1 70118
+D2
+~
+~
+0 -1 70118
+D3
+~
+~
+0 -1 70118
+D6
+~
+~
+0 -1 70118
+D7
+~
+~
+0 -1 70118
+D8
+~
+~
+0 -1 70127
+D9
+~
+~
+0 -1 70118
+S
+#70127
+A Dark Maze~
+You are inside a maze of some kind, and nothing is visible at all.
+There is very thick black smoke and fog swirling everywhere, but it
+is still breathable. Whenever you take any turn at all, you feel like
+you have been spun around and turned inside out! It's very 
+disorienting and confusing.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 70118
+D1
+~
+~
+0 -1 70118
+D2
+~
+~
+0 -1 70118
+D3
+~
+~
+0 -1 70118
+D6
+~
+~
+0 -1 70128
+D7
+~
+~
+0 -1 70118
+D8
+~
+~
+0 -1 70118
+D9
+~
+~
+0 -1 70118
+S
+#70128
+A Dark Maze~
+You are inside a maze of some kind, and nothing is visible at all.
+There is very thick black smoke and fog swirling everywhere, but it
+is still breathable. Whenever you take any turn at all, you feel like
+you have been spun around and turned inside out! It's very 
+disorienting and confusing.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 70129
+D1
+~
+~
+0 -1 70118
+D2
+~
+~
+0 -1 70118
+D3
+~
+~
+0 -1 70118
+D6
+~
+~
+0 -1 70118
+D7
+~
+~
+0 -1 70118
+D8
+~
+~
+0 -1 70118
+D9
+~
+~
+0 -1 70118
+S
+#70129
+A Dark Maze~
+You are inside a maze of some kind, and nothing is visible at all.
+There is very thick black smoke and fog swirling everywhere, but it
+is still breathable. Whenever you take any turn at all, you feel like
+you have been spun around and turned inside out! It's very 
+disorienting and confusing.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 70118
+D1
+~
+~
+0 -1 70130
+D2
+~
+~
+0 -1 70118
+D3
+~
+~
+0 -1 70118
+D6
+~
+~
+0 -1 70118
+D7
+~
+~
+0 -1 70118
+D8
+~
+~
+0 -1 70118
+D9
+~
+~
+0 -1 70118
+S
+#70130
+A Dark Maze~
+You are inside a maze of some kind, and nothing is visible at all.
+There is very thick black smoke and fog swirling everywhere, but it
+is still breathable. Whenever you take any turn at all, you feel like
+you have been spun around and turned inside out! It's very 
+disorienting and confusing.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 70118
+D1
+~
+~
+0 -1 70131
+D2
+~
+~
+0 -1 70118
+D3
+~
+~
+0 -1 70118
+D6
+~
+~
+0 -1 70118
+D7
+~
+~
+0 -1 70118
+D8
+~
+~
+0 -1 70118
+D9
+~
+~
+0 -1 70118
+S
+#70131
+A Dark Maze~
+You are inside a maze of some kind, and nothing is visible at all.
+There is very thick black smoke and fog swirling everywhere, but it
+is still breathable. Whenever you take any turn at all, you feel like
+you have been spun around and turned inside out! It's very 
+disorienting and confusing.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 70118
+D1
+~
+~
+0 -1 70118
+D2
+~
+~
+0 -1 70118
+D3
+~
+~
+0 -1 70118
+D6
+~
+~
+0 -1 70118
+D7
+~
+~
+0 -1 70118
+D8
+~
+~
+0 -1 70118
+D9
+~
+~
+0 -1 70132
+S
+#70132
+A Dark Maze~
+You are inside a maze of some kind, and nothing is visible at all.
+There is very thick black smoke and fog swirling everywhere, but it
+is still breathable. Whenever you take any turn at all, you feel like
+you have been spun around and turned inside out! It's very 
+disorienting and confusing.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 70118
+D1
+~
+~
+0 -1 70118
+D2
+~
+~
+0 -1 70118
+D3
+~
+~
+0 -1 70118
+D6
+~
+~
+0 -1 70133
+D7
+~
+~
+0 -1 70118
+D8
+~
+~
+0 -1 70118
+D9
+~
+~
+0 -1 70118
+S
+#70133
+A Dark Maze~
+You are inside a maze of some kind, and nothing is visible at all.
+There is very thick black smoke and fog swirling everywhere, but it
+is still breathable. Whenever you take any turn at all, you feel like
+you have been spun around and turned inside out! It's very 
+disorienting and confusing.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 70118
+D1
+~
+~
+0 -1 70118
+D2
+~
+~
+0 -1 70134
+D3
+~
+~
+0 -1 70118
+D6
+~
+~
+0 -1 70118
+D7
+~
+~
+0 -1 70118
+D8
+~
+~
+0 -1 70118
+D9
+~
+~
+0 -1 70118
+S
+#70134
+A Dark Maze~
+You are inside a maze of some kind, and nothing is visible at all.
+There is very thick black smoke and fog swirling everywhere, but it
+is still breathable. Whenever you take any turn at all, you feel like
+you have been spun around and turned inside out! It's very 
+disorienting and confusing.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 70118
+D1
+~
+~
+0 -1 70135
+D2
+~
+~
+0 -1 70118
+D3
+~
+~
+0 -1 70118
+D6
+~
+~
+0 -1 70118
+D7
+~
+~
+0 -1 70118
+D8
+~
+~
+0 -1 70118
+D9
+~
+~
+0 -1 70118
+S
+#70135
+A Dark Maze~
+You are inside a maze of some kind, and nothing is visible at all.
+There is very thick black smoke and fog swirling everywhere, but it
+is still breathable. Whenever you take any turn at all, you feel like
+you have been spun around and turned inside out! It's very 
+disorienting and confusing.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 70118
+D1
+~
+~
+0 -1 70118
+D2
+~
+~
+0 -1 70136
+D3
+~
+~
+0 -1 70118
+D6
+~
+~
+0 -1 70118
+D7
+~
+~
+0 -1 70118
+D8
+~
+~
+0 -1 70118
+D9
+~
+~
+0 -1 70118
+S
+#70136
+A Dark Maze~
+You are inside a maze of some kind, and nothing is visible at all.
+There is very thick black smoke and fog swirling everywhere, but it
+is still breathable. Whenever you take any turn at all, you feel like
+you have been spun around and turned inside out! It's very 
+disorienting and confusing.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 70118
+D1
+~
+~
+0 -1 70118
+D2
+~
+~
+0 -1 70118
+D3
+~
+~
+0 -1 70118
+D6
+~
+~
+0 -1 70118
+D7
+~
+~
+0 -1 70137
+D8
+~
+~
+0 -1 70118
+D9
+~
+~
+0 -1 70118
+S
+#70137
+The End Of The Maze!~
+Finally, the end of the maze! There is simply a small metal box on
+the floor, surrounded by light in otherwise total darkness. There is
+also a stone staircase on which to ascend upwards and leave.
+The box, strangely, does not look very old, it is steel and open-topped
+with no lid. A soft golden glow shines out of the box...
+~
+0 2097156 1
+D4
+~
+~
+0 -1 70118
+S
+#70138
+Floating in a void~
+~
+0 4 1
+S
+#70139
+Floating in a void~
+~
+0 4 1
+S
+#70140
+Floating in a void~
+~
+0 4 1
+S
+#70141
+Floating in a void~
+~
+0 4 1
+S
+#70142
+Floating in a void~
+~
+0 4 1
+S
+#70143
+Floating in a void~
+~
+0 4 1
+S
+#70144
+Floating in a void~
+~
+0 4 1
+S
+#70145
+Floating in a void~
+~
+0 4 1
+S
+#70146
+Floating in a void~
+~
+0 4 1
+S
+#70147
+Floating in a void~
+~
+0 4 1
+S
+#70148
+Floating in a void~
+~
+0 4 1
+S
+#70149
+Floating in a void~
+~
+0 4 1
+S
+#70150
+Floating in a void~
+~
+0 4 1
+S
+#70151
+Floating in a void~
+~
+0 4 1
+S
+#70152
+Floating in a void~
+~
+0 4 1
+S
+#70153
+Floating in a void~
+~
+0 4 1
+S
+#70154
+Floating in a void~
+~
+0 4 1
+S
+#70155
+Floating in a void~
+~
+0 4 1
+S
+#70156
+Floating in a void~
+~
+0 4 1
+S
+#70157
+Floating in a void~
+~
+0 4 1
+S
+#70158
+Floating in a void~
+~
+0 4 1
+S
+#70159
+Floating in a void~
+~
+0 4 1
+S
+#70160
+Floating in a void~
+~
+0 4 1
+S
+#70161
+Floating in a void~
+~
+0 4 1
+S
+#70162
+Floating in a void~
+~
+0 4 1
+S
+#70163
+Floating in a void~
+~
+0 4 1
+S
+#70164
+Floating in a void~
+~
+0 4 1
+S
+#70165
+Floating in a void~
+~
+0 4 1
+S
+#70166
+Floating in a void~
+~
+0 4 1
+S
+#70167
+Floating in a void~
+~
+0 4 1
+S
+#70168
+Floating in a void~
+~
+0 4 1
+S
+#70169
+Floating in a void~
+~
+0 4 1
+S
+#70170
+Floating in a void~
+~
+0 4 1
+S
+#70171
+Floating in a void~
+~
+0 4 1
+S
+#70172
+Floating in a void~
+~
+0 4 1
+S
+#70173
+Floating in a void~
+~
+0 4 1
+S
+#70174
+Floating in a void~
+~
+0 4 1
+S
+#70175
+Floating in a void~
+~
+0 4 1
+S
+#70176
+Floating in a void~
+~
+0 4 1
+S
+#70177
+Floating in a void~
+~
+0 4 1
+S
+#70178
+Floating in a void~
+~
+0 4 1
+S
+#70179
+Floating in a void~
+~
+0 4 1
+S
+#70180
+Floating in a void~
+~
+0 4 1
+S
+#70181
+Floating in a void~
+~
+0 4 1
+S
+#70182
+Floating in a void~
+~
+0 4 1
+S
+#70183
+Floating in a void~
+~
+0 4 1
+S
+#70184
+Floating in a void~
+~
+0 4 1
+S
+#70185
+Floating in a void~
+~
+0 4 1
+S
+#70186
+Floating in a void~
+~
+0 4 1
+S
+#70187
+Floating in a void~
+~
+0 4 1
+S
+#70188
+Floating in a void~
+~
+0 4 1
+S
+#70189
+Floating in a void~
+~
+0 4 1
+S
+#70190
+Floating in a void~
+~
+0 4 1
+S
+#70191
+Floating in a void~
+~
+0 4 1
+S
+#70192
+test~
+Hundreds of years ago there was a group of warriors dedicated to nothing
+but destruction and mayhem.  Their powers were felt everywhere, their
+presence felt in the hearts of foes.  This group was known as The Shenkai
+Aurei.  They slaughtered their foes without mercy, and they were feared
+throughout the galaxy.  In the days of the Galactic war they stayed
+neutral, not wanting to become puppets of either government.  The Oroki
+wanted the mystic warriors on their side, they wanted them at all costs,
+but since they couldn't have them, they sent their own group of assassins
+to eliminate the Shenkai Aurei.  The warriors would not be decieved.  They
+ambushed the assassins and killed them all.  This attempt to eliminate them
+infuriated them, and so they decided to join the Akusha, the Oroki's sworn
+enemy.  They fought valiantly by the Akushas' side, killing many of their
+enemies.  Their leader Link knew that they were winning the war, yet he
+felt that somehow it would all change.  He decided to take in new members. 
+The new recruits all did well in their training, yet one excelled above
+all.  His name was Clerve.  Link knew that this disciple of his would
+change the course of the war.  Before he could finish Clerve's training,
+the enemy launched a deadly assault on the Aurei's home planet.  The Aurei
+faught gallantly, killing over half of the enemy which outnumbered them one
+hundred to one, but they could not match the sheer numbers that the Oroki
+threw against them.  They retreated to their most sacred city where the
+final battle was fought.  The battle was decisive, and almost all of the
+Aurei were slaughtered, their bodies piling up in the streets of their holy
+city.  Even Link was slain in the huge battle.  Clerve was seperated from
+the rest and injured.  He thought he was about to die, but somehow tapped
+into a reserve of power and slaughtered all of the invaders, to the last
+man.  He returned to his few remaining people a legend, a hero.  He
+gathered his friends Lisker and Xanus with him and started on a journey to
+revenge their fallen.  They were all that's left, they are The Remnant of
+what once was, but will never be again.  
+
+To join this clan you must have a minumum PL of 50 million, and 5 pks. 
+Each week there will be pk tournaments, and the person with the most pks on
+a certain day will win zeni/item prizes.  You will receive 50k zeni for
+each death certificate that you give to a clan leader, however, you must
+have made the kill while they were on to prove that it was indeed your
+kill. 
+~
+0 4 1
+S
+#70193
+Floating in a void~
+~
+0 4 1
+S
+#70194
+Floating in a void~
+~
+0 4 1
+S
+#70195
+Floating in a void~
+~
+0 4 1
+S
+#70196
+Floating in a void~
+~
+0 4 1
+S
+#70197
+Floating in a void~
+~
+0 4 1
+S
+#70198
+Floating in a void~
+~
+0 4 1
+S
+#70199
+Target~
+~
+0 4 1
+S
+#0
+
+
+#RESETS
+M 1 70005 1 70020
+M 1 70004 1 70020
+M 1 70002 1 70020
+M 1 70003 1 70020
+M 1 70001 1 70020
+M 1 70001 1 70020
+M 1 70002 1 70019
+M 1 70002 1 70019
+M 1 70003 1 70019
+M 1 70001 1 70019
+M 1 70002 1 70019
+M 1 70001 1 70018
+M 1 70001 1 70018
+M 1 70003 1 70018
+M 1 70002 1 70018
+O 1 70009 1 70022
+M 1 70003 1 70080
+M 1 70006 1 70078
+M 1 70006 1 70059
+M 1 70014 1 70016
+O 1 70007 1 70016
+M 1 70010 1 70047
+M 1 70009 1 70052
+M 1 70011 1 70050
+M 1 70008 1 70051
+M 1 70006 1 70044
+M 1 70007 1 70044
+O 1 70010 1 70074
+O 1 70012 1 70115
+M 1 70013 1 70053
+O 1 70015 3 70053
+O 1 70016 3 70053
+M 1 70007 1 70037
+M 1 70003 1 70068
+M 1 70002 1 70015
+M 1 70020 1 70077
+M 1 70007 1 70076
+M 1 70010 1 70070
+M 1 70002 1 70072
+M 1 70032 1 70098
+O 1 70017 1 70137
+O 1 70013 1 70088
+M 1 70028 1 70103
+M 1 70035 1 70106
+M 1 70035 1 70091
+M 1 70035 1 70095
+M 1 70036 1 70116
+M 1 70027 1 70112
+M 1 70017 1 70062
+M 1 70001 1 70003
+M 1 70010 1 70045
+M 1 70011 1 70045
+M 1 70012 1 70049
+O 1 70002 1 70049
+M 1 70018 1 70083
+G 1 70001 1
+D 0 70083 3 2
+O 1 70004 1 70085
+M 1 70014 1 70009
+M 1 70019 1 70041
+M 1 70021 1 70081
+M 1 70021 1 70071
+M 1 70011 1 70017
+M 1 70009 1 70046
+O 1 70005 1 70046
+M 1 70011 1 70005
+M 1 70006 1 70032
+M 1 70001 1 70029
+M 1 70003 1 70030
+M 1 70002 1 70035
+M 1 70007 1 70066
+M 1 70003 1 70057
+M 1 70015 1 70054
+M 1 70014 1 70036
+M 1 70022 1 70027
+M 1 70011 1 70026
+M 1 70016 1 70043
+M 1 70016 1 70042
+O 1 70008 1 70042
+O 1 70020 1 70084
+O 1 70021 1 70084
+M 1 70022 1 70065
+M 1 70022 1 70069
+M 1 70117 1 70117
+M 1 70118 1 70117
+O 1 70060 1 70117
+O 1 70061 1 70117
+M 1 70008 1 70048
+M 1 70023 1 70048
+S
+
+
+#SHOPS
+ 70023    0  0  0  0  0   125  50         0 23    ; A Bandit Quartermaster
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

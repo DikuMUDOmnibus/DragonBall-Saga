@@ -1,0 +1,6567 @@
+#AREA   North 42 Sector~
+
+
+
+#VERSION 252
+#AUTHOR Thirteen~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 4
+
+#RESETMSG Time passes onward slowly.~
+
+#FLAGS
+2 10
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#50000
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#50001
+Hercule~
+Hercule~
+Hercule is standing here, showing off like there's no tommorow.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 50000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hey you. Weirdo. Why don't you just go home, runt? You're too weak!
+~
+> rand_prog 25~
+emote throws his head back and laughs stupidly "Bwahahaha-ahahahaha!"
+~
+> rand_prog 25~
+flex
+~
+> rand_prog 25~
+say None of you weirdo's an aliuns with yer cheap and fancy lightshows can scare me! I'm the MAN! YEAHHH! Ahahahahah!
+~
+> rand_prog 25~
+emote throws his hands over his head with clenched fists and yells "WHO LOVES ME?!"
+~
+> rand_prog 25~
+dazzle hercule
+~
+> rand_prog 25~
+fakerep
+~
+> rand_prog 25~
+hercules
+~
+> rand_prog 25~
+stud
+~
+> death_prog 75~
+mpecho It seems Hercule is dead, but then Hercule walks up with a confident and yet stupid laughter. Guess that was just a stunt double that got killed.
+mpmload 50001
+~
+> death_prog 20~
+mpechoat $n Hercule looks like he is out, but he gets back up again. Looking scared out of his mind, he does the only thing he can.  He reaches into his pocket, pulls out a gameboy, and hands it to you.
+mpechoaround $n Hercule looks like he is out, but he gets back up again.  Looking scared out of his mind, he does the only thing he can.  He reaches into his pocket, pulls out a gameboy, and hands it to $n.
+mpechoat $n As you start playing the gameboy, Hercule runs off to the safety of a boulder a short distance away.
+mpechoaround $n As $n starts playing the gameboy, Hercule runs off to the safety of a boulder a short distance away.
+mpechoat $n Unknown to you, he pulls out a remote and hits the button.  The gameboy you're holding explodes in your face!
+mpechoaround $n Unknown to $n, Hercule pulls out a remote and hits the button.  The gameboy $n is holding explodes in $s face.
+mppldamage $n 50
+mpmload 50001
+~
+> death_prog 5~
+mpoload 50103
+~
+|
+#50002
+Reporter~
+A Z-Tv Reporter~
+A Z-Tv Reporter is standing here.
+~
+~
+67108865 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 5
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#50003
+Cameraman~
+Z-Tv Cameraman~
+A Z-Tv Cameraman is standing here.
+~
+~
+67108865 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 5
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#50004
+Android 16~
+Android #16~
+Android #16 is standing here with a solemn look on his face.
+~
+~
+3 128&1048576 0 C
+1 0 100 1d20+0 2d5+0
+-1 200000000000
+112 112 1
+100 100 100 100 0
+0 0 0 0 0
+4 4 0 0 1 1 5
+0 0 0 0 0 0 0 0
+> fight_prog 20~
+rocket punch
+~
+> fight_prog 15~
+hells flash
+~
+> death_prog 100~
+if rand(3)
+   mpoload 100313
+endif
+~
+|
+#50005
+fakesigma~
+Sigma~
+&c(&wRonin&c) Sigma&r - Deus Ex Machina. Machina Exterminatus.&c is hovering here.&D
+~
+~
+3 524928&1048576&544 -1000 C
+1 0 100 1d20+0 2d5+0
+-1 5000000000000
+112 112 1
+200 200 200 200 5
+0 0 0 0 0
+4 4 0 0 1 1 4
+0 0 0 0 0 0 0 0
+> death_prog 100~
+if pl($n) <= 10000000000000
+if rand(50)
+  mpecho &RSigma's battered corpse convulses as crimson bolts of energy surge through it.&D
+  mpecho &RSigma gets back up onto his feet as the virus within him repairs his systems.&D
+  mpmload 50005
+else
+  if rand(5)
+    if rand(20)
+      mpoload 50001
+    else
+      if rand(20)
+        mpoload 50016
+      else
+        if rand(20)
+          mpoload 50017
+        else
+          if rand(20)
+             mpoload 50101
+          else
+            mpoload 50106
+          endif
+        endif
+      endif
+    endif
+  endif
+endif
+else
+if rand(75)
+  mpecho &RSigma's battered corpse convulses as crimson bolts of energy surge through it.&D
+  mpecho &RSigma gets back up onto his feet as the virus within him repairs his systems.&D
+  mpmload 50005
+endif
+endif
+~
+> fight_prog 60~
+ssd
+~
+> fight_prog 75~
+'electric hell ball'
+~
+> fight_prog 40~
+mad
+cackle
+mpecho _blu Sigma disappears in a flash of light!
+mpecho _blu Sigma suddenly appears directly infront of $n, thrusting his
+mpecho _blu left arm through $n's torso.
+mpecho _red As blood flows down from $n's mouth, Sigma grabs $n's head in
+mpecho _red his right hand and squeezes down with incredible force.
+mpecho _red $n's head suddenly explodes in a spray of blood, bone, and brain matter.
+mpslay $n
+~
+> bribe_prog 2500000~
+mpecho &cSigma takes your money and gets out his almighty self-help guide to riches.&D
+mpecho &cSigma stops, and looks at you.&D
+mad
+mpecho &RAn aura of evil, crimson energy flares up around Sigma as he blasts up&D
+mpecho &Rthrough a hole in the bridge, and flies back down towards Earth.&D
+mpecho &z.........&D
+mpecho &zHey, wait a second.....he didn't give you the book!!!&D
+mpecho &RLooks like Sigma scammed you again.&D
+mptransfer fakesigma 50057
+mpoload 50104
+mpmload 50006
+give 2500000 zeni sentinel
+mppurge sentinel
+~
+|
+#50006
+Sentinel X150 security reploid~
+Sentinel X150~
+A huge Sentinel X150 security reploid is thundering about.
+~
+~
+1 512&1048576 0 C
+1 0 100 1d20+0 2d5+0
+-1 50000000000
+112 112 0
+100 100 100 100 0
+0 0 0 0 0
+4 4 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> death_prog 1~
+mpoload 50013
+~
+|
+#50007
+Delthox X625D assassinroid~
+Delthox X652D~
+A sleek Delthox X652D assassinroid is watching you.
+~
+~
+1 0&1048576 0 C
+1 0 100 1d20+0 2d5+0
+-1 50000000000
+112 112 0
+100 100 100 100 0
+0 0 0 0 0
+4 4 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> death_prog 2~
+mpoload 50010
+~
+|
+#50008
+voicesystem voice activation voice-activation system~
+An electronic voice~
+The Airlock Voice-Activation System
+~
+~
+69206019 4194314 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#50009
+repair machine~
+Repair Machine~
+A large repair machine is here awaiting further instructions.
+~
+~
+-2080374781 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog "yiksahd"~
+if race($n) == icer
+if ovnumroom(50008) >= 1
+mpecho A machine comes up and takes the broken parts. A shower of sparks and five minutes later, the machine comes back with fully repaired mecha icer parts for you to install. However, once you put them on, it's permanent.
+take broken
+mppurge broken
+mpoload 50007
+drop icer
+endif
+endif
+~
+|
+#50010
+Neon mecha icer mecha-icer~
+Neon~
+Neon the mecha-icer is standing here.
+~
+~
+67108867 0&16384 0 C
+1 0 100 1d20+0 2d5+0
+-1 500000000000
+112 112 1
+100 100 100 100 0
+0 0 0 0 0
+5 5 0 0 1 1 4
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if race($n) == icer
+mpechoat $n _lbl Neon starts speaking to you in your racial language of icerian "Comrade. I have a task I wish for you to complete. My twin brother who is also a mecha-icer has sadly lost his mind out here in this lonely wreck."
+mpechoat $n _lbl Neon continues "The last time I saw my twin brother, Freon, he was out somewhere in the debris field surrounding this ship. I ask of you to go put him to rest."
+mpechoat $n _lbl Neon also adds "Also, if you can manage to get the metal body parts from freon's body when you defeat him, bring them to me and I can help you have them installed in your body instead to make you much stronger."
+mpechoat $n _lbl Neon says "Now go. There isn't much time before Freon ends up doing something truly devastating."
+endif
+~
+> greet_prog 100~
+if race($n) == icer
+if carryingvnum($n) == 50008
+mpechoat $n _lbl Neon notices the parts you're carrying and says "Good work. Now if you want to have them installed, take them to the repair bay on this level, drop the parts on the floor and say augment."
+mpechoat $n _lbl Neon fumbles about with his speech and adds a comment again "I almost forgot to tell you you'll have to tell the machine to augment you in the ship's language. Shouldn't be too hard."
+endif
+endif
+~
+|
+#50011
+Freon mecha icer mecha-icer~
+Freon~
+Freon the mecha-icer is floating here.
+~
+~
+3 524288&16384 0 C
+1 0 100 1d20+0 2d5+0
+-1 500000000000
+112 112 1
+100 100 100 100 0
+0 0 0 0 0
+5 5 0 0 1 1 4
+0 0 0 0 0 0 0 0
+> death_prog 1~
+mpoload 50008
+~
+> fight_prog 40~
+dual
+~
+> fight_prog 30~
+death
+~
+|
+#50012
+tinydebris tiny pieces debris chunks cloud~
+Tiny Pieces of Debris~
+A tiny cloud of small chunks of debris seems to be trying to hit you.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 500000
+112 112 0
+20 20 20 20 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 70~
+mpmload 50012
+~
+|
+#50013
+mediumdebris average chunks debris cloud~
+Average Chunks of Debris~
+A cloud of average-sized chunks of debris seems to be trying to hit you.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 5000000
+112 112 0
+20 20 20 20 0
+0 0 0 0 0
+4 4 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> death_prog 60~
+mpmload 50013
+~
+|
+#50014
+largedebris large chunks debris cloud~
+Large Chunks of Debris~
+A cloud of large chunks of debris seem to be trying to hit you.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 50000000
+112 112 0
+30 30 30 30 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> death_prog 50~
+mpmload 50014
+~
+|
+#50015
+access card machine~
+Access Card Machine~
+A dust covered access card machine is sitting against a wall dejectedly.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#50016
+halfbreed fighter weak~
+Halfbreed Fighter~
+A weak halfbreed fighter is standing here, ready to have his ass kicked.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 50000
+112 112 1
+10 10 10 10 0
+0 0 0 0 0
+2 2 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#50017
+human fighter nervous~
+Human Fighter~
+A nervous human fighter is here, ready to fight.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 500000
+112 112 1
+10 15 15 15 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#50018
+namek fighter super-namek~
+Namekian Fighter~
+A super-namek stands here in an aggressive stance, ready to fight.
+~
+~
+3 0&1024 0 C
+1 0 100 1d20+0 2d5+0
+-1 5000000
+112 112 0
+20 20 20 20 0
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+#50019
+saiyan fighter super-saiyan~
+Saiyan Fighter~
+An ascended super-saiyan stands here, waiting for a challenge.
+~
+~
+3 0&192 0 C
+1 0 100 1d20+0 2d5+0
+-1 50000000
+112 112 1
+25 25 25 25 0
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 65536 0 0 0 0 0
+#50020
+icer fighter arrogant icerian~
+Icerian Fighter~
+An arrogant 4th-form icer stands here with crossed arms.
+~
+~
+3 0&8192 0 C
+1 0 100 1d20+0 2d5+0
+-1 500000000
+112 112 0
+30 30 30 30 0
+0 0 0 0 0
+5 5 0 0 1 1 3
+0 0 0 0 0 0 0 0
+#50024
+split mushroom short little mushroom-shaped~
+Split Mushroom~
+A short little mushroom-shaped android is standing here, cackling madly.
+~
+~
+35 0&1048576 0 C
+1 0 100 1d20+0 2d5+0
+-1 150000000000
+112 112 0
+100 100 100 100 5
+0 0 0 0 0
+4 4 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 5~
+if mobinroom(50024) == 1
+mpecho &PSplit Mushroom leaps into the air and goes into a spin; causing an energy-created duplicate of itself to appear.&D
+mpmload 50024
+endif
+~
+> fight_prog 20~
+mpechoat $n &PSplit Mushroom cackles madly and lets loose with a cloud of some kind of reddish powder. As the cloud envelopes you, it seems to try to choke the life out of you.&D
+mppldamage $n 30
+~
+> death_prog 1~
+mpoload 50019
+~
+> death_prog 1~
+mpoload 50011
+~
+|
+#50025
+zeiram giant creature~
+Zeiram~
+The giant space creature Zeiram stands here, ready to kill anything that gets in it's way.
+~
+~
+3 4194304 0 C
+1 0 100 1d20+0 2d5+0
+-1 300000000000
+112 112 0
+100 100 100 100 0
+0 0 0 0 0
+5 5 0 0 1 1 4
+0 0 0 0 0 0 0 0
+> death_prog 100~
+if rand(90)
+mpecho &gZeiram's wounds close back up again, and the creature returns to it's feet with an angry shriek.&D
+mpmload 50025
+else
+mpecho &gZeiram's corpse quickly begins to decay after dying as it is far too damaged to be able to repair itself.&D
+if pl($n)<900000000001
+  if rand(30)
+    mpoload 50030
+  else
+    if rand(30)
+      mpoload 50031
+    endif
+  endif
+endif
+endif
+~
+> fight_prog 20~
+mpechoat $n &GZeiram suddenly shoots a long darkblue tentacle out from it's palm, grabbing you by the ankle. Pulling hard, Zeiram forces you off your feet and into the air; slamming you against a wall.&D
+mppldamage $n 35
+~
+> death_prog 1~
+mpoload 50030
+~
+> death_prog 1~
+mpoload 50031
+~
+|
+#50026
+slash beast android~
+Slash Beast~
+A vicious looking android is standing here guarding the room to the south, ready to tear someone apart.
+~
+~
+3 4194304&1048576 0 C
+1 0 100 1d20+0 2d5+0
+-1 200000000000
+112 112 0
+100 100 100 100 0
+0 0 0 0 0
+4 4 0 0 1 1 5
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+mpecho &RSlash Beast leaps back into a very aggressive stance; doubling over as it's body begins to quake with power. It's claws suddenly turning a bright red, it lunges at you with a vicious barrage of slashes.&D
+mppldamage $n 40
+~
+> death_prog 1~
+mpoload 50011
+~
+> death_prog 1~
+mpoload 50014
+~
+> death_prog 1~
+mpoload 50020
+~
+> death_prog 1~
+mpoload 50106
+~
+|
+#50027
+old traveler man~
+Old Man~
+A strange old man is sitting in the corner, mumbling a bunch of nonsense to himself.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 20
+112 112 1
+10 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 15~
+mpecho _lbl Old Man mumbles and says "As long....can't get there....it can't get out..."
+~
+> rand_prog 15~
+cry
+laugh
+~
+> speech_prog "it"~
+mpecho _lbl Old Man mumbles and says "...yes....IT...it can't get...get out at me now...no no no...hahahaha....evil can't get....meee..."
+fear
+~
+> speech_prog "evil"~
+fear
+mpecho _lbl Old Man mumbles and says "...the evil...evil....the android evil...killed the crew now....hides on the bridge but we trapped...yes...we trapped it....hahaha...can't kill it...can't kill me....with it on the bridge...hahahaha..."
+~
+> speech_prog "bridge"~
+fear
+mpecho _lbl Old Man mumbles and says "...the...evil...the..."
+fear
+scream
+mpecho _lbl Old Man mumbles and says "...the...the...sigma...evil..."
+cry
+mpecho _lbl Old Man mumbles and says "...please....please you....take the evil away....on the bridge....kill the evil.....make it stop....in my mind...the evil....kill IT...."
+cry
+laugh
+fear
+if ovnumhere(50021) < 1
+  if carryingvnum($n) == 50021
+  else
+    mpoload 50021
+    drop bridge
+  endif
+endif
+~
+> bribe_prog 2500000~
+mpecho _lbl Old Man mumbles and says "...now...yes....have the chips to...build the dip....nachos....hahahaha....the nachos.....hahahahahaha....."
+fear
+laugh
+cry
+mpoload 50027
+drop converter
+~
+|
+#50197
+spekkio master~
+Spekkio~
+Spekkio, the master of war, is standing here.
+~
+~
+83886083 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog "help me"~
+say Ipso facto, meenie moe...MAGICO!
+dance
+mpechoat $n &BYou don't feel any different.&D
+~
+> rand_prog 20~
+say If you need some &Whelp&C just ask &Wme&C.
+~
+|
+#50198
+old man gasper~
+Gasper~
+An old man in a brown trenchcoat and brown derby hat is standing here, leaning on an old cane.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog "open"~
+if islocked($n) == east
+unlock e
+open e
+endif
+~
+> speech_prog "close"~
+if isopen($n) == east
+close e
+lock e
+endif
+~
+> rand_prog 5~
+say Looking for anything in particular?
+mpsleep 2
+say I might have a thing or two I'm willing to sell.
+~
+|
+#50199
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#50000
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#50001
+Mecha-synth armor equipment~
+&zMecha-synth armor&D~
+Some kind of equipment with a technology beyond human comprehension has been abandoned here.~
+none~
+9 10207744 1025 1
+0 0 0 0 2000 2000
+25 250000 25000
+ 2000000000
+A
+1 10
+A
+4 10
+> wear_prog 100~
+if wearingvnum($n)50027
+mpechoat $n &WThe armor suddenly liquifies and stretches out to cover your entire body; hardening over it again like a second layer of skin.&D
+mpechoaround $n &W$n is suddenly engulfed in a silvery liquid as they put the armor on; the armor hardening onto their body like an exoskeleton.&D
+else
+mpechoat $n &RYour systems reject the new hardware.&D
+mpforce $n remove mecha
+endif
+~
+|
+#50002
+airlockkey1 keycode~
+Keycode to the airlock #1~
+Keycode to the airlock~
+~
+18 0 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+#50003
+refugekey keycode card plastic~
+Keycode to the Refuge~
+A small, thin plastic card has been left here.~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#50004
+leg compartment metal chamber~
+&can Android Leg Compartment&D~
+A metal chamber trailing wires and connectors has been left here.~
+~
+15 10207232 33
+100 0 0 0 0 0
+1 7000 50000
+ 5000000
+A
+2 2
+#50005
+math coprocessor co-processor chip~
+&gMath Co-Processor Chip&D~
+An incredibly expensive silicon chip has been left here.~
+~
+9 10207744 5 255
+0 0 0 0 0 0
+1 12500 1000000
+ 2147483647
+A
+3 5
+> wear_prog 100~
+if wearingvnum($n)50027
+mpechoat $n &GYour perception and mental capacites begin to expand greatly as you install a Math Co-Processor Chip into your body.&D
+else
+mpechoat $n &RYour systems reject the new hardware.&D
+mpforce $n remove math
+endif
+~
+|
+#50006
+nanobots hypodermic needle~
+&WNanobots&D~
+A hypodermic needle filled with a strange liquid has been left here.~
+~
+9 10207744 3
+0 0 0 0 0 0
+1 12500 1000000
+ 2147483647
+A
+4 5
+> wear_prog 100~
+if wearingvnum($n)50027
+mpechoat $n &YAs the microscopic nano-machines invade your system, they begin to accelerate the rate at which you recover from damage.&D
+else
+mpechoat $n &RYour systems reject the new hardware.&D
+mpforce $n remove nano
+endif
+~
+> rand_prog 100~
+if hps($n) < 100
+mpechoat $n &BAs the nanobots course through every part of your system, they start repairing damage they have found.
+mprestore $n 5
+endif
+~
+|
+#50007
+icer augmentation mecha-icer bodypieces~
+&zMecha-Icer Augmentation&D~
+Random mechanical bodypieces have been dumped here in a pile.~
+~
+9 9945600 9 1
+0 0 0 0 500 500
+1 62500 2000000
+ 2147483647
+A
+1 10
+A
+2 10
+A
+4 -15
+#50008
+broken icer parts~
+Broken and bloody mechanical parts from a dead mecha-icer~
+Broken and bloody mechanical parts from a dead mecha-icer~
+~
+8 8192 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#50009
+wired1 reflexes circuitry wires~
+&cWired Reflexes (Rating 1)&D~
+A tangle of complex circuitry and wires has been left here.~
+~
+9 10207744 4097
+0 0 0 0 0 0
+1 5000 50000
+ 5000000
+A
+2 2
+> wear_prog 100~
+mpechoat $n &BYour perception of time slows down as your reaction speed is enhanced greatly.&D
+~
+|
+#50010
+wired2 reflexes circuitry wires~
+&cWired Reflexes (Rating 2)&D~
+A tangle of very complex circuitry and wires has been left here.~
+~
+9 10207744 4097
+0 0 0 0 0 0
+1 12500 1000000
+ 100000000
+A
+2 5
+> wear_prog 100~
+if wearingvnum($n)50027
+mpechoat $n &BYour perception of time slows down as your reaction speed is enhanced greatly.&D
+else
+mpechoat $n &RYour systems reject the new hardware.&D
+mpforce $n remove wired2
+endif
+~
+|
+#50011
+wired3 reflexes circuitry wires~
+&cWired Reflexes (Rating 3)&D~
+A tangle of extremely complex circuitry and wires has been left here.~
+~
+9 10207744 4097
+0 0 0 0 0 0
+1 25000 5000000
+ 2147483647
+A
+2 10
+> wear_prog 100~
+if wearingvnum($n)50027
+mpechoat $n &BYour perception of time slows down as your reaction speed is enhanced greatly.&D
+else
+mpechoat $n &RYour systems reject the new hardware.&D
+mpforce $n remove wired3
+endif
+~
+|
+#50012
+torque1 enhancer chunk technology~
+&rTorque Enhancer (Rating 1)&D~
+A large and rather odd looking chunk of technology is laying here.~
+~
+9 10207744 257
+0 0 0 0 0 0
+1 5000 50000
+ 5000000
+A
+1 2
+> wear_prog 100~
+mpechoat $n &RYour body tightens under its own strength as the enhancers multiply the output of your servo motors many times over.&D
+~
+|
+#50013
+torque2 enhancer chunk technology~
+&rTorque Enhancer (Rating 2)&D~
+A large and rather strange looking chunk of technology is laying here.~
+~
+9 10207744 257
+0 0 0 0 0 0
+1 12500 1000000
+ 100000000
+A
+1 5
+> wear_prog 100~
+if wearingvnum($n)50027
+mpechoat $n &RYour body tightens under its own strength as the enhancers multiply the output of your servo motors many times over.&D
+else
+mpechoat $n &RYour systems reject the new hardware.&D
+mpforce $n remove torque2
+endif
+~
+|
+#50014
+torque3 enhancer chunk technology~
+&rTorque Enhancer (Rating 3)&D~
+A large and rather bizzare looking chunk of technology is laying here.~
+~
+9 10207744 257
+0 0 0 0 0 0
+1 25000 2500000
+ 2147483647
+A
+1 10
+> wear_prog 100~
+if wearingvnum($n)50027
+mpechoat $n &RYour body tightens under its own strength as the enhancers multiply the output of your servo motors many times over.&D
+else
+mpechoat $n &RYour systems reject the new hardware.&D
+mpforce $n remove torque3
+endif
+~
+|
+#50015
+repairkey keycode~
+Keycode to the Repair Bay~
+Some god dropped a newly created repairkey here.~
+~
+18 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#50016
+improved nanobots hypodermic needle~
+&WImproved Nanobots&D~
+A hypodermic needle filled with an even more bizzare liquid has been left here.~
+~
+9 10207744 3
+0 0 0 0 0 0
+1 25000 3000000
+ 2147483647
+A
+4 10
+> wear_prog 100~
+if wearingvnum($n)50027
+mpechoat $n &YAs the microscopic nano-machines invade your system, they begin to accelerate the rate at which you recover from damage.&D
+else
+mpechoat $n &RYour systems reject the new hardware.&D
+mpforce $n remove improved
+endif
+~
+> rand_prog 100~
+if hps($n) < 100
+mpechoat $n &BAs the nanobots course through every part of your system, they start repairing damage they have found.
+mprestore $n 7
+endif
+~
+|
+#50017
+quantum coprocessor chip math co-processor~
+&gQuantum Math Co-Processor Chip&D~
+A priceless silicon chip has been left here.~
+~
+9 10207744 5
+0 0 0 0 0 0
+1 25000 3000000
+ 2147483647
+A
+3 10
+> wear_prog 100~
+if wearingvnum($n)50027
+mpechoat $n &GYour perception, mental capacites, and grasp of quantam theory && mathematics begin to expand boundlessly as you install a Quantam Math Co-Processor Chip into your body.&D
+else
+mpechoat $n &RYour systems reject the new hardware.&D
+mpforce $n remove quantum
+endif
+~
+|
+#50018
+access block key 1 keycode card plastic~
+Keycode to Access Block 1~
+A small, thin plastic card has been dropped here.~
+~
+18 8192 1
+0 0 0 0 0 0
+1 0 10000
+ 0
+> get_prog 100~
+if race($n) == android
+else
+mpforce $n drop 1
+endif
+~
+|
+#50019
+access block key 2 keycode card plastic~
+Keycode to Access Block 2~
+A small, thin plastic card has been left here.~
+~
+18 8192 1
+0 0 0 0 0 0
+1 0 0
+ 0
+> get_prog 100~
+if race($n) == android
+else
+mpforce $n drop 2
+endif
+~
+|
+#50020
+access block key 3 keycode card plastic~
+Keycode to Access Block 3~
+A small, thin plastic card has been left here.~
+~
+18 8192 1
+0 0 0 0 0 0
+1 0 0
+ 0
+> get_prog 100~
+if race($n) == android
+else
+mpforce $n drop 3
+endif
+~
+|
+#50021
+bridge key keycode card plastic~
+Keycode to the Bridge~
+A small, thin plastic card has been left here.~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+> get_prog 100~
+if race($n) == android
+else
+mpforce $n drop bridge
+endif
+~
+|
+#50022
+subspace access card card plastic~
+Subspace Training Room Access Card~
+A small, thin card covered in microcircuitry lays here.~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 10000
+ 0
+#50023
+instructions sign~
+Instructions Sign~
+A sign with the intructions for using the subspace room properly is hanging here in mid-air.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+> exa_prog 100~
+mpechoat $n &B#&b------------------------------------------------------&B#&D
+mpechoat $n     &G-Instructions for the proper usage of this room-
+mpechoat $n &z (The guide is auto-translated to match your language)
+mpechoat $n &W "Simply say the name of what you wish to fight and it
+mpechoat $n &W  will appear before you. Continue fighting whatever
+mpechoat $n &W  you like for 15 minutes. After 15 minutes are up,
+mpechoat $n &W  you will be escorted out of the room, afterwhich
+mpechoat $n &W  if you still wish to use these facilities you must
+mpechoat $n &W  pay again. The available opponents are as follows:"&D
+mpechoat $n  
+mpechoat $n &Y   Halfbreed - 50,000&Opl
+mpechoat $n &Y       Human - 500,000&Opl
+mpechoat $n &Y       Namek - 5,000,000&Opl
+mpechoat $n &Y      Saiyan - 50,000,000&Opl
+mpechoat $n &Y        Icer - 500,000,000&Opl
+mpechoat $n 
+mpechoat $n &G -The following opponents are limited to fighters
+mpechoat $n &G  that have certain &gplatinum subspace access cards.
+mpechoat $n 
+mpechoat $n &R Bio-Android - 5,000,000,000&rpl
+mpechoat $n &R     Android - 50,000,000,000&rpl
+mpechoat $n &R    ????? ?? - 500,000,000,000&rpl
+mpechoat $n &B#&b------------------------------------------------------&B#&D
+~
+|
+#50024
+platinum1 subspace access card~
+&wPlatinum Subspace Access Card (Rating 1)&D~
+A small, thin, shiny platinum card has been left here.~
+~
+8 0 16385
+0 0 0 0 0 0
+1 0 100000
+ 0
+#50025
+platinum2 subspace access card~
+&wPlatinum Subspace Access Card (Rating 2)&D~
+A small, thin, shiny platinum card has been left here.~
+~
+8 0 16385
+0 0 0 0 0 0
+1 0 200000
+ 0
+#50026
+platinum3 subspace access card~
+&wPlatinum Subspace Access Card (Rating 3)&D~
+A small, thin, shiny platinum card has been left here.~
+~
+8 0 16385
+0 0 0 0 0 0
+1 0 500000
+ 0
+#50027
+converter paradox1301 chip silicon~
+&zParadox1301 I/O Tech Converter Chip&D~
+A small silicon chip is sitting here on the ground giving off sparks.~
+~
+9 10207744 129 1
+0 0 0 0 0 0
+1 0 100000
+ 0
+> get_prog 100~
+if race($n) == android
+else
+  if race($n) == super-android
+  else
+    mpforce $n drop converter
+  endif
+endif
+~
+> remove_prog 100~
+if wearingvnum($n)50001
+mpforce $n remove mecha
+endif
+if wearingvnum($n)50004
+mpforce $n remove leg
+endif
+if wearingvnum($n)50005
+mpforce $n remove math
+endif
+if wearingvnum($n)50005
+mpforce $n remove math
+endif
+if wearingvnum($n)50006
+mpforce $n remove nano
+endif
+if wearingvnum($n)50006
+mpforce $n remove nano
+endif
+if wearingvnum($n)50009
+mpforce $n remove wired1
+endif
+if wearingvnum($n)50009
+mpforce $n remove wired1
+endif
+if wearingvnum($n)50010
+mpforce $n remove wired2
+endif
+if wearingvnum($n)50010
+mpforce $n remove wired2
+endif
+if wearingvnum($n)50011
+mpforce $n remove wired3
+endif
+if wearingvnum($n)50011
+mpforce $n remove wired3
+endif
+if wearingvnum($n)50012
+mpforce $n remove torque1
+endif
+if wearingvnum($n)50013
+mpforce $n remove torque2
+endif
+if wearingvnum($n)50014
+mpforce $n remove torque3
+endif
+if wearingvnum($n)50016
+mpforce $n remove improved
+endif
+if wearingvnum($n)50016
+mpforce $n remove improved
+endif
+if wearingvnum($n)50017
+mpforce $n remove quan
+endif
+if wearingvnum($n)50017
+mpforce $n remove quan
+endif
+~
+|
+#50028
+medicalkey keycode plastic card~
+Keycode to the Medical Bay~
+A small, thin plastic card is lying here.~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#50029
+cargokey keycode plastic card~
+Keycode to the Cargo Bay~
+A small, thin plastic card is lying here.~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#50030
+suprathyroid gland~
+&RSuprathyroid Gland&D~
+A pulsing gland dripping with ooze has been left here on the ground.~
+~
+9 1032192 9
+0 0 0 0 0 0
+1 25000 2500
+ 2147483647
+A
+1 5
+A
+4 5
+> wear_prog 100~
+mpechoat $n &RYour blood begins to pulse faster as the gland begins to change your bodily chemistry. Your muscles tighten, and seem to have more vigor and energy.&D
+~
+> remove_prog 100~
+if wearingvnum($n) 100349
+mpforce $n remove myuu
+endif
+~
+|
+#50031
+synaptic accelerator organic veins tubes~
+&RSynaptic Accelerator&D~
+A strange tangle of organic veins and tubes is laying here on the ground, trying to grow.~
+~
+9 1032192 17
+0 0 0 0 0 0
+1 25000 2500
+ 2147483647
+A
+2 5
+A
+3 5
+> wear_prog 100~
+mpechoat $n &RYour mind begins to race as the bioware opens up new mental pathways in your brain and spinal cord; increasing the speed of your thought and actions.&D
+~
+> remove_prog 100~
+if wearingvnum($n) 100349
+mpforce $n remove myuu
+endif
+~
+|
+#50097
+hero sticker bardock~
+A sticker that reads "I love Bardock! He is my hero!"~
+A nice, cool, free sticker is laying here on the ground.~
+~
+9 0 9
+0 0 0 0 100 100
+1 10000 1000
+ 0
+#50098
+hero sticker saiyr~
+A sticker that reads "I love Saiyr! He is my hero!"~
+A nice, cool, free sticker is laying here on the ground.~
+~
+9 8388608 9
+0 0 0 0 100 100
+1 10000 1000
+ 0
+#50099
+hero sticker koronto~
+A sticker that reads "I love Koronto! He is my hero!"~
+A nice, cool, free sticker is laying here on the ground.~
+~
+9 8388608 9
+0 0 0 0 100 100
+1 10000 1000
+ 0
+#50100
+hero sticker krillin~
+A sticker that reads "I love Krillin! He is my hero!"~
+A nice, cool, free sticker is laying here on the ground.~
+~
+9 8388608 9
+0 0 0 0 100 100
+1 10000 1000
+ 0
+#50101
+virus program energy flow~
+&RThe Sigma Virus&D~
+&RRed bolts of energy flow acrost the ground here as some kind of binary program seems to be existing outside a computer, but, is that possible?&D~
+~
+9 1821200 4194305 2
+0 0 0 0 0 0
+1 200000 20000
+ 2000000000
+A
+1 20
+A
+2 20
+A
+3 20
+A
+4 20
+> wear_prog 100~
+mpechoat $n &RBefore you can stop it, the red energy infects your systems. As the Sigma Virus corrupts you, your mind fills with the darkest of evil desires to destroy, maim, and cause complete chaos and anarchy.&D
+mpechoaround $n &R$n convulses as red bolts of energy seeps into $s body. As $n opens $s eyes again, the normal white and pupil of the eye have been replaced by a solid, seething crimson glow.&D
+mpplmult $n 20
+~
+> remove_prog 100~
+if rand(90)
+mpechoat $n &RThe Sigma Virus wreaks havok on your systems as you try to purge yourself of it, although unsuccessfully.&D
+mpdamage $n 10
+mpforce $n wear virus
+else
+mpechoat $n &BYour vision clears and your thought patterns return to normal as the last traces of the Sigma Virus are purged from your systems. However, your power drops sharply back to normal as well.&D
+mpplmult $n 1
+endif
+~
+|
+#50102
+quarter~
+A quarter?~
+A shiny new quarter is laying here on the ground, heads up.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+quarter~
+Aww, what the hell? Someone left a shiny new quarter here, but it's glued
+to the ground.  How cruel can you be?!
+~
+#50103
+hercules afro hair~
+&WHercule's Afro&D~
+A gigantic ball of black, curly hair is sitting here on the ground, rolling about like a tumbleweed.~
+~
+9 2048000 17
+0 0 0 0 100 100
+1 20000 2000
+ 50000
+A
+1 3
+A
+3 -5
+A
+4 6
+#50104
+sigma book~
+&gA book entitled &W"&YGet rich quick: &RThe Sigma way.&W"&D~
+The greatest book of all time has been left here on the ground. WHY?!~
+~
+9 8389120 16385 128
+0 0 0 0 250 250
+1 62500 6250
+ 0
+A
+29 5
+A
+3 5
+> wear_prog 100~
+mpechoat $n &gYou open up the book to the first page and start reading. "Thank you for buying this book. You can be assured that in buying this book, Sigma has conned you. In writing this book, he has also scammed the publishing company.&D
+mpechoat $n &gDon't bother getting upset. Sigma is already long gone by now with the money; probably on a private jet to bermuda. The only thing you can do now is commit suicide. Go on. Use the gun. You know you want to. ;)"&D
+mpechoat $n &gTurning to the next page, and then the page after, you notice that the rest of the pages are all blank. Doh! :b&D
+~
+> remove_prog 100~
+mpechoat $n &RHow dare you not use the greatest book of all time?!?!&D
+mpechoat $n &z..........&D
+mpechoat $n &RSigma doesn't love you anymore. >.>&D
+~
+|
+#50105
+lavos eye~
+&RThe living, bleeding eyeball of a gigantic creature&D~
+A bloody, severed eyeball the size of a basketball is sitting here on the ground.~
+~
+1 512 16385
+0 0 -1 0 0 0
+1 24900 2490
+ 0
+A
+29 5
+#50194
+trashcan can~
+Trashcan~
+An old, small rusted metal trashcan is sitting here dejectedly.~
+~
+15 0 0
+21 0 0 0 0 0
+1 420 42
+ 0
+#50195
+street lamp~
+Street Lamp~
+An old, partly rusted, wrought-iron street lamp is standing here giving the room light.~
+~
+9 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#50199
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#50000
+Dirt Road Into The Countryside~
+To the south, this dirt road leads back into South City.  To the north,
+however, it leads off into the hilly countryside.  A nice, quiet, scenic
+hike never hurt anyone.  It's also good to venture down this path sometimes
+since the going word is that there is some kind of fighting arena several
+miles in this direction.  While walking is a good mode of transportation,
+flying, if you can, would be a quicker way to get there instead.  It's up
+to the traveler. 
+~
+0 0 1
+D0
+~
+~
+0 -1 50001
+D2
+~
+~
+0 -1 9038
+D4
+~
+~
+64 -1 50052
+S
+#50001
+Bend In The Road~
+Out in the countryside, this dirt road serves as the lifeline for many
+of the farmers and their families living out in this rural area who
+occasionally need to get supplies.  Although winding through the hills and
+valleys, this road still goes in a general south-to-north direction.  Not
+much of interest though along this seldom traveled path unless you have a
+thing for the cozy scenery along the way.  The road here curves off to the
+east as it heads for a pass between two hills. 
+~
+0 0 1
+D2
+~
+~
+0 -1 50000
+D6
+~
+~
+0 -1 50002
+S
+#50002
+Between Some Hills~
+Out in the countryside, this dirt road serves as the lifeline for many
+of the farmers and their families living out in this rural area who
+occasionally need to get supplies.  Although winding through the hills and
+valleys, this road still goes in a general south-to-north direction.  Not
+much of interest though along this seldom traveled path unless you have a
+thing for the cozy scenery along the way.  The dirt road is overshadowed
+slightly as it passes between two large hills. 
+~
+0 0 1
+D6
+~
+~
+0 -1 50003
+D9
+~
+~
+0 -1 50001
+S
+#50003
+Bend In The Road~
+Out in the countryside, this dirt road serves as the lifeline for many
+of the farmers and their families living out in this rural area who
+occasionally need to get supplies.  Although winding through the hills and
+valleys, this road still goes in a general south-to-north direction.  Not
+much of interest though along this seldom traveled path unless you have a
+thing for the cozy scenery along the way. 
+~
+0 0 1
+D0
+~
+~
+0 -1 50004
+D9
+~
+~
+0 -1 50002
+S
+#50004
+Dirt Road~
+Out in the countryside, this dirt road serves as the lifeline for many
+of the farmers and their families living out in this rural area who
+occasionally need to get supplies.  Although winding through the hills and
+valleys, this road still goes in a general south-to-north direction.  Not
+much of interest though along this seldom traveled path unless you have a
+thing for the cozy scenery along the way. 
+~
+0 0 1
+D0
+~
+~
+0 -1 50005
+D2
+~
+~
+0 -1 50003
+S
+#50005
+Dirt Road~
+Out in the countryside, this dirt road serves as the lifeline for many
+of the farmers and their families living out in this rural area who
+occasionally need to get supplies.  Although winding through the hills and
+valleys, this road still goes in a general south-to-north direction.  It
+seems there is something here after all.  Off to the eastern side of this
+road a small, dilapidated shack can be seen.  Might be a good place for
+weary travelers to rest before pressing onward. 
+~
+0 0 1
+D0
+~
+~
+0 -1 50006
+D1
+~
+~
+0 -1 50058
+D2
+~
+~
+0 -1 50004
+S
+#50006
+Dirt Road~
+Out in the countryside, this dirt road serves as the lifeline for many
+of the farmers and their families living out in this rural area who
+occasionally need to get supplies.  Although winding through the hills and
+valleys, this road still goes in a general south-to-north direction.  Not
+much of interest though along this seldom traveled path unless you have a
+thing for the cozy scenery along the way. 
+~
+0 0 1
+D0
+~
+~
+0 -1 50007
+D2
+~
+~
+0 -1 50005
+S
+#50007
+Dirt Road~
+Out in the countryside, this dirt road serves as the lifeline for many
+of the farmers and their families living out in this rural area who
+occasionally need to get supplies.  Although winding through the hills and
+valleys, this road still goes in a general south-to-north direction.  Not
+much of interest though along this seldom traveled path unless you have a
+thing for the cozy scenery along the way. 
+~
+0 0 1
+D2
+~
+~
+0 -1 50006
+D7
+~
+~
+0 -1 50008
+S
+#50008
+Dirt Road~
+Out in the countryside, this dirt road serves as the lifeline for many
+of the farmers and their families living out in this rural area who
+occasionally need to get supplies.  Although winding through the hills and
+valleys, this road still goes in a general south-to-north direction.  Not
+much of interest though along this seldom traveled path unless you have a
+thing for the cozy scenery along the way. 
+~
+0 0 1
+D7
+~
+~
+0 -1 50009
+D8
+~
+~
+0 -1 50007
+S
+#50009
+End Of The Road?~
+Here, the dirt road ends abrubtly at the edge of a gigantic crater.  It
+seems there is no way to get to the other side, as hills on both side of
+this crater block anyone from trying to go around it.  The slope ahead
+looks like someone might be able to make it down ok, if they took it
+slowly.  The crater is too dark to see if there is a similar slope on the
+other side which could be used to continue forward. 
+~
+0 0 1
+D0
+~
+~
+0 -1 50010
+D8
+~
+~
+0 -1 50008
+S
+#50010
+Above A Gigantic Crater~
+Good God look at the size of this hole.  The sheer size of this crater
+is so great, the other end of the dirt road can barely be seen on the other
+side.  Looking down, there is nothing but blackness as aparently this chasm
+is incredibly deep as well. What could have made a hole this big?  
+~
+0 16777217 1
+D5
+~
+~
+0 -1 50056
+S
+#50011
+Dirt Road~
+Here, on the north side of the massive crater, the road continues onward
+from the lip of the chasm and to the north just as it did coming up from
+the south.  Along the entire length of this dirt road, this huge crater
+which nobody knows how or when it was made, is the only thing of interest
+along this scenic route. 
+~
+0 0 1
+D2
+~
+~
+0 -1 50010
+D6
+~
+~
+0 -1 50012
+S
+#50012
+Dirt Road~
+Out in the countryside, this dirt road serves as the lifeline for many
+of the farmers and their families living out in this rural area who
+occasionally need to get supplies.  Although winding through the hills and
+valleys, this road still goes in a general south-to-north direction.  Not
+much of interest though along this seldom traveled path unless you have a
+thing for the cozy scenery along the way. 
+~
+0 0 1
+D0
+~
+~
+0 -1 50013
+D9
+~
+~
+0 -1 50011
+S
+#50013
+Dirt Road~
+Out in the countryside, this dirt road serves as the lifeline for many
+of the farmers and their families living out in this rural area who
+occasionally need to get supplies.  Although winding through the hills and
+valleys, this road still goes in a general south-to-north direction.  Not
+much of interest though along this seldom traveled path unless you have a
+thing for the cozy scenery along the way. 
+~
+0 0 1
+D0
+~
+~
+0 -1 50014
+D2
+~
+~
+0 -1 50012
+S
+#50014
+Dirt Road~
+Out in the countryside, this dirt road serves as the lifeline for many
+of the farmers and their families living out in this rural area who
+occasionally need to get supplies.  Although winding through the hills and
+valleys, this road still goes in a general south-to-north direction.  Not
+much of interest though along this seldom traveled path unless you have a
+thing for the cozy scenery along the way. 
+~
+0 0 1
+D0
+~
+~
+0 -1 50015
+D2
+~
+~
+0 -1 50013
+S
+#50015
+Dirt Road~
+Out in the countryside, this dirt road serves as the lifeline for many
+of the farmers and their families living out in this rural area who
+occasionally need to get supplies.  Although winding through the hills and
+valleys, this road still goes in a general south-to-north direction.  Not
+much of interest though along this seldom traveled path unless you have a
+thing for the cozy scenery along the way. 
+~
+0 0 1
+D0
+~
+~
+0 -1 50016
+D2
+~
+~
+0 -1 50014
+D4
+~
+~
+64 -1 50055
+S
+#50016
+Abrupt End~
+The scenic dirt road through the countryside ends abruptly, and rather
+unceremoniously at a giant limestone fighting ring.  With a tall, conicular
+structure on each corner of the large arena, as well as a stretch of bare
+dirt stretching around the perimeter of the ring, this arena used by
+fighters world-wide sticks out like a sore thumb.  The only ways to go now
+are onward to the ring, or back towards South City. 
+~
+0 0 1
+D0
+~
+~
+0 -1 50017
+D2
+~
+~
+0 -1 50015
+S
+#50017
+Near The Ring~
+Standing here on the couple feet of bare dirt just before the arena
+floor is where most fighters stand respectfully, waiting for their turn to
+fight so they can watch the skills of others in the meantime.  This area of
+dirt seems to go around the entire ring, making it the ideal observation
+point. 
+~
+0 0 1
+D0
+~
+~
+0 -1 50018
+D1
+~
+~
+0 -1 50051
+D2
+~
+~
+0 -1 50016
+D3
+~
+~
+0 -1 50045
+S
+#50018
+South Side of the Ring~
+Standing to one side of the massive limestone-tiled ring, it is still
+aparent there is more than plenty of room to fight someone here.  At the
+edge of the arena, the floor steps down to bare dirt which stretches
+outward from the floor for a few feet.  Fighters waiting for their turn to
+use the arena usually stand within this stretch of dirt as they watch
+fighters in the ring go at it.  Beyond the stretch of dirt there is calm
+grasslands, with the occasional hill and mountains in the far distance. 
+~
+0 67371008 1
+D0
+~
+~
+0 -1 50019
+D1
+~
+~
+0 -1 50025
+D2
+~
+~
+0 -1 50017
+D3
+~
+~
+0 -1 50024
+D4
+~
+~
+64 -1 50031
+S
+#50019
+The Center of Cell's Tournament Ring~
+Here at the center of the arena floor, the giant limestone ring spans
+outward in every direction as a large square.  At each of the far corners,
+there is a tall, thin, conicular structure made out of the same stone
+material as the tiled arena floor.  Strong and sturdy, this fighting area
+looks like it would stand up to most everything that could be put into it. 
+Signs that this strength has been put to the test can be seen in the
+occasional line of cracks and indentations made in the floor. 
+~
+0 67371008 1
+D0
+~
+~
+0 -1 50020
+D1
+~
+~
+0 -1 50022
+D2
+~
+~
+0 -1 50018
+D3
+~
+~
+0 -1 50021
+D4
+~
+~
+64 -1 50027
+D6
+~
+~
+0 -1 50026
+D7
+~
+~
+0 -1 50023
+D8
+~
+~
+0 -1 50025
+D9
+~
+~
+0 -1 50024
+S
+#50020
+North Side of the Ring~
+Standing to one side of the massive limestone-tiled ring, it is still
+aparent there is more than plenty of room to fight someone here.  At the
+edge of the arena, the floor steps down to bare dirt which stretches
+outward from the floor for a few feet.  Fighters waiting for their turn to
+use the arena usually stand within this stretch of dirt as they watch
+fighters in the ring go at it.  Beyond the stretch of dirt there is calm
+grasslands, with the occasional hill and mountains in the far distance. 
+~
+0 67371008 1
+D0
+~
+~
+0 -1 50048
+D1
+~
+~
+0 -1 50026
+D2
+~
+~
+0 -1 50019
+D3
+~
+~
+0 -1 50023
+D4
+~
+~
+64 -1 50028
+S
+#50021
+West Side of the Ring~
+Standing to one side of the massive limestone-tiled ring, it is still
+aparent there is more than plenty of room to fight someone here.  At the
+edge of the arena, the floor steps down to bare dirt which stretches
+outward from the floor for a few feet.  Fighters waiting for their turn to
+use the arena usually stand within this stretch of dirt as they watch
+fighters in the ring go at it.  Beyond the stretch of dirt there is calm
+grasslands, with the occasional hill and mountains in the far distance. 
+~
+0 67371008 1
+D0
+~
+~
+0 -1 50023
+D1
+~
+~
+0 -1 50019
+D2
+~
+~
+0 -1 50024
+D3
+~
+~
+0 -1 50046
+D4
+~
+~
+64 -1 50029
+S
+#50022
+East Side of the Ring~
+Standing to one side of the massive limestone-tiled ring, it is still
+aparent there is more than plenty of room to fight someone here.  At the
+edge of the arena, the floor steps down to bare dirt which stretches
+outward from the floor for a few feet.  Fighters waiting for their turn to
+use the arena usually stand within this stretch of dirt as they watch
+fighters in the ring go at it.  Beyond the stretch of dirt there is calm
+grasslands, with the occasional hill and mountains in the far distance. 
+~
+0 67371008 1
+D0
+~
+~
+0 -1 50026
+D1
+~
+~
+0 -1 50050
+D2
+~
+~
+0 -1 50025
+D3
+~
+~
+0 -1 50019
+D4
+~
+~
+64 -1 50030
+S
+#50023
+Northwest Corner of the Ring~
+Even at the corner of the ring, there is still plenty of room for people
+to fight.  The only visual thing of note, really, is the tall, thin,
+conicular structure of stone which sits at the very tip of the corner of
+the tiled arena floor.  All around the edges of the arena floor, there is a
+couple feet of bare dirt reaching outward where aparently the ground was
+literally blown away.  Further beyond that, regular grassy lands can be
+seen once again, along with the occasional hill and mountains in the much
+further distance. 
+~
+0 67371008 1
+D1
+~
+~
+0 -1 50020
+D2
+~
+~
+0 -1 50021
+D4
+~
+~
+64 -1 50033
+D7
+~
+~
+0 -1 50047
+D8
+~
+~
+0 -1 50019
+S
+#50024
+Southwest Corner of the Ring~
+Even at the corner of the ring, there is still plenty of room for people
+to fight.  The only visual thing of note, really, is the tall, thin,
+conicular structure of stone which sits at the very tip of the corner of
+the tiled arena floor.  All around the edges of the arena floor, there is a
+couple feet of bare dirt reaching outward where aparently the ground was
+literally blown away.  Further beyond that, regular grassy lands can be
+seen once again, along with the occasional hill and mountains in the much
+further distance. 
+~
+0 67371008 1
+D0
+~
+~
+0 -1 50021
+D1
+~
+~
+0 -1 50018
+D4
+~
+~
+64 -1 50032
+D6
+~
+~
+0 -1 50019
+D9
+~
+~
+0 -1 50045
+S
+#50025
+Southeast Corner of the Ring~
+Even at the corner of the ring, there is still plenty of room for people
+to fight.  The only visual thing of note, really, is the tall, thin,
+conicular structure of stone which sits at the very tip of the corner of
+the tiled arena floor.  All around the edges of the arena floor, there is a
+couple feet of bare dirt reaching outward where aparently the ground was
+literally blown away.  Further beyond that, regular grassy lands can be
+seen once again, along with the occasional hill and mountains in the much
+further distance. 
+~
+0 67371008 1
+D0
+~
+~
+0 -1 50022
+D3
+~
+~
+0 -1 50018
+D4
+~
+~
+64 -1 50035
+D7
+~
+~
+0 -1 50019
+D8
+~
+~
+0 -1 50051
+S
+#50026
+Northeast Corner of the Ring~
+Even at the corner of the ring, there is still plenty of room for people
+to fight.  The only visual thing of note, really, is the tall, thin,
+conicular structure of stone which sits at the very tip of the corner of
+the tiled arena floor.  All around the edges of the arena floor, there is a
+couple feet of bare dirt reaching outward where aparently the ground was
+literally blown away.  Further beyond that, regular grassy lands can be
+seen once again, along with the occasional hill and mountains in the much
+further distance. 
+~
+0 67371008 1
+D2
+~
+~
+0 -1 50022
+D3
+~
+~
+0 -1 50020
+D4
+~
+~
+64 -1 50034
+D6
+~
+~
+0 -1 50049
+D9
+~
+~
+0 -1 50019
+S
+#50027
+In The Air Above The Center Of Cell's Tournament Ring~
+In the space of air directly above the center of the ring, it's apparent
+there is far more room to fight than previously thought.  Fighting while
+airborne provides it's own little set of difficulties, as the wind and
+occasional feelings of weightlessness test your abilities of balance as
+well as speed.  Be careful not to fall though, as an impact with the
+limestone floor down below could smart rather painfully. 
+~
+0 84148224 9
+D0
+~
+~
+0 -1 50028
+D1
+~
+~
+0 -1 50030
+D2
+~
+~
+0 -1 50031
+D3
+~
+~
+0 -1 50029
+D4
+~
+~
+64 -1 50036
+D5
+~
+~
+0 -1 50019
+D6
+~
+~
+0 -1 50034
+D7
+~
+~
+0 -1 50033
+D8
+~
+~
+0 -1 50035
+D9
+~
+~
+0 -1 50032
+S
+#50028
+In The Air Above The Ring~
+In the space of air directly above one of the sides of the ring, it's
+apparent there is far more room to fight than previously thought.  Fighting
+while airborne provides it's own little set of difficulties, as the wind
+and occasional feelings of weightlessness test your abilities of balance as
+well as speed.  Be careful not to fall though, as an impact with the
+limestone floor down below could smart rather painfully. 
+~
+0 84148224 9
+D1
+~
+~
+0 -1 50034
+D2
+~
+~
+0 -1 50027
+D3
+~
+~
+0 -1 50033
+D4
+~
+~
+64 -1 50041
+D5
+~
+~
+0 -1 50020
+S
+#50029
+In The Air Above The Ring~
+In the space of air directly above one of the sides of the ring, it's
+apparent there is far more room to fight than previously thought.  Fighting
+while airborne provides it's own little set of difficulties, as the wind
+and occasional feelings of weightlessness test your abilities of balance as
+well as speed.  Be careful not to fall though, as an impact with the
+limestone floor down below could smart rather painfully. 
+~
+0 84148224 9
+D0
+~
+~
+0 -1 50033
+D1
+~
+~
+0 -1 50027
+D2
+~
+~
+0 -1 50032
+D4
+~
+~
+64 -1 50043
+D5
+~
+~
+0 -1 50021
+S
+#50030
+In The Air Above The Ring~
+In the space of air directly above one of the sides of the ring, it's
+apparent there is far more room to fight than previously thought.  Fighting
+while airborne provides it's own little set of difficulties, as the wind
+and occasional feelings of weightlessness test your abilities of balance as
+well as speed.  Be careful not to fall though, as an impact with the
+limestone floor down below could smart rather painfully. 
+~
+0 84148224 9
+D0
+~
+~
+0 -1 50034
+D2
+~
+~
+0 -1 50035
+D3
+~
+~
+0 -1 50027
+D4
+~
+~
+64 -1 50039
+D5
+~
+~
+0 -1 50022
+S
+#50031
+In The Air Above The Ring~
+In the space of air directly above one of the sides of the ring, it's
+apparent there is far more room to fight than previously thought.  Fighting
+while airborne provides it's own little set of difficulties, as the wind
+and occasional feelings of weightlessness test your abilities of balance as
+well as speed.  Be careful not to fall though, as an impact with the
+limestone floor down below could smart rather painfully. 
+~
+0 84148224 9
+D0
+~
+~
+0 -1 50027
+D1
+~
+~
+0 -1 50035
+D3
+~
+~
+0 -1 50032
+D4
+~
+~
+64 -1 50037
+D5
+~
+~
+0 -1 50018
+S
+#50032
+In The Air Above The Ring~
+In the space of air directly above one of the corners of the ring, it's
+apparent there is far more room to fight than previously thought.  Fighting
+while airborne provides it's own little set of difficulties, as the wind
+and occasional feelings of weightlessness test your abilities of balance as
+well as speed.  Be careful not to fall though, as an impact with the
+limestone floor down below, or with one of the pillar-like structures that
+seem like rather dealdly spikes from above, could smart rather painfully. 
+~
+0 84148224 9
+D0
+~
+~
+0 -1 50029
+D1
+~
+~
+0 -1 50031
+D4
+~
+~
+64 -1 50044
+D5
+~
+~
+0 -1 50024
+D6
+~
+~
+0 -1 50027
+S
+#50033
+In The Air Above The Ring~
+In the space of air directly above one of the corners of the ring, it's
+apparent there is far more room to fight than previously thought.  Fighting
+while airborne provides it's own little set of difficulties, as the wind
+and occasional feelings of weightlessness test your abilities of balance as
+well as speed.  Be careful not to fall though, as an impact with the
+limestone floor down below, or with one of the pillar-like structures that
+seem like rather dealdly spikes from above, could smart rather painfully. 
+~
+0 84148224 9
+D1
+~
+~
+0 -1 50028
+D2
+~
+~
+0 -1 50029
+D4
+~
+~
+64 -1 50042
+D5
+~
+~
+0 -1 50023
+D8
+~
+~
+0 -1 50027
+S
+#50034
+In The Air Above The Ring~
+In the space of air directly above one of the corners of the ring, it's
+apparent there is far more room to fight than previously thought.  Fighting
+while airborne provides it's own little set of difficulties, as the wind
+and occasional feelings of weightlessness test your abilities of balance as
+well as speed.  Be careful not to fall though, as an impact with the
+limestone floor down below, or with one of the pillar-like structures that
+seem like rather dealdly spikes from above, could smart rather painfully. 
+~
+0 84148224 9
+D2
+~
+~
+0 -1 50030
+D3
+~
+~
+0 -1 50028
+D4
+~
+~
+64 -1 50040
+D5
+~
+~
+0 -1 50026
+D9
+~
+~
+0 -1 50027
+S
+#50035
+In The Air Above The Ring~
+In the space of air directly above one of the corners of the ring, it's
+apparent there is far more room to fight than previously thought.  Fighting
+while airborne provides it's own little set of difficulties, as the wind
+and occasional feelings of weightlessness test your abilities of balance as
+well as speed.  Be careful not to fall though, as an impact with the
+limestone floor down below, or with one of the pillar-like structures that
+seem like rather dealdly spikes from above, could smart rather painfully. 
+~
+0 84148224 9
+D0
+~
+~
+0 -1 50030
+D3
+~
+~
+0 -1 50031
+D4
+~
+~
+64 -1 50038
+D5
+~
+~
+0 -1 50025
+D7
+~
+~
+0 -1 50027
+S
+#50036
+High Up In The Air Above The Center Of Cell's Tournament Ring~
+Well up in the air above the center of the ring now, it is utterly
+apparent how much available room there is for people to fight.  The open
+air up here provides bountiful space where two fighters can peacably beat
+the crap out of each other with little restraint.  Strong gusts of wind
+however can provide intereference to those novice fighters that have yet to
+truly master the art of flying.  Even then, the forces playing upon a
+person at this height can dampen a fighter's perceptions as they move
+around at incredible speeds.  Be careful not to get hit back down towards
+the ground again.  A fall from this high up could be very, very painful. 
+The mountains in the far distance can be seen rather clearly now from here.
+~
+0 84148224 9
+D0
+~
+~
+0 -1 50041
+D1
+~
+~
+0 -1 50039
+D2
+~
+~
+0 -1 50037
+D3
+~
+~
+0 -1 50043
+D4
+~
+~
+64 -1 50065
+D5
+~
+~
+0 -1 50027
+D6
+~
+~
+0 -1 50040
+D7
+~
+~
+0 -1 50042
+D8
+~
+~
+0 -1 50038
+D9
+~
+~
+0 -1 50044
+S
+#50037
+High Up In the Air Above The Ring~
+Well up in the air above one of the sides of the ring now, it is utterly
+apparent how much available room there is for people to fight.  The open
+air up here provides bountiful space where two fighters can peacably beat
+the crap out of each other with little restraint.  Strong gusts of wind
+however can provide intereference to those novice fighters that have yet to
+truly master the art of flying.  Even then, the forces playing upon a
+person at this height can dampen a fighter's perceptions as they move
+around at incredible speeds.  Be careful not to get hit back down towards
+the ground again.  A fall from this high up could be very, very painful. 
+The mountains in the far distance can be seen rather clearly now from here.
+~
+0 84148224 9
+D0
+~
+~
+0 -1 50036
+D1
+~
+~
+0 -1 50038
+D3
+~
+~
+0 -1 50044
+D4
+~
+~
+64 -1 50066
+D5
+~
+~
+0 -1 50031
+S
+#50038
+High Up In the Air Above The Ring~
+Well up in the air above one of the corners of the ring now, it is
+utterly apparent how much available room there is for people to fight.  The
+open air up here provides bountiful space where two fighters can peacably
+beat the crap out of each other with little restraint.  Strong gusts of
+wind however can provide intereference to those novice fighters that have
+yet to truly master the art of flying.  Even then, the forces playing upon
+a person at this height can dampen a fighter's perceptions as they move
+around at incredible speeds.  Be careful not to get hit back down towards
+the ground again.  A fall from this high up could be very, very painful. 
+The mountains in the far distance can be seen rather clearly now from here.
+~
+0 84148224 9
+D0
+~
+~
+0 -1 50039
+D3
+~
+~
+0 -1 50037
+D4
+~
+~
+64 -1 50067
+D5
+~
+~
+0 -1 50035
+D7
+~
+~
+0 -1 50036
+S
+#50039
+High Up In the Air Above The Ring~
+Well up in the air above one of the sides of the ring now, it is utterly
+apparent how much available room there is for people to fight.  The open
+air up here provides bountiful space where two fighters can peacably beat
+the crap out of each other with little restraint.  Strong gusts of wind
+however can provide intereference to those novice fighters that have yet to
+truly master the art of flying.  Even then, the forces playing upon a
+person at this height can dampen a fighter's perceptions as they move
+around at incredible speeds.  Be careful not to get hit back down towards
+the ground again.  A fall from this high up could be very, very painful. 
+The mountains in the far distance can be seen rather clearly now from here.
+~
+0 84148224 9
+D0
+~
+~
+0 -1 50040
+D2
+~
+~
+0 -1 50038
+D3
+~
+~
+0 -1 50036
+D4
+~
+~
+64 -1 50068
+D5
+~
+~
+0 -1 50030
+S
+#50040
+High Up In the Air Above The Ring~
+Well up in the air above one of the corners of the ring now, it is
+utterly apparent how much available room there is for people to fight.  The
+open air up here provides bountiful space where two fighters can peacably
+beat the crap out of each other with little restraint.  Strong gusts of
+wind however can provide intereference to those novice fighters that have
+yet to truly master the art of flying.  Even then, the forces playing upon
+a person at this height can dampen a fighter's perceptions as they move
+around at incredible speeds.  Be careful not to get hit back down towards
+the ground again.  A fall from this high up could be very, very painful. 
+The mountains in the far distance can be seen rather clearly now from here.
+~
+0 84148224 9
+D2
+~
+~
+0 -1 50039
+D3
+~
+~
+0 -1 50041
+D4
+~
+~
+64 -1 50069
+D5
+~
+~
+0 -1 50034
+D9
+~
+~
+0 -1 50036
+S
+#50041
+High Up In the Air Above The Ring~
+Well up in the air above one of the sides of the ring now, it is utterly
+apparent how much available room there is for people to fight.  The open
+air up here provides bountiful space where two fighters can peacably beat
+the crap out of each other with little restraint.  Strong gusts of wind
+however can provide intereference to those novice fighters that have yet to
+truly master the art of flying.  Even then, the forces playing upon a
+person at this height can dampen a fighter's perceptions as they move
+around at incredible speeds.  Be careful not to get hit back down towards
+the ground again.  A fall from this high up could be very, very painful. 
+The mountains in the far distance can be seen rather clearly now from here.
+~
+0 84148224 9
+D1
+~
+~
+0 -1 50040
+D2
+~
+~
+0 -1 50036
+D3
+~
+~
+0 -1 50042
+D4
+~
+~
+64 -1 50070
+D5
+~
+~
+0 -1 50028
+S
+#50042
+High Up In the Air Above The Ring~
+Well up in the air above one of the corners of the ring now, it is
+utterly apparent how much available room there is for people to fight.  The
+open air up here provides bountiful space where two fighters can peacably
+beat the crap out of each other with little restraint.  Strong gusts of
+wind however can provide intereference to those novice fighters that have
+yet to truly master the art of flying.  Even then, the forces playing upon
+a person at this height can dampen a fighter's perceptions as they move
+around at incredible speeds.  Be careful not to get hit back down towards
+the ground again.  A fall from this high up could be very, very painful. 
+The mountains in the far distance can be seen rather clearly now from here.
+~
+0 84148224 9
+D1
+~
+~
+0 -1 50041
+D2
+~
+~
+0 -1 50043
+D4
+~
+~
+64 -1 50071
+D5
+~
+~
+0 -1 50033
+D8
+~
+~
+0 -1 50036
+S
+#50043
+High Up In the Air Above The Ring~
+Well up in the air above one of the sides of the ring now, it is utterly
+apparent how much available room there is for people to fight.  The open
+air up here provides bountiful space where two fighters can peacably beat
+the crap out of each other with little restraint.  Strong gusts of wind
+however can provide intereference to those novice fighters that have yet to
+truly master the art of flying.  Even then, the forces playing upon a
+person at this height can dampen a fighter's perceptions as they move
+around at incredible speeds.  Be careful not to get hit back down towards
+the ground again.  A fall from this high up could be very, very painful. 
+The mountains in the far distance can be seen rather clearly now from here.
+~
+0 84148224 9
+D0
+~
+~
+0 -1 50042
+D1
+~
+~
+0 -1 50036
+D2
+~
+~
+0 -1 50044
+D4
+~
+~
+64 -1 50072
+D5
+~
+~
+0 -1 50029
+S
+#50044
+High Up In the Air Above The Ring~
+Well up in the air above one of the corners of the ring now, it is
+utterly apparent how much available room there is for people to fight.  The
+open air up here provides bountiful space where two fighters can peacably
+beat the crap out of each other with little restraint.  Strong gusts of
+wind however can provide intereference to those novice fighters that have
+yet to truly master the art of flying.  Even then, the forces playing upon
+a person at this height can dampen a fighter's perceptions as they move
+around at incredible speeds.  Be careful not to get hit back down towards
+the ground again.  A fall from this high up could be very, very painful. 
+The mountains in the far distance can be seen rather clearly now from here.
+~
+0 84148224 9
+D0
+~
+~
+0 -1 50043
+D1
+~
+~
+0 -1 50037
+D4
+~
+~
+64 -1 50073
+D5
+~
+~
+0 -1 50032
+D6
+~
+~
+0 -1 50036
+S
+#50045
+Near The Ring~
+Standing here on the couple feet of bare dirt just before the arena
+floor is where most fighters stand respectfully, waiting for their turn to
+fight so they can watch the skills of others in the meantime.  This area of
+dirt seems to go around the entire ring, making it the ideal observation
+point. 
+~
+0 0 1
+D0
+~
+~
+0 -1 50046
+D1
+~
+~
+0 -1 50017
+D6
+~
+~
+0 -1 50024
+D9
+~
+~
+0 -1 50060
+S
+#50046
+Near The Ring~
+Standing here on the couple feet of bare dirt just before the arena
+floor is where most fighters stand respectfully, waiting for their turn to
+fight so they can watch the skills of others in the meantime.  This area of
+dirt seems to go around the entire ring, making it the ideal observation
+point. 
+~
+0 0 1
+D0
+~
+~
+0 -1 50047
+D1
+~
+~
+0 -1 50021
+D2
+~
+~
+0 -1 50045
+S
+#50047
+Near The Ring~
+Standing here on the couple feet of bare dirt just before the arena
+floor is where most fighters stand respectfully, waiting for their turn to
+fight so they can watch the skills of others in the meantime.  This area of
+dirt seems to go around the entire ring, making it the ideal observation
+point. 
+~
+0 0 1
+D1
+~
+~
+0 -1 50048
+D2
+~
+~
+0 -1 50046
+D8
+~
+~
+0 -1 50023
+S
+#50048
+Near The Ring~
+Standing here on the couple feet of bare dirt just before the arena
+floor is where most fighters stand respectfully, waiting for their turn to
+fight so they can watch the skills of others in the meantime.  This area of
+dirt seems to go around the entire ring, making it the ideal observation
+point. 
+~
+0 0 1
+D1
+~
+~
+0 -1 50049
+D2
+~
+~
+0 -1 50020
+D3
+~
+~
+0 -1 50047
+S
+#50049
+Near The Ring~
+Standing here on the couple feet of bare dirt just before the arena
+floor is where most fighters stand respectfully, waiting for their turn to
+fight so they can watch the skills of others in the meantime.  This area of
+dirt seems to go around the entire ring, making it the ideal observation
+point. 
+~
+0 0 1
+D2
+~
+~
+0 -1 50050
+D3
+~
+~
+0 -1 50048
+D9
+~
+~
+0 -1 50026
+S
+#50050
+Near The Ring~
+Standing here on the couple feet of bare dirt just before the arena
+floor is where most fighters stand respectfully, waiting for their turn to
+fight so they can watch the skills of others in the meantime.  This area of
+dirt seems to go around the entire ring, making it the ideal observation
+point. 
+~
+0 0 1
+D0
+~
+~
+0 -1 50049
+D2
+~
+~
+0 -1 50051
+D3
+~
+~
+0 -1 50022
+S
+#50051
+Near The Ring~
+Standing here on the couple feet of bare dirt just before the arena
+floor is where most fighters stand respectfully, waiting for their turn to
+fight so they can watch the skills of others in the meantime.  This area of
+dirt seems to go around the entire ring, making it the ideal observation
+point. 
+~
+0 0 1
+D0
+~
+~
+0 -1 50050
+D3
+~
+~
+0 -1 50017
+D7
+~
+~
+0 -1 50025
+S
+#50052
+Aerial Shortcut To The Arena~
+Some say the best path to a destination is to take the high road.  And,
+as anyone knows, the highest road is through the air.  Soaring high up into
+the air, the dirt road becomes somewhat of a thin line between the hills
+down below.  With South City to the...well, to the south, the dirt road
+spans onward to the north.  Only way to go now is flying onward to the
+north, or landing again. 
+~
+0 16777216 1
+D0
+~
+~
+64 -1 50053
+D5
+~
+~
+0 -1 50000
+S
+#50053
+Soaring High Above The Countryside~
+Contuing to fly along through the air at a casually fast speed, the
+scenic value of the view from up here becomes quite apparent.  Clear blue
+sky, except for the occasional puffy white cloud, green fields, hills, and
+mountains as far as the eye can see.  Truly, this is some quite nice
+scenery.  The only thing marring this picturesque landscape is a giant
+chasm directly below.  Circular, this crater which seems to almost have no
+bottom appears to have been created by some kind of enormous blast.  With
+the mountains around to either side, it looks as if the road access was cut
+off by it.  Good thing some people are smart enough to travel by air. 
+~
+0 0 1
+D0
+~
+~
+64 -1 50054
+D2
+~
+~
+64 -1 50052
+S
+#50054
+Still Soaring High Above The Countryside~
+Contuing to fly along through the air at a casually fast speed, the
+scenic value of the view from up here becomes quite apparent.  Clear blue
+sky, except for the occasional puffy white cloud, green fields, hills, and
+mountains as far as the eye can see.  Truly, this is some quite nice
+scenery.  The only thing marring this picturesque landscape is a giant
+chasm directly below.  Circular, this crater which seems to almost have no
+bottom appears to have been created by some kind of enormous blast.  With
+the mountains around to either side, it looks as if the road access was cut
+off by it.  Good thing some people are smart enough to travel by air. 
+~
+0 0 1
+D0
+~
+~
+64 -1 50055
+D2
+~
+~
+64 -1 50053
+S
+#50055
+Mid-Air Near The Arena~
+Shortly to the north, the arena is now visible as a small grey square. 
+The other side of the dirt road can be seen leading up to it, then stopping
+abruptly.  Coming closer and closer to the arena, it seems now would be a
+good time go ahead and land down below.  Still a short distance away from
+the arena yet, but then again walking never hurt anyone. 
+~
+0 16777216 1
+D2
+~
+~
+64 -1 50054
+D5
+~
+~
+0 -1 50015
+S
+#50056
+Falling Down Into The Crater~
+WAAAAAAAAA!  Damn it's a long ways down.  Good thing some people are
+able to fly.  It looks like a fall down into this crater could really hurt
+once someone hit the bottom.  As dark as it is already, the light continues
+to diminish deeper into the crater. 
+~
+0 16777217 1
+D4
+~
+~
+64 -1 50010
+D5
+~
+~
+0 -1 50057
+S
+#50057
+Bottom Of The Crater~
+Here at the bottom of the deep and massive crater there is very little
+light coming down from above.  From what can be made out, it looks possible
+to climb back up the slope to the south.  However the northern side looks
+far too steep to make it up.  Unless a person knows how to fly, it seems
+the access north along the road has been cut off by whatever kind of blast
+made this hole.  
+~
+0 1 1
+D4
+~
+~
+0 -1 50009
+S
+#50058
+Before A Small Shack~
+Here in front of the old, and long since abandoned shack, there is a
+pitiful excuse of a front yard deteriorating from years of neglect.  Wooden
+planters rotted and barely holding in the dead plants that rest within
+them, this place has a rather pitiful look to it; as if to say "Please. 
+Someone put me out of my misery." To complete this look, there is a little
+dirt mound and a makeshift cross marking where someone's beloved pet was
+laid to rest.  The front door of the shack lays slightly ajar, as it
+appears to be a common resting place for travelers passing through the
+area.  
+~
+0 0 1
+D0
+~
+~
+0 -1 50059
+D3
+~
+~
+0 -1 50005
+S
+#50059
+This Old House~
+Good lord it reeks in here!  Rotting wood covered in mold from years of
+exposure to the elements have caused an ungodly odor to linger within this
+termite hotel.  The only thing adorning this single-roomed shack is
+something that resembles a wooden dresser, and a foul looking mattress.  Oh
+well.  At least this is a place to heal from the long walk. 
+~
+0 536871944 0
+D2
+~
+~
+0 -1 50058
+S
+#50060
+Grassy Field Near The Ring~
+Outside the band of dirt encircling the ring, there is nice, calm
+grass-covered land.  However, the scenery once again finds itself distrubed
+by a large, white news van that sports the giant logo '&RZ&W-&BT&Gv&Y! 
+&g'.  The large side door to the van is ajar, and the occupants are nowhere
+in sight.  Perhaps nobody would mind if someone rested inside?  
+~
+0 0 1
+D3
+~
+~
+0 -1 50061
+D6
+~
+~
+0 -1 50045
+S
+#50061
+Center Of The Z-Tv News Van~
+Inside the news van, activity is at an all time high.  Lights blinking,
+machines buzzing, and screens flickering as data is streaming in and out of
+the mobile appendage of the Z-Tv News station at, well, at the pace of a
+news station.  The entire van seems to be empty.  The front of the van can
+be seen to the left, and the tv crew's sleeping quarters can be seen to the
+right and up above as well. 
+~
+0 1032 0
+D0
+~
+~
+0 -1 50062
+D1
+~
+~
+0 -1 50060
+D2
+~
+~
+0 -1 50063
+D4
+~
+~
+0 -1 50064
+S
+#50062
+Rear Compartment Of The Z-Tv News Van~
+Here in this cramped compartment there are a couple fold-down beds, as
+well as a few living amenities such as a tiny microwave, capsule foods,
+cd-players, magazines, and other various equipment.  While cramped, it does
+seem like a comfortable enough room where a person could recover from a
+hard days work. 
+~
+0 536871936 0
+D2
+~
+~
+0 -1 50061
+S
+#50063
+Drivers Section Of The Z-Tv Van~
+There's not much up here except two mildly-comfortable looking seats and
+a steering wheel, as well as a cold cup of coffee still sitting in it's
+holder.  From a small hook on the roof of the compartment, a goofy looking
+air-freshener in the shape of Hercule's head with a bigass stupid grin,
+giving a little peace sign with one hand, dangles uselessly about. 
+~
+0 1032 0
+D0
+~
+~
+0 -1 50061
+S
+#50064
+Upper Compartment Of The Z-Tv News Van~
+Here in this cramped compartment there are a couple fold-down beds, as
+well as a few living amenities such as a tiny microwave, capsule foods,
+cd-players, magazines, and other various equipment.  While cramped, it does
+seem like a comfortable enough room where a person could recover from a
+hard days work. 
+~
+0 536871936 0
+D5
+~
+~
+0 -1 50061
+S
+#50065
+Almost Up Near The Jetstream~
+At this altitude, the ring is no longer visible down below.  The
+landscape is similar to the view from an airplane, and with good reason as
+airplanes can be seen flying acrost the skies in the distance.  The visual
+clarity in all directions is almost limitless, as the horizon can be seen
+any direction which is looked upon.  Lots of clouds clutter about the area
+as well, dampening the high visibility.  Even though there is limitless
+room to fight up here, it will be difficult to do so with the weather
+conditions at this altitude.  Thinner air, gale-force winds, and the
+chilling cold make for a hostile fighting environment. 
+~
+0 84148228 9
+D0
+~
+~
+0 -1 50070
+D1
+~
+~
+0 -1 50068
+D2
+~
+~
+0 -1 50066
+D3
+~
+~
+0 -1 50072
+D4
+~
+~
+64 -1 50074
+D5
+~
+~
+0 -1 50036 0 0 1
+D6
+~
+~
+0 -1 50069
+D7
+~
+~
+0 -1 50071
+D8
+~
+~
+0 -1 50067
+D9
+~
+~
+0 -1 50073
+S
+#50066
+Almost Up Near The Jetstream~
+At this altitude, the ring is no longer visible down below.  The
+landscape is similar to the view from an airplane, and with good reason as
+airplanes can be seen flying acrost the skies in the distance.  The visual
+clarity in all directions is almost limitless, as the horizon can be seen
+any direction which is looked upon.  Lots of clouds clutter about the area
+as well, dampening the high visibility.  Even though there is limitless
+room to fight up here, it will be difficult to do so with the weather
+conditions at this altitude.  Thinner air, gale-force winds, and the
+chilling cold make for a hostile fighting environment. 
+~
+0 84148228 9
+D0
+~
+~
+0 -1 50065
+D1
+~
+~
+0 -1 50067 0 200 1
+D3
+~
+~
+0 -1 50073
+D5
+~
+~
+0 -1 50037
+S
+#50067
+Almost Up Near The Jetstream~
+At this altitude, the ring is no longer visible down below.  The
+landscape is similar to the view from an airplane, and with good reason as
+airplanes can be seen flying acrost the skies in the distance.  The visual
+clarity in all directions is almost limitless, as the horizon can be seen
+any direction which is looked upon.  Lots of clouds clutter about the area
+as well, dampening the high visibility.  Even though there is limitless
+room to fight up here, it will be difficult to do so with the weather
+conditions at this altitude.  Thinner air, gale-force winds, and the
+chilling cold make for a hostile fighting environment. 
+~
+0 84148228 9
+D0
+~
+~
+0 -1 50068 0 200 1
+D3
+~
+~
+0 -1 50066
+D5
+~
+~
+0 -1 50038
+D7
+~
+~
+0 -1 50065
+S
+#50068
+Almost Up Near The Jetstream~
+At this altitude, the ring is no longer visible down below.  The
+landscape is similar to the view from an airplane, and with good reason as
+airplanes can be seen flying acrost the skies in the distance.  The visual
+clarity in all directions is almost limitless, as the horizon can be seen
+any direction which is looked upon.  Lots of clouds clutter about the area
+as well, dampening the high visibility.  Even though there is limitless
+room to fight up here, it will be difficult to do so with the weather
+conditions at this altitude.  Thinner air, gale-force winds, and the
+chilling cold make for a hostile fighting environment. 
+~
+0 84148228 9
+D0
+~
+~
+0 -1 50069 0 200 1
+D2
+~
+~
+0 -1 50067
+D3
+~
+~
+0 -1 50065
+D5
+~
+~
+0 -1 50039
+S
+#50069
+Almost Up Near The Jetstream~
+At this altitude, the ring is no longer visible down below.  The
+landscape is similar to the view from an airplane, and with good reason as
+airplanes can be seen flying acrost the skies in the distance.  The visual
+clarity in all directions is almost limitless, as the horizon can be seen
+any direction which is looked upon.  Lots of clouds clutter about the area
+as well, dampening the high visibility.  Even though there is limitless
+room to fight up here, it will be difficult to do so with the weather
+conditions at this altitude.  Thinner air, gale-force winds, and the
+chilling cold make for a hostile fighting environment. 
+~
+0 84148228 9
+D2
+~
+~
+0 -1 50068
+D3
+~
+~
+0 -1 50070 0 200 1
+D5
+~
+~
+0 -1 50040
+D9
+~
+~
+0 -1 50065
+S
+#50070
+Almost Up Near The Jetstream~
+At this altitude, the ring is no longer visible down below.  The
+landscape is similar to the view from an airplane, and with good reason as
+airplanes can be seen flying acrost the skies in the distance.  The visual
+clarity in all directions is almost limitless, as the horizon can be seen
+any direction which is looked upon.  Lots of clouds clutter about the area
+as well, dampening the high visibility.  Even though there is limitless
+room to fight up here, it will be difficult to do so with the weather
+conditions at this altitude.  Thinner air, gale-force winds, and the
+chilling cold make for a hostile fighting environment. 
+~
+0 84148228 9
+D1
+~
+~
+0 -1 50069
+D2
+~
+~
+0 -1 50065 0 200 1
+D3
+~
+~
+0 -1 50071 0 200 1
+D5
+~
+~
+0 -1 50041
+S
+#50071
+Almost Up Near The Jetstream~
+At this altitude, the ring is no longer visible down below.  The
+landscape is similar to the view from an airplane, and with good reason as
+airplanes can be seen flying acrost the skies in the distance.  The visual
+clarity in all directions is almost limitless, as the horizon can be seen
+any direction which is looked upon.  Lots of clouds clutter about the area
+as well, dampening the high visibility.  Even though there is limitless
+room to fight up here, it will be difficult to do so with the weather
+conditions at this altitude.  Thinner air, gale-force winds, and the
+chilling cold make for a hostile fighting environment. 
+~
+0 84148228 9
+D1
+~
+~
+0 -1 50070
+D2
+~
+~
+0 -1 50072 0 200 1
+D5
+~
+~
+0 -1 50042
+D8
+~
+~
+0 -1 50065
+S
+#50072
+Almost Up Near The Jetstream~
+At this altitude, the ring is no longer visible down below.  The
+landscape is similar to the view from an airplane, and with good reason as
+airplanes can be seen flying acrost the skies in the distance.  The visual
+clarity in all directions is almost limitless, as the horizon can be seen
+any direction which is looked upon.  Lots of clouds clutter about the area
+as well, dampening the high visibility.  Even though there is limitless
+room to fight up here, it will be difficult to do so with the weather
+conditions at this altitude.  Thinner air, gale-force winds, and the
+chilling cold make for a hostile fighting environment. 
+~
+0 84148228 9
+D0
+~
+~
+0 -1 50071
+D1
+~
+~
+0 -1 50065
+D2
+~
+~
+0 -1 50073 0 200 1
+D5
+~
+~
+0 -1 50043
+S
+#50073
+Almost Up Near The Jetstream~
+At this altitude, the ring is no longer visible down below.  The
+landscape is similar to the view from an airplane, and with good reason as
+airplanes can be seen flying acrost the skies in the distance.  The visual
+clarity in all directions is almost limitless, as the horizon can be seen
+any direction which is looked upon.  Lots of clouds clutter about the area
+as well, dampening the high visibility.  Even though there is limitless
+room to fight up here, it will be difficult to do so with the weather
+conditions at this altitude.  Thinner air, gale-force winds, and the
+chilling cold make for a hostile fighting environment. 
+~
+0 84148228 9
+D0
+~
+~
+0 -1 50072
+D1
+~
+~
+0 -1 50066 0 200 1
+D5
+~
+~
+0 -1 50044
+D6
+~
+~
+0 -1 50065
+S
+#50074
+The Jetstream~
+This altitude is the limit for any fighter unable to survive in an
+airless atmosphere.  Beyond this point is the stratosphere.  The air up
+there is incredibly thin, and mostly comprised of nitrogen.  And that's
+without even mentioning the extreme cold.  Of course, to even make it to
+the stratosphere, one has to get past this jetstream.  Massively powerful
+winds reaching into the several hundreds of miles per hour blow about
+freely here.  Even someone able to fly is going to have great difficulty
+manuevering any further upwards than here.  Fighting is impossible here. 
+~
+0 17040388 9
+D4
+~
+~
+64 -1 50075 0 200 50
+D5
+~
+~
+0 -1 50065 0 200 100
+S
+#50075
+Lower Stratosphere~
+High above the jetstream now, and many miles above the ground, the wind
+dies back down to an eery standstill.  At this extreme altitude, the sky is
+a darker blue as there is less light up here than at ground level.  Also
+noticable, is the lack of breathable air.  The temperature is subzero,
+however anything surviving at this altitude probably doesn't feel cold
+anyways.  All around there is just barren, lonely, and empty skies. 
+~
+0 19136516 16
+D4
+~
+~
+64 -1 50076
+D5
+~
+~
+0 -1 50074
+S
+#50076
+In The Stratosphere~
+Countless miles upward still, the center of the stratosphere is as
+lonely a place as it could possibly be.  The cloud cover far down below is
+the only reminder of any civilization that exists now.  As the desolation
+of outer space comes closer, the sky around continues to darken ever more. 
+A seldom seen environment, even this barren place holds a very solemn form
+of picturesque beauty. 
+~
+0 19136516 16
+D4
+~
+~
+64 -1 50077
+D5
+~
+~
+0 -1 50075
+S
+#50077
+Upper Stratosphere~
+Up, up, and farther up still and the stratosphere is still all around
+yet.  Just when it looks like this region of atmosphere above the earth
+could go on till eternity, the twinkling of stars begins to appear here and
+there.  The sky is very deep shade of blue now as the edge of the
+atmosphere is approaching.  The stars that can be seen now shatter the
+hopeless depression one feels while traveling through the stratosphere. 
+~
+0 19136516 16
+D4
+~
+~
+64 -1 50078
+D5
+~
+~
+0 -1 50076
+S
+#50078
+Edge Of The Atmosphere~
+The end of the Earth, as some call it, is the place that is all around
+now.  The edge of the atmosphere that surrounds the earth turns the horizon
+into a bright blue band with white at the edges.  Above, space is now
+visible as clear as day. Below, all that can be made out now are continents
+and clouds.  It's impossible to even conceive being able to see the
+fighting ring down on the earth below.  In the heavens above, the countless
+stars twinkle brightly like an ocean.  A great distance away, the small
+grey object called the moon can barely be seen as light from the sun
+reflects off of it's surface.  Space junk such as satellites and other
+miscellaneous garbage looks as tiny specks floating around just above
+the Earth.
+~
+0 19136516 16
+D4
+~
+~
+64 -1 50079
+D5
+~
+~
+0 -1 50077
+S
+#50079
+Above The Earth~
+Soaring out into the void for hundreds of miles, the Earth starts to
+become a little more distant.  A little more distinct as a sphere rather
+than something that dominates one's vision.  Tens of thousands of miles
+ahead, some kind of cloud of debris seems to be floating about.  What seems
+like many times more distant than that, is the moon.  An object of note now
+would be the lack of any sound out here in space.  Apparently without any
+air as a medium to travel through, sound waves are rendered useless. 
+~
+0 2424836 16
+D4
+~
+~
+64 -1 50080
+D5
+~
+~
+64 -1 50078
+S
+#50080
+Out In Space~
+Flying for a few thousand more miles, a fact about this region of space
+suddenly becomes apparent.  With no gravity pulling someone back towards
+the earth now, as well as limitless room in any direction, the usefullness
+of this region to fight is clear now.  Two fighters could seemingly fight
+endlessly without restraint in such a vast space.  While it's impossible to
+speak with sound out here, two people could always communicate with thought
+instead.  However, there doesn't seem to be any places for the fighters to
+rest afterwards.  Or maybe there's something in the big field of debris
+several thousand miles ahead yet?  
+~
+0 69468164 16
+D0
+~
+~
+64 -1 50085
+D1
+~
+~
+64 -1 50083
+D2
+~
+~
+64 -1 50081
+D3
+~
+~
+64 -1 50087
+D4
+~
+~
+64 -1 50089
+D5
+~
+~
+64 -1 50079
+D6
+~
+~
+64 -1 50084
+D7
+~
+~
+64 -1 50086
+D8
+~
+~
+64 -1 50082
+D9
+~
+~
+64 -1 50088
+S
+#50081
+Zero Gravity~
+Out here in the void of space there is absolutely nothing for a long,
+long distance.  In the field of vision, there is the massive blue sphere
+called Earth, and far opposite the Earth, the moon.  All around the stars
+twinkle brightly in the distance.  The only thing that disturbs the calm
+out here, is the occasional flash of light from energy blasts as icers,
+androids, and bio-androids spar to their hearts content out in this zero
+gravity environment. 
+~
+0 69468164 16
+D0
+~
+~
+64 -1 50080
+D1
+~
+~
+64 -1 50082
+D3
+~
+~
+64 -1 50088
+S
+#50082
+Zero Gravity~
+Out here in the void of space there is absolutely nothing for a long,
+long distance.  In the field of vision, there is the massive blue sphere
+called Earth, and far opposite the Earth, the moon.  All around the stars
+twinkle brightly in the distance.  The only thing that disturbs the calm
+out here, is the occasional flash of light from energy blasts as icers,
+androids, and bio-androids spar to their hearts content out in this zero
+gravity environment. 
+~
+0 69468164 16
+D0
+~
+~
+64 -1 50083
+D3
+~
+~
+64 -1 50081
+D7
+~
+~
+64 -1 50080
+S
+#50083
+Zero Gravity~
+Out here in the void of space there is absolutely nothing for a long,
+long distance.  In the field of vision, there is the massive blue sphere
+called Earth, and far opposite the Earth, the moon.  All around the stars
+twinkle brightly in the distance.  The only thing that disturbs the calm
+out here, is the occasional flash of light from energy blasts as icers,
+androids, and bio-androids spar to their hearts content out in this zero
+gravity environment. 
+~
+0 69468164 16
+D0
+~
+~
+64 -1 50084
+D2
+~
+~
+64 -1 50082
+D3
+~
+~
+64 -1 50080
+S
+#50084
+Zero Gravity~
+Out here in the void of space there is absolutely nothing for a long,
+long distance.  In the field of vision, there is the massive blue sphere
+called Earth, and far opposite the Earth, the moon.  All around the stars
+twinkle brightly in the distance.  The only thing that disturbs the calm
+out here, is the occasional flash of light from energy blasts as icers,
+androids, and bio-androids spar to their hearts content out in this zero
+gravity environment. 
+~
+0 69468164 16
+D2
+~
+~
+64 -1 50083
+D3
+~
+~
+64 -1 50085
+D9
+~
+~
+64 -1 50080
+S
+#50085
+Zero Gravity~
+Out here in the void of space there is absolutely nothing for a long,
+long distance.  In the field of vision, there is the massive blue sphere
+called Earth, and far opposite the Earth, the moon.  All around the stars
+twinkle brightly in the distance.  The only thing that disturbs the calm
+out here, is the occasional flash of light from energy blasts as icers,
+androids, and bio-androids spar to their hearts content out in this zero
+gravity environment. 
+~
+0 69468164 16
+D1
+~
+~
+64 -1 50084
+D2
+~
+~
+64 -1 50080
+D3
+~
+~
+64 -1 50086
+S
+#50086
+Zero Gravity~
+Out here in the void of space there is absolutely nothing for a long,
+long distance.  In the field of vision, there is the massive blue sphere
+called Earth, and far opposite the Earth, the moon.  All around the stars
+twinkle brightly in the distance.  The only thing that disturbs the calm
+out here, is the occasional flash of light from energy blasts as icers,
+androids, and bio-androids spar to their hearts content out in this zero
+gravity environment. 
+~
+0 69468164 16
+D1
+~
+~
+64 -1 50085
+D2
+~
+~
+64 -1 50087
+D8
+~
+~
+64 -1 50080
+S
+#50087
+Zero Gravity~
+Out here in the void of space there is absolutely nothing for a long,
+long distance.  In the field of vision, there is the massive blue sphere
+called Earth, and far opposite the Earth, the moon.  All around the stars
+twinkle brightly in the distance.  The only thing that disturbs the calm
+out here, is the occasional flash of light from energy blasts as icers,
+androids, and bio-androids spar to their hearts content out in this zero
+gravity environment. 
+~
+0 69468164 16
+D0
+~
+~
+64 -1 50086
+D1
+~
+~
+64 -1 50080
+D2
+~
+~
+64 -1 50088
+S
+#50088
+Zero Gravity~
+Out here in the void of space there is absolutely nothing for a long,
+long distance.  In the field of vision, there is the massive blue sphere
+called Earth, and far opposite the Earth, the moon.  All around the stars
+twinkle brightly in the distance.  The only thing that disturbs the calm
+out here, is the occasional flash of light from energy blasts as icers,
+androids, and bio-androids spar to their hearts content out in this zero
+gravity environment. 
+~
+0 69468164 16
+D0
+~
+~
+64 -1 50087
+D1
+~
+~
+64 -1 50081
+D6
+~
+~
+64 -1 50080
+S
+#50089
+Frequent Flyer Miles?~
+Covering vast distances spanning a couple thousand miles is alot easier
+out here in space for people that fly, seeing as how there is no friction
+out in the void of space.  Although it does take a bit of energy to slow
+down again.  The debris field seemed rather small from a long distance
+away, however, getting closer to it the debris field continues to grow in
+size more and more.  And it's still a long distance off yet. 
+~
+0 2424836 16
+D4
+~
+~
+64 -1 50090
+D5
+~
+~
+64 -1 50080
+S
+#50090
+Close Encouters Of The Painfull Kind~
+Coming seemingly out of nowhere, a large satellite whips by here; nearly
+missing.  It's unknown how much junk there is floating around in space, but
+it's surely apparent all this debris that circles the earth makes for a
+quite dangerous hazzard.  The satellite continues floating off to the left,
+and the giant debris field is still up ahead. 
+~
+0 2424836 16
+D3
+~
+~
+64 -1 50091
+D4
+~
+~
+64 -1 50092
+D5
+~
+~
+64 -1 50089
+S
+#50091
+A Satellite~
+After catching up with the satellite again a short distance away,
+something seems odd about it.  There's a Major League Baseball symbol on it?!
+This derelict object floating about in space with blinking lights here and
+there seems harmless.  But then again maybe Major League Baseball really is
+spying on people. 
+~
+0 539295748 16
+D1
+~
+~
+64 -1 50090
+S
+#50092
+Forgotten~
+Silent ever still, the solemn loneliness of space rears it's head again.
+Up ahead, the debris field can be seen quite clearly now.  There seems to
+be some kind of wreckage of a large structure just floating uselessly in
+space, with tons of space junk and debris hanging around the wreck as well.
+The feeling of an empty wreck suddenly changes to that of a spacial
+graveyard as the severed torso of some android drifts by. 
+~
+0 2424836 16
+D4
+~
+~
+64 -1 50093
+D5
+~
+~
+64 -1 50090
+S
+#50093
+A Closer Look~
+The largest chunk of debris floating around in this field seems to be
+some sort of spaceship.  Chunks of the craft, as well as large, car-sized
+chunks of rock seem to indicate what fate may have befallen this vessel. 
+How or when this spaceship was hit by some sort of asteroid, the debris is
+now forever trapped in this region of space; held by the gravitational
+pulls of the Earth and the Moon.  Within the cloud of debris, something
+resembling a kind of door or hatch appears to be intact on a side of the
+large structure. 
+~
+0 2424836 16
+D0
+~
+~
+64 -1 50094
+D5
+~
+~
+64 -1 50092
+S
+#50094
+Navigating The Garbage~
+Here within the debris field surrounding the derelict space vessel,
+navigation through the floating chunks of twisted metal and rock is
+difficult and hazardous.  Another near-miss as something resembling a
+dislodged hallway floats past dangerously close.  The debris floating
+around occasionally slam into each other.  The collisions can't be heard,
+but the shockwaves from the strikes can definitely be felt.
+~
+0 2424836 16
+D2
+~
+~
+64 -1 50093
+D6
+~
+~
+64 -1 50095
+S
+#50095
+Navigating The Garbage~
+Here within the debris field surrounding the derelict space vessel,
+navigation through the floating chunks of twisted metal and rock is
+difficult and hazardous.  Another near-miss as some big tangle of metal and
+pipes floats past dangerously close.  The debris floating around
+occasionally slam into each other.  The collisions can't be heard, but the
+shockwaves from the strikes can definitely be felt.
+~
+0 2424836 16
+D7
+~
+~
+64 -1 50096
+D9
+~
+~
+64 -1 50094
+S
+#50096
+Navigating The Garbage~
+Here within the debris field surrounding the derelict space vessel,
+navigation through the floating chunks of twisted metal and rock is
+difficult and hazardous.  Another near-miss as something resembling parts
+of a waste storage room floats past dangerously close.  The debris floating
+around occasionally slam into each other.  The collisions can't be heard,
+but the shockwaves from the strikes can definitely be felt.
+~
+0 2424836 16
+D5
+~
+~
+64 -1 50097
+D8
+~
+~
+64 -1 50095
+S
+#50097
+Navigating The Garbage~
+Here within the debris field surrounding the derelict space vessel,
+navigation through the floating chunks of twisted metal and rock is
+difficult and hazardous.  Another near-miss as something resembling a
+dislodged hallway floats past dangerously close.  The debris floating
+around occasionally slam into each other.  The collisions can't be heard,
+but the shockwaves from the strikes can definitely be felt.
+~
+0 2424836 16
+D4
+~
+~
+64 -1 50096
+D6
+~
+~
+64 -1 50098
+S
+#50098
+Navigating The Garbage~
+Here within the debris field surrounding the derelict space vessel,
+navigation through the floating chunks of twisted metal and rock is
+difficult and hazardous.  Another near-miss as some big tangle of metal and
+pipes floats past dangerously close.  The debris floating around
+occasionally slam into each other.  The collisions can't be heard, but the
+shockwaves from the strikes can definitely be felt. 
+~
+0 2424836 16
+D0
+~
+~
+64 -1 50102
+D2
+~
+~
+64 -1 50099
+D9
+~
+~
+64 -1 50097
+S
+#50099
+Navigating The Garbage~
+Here within the debris field surrounding the derelict space vessel,
+navigation through the floating chunks of twisted metal and rock is
+difficult and hazardous.  Another near-miss as something resembling parts
+of a waste storage room floats past dangerously close.  The debris floating
+around occasionally slam into each other.  The collisions can't be heard,
+but the shockwaves from the strikes can definitely be felt.
+~
+0 2424836 16
+D0
+~
+~
+64 -1 50098
+D9
+~
+~
+64 -1 50100
+S
+#50100
+Navigating The Garbage~
+Here within the debris field surrounding the derelict space vessel,
+navigation through the floating chunks of twisted metal and rock is
+difficult and hazardous.  Another near-miss as something resembling a
+dislodged hallway floats past dangerously close.  The debris floating
+around occasionally slam into each other.  The collisions can't be heard,
+but the shockwaves from the strikes can definitely be felt.
+~
+0 2424836 16
+D1
+~
+~
+64 -1 50101
+D6
+~
+~
+64 -1 50099
+S
+#50101
+Too Deep~
+The field of debris here seems to clutter inwards from all sides.  There
+is no visible way to go forward in this direction anymore.  Better act
+quick, because this much debris could crush a person easily if they were to
+get trapped inbetween it all.  Perhaps there is another way around. 
+~
+0 2424836 16
+D3
+~
+~
+64 -1 50100
+> entry_prog 100~
+if race($n) == icer
+mpecho A hole suddenly opens in the debris field blocking the path forward. You feel a telekinetic force suddenly pull you through into a pocket of space within the debris field ahead.
+mptransfer $n 50131
+endif
+~
+|
+S
+#50102
+An Airlock~
+Here at an intact hatch set in the side of the vessel, the debris seems
+to be repelled away from this pocket of space by something.  The door
+itself shows slight signs of rust and age.  The spaceship must have been
+floating out here for a long, long time.  But there's a problem.  The hatch
+doesn't seem to have a handle anywhere.  The only thing that even seems to
+be on the door are some strange markings of different colors, and what
+looks like some kind of label with writing on it.  The label reads
+"Paradox-1301 juela yldejydeuh cocdas.  Cyo ubah tuun du bnulaat ehdu dra
+bnaccinewydeuh lryspan." Whoever or whatever built and owned this ship
+aparently spoke a wildy different language than english.  Unless someone
+understood what this means, it seems further progress is impossible. 
+~
+0 2359300 16
+D0
+~
+~
+7 50002 50103
+D2
+~
+~
+64 -1 50098
+> speech_prog "ubah tuun"~
+if islocked($n) == north
+mpecho _lbl An electronic voice says "Luhvensat."
+mpforce voice unlock n
+mpforce voice open n
+mpecho The airlock hatch opens.
+endif
+~
+> entry_prog 100~
+if isopen($n) == north
+mpforce voice close n
+mpforce voice lock n
+mpecho The airlock hatch closes.
+endif
+~
+> speech_prog "open door"~
+mpecho _lbl An electronic voice says "Ehjymet luta 'open door' hud nalukhewat. Bmayca nacdyda ahdno luta."
+~
+|
+S
+#50103
+Inside The Airlock~
+The door closes behind, and the chamber pressurizes.  However, the air
+is still apparently unbreathable.  This small chamber is slightly dim as
+one of the lights have been smashed out.  The interior of the ship so far
+gives it an incredibly advanced feel as everthing that is still intact has
+a precision-like feel to it.  More than likely, this ship did not originate
+from Earth.  There is another hatch directly ahead that must lead into the
+interrior of the ship. 
+~
+0 2097156 16
+D0
+~
+~
+3 -1 50104
+D2
+~
+~
+7 50002 50102
+> entry_prog 100~
+if isopen($n) == north
+mpforce voice close n
+mpforce voice unlock s
+mpforce voice open s
+mpecho The inner airlock hatch closes.
+mpecho The outer airlock hatch opens.
+endif
+if isopen($n) == south
+mpforce voice close s
+mpecho The outer airlock hatch closes.
+mpforce voice open n
+mpecho The inner airlock hatch opens.
+endif
+~
+> speech_prog "leave"~
+mpforce voice unlock s
+mpforce voice open s
+mpecho The outer airlock hatch opens.
+~
+|
+S
+#50104
+By The Airlock - Second Deck~
+A dank odor of stale air, rotting flesh, and spilled oil greet the nose
+of anyone entering this place.  A thin layer of smoke drifts about near the
+ceiling.  Twisted and mangled corpses, or parts of corpses, of androids,
+icers, and other creatures somewhere inbetween are sprawled about here and
+there.  Some on the floor, others crumpled over against the bulkheads of
+this large passageway.  It seems whatever fate befell this ship, it
+certainly wasn't a collision with an asteroid.  Or rather, not entirely. 
+Somewhere distant, the faint clank of metal upon metal can be heard echoing
+around as apparently someone or something is still alive and moving about
+the vessel. 
+~
+0 2097152 16
+D1
+~
+~
+0 -1 50106
+D2
+~
+~
+1 -1 50103
+D3
+~
+~
+0 -1 50105
+S
+#50105
+Passageway - Second Deck~
+The air in this passageway has grown stale over the countless years this
+ship has been drifting in space.  Bodies are strewn about rather
+gruesomely; a reminder that something still might lurk around this ship.  A
+once rather high-tech ship in it's time, it has been reduced to little more
+than a metal crypt.  It would be wise not to spend too much time aboard
+this craft. 
+~
+0 2097152 16
+D1
+~
+~
+0 -1 50104
+D3
+~
+~
+0 -1 50121
+S
+#50106
+Intersection - Second Deck~
+Here, the two direction passageway branches off with a third passageway
+available to the south.  Down that passageway, it's slightly darker than
+here, as a short circuit caused by damage makes the lights flicker and
+spark.  Down that way, something in the bulkhead to the left resembles some
+kind of door.  Just as things are seeming quiet again, the clanking sound
+of metal upon metal can be heard echoing from afar.  Best not to stay in
+any one place for too long. 
+~
+0 2097152 16
+D0
+~
+~
+0 -1 50122
+D1
+~
+~
+0 -1 50107
+D3
+~
+~
+0 -1 50104
+S
+#50107
+Passageway - Second Deck~
+The air in this passageway has grown stale over the countless years this
+ship has been drifting in space.  Bodies are strewn about rather
+gruesomely; a reminder that something still might lurk around this ship.  A
+once rather high-tech ship in it's time, it has been reduced to little more
+than a metal crypt.  It would be wise not to spend too much time aboard
+this craft. 
+~
+0 2097152 16
+D3
+~
+~
+0 -1 50106
+D6
+~
+~
+0 -1 50108
+S
+#50108
+Passageway - Second Deck~
+The air in this passageway has grown stale over the countless years this
+ship has been drifting in space.  Bodies are strewn about rather
+gruesomely; a reminder that something still might lurk around this ship.  A
+once rather high-tech ship in it's time, it has been reduced to little more
+than a metal crypt.  It would be wise not to spend too much time aboard
+this craft. 
+~
+0 2097152 16
+D0
+~
+~
+0 -1 50109
+D9
+~
+~
+0 -1 50107
+S
+#50109
+Passageway - Second Deck~
+The air in this passageway has grown stale over the countless years this
+ship has been drifting in space.  Bodies are strewn about rather
+gruesomely; a reminder that something still might lurk around this ship.  A
+once rather high-tech ship in it's time, it has been reduced to little more
+than a metal crypt.  It would be wise not to spend too much time aboard
+this craft. 
+~
+0 2097152 16
+D0
+~
+~
+0 -1 50110
+D2
+~
+~
+0 -1 50108
+S
+#50110
+Passageway - Second Deck~
+The air in this passageway has grown stale over the countless years this
+ship has been drifting in space.  Bodies are strewn about rather
+gruesomely; a reminder that something still might lurk around this ship.  A
+once rather high-tech ship in it's time, it has been reduced to little more
+than a metal crypt.  It would be wise not to spend too much time aboard
+this craft. 
+~
+0 2097152 16
+D2
+~
+~
+0 -1 50109
+D7
+~
+~
+0 -1 50111
+S
+#50111
+Passageway - Second Deck~
+The air in this passageway has grown stale over the countless years this
+ship has been drifting in space.  Bodies are strewn about rather
+gruesomely; a reminder that something still might lurk around this ship.  A
+once rather high-tech ship in it's time, it has been reduced to little more
+than a metal crypt.  It would be wise not to spend too much time aboard
+this craft. 
+~
+0 2097152 16
+D3
+~
+~
+0 -1 50112
+D8
+~
+~
+0 -1 50110
+S
+#50112
+Intersection - Second Deck~
+Here, the two direction passageway branches off with a third passageway
+available to the south.  Down that passageway, it's slightly darker than
+here, as a short circuit caused by damage makes the lights flicker and
+spark.  Down that way, something in the bulkhead to the left resembles some
+kind of door.  Just as things are seeming quiet again, the clanking sound
+of metal upon metal can be heard echoing from afar.  Best not to stay in
+any one place for too long. 
+~
+0 2097152 16
+D1
+~
+~
+0 -1 50111
+D2
+~
+~
+0 -1 50124
+D3
+~
+~
+0 -1 50113
+S
+#50113
+Passageway - Second Deck~
+The air in this passageway has grown stale over the countless years this
+ship has been drifting in space.  Bodies are strewn about rather
+gruesomely; a reminder that something still might lurk around this ship.  A
+once rather high-tech ship in it's time, it has been reduced to little more
+than a metal crypt.  It would be wise not to spend too much time aboard
+this craft. 
+~
+0 2097152 16
+D1
+~
+~
+0 -1 50112
+D3
+~
+~
+0 -1 50114
+S
+#50114
+Outside the Repair Bay - Second Deck~
+On the south side of the passageway, there is another handle-less door
+set in the bulkhead.  With all the carnage and lack of life around this
+ship so far, it seems odd to assume, but is there sound coming from
+something behind the door?  It seems like there is.  A knock on the door
+however gets no response.  The door itself has more strange colored
+markings, and a message scratched into the metal which reads "Bynytuq
+salryhuet nabyen pyo.  Cyo nabyen du ahdan." 
+~
+0 2097152 16
+D1
+~
+~
+0 -1 50113
+D2
+~
+~
+7 50015 50128
+D3
+~
+~
+0 -1 50115
+> speech_prog "repair"~
+mpecho _lbl An electronic voice says "Ehjymet luta 'repair' hud nalukhewat. Bmayca nacdyda ahdno luta."
+~
+> entry_prog 100~
+if isopen($n) == south
+mpforce voice close s
+mpforce voice lock s
+mpecho The repair bay door slides shut.
+endif
+~
+> speech_prog "nabyen"~
+if islocked($n) == south
+mpecho _lbl An electronic voice says "Luhvensat."
+mpforce voice unlock s
+mpforce voice open s
+mpecho The repair bay door slides open.
+endif
+~
+|
+S
+#50115
+Passageway - Second Deck~
+The air in this passageway has grown stale over the countless years this
+ship has been drifting in space.  Bodies are strewn about rather
+gruesomely; a reminder that something still might lurk around this ship.  A
+once rather high-tech ship in it's time, it has been reduced to little more
+than a metal crypt.  It would be wise not to spend too much time aboard
+this craft. 
+~
+0 2097152 16
+D1
+~
+~
+0 -1 50114
+D3
+~
+~
+0 -1 50116
+S
+#50116
+Passageway - Second Deck~
+The air in this passageway has grown stale over the countless years this
+ship has been drifting in space.  Bodies are strewn about rather
+gruesomely; a reminder that something still might lurk around this ship.  A
+once rather high-tech ship in it's time, it has been reduced to little more
+than a metal crypt.  It would be wise not to spend too much time aboard
+this craft. 
+~
+0 2097152 16
+D1
+~
+~
+0 -1 50115
+D9
+~
+~
+0 -1 50117
+S
+#50117
+Passageway - Second Deck~
+The air in this passageway has grown stale over the countless years this
+ship has been drifting in space.  Bodies are strewn about rather
+gruesomely; a reminder that something still might lurk around this ship.  A
+once rather high-tech ship in it's time, it has been reduced to little more
+than a metal crypt.  It would be wise not to spend too much time aboard
+this craft. 
+~
+0 2097152 16
+D2
+~
+~
+0 -1 50118
+D6
+~
+~
+0 -1 50116
+S
+#50118
+Passageway - Second Deck~
+The air in this passageway has grown stale over the countless years this
+ship has been drifting in space.  Bodies are strewn about rather
+gruesomely; a reminder that something still might lurk around this ship.  A
+once rather high-tech ship in it's time, it has been reduced to little more
+than a metal crypt.  It would be wise not to spend too much time aboard
+this craft. 
+~
+0 2097152 16
+D0
+~
+~
+0 -1 50117
+D2
+~
+~
+0 -1 50119
+S
+#50119
+Passageway - Second Deck~
+On the other side of the passageway, there is another handle-less door
+set in the bulkhead.  With all the carnage and lack of life around this
+ship so far, it seems odd to assume, but is there sound coming from
+something behind the door?  It seems like there is.  A knock on the door
+however gets no response.  The door itself has more strange colored
+markings, and a message scratched into the metal which reads "Druca dryd
+fecr du lusa eh yht nacd, cesbmo cyo navika." 
+~
+0 2097152 16
+D0
+~
+~
+0 -1 50118
+D3
+~
+~
+1048583 50003 50125
+D8
+~
+~
+0 -1 50120
+> speech_prog "navika"~
+if islocked($n) == west
+mpecho _lbl An electronic voice says "Luhvensat."
+mpforce voice unlock w
+mpforce voice open w
+mpecho The refuge door slides open.
+endif
+~
+> entry_prog 100~
+if isopen($n) == west
+mpforce voice close w
+mpforce voice lock w
+mpecho The refuge door slides shut.
+endif
+~
+> speech_prog "refuge"~
+mpecho _lbl An electronic voice says "Ehjymet luta 'refuge' hud nalukhewat. Bmayca nacdyda ahdno luta."
+~
+|
+S
+#50120
+Passageway - Second Deck~
+The air in this passageway has grown stale over the countless years this
+ship has been drifting in space.  Bodies are strewn about rather
+gruesomely; a reminder that something still might lurk around this ship.  A
+once rather high-tech ship in it's time, it has been reduced to little more
+than a metal crypt.  It would be wise not to spend too much time aboard
+this craft. 
+~
+0 2097152 16
+D1
+~
+~
+0 -1 50121
+D7
+~
+~
+0 -1 50119
+S
+#50121
+Passageway - Second Deck~
+The air in this passageway has grown stale over the countless years this
+ship has been drifting in space.  Bodies are strewn about rather
+gruesomely; a reminder that something still might lurk around this ship.  A
+once rather high-tech ship in it's time, it has been reduced to little more
+than a metal crypt.  It would be wise not to spend too much time aboard
+this craft. 
+~
+0 2097152 16
+D1
+~
+~
+0 -1 50105
+D3
+~
+~
+0 -1 50120
+S
+#50122
+Passageway - Second Deck~
+The air in this passageway has grown stale over the countless years this
+ship has been drifting in space.  Bodies are strewn about rather
+gruesomely; a reminder that something still might lurk around this ship.  A
+once rather high-tech ship in it's time, it has been reduced to little more
+than a metal crypt.  It would be wise not to spend too much time aboard
+this craft. 
+~
+0 2097152 16
+D0
+~
+~
+0 -1 50123
+D2
+~
+~
+0 -1 50106
+S
+#50123
+Outside an Elevator - Second Deck~
+Scorch marks, splattered blood and other unidentifiable fluids, massive
+dents, and holes in the bulkheads show a rather vicious battle must have
+taken place here.  The two large doubledoors to the west that close off the
+entrance to the ship's main elevator have been badly damaged, unable to
+close completely anymore.  A small panel above the doors which must have
+served as the voice system for the doors now showers down sparks every now
+and then; useless.  It seems now the elevator doors can just be opened and
+closed at will. 
+~
+0 2097152 16
+D0
+~
+~
+0 -1 50124
+D2
+~
+~
+0 -1 50122
+D3
+~
+~
+3 -1 50126
+> entry_prog 100~
+if isopen($n) == west
+mpforce voice close west
+mpecho The elevator door slides shut.
+endif
+~
+|
+S
+#50124
+Passageway - Second Deck~
+The air in this passageway has grown stale over the countless years this
+ship has been drifting in space.  Bodies are strewn about rather
+gruesomely; a reminder that something still might lurk around this ship.  A
+once rather high-tech ship in it's time, it has been reduced to little more
+than a metal crypt.  It would be wise not to spend too much time aboard
+this craft. 
+~
+0 2097152 16
+D0
+~
+~
+0 -1 50112
+D2
+~
+~
+0 -1 50123
+S
+#50125
+Refuge~
+Once some kind of mini cargo bay, boxes and such have been cleared out
+to create a makeshift living quarters.  A bed in one corner appears to have
+been made out of a few crates with some blankets thrown over them.  A
+flickering capsule television sitting upon another small hill of boxes
+seems to be the occupant's form of entertainment.  Facing the door now from
+across the room is a mecha-icer.  Signs of the wear and tear of battle
+showing on his body, it seems on more than one occasion this fighter has
+taken near-mortal wounds; having to replace lost body parts with mechanical
+ones.  The icer seems to be waiting for some kind of response. 
+~
+0 538969092 16
+D1
+~
+~
+1 50003 50119
+S
+#50126
+Elevator - Second Deck~
+Spots of rust and streaks of dried blood on the walls of this circular
+room are some of the only signs of wear and tear, as this room seems fairly
+less battered than the rest of the ship.  Other than that, however, the
+room is more or less featureless.  It would seem this place functions as
+some sort of elevator, considering the floor is slightly ajar from the rest
+of the room along the edges, however there are no manipulatable devices in
+sight; merely another sign on the opposite wall with more bizzare writing:
+"Juela lussyhtc yna ib du ku ib, yht tufh du ku tufh." 
+~
+0 2097156 16
+D1
+~
+~
+3 -1 50123
+> speech_prog "tufh"~
+mpechoat $n The elevator takes you down to a lower deck.
+mptransfer $n 50127
+~
+> entry_prog 100~
+if isopen($n) == east
+mpforce voice close east
+mpecho The elevator door slides shut.
+else
+mpforce voice open east
+mpecho The elevator door slides open.
+endif
+~
+> speech_prog "down"~
+mpecho _lbl An electronic voice says 'Ehjymet juela lussyht 'down'. Bmayca nabayd dra lunnald lussyht.'
+~
+> speech_prog "up"~
+mpecho _lbl An electronic voice says 'Ehjymet juela lussyht 'up'. Bmayca nabayd dra lunnald lussyht.'
+~
+> speech_prog "ib"~
+mpechoat $n The elevator takes you up to a higher deck.
+mptransfer $n 50132
+~
+|
+S
+#50127
+Elevator - First Deck~
+Spots of rust and streaks of dried blood on the walls of this circular
+room are some of the only signs of wear and tear, as this room seems fairly
+less battered than the rest of the ship.  Other than that, however, the
+room is more or less featureless.  It would seem this place functions as
+some sort of elevator, considering the floor is slightly ajar from the rest
+of the room along the edges, however there are no manipulatable devices in
+sight; merely another sign on the opposite wall with more bizzare writing:
+"Juela lussyhtc yna ib du ku ib." 
+~
+0 2097156 16
+D1
+~
+~
+3 -1 50157
+> speech_prog "ib"~
+mpechoat $n The elevator takes you up to a higher deck.
+mptransfer $n 50126
+~
+> entry_prog 100~
+if isopen($n) == east
+mpforce voice close east
+mpecho The elevator door slides shut.
+else 
+mpforce voice open east
+mpecho The elevator door slides open.
+endif
+~
+> speech_prog "up"~
+mpecho _lbl An electronic voice says 'Ehjymet juela lussyht 'up'. Bmayca nabayd dra lunnald lussyht.'
+~
+|
+S
+#50128
+Repair Bay - Second Deck~
+The walls of this giant room must be sound supressing, because there is
+a great deal of noise here unlike the dread quiet of the rest of the ship. 
+Piles of scrap android parts litter about near large tables where large
+machines are going back and forth over different tables repairing and
+creating various devices.  A few tables here are empty and unattended
+however.  There is more noise going on in either direction, indicating
+there must be more work areas than just this one. 
+~
+0 2098180 16
+D0
+~
+~
+7 50015 50114
+D1
+~
+~
+0 -1 50130
+D3
+~
+~
+0 -1 50129
+> speech_prog "nabyen"~
+if islocked($n) == north
+mpecho _lbl An electronic voice says "Luhvensat."
+mpforce voice unlock n
+mpforce voice open n
+mpecho The repair bay door slides open.
+endif
+~
+> entry_prog 100~
+if isopen($n) == north
+mpforce voice close n
+mpforce voice lock n
+mpecho The repair bay door slides shut.
+endif
+~
+|
+S
+#50129
+Upgrade Center - Second Deck~
+A continuous row of shelves line the walls of this work area.  Upon the
+shelves, countless devices and prototype technologies far more advanced
+than anything known on earth sit uselessly; waiting to be installed into
+new owners.  There is a single table in the center of the room along with a
+massive machine which must be used to install the new parts into willing
+hosts. 
+~
+0 2098180 16
+D1
+~
+~
+0 -1 50128
+S
+#50130
+Data Recovery Center - Second Deck~
+Most noticable in this section of the repair bay are two large chambers
+with some tangle of computer equipment hooked up to them.  Although the
+equipment looks a good deal damaged, it still appears it'll work.  The
+computers and such seem to be here for the purpose of installing new
+programs into androids and such. 
+~
+0 2098180 16
+D3
+~
+~
+0 -1 50128
+S
+#50131
+A Pocket In The Debris Field~
+Here, deep within the debris field, there is a large spherical pocket of
+space where the debris seems to be repelled away from it.  Within this
+pocket of space a single being is floating ominously.  Arms folded, and
+eyes closed, it seems this mecha-icer is waiting for something. 
+~
+0 2424836 16
+D9
+~
+~
+0 -1 50100
+S
+#50132
+Elevator - Third Deck~
+Spots of rust and streaks of dried blood on the walls of this circular
+room are some of the only signs of wear and tear, as this room seems fairly
+less battered than the rest of the ship.  Other than that, however, the
+room is more or less featureless.  It would seem this place functions as
+some sort of elevator, considering the floor is slightly ajar from the rest
+of the room along the edges, however there are no manipulatable devices in
+sight; merely another sign on the opposite wall with more bizzare writing:
+"Juela lussyhtc yna tufh du ku tufh." 
+~
+0 2097156 16
+D3
+~
+~
+3 -1 50133
+> speech_prog "tufh"~
+mpechoat $n The elevator takes you down to a lower deck.
+mptransfer $n 50126
+~
+> speech_prog "down"~
+mpecho _lbl An electronic voice says 'Ehjymet juela lussyht 'down'. Bmayca nabayd dra lunnald lussyht.'
+~
+> entry_prog 100~
+if isopen($n) == west
+mpforce voice close west
+mpecho The elevator door slides shut.
+else 
+mpforce voice open west
+mpecho The elevator door slides open.
+endif
+~
+|
+S
+#50133
+Passageway - Third Deck~
+The third deck seems to be the most intact part of the ship.  Lighting,
+electrical systems, all seem to be working.  However, the life support
+systems still seem to be inoperable.  Perhaps they were purposefully
+disabled.  Whatever the case, the alarm systems on this level are going
+berserk.  Access further west to the bridge has been cut off entirely by
+massive blast doors.  Red lights are blaring all throughout the
+passageways, giving them a crimson shade.  Every now and then some kind of
+alert message goes over the intercom system in a strange language. 
+~
+0 2097156 16
+D1
+~
+~
+3 -1 50132
+D3
+~
+~
+7 50018 50134
+D6
+~
+~
+0 -1 50138
+D8
+~
+~
+0 -1 50142
+> entry_prog 100~
+if isopen($n) == west
+mpforce voice close w
+mpforce voice lock w
+mpecho The blast door to the west slides shut.
+endif
+~
+|
+S
+#50134
+Access Block 1 - Bridge~
+In dire emergencies, access through this normal passageway is choked off
+by a series of massive blast doors to prevent anyone or anything hostile
+from reaching the bridge.  While it's not apparent why the blast doors are
+down when all of the ships inhabitants have been killed, it is apparent
+access to the bridge will be impossible without the proper keycodes. 
+~
+0 2097156 16
+D1
+~
+~
+7 50018 50133
+D3
+~
+~
+7 50019 50135
+> entry_prog 100~
+if isopen($n) == east
+mpforce voice close e
+mpforce voice lock e
+mpecho The blast door to the east slides shut.
+endif
+if isopen($n) == west
+mpforce voice close w
+mpforce voice lock w
+mpecho The blast door to the west slides shut.
+endif
+~
+|
+S
+#50135
+Access Block 2 - Bridge~
+In dire emergencies, access through this normal passageway is choked off
+by a series of massive blast doors to prevent anyone or anything hostile
+from reaching the bridge.  While it's not apparent why the blast doors are
+down when all of the ships inhabitants have been killed, it is apparent
+access to the bridge will be impossible without the proper keycodes. 
+~
+0 2097156 16
+D1
+~
+~
+7 50019 50134
+D3
+~
+~
+7 50020 50136
+> entry_prog 100~
+if isopen($n) == east
+mpforce voice close e
+mpforce voice lock e
+mpecho The blast door to the east slides shut.
+endif
+if isopen($n) == west
+mpforce voice close w
+mpforce voice lock w
+mpecho The blast door to the west slides shut.
+endif
+~
+|
+S
+#50136
+Access Block 3 - Bridge~
+In dire emergencies, access through this normal passageway is choked off
+by a series of massive blast doors to prevent anyone or anything hostile
+from reaching the bridge.  While it's not apparent why the blast doors are
+down when all of the ships inhabitants have been killed, it is apparent
+access to the bridge will be impossible without the proper keycodes. 
+~
+0 2097156 16
+D1
+~
+~
+7 50020 50135
+D3
+~
+~
+7 50021 50137
+> entry_prog 100~
+if isopen($n) == east
+mpforce voice close e
+mpforce voice lock e
+mpecho The blast door to the east slides shut.
+endif
+if isopen($n) == west
+mpforce voice close w
+mpforce voice lock w
+mpecho The blast door to the west slides shut.
+endif
+~
+|
+S
+#50137
+Bridge of the Paradox 1301~
+Out of the frying pan and into the fire, as the saying goes.  The bridge
+of the Paradox 1301 has been turned into a hellish nightmare.  Countless
+corpses of human-like beings and androids alike have been maliciously
+mutilated and left crumpled around the room in piles of torn flesh and
+metal.  Blood is everywhere.  On the walls, the ceiling, the floor, and
+various computer equipment that must have been used to steer the ship when
+it was still operable.  The culprit of the tragedy that befell this
+spaceship stands in the center of the bridge.  Whether it's the twisted
+look of sinister mirth framing his face, his narrowed, glowing crimson
+eyes, or the blood dripping off the surface of his mechanical body that
+possesses a technology from another dimension, it's certainly clear this
+android embodies all that is evil. 
+~
+0 1075838980 16
+D1
+~
+~
+7 50021 50136
+> entry_prog 100~
+if isopen($n) == east
+mpforce voice close e
+mpforce voice lock e
+mpecho The blast door to the east slides shut.
+endif
+~
+|
+S
+#50138
+Passageway - Third Deck~
+This deck of the ship is the most eerie of them all.  Mainly, this is
+because there is no blood.  No corpses.  Anywhere else on the ship is like
+a tomb, except here there is nothing.  Either this section was never
+infiltrated by whatever force befell the ship, or whatever did come through
+here just atomized anyone in it's path.  The only other perplexing detail
+of the area is the fact that the alarm systems on this deck are going
+literally berserk; emergency lighting casting a red glow upon the
+passageways.  Although it seems safe in this area, it's unknown what
+security counter-measures might be in place here. 
+~
+0 2097156 16
+D1
+~
+~
+0 -1 50139
+D9
+~
+~
+0 -1 50133
+S
+#50139
+Passageway - Third Deck~
+This deck of the ship is the most eerie of them all.  Mainly, this is
+because there is no blood.  No corpses.  Anywhere else on the ship is like
+a tomb, except here there is nothing.  Either this section was never
+infiltrated by whatever force befell the ship, or whatever did come through
+here just atomized anyone in it's path.  The only other perplexing detail
+of the area is the fact that the alarm systems on this deck are going
+literally berserk; emergency lighting casting a red glow upon the
+passageways.  Although it seems safe in this area, it's unknown what
+security counter-measures might be in place here. 
+~
+0 2097156 16
+D3
+~
+~
+0 -1 50138
+D8
+~
+~
+0 -1 50140
+S
+#50140
+Intersection - Third Deck~
+The level of advancement in the surroundings continues to increase
+further into this area.  Besides the passageways leading off to the
+northwest and southwest, there is a widening passageway to the east.  In
+that direction, the ceiling continues to rise upward as it goes on, the
+walls distancing themselves from one another as well.  Whatever is over in
+that direction, is big.  Really big.  To the west, there is a somewhat
+large door leading to the medical bay.  However, this closed door has no
+handles or buttons as well.  A sign on the door reads "Ica juela lussyht
+satelym du ahdan." 
+
+An odd flickering can be seen out of the corner of your eye, almost as if
+there's a rift in the fabric of space.
+~
+0 2097156 16
+D3
+~
+~
+7 50028 50152
+D7
+~
+~
+0 -1 50139
+D9
+~
+~
+0 -1 50141
+D10
+~
+rift~
+133120 -1 50164
+> speech_prog "satelym"~
+if islocked($n) == west
+mpecho _lbl An electronic voice says "Luhvensat."
+mpforce voice unlock w
+mpforce voice open w
+mpecho The medical bay door slides open.
+endif
+~
+> entry_prog 100~
+if isopen($n) == west
+mpforce voice close w
+mpforce voice lock w
+mpecho The medical bay door slides shut.
+endif
+~
+|
+S
+#50141
+Passageway - Third Deck~
+This deck of the ship is the most eerie of them all.  Mainly, this is
+because there is no blood.  No corpses.  Anywhere else on the ship is like
+a tomb, except here there is nothing.  Either this section was never
+infiltrated by whatever force befell the ship, or whatever did come through
+here just atomized anyone in it's path.  The only other perplexing detail
+of the area is the fact that the alarm systems on this deck are going
+literally berserk; emergency lighting casting a red glow upon the
+passageways.  Although it seems safe in this area, it's unknown what
+security counter-measures might be in place here. 
+~
+0 2097156 16
+D3
+~
+~
+0 -1 50142
+D6
+~
+~
+0 -1 50140
+S
+#50142
+Passageway - Third Deck~
+This deck of the ship is the most eerie of them all.  Mainly, this is
+because there is no blood.  No corpses.  Anywhere else on the ship is like
+a tomb, except here there is nothing.  Either this section was never
+infiltrated by whatever force befell the ship, or whatever did come through
+here just atomized anyone in it's path.  The only other perplexing detail
+of the area is the fact that the alarm systems on this deck are going
+literally berserk; emergency lighting casting a red glow upon the
+passageways.  Although it seems safe in this area, it's unknown what
+security counter-measures might be in place here. 
+~
+0 2097156 16
+D1
+~
+~
+0 -1 50141
+D7
+~
+~
+0 -1 50133
+S
+#50143
+Intersection - Third Deck~
+The ceiling in this area is as high as a cathedral.  To the north and
+south, two massive rooms appear as gigantic metallic coccoons.  In each
+room, three doors appear to lead off into seperate rooms of their own. 
+Some kind of steam is leaking from pipes along the walls and trailing down
+to the floor; aparently keeping the rooms at a controlled lower
+temperature.  It's a wonder what a place of this size is used for. 
+~
+0 2097156 16
+D0
+~
+~
+0 -1 50144
+D2
+~
+~
+0 -1 50148
+D3
+~
+~
+0 -1 50140
+S
+#50144
+Subspace Manipulation Training Facility~
+One of the true marvels of the technological advancement of the people
+that built this ship is now evident in this section.  In different rooms
+here, powerful computers and equipment are able to manipulate the flow of
+sub-space and time to create artificial realities for fighters to train in.
+However, it seems the rooms are all locked off to prevent over-usage.  Not
+going to be able to get in without the proper access keycard. 
+~
+0 2097156 16
+D0
+~
+~
+519 50022 50146
+D1
+~
+~
+519 50022 50147
+D2
+~
+~
+0 -1 50143
+D3
+~
+~
+519 50022 50145
+> entry_prog 100~
+if isopen($n) == west
+mpforce voice close w
+mpforce voice lock w
+mpecho The door to the subspace room to the west slides shut.
+else
+endif
+if isopen($n) == north
+mpforce voice close n
+mpforce voice lock n
+mpecho The door to the subspace room to the north slides shut.
+else
+endif
+if isopen($n) == east
+mpforce voice close e
+mpforce voice lock e
+mpecho The door to the subspace room to the east slides shut.
+else
+endif
+~
+|
+S
+#50145
+The Antarctic - Subspace~
+This place looks, feels, and even smells like real life.  However, the
+door leading back into the ship sticking out like a sore thumb spoils the
+experience.  As far as the eye can see there is nothing but ice, snow, and
+white mountains.  The wind whips about fiercely bringing with it the
+stinging chill of subzero temperatures.  A hostile environment, yes, but a
+good place to fight as well. 
+~
+0 1344274692 16 0 0 3
+D1
+~
+~
+7 50022 50144
+> entry_prog 100~
+mpsleep 3600
+mpechoat $n The reality around you suddenly begins to shatter as your time in the subspace training room runs out. A computer system controlled android escorts you out of the chamber and back into the main room.
+mpforce voice close e
+mpforce voice lock e
+if inroom($n) == 50145
+mptransfer $n 50144
+endif
+~
+> speech_prog "halfbreed"~
+mpecho A halfbreed fighter suddenly materializes out of nowhere. Upon seeing another fighter in the room with him, the halfie begins to tremble nervously.
+mpmload 50016
+~
+> speech_prog "human"~
+mpecho A human fighter suddenly materializes before you.
+mpecho &CHuman Fighter says 'Um, can't we talk this over at all?'&D
+mpsleep 12
+mpecho The human fighter gulps as he takes a defensive fighting stance.
+mpecho &RBright red flames erupt around Human Fighter as he yells out KAIOKEN TIMES 10!!!&D
+mpmload 50017
+~
+> speech_prog "namek"~
+mpecho A namekian fighter suddenly materializes before you.
+mpecho &GNamekian Fighter draws upon the ancient knowledge of the Namekians to transform into a Super Namek.&D
+mpmload 50018
+~
+> speech_prog "saiyan"~
+mpecho A saiyan fighter suddenly materializes before you.
+mpecho &CSaiyan Fighter snickers and says "Let's do this."&D
+mpsleep 8
+mpecho &YSaiyan Fighter's hair flashes blonde and his eyes turn blue as a fiery aura erupts around him.&D
+mpsleep 8
+mpecho &YSaiyan Fighter's hair flies back and electricity arcs around him as his aura flares brightly.&D
+mpmload 50019
+~
+> speech_prog "icer"~
+mpecho An already-transformed 4th form icer suddenly appears before you by what seems like instant transmission.
+mpecho &CIcerian Fighter says 'Just so you know, you're a waste of my time.'&D
+mpmload 50020
+~
+> speech_prog "bio-android"~
+if wearingvnum($n) == 50024
+mpecho The ground trembles, and then ruptures with a bang as a small bio-android suddenly leaps from the earth in a cloud of dirt. Spinning through the air and landing on the ground, the creature takes an aggressive stance.
+mpmload 50021
+mpforce bioandroid cackle
+else
+mpecho _lbl An electronic voice says "Yllacc ec taheat. Bmayca rumt dra bnuban bmydehis yllacc lynt ev oui fecr du ica drec vihldeuh."
+endif
+~
+> speech_prog "android"~
+if wearingvnum($n) == 50025
+mpecho A pudgy, strangely dressed android suddenly appears before you.
+mpecho _lbl Android #19 says in a boxy monotone voice "You can't escape now."
+mpmload 50022
+else
+mpecho _lbl An electronic voice says "Yllacc ec taheat. Bmayca rumt dra bnuban bmydehis yllacc lynt ev oui fecr du ica drec vihldeuh."
+endif
+~
+> speech_prog "super 13"~
+if wearingvnum($n) == 50026
+mpecho Everything in sight is suddenly decimated by a wall of crimson energy. A short distance away, a large android starts walking towards you. 
+mpecho Blue skinned, with silver armor plating, wearing a pair of dark pants and suspenders, this red-haired tower of mechanical might seems ready to destroy anything and everything.
+mpmload 50023
+else
+mpecho _lbl An electronic voice says "Yllacc ec taheat. Bmayca rumt dra bnuban bmydehis yllacc lynt ev oui fecr du ica drec vihldeuh."
+endif
+~
+|
+S
+#50146
+A Busy City - Subspace~
+This place looks, feels, and even smells like real life.  However, the
+door leading back into the ship sticking out like a sore thumb spoils the
+experience.  Cars and aircars alike zip along the busy streets of the city,
+inbetween massive skycrapers. People walking along on the sidewalks don't
+even seem to notice the door back to the ship which is just standing out in
+the middle of the street.  Although it would seem evil of a person to fight
+in a place like this, a person has to remember that none of this is real
+and neither are the people. 
+~
+0 1344274692 16 0 0 3
+D2
+~
+~
+7 50022 50144
+> entry_prog 100~
+mpsleep 3600
+mpechoat $n The reality around you suddenly begins to shatter as your time in the subspace training room runs out. A computer system controlled android escorts you out of the chamber and back into the main room.
+mpforce voice close s
+mpforce voice lock s
+mptransfer $n 50144
+~
+> speech_prog "halfbreed"~
+mpecho A halfbreed fighter suddenly materializes out of nowhere. Upon seeing another fighter in the room with him, the halfie begins to tremble nervously.
+mpmload 50016
+~
+> speech_prog "human"~
+mpecho A human fighter suddenly materializes before you.
+mpecho &CHuman Fighter says 'Um, can't we talk this over at all?'&D
+mpsleep 12
+mpecho The human fighter gulps as he takes a defensive fighting stance.
+mpecho &RBright red flames erupt around Human Fighter as he yells out KAIOKEN TIMES 10!!!&D
+mpmload 50017
+~
+> speech_prog "namek"~
+mpecho A namekian fighter suddenly materializes before you.
+mpecho &GNamekian Fighter draws upon the ancient knowledge of the Namekians to transform into a Super Namek.&G
+mpmload 50018
+~
+> speech_prog "saiyan"~
+mpecho A saiyan fighter suddenly materializes before you.
+mpecho &CSaiyan Fighter snickers and says "Let's do this."&D
+mpsleep 8
+mpecho &YSaiyan Fighter's hair flashes blonde and his eyes turn blue as a fiery aura erupts around him.&D
+mpsleep 8
+mpecho &YSaiyan Fighter's hair flies back and electricity arcs around him as his aura flares brightly.&D
+mpmload 50019
+~
+> speech_prog "icer"~
+mpecho An already-transformed 4th form icer suddenly appears before you by what seems like instant transmission.
+mpecho &CIcerian Fighter says 'Just so you know, you're a waste of my time.'&D
+mpmload 50020
+~
+> speech_prog "bio-android"~
+if wearingvnum($n) == 50024
+mpecho The ground trembles, and then ruptures with a bang as a small bio-android suddenly leaps from the earth in a cloud of dirt. Spinning through the air and landing on the ground, the creature takes an aggressive stance.
+mpmload 50021
+mpforce bioandroid cackle
+else
+mpecho _lbl An electronic voice says "Yllacc ec taheat. Bmayca rumt dra bnuban bmydehis yllacc lynt ev oui fecr du ica drec vihldeuh."
+endif
+~
+> speech_prog "android"~
+if wearingvnum($n) == 50025
+mpecho A pudgy, strangely dressed android suddenly appears before you.
+mpecho _lbl Android #19 says in a boxy monotone voice "You can't escape now."
+mpmload 50022
+else
+mpecho _lbl An electronic voice says "Yllacc ec taheat. Bmayca rumt dra bnuban bmydehis yllacc lynt ev oui fecr du ica drec vihldeuh."
+endif
+~
+> speech_prog "super 13"~
+if wearingvnum($n) == 50026
+mpecho Everything in sight is suddenly decimated by a wall of crimson energy. A short distance away, a large android starts walking towards you. 
+mpecho Blue skinned, with silver armor plating, wearing a pair of dark pants and suspenders, this red-haired tower of mechanical might seems ready to destroy anything and everything.
+mpmload 50023
+else
+mpecho _lbl An electronic voice says "Yllacc ec taheat. Bmayca rumt dra bnuban bmydehis yllacc lynt ev oui fecr du ica drec vihldeuh."
+endif
+~
+|
+S
+#50147
+Tropical Paradise - Subspace~
+This place looks, feels, and even smells like real life.  However, the
+door leading back into the ship sticking out like a sore thumb spoils the
+experience.  This reality is similar to something you'd find on any
+tropical island on the Earth. Palm trees, exotic species of birds, animals,
+and plants as well as a humid climate of just about 80-85 degrees. 
+Overhead, the sky is a pristine clear blue except for a few tiny white
+clouds far in the distance.  Looking out towards the horizon and in all
+directions, it's apparent this place is just a lone island surrounded by an
+endless ocean. 
+~
+0 1344274692 16 0 0 3
+D3
+~
+~
+7 50022 50144
+> entry_prog 100~
+mpsleep 3600
+mpechoat $n The reality around you suddenly begins to shatter as your time in the subspace training room runs out. A computer system controlled android escorts you out of the chamber and back into the main room.
+mpforce voice close w
+mpforce voice lock w
+mptransfer $n 50144
+~
+> speech_prog "halfbreed"~
+mpecho A halfbreed fighter suddenly materializes out of nowhere. Upon seeing another fighter in the room with him, the halfie begins to tremble nervously.
+mpmload 50016
+~
+> speech_prog "human"~
+mpecho A human fighter suddenly materializes before you.
+mpecho &CHuman Fighter says 'Um, can't we talk this over at all?'&D
+mpsleep 12
+mpecho The human fighter gulps as he takes a defensive fighting stance.
+mpecho &RBright red flames erupt around Human Fighter as he yells out KAIOKEN TIMES 10!!!&D
+mpmload 50017
+~
+> speech_prog "namek"~
+mpecho A namekian fighter suddenly materializes before you.
+mpecho &GNamekian Fighter draws upon the ancient knowledge of the Namekians to transform into a Super Namek.&G
+mpmload 50018
+~
+> speech_prog "saiyan"~
+mpecho A saiyan fighter suddenly materializes before you.
+mpecho &CSaiyan Fighter snickers and says "Let's do this."&D
+mpsleep 8
+mpecho &YSaiyan Fighter's hair flashes blonde and his eyes turn blue as a fiery aura erupts around him.&D
+mpsleep 8
+mpecho &YSaiyan Fighter's hair flies back and electricity arcs around him as his aura flares brightly.&D
+mpmload 50019
+~
+> speech_prog "icer"~
+mpecho An already-transformed 4th form icer suddenly appears before you by what seems like instant transmission.
+mpecho &CIcerian Fighter says 'Just so you know, you're a waste of my time.'&D
+mpmload 50020
+~
+> speech_prog "bio-android"~
+if wearingvnum($n) == 50024
+mpecho The ground trembles, and then ruptures with a bang as a small bio-android suddenly leaps from the earth in a cloud of dirt. Spinning through the air and landing on the ground, the creature takes an aggressive stance.
+mpmload 50021
+mpforce bioandroid cackle
+else
+mpecho _lbl An electronic voice says "Yllacc ec taheat. Bmayca rumt dra bnuban bmydehis yllacc lynt ev oui fecr du ica drec vihldeuh."
+endif
+~
+> speech_prog "android"~
+if wearingvnum($n) == 50025
+mpecho A pudgy, strangely dressed android suddenly appears before you.
+mpecho _lbl Android #19 says in a boxy monotone voice "You can't escape now."
+mpmload 50022
+else
+mpecho _lbl An electronic voice says "Yllacc ec taheat. Bmayca rumt dra bnuban bmydehis yllacc lynt ev oui fecr du ica drec vihldeuh."
+endif
+~
+> speech_prog "super 13"~
+if wearingvnum($n) == 50026
+mpecho Everything in sight is suddenly decimated by a wall of crimson energy. A short distance away, a large android starts walking towards you. 
+mpecho Blue skinned, with silver armor plating, wearing a pair of dark pants and suspenders, this red-haired tower of mechanical might seems ready to destroy anything and everything.
+mpmload 50023
+else
+mpecho _lbl An electronic voice says "Yllacc ec taheat. Bmayca rumt dra bnuban bmydehis yllacc lynt ev oui fecr du ica drec vihldeuh."
+endif
+~
+|
+S
+#50148
+Subspace Manipulation Training Facility~
+One of the true marvels of the technological advancement of the people
+that built this ship is now evident in this section.  In different rooms
+here, powerful computers and equipment are able to manipulate the flow of
+sub-space and time to create artificial realities for fighters to train in.
+However, it seems the rooms are all locked off to prevent over-usage.  Not
+going to be able to get in without the proper access keycard. 
+~
+0 2097156 16
+D0
+~
+~
+0 -1 50143
+D1
+~
+~
+519 50022 50151
+D2
+~
+~
+519 50022 50150
+D3
+~
+~
+519 50022 50149
+> entry_prog 100~
+if isopen($n) == west
+mpforce voice close w
+mpforce voice lock w
+mpecho The door to the subspace room to the west slides shut.
+else
+endif
+if isopen($n) == south
+mpforce voice close s
+mpforce voice lock s
+mpecho The door to the subspace room to the south slides shut.
+else
+endif
+if isopen($n) == east
+mpforce voice close e
+mpforce voice lock e
+mpecho The door to the subspace room to the east slides shut.
+else
+endif
+~
+|
+S
+#50149
+A Barren Wasteland - Subspace~
+This place looks, feels, and even smells like real life.  However, the
+door leading back into the ship sticking out like a sore thumb spoils the
+experience.  Worthless, is the word that comes to mind.  A bleak landscape
+unfolds outward in all directions.  Sand dunes, rock formations, and salt
+flats as far as the eye can see.  Nobody is gonna shed a tear if fighters
+ended up destroying this place.  Probably would be an improvement if
+anything. 
+~
+0 1344274692 16 0 0 3
+D1
+~
+~
+7 50022 50148
+> entry_prog 100~
+mpsleep 3600
+mpechoat $n The reality around you suddenly begins to shatter as your time in the subspace training room runs out. A computer system controlled android escorts you out of the chamber and back into the main room.
+mpforce voice close e
+mpforce voice lock e
+mptransfer $n 50148
+~
+> speech_prog "halfbreed"~
+mpecho A halfbreed fighter suddenly materializes out of nowhere. Upon seeing another fighter in the room with him, the halfie begins to tremble nervously.
+mpmload 50016
+~
+> speech_prog "human"~
+mpecho A human fighter suddenly materializes before you.
+mpecho &CHuman Fighter says 'Um, can't we talk this over at all?'&D
+mpsleep 12
+mpecho The human fighter gulps as he takes a defensive fighting stance.
+mpecho &RBright red flames erupt around Human Fighter as he yells out KAIOKEN TIMES 10!!!&D
+mpmload 50017
+~
+> speech_prog "namek"~
+mpecho A namekian fighter suddenly materializes before you.
+mpecho &GNamekian Fighter draws upon the ancient knowledge of the Namekians to transform into a Super Namek.&G
+mpmload 50018
+~
+> speech_prog "saiyan"~
+mpecho A saiyan fighter suddenly materializes before you.
+mpecho &CSaiyan Fighter snickers and says "Let's do this."&D
+mpsleep 8
+mpecho &YSaiyan Fighter's hair flashes blonde and his eyes turn blue as a fiery aura erupts around him.&D
+mpsleep 8
+mpecho &YSaiyan Fighter's hair flies back and electricity arcs around him as his aura flares brightly.&D
+mpmload 50019
+~
+> speech_prog "icer"~
+mpecho An already-transformed 4th form icer suddenly appears before you by what seems like instant transmission.
+mpecho &CIcerian Fighter says 'Just so you know, you're a waste of my time.'&D
+mpmload 50020
+~
+> speech_prog "bio-android"~
+if wearingvnum($n) == 50024
+mpecho The ground trembles, and then ruptures with a bang as a small bio-android suddenly leaps from the earth in a cloud of dirt. Spinning through the air and landing on the ground, the creature takes an aggressive stance.
+mpmload 50021
+mpforce bioandroid cackle
+else
+mpecho _lbl An electronic voice says "Yllacc ec taheat. Bmayca rumt dra bnuban bmydehis yllacc lynt ev oui fecr du ica drec vihldeuh."
+endif
+~
+> speech_prog "android"~
+if wearingvnum($n) == 50025
+mpecho A pudgy, strangely dressed android suddenly appears before you.
+mpecho _lbl Android #19 says in a boxy monotone voice "You can't escape now."
+mpmload 50022
+else
+mpecho _lbl An electronic voice says "Yllacc ec taheat. Bmayca rumt dra bnuban bmydehis yllacc lynt ev oui fecr du ica drec vihldeuh."
+endif
+~
+> speech_prog "super 13"~
+if wearingvnum($n) == 50026
+mpecho Everything in sight is suddenly decimated by a wall of crimson energy. A short distance away, a large android starts walking towards you. 
+mpecho Blue skinned, with silver armor plating, wearing a pair of dark pants and suspenders, this red-haired tower of mechanical might seems ready to destroy anything and everything.
+mpmload 50023
+else
+mpecho _lbl An electronic voice says "Yllacc ec taheat. Bmayca rumt dra bnuban bmydehis yllacc lynt ev oui fecr du ica drec vihldeuh."
+endif
+~
+|
+S
+#50150
+Above The Clouds - Subspace~
+This place looks, feels, and even smells like real life.  However, the
+door leading back into the ship sticking out like a sore thumb spoils the
+experience.  The only kind of floor in this room is a small 3x3 foot
+platform infront of the door leading back into the ship.  Out in every
+other direction there is nothing but open skies above a gigantic white
+blanket of clouds below.  Another perfect environment to fight in. 
+~
+0 1344274692 16 0 0 3
+D0
+~
+~
+7 50022 50148
+> entry_prog 100~
+mpsleep 3600
+mpechoat $n The reality around you suddenly begins to shatter as your time in the subspace training room runs out. A computer system controlled android escorts you out of the chamber and back into the main room.
+mpforce voice close n
+mpforce voice lock n
+mptransfer $n 50148
+~
+> speech_prog "halfbreed"~
+mpecho A halfbreed fighter suddenly materializes out of nowhere. Upon seeing another fighter in the room with him, the halfie begins to tremble nervously.
+mpmload 50016
+~
+> speech_prog "human"~
+mpecho A human fighter suddenly materializes before you.
+mpecho &CHuman Fighter says 'Um, can't we talk this over at all?'&D
+mpsleep 12
+mpecho The human fighter gulps as he takes a defensive fighting stance.
+mpecho &RBright red flames erupt around Human Fighter as he yells out KAIOKEN TIMES 10!!!&D
+mpmload 50017
+~
+> speech_prog "namek"~
+mpecho A namekian fighter suddenly materializes before you.
+mpecho &GNamekian Fighter draws upon the ancient knowledge of the Namekians to transform into a Super Namek.&G
+mpmload 50018
+~
+> speech_prog "saiyan"~
+mpecho A saiyan fighter suddenly materializes before you.
+mpecho &CSaiyan Fighter snickers and says "Let's do this."&D
+mpsleep 8
+mpecho &YSaiyan Fighter's hair flashes blonde and his eyes turn blue as a fiery aura erupts around him.&D
+mpsleep 8
+mpecho &YSaiyan Fighter's hair flies back and electricity arcs around him as his aura flares brightly.&D
+mpmload 50019
+~
+> speech_prog "icer"~
+mpecho An already-transformed 4th form icer suddenly appears before you by what seems like instant transmission.
+mpecho &CIcerian Fighter says 'Just so you know, you're a waste of my time.'&D
+mpmload 50020
+~
+> speech_prog "bio-android"~
+if wearingvnum($n) == 50024
+mpecho The ground trembles, and then ruptures with a bang as a small bio-android suddenly leaps from the earth in a cloud of dirt. Spinning through the air and landing on the ground, the creature takes an aggressive stance.
+mpmload 50021
+mpforce bioandroid cackle
+else
+mpecho _lbl An electronic voice says "Yllacc ec taheat. Bmayca rumt dra bnuban bmydehis yllacc lynt ev oui fecr du ica drec vihldeuh."
+endif
+~
+> speech_prog "android"~
+if wearingvnum($n) == 50025
+mpecho A pudgy, strangely dressed android suddenly appears before you.
+mpecho _lbl Android #19 says in a boxy monotone voice "You can't escape now."
+mpmload 50022
+else
+mpecho _lbl An electronic voice says "Yllacc ec taheat. Bmayca rumt dra bnuban bmydehis yllacc lynt ev oui fecr du ica drec vihldeuh."
+endif
+~
+> speech_prog "super 13"~
+if wearingvnum($n) == 50026
+mpecho Everything in sight is suddenly decimated by a wall of crimson energy. A short distance away, a large android starts walking towards you. 
+mpecho Blue skinned, with silver armor plating, wearing a pair of dark pants and suspenders, this red-haired tower of mechanical might seems ready to destroy anything and everything.
+mpmload 50023
+else
+mpecho _lbl An electronic voice says "Yllacc ec taheat. Bmayca rumt dra bnuban bmydehis yllacc lynt ev oui fecr du ica drec vihldeuh."
+endif
+~
+|
+S
+#50151
+Planet Namek - Subspace~
+This place looks, feels, and even smells like real life.  However, the
+door leading back into the ship sticking out like a sore thumb spoils the
+experience.  It's unclear exactly how or why this location was chosen, but
+this subspace room has been fashioned into the ominous namekian landscape. 
+Rocky islands and landmasses surrounded by green-tinted seas and rivers,
+blanketed in grass, with strange trees that are straight up and down with
+poofy little blue-ish colored balls of leaves adorning the tops frame the
+view in all directions.  Every here and there, there are odd white
+structures with round, blue windows.  In what looks like some kind of
+fields or gardens, namekian workers tend to growing some strange plant. 
+~
+0 1344274692 16 0 0 3
+D3
+~
+~
+7 50022 50148
+> entry_prog 100~
+mpsleep 3600
+mpechoat $n The reality around you suddenly begins to shatter as your time in the subspace training room runs out. A computer system controlled android escorts you out of the chamber and back into the main room.
+mpforce voice close w
+mpforce voice lock w
+mptransfer $n 50148
+~
+> speech_prog "halfbreed"~
+mpecho A halfbreed fighter suddenly materializes out of nowhere. Upon seeing another fighter in the room with him, the halfie begins to tremble nervously.
+mpmload 50016
+~
+> speech_prog "human"~
+mpecho A human fighter suddenly materializes before you.
+mpecho &CHuman Fighter says 'Um, can't we talk this over at all?'&D
+mpsleep 12
+mpecho The human fighter gulps as he takes a defensive fighting stance.
+mpecho &RBright red flames erupt around Human Fighter as he yells out KAIOKEN TIMES 10!!!&D
+mpmload 50017
+~
+> speech_prog "namek"~
+mpecho A namekian fighter suddenly materializes before you.
+mpecho &GNamekian Fighter draws upon the ancient knowledge of the Namekians to transform into a Super Namek.&G
+mpmload 50018
+~
+> speech_prog "saiyan"~
+mpecho A saiyan fighter suddenly materializes before you.
+mpecho &CSaiyan Fighter snickers and says "Let's do this."&D
+mpsleep 8
+mpecho &YSaiyan Fighter's hair flashes blonde and his eyes turn blue as a fiery aura erupts around him.&D
+mpsleep 8
+mpecho &YSaiyan Fighter's hair flies back and electricity arcs around him as his aura flares brightly.&D
+mpmload 50019
+~
+> speech_prog "icer"~
+mpecho An already-transformed 4th form icer suddenly appears before you by what seems like instant transmission.
+mpecho &CIcerian Fighter says 'Just so you know, you're a waste of my time.'&D
+mpmload 50020
+~
+> speech_prog "bio-android"~
+if wearingvnum($n) == 50024
+mpecho The ground trembles, and then ruptures with a bang as a small bio-android suddenly leaps from the earth in a cloud of dirt. Spinning through the air and landing on the ground, the creature takes an aggressive stance.
+mpmload 50021
+mpforce bioandroid cackle
+else
+mpecho _lbl An electronic voice says "Yllacc ec taheat. Bmayca rumt dra bnuban bmydehis yllacc lynt ev oui fecr du ica drec vihldeuh."
+endif
+~
+> speech_prog "android"~
+if wearingvnum($n) == 50025
+mpecho A pudgy, strangely dressed android suddenly appears before you.
+mpecho _lbl Android #19 says in a boxy monotone voice "You can't escape now."
+mpmload 50022
+else
+mpecho _lbl An electronic voice says "Yllacc ec taheat. Bmayca rumt dra bnuban bmydehis yllacc lynt ev oui fecr du ica drec vihldeuh."
+endif
+~
+> speech_prog "super 13"~
+if wearingvnum($n) == 50026
+mpecho Everything in sight is suddenly decimated by a wall of crimson energy. A short distance away, a large android starts walking towards you. 
+mpecho Blue skinned, with silver armor plating, wearing a pair of dark pants and suspenders, this red-haired tower of mechanical might seems ready to destroy anything and everything.
+mpmload 50023
+else
+mpecho _lbl An electronic voice says "Yllacc ec taheat. Bmayca rumt dra bnuban bmydehis yllacc lynt ev oui fecr du ica drec vihldeuh."
+endif
+~
+|
+S
+#50152
+Medical Center - Third Deck~
+Rather than a fully automated healing facility, this area looks more
+like some kind of hive.  Dozens of identical, large metal chambers line the
+walls all across the room in a long, continuous row.  Fighters making use
+of the ships training facilities often come back here to heal up again;
+many of them severely thrashed.  However, ever since the crew of this ship
+was seemingly exterminated, almost nobody ever comes by here anymore.  A
+terminal by one of the bulkheads which was once used to dispence access
+cards to the ships training rooms still looks like it might be operational.
+~
+0 538969092 16
+D1
+~
+~
+1 50028 50140
+> speech_prog "satelym"~
+if islocked($n) == east
+mpecho _lbl An electronic voice says "Luhvensat."
+mpforce voice unlock e
+mpforce voice open e
+mpecho The medical bay door slides open.
+endif
+~
+> entry_prog 100~
+if isopen($n) == east
+mpforce voice close e
+mpforce voice lock e
+mpecho The medical bay door slides shut.
+endif
+~
+|
+S
+#50153
+Passageway - First Deck~
+One of the most damaged and unused decks of the ship, various metal
+crates and boxes float through the passageway slowly.  It seems the
+artificial gravity is inoperable on this level.  Well, that's just utterly
+aparent as the upper torso of somebody's corpse floats past.  The lighting
+flickers as it struggles to work right, however in some areas the lighting
+has ended entirely.  Echoing down through the passages the sound of twisted
+laughter can be heard every so often, as well as metal upon metal clanking
+of something moving about. 
+~
+0 2097152 16
+D3
+~
+~
+0 -1 50158
+D6
+~
+~
+0 -1 50154
+D9
+~
+~
+0 -1 50157
+S
+#50154
+Shattered Passageway - First Deck~
+Once again, further progress has been cut off down this passageway.  But
+this time, it's simply because there is nothing left to travel down. 
+Ahead, the passageway is simply gone.  Through the wreckage and torn
+bulkhead surrounding the edges, open space and the debris field around the
+ship can be seen clearly once more.  There is nothing left in this
+direction. 
+~
+0 2097152 16
+D9
+~
+~
+0 -1 50153
+S
+#50155
+Passageway - First Deck~
+One of the most damaged and unused decks of the ship, various metal
+crates and boxes float through the passageway slowly.  It seems the
+artificial gravity is inoperable on this level.  Well, that's just utterly
+aparent as the upper torso of somebody's corpse floats past.  The lighting
+flickers as it struggles to work right, however in some areas the lighting
+has ended entirely.  Echoing down through the passages the sound of twisted
+laughter can be heard every so often, as well as metal upon metal clanking
+of something moving about. 
+~
+0 2097152 16
+D3
+~
+~
+0 -1 50159
+D7
+~
+~
+0 -1 50157
+D8
+~
+~
+0 -1 50156
+S
+#50156
+Collapsed Passageway - First Deck~
+Rather than being caused by any natural occurance, it seems the
+passageway here has been closed off purposefully.  Countless tons of
+wreckage blocks any further travel down this passageway.  Standing
+defiantly in the way, a short, bizzare, little mushroom-shaped android
+stands here.  Laughing in a mad, high pitched tone, this creation seems to
+be part of or assiciated with whatever attacked the ship.  Most noticable,
+there is what looks like some kind of symbol on the android's forehead. A
+strange-looking letter "E". 
+~
+0 2097152 16
+D7
+~
+~
+0 -1 50155
+S
+#50157
+Outside an Elevator - First Deck~
+Whatever rendered the elevator door's voice activation system inoperable
+must have come from this deck.  The door here leading to the elevator has
+also been bashed inward; swinging slightly ajar, however still able to
+close automaticly somehow once opened.  On this deck, the artifical gravity
+is inoperable.  Corpses and parts thereof float by gruesomely, as well as
+small wobbly spheres of blood and other chemicals. 
+~
+0 2097152 16
+D3
+~
+~
+3 -1 50127
+D6
+~
+~
+0 -1 50153
+D8
+~
+~
+0 -1 50155
+> entry_prog 100~
+if isopen($n) == west
+mpforce voice close west
+mpecho The elevator door slides shut.
+endif
+~
+|
+S
+#50158
+Passageway - First Deck~
+One of the most damaged and unused decks of the ship, various metal
+crates and boxes float through the passageway slowly.  It seems the
+artificial gravity is inoperable on this level.  Well, that's just utterly
+aparent as the upper torso of somebody's corpse floats past.  The lighting
+flickers as it struggles to work right, however in some areas the lighting
+has ended entirely.  Echoing down through the passages the sound of twisted
+laughter can be heard every so often, as well as metal upon metal clanking
+of something moving about. 
+~
+0 2097152 16
+D1
+~
+~
+0 -1 50153
+D9
+~
+~
+0 -1 50160
+S
+#50159
+Passageway - First Deck~
+One of the most damaged and unused decks of the ship, various metal
+crates and boxes float through the passageway slowly.  It seems the
+artificial gravity is inoperable on this level.  Well, that's just utterly
+aparent as the upper torso of somebody's corpse floats past.  The lighting
+flickers as it struggles to work right, however in some areas the lighting
+has ended entirely.  Echoing down through the passages the sound of twisted
+laughter can be heard every so often, as well as metal upon metal clanking
+of something moving about. 
+~
+0 2097152 16
+D1
+~
+~
+0 -1 50155
+D7
+~
+~
+0 -1 50160
+S
+#50160
+Outside The Cargo Storage Bay - First Deck~
+It would appear the massive double-doors cutting off access to the ships
+main cargo storage bay have taken quite a beating.  However, these doors
+dented outward still seem to be able to open and close well enough to keep
+just anyone from opening them without using the proper voice command. 
+Whoever or whatever opened them by force must have possessed incredible
+strength.  The long-since dried remains of someones head splattered all
+over one of the doors is covering up part of the sign on the door, making
+it slightly unreadable at sections.  What can be made out on the sign reads
+"...uela...lus...ht......cdunyka du ahd...." 
+~
+0 2097152 16
+D3
+~
+~
+7 50029 50161
+D6
+~
+~
+0 -1 50158
+D8
+~
+~
+0 -1 50159
+> entry_prog 100~
+if isopen($n) == west
+mpforce voice close w
+mpforce voice lock w
+mpecho The cargo bay door slides shut.
+endif
+~
+> speech_prog "cdunyka"~
+if islocked($n) == west
+mpecho _lbl An electronic voice says "Luhvensat."
+mpforce voice unlock w
+mpforce voice open w
+mpecho The cargo bay door slides open.
+endif
+~
+|
+S
+#50161
+Cargo Storage Bay - First Deck~
+A rather massive, high-ceiling room serves as the ship's main cargo
+storage bay.  Of what hasn't been smashed or torn apart to an
+unrecognizable degree, metallic boxes and crates are huddled over in
+corners of the room where they probably used to lay uselessly; when there
+was still gravity in this section.  Where there used to be a large section
+of deck in the center of the room there is now merely a giant gaping hole
+in the hull of the ship; space, stars, and debris surrounding the ship
+framing the view out the hole.  An open doorway to the northwest leads to
+another section of the cargo bay. 
+~
+0 2097152 16
+D1
+~
+~
+7 50029 50160
+D7
+~
+~
+0 -1 50162
+> entry_prog 100~
+if isopen($n) == east
+mpforce voice close e
+mpforce voice lock e
+mpecho The cargo bay door slides shut.
+endif
+~
+> speech_prog "cdunyka"~
+if islocked($n) == east
+mpecho _lbl An electronic voice says "Luhvensat."
+mpforce voice unlock e
+mpforce voice open e
+mpecho The cargo bay door slides open.
+endif
+~
+|
+S
+#50162
+Cargo Storage Bay - First Deck~
+This section of cargo bay seperated off from the other is considerably
+smaller.  With no cargo anywhere in sight, it's a wonder what the point of
+this room was at all.  The northern bulkhead has caved in somewhat, leaving
+a large pile of wreckage taking up part of the space in the cargo bay.  On
+the south side of the room, there is another doorway leading into a small,
+dark room.  It seems like there is something large in the room, but it
+can't be seen; only heard, as a low multi-toned voice seems to murmur
+something unintelligible.  Standing infront of the doorway, a vicious
+looking android seems to be standing guard.  Body armor painted in a scheme
+of golds, silver, and brown, this killing machine seems to have features
+partly of some kind of cross between a man and a lion.  Standing upright on
+two legs with the body of a humanoid, however the feet and hands have been
+replaced with monofilament-sharp claws and talons.  The face resembles that
+of a lion, with the pronounced snout and steely eyes.  Jagged, spiked,
+golden metalic appendages seem to resemble hair, but look just as sharp as
+it's claws.  A strange looking "E" symbol on it's forehead declares the
+android's allegiance.  As it stands guard, a low, menacing growl rumbles
+from it's lips. 
+~
+0 2097152 16
+D2
+~
+~
+0 -1 50163
+D8
+~
+~
+0 -1 50161
+S
+#50163
+A Morgue - First Deck~
+A room once used for special cargo, it is little more than a twisted
+morgue.  Half eaten corpse float about the room, as well as countless small
+spheres of floating blood and entrails.  The bulkheads of the room have
+been overrun by some kind of organic material that laces about like veins
+in a way.  At the center of the room, a giant creature reaching over ten
+feet in height stands amidst the shattered remains of some kind of
+container.  On the head of this abomination, a small little face seems to
+be making some kind of bizarre murmuring noise.  The organic material in
+the room seems to react to it; pulsing in rhythem.  Upon sighting a new
+victem, the large creature seems to roar in a twisted and hoarse tone. 
+~
+0 2097152 16
+D0
+~
+~
+0 -1 50162
+S
+#50164
+Intersection - Third Deck~
+The ceiling in this area is as high as a cathedral.  To the north and
+south, two massive rooms appear as gigantic metalic coccoons.  In each
+room, three doors appear to lead off into seperate rooms of their own. 
+Some kind of steam is leaking from pipes along the walls and trailing down
+to the floor; aparently keeping the rooms at a controlled lower
+temperature.  It's a wonder what a place of this size is used for. 
+
+An odd shimmering can be seen at the edge of vision, as if some sort of
+hidden portal may be flickering in and out of existence.
+~
+0 2097156 16
+D0
+~
+~
+0 -1 50144
+D2
+~
+~
+0 -1 50148
+D3
+~
+~
+0 -1 50140
+D10
+~
+portal~
+133120 -1 50195
+S
+#50165
+Floating in a void~
+~
+0 2097156 1
+S
+#50166
+Floating in a void~
+~
+0 2097156 1
+S
+#50167
+Floating in a void~
+~
+0 2097156 1
+S
+#50168
+Floating in a void~
+~
+0 2097156 1
+S
+#50169
+Floating in a void~
+~
+0 2097156 1
+S
+#50170
+Floating in a void~
+~
+0 2097156 1
+S
+#50171
+Floating in a void~
+~
+0 2097156 1
+S
+#50172
+Floating in a void~
+~
+0 2097156 1
+S
+#50173
+Floating in a void~
+~
+0 2097156 1
+S
+#50174
+Floating in a void~
+~
+0 2097156 1
+S
+#50175
+Floating in a void~
+~
+0 2097156 1
+S
+#50176
+Floating in a void~
+~
+0 2097156 1
+S
+#50177
+Floating in a void~
+~
+0 2097156 1
+S
+#50178
+Floating in a void~
+~
+0 2097156 1
+S
+#50179
+Floating in a void~
+~
+0 2097156 1
+S
+#50180
+Floating in a void~
+~
+0 2097156 1
+S
+#50181
+Floating in a void~
+~
+0 2097156 1
+S
+#50182
+Floating in a void~
+~
+0 2097156 1
+S
+#50183
+Floating in a void~
+~
+0 2097156 1
+S
+#50184
+Floating in a void~
+~
+0 2097156 1
+S
+#50185
+Floating in a void~
+~
+0 2097156 1
+S
+#50186
+Floating in a void~
+~
+0 2097156 1
+S
+#50187
+Floating in a void~
+~
+0 2097156 1
+S
+#50188
+Floating in a void~
+~
+0 2097156 1
+S
+#50189
+Floating in a void~
+~
+0 2097156 1
+S
+#50190
+Floating in a void~
+~
+0 2097156 1
+S
+#50191
+1999 AD "Apocalypse" - Subspace~
+The future Earth, or at least that's what this reality seems to be. 
+Whether its the real dimension, or another dimension cannot be certainly
+decided upon.  However, everything is quite real.  In the distance, massive
+metropolian cities covered by gigantic transparent domes can be seen here
+and there; testament to this time's level of technological advancement. 
+Just as the view seems too perfect to behold, the ground begins to tremble
+violently.  About a fourth a mile ahead, the ground cracks and splits; a
+seething fiery glow pouring from the lacerations in the Earth's crust. 
+Suddenly, there is a roaring blast of sound as the the cracks in the ground
+explode upward; massive chunks of solid and molten rock floating upward
+into the as if someone had willed them to.  And then, from within the
+massive chasm, a single being began to rise from within it.  A
+mind-bogglingly large mountain of rigid spikes of an unknown material. 
+With an Earth shattering wail from the eye concealed within the beak at the
+base of it's front, the great Lavos creeped up onto the land.  The spikes
+of it's body suddenly started to glow brightly, before firing searing beams
+of crimson light up into the sky, which then rained down upon the land;
+decimating everything.  Something must be done to stop this evil creature,
+or the world will surely end here and now.  The apocalypse has come. 
+~
+0 1075838980 16
+D10
+~
+trash can~
+395264 -1 50194
+S
+#50192
+The End Of Time - Subspace~
+Another square cobblestone courtyard, although smaller than the other
+two.  In this room is where aparently fighters are trained in the ways of
+the old kingdom, a kingdom which no longer exists.  A small, strange little
+creature stands here awaiting instructions.  The appearance of the creature
+is known to change with the strength of whoever enters the room.  If the
+person is weak, it appears weak.  If the person is strong, it appears
+strong.  Strange. 
+~
+0 1075838980 16
+D2
+~
+~
+1 -1 50194
+S
+#50193
+The End Of Time - Subspace~
+Here in this small, square section of cobblestone courtyard on the other
+side of the bridge, strange lights on the floor glow eerily.  In the
+lights, the scenes of various places on the earth are barely visible. 
+Other than the bizzare lights, however, there is nothing else in this
+direction. 
+~
+0 1075838980 16
+D1
+~
+~
+0 -1 50194
+S
+#50194
+The End Of Time - Subspace~
+Here in the small cobblestone courtyard area, a single wrought-iron lamp
+post acts as the centerpiece of the room.  Up against the lamp post, a very
+old man in a brown trenchcoat and brown derby hat seems to be drowsing
+peacefully.  On the north side of the courtyard, a single brown wooden door
+stands there with nothing seemingly on the other side of it.  To the west,
+a short cobblestone bridge leads over to another small courtyard with
+strange lights on the floor.  In the corner, a small trashcan sits
+uselessly; a small twinkling light shining from within. 
+~
+0 1344275460 16
+D0
+~
+~
+3 -1 50192
+D1
+~
+~
+7 50003 50195
+D3
+~
+~
+0 -1 50193
+D10
+~
+trash can~
+133120 -1 50191
+S
+#50195
+The End Of Time - Subspace~
+The hidden door from the subspace training facility leads into this
+unknown subspace chamber.  Through some kind of bug or miracle of
+technology, this place is not a fabricated dimension, but an actual place
+at the 'end of time'.  Supposedly when time runs out in the universe,
+everything is supposed to return to nothingness.  Spanning all around until
+infinity, there is dark void.  The other matter that exists now is a short
+cobblestone street.  Behind, the street leads back to the door into the
+ship.  Ahead, it leads to a small cobblestone courtyard.  Some odd etchings
+can barely be made out on one of the cobblestones.
+~
+0 1075838980 16
+D2
+~
+~
+2048 -1 50164
+D3
+~
+~
+7 50003 50194
+E
+etch etchings cobblestones~
+As you clear away the dust and grime the word 'ehvehedo' can be made out.
+~
+> entry_prog 100~
+if isopen($n) == west
+mpforce voice close w
+mpforce voice lock w
+endif
+~
+> speech_prog "ehvehedo"~
+if islocked($n) == west
+mpforce voice unlock w
+mpforce voice open w
+endif
+~
+|
+S
+#50196
+Android 13's Item Storage Room~
+~
+0 2098184 0
+D1
+~
+~
+0 -1 50198
+S
+#50197
+An escape from the Mob spam in the room to the north~
+~
+0 2097160 0
+D0
+~
+~
+0 -1 50198
+S
+#50198
+Android 13's Mob Storage Room~
+~
+0 2098188 0
+D2
+~
+~
+0 -1 50197
+D3
+~
+~
+0 -1 50196
+S
+#50199
+Floating in a void~
+~
+0 1028 1
+S
+#0
+
+
+#RESETS
+M 1 50008 1 50102
+G 1 50002 1
+D 0 50102 0 2
+M 1 50008 1 50126
+D 0 50126 1 1
+M 1 50010 1 50125
+E 1 50007 1 5
+D 0 50125 1 0
+M 1 50008 1 50119
+G 1 50003 1
+D 0 50119 3 2
+M 1 50011 1 50131
+M 1 50009 1 50129
+G 1 50005 1
+G 1 50004 1
+G 1 50006 1
+G 1 50012 1
+G 1 50009 1
+M 1 50009 1 50130
+M 1 50012 1 50095
+M 1 50013 1 50097
+M 1 50014 1 50099
+M 1 50001 1 50050
+M 1 50002 1 50050
+M 1 50003 1 50050
+M 1 50006 1 50108
+M 1 50006 1 50120
+M 1 50008 1 50103
+G 1 50002 1
+D 0 50103 0 1
+D 0 50103 2 2
+M 1 50008 1 50134
+G 1 50018 1
+G 1 50019 1
+D 0 50134 1 2
+D 0 50134 3 2
+M 1 50008 1 50144
+G 1 50022 1
+D 0 50144 0 2
+D 0 50144 1 2
+D 0 50144 3 2
+M 1 50008 1 50148
+G 1 50022 1
+D 0 50148 1 2
+D 0 50148 2 2
+D 0 50148 3 2
+M 1 50015 1 50152
+G 1 50022 1
+M 1 50008 1 50152
+G 1 50028 1
+D 0 50152 1 0
+M 1 50008 1 50140
+G 1 50028 1
+D 0 50140 3 2
+M 1 50008 1 50133
+G 1 50018 1
+D 0 50133 1 1
+D 0 50133 3 2
+M 1 50008 1 50132
+D 0 50132 3 1
+M 1 50008 1 50123
+D 0 50123 3 1
+M 1 50006 1 50113
+M 1 50008 1 50135
+G 1 50019 1
+G 1 50020 1
+D 0 50135 1 2
+D 0 50135 3 2
+M 1 50008 1 50136
+G 1 50020 1
+G 1 50021 1
+D 0 50136 1 2
+D 0 50136 3 2
+M 1 50005 1 50137
+M 1 50008 1 50137
+G 1 50021 1
+D 0 50137 1 2
+M 1 50008 1 50127
+D 0 50127 1 1
+M 1 50008 1 50157
+D 0 50157 3 1
+M 1 50024 1 50156
+M 1 50007 1 50158
+M 1 50007 1 50159
+M 1 50026 1 50162
+M 1 50008 1 50160
+G 1 50029 1
+D 0 50160 3 2
+M 1 50008 1 50161
+G 1 50029 1
+D 0 50161 1 2
+M 1 50025 1 50163
+M 1 50027 1 50059
+M 1 50008 1 50145
+G 1 50022 1
+O 1 50023 1 50145
+D 0 50145 1 2
+M 1 50008 1 50146
+G 1 50022 1
+O 1 50023 1 50146
+D 0 50146 2 2
+M 1 50008 1 50147
+G 1 50022 1
+O 1 50023 1 50147
+D 0 50147 3 2
+M 1 50008 1 50149
+G 1 50022 1
+O 1 50023 1 50149
+D 0 50149 1 2
+M 1 50008 1 50150
+G 1 50022 1
+O 1 50023 1 50150
+D 0 50150 0 2
+M 1 50008 1 50151
+G 1 50022 1
+O 1 50023 1 50151
+D 0 50151 3 2
+M 1 50004 1 50046
+M 1 50197 1 50192
+D 0 50192 2 0
+M 1 50008 1 50195
+G 1 50003 1
+D 0 50195 3 2
+M 1 50198 1 50194
+G 1 50018 1
+G 1 50003 1
+O 1 50195 1 50194
+O 1 50194 1 50194
+D 0 50194 0 1
+D 0 50194 1 2
+O 1 50102 1 50000
+M 1 50009 1 50128
+M 1 50008 1 50128
+G 1 50015 1
+D 0 50128 0 2
+M 1 50008 1 50114
+G 1 50015 1
+D 0 50114 2 2
+O 1 50098 1 50061
+S
+
+
+#SHOPS
+ 50009    0  0  0  0  0   100  90         0 23    ; Repair Machine
+ 50015    0  0  0  0  0   100  90         0 23    ; Access Card Machine
+ 50198    0  0  0  0  0   100  90         0 23    ; Gasper
+0
+
+
+#REPAIRS
+ 50009    0  9  0         100   1         0 23    ; Repair Machine
+ 50198    0  0  0         100   1         0 23    ; Gasper
+0
+
+
+#SPECIALS
+S
+
+
+#$

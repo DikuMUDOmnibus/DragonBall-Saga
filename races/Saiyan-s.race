@@ -1,0 +1,59 @@
+Name        Saiyan-s~
+Race        13
+Classes     0
+Str_Plus    0
+Dex_Plus    0
+Int_Plus    0
+Con_Plus    0
+Lck_Plus    0
+Hit         0
+Mana        0
+Affected    0
+Resist      0
+Suscept     0
+Language    2
+Align       0
+Min_Align   -1000
+Max_Align	 1000
+AC_Plus     0
+Exp_Mult    100
+Attacks     0
+Defenses    0
+Height      66
+Weight      150
+Hunger_Mod  0
+Thirst_mod  0
+Mana_Regen  0
+HP_Regen    0
+Race_Recall 0
+MaxArmor    10000
+WhereName   &w<used as light>      ~
+WhereName   &w<worn on finger>     ~
+WhereName   &w<worn on finger>     ~
+WhereName   &w<worn around neck>   ~
+WhereName   &w<worn around neck>   ~
+WhereName   &w<worn on body>       ~
+WhereName   &w<worn on head>       ~
+WhereName   &w<worn on legs>       ~
+WhereName   &w<worn on feet>       ~
+WhereName   &w<worn on hands>      ~
+WhereName   &w<worn on arms>       ~
+WhereName   &w<worn as shield>     ~
+WhereName   &w<worn about body>    ~
+WhereName   &w<worn about waist>   ~
+WhereName   &w<worn around wrist>  ~
+WhereName   &w<worn around wrist>  ~
+WhereName   &w<wielded>            ~
+WhereName   &w<held>               ~
+WhereName   &w<dual wielded>       ~
+WhereName   &w<worn on ears>       ~
+WhereName   &w<worn on eyes>       ~
+WhereName   &w<missile wielded>    ~
+WhereName   &w<worn on back>       ~
+WhereName   &w<worn over face>     ~
+WhereName   &w<worn around ankle>  ~
+WhereName   &w<worn around ankle>  ~
+WhereName   <access panel>       ~
+WhereName   &w<BUG Inform Goku>  ~
+WhereName   &w<BUG Inform Goku>  ~
+End

@@ -1,0 +1,55 @@
+#SHIP
+Name         Space Pod PXL-005~
+Filename     space_pod_pxl-005.ship~
+Description  A larger space pod, big enough multiple people.~
+Owner        ~
+Pilot        rhian~
+Copilot      khidar~
+Class        0
+Tractorbeam  0
+Shipyard     3871
+Hanger       0
+Turret1      0
+Turret2      0
+Statet0      0
+Statet1      0
+Statet2      0
+Lasers       0
+Missiles     0
+Maxmissiles  0
+Rockets     0
+Maxrockets  0
+Torpedos     0
+Maxtorpedos  0
+Lastdoc      2124
+Firstroom    1034
+Lastroom     1034
+Shield       0
+Maxshield    100
+Hull         50
+Maxhull      50
+Maxenergy    6000
+Hyperspeed   80
+Comm         0
+Chaff        0
+Maxchaff     0
+Sensor       0
+Astro_array  0
+Realspeed    80
+Type         0
+Cockpit      1034
+Coseat       1034
+Pilotseat    1034
+Gunseat      1034
+Navseat      1034
+Engineroom   0
+Entrance     1034
+Shipstate    0
+Missilestate 0
+Energy       6000
+Manuever     10
+Cost         1000000
+Home         CoU~
+End
+
+#END

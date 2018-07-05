@@ -1,0 +1,2726 @@
+#AREA   Frieza's ship~
+
+
+
+#VERSION 252
+#AUTHOR Scyrok~
+
+#RANGES
+51 0 0 0
+$
+
+#PLANET 5
+
+#RESETMSG The heavy tromping of booted feet fill the ship...~
+
+#FLAGS
+0 20
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#3000
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 1
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3001
+lazy guard~
+a lazy guard~
+A guard rests lazily in the shade provided by the ship.
+~
+A tired but weak looking guard sits around lazily, trusting on the
+reputation of Frieza to keep any would-be antagonists away.
+~
+33 0 -500 C
+1 0 100 1d20+0 2d5+0
+-1 750
+112 112 1
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 2
+0 0 0 0 0 0 0 0
+#3002
+sleeping guard~
+a sleeping guard~
+Loud snoring causes you to start, a sleeping guard is the source.
+~
+Like the guards outside, this guard is also particularily lazy.  He
+snores with enough volume to make the walls shiver slighly.
+~
+3 0 -250 C
+1 0 100 1d20+0 2d5+0
+-1 2250
+112 112 1
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> rand_prog 5~
+mpecho A sleeping guard snores loudly, causing the walls to shudder.
+~
+|
+#3003
+angry guard~
+an angry guard~
+Red faced and looking quite angry, this guard attacks!
+~
+A fuming mad and raging guard stands here, looking both strong and
+clumsy.  Somehow you get the feeling he is frustrated about something
+and wants to take it out on you.
+~
+35 0 -550 C
+1 0 100 1d20+0 2d5+0
+-1 5750
+112 112 1
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> death_prog 1~
+mpoload 3011
+mpecho _red As the angry guard dies, his pack slips open and something
+mpecho _red falls out...
+~
+|
+#3004
+drooling sleeping strong guard~
+a sleeping and drooling guard~
+A guard sleeps here, drooling and making a little puddle.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 10000
+112 112 1
+5 5 5 5 5
+0 0 0 0 0
+1 2 0 0 1 1 2
+0 0 0 0 0 0 0 0
+#3005
+reinforcement guard~
+a reinforcement~
+A guard rushes in to assist his comrade.
+~
+~
+33 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 25000
+112 112 1
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 2
+2 0 0 0 0 0 0 0
+#3006
+strong guard~
+a strong guard~
+A very powerful looking guard stands dutifully.
+~
+A strong, yet slow and bulky guard rushes at you with his fist raised.
+~
+35 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 65000
+112 112 1
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 2
+2 0 0 0 0 0 0 0
+#3007
+elite guard~
+an elite guard~
+A heavily equipped and powerful elite guardsman stands here.
+~
+Almost every move this guard makes, is nothing more than a blur you
+can barely follow.  Unfortunatly he seems somewhat perturbed to see
+you here.
+~
+33 0 -1000 C
+1 0 100 1d20+0 2d5+0
+-1 125000
+112 112 1
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 6
+2 0 0 0 0 0 0 0
+> death_prog 1~
+mpoload 3010
+~
+|
+#3008
+sentinel~
+a sentinel~
+A sentinel stands here, measuring everything in sight.
+~
+A sentinel creeps out of the shadows and chants an oath as he hurls
+himself out you...
+~
+35 0 -1000 C
+1 0 100 1d20+0 2d5+0
+-1 2000000
+112 112 1
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 4
+2 0 0 0 0 0 0 0
+#3009
+crew member~
+an overworked crew member~
+A super-stressed crew member works here, typing rapidly and surely.
+~
+This crew member seems to be concentrating heavily on what he is
+doing rather than what is going on around him.  He seems to be totally
+harmless.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000000
+112 112 1
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 3
+2 0 0 0 0 0 0 0
+#3010
+captain~
+a grim captain~
+The captain of the ship sits here, knowing he has no real power.
+~
+An old grizzled captain sits in his chair, showing every one of his tough
+years serving Frieza.  Unfortunatly he cannot retire, to do so would mean
+death at the hands of his master.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 8000000
+112 112 1
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 5
+2 0 0 0 0 0 0 0
+#3011
+engineer~
+a busy engineer~
+An engineer works hard, tinkering with devices and repairing equipment.
+~
+Looking up at you through a layer of grease and dirt, an engineer
+mumbles about interruptions.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 500000
+112 112 1
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 4
+2 0 0 0 0 0 0 0
+#3012
+strong fighter~
+a strong fighter~
+A heavily bulked up fighter stands here to challenge you.
+~
+An amateur fighter practices channeling his Ki to strengthen his
+abilities.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000000
+112 112 1
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 4
+2 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 3012
+~
+|
+#3013
+trainee~
+an elite combat trainee~
+A very confident trainee practices his skills here.
+~
+A trainee learns the tricks and techniques demonstrated by his
+instructor.  So far he seems to be doing quite well.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 10000000
+112 112 1
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 4
+2 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 3013
+~
+|
+#3014
+ginyu canidate~
+A Ginyu force canidate~
+A Ginyu force canidate works on striking a pose...
+~
+This Ginyu force canidate is extremely powerful, but continues to make
+a fool of himself as he tries to strike a decent pose.
+~
+1 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 100000000
+112 112 1
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 4
+2 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 3014
+~
+|
+#3015
+aged instructor~
+an aged instructor~
+An old, yet strangely powerful instructor trains some guards.
+~
+An aged creature leans heavily on a staff, giving tips to students.
+He grins as he sees you here and offers you a fighting match.
+~
+3 128 -1000 C
+1 0 100 0d0+0 1d5+0
+-1 10000000000
+112 112 1
+5 5 5 5 5
+0 0 0 0 0
+4 4 0 0 1 1 8
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho _whi The instructor fades away as though he never existed.
+~
+|
+#3016
+alert guard~
+an alert guard~
+A very alert and nervous guard peers around actively.
+~
+~
+1 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 750000
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#3017
+cowardly guard~
+a cowardly guard~
+A cowardly guard sees you and immediatly screams for reinforcements!
+~
+This guard is literally shaking in his boots as he sees you.  He keeps
+yelling for help, and a few grudgingly come to fight his battle.
+~
+33 0 0 C
+1 0 100 1d20+0 2d5+10
+-1 35000
+112 112 1
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 1
+2 0 0 0 0 0 0 0
+> fight_prog 8~
+y Help!!!  Intruders!!!
+mpecho _red A reinforcement runs in and stands by this guard!
+mpmload 3005
+~
+|
+#3099
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 1
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#3000
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#3001
+stud button~
+the small stud~
+A small stud lays barely visible against the hull.~
+~
+39 0 0
+0 0 0 0 0 0
+2000 0 0
+ 0
+> push_prog 100~
+mea 0.$n The airlock hisses open as you depress the stud, allowing you
+mea 0.$n to pass through.  As you pass into the ship, the airlock snaps
+mea 0.$n shut behind you.
+mer 0.$n The airlock hisses open to admit $n, and immediatly snaps
+mer 0.$n shut behind $m as $e passes into the ship.
+mptrans 0.$n 3001
+mpat 3000 pull stud
+~
+|
+#3002
+glowing button~
+a glowing button~
+A small blue button glows softly on the wall.~
+~
+39 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+> push_prog 100~
+mea 0.$n The platform you're on lurches gently as the airlock above
+mea 0.$n hisses open as you are raised up out of the ship.
+mer 0.$n $n pushes a funny little blue button, and suddenly is being
+mer 0.$n raised up towards the airlock by a platform.  Above, the
+mer 0.$n airlock hisses open almost as if to spit out $n.
+mptrans 0.$n 3000
+mpat 3002 pull button
+~
+|
+#3003
+healing tanks~
+a set of healing tanks~
+Healing tanks line the walls, all on standby.~
+~
+13 0 0
+0 0 0 0 0 0
+2000 0 0
+ 0
+E
+healing tank~
+It looks much like a pod.  A large glass viewport allows observation
+from within and without, and a respirator allows the patient within
+to breathe without getting the healing fluid in their lungs.  Overall
+the tanks look quite comfortable.
+~
+#3004
+few healing tanks~
+a few healing tanks~
+A few small healing tanks take up the walls of this room.~
+~
+13 0 0
+0 0 0 0 0 0
+2000 0 0
+ 0
+E
+healing tanks few~
+A few small tanks dominate the tree walls of this room.  Only a token
+amount of space is here to allow walking.  Two of the tanks are taken
+up by barely recognizable beings, one showing very bad electrical
+burns, and the other a few compound fractures.
+~
+#3005
+equipment locker~
+an equipment locker~
+An equipment locker rests against the wall, closed and dusty.~
+~
+15 0 0
+10 1 0 0 0 0
+1 200 20
+ 0
+#3006
+light combat gloves~
+a pair of light gloves~
+A dark pair of gloves lays wrinkled on the ground here.~
+~
+9 0 129
+0 0 0 0 7 7
+1 700 125
+ 0
+> wear_prog 100~
+mea 0.$n The gloves stretch to fit your hand comfortably.
+~
+> remove_prog 100~
+mea 0.$n The gloves return to an incredibly small size as you remove them.
+~
+|
+#3007
+healing tubes~
+healing tubes~
+Two healing tubes seem to be open for your use.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+healing tubes~
+One of two available tubes light up and open up as you walk in.  Looking
+curiously you find that it is a very compact version of the other
+healing tanks you've seen scattered around the ship.
+~
+#3008
+up button elevator~
+the up button to the elevator~
+A white button is mounted next to the elevator doors.~
+~
+39 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+> push_prog 100~
+mea 0.$n You push the button and wait.  After a few moments the elevator
+mea 0.$n chimes and opens.  After hopping in it takes you up to the
+mea 0.$n Bridge level and deposits you.
+mer 0.$n $n pushes the button and patiently waits for the elevator.
+mer 0.$n When it comes, $e runs on and grins wickedly as it closes in
+mer 0.$n your face.
+mptrans 0.$n 3068
+mpat 3055 pull button
+~
+|
+#3009
+down button elevator~
+the down button to the elevator~
+A white button is mounted next to the elevator doors.~
+~
+39 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+> push_prog 100~
+mea 0.$n You push the button and wait.  After a few moments the elevator
+mea 0.$n chimes and opens.  After hopping in it takes you down to the
+mea 0.$n arena and deposits you.
+mer 0.$n $n pushes the button and patiently waits for the elevator.
+mer 0.$n When it comes, $e runs on before the doors close on $m.
+mptrans 0.$n 3055
+mpat 3068 pull button
+~
+|
+#3010
+saiyan battle armor~
+saiyan battle armor~
+Some tough looking armor, scarred in battle, is laying here in the dust.~
+~
+9 0 9
+0 0 0 0 320 320
+1 32000 200
+ 0
+> wear_prog 100~
+mea 0.$n The armor flexes and stretches to fit you perfectly.  Now you
+mea 0.$n feel almost invincible!
+~
+> remove_prog 100~
+mea 0.$n You shimmy out of the armor and watch as it contracts to a
+mea 0.$n smaller size.
+~
+|
+#3011
+light boots~
+light combat boots~
+A pair of boots have been discarded here.~
+~
+9 0 65
+0 0 0 0 7 7
+1 700 100
+ 0
+> wear_prog 100~
+mea 0.$n The boots soften and stretch to mold comfortably around your feet.
+~
+> remove_prog 100~
+mea 0.$n As you remove the boots they shrink back into a compact size.
+~
+|
+#3099
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#3000
+An Entrance?~
+Sweat drips off the tip of your nose and steams on the metallic
+surface.  Suddenly something unusual catches your eye.  A shutter
+like arrangement of panels is barely visible.  A sudden gust of
+wind brings a brief and welcome chill to you as you examine this
+curiousity.  Another smallish panel with a single stud in the
+center of it catches you attention.
+~
+0 4 2
+D0
+~
+~
+0 -1 3094
+D1
+~
+~
+0 -1 3093
+D2
+~
+~
+0 -1 3090
+D3
+~
+~
+0 -1 3092
+S
+#3001
+Descending Into the Unknown~
+As you descend you are surrounded by many curious sights that you
+have never seen before.  The walls are made of a strange blue metal,
+almost bordering on a pink.  The air is somewhat tolerable, as it
+has a tinny smell along with smells that have no classification.
+Above you the airlock closes, leaving you in the harsh glare of
+artificial light.  About half-way down you catch sight of a living
+floor, then looking below you, you swallow as you see a few guards
+sleeping...
+~
+0 16777228 0
+D5
+~
+~
+0 -1 3002
+E
+readme~
+Floorless room.  If player enters w/o fly they fall and wake up the
+guards.
+ 
+Another button...this one opening a passage up to room 3000.  Close
+passage program once player passes though
+~
+S
+#3002
+An Intersection~
+Forbidding corridors lead in all directions and the atmosphere of the
+place is much like a crowded city.  Very few decorations adorn the
+walls, but the ceilings of the corridors are arched and supported.
+The sounds of people talking, working, and playing reach your ears
+from all directions, blending into a cacophony of noise.  It is totally
+unlike anything you have ever experienced.
+~
+0 8 0
+D0
+~
+~
+0 -1 3006
+D1
+~
+~
+0 -1 3012
+D2
+~
+~
+0 -1 3003
+D3
+~
+~
+0 -1 3009
+D4
+~
+~
+0 -1 3001
+E
+readme~
+Fall program...wakes guards and make them attack!  Also makes them
+yell and trigger alarms  (made by mob in workroom which no mortal
+can get to)
+ 
+Random room echo of voices...3% chance of Frieza being heard.
+~
+> act_prog falls~
+mea _red 0.$n Your fall wakes up the guard!!!
+mpforce sleeping mpkill $n
+~
+|
+S
+#3003
+Wandering Down a Corridor~
+The air smells abit stale and holds hints of a strange smell from races
+not of your world.  Light seems to pound down upon you from the fixtures
+in the ceiling arches.  Some snoring sneaks into your ears as you pass
+by some guards apparently neglecting their duty.
+~
+0 8 0
+D0
+~
+~
+0 -1 3002
+D2
+~
+~
+0 -1 3004
+S
+#3004
+A Chance Encounter~
+Loud yelling and arguing causes your heart to stop and leap up into
+your throat.  Looking around nervously you can find no place to hide.
+Around the bend stumbles several unsteady guards, smelling of some
+foul brew they seem almost as surprised as you were.  They raise their
+ki blasters and fire seemingly at random, leaving blastmarks everywhere
+except upon you.
+~
+0 8 0
+D0
+~
+~
+0 -1 3003
+D2
+~
+~
+0 -1 3005
+E
+readme~
+You guessed it...entry program loads a few nifty aggressive guards
+that can use energy ball.
+~
+S
+#3005
+A 'T' Junction~
+A small breeze drifts in from an open viewport, which also allows some
+natural sunlight to flood in.  Mercifully the interior lights in this
+section are off, which allows your eyes a chance to rest from their
+glare.  Small motes of dust dance in the shafts of light, playing a
+small glittering game for you.
+~
+0 8 0
+D0
+~
+~
+0 -1 3004
+D6
+~
+~
+0 -1 3015
+D7
+~
+~
+0 -1 3016
+S
+#3006
+Examining the Corridor~
+Foot steps echo hollowly down the corridor, most of them being made
+by you.  All about you are surrounded by formed metal, supported by
+yet more metal, and meeting in an arch at the ceiling.  Light burns
+into your eyes as you gaze around.  A low hum and some chatter teases
+your ears, barely audible.
+~
+0 8 0
+D0
+~
+~
+0 -1 3007
+D2
+~
+~
+0 -1 3002
+D3
+~
+doors~
+3 -1 3076
+S
+#3007
+A Conflict of Interests~
+A foul smell reaches your nose and makes you gag, something smelly is
+nearby.  Suddenly a flare of light passes by you, missing by mere
+centimeters.  A loud shout rings in your ears as a small group of
+guards rounds the corner.  They are of many assorted races, but all
+wear what seem to resemble Saiyan combat uniforms.
+~
+0 8 0
+D0
+~
+~
+0 -1 3008
+D2
+~
+~
+0 -1 3006
+E
+readme~
+Pop in four ki ball able guards.  Repop upon entry into room
+ 
+These have a chance of popping a helmet, weak armor, or boots
+~
+S
+#3008
+A 'T' Junction~
+A small breeze drifts in from an open viewport, which also allows some
+natural sunlight to flood in.  Mercifully the interior lights in this
+section are off, which allows your eyes a chance to rest from their
+glare.  Small motes of dust dance in the shafts of light, playing a
+small glittering game for you.
+~
+0 8 0
+D2
+~
+~
+0 -1 3007
+D8
+~
+~
+0 -1 3018
+D9
+~
+~
+0 -1 3017
+S
+#3009
+Marching Down An Empty Corridor~
+You hear yourself breathing, voices are far off and distant, yet a low
+rumbling ahead seems to make the lights flicker uncertainly.  The
+repeditive corridors have you trudging along almost bored.  A stray
+fly buzzes down from somewhere and lands on your nose, causing it to
+itch.  Grumbling you trudge along and wonder why you bothered to
+explore.
+~
+0 8 0
+D1
+~
+~
+0 -1 3002
+D3
+~
+~
+0 -1 3010
+S
+#3010
+A Shuddering Door~
+A loud rhythmic sound begins to overwhelm the sound of your footsteps.
+The metallic walls seem to begin to shiver around you and rumble in
+tune with the sound.  Finally, being extremely nervous, you narrow
+the source of the horrendous sound to one door...
+~
+0 8 0
+D1
+~
+~
+0 -1 3009
+D2
+~
+door~
+3 -1 3074
+D3
+~
+~
+0 -1 3011
+S
+#3011
+A 'T' Junction~
+A small breeze drifts in from an open viewport, which also allows some
+natural sunlight to flood in.  Mercifully the interior lights in this
+section are off, which allows your eyes a chance to rest from their
+glare.  Small motes of dust dance in the shafts of light, playing a
+small glittering game for you.
+~
+0 8 0
+D1
+~
+~
+0 -1 3010
+D6
+~
+~
+0 -1 3017
+D8
+~
+~
+0 -1 3016
+S
+#3012
+Outside the Medical Chambers~
+A faint blue glow eminates from a window in a few of the doors along
+this corridor.  Curious you look inside some of the rooms and see huge
+tanks, filled with a blue fluidic substance.  In most of them are severly
+injured beings.  As you watch their wounds seem so be slowly closing
+before your eyes.
+~
+0 8 0
+D0
+~
+door~
+3 -1 3075
+D1
+~
+~
+0 -1 3013
+D3
+~
+~
+0 -1 3002
+S
+#3013
+The Wanderings of Your Mind~
+Your own footsteps echo in your ears, making a constant rhythm against
+the walls.  The metal walls of the corridor seem to melt and form
+amorphous images and things.  Shaking your head you rub your eyes and
+blink, only to find that the corridor is merely yet another corridor.
+~
+0 8 0
+D1
+~
+~
+0 -1 3014
+D3
+~
+~
+0 -1 3012
+S
+#3014
+A 'T' Junction~
+A small breeze drifts in from an open viewport, which also allows some
+natural sunlight to flood in.  Mercifully the interior lights in this
+section are off, which allows your eyes a chance to rest from their
+glare.  Small motes of dust dance in the shafts of light, playing a
+small glittering game for you.
+~
+0 8 0
+D3
+~
+~
+0 -1 3013
+D7
+~
+~
+0 -1 3018
+D9
+~
+~
+0 -1 3015
+S
+#3015
+A Curved Corridor~
+Natural light streams in from viewports lining the wall at a regular
+interval.  Feeling abit more comfortable with the more familiar light
+a sense of discovery excites you.  Suddenly you come upon a ladder
+embedded in a wall.  A narrow passage seems leads up into the darkness.
+~
+0 12 0
+D4
+~
+~
+0 -1 3036
+D6
+~
+~
+0 -1 3014
+D9
+~
+~
+0 -1 3005
+S
+#3016
+A Curved Corridor~
+Natural light streams in from viewports lining the wall at a regular
+interval.  Feeling abit more comfortable with the more familiar light
+a sense of discovery excites you.  Suddenly you come upon a ladder
+embedded in a wall.  A narrow passage seems leads up into the darkness.
+~
+0 12 0
+D4
+~
+~
+0 -1 3035
+D7
+~
+~
+0 -1 3011
+D8
+~
+~
+0 -1 3005
+S
+#3017
+A Curved Corridor~
+Natural light streams in from viewports lining the wall at a regular
+interval.  Feeling abit more comfortable with the more familiar light
+a sense of discovery excites you.  Suddenly you come upon a ladder
+embedded in a wall.  A narrow passage seems leads up into the darkness.
+~
+0 12 0
+D4
+~
+~
+0 -1 3037
+D6
+~
+~
+0 -1 3008
+D9
+~
+~
+0 -1 3011
+S
+#3018
+A Curved Corridor~
+Natural light streams in from viewports lining the wall at a regular
+interval.  Feeling abit more comfortable with the more familiar light
+a sense of discovery excites you.  Suddenly you come upon a ladder
+embedded in a wall.  A narrow passage seems leads up into the darkness.
+~
+0 12 0
+D4
+~
+~
+0 -1 3038
+D7
+~
+~
+0 -1 3008
+D8
+~
+~
+0 -1 3014
+S
+#3019
+Maintenance Area~
+Tools and strange devices lay all over the place as wall panels are
+missing, exposing stranger units.  Occasionally a engineer runs
+frantically around ignoring you and tending to the exposed units,
+sweating and muttering something about dirty saiyans messing
+stuff up.
+~
+0 8 0
+D2
+~
+~
+0 -1 3023
+D6
+~
+~
+0 -1 3022
+D7
+~
+~
+0 -1 3020
+S
+#3020
+Maintenance Area~
+Tools and strange devices lay all over the place as wall panels are
+missing, exposing stranger units.  Occasionally a engineer runs
+frantically around ignoring you and tending to the exposed units,
+sweating and muttering something about dirty saiyans messing
+stuff up.
+~
+0 8 0
+D3
+~
+~
+0 -1 3026
+D6
+~
+~
+0 -1 3021
+D8
+~
+~
+0 -1 3019
+S
+#3021
+Maintenence Area~
+Tools and strange devices lay all over the place as wall panels are
+missing, exposing stranger units.  Occasionally a engineer runs
+frantically around ignoring you and tending to the exposed units,
+sweating and muttering something about dirty saiyans messing
+stuff up.
+~
+0 8 0
+D0
+~
+~
+0 -1 3029
+D8
+~
+~
+0 -1 3022
+D9
+~
+~
+0 -1 3020
+S
+#3022
+Maintenence Area~
+Tools and strange devices lay all over the place as wall panels are
+missing, exposing stranger units.  Occasionally a engineer runs
+frantically around ignoring you and tending to the exposed units,
+sweating and muttering something about dirty saiyans messing
+stuff up.
+~
+0 8 0
+D1
+~
+~
+0 -1 3032
+D7
+~
+~
+0 -1 3021
+D9
+~
+~
+0 -1 3019
+S
+#3023
+A Quiet Corridor~
+Your own footsteps echo in your ears, not a other sound is to be heard
+in this part of the corridor.  Looking at the metal walls as you walk
+past you think you can make out images, but it is only your imagination
+running loose.
+~
+0 8 0
+D0
+~
+~
+0 -1 3019
+D2
+~
+~
+0 -1 3024
+S
+#3024
+Outside Engineering Quarters~
+Doors lettered in an unknown language line the corridor, while assorted
+tools litter the floors and incomplete or dismantled things lay propped
+up against the walls.  Overall this is prolly the messiest thing you
+have seen since your bedroom.
+~
+0 8 0
+D0
+~
+~
+0 -1 3023
+D1
+~
+door~
+3 -1 3078
+D2
+~
+~
+0 -1 3025
+S
+#3025
+A 'T' Junction~
+A small breeze drifts in from an open viewport, which also allows some
+natural sunlight to flood in.  Mercifully the interior lights in this
+section are off, which allows your eyes a chance to rest from their
+glare.  Small motes of dust dance in the shafts of light, playing a
+small glittering game for you.
+~
+0 8 0
+D0
+~
+~
+0 -1 3024
+D6
+~
+~
+0 -1 3036
+D7
+~
+~
+0 -1 3035
+S
+#3026
+A Very Quiet Corridor~
+This part of the ship seems to be devoid of the any of the workers
+that seem to be crawling over most of the place.  The omnipresent 
+walls flow on down the corridor out of sight.  And your only
+companion for the moment is the sound of your footsteps echoing
+hollowly against the floor.
+~
+0 8 0
+D1
+~
+~
+0 -1 3020
+D3
+~
+~
+0 -1 3027
+S
+#3027
+A Brightly Lit Corridor~
+You find yourself surrounded by several doors, testing each one you
+find that they are all secure.  Suddenly as you touch one of the panels
+an earsplitting siren sounds.  The tromping footsteps of a cadre of
+beings suddenly echoes down the corridor.  Panicing you look for a
+place to hide, but you find none and the guards come into sight.
+~
+0 8 0
+D1
+~
+~
+0 -1 3026
+D3
+~
+~
+0 -1 3028
+S
+#3028
+A 'T' Junction~
+A small breeze drifts in from an open viewport, which also allows some
+natural sunlight to flood in.  Mercifully the interior lights in this
+section are off, which allows your eyes a chance to rest from their
+glare.  Small motes of dust dance in the shafts of light, playing a
+small glittering game for you.
+~
+0 8 0
+D1
+~
+~
+0 -1 3027
+D6
+~
+~
+0 -1 3037
+D8
+~
+~
+0 -1 3035
+S
+#3029
+Outside a Small Healing Chamber~
+A faint blue glow eminates from a small window in a door along
+this corridor.  Curious you look inside some the room and see a few
+tanks, filled with a blue fluidic substance.  Most of them are
+deactivated, but one stands ready for your use.
+~
+0 8 0
+D0
+~
+~
+0 -1 3030
+D2
+~
+~
+0 -1 3021
+D3
+~
+door~
+3 -1 3079
+S
+#3030
+Wandering Down an Empty Corridor~
+Light streams down onto the bare corridor ahead and behind you.  A fine
+trickle of sweat flows down between your nose and your eye.  Causing
+you to itch slightly.  You are deafened by the silence of this part of
+the ship as you continue your exploration.
+~
+0 8 0
+D0
+~
+~
+0 -1 3031
+D2
+~
+~
+0 -1 3029
+S
+#3031
+A 'T' Junction~
+A small breeze drifts in from an open viewport, which also allows some
+natural sunlight to flood in.  Mercifully the interior lights in this
+section are off, which allows your eyes a chance to rest from their
+glare.  Small motes of dust dance in the shafts of light, playing a
+small glittering game for you.
+~
+0 8 0
+D2
+~
+~
+0 -1 3030
+D8
+~
+~
+0 -1 3038
+D9
+~
+~
+0 -1 3037
+S
+#3032
+Fighting Your Way Through~
+A guard charges around the corner and bumps into you, sending you flying.
+Crying in surprise, the guard pushes a button on his scouter and rises
+to face you.  Heavy steps echo all around you as more guards appear by
+the first one.  Bootsteps also sound behind you, twisting you find
+yourself surrounded.
+~
+0 8 0
+D1
+~
+~
+0 -1 3033
+D3
+~
+~
+0 -1 3022
+S
+#3033
+Corridor Leading Past Guard Barracks~
+As you near the barracks you are nearly deafened by the sound of a
+great many guards snoring.  Despite the doors being closed the sound
+is horrendous enough that you feel like you're walking against a gale.
+Fortunatly it is likely that nobody will hear you in this part of the
+ship.
+~
+0 8 0
+D1
+~
+~
+0 -1 3034
+D2
+~
+door~
+3 -1 3077
+D3
+~
+~
+0 -1 3032
+S
+#3034
+A 'T' Junction~
+A small breeze drifts in from an open viewport, which also allows some
+natural sunlight to flood in.  Mercifully the interior lights in this
+section are off, which allows your eyes a chance to rest from their
+glare.  Small motes of dust dance in the shafts of light, playing a
+small glittering game for you.
+~
+0 8 0
+D3
+~
+~
+0 -1 3033
+D7
+~
+~
+0 -1 3038
+D9
+~
+~
+0 -1 3036
+S
+#3035
+Hanging Around~
+As you wander around the bend, looking out the viewports at the lush
+emerald skies and blue waters of Namek you come upon a curiousity.
+A metal ladder decends through the floor and clear up through the
+ceiling.  Both lead into the darkness, which leaves you somewhat
+apprehensive of what lies both above and below you.
+~
+0 12 0
+D4
+~
+~
+0 -1 3051
+D5
+~
+~
+0 -1 3016
+D7
+~
+~
+0 -1 3028
+D8
+~
+~
+0 -1 3025
+S
+#3036
+Hanging Around~
+As you wander around the bend, looking out the viewports at the lush
+emerald skies and blue waters of Namek you come upon a curiousity.
+A metal ladder decends through the floor and clear up through the
+ceiling.  Both lead into the darkness, which leaves you somewhat
+apprehensive of what lies both above and below you.
+~
+0 12 0
+D4
+~
+~
+0 -1 3052
+D5
+~
+~
+0 -1 3015
+D6
+~
+~
+0 -1 3034
+D9
+~
+~
+0 -1 3025
+S
+#3037
+Hanging Around~
+As you wander around the bend, looking out the viewports at the lush
+emerald skies and blue waters of Namek you come upon a curiousity.
+A metal ladder decends through the floor and clear up through the
+ceiling.  Both lead into the darkness, which leaves you somewhat
+apprehensive of what lies both above and below you.
+~
+0 12 0
+D4
+~
+~
+0 -1 3053
+D5
+~
+~
+0 -1 3017
+D6
+~
+~
+0 -1 3031
+D9
+~
+~
+0 -1 3028
+S
+#3038
+Hanging Around~
+As you wander around the bend, looking out the viewports at the lush
+emerald skies and blue waters of Namek you come upon a curiousity.
+A metal ladder decends through the floor and clear up through the
+ceiling.  Both lead into the darkness, which leaves you somewhat
+apprehensive of what lies both above and below you.
+~
+0 12 0
+D4
+~
+~
+0 -1 3054
+D5
+~
+~
+0 -1 3018
+D7
+~
+~
+0 -1 3031
+D8
+~
+~
+0 -1 3034
+S
+#3039
+Looking Over the Airlock Chute~
+You can see clear across the airlock chute to the crew quarters from
+here.  And in so doing you wonder how you got in relatively undetected.
+It may be that the guards are lax when their master is away, which
+may be extremely fortunate for you...for now.
+~
+0 8 0
+D2
+~
+~
+0 -1 3043
+D6
+~
+~
+0 -1 3042
+D7
+~
+~
+0 -1 3040
+S
+#3040
+Looking Over the Airlock Chute~
+You can see clear across the airlock chute to the crew quarters from
+here.  And in so doing you wonder how you got in relatively undetected.
+It may be that the guards are lax when their master is away, which
+may be extremely fortunate for you...for now.
+~
+0 8 0
+D3
+~
+~
+0 -1 3045
+D6
+~
+~
+0 -1 3041
+D8
+~
+~
+0 -1 3039
+S
+#3041
+Looking Over the Airlock Chute~
+You can see clear across the airlock chute to the crew quarters from
+here.  And in so doing you wonder how you got in relatively undetected.
+It may be that the guards are lax when their master is away, which
+may be extremely fortunate for you...for now.
+~
+0 8 0
+D0
+~
+~
+0 -1 3047
+D8
+~
+~
+0 -1 3042
+D9
+~
+~
+0 -1 3040
+S
+#3042
+Looking Over the Airlock Chute~
+You can see clear across the airlock chute to the crew quarters from
+here.  And in so doing you wonder how you got in relatively undetected.
+It may be that the guards are lax when their master is away, which
+may be extremely fortunate for you...for now.
+~
+0 8 0
+D1
+~
+~
+0 -1 3049
+D7
+~
+~
+0 -1 3041
+D9
+~
+~
+0 -1 3039
+S
+#3043
+Outside the Living Quarters of the Ginyu Force~
+This corridor is unlike what you have seen previously, it is adorned
+with fine gold and platinum inlays.  The many rooms that the Ginyu
+Force uses for recreation and sleeping are accessible at this point.
+But would it be wise to intrude on one of the more elite fighters in
+the universe?
+~
+0 8 0
+D0
+~
+~
+0 -1 3039
+D1
+~
+door~
+3 -1 3084
+D2
+~
+~
+0 -1 3044
+D3
+~
+door~
+3 -1 3083
+S
+#3044
+At The End of a Corridor~
+The corridor suddenly terminates and merges with two corridors leading
+to your left and right.  Unlike most of the ship, there are actually
+windows looking out over the land that the ship is resting upon.
+While it may not be much, you are glad to see some natural light
+rather than the harsh illumination provided by the corridors.
+~
+0 8 0
+D0
+~
+~
+0 -1 3043
+D6
+~
+~
+0 -1 3052
+D7
+~
+~
+0 -1 3051
+S
+#3045
+Attendants Hall~
+Two doors line this extraordinarily ornate corridor.  Evidently these
+are the quarters of two of Frieza's henchmen and attendants Zarbon
+and Dodoria.  Mebbe you should at least knock before running in.  It
+would be rude to enter without a proper introduction
+~
+0 8 0
+D0
+~
+door~
+3 -1 3080
+D1
+~
+~
+0 -1 3040
+D2
+~
+door~
+3 -1 3081
+D3
+~
+~
+0 -1 3046
+S
+#3046
+At The End of a Corridor~
+The corridor suddenly terminates and merges with two corridors leading
+to your left and right.  Unlike most of the ship, there are actually
+windows looking out over the land that the ship is resting upon.
+While it may not be much, you are glad to see some natural light
+rather than the harsh illumination provided by the corridors.
+~
+0 8 0
+D1
+~
+~
+0 -1 3045
+D6
+~
+~
+0 -1 3053
+D8
+~
+~
+0 -1 3051
+S
+#3047
+Frieza's Sleeping Quarters~
+A buzzer sounds as you step near one of the most well ornamented doors
+you have ever seen in your life.  Immediatly as the buzzer stops, you
+are surrounded by very stealthy guards.  They walk around you with a
+fixed purpose.  Looking around you find your options are slim, and
+you definatly will be unable to pass though that door.
+~
+0 8 0
+D0
+~
+~
+0 -1 3048
+D2
+~
+~
+0 -1 3041
+S
+#3048
+At The End of a Corridor~
+The corridor suddenly terminates and merges with two corridors leading
+to your left and right.  Unlike most of the ship, there are actually
+windows looking out over the land that the ship is resting upon.
+While it may not be much, you are glad to see some natural light
+rather than the harsh illumination provided by the corridors.
+~
+0 8 0
+D2
+~
+~
+0 -1 3047
+D8
+~
+~
+0 -1 3054
+D9
+~
+~
+0 -1 3053
+S
+#3049
+Operations Crew Sleeping Quarters~
+This corridor is made more of marble than the usual metal used
+thoughout most of the ship.  To the north is a door leading into what
+seems to be an enourmous suite for the officers of the ship.  Fortunatly
+the suite seems to be unoccupied at the moment.
+~
+0 8 0
+D0
+~
+door~
+3 -1 3082
+D1
+~
+~
+0 -1 3050
+D3
+~
+~
+0 -1 3042
+S
+#3050
+At The End of a Corridor~
+The corridor suddenly terminates and merges with two corridors leading
+to your left and right.  Unlike most of the ship, there are actually
+windows looking out over the land that the ship is resting upon.
+While it may not be much, you are glad to see some natural light
+rather than the harsh illumination provided by the corridors.
+~
+0 8 0
+D3
+~
+~
+0 -1 3049
+D7
+~
+~
+0 -1 3054
+D9
+~
+~
+0 -1 3052
+S
+#3051
+Hanging Around~
+As you wander around the bend, looking out the viewports at the lush
+emerald skies and blue waters of Namek you come upon a curiousity.
+A metal ladder decends through the floor and clear up through the
+ceiling.  Both lead into the darkness, which leaves you somewhat
+apprehensive of what lies both above and below you.
+~
+0 12 0
+D4
+~
+~
+0 -1 3064
+D5
+~
+~
+0 -1 3035
+D7
+~
+~
+0 -1 3046
+D8
+~
+~
+0 -1 3044
+S
+#3052
+Hanging Around~
+As you wander around the bend, looking out the viewports at the lush
+emerald skies and blue waters of Namek you come upon a curiousity.
+A metal ladder decends through the floor and clear up through the
+ceiling.  Both lead into the darkness, which leaves you somewhat
+apprehensive of what lies both above and below you.
+~
+0 12 0
+D4
+~
+~
+0 -1 3067
+D5
+~
+~
+0 -1 3036
+D6
+~
+~
+0 -1 3050
+D9
+~
+~
+0 -1 3044
+S
+#3053
+Hanging Around~
+As you wander around the bend, looking out the viewports at the lush
+emerald skies and blue waters of Namek you come upon a curiousity.
+A metal ladder decends through the floor and clear up through the
+ceiling.  Both lead into the darkness, which leaves you somewhat
+apprehensive of what lies both above and below you.
+~
+0 12 0
+D4
+~
+~
+0 -1 3065
+D5
+~
+~
+0 -1 3037
+D6
+~
+~
+0 -1 3048
+D9
+~
+~
+0 -1 3046
+S
+#3054
+Hanging Around~
+As you wander around the bend, looking out the viewports at the lush
+emerald skies and blue waters of Namek you come upon a curiousity.
+A metal ladder decends through the floor and clear up through the
+ceiling.  Both lead into the darkness, which leaves you somewhat
+apprehensive of what lies both above and below you.
+~
+0 12 0
+D4
+~
+~
+0 -1 3066
+D5
+~
+~
+0 -1 3038
+D7
+~
+~
+0 -1 3048
+D8
+~
+~
+0 -1 3050
+S
+#3055
+Bridge Access~
+The noise of battle slowly fades from your ears, as though dampened
+by something.  All of the battlers keep a respectful distance from
+this lift.  Suddenly, as you stand directly in front of the two
+iridescent lift doors, all the noise is shut out.  A single glowing
+button glares at you, almost daringly.
+~
+0 12 0
+D6
+~
+~
+0 -1 3058
+D7
+~
+~
+0 -1 3060
+D8
+~
+~
+0 -1 3062
+D9
+~
+~
+0 -1 3056
+E
+readme~
+Nother button.  =)
+~
+S
+#3056
+The Battle Grounds~
+Two huge alien creatures face off against eachother, measuring eachother
+and launching some fairly fancy attacks.  The floors are almost soaked
+with sweat, blood, and here and there...a tooth.  Grunts and groans
+mingle with shouts and victory cries as the action goes on.
+~
+0 8 0
+D6
+~
+~
+0 -1 3055
+D7
+~
+~
+0 -1 3064
+D8
+~
+~
+0 -1 3067
+D9
+~
+~
+0 -1 3057
+S
+#3057
+Combat Medical Room~
+A dim blue glow pervades the atmosphere of the room.  Letting your eyes
+adjust you find yourself in the recovery room for the fighters.  Simple
+tubes loaded with a bioluminescent gel contains those wounded in battle.
+All but two seem to be in use at the moment, and they seem to operate
+automatically.
+~
+0 536871436 0
+D6
+~
+~
+0 -1 3056
+S
+#3058
+The Battle Grounds~
+Two huge alien creatures face off against eachother, measuring eachother
+and launching some fairly fancy attacks.  The floors are almost soaked
+with sweat, blood, and here and there...a tooth.  Grunts and groans
+mingle with shouts and victory cries as the action goes on.
+~
+0 8 0
+D6
+~
+~
+0 -1 3059
+D7
+~
+~
+0 -1 3065
+D8
+~
+~
+0 -1 3066
+D9
+~
+~
+0 -1 3055
+S
+#3059
+Combat Medical Room~
+A dim blue glow pervades the atmosphere of the room.  Letting your eyes
+adjust you find yourself in the recovery room for the fighters.  Simple
+tubes loaded with a bioluminescent gel contains those wounded in battle.
+All but two seem to be in use at the moment, and they seem to operate
+automatically.
+~
+0 536871436 0
+D9
+~
+~
+0 -1 3058
+S
+#3060
+The Battle Grounds~
+Two huge alien creatures face off against eachother, measuring eachother
+and launching some fairly fancy attacks.  The floors are almost soaked
+with sweat, blood, and here and there...a tooth.  Grunts and groans
+mingle with shouts and victory cries as the action goes on.
+~
+0 8 0
+D6
+~
+~
+0 -1 3065
+D7
+~
+~
+0 -1 3061
+D8
+~
+~
+0 -1 3055
+D9
+~
+~
+0 -1 3064
+S
+#3061
+Combat Medical Room~
+A dim blue glow pervades the atmosphere of the room.  Letting your eyes
+adjust you find yourself in the recovery room for the fighters.  Simple
+tubes loaded with a bioluminescent gel contains those wounded in battle.
+All but two seem to be in use at the moment, and they seem to operate
+automatically.
+~
+0 536871436 0
+D8
+~
+~
+0 -1 3060
+S
+#3062
+The Battle Grounds~
+Two huge alien creatures face off against eachother, measuring eachother
+and launching some fairly fancy attacks.  The floors are almost soaked
+with sweat, blood, and here and there...a tooth.  Grunts and groans
+mingle with shouts and victory cries as the action goes on.
+~
+0 8 0
+D6
+~
+~
+0 -1 3066
+D7
+~
+~
+0 -1 3055
+D8
+~
+~
+0 -1 3063
+D9
+~
+~
+0 -1 3067
+S
+#3063
+Combat Medical Room~
+A dim blue glow pervades the atmosphere of the room.  Letting your eyes
+adjust you find yourself in the recovery room for the fighters.  Simple
+tubes loaded with a bioluminescent gel contains those wounded in battle.
+All but two seem to be in use at the moment, and they seem to operate
+automatically.
+~
+0 536871436 0
+D7
+~
+~
+0 -1 3062
+S
+#3064
+Entrance to the Arenas~
+The air is rich with the smell of drying blood and sweat.  Grunts and
+cries echo off the walls and throughout the arena.  Not too far distant
+you see many beings fighting and training eachother.  Amazed, you hear
+footsteps behind you, and a warrior stops and offers you a sparring
+match.
+~
+0 12 0
+D5
+~
+~
+0 -1 3051
+D6
+~
+~
+0 -1 3060
+D8
+~
+~
+0 -1 3056
+S
+#3065
+Entrance to the Arenas~
+The air is rich with the smell of drying blood and sweat.  Grunts and
+cries echo off the walls and throughout the arena.  Not too far distant
+you see many beings fighting and training eachother.  Amazed, you hear
+footsteps behind you, and a warrior stops and offers you a sparring
+match.
+~
+0 12 0
+D5
+~
+~
+0 -1 3053
+D8
+~
+~
+0 -1 3058
+D9
+~
+~
+0 -1 3060
+S
+#3066
+Entrance to the Arenas~
+The air is rich with the smell of drying blood and sweat.  Grunts and
+cries echo off the walls and throughout the arena.  Not too far distant
+you see many beings fighting and training eachother.  Amazed, you hear
+footsteps behind you, and a warrior stops and offers you a sparring
+match.
+~
+0 12 0
+D5
+~
+~
+0 -1 3054
+D7
+~
+~
+0 -1 3058
+D9
+~
+~
+0 -1 3062
+S
+#3067
+Entrance to the Arenas~
+The air is rich with the smell of drying blood and sweat.  Grunts and
+cries echo off the walls and throughout the arena.  Not too far distant
+you see many beings fighting and training eachother.  Amazed, you hear
+footsteps behind you, and a warrior stops and offers you a sparring
+match.
+~
+0 12 0
+D5
+~
+~
+0 -1 3052
+D6
+~
+~
+0 -1 3062
+D7
+~
+~
+0 -1 3056
+S
+#3068
+On the Bridge~
+A flood of multicolored light and many electronic bleeps and blips
+rush at you as you step off the lift.  Almost everything is covered
+with screens and buttons glowing or flashing irritatingly.  Silhouetted
+in the blinding mixture of lights are several crewmembers,
+each concentrating on their own tasks, ignoring you.
+~
+0 12 0
+D0
+~
+~
+0 -1 3069
+D1
+~
+~
+0 -1 3072
+D2
+~
+~
+0 -1 3070
+D3
+~
+~
+0 -1 3071
+S
+#3069
+The Entrance to Frieza's Command Center~
+You notice something strange about this area, no crew members or command
+staff even wander close to this door.  It is made of a polished black
+metal and totally unguarded.  The beeping and tapping of the bridge
+seems to fade from your awareness as you look upon this passage.
+~
+0 8 0
+D2
+~
+~
+0 -1 3068
+D7
+~
+Door~
+3 -1 3073
+S
+#3070
+A Crew Station~
+The acrid smell of ozone fills your nose and a cool flow of air blows
+over you.  Before you lies a crew pit, a portion of sunken flooring
+that allows you to see everything that the crew members are doing.
+They do not seem to be aware of your presence as they appear to be
+tracking planetary powerlevels...
+~
+0 8 0
+D0
+~
+~
+0 -1 3068
+S
+#3071
+The Captain's Chair~
+A broad screen shows a great deal of what is currently going on around
+the planet.  The captain sits in his chair and studies the screen,
+totally oblivious of the fact that you're within an arms length of
+him.  Tons of little dots and one huge dot is displayed on a mercator
+projection, and some of the little dots seem to be fading away...
+~
+0 8 0
+D1
+~
+~
+0 -1 3068
+S
+#3072
+A Crew Station~
+The acrid smell of ozone fills your nose and a cool flow of air blows
+over you.  Before you lies a crew pit, a portion of sunken flooring
+that allows you to see everything that the crew members are doing.
+They do not seem to be aware of your presence as they appear to be
+tracking planetary powerlevels...
+~
+0 8 0
+D3
+~
+~
+0 -1 3068
+S
+#3073
+The Command Center~
+Sunlight floods into this room, causing you to recoil slightly.  There
+is a huge viewport taking up the entirety of a wall, giving you an
+excellent view of the scenery.  Glancing about you see a few comfortable
+looking chairs.  Suddenly a set of footsteps approach from behind you.
+Whirling you find yourself face-to-face with two guards who where standing
+guard beside the door.
+~
+0 8 0
+D8
+~
+Door~
+3 -1 3069
+S
+#3074
+The Source~
+You are almost propelled back out the door.  The noise and force has
+suddenly became apparent, at least one hundred guards are sleeping
+here and snoring as one.  Wandering around curiously you see that
+every guard is different, but other than that, there appears to be
+nothing of interest.  You do wish you had earplugs though.
+~
+0 8 0
+D0
+~
+door~
+3 -1 3010
+S
+#3075
+Critical Care Medical Room~
+Several tables are setup throughout the room, each covered with tons of
+hypos, vials, literature, and pills.  Several huge tanks are open and
+seem to be ready for use.  A glowing console rests in the middle of the
+room showing the status of the tanks.  Looking into one of the tanks
+on standby you see a mask and wonder if you should give them a test run.
+~
+0 536870924 0
+D2
+~
+door~
+3 -1 3012
+S
+#3076
+An Empty Room~
+Nothing inhabits this chamber except for rodents, insects, and dust.
+In the very faint light you can make out blast marks on the walls, and
+silhouetted in the marks are the outlines of various insect and animal
+life.  Suddenly a strange thought enters your mind about a young prince,
+but as soon as it comes, it is gone.
+~
+0 12 0
+D1
+~
+doors~
+3 -1 3006
+S
+#3077
+Guard Quarters~
+You step around blankets, puddles of drool, and assorted draping limbs.
+Carefully and cautiously you examine the room, letting the snoring
+mask your noises.  On the wall there is a closed locker, which may or
+may not contain anything useful.
+~
+0 8 0
+D0
+~
+door~
+3 -1 3033
+S
+#3078
+Engineer Quarters~
+This place is probably much cleaner than the Guard Barracks is, but
+not by much.  Engineers of various races toy with and dismantle
+many various devices, units, and contraptions.  Some look up at you
+but merely shrug and return to the work at hand.
+~
+0 8 0
+D3
+~
+door~
+3 -1 3024
+S
+#3079
+Engineer Medical Ward~
+Evidently safety first isn't something anybody taught some of these
+engineers.  The few small healing units are filled by injured people
+with electrical burns, cuts, broken bones, and much more.  These
+injuries are worse than you have ever seen even while fighting!
+~
+0 536872972 0
+D1
+~
+door~
+3 -1 3029
+S
+#3080
+Zarbon's Quarters~
+At first glance this place seems to be quite comfortable.  Delicate
+fabrics and furniture from around the universe decorate the room.
+There is even a little mini-bar to the side.  This guy seems to want
+to enjoy his long space trips.
+~
+0 8 0
+D2
+~
+door~
+3 -1 3045
+S
+#3081
+Dodoria's Quarters~
+As you walk in you're immediatly repulsed.  This looks like a garbage
+dump!  The smell makes your eyes tear and breathing almost impossible.
+It seems that a small army would be required to clean and sterilize
+this room, and a planetoid to dump the garbage.
+~
+0 8 0
+D0
+~
+door~
+3 -1 3045
+S
+#3082
+Crew Quarters~
+This suite is interesting to say the least, it is quite large and
+comfortable.  Twelve beds are spaced evenly in the room, each with
+privacy screens to keep out noise and light.  It's decor is nowhere
+near as nice as those most favored by Frieza though.
+~
+0 8 0
+D2
+~
+door~
+3 -1 3049
+S
+#3083
+Captain Ginyu's Quarters~
+This is a small room, surprisingly so for one so large.  A simple bed
+and meditation pad are the only two furnishings.  The walls are of
+black obsidian polished to a mirror shine and seem to almost glow with
+an inner light.
+~
+0 12 0
+D1
+~
+door~
+3 -1 3043
+S
+#3084
+Ginyu Force Quarters~
+All the memebers of the Ginyu force, excepting Captain Ginyu, sleep in
+this well appointed room.  It seems no expense was spared for these
+elite warriors.  Each has their own room secion and their own belongings.
+It would be fortunate to note that they aren't in this room at the
+monent.
+~
+0 12 0
+D3
+~
+door~
+3 -1 3043
+S
+#3085
+Something Odd in the Distance~
+A cool breeze steals across the waters, bringing the scent of life
+to your nose.  An emerald sky clear with only a few clouds drifting
+by is broken only by the island you are on.  Blue-green grass covers
+the earth and over two small hills.  Between the hills is something
+totally out of place.  Next to several trees is a disk shaped metal
+craft of some sort.  It's details are somewhat indistinct at this
+distance though.
+~
+0 4 2
+D0
+~
+~
+0 -1 3086
+S
+#3086
+Investigating~
+Large cold steel struts dig into the ground, crushing the vegitation
+beneath it.  Nestled between two large hills the craft dominates a
+great deal of the island.  Blotting out most of the sky it is
+suspended a few scant feet above the very ground itself.  Purplish
+projections seem to extrude from the hull and windows dot the craft
+on the upper side.  Light reflects harshly and causes the air to
+waver as you look up.
+~
+0 4 2
+D1
+~
+~
+0 -1 3088
+D2
+~
+~
+0 -1 3085
+D3
+~
+~
+0 -1 3087
+D4
+~
+~
+0 -1 3090
+S
+#3087
+Investigating~
+Large cold steel struts dig into the ground, crushing the vegitation
+beneath it.  Nestled between two large hills the craft dominates a
+great deal of the island.  Blotting out most of the sky it is
+suspended a few scant feet above the very ground itself.  Purplish
+projections seem to extrude from the hull and windows dot the craft
+on the upper side.  Light reflects harshly and causes the air to
+waver as you look up.  A few namekian toads hop away startled.
+~
+0 4 2
+D1
+~
+~
+0 -1 3086
+D4
+~
+~
+0 -1 3089
+S
+#3088
+Investigating~
+Large cold steel struts dig into the ground, crushing the vegitation
+beneath it.  Nestled between two large hills the craft dominates a
+great deal of the island.  Blotting out most of the sky it is
+suspended a few scant feet above the very ground itself.  Purplish
+projections seem to extrude from the hull and windows dot the craft
+on the upper side.  Light reflects harshly and causes the air to
+waver as you look up.  A few guards look up lazily at you and wonder
+what you are doing here.
+~
+0 0 2
+D3
+~
+~
+0 -1 3086
+D4
+~
+~
+0 -1 3091
+S
+#3089
+Hovering Above the Craft~
+Taking flight into the air, a cool breeze once again blows into your
+face.  Your hair drifts, wanting to go with the breeze.  Below you
+lies the spacecraft, it's glistening brownish ribbed surface looking
+like it was made for walking upon.  Far off in the distance you see
+a faint flash and a cloud of dust rise up.  Otherwise things seem to
+be perfectly calm and at peace.
+~
+0 16777220 2
+D0
+~
+~
+0 -1 3092
+D1
+~
+~
+0 -1 3090
+D5
+~
+~
+0 -1 3087
+S
+#3090
+Hovering Above the Craft~
+Taking flight into the air, a cool breeze once again blows into your
+face.  Your hair drifts, wanting to go with the breeze.  Below you
+lies the spacecraft, it's glistening brownish ribbed surface looking
+like it was made for walking upon.  Far off in the distance you see
+a faint flash and a cloud of dust rise up.  Otherwise things seem to
+be perfectly calm and at peace.
+~
+0 16777220 2
+D0
+~
+~
+0 -1 3000
+D1
+~
+~
+0 -1 3091
+D3
+~
+~
+0 -1 3089
+D5
+~
+~
+0 -1 3086
+S
+#3091
+Hovering Above the Craft~
+Taking flight into the air, a cool breeze once again blows into your
+face.  Your hair drifts, wanting to go with the breeze.  Below you
+lies the spacecraft, it's glistening brownish ribbed surface looking
+like it was made for walking upon.  Far off in the distance you see
+a faint flash and a cloud of dust rise up.  Otherwise things seem to
+be perfectly calm and at peace.  Below you guards rest in the shade
+that this behemoth provides.
+~
+0 16777220 2
+D0
+~
+~
+0 -1 3093
+D3
+~
+~
+0 -1 3090
+D5
+~
+~
+0 -1 3088
+S
+#3092
+Searching For an Entrance~
+Diligently examining the craft you feel a sense of curiousity, what
+lies within this thing?  The absorbed heat from the sun radiates from
+the surface of the ship, making you somewhat uncomfortable.  Touching
+the surface briefly you quickly withdraw your hand.  It is a smooth
+yet rough surface, but extremely hot at the moment.  Looking around
+you can't see a way in from here.
+~
+0 4 2
+D1
+~
+~
+0 -1 3000
+D2
+~
+~
+0 -1 3089
+S
+#3093
+Searching For an Entrance~
+Diligently examining the craft you feel a sense of curiousity, what
+lies within this thing?  The absorbed heat from the sun radiates from
+the surface of the ship, making you somewhat uncomfortable.  Touching
+the surface briefly you quickly withdraw your hand.  It is a smooth
+yet rough surface, but extremely hot at the moment.  Looking around
+you can't see a way in from here.
+~
+0 16777220 2
+D0
+~
+~
+0 -1 3095
+D2
+~
+~
+0 -1 3091
+D3
+~
+~
+0 -1 3000
+S
+#3094
+Hovering Above the Craft~
+Taking flight into the air, a cool breeze once again blows into your
+face.  Your hair drifts, wanting to go with the breeze.  Below you
+lies the spacecraft, it's glistening brownish ribbed surface looking
+like it was made for walking upon.  Far off in the distance you see
+a faint flash and a cloud of dust rise up.  Otherwise things seem to
+be perfectly calm and at peace.
+~
+0 16777220 2
+D1
+~
+~
+0 -1 3095
+D2
+~
+~
+0 -1 3000
+D5
+~
+~
+0 -1 3097
+S
+#3095
+Hovering Above the Craft~
+Taking flight into the air, a cool breeze once again blows into your
+face.  Your hair drifts, wanting to go with the breeze.  Below you
+lies the spacecraft, it's glistening brownish ribbed surface looking
+like it was made for walking upon.  Far off in the distance you see
+a faint flash and a cloud of dust rise up.  Otherwise things seem to
+be perfectly calm and at peace.
+~
+0 16777220 2
+D2
+~
+~
+0 -1 3093
+D3
+~
+~
+0 -1 3094
+D5
+~
+~
+0 -1 3098
+S
+#3096
+Investigating~
+Large cold steel struts dig into the ground, crushing the vegitation
+beneath it.  Nestled between two large hills the craft dominates a
+great deal of the island.  Blotting out most of the sky it is
+suspended a few scant feet above the very ground itself.  Purplish
+projections seem to extrude from the hull and windows dot the craft
+on the upper side.  Light reflects harshly and causes the air to
+waver as you look up.
+~
+0 4 2
+D1
+~
+~
+0 -1 3097
+S
+#3097
+Investigating~
+Large cold steel struts dig into the ground, crushing the vegitation
+beneath it.  Nestled between two large hills the craft dominates a
+great deal of the island.  Blotting out most of the sky it is
+suspended a few scant feet above the very ground itself.  Purplish
+projections seem to extrude from the hull and windows dot the craft
+on the upper side.  Light reflects harshly and causes the air to
+waver as you look up.
+~
+0 4 2
+D1
+~
+~
+0 -1 3098
+D3
+~
+~
+0 -1 3096
+D4
+~
+~
+0 -1 3094
+S
+#3098
+Investigating~
+Large cold steel struts dig into the ground, crushing the vegitation
+beneath it.  Nestled between two large hills the craft dominates a
+great deal of the island.  Blotting out most of the sky it is
+suspended a few scant feet above the very ground itself.  Purplish
+projections seem to extrude from the hull and windows dot the craft
+on the upper side.  Light reflects harshly and causes the air to
+waver as you look up.
+~
+0 4 2
+D3
+~
+~
+0 -1 3097
+D4
+~
+~
+0 -1 3095
+S
+#3099
+Work Room~
+This is the place where no mortal should ever enter.  This is for
+the mobs that work some of the affects for the entire area.  So NYAH!
+~
+0 12 0
+S
+#0
+
+
+#RESETS
+O 1 3001 1 3000
+O 1 3003 1 3075
+D 0 3075 2 1
+D 0 3012 0 1
+D 0 3006 3 1
+D 0 3076 1 1
+D 0 3010 2 1
+D 0 3024 1 1
+D 0 3029 3 1
+O 1 3004 1 3079
+D 0 3079 1 1
+D 0 3033 2 1
+D 0 3045 0 1
+D 0 3045 2 1
+D 0 3049 0 1
+D 0 3082 2 1
+D 0 3084 3 1
+D 0 3083 1 1
+O 1 3007 1 3063
+O 1 3007 1 3061
+O 1 3007 1 3057
+O 1 3007 1 3059
+O 1 3008 1 3055
+O 1 3009 1 3068
+M 1 3001 2 3088
+M 1 3001 2 3088
+M 1 3002 1 3002
+O 1 3002 1 3002
+M 1 3002 4 3074
+M 1 3002 4 3074
+M 1 3002 4 3074
+D 0 3074 0 1
+M 1 3002 5 3003
+M 1 3003 4 3004
+M 1 3003 4 3004
+M 1 3003 4 3004
+M 1 3015 1 3058
+M 1 3009 1 3072
+M 1 3009 2 3070
+M 1 3010 1 3071
+M 1 3014 1 3062
+M 1 3013 1 3060
+M 1 3012 1 3056
+D 0 3069 7 1
+M 1 3008 2 3073
+M 1 3008 2 3073
+D 0 3073 8 1
+M 1 3011 1 3020
+M 1 3011 2 3019
+M 1 3011 3 3022
+M 1 3011 4 3021
+M 1 3011 7 3078
+M 1 3011 7 3078
+M 1 3011 7 3078
+D 0 3078 3 1
+M 1 3006 2 3027
+M 1 3006 2 3027
+M 1 3007 1 3047
+M 1 3003 4 3007
+M 1 3007 3 3080
+M 1 3007 3 3080
+D 0 3080 2 1
+M 1 3007 4 3081
+D 0 3081 0 1
+M 1 3007 5 3043
+D 0 3043 1 1
+D 0 3043 3 1
+M 1 3006 2 3032
+M 1 3017 1 3032
+M 1 3004 4 3077
+M 1 3004 4 3077
+M 1 3004 4 3077
+M 1 3004 4 3077
+O 1 3005 1 3077
+P 0 3006 1 0
+D 0 3077 0 1
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

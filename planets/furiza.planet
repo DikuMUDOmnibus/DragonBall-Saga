@@ -1,0 +1,10 @@
+#PLANET
+Name         Furiza~
+Filename     furiza.planet~
+BaseValue    0
+Flags        1
+PopSupport   0
+Area         hw_icer.are~
+End
+
+#END

@@ -1,0 +1,7446 @@
+#AREA   Capsule Corporation~
+
+
+
+#VERSION 252
+#AUTHOR Ferrin~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 4
+
+#RESETMSG &R&gThe sounds of science and technology can be heard and felt all around you.~
+
+#FLAGS
+2
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#110000
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#110002
+Matilda Receptionist~
+Matilda~
+Matilda is sitting here, sorting through various documents.
+~
+~
+131143 0 1000 C
+1 0 0 2d10+4 2d5+0
+-1 100000000
+112 112 2
+500 500 200 150 50
+0 0 0 0 0
+1 1 0 0 1 1 7
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpecho $I looks up from her work and gives you a polite smile.
+mpecho $I says, 'Welcome to Capsule Corporation. Do you need help with anything?'
+~
+> speech_prog yes~
+mpecho $I stands up and gives you a polite smile.
+mpecho $I says, 'Well, the East Wing is for Research and the North Wing is the Professor's personal lab.'
+mpecho $I continues, 'The West Wing is Project Disposal, but it is off limits to visitors.'
+mpecho $I sits back down and smiles at you again. 'Do you need me to repeat that?'
+~
+> speech_prog no~
+mpecho $I leans forward and pushes you aside.
+mpecho $I says, 'Next please.'
+mpforce $n s
+~
+|
+#110003
+sensor orb~
+A glowing orb above the door~
+A red orb of light pulsates above the door
+~
+~
+3 0&0&64 0 C
+1 0 10 1d20+0 2d5+0
+-1 10000
+112 112 0
+200 200 200 200 500
+0 0 0 0 0
+4 4 0 0 1 1 4
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpecho $I whirrs quietly, bringing you into focus.
+mpecho $I states in a warm, quiet voice: 'Please state the password.'
+~
+> death_prog 100~
+mpecho $I begins to crack from the damage it's recieved.
+mpecho Quickly though, its auto repair system goes to work.
+mpecho In no time at all, $I is functioning properly again.
+mpmload 110003
+~
+> speech_prog Scratch~
+mpoload 110298
+unlock north
+open north
+mpforce $n north
+close north
+lock north
+mpjunk all
+~
+|
+#110004
+exitsensor orb~
+A glowing orb above the door~
+A red orb of light pulsates above the door
+~
+~
+3 0&0&64 0 C
+1 0 100 1d20+0 2d5+0
+-1 10000
+112 112 0
+200 200 200 200 500
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpecho $I whirrs quietly, bringing you into focus.
+mpecho $I states in a warm, quiet voice: 'Please state the password.'
+~
+> speech_prog Goodnight~
+mpoload 110298
+unlock south
+open south
+mpforce $n south
+close south
+lock south
+mpjunk all
+~
+> death_prog 100~
+mpecho $I begins to crack from the damage it's recieved.
+mpecho Quickly though, its auto repair system goes to work.
+mpecho In no time at all, $I is functioning properly again.
+mpmload 110004
+~
+|
+#110005
+Briefs~
+Dr. Briefs~
+Dr. Briefs is here musing over some blueprints.
+~
+~
+-2080374783 0 1000 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+50 500 50 50 50
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if race($n) == human
+if carryingvnum($n) == 110025
+mpecho &C$I says, "Welcome, welcome.  From the look of those parts you're
+mpecho &Ccarrying, you've given Thundercles a good beating.  He's been a pain
+mpecho &Cfor anyone down there for years.  I'm still amazed by how easily Bulma
+mpecho &Cgets past him..."
+mpecho
+mpecho &CAfter some pointless mumbling, Dr. Briefs continues.  "Would you
+mpecho &Clike me to see what I can do with those parts you have there?"
+endif
+endif
+~
+> speech_prog yes~
+if race($n) == human
+if carryingvnum($n) == 110025
+mpforce $n remove scraps
+mpforce $n give scraps Briefs
+if ovnuminv(110025) >= 1
+mpecho &C$I mumbles to himself, working on the parts with various tools.
+mpecho &CIn no time at all he shapes them into a useable form and gives
+mpecho &Cthem back to you.
+mpjunk all
+mpoload 110012
+give exo $n
+else
+say Take those out of your container and try again, please.
+endif
+endif
+endif
+~
+> greet_prog 100~
+mpsleep 10
+if race($n) == icer
+if carryingvnum($n) == 50008
+mpecho &C$I cries out, "Amazing!  Let me see what you have there!!"
+mpecho &CBefore you can react, Dr. Briefs takes your broken Mecha-Icer
+mpecho &Cupgrade parts.
+mpforce $n give parts briefs
+if ovnuminv(50008) >= 1
+mpsleep 10
+mpecho &C$I tinkers away at the parts, sparks flying and flakes of dried
+mpecho &CIcer blood falling to the floor.  In no time at all he has the
+mpecho &Cparts repaired and useable.
+mpsleep 10
+mpecho &C"Hurry! Hurry!! Try them on!" Dr. Briefs anxiously cries, grinning
+mpecho &Cfrom ear to ear at his accomplishment.
+mpjunk all
+mpoload 110027
+give icer $n
+else
+say Hey...you need to take them out of that container, first.
+endif
+endif
+endif
+~
+> greet_prog 100~
+mpsleep 10
+if race($n) == android
+if carryingvnum($n) == 50101
+mpecho &C$I slowly turns to face you, an expression of nigh-horror on
+mpecho &Chis face.  "Is...is that &rThe Sigma Virus&C I've heard of?
+mpecho &CThis is truly a piece of nightmare technology.  Here, here,
+mpecho &Cgive it to me."
+mpecho
+mpecho &CBefore you can react, Dr. Briefs snatches the virus from you.
+mpforce $n give virus briefs
+if ovnuminv(50101) >= 1
+mpecho &CTurning his back to you, Dr. Briefs quickly begins to install
+mpecho &Cthe virus into his computer.  After much typing and swearing,
+mpecho &Chis computer makes a quiet whirring sound as the panel next
+mpecho &Cto it opens.
+mpsleep 15
+mpecho &CReaching out carefully, Dr. Briefs withdraws from the opening
+mpecho &Ca small piece of glittering technology.
+mpecho
+mpecho &C"This," he says, "is truly what can come of good as opposed to
+mpecho &Cevil.  Take care of it, it's a very precious treasure."
+mpoload 110028
+give proc $n
+mpjunk all
+else
+say Please...take the virus out so I can get my hands on it.
+endif
+endif
+endif
+~
+|
+#110006
+Vegeta~
+Vegeta~
+Vegeta, the Prince of all Saiyans stands here proudly.
+~
+~
+16777219 128 0 C
+1 0 100 1d20+0 2d5+0
+-1 100000000
+112 112 1
+40 40 40 40 40
+0 0 0 0 0
+0 0 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if name($n) == Ferrin
+cringe Ferrin
+say Such unbelievable power!  I...I...I WANT MY MOMMY!!!!
+cry
+else
+if name ($n) == Legato
+grin
+say Ah, Legato!  It's good to see you're still alive!
+beer legato
+beer vegeta
+else
+sneer $n
+say Chump!  You are unfit to be in the same rooms as me!
+endif
+~
+> fight_prog 25~
+'gallic gun'
+~
+> fight_prog 20~
+'scatter 50'
+~
+> death_prog 100~
+mpecho &r$I drops to one knee, clutching his chest.
+mpecho &r$I grunts out, 'I...won't lose...not to you...NOT TO ANYBODY!!'
+mpecho
+mpecho &YIn an earth shaking display of power, a golden aura of light
+mpecho &Yenvelops Vegeta's body as his hair turns yellow and his eyes turn blue.
+mpecho &YVegeta has become a Super Saiyan!
+mpecho
+glare $n
+say "Consider that a free shot. Now you DIE!"
+mpmload 110007
+mppurge $I
+~
+> speech_prog Right, Vegeta~
+if name ($n) == Legato
+say You're daaaammmmnnnn right!!
+else
+if name ($n) == Ferrin
+say Y-yes...whatever you say, Oh Great One!
+else
+say No.  Ass.
+endif
+~
+> fight_prog 100~
+say Chump!  You're unfit to even attempt to fight the Prince of all Saiyans!
+cackle
+mpecho Vegeta blasts your arrogant ass with a powerful ki wave!!
+mpdamage $n 50
+mpecho You are launched out of the Gravity Pod from the force of the blast!
+mptransfer all 110153
+~
+|
+#110007
+ssj Vegeta~
+Vegeta~
+Vegeta stands here, eager to show the might of a Super Saiyan Prince
+~
+~
+3 128&64 0 C
+1 0 50 1d20+0 2d5+0
+-1 500000000
+112 112 1
+50 50 50 50 50
+0 0 0 0 0
+0 0 0 0 1 1 4
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &rThe Saiyan Prince slams into the wall, a gout of blood erupting from his mouth.
+say Now you're going to get it, you fool!  Nobody does this to a Saiyan!
+mpecho
+mpecho &YForcing himself to his feet, Vegeta surrenders to his rage, embracing it
+mpecho &Yand drawing upon its power to transform into his most powerful stage,
+mpecho &YVegeta has ascended to the level of Super Saiyan 2!!
+mpmload 110008
+mpecho
+mpecho &YThe force of Vegeta's transformation launches you out of the
+mpecho &Yroom!
+mptransfer all 110153
+mptransfer ssj 1091
+~
+> fight_prog 30~
+'destructive wave'
+~
+> fight_prog 25~
+'gallic gun'
+~
+> fight_prog 20~
+'big bang'
+~
+|
+#110008
+ssj2 Vegeta~
+Vegeta~
+Vegeta stands here, fully powered up to the second level of Super Saiyan
+~
+~
+3 128&192 0 C
+1 0 0 1d20+0 2d5+0
+-1 1000000000
+112 112 1
+60 500 60 500 60
+0 0 0 0 0
+0 0 0 0 1 1 5
+0 0 0 0 0 0 0 0
+> fight_prog 100~
+say Chump!  You're unfit to even attempt to fight the Prince of all Saiyans!
+cackle
+mpecho &rVegeta blasts your arrogant ass with a powerful ki wave!!
+mpdamage $n 50
+mpecho &rYou are launched out of the Gravity Pod from the force of the blast!
+mptransfer all 110153
+~
+|
+#110009
+Trunks~
+Trunks~
+Trunks is running around here, looking for trouble to get into.
+~
+~
+7 0 1000 C
+1 0 100 1d20+0 2d5+0
+-1 100000000
+112 112 1
+40 40 40 40 40
+0 0 0 0 0
+2 2 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &r$n slams $I in the head, sending the small kid tumbling!  He pushes
+mpecho &rhimself to his feet, holding back a sniffle.
+say You big jerk!  I was just playing, but now I'm going to get serious!
+mpecho &Y$I flexes as a golden burst of light envelops his small body.
+mpecho
+mpecho &Y$I has transformed into a Super Saiyan!
+mpmload 110013
+~
+> fight_prog 25~
+'destructive wave'
+~
+> fight_prog 20~
+'burning attack'
+~
+|
+#110010
+Goten~
+Goten~
+Goten is following Trunks around, ready for some mischief.
+~
+~
+7 0 1000 C
+1 0 100 1d20+0 2d5+0
+-1 100000000
+112 112 1
+40 40 40 40 40
+0 0 0 0 0
+2 2 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &r$I collapses to the ground, unable to go on.  Sniffling to himself,
+mpecho &rhe forces himself to stand.
+say You big bully!  I wasn't ready yet!
+mpecho &Y$I manages to smile as a wave of golden light erupts around him!
+mpecho
+mpecho &Y$I has transformed into a Super Saiyan!
+mpmload 110014
+~
+> fight_prog 25~
+'destructive wave'
+~
+> fight_prog 20~
+'charge kamehameha'
+~
+|
+#110011
+cat thing~
+Dr. Briefs' Ugly Cat Thing~
+That cat thing that always follows him around is here too.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#110012
+Yamcha~
+Yamcha~
+Yamcha is here, in his trademark yellow suit.
+~
+~
+1 0 1000 C
+1 0 80 1d20+0 2d5+0
+-1 250000000
+112 112 1
+45 45 45 45 45
+0 0 0 0 0
+1 1 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+kame
+~
+> fight_prog 20~
+mpecho &G$I pulls back his fist, focusing his energy.
+mpecho &GWith a distant howl echoing, $I rushes towards you!
+mpecho &GYamcha's Wolf Fang Fist &rWRECKS $n!!
+mppldamage $n 25
+~
+> death_prog 1~
+if rand(50)
+mpoload 100322
+endif
+~
+|
+#110013
+ssjtrunks trunks~
+Trunks~
+Trunks stands here, striking a childish pose.
+~
+~
+7 0&64 1000 C
+1 0 75 1d20+0 2d5+0
+-1 500000000
+112 112 1
+50 50 50 50 50
+0 0 0 0 0
+2 2 0 0 1 1 4
+0 0 0 0 0 0 0 0
+> fight_prog 30~
+'burning attack'
+~
+> fight_prog 25~
+'destructive wave'
+~
+> death_prog 100~
+look goten
+say I don't think we can do this on our own, buddy!  Come on, let's show them what we're all about!
+mpecho
+dance
+mpforce goten dance
+dance trunks
+mpforce goten dance goten
+dance goten
+mpforce goten dance trunks
+point goten
+mpforce goten point trunks
+mpecho &GTrunks and Goten lean in toward each other, touching fingers...
+mpecho &GTogether, they yell, "FUUUU-SIIIIOOOONNNN HAAAA!'
+mpecho &YA brilliant light floods the area as the Fusion Dance Ends!!
+mpecho
+mpecho &YAs the light clears, the only one standing there is Gotenks!
+mpmload 110015
+mppurge goten
+purge $I
+~
+|
+#110014
+ssjgoten goten~
+Goten~
+Goten flexes here, a playful grin on his face.
+~
+~
+7 0&64 1000 C
+1 0 75 1d20+0 2d5+0
+-1 500000000
+112 112 1
+50 50 50 50 50
+0 0 0 0 0
+0 0 0 0 1 1 4
+0 0 0 0 0 0 0 0
+> fight_prog 30~
+'kamehameha'
+ 'kamehameha'
+ 'kamehameha'
+~
+> fight_prog 25~
+'destructive wave'
+~
+> death_prog 100~
+look trunks
+say I don't think we can do this on our own, buddy!  Come on, let's show them what we're all about!
+mpecho
+dance
+mpforce trunks dance
+dance goten
+mpforce trunks dance trunks
+dance trunks
+mpforce trunks dance goten
+point trunks
+mpforce trunks point goten
+mpecho &GGoten and Trunks lean in toward each other, touching fingers...
+mpecho &GTogether, they yell, "FUUUU-SIIIIOOOONNNN HAAAA!'
+mpecho &YA brilliant light floods the area as the Fusion Dance Ends!!
+mpecho
+mpecho &YAs the light clears, the only one standing there is Gotenks!
+mpmload 110015
+mppurge trunks
+mpurge $I
+~
+|
+#110015
+Gotenks~
+Gotenks~
+Gotenks is here, rubbing his nose and laughing at you.
+~
+~
+7 0 0 C
+1 0 75 1d20+0 2d5+0
+-1 650000000
+112 112 1
+52 52 52 52 52
+0 0 0 0 0
+2 2 0 0 1 1 4
+0 0 0 0 0 0 0 0
+> fight_prog 80~
+final
+ 'burning attack'
+ 'kamehameha'
+~
+> fight_prog 30~
+laugh $n
+mpecho &G$I pulls back a fist and lunges at $n out of nowhere!
+mpecho &G$I yells, 'SHINIIIINNNNG PASTRYYYY PUNCH!'
+mpecho &GGotenks' Shining Pastry Punch &rACTUALLY HITS &G$n!&D
+mppldamage $n 10
+~
+> fight_prog 30~
+snort $n
+mpecho &G$I springs towards his opponent, delivering a vicious kick to the base of $n's skull!!
+mpecho &G$I yells, DYYYY-NUHHHH-MIIIITE-UHHHH KEEEEK!!!!'
+mpecho &GGotenks' Dynamite Kick &rHURT A LITTLE!&D
+mppldamage $n 10
+~
+> death_prog 100~
+mpecho &GYou finish Gotenks with a vicious kick to the gut, launching
+mpecho &Ghim through the nearest wall!  In no time at all though, he
+mpecho &Ggets back up and launches himself at you. &C'This isn't over!'
+mpecho &YAn aura of golden energy rips itself into existence from Gotenks!
+mpecho
+mpecho &YGotenks has transformed into a Super Saiyan!
+mpmload 110016
+~
+|
+#110016
+ssjgotenks gotenks~
+Gotenks~
+Gotenks laughs at you. &C'Bring it on!'
+~
+~
+7 0&64 1000 C
+1 0 65 1d20+0 2d5+0
+-1 750000000
+112 112 1
+55 55 55 55 55
+0 0 0 0 0
+2 2 0 0 1 1 5
+0 0 0 0 0 0 0 0
+> fight_prog 30~
+laugh $n
+mpecho &G$I pulls back a fist and lunges at $n out of nowhere!
+mpecho &G$I yells, 'SHINIIIINNNNG PASTRYYYY PUNCH!'
+mpecho &GGotenks' Shining Pastry Punch &rACTUALLY HITS &G$n!&D
+mppldamage $n 10
+~
+> fight_prog 30~
+snort $n
+mpecho &G$I springs towards his opponent, delivering a vicious kick to the base of $n's skull!!
+mpecho &G$I yells, DYYYY-NUHHHH-MIIIITE-UHHHH KEEEEK!!!!'
+mpecho &GGotenks' Dynamite Kick &rHURT A LITTLE!&D
+mppldamage $n 10
+~
+> death_prog 100~
+mpecho &GReleasing a wave of energy strong enough to force you back, $I
+mpecho &Glooks down his nose at you, a disgusted look on his face.
+sneer
+say Enough of this!  I'm not having fun anymore!
+mpecho
+mpecho &YWith a surge of power that sends you tumbling like a ragdoll,
+mpecho &Y$I unleashes his innermost power, bypassing the second level of
+mpecho &YSuper Saiyan entirely!
+mpecho
+mpecho &YGotenks has achieved Super Saiyan 3!!
+mpmload 110017
+~
+> fight_prog 30~
+'kamehameha'
+~
+> fight_prog 30~
+'burning attack'
+~
+> fight_prog 30~
+'kamehameha'
+ 'burning attack'
+~
+|
+#110017
+ssj3gotenks gotenks~
+Gotenks~
+Gotenks sneers at you. He's taking things seriously now!
+~
+~
+7 0&448 1000 C
+1 0 45 1d20+0 2d5+0
+-1 1000000000
+112 112 1
+60 60 60 60 60
+0 0 0 0 0
+0 0 0 0 1 1 5
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+mpecho &G$Icackles at $n, lifting both hands over his head.
+mpecho &G$I yells out, 'You ready for this? SHINE SHINE MISSLE ATTACK!'
+mpecho &GHis hands a blur of movement, $I unleashes dozens of energy blasts!
+mpecho &GGotenks' Shine Shine Missle &rHITS &G$n!!
+mpecho &GGotenks' Shine Shine Missle &rHITS &G$n!!
+mpecho &GGotenks' Shine Shine Missle &rHITS &G$n!!
+mpecho &GGotenks' Shine Shine Missle &rHITS &G$n!!
+mpecho &GGotenks' Shine Shine Missle &rHITS &G$n!!
+mpecho &GGotenks' Shine Shine Missle &rHITS &G$n!!
+mpecho &GGotenks' Shine Shine Missle &rHITS &G$n!!
+mpecho &GGotenks' Shine Shine Missle &rHITS &G$n!!
+mpecho &GGotenks' Shine Shine Missle &rHITS &G$n!!
+mpecho &GGotenks' Shine Shine Missle &rHITS &G$n!!
+mppldamage $n 50
+~
+> death_prog 20~
+mpoload 110026
+~
+> fight_prog 35~
+'kamehameha'
+ 'burning attack'
+ 'kamehameha'
+~
+> fight_prog 30~
+'burning attack'
+ 'burning attack'
+~
+> fight_prog 25~
+'energy ball'
+ 'masenko'
+ 'scatter 50'
+ 'kamehameha'
+ 'destructive wave'
+ 'burning attack'
+~
+|
+#110018
+cleaner robot bot~
+The Cleaning Bot~
+A small robot is scooting around, cleaning up the room.
+~
+~
+5 0 0 C
+1 0 75 1d20+0 2d5+0
+-1 200000000
+112 112 0
+30 30 30 30 30
+0 0 0 0 0
+4 4 0 0 1 16 2
+0 0 0 0 0 0 256 0
+> fight_prog 30~
+charge ener
+~
+|
+#110019
+guardian android robot figure~
+The Guardian Cyborg~
+A massive figure modeled after Android #16 stands here stoically.
+~
+~
+3 0 0 C
+1 0 50 1d20+0 2d5+0
+-1 600000000
+112 112 0
+60 60 60 60 60
+0 0 0 0 0
+4 4 0 0 1 16 3
+0 0 0 0 0 0 48 0
+> fight_prog 30~
+upper
+~
+> fight_prog 20~
+eye
+~
+> fight_prog 20~
+rocket
+~
+> fight_prog 10~
+hells
+~
+> death_prog 10~
+mpoload 110013
+~
+> greet_prog 100~
+if pl($n) > 100000000
+mpecho &C$I holds up a hand and emotionlessly says, "I'm sorry, but you
+mpecho &Care not permitted to enter this area.  It is highly recommended
+mpecho &Cthat you leave, or we will be forced to attack you.
+mpecho
+mpsleep 15
+if MortCount() > 0
+if isfight($n)
+else
+mpecho
+mpecho &r$I's eyes flash red, firing a small laser at you and it attacks!
+mppldamage $n 10
+mpkill $n
+endif
+endif
+endif
+~
+|
+#110020
+junk junkion robot~
+the Junkion~
+A robot made up of various broken appliances and other junk is here.
+~
+~
+5 0 0 C
+1 0 90 1d20+0 2d5+0
+-1 350000000
+112 112 0
+125 125 100 125 60
+0 0 0 0 0
+4 4 0 0 1 17 2
+0 0 0 0 0 0 48 0
+> death_prog 100~
+if rand(35)
+mpecho &R$I falls flat on its back, its body reduced to mere scrap.
+mpecho &RIn no time at all though, $I begins to rebuild itself from
+mpecho &Rthe nearby scrap!
+mpmload 110020
+else
+mpecho &RUnable to find enough junk to rebuild its body, $I
+mpecho &Rshudders one last time as its eyes fade to black and it falls apart.
+endif
+~
+> fight_prog 20~
+upper
+~
+> fight_prog 20~
+absorb
+~
+> fight_prog 25~
+rocket
+~
+> fight_prog 10~
+hell
+~
+> greet_prog 100~
+mpecho $I says, &C"WeLcomE ShOPPer!? HoW lONg HaVE you WatCHEd oUR Show.!"
+~
+> fight_prog 100~
+if rand(17)
+mpecho $I says, &C"ACt nOw!? Sup-PPP-pp-LIES arE LiMItEd.?!"
+else
+if rand(25)
+mpecho $I says, &C"PaY now, PAY LateR!!"
+else
+if rand(33)
+mpecho $I says, &C"just WHen yoU THouGht it COULDN't Get aNy BeTteR."
+else
+if rand(50)
+mpecho $I says, &C"ShoW THem whAt Else THEY've wON!!!"
+endif
+endif
+endif
+endif
+~
+|
+#110021
+Android 18~
+Android #18~
+Android #18 is here, not noticing anyone but her daughter and husband.
+~
+~
+3 0 0 C
+1 0 75 1d20+0 2d5+0
+-1 900000000
+112 112 2
+60 60 60 60 60
+0 0 0 0 0
+4 4 0 0 1 1 4
+0 0 0 0 0 0 48 0
+> fight_prog 35~
+'eyebeam'
+~
+> fight_prog 30~
+'rocket punch'
+~
+> fight_prog 25~
+'hell'
+~
+> death_prog 1~
+if rand(50)
+mpoload 100315
+endif
+~
+|
+#110022
+judge~
+Kami~
+Kami stands here, muttering strange things and helping the newbies.
+~
+~
+16777217 128 1000 C
+1 0 0 1d20+0 2d5+0
+-1 1000000000000000000
+112 112 0
+500 500 500 500 500
+0 0 0 0 0
+3 3 0 0 1 1 20
+0 0 0 0 0 0 0 0
+> speech_prog n00bie~
+if council($n) == Newbie Council
+say Very well.  One Newbie Kit coming up.
+mpoload 100298
+mpoload 216
+mpoload 9006
+mpoload 3840
+mpoload 211
+mpoload 2008
+mpoload 9019
+mpoload 207
+put all backpack
+give backpack $n
+say Remember to tell the Newbie to read 'help gun' to learn how the blaster works.
+else
+endif
+~
+|
+#110023
+Marron daughter~
+Marron~
+Krillin's daughter is here, playing with her dolls.
+~
+~
+67108871 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 2
+10 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#110024
+Krillinx~
+Krillin~
+Krillin is here, playing with Marron.
+~
+~
+1 0 1000 C
+1 0 90 1d20+0 2d5+0
+-1 500000000
+112 112 1
+45 45 45 45 45
+0 0 0 0 0
+1 1 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> fight_prog 35~
+'destructo disk'
+ 'destructo disk'
+~
+> fight_prog 30~
+'destructive wave'
+~
+> fight_prog 25~
+'kamehameha'
+ 'kamehameha'
+~
+> greet_prog 100~
+mpsleep 5
+smile marron
+mpsleep 5
+tickle marron
+mpforce marron giggle
+mpsleep 5
+dance marron
+mpforce marron silly krillin
+~
+|
+#110025
+scientistx scientist~
+The Scientist~
+A scientist is here, taking notes and mumbling to himself.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100000000
+112 112 1
+25 25 25 25 25
+0 0 0 0 0
+1 1 0 0 1 1 2
+0 0 0 0 0 0 16 0
+#110026
+capsulegoku tank~
+A Capsule~
+A large tank of something is here...with someone floating inside.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &rThe tank cracks and shatters, bluish liquid rushing out in a
+mpecho &rcolossal wave. The figure inside opens its eyes and steps out,
+mpecho &rripping its face mask off.
+mpecho
+mpecho &YIt looks like Goku!!
+mpmload 110027
+~
+|
+#110027
+fakegoku goku figure~
+The Goku Clone~
+A soaked figure stands here, looking confused.  He looks kind of like Goku...
+~
+~
+3 0 0 C
+1 0 75 1d20+0 2d5+0
+-1 750000000
+112 112 1
+55 55 55 55 55
+0 0 0 0 0
+0 0 0 0 1 1 3
+0 0 0 0 0 0 48 0
+> fight_prog 60~
+kame
+~
+> fight_prog 30~
+charge kame
+~
+> death_prog 80~
+mpoload 110019
+~
+|
+#110028
+capsulevegeta tank~
+A Capsule~
+A large tank of something is here...with someone floating inside.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &rThe tank cracks and shatters, bluish liquid rushing out in a
+mpecho &rcolossal wave. The figure inside opens its eyes and steps out,
+mpecho &rripping its face mask off.
+mpecho
+mpecho &YIt looks like Vegeta!!
+mpmload 110029
+~
+|
+#110029
+fakevegeta vegeta figure~
+The Vegeta Clone~
+A soaked figure stands scowling here.  He looks kind of like Vegeta...
+~
+~
+3 0 0 C
+1 0 75 1d20+0 2d5+0
+-1 750000000
+112 112 1
+55 55 55 55 55
+0 0 0 0 0
+0 0 0 0 1 1 3
+0 0 0 0 0 0 48 0
+> fight_prog 60~
+final
+~
+> fight_prog 30~
+charge final
+~
+> death_prog 80~
+mpoload 110019
+~
+|
+#110030
+capsulepiccolo tank~
+A Capsule~
+A large tank of something is here...with someone floating inside.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &rThe tank cracks and shatters, bluish liquid rushing out in a
+mpecho &rcolossal wave. The figure inside opens its eyes and steps out,
+mpecho &rripping its face mask off.
+mpecho
+mpecho &GIt looks like Piccolo!!
+mpmload 110031
+~
+|
+#110031
+fakepiccolo piccolo figure~
+The Piccolo Clone~
+A soaked Namek stands here stoically.  He looks kind of like Piccolo...
+~
+~
+3 0 0 C
+1 0 80 1d20+0 2d5+0
+-1 700000000
+112 112 1
+54 54 54 54 54
+0 0 0 0 0
+3 3 0 0 1 1 3
+0 0 0 0 0 0 48 0
+> fight_prog 60~
+special
+~
+> fight_prog 30~
+charge special
+~
+> death_prog 80~
+mpoload 110020
+~
+|
+#110032
+capsulegohan tank~
+A Capsule~
+A large tank of something is here...with someone floating inside.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &rThe tank cracks and shatters, bluish liquid rushing out in a
+mpecho &rcolossal wave. The figure inside opens its eyes and steps out,
+mpecho &rripping its face mask off.
+mpecho
+mpecho &YIt looks like Gohan!!
+mpmload 110033
+~
+|
+#110033
+fakegohan gohan~
+The Gohan Clone~
+A soaked little boy stand here, shivering and frightened.  He looks kind of like Gohan...
+~
+~
+3 0 0 C
+1 0 80 1d20+0 2d5+0
+-1 700000000
+112 112 1
+54 54 54 54 54
+0 0 0 0 0
+2 2 0 0 1 1 3
+0 0 0 0 0 0 48 0
+> fight_prog 60~
+masenko
+~
+> fight_prog 30~
+charge masenko
+~
+> death_prog 80~
+mpoload 110018
+~
+|
+#110034
+capsulefrieza tank~
+A Capsule~
+A large tank of something is here...with someone floating inside.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &rThe tank cracks and shatters, bluish liquid rushing out in a
+mpecho &rcolossal wave. The figure inside opens its eyes and steps out,
+mpecho &rripping its face mask off.
+mpecho
+mpecho &pIt looks like Frieza!!
+mpmload 110035
+~
+|
+#110035
+fakefrieza frieza~
+The Frieza Clone~
+A soaked Icer stands here, grinning evilly.  He looks kind of like Frieza...
+~
+~
+3 0 0 C
+1 0 75 1d20+0 2d5+0
+-1 750000000
+112 112 1
+55 55 55 55 55
+0 0 0 0 0
+5 5 0 0 1 1 3
+0 0 0 0 0 0 48 0
+> fight_prog 60~
+destructo
+~
+> fight_prog 30~
+dual
+~
+|
+#110036
+capsulecooler tank~
+A Capsule~
+A large tank of something is here...with someone floating inside.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &rThe tank cracks and shatters, bluish liquid rushing out in a
+mpecho &rcolossal wave. The figure inside opens its eyes and steps out,
+mpecho &rripping its face mask off.
+mpecho
+mpecho &pIt looks like Cooler!!
+mpmload 110037
+~
+|
+#110037
+fakecooler cooler~
+The Cooler Clone~
+A soaked Icer stands here, a menacing look on his face.  He looks kind of like Cooler...
+~
+~
+3 0 0 C
+1 0 75 1d20+0 2d5+0
+-1 750000000
+112 112 1
+55 55 55 55 55
+0 0 0 0 0
+5 5 0 0 1 1 3
+0 0 0 0 0 0 48 0
+> fight_prog 60~
+eye
+~
+> fight_prog 30~
+finger
+~
+|
+#110038
+capsulegogeta tank~
+A Capsule~
+A large tank of something is here...with someone floating inside.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &rThe tank cracks and shatters, bluish liquid rushing out in a
+mpecho &rcolossal wave. The figure inside opens its eyes and steps out,
+mpecho &rripping its face mask off.
+mpecho
+mpecho &YIt looks like Gogeta!!
+mpmload 110039
+~
+|
+#110039
+fakegogeta gogeta~
+The Gogeta Clone~
+A soaked figure stands here, grinning with an aura of supreme arrogance.  He looks kind of like Gogeta...
+~
+~
+3 0 0 C
+1 0 70 1d20+0 2d5+0
+-1 800000000
+112 112 1
+56 56 56 56 56
+0 0 0 0 0
+0 0 0 0 1 1 3
+0 0 0 0 0 0 48 0
+> fight_prog 60~
+kame
+~
+> fight_prog 30~
+charge final
+~
+> death_prog 80~
+mpoload 110026
+~
+|
+#110040
+capsulevegeto tank~
+A Capsule~
+A large tank of something is here...with someone floating inside.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &rThe tank cracks and shatters, bluish liquid rushing out in a
+mpecho &rcolossal wave. The figure inside opens its eyes and steps out,
+mpecho &rripping its face mask off.
+mpecho
+mpecho &YIt looks like Vegeto!!
+mpmload 110041
+~
+|
+#110041
+fakevegeto vegeto~
+The Vegeto Clone~
+A soaked figure stands here, wearing the Potara Earrings and a rude smirk.  He looks kind of like Vegeto...
+~
+~
+3 0 0 C
+1 0 70 1d20+0 2d5+0
+-1 800000000
+112 112 1
+56 56 56 56 56
+0 0 0 0 0
+0 0 0 0 1 1 3
+0 0 0 0 0 0 48 0
+> fight_prog 60~
+final
+~
+> fight_prog 30~
+charge kame
+~
+|
+#110042
+capsulekrillin tank~
+A Capsule~
+A large tank of something is here...with someone floating inside.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &rThe tank cracks and shatters, bluish liquid rushing out in a
+mpecho &rcolossal wave. The figure inside opens its eyes and steps out,
+mpecho &rripping its face mask off.
+mpecho
+mpecho &WIt looks like Krillin!!
+mpmload 110043
+~
+|
+#110043
+fakekrillin krillin~
+The Krillin Clone~
+A soaked figure stands here, bald and short.  He looks kind of like Krillin...
+~
+~
+3 0 0 C
+1 0 80 1d20+0 2d5+0
+-1 700000000
+112 112 1
+54 54 54 54 54
+0 0 0 0 0
+1 1 0 0 1 1 3
+0 0 0 0 0 0 48 0
+> fight_prog 60~
+destructo
+~
+> fight_prog 30~
+multi 30
+~
+|
+#110044
+capsuleyamcha tank~
+A Capsule~
+A large tank of something is here...with someone floating inside.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &rThe tank cracks and shatters, bluish liquid rushing out in a
+mpecho &rcolossal wave. The figure inside opens its eyes and steps out,
+mpecho &rripping its face mask off.
+mpecho
+mpecho &WIt looks like Yamcha!!
+mpmload 110045
+~
+|
+#110045
+fakeyamcha yamcha~
+The Yamcha Clone~
+A soaked figure stands here, his hair clinging to his scarred but handsome face.  He looks kind of like Yamcha...
+~
+~
+3 0 0 C
+1 0 80 1d20+0 2d5+0
+-1 700000000
+112 112 1
+54 54 54 54 54
+0 0 0 0 0
+1 1 0 0 1 1 3
+0 0 0 0 0 0 48 0
+> fight_prog 60~
+kame
+~
+> fight_prog 30~
+kame
+~
+> death_prog 80~
+mpoload 110021
+~
+|
+#110046
+capsuletien tank~
+A Capsule~
+A large tank of something is here...with someone floating inside.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &rThe tank cracks and shatters, bluish liquid rushing out in a
+mpecho &rcolossal wave. The figure inside opens its eyes and steps out,
+mpecho &rripping its face mask off.
+mpecho
+mpecho &WIt looks like Tien!!
+mpmload 110047
+~
+|
+#110047
+faketien tien~
+The Tien Clone~
+A soaked figure stands here, his third eye unblinking.  He looks kind of like Tien...
+~
+~
+3 0 0 C
+1 0 85 1d20+0 2d5+0
+-1 650000000
+112 112 1
+53 53 53 53 53
+0 0 0 0 0
+1 1 0 0 1 1 3
+0 0 0 0 0 0 48 0
+> fight_prog 60~
+mpecho &G$I points one finger at you, gathering his ki.
+mpecho &GHe unleashes in a precise bolt of energy!
+mppldamage $n 25
+~
+> fight_prog 30~
+tri
+~
+> death_prog 80~
+mpoload 110015
+~
+|
+#110048
+capsulechiatotzu tank~
+A Capsule~
+A large tank of something is here...with someone floating inside.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &rThe tank cracks and shatters, bluish liquid rushing out in a
+mpecho &rcolossal wave. The figure inside opens its eyes and steps out,
+mpecho &rripping its face mask off.
+mpecho
+mpecho &WIt looks like Chiatotzu!!
+mpmload 110049
+~
+|
+#110049
+fakechiatotzu chiatotzu~
+The Chiatotzu Clone~
+A soaked figure stands here, looking like a drowned mime baby.  He looks kind of like Chiatotzu...
+~
+~
+3 0 0 C
+1 0 85 1d20+0 2d5+0
+-1 650000000
+112 112 1
+53 53 53 53 53
+0 0 0 0 0
+1 1 0 0 1 1 3
+0 0 0 0 0 0 48 0
+> fight_prog 60~
+mpecho &G$I points one finger at you, gathering his ki.
+mpecho &GHe unleashes in a precise bolt of energy!
+mppldamage $n 25
+~
+> fight_prog 30~
+tri
+~
+> death_prog 80~
+mpoload 110022
+~
+|
+#110050
+capsuleroshi tank~
+A Capsule~
+A large tank of something is here...with someone floating inside.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &rThe tank cracks and shatters, bluish liquid rushing out in a
+mpecho &rcolossal wave. The figure inside opens its eyes and steps out,
+mpecho &rripping its face mask off.
+mpecho
+mpecho &WYou can't quite tell who this human reminds you of...
+mpmload 110051
+~
+|
+#110051
+fakeroshi roshi~
+The Roshi Clone~
+A soaked figure stands here, his eyes sharp and his body in perfect figure.  He looks kind of like a young Roshi...
+~
+~
+3 0 0 C
+1 0 70 1d20+0 2d5+0
+-1 800000000
+112 112 1
+56 56 56 56 56
+0 0 0 0 0
+1 1 0 0 1 1 3
+0 0 0 0 0 0 48 0
+> fight_prog 60~
+kame
+~
+> fight_prog 30~
+mpecho &G$I pulls his hands back, cupping them as he begins to draw in a large amount of energy.
+mpecho &GShoving them forward, he unleashes the true power of the Kamehameha!!!
+mppldamage $n 80
+~
+> death_prog 80~
+mpoload 110023
+~
+|
+#110052
+capsuleguru tank~
+A Capsule~
+A large tank of something is here...with someone floating inside.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &rThe tank cracks and shatters, bluish liquid rushing out in a
+mpecho &rcolossal wave. The figure inside opens its eyes and steps out,
+mpecho &rripping its face mask off.
+mpecho
+mpecho &GYou can't quite tell who this Namek reminds you of...
+mpmload 110053
+~
+|
+#110053
+fakeguru guru~
+The Guru Clone~
+A soaked Namek stands here, a calm and enlightened expression on his face.  He looks kind of like a young Guru...
+~
+~
+3 0 0 C
+1 0 70 1d20+0 2d5+0
+-1 800000000
+112 112 1
+56 56 56 56 56
+0 0 0 0 0
+3 3 0 0 1 1 3
+0 0 0 0 0 0 48 0
+> fight_prog 60~
+masenko
+~
+> fight_prog 30~
+mpecho &G$I thrusts his hands out in front of his body, spreading his fingers and gathering energy.
+mpecho &GIn a release of power unlike that ever seen on earth, $I releases the ancient Namekian attack!!!
+mppldamage $n 80
+~
+> death_prog 80~
+mpoload 110020
+~
+|
+#110054
+capsuleraditz tank~
+A Capsule~
+A large tank of something is here...with someone floating inside.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &rThe tank cracks and shatters, bluish liquid rushing out in a
+mpecho &rcolossal wave. The figure inside opens its eyes and steps out,
+mpecho &rripping its face mask off.
+mpecho
+mpecho &YIt looks like Raditz!!
+mpmload 110055
+~
+|
+#110055
+fakeraditz raditz~
+The Raditz Clone~
+A soaked figure stands here, his saturated hair reaching almost the ground.  He looks kind of like Raditz...
+~
+~
+3 0 0 C
+1 0 85 1d20+0 2d5+0
+-1 650000000
+112 112 1
+53 53 53 53 53
+0 0 0 0 0
+0 0 0 0 1 1 3
+0 0 0 0 0 0 48 0
+> fight_prog 60~
+charge ener
+~
+> fight_prog 30~
+ener
+ener
+~
+> death_prog 80~
+mpoload 110019
+~
+|
+#110056
+capsulenappa tank~
+A Capsule~
+A large tank of something is here...with someone floating inside.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &rThe tank cracks and shatters, bluish liquid rushing out in a
+mpecho &rcolossal wave. The figure inside opens its eyes and steps out,
+mpecho &rripping its face mask off.
+mpecho
+mpecho &YIt looks like Nappa!!
+mpmload 110057
+~
+|
+#110057
+fakenappa nappa~
+The Nappa Clone~
+A soaked figure is here, his massive bulk taking up most of the room.  He looks kind of like Nappa...
+~
+~
+3 0 0 C
+1 0 85 1d20+0 2d5+0
+-1 650000000
+112 112 1
+53 53 53 53 53
+0 0 0 0 0
+0 0 0 0 1 1 3
+0 0 0 0 0 0 304 0
+> fight_prog 40~
+ener
+charge ener
+~
+> death_prog 80~
+mpoload 110018
+~
+|
+#110058
+Bulma~
+Bulma~
+Bulma is here, busying herself with some knick-knack.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 2
+10 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#110059
+Mom Bulma~
+Bulma's Mom~
+Bulma's Mom is here, holding a tray of snacks and smiling senselessly.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 2
+10 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog hello~
+if name($n) == ferrin
+mpoload 110001
+mpoload 110002
+mpoload 110003
+mpoload 110004
+mpoload 110005
+mpoload 110006
+mpoload 110007
+mpoload 110008
+give kimono ferrin
+give strago ferrin
+give charm ferrin
+give pants ferrin
+give sash ferrin
+give sandals ferrin
+give wraps ferrin
+give glasses ferrin
+mpoload 110030
+give claws ferrin
+mpoload 110067
+give skull ferrin
+mpoload 110070
+mpoload 110071
+mpoload 110072
+mpoload 110073
+mpoload 110074
+mpoload 110075
+mpoload 110068
+put all.weapon sack
+give sack ferrin
+endif
+~
+> greet_prog 100~
+smile $n
+say Oh, HELLOOOO!!  How are YOUUUU?  Welcome to my home!!
+smile
+smile $n
+smile mom
+smile mom
+smile $n
+mpecho &C$I keeps smiling stupidly.
+~
+|
+#110060
+bob scientist~
+Bob the Pie-Eating Scientist~
+One of the head scientists is here, eating some pie.
+~
+~
+1 0 0 C
+1 0 20 1d20+0 2d5+0
+-1 111111111
+112 112 1
+40 40 40 40 40
+0 0 0 0 0
+1 1 0 0 1 1 5
+0 0 0 0 0 0 304 0
+> death_prog 50~
+mpoload 110016
+~
+> death_prog 25~
+mpoload 110014
+~
+> death_prog 5~
+mpoload 110017
+~
+> fight_prog 35~
+destructo
+destructo
+~
+|
+#110061
+Thundercles robot massive~
+Thundercles~
+A MASSIVE robot stands in front of the doorway here.
+~
+~
+3 0 0 C
+1 0 50 1d20+0 2d5+0
+-1 900000000
+112 112 1
+60 60 60 60 60
+0 0 0 0 0
+4 4 0 0 1 1 4
+0 0 0 0 0 0 48 0
+> death_prog 80~
+if rand(1)
+if rand(50)
+mpecho &RShuddering and spewing sparks, Thundercles collapses onto the
+mpecho &Rground in front of you.  Parts of him are still undamaged though,
+mpecho &Rand appear as though they would make some slipshod, yet usable,
+mpecho &Rform of armor.
+mpoload 110025
+endif
+endif
+~
+> fight_prog 80~
+hell
+~
+> fight_prog 100~
+absorb
+~
+|
+#110062
+janitor~
+Cleeb the Janitor~
+Capsule Corporations retired Janitor, Cleeb, is here, half asleep where he stands.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100000000
+112 112 1
+25 25 25 25 25
+0 0 0 0 0
+1 1 0 0 1 1 2
+0 0 0 0 0 0 16 0
+> death_prog 75~
+mpoload 110010
+~
+> death_prog 20~
+mpoload 110297
+~
+|
+#110063
+mechanic greasy man junk trash~
+Trash Mechanic~
+A greasy mechanic is leaning over a big pile of junk, tinkering with things.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+200 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+tell $n Hey, $n! I'm always looking for useful stuff to buy. Have anything for me?
+~
+> rand_prog 1~
+mpjunk all
+~
+|
+#110299
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#110000
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#110001
+kimono coat~
+Vash's Long Red Trenchcoat~
+A long red trenchcoat lays folded here.~
+~
+9 1048576 9 128
+0 0 0 1000000 500 500
+1 75000 7500
+ 0
+A
+1 10
+#110002
+strago~
+Strago~
+A small black kitten plays with a ball of yarn here.~
+~
+9 1048576 16385 128
+0 0 0 0 4000 4000
+1 404000 40000
+ 1000000000
+A
+24 4
+#110003
+charm~
+A silver Ctarl Ctarl charm~
+A small charm twinkles on the ground here.~
+~
+9 1048576 5 128
+0 0 0 100000000 100 100
+1 60000 6000
+ 0
+A
+29 10
+#110004
+pants~
+E.C.'s C-4 Laced Pants~
+Baggy black pants made of soft silk lay folded here.~
+~
+9 1048576 33 128
+0 0 0 1000000 100 100
+1 35000 5
+ 0
+A
+2 10
+#110005
+sash~
+Hotsuma's Long Red Scarf~
+A crison sash of cashmere is folded neatly here.~
+~
+9 1048576 2049 128
+0 0 0 1000000 100 100
+1 10000 1000
+ 0
+#110006
+sandals boots~
+Stink-O Man's Robot Boots~
+Some cool boots are here.  They're like...robot boots.~
+~
+9 1048576 65 128
+0 0 0 1000000 100 100
+1 35000 1
+ 0
+A
+3 10
+#110007
+wraps gloves~
+Spike's Fingerless Leather Gloves~
+A pair of fingerless studded leather gloves are on the ground here.~
+~
+9 1048576 129 128
+0 0 0 1000000 100 100
+1 35000 3500
+ 0
+A
+4 10
+#110008
+glasses~
+Ilpalazzo's Small Sunglasses~
+A pair of sunglasses with round orange lenses lies here.~
+~
+65 1048576 131073 128
+0 0 0 0 0 0
+1 0 0
+ 2000000000
+#110009
+lab coat labcoat~
+a long white lab coat~
+There is a long white coat here on the ground.~
+~
+9 1048576 1025 48
+0 0 0 0 100 100
+3 10000 1000
+ 0
+#110010
+Overalls~
+Overalls with 'Cleeb' on the nametag~
+A rumpled up set of overalls is tossed to the ground here.~
+~
+9 1048576 1025
+0 0 0 0 100 100
+3 10000 1000
+ 0
+#110011
+Bulma Scouter~
+Bulma's Crystal Scouter~
+A scouter rests here, its lense made of flawless crystal.~
+~
+65 1051648 131073
+0 0 150000000 0 0 0
+1 404000 4000
+ 1000000000
+A
+24 4
+#110012
+Exoskeleton~
+A tight-fitting Exoskeleton~
+A discarded steel frame lies here, wires and all exposed.~
+~
+9 10439680&192 1025 13
+0 0 0 0 2000 2000
+3 225000 100000
+ 750000000
+A
+4 10
+A
+3 -10
+A
+1 5
+A
+2 5
+> wear_prog 100~
+if race($n) == human
+else
+mea $n &rAs the cables and frame of the Exoskeleton fit themselves to
+mea $n &ryou, internal scanning machines check your body for any source
+mea $n &rof outside infection.  Finding your blood to be less than that
+mea $n &rof a pure, healthy human, the Exoskeleton rejects itself from
+mea $n &ryour body and falls into a heap at your feet.
+mpforce $n remove exoskeleton
+mpforce $n drop exoskeleton
+endif
+~
+|
+#110013
+Ether Goggles~
+A set of Ether Goggles~
+A set of goggles lies here, its lense a myriad of shifting colors.~
+~
+9 1048576 17
+0 0 0 0 100 100
+3 10000 1500
+ 0
+> wear_prog 100~
+mpechoat $n &rYou're not quite sure how to put these things on...
+mpechoat $n &OIt seems they're almost impossible to see through with
+mpechoat $n &Yall of their shifting colors.  It's really interesting
+mpechoat $n &Gand seems to stimulate your mind, but fighting in them
+mpechoat $n &Cwould be next to impossible.  Guess you have to resort
+mpechoat $n &Pto wearing them on your head...
+mpechoaround $n &D$n places A set of Ether Goggles over $s face, but
+mpechoaround $n seems to change $s mind, resorting to wearing them
+mpechoaround $n on $s head.
+~
+|
+#110014
+cherry pie~
+An entire cherry pie~
+A pie is sitting here, still pleasantly warm to the touch.~
+~
+19 1048576 1
+0 0 0 0 0 0
+1 0 100000
+ 0
+> use_prog 100~
+mpechoat $n You scarf down the entire pie, savoring every delicious bite.
+if hps($n) < 100
+mprestore $n 50
+endif
+mpechoaround $n $n gobbles down an entire cheery pie without even sharing!
+~
+|
+#110015
+Third Eye~
+a Third Eye~
+Something that looks like an eyeball is laying here, wires and nerve endings leading from its rear.~
+~
+9 1078988800 1048577
+0 0 0 0 100 100
+1 12500 5000000
+ 100000000
+A
+4 5
+A
+1 -2
+A
+3 -2
+> wear_prog 100~
+if race($n) == android
+mpechoat $n &rThe circuitry of the eye drives itself painfully into your neurological
+mpechoat $n &rprocessor.  The pain surges through your body as you frantcially try to
+mpechoat $n &rrip the Eye out of your metallic skull, but to no avail.  The Third Eye
+mpechoat $n &rhas found a new home.
+mpechoaround $n &r$n screams in agony as the Third Eye rips itself through metal and
+mpechoaround $n &rartificial tissue.  The pain seems to pass though, and $n forces
+mpechoaround $n &r$s body back into a standing position.
+else
+mpechoat $n &CThe Third Eye fuses itself to your skull, its tendrils making their ways
+mpechoat $n &Cbeneath your skin.  Strangely though, the ssensation isn't painful, but
+mpechoat $n &Cit seems as though the Eye is stuck!
+endif
+~
+> remove_prog 100~
+if race($n) == android
+mpechoat $n &rYou wince in agony as a charge of energy from the Third Eye
+mpechoat $n &rtears through your system, ripping a scream from your throat.
+mpforce $n scream
+mpdamage $n 85
+else
+endif
+mpechoat $n &rYou tug at $I as hard as you can, but the farther you pull
+mpechoat $n &rit from your face, the harder its tendrils fight to force
+mpechoat $n &rthe dreadful thing back into your skull.
+mpforce $n wear third
+~
+|
+#110016
+apple pie~
+A slice of warm apple pie~
+A slice of apple pie is sitting here, still pleasantly warm to the touch.~
+~
+19 0 1
+0 0 0 0 0 0
+1 0 50000
+ 0
+> use_prog 100~
+mpechoat $n You scarf down the slice of pie, savoring every delicious bite.
+if hps($n) < 100
+mprestore $n 25
+endif
+mpechoaround $n $n gobbles down a slice of apple pie without even sharing!
+~
+|
+#110017
+rhubarb pie~
+A giant rhubarb pie~
+A giant rhubarb pie is here, piping hot and smelling sweet!~
+~
+19 1048576 1
+0 0 0 0 0 0
+1 0 500000
+ 0
+> use_prog 100~
+mpechoat $n You scarf down a huge rhubarb pie, savoring every delicious bite.
+if hps($n) < 100
+mprestore $n 100
+endif
+mpechoaround $n $n gobbles down a giant rhubarb pie without even offering to share!
+~
+|
+#110018
+part halfbreed monkey tail~
+Part of a Saiyan Tail~
+The scraps of about half of a Saiyan monkey tail lie on the ground here.~
+~
+9 1048576 4097
+0 0 0 0 100 100
+1 12500 1250
+ 10000000
+A
+2 2
+A
+3 -1
+> wear_prog 100~
+if race($n) == saiyan
+else
+if race($n) == halfbreed
+else
+mpechoat $n $I doesn't seem to be worth the fur its made of.  You casually
+mpechoat $n toss it to the ground in disgust.
+mpforce $n remove halfbreed
+mpforce $n drop halfbreed
+mpforce $n sac halfbreed
+endif
+endif
+~
+|
+#110019
+saiyan monkey tail~
+A Saiyan Tail~
+An entire Saiyan tail lies here, neatly removed from its owner.~
+~
+9 1048576 2049 24
+0 0 0 0 250 250
+1 25000 2500
+ 10000000
+A
+1 5
+A
+3 -5
+> wear_prog 100~
+if race($n) == saiyan
+else
+if race($n) == halfbreed
+else
+mpechoat $n $I doesn't seem to be worth the fur its made of.  You casually
+mpechoat $n toss it to the ground in disgust.
+mpforce $n remove saiyan
+mpforce $n drop saiyan
+mpforce $n sac saiyan
+endif
+endif
+~
+|
+#110020
+Namek Egg~
+A Namek Egg~
+A large egg sets in the middle of the room here.~
+~
+9 1950720 16385
+0 0 0 0 0 0
+1 12500 100000
+ 1000000
+A
+3 5
+> get_prog 100~
+if race($n) == namek
+else
+mpechoat $n &GAs if acting on its own free will, $I jumps from your grasp!
+mpforce $n drop namek
+mpechoaround $n &GFor some strange reason, $n sems to lose $s grip on $I!
+endif
+~
+|
+#110021
+wolf talisman~
+The Wolf Fang Talisman~
+A small trinket in the shape of a wolf's head twinkles here.~
+~
+9 1048576 5 32
+0 0 0 0 25 25
+1 5000 10
+ 25000000
+A
+2 1
+#110022
+face paint mime~
+Mime Face Paint~
+A blob of black and white paint is on the floor here.~
+~
+9 5242880 1048577 1
+0 0 0 0 500 500
+1 25000 5000000
+ 50000000
+A
+29 -5
+#110023
+sunglasses~
+Roshi's Sunglasses~
+Some overly large, but still Super Rad, sunglasses are on the ground here.~
+~
+9 1048576 1048577
+0 0 0 0 500 500
+1 27500 5000000
+ 100000000
+A
+29 -5
+A
+1 2
+A
+2 2
+A
+4 2
+A
+3 -5
+#110024
+dead earrings~
+a pair of dead earrings~
+Some dead earrings are laying on the ground.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#110025
+scraps~
+Scraps of metal and wire~
+A discarded steel frame lies here, wires and all exposed.~
+~
+9 9437184 9
+0 0 0 0 10 10
+3 1000 100000
+ 0
+#110026
+Poofy Red Vest~
+A Poofy Red Fusion Vest~
+The poofy vest of a Fusioned warrior lies here.~
+~
+9 1048576 1025 24
+0 0 0 0 500 500
+3 50000 10000
+ 100000
+#110027
+icer augmentation mecha-icer bodypieces~
+&zMecha-Icer Augmentation&D~
+Random mechanical bodypieces have been dumped here in a pile.~
+~
+9 9946112 9 1
+0 0 0 0 500 500
+1 62500 6250
+ 2000000000
+A
+1 10
+A
+2 10
+A
+4 -15
+#110028
+crystal processor~
+&CThe Crystal Processor&D~
+&CA flawless piece of technology sits on the ground here, seemingly a processor of some sorts.&D~
+~
+9 1821696 4194305
+0 0 0 0 1000 1000
+1 2000000000 200000000
+ 2000000000
+A
+1 20
+A
+2 20
+A
+3 20
+A
+4 20
+> wear_prog 100~
+mpechoat $n &CA wave of calm washes over you as your internal circuitry
+mpechoat $n &Creaches a whole new plateau of speed and perfection.  A
+mpechoat $n &Cfeeling of true perfection courses through your motherboard
+mpechoat $n &Cas an indescribable amount of power envelops your systems.
+mpechoaround $n &CThe shockwave of power that tears from $n as $e installs
+mpechoaround $n &C$i sends you reeling.  As you work your way back to your
+mpechoaround $n &Cfeet, you see an unparalelled calm on $n's face.
+mpplmult $n 20
+~
+> remove_prog 100~
+mpechoat $n &CThe bliss of true power fades from your system upon removal
+mpechoat $n &Cof the processor.  The rush of weakness is so sudden that it
+mpechoat $n &Csends a shockwave of minor damage through your internal systems.
+mpdamage $n 10
+mpplmult $n 1
+~
+|
+#110029
+boxers vegeta~
+Vegeta's Boxer Shorts~
+A pair of boxers shorts lies here, complete with a hole in the rear for a tail!~
+~
+9 1048576 33 64
+0 0 0 0 50 50
+1 5000 10000
+ 25000000
+#110030
+claws weapon~
+Tiger Claws of the Shambayan~
+Ferrin's Claws lie here~
+~
+5 9437440 8193 128
+0 100 100 5 0 0
+1 10128000 1012800
+ 0
+A
+24 128
+#110031
+weighted training gi~
+&OA Weighted Training Gi&D~
+An orange gi lies folded on the ground here.~
+~
+9 1048576 1025
+0 0 0 100 2700 2700
+1 250000 32400
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110032
+weighted training gi~
+&rA Weighted Training Gi&D~
+A red gi lies folded on the ground here.~
+~
+9 1048576 1025
+0 0 0 100 2700 2700
+1 250000 32400
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110033
+weighted training gi~
+&wA Weighted Training Gi&D~
+A grey gi lies folded on the ground here.~
+~
+9 1048576 1025
+0 0 0 100 2700 2700
+1 250000 32400
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110034
+weighted training gi~
+&bA Weighted Training Gi&D~
+A dark blue gi lies folded on the ground here.~
+~
+9 1048576 1025
+0 0 0 100 2700 2700
+1 250000 32400
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110035
+weighted training gi~
+&WA Weighted Training Gi&D~
+A white gi lies folded on the ground here.~
+~
+9 1048576 1025
+0 0 0 100 2700 2700
+1 250000 32400
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110036
+weighted training gi~
+&PA Weighted Training Gi&D~
+A pink gi lies folded on the ground here.~
+~
+9 1048576 1025
+0 0 0 100 2700 2700
+1 250000 32400
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110037
+weighted training gi~
+&GA Weighted Training Gi&D~
+A green gi lies folded on the ground here.~
+~
+9 1048576 1025
+0 0 0 100 2700 2700
+1 250000 32400
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110038
+weighted training turban~
+&OA Weighted Training Turban&D~
+Like unto Piccolo's, an orange weighted turban rests here.~
+~
+9 1048576 17
+0 0 0 100 450 450
+1 25000 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110039
+weighted training turban~
+&rA Weighted Training Turban&D~
+Like unto Piccolo's, a red weighted turban rests here.~
+~
+9 1048576 17
+0 0 0 100 450 450
+1 25000 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110040
+weighted training turban~
+&wA Weighted Training Turban&D~
+Like unto Piccolo's, a grey weighted turban rests here.~
+~
+9 1048576 17
+0 0 0 100 450 450
+1 25000 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110041
+weighted training turban~
+&bA Weighted Training Turban&D~
+Like unto Piccolo's, a blue weighted turban rests here.~
+~
+9 1048576 17
+0 0 0 100 450 450
+1 25000 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110042
+weighted training turban~
+&WA Weighted Training Turban&D~
+Like unto Piccolo's, a white weighted turban rests here.~
+~
+9 1048576 17
+0 0 0 100 450 450
+1 25000 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110043
+weighted training turban~
+&PA Weighted Training Turban&D~
+Like unto Piccolo's, a pink weighted turban rests here.~
+~
+9 1048576 17
+0 0 0 100 450 450
+1 25000 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110044
+weighted training turban~
+&GA Weighted Training Turban&D~
+Like unto Piccolo's, a green weighted turban rests here.~
+~
+9 1048576 17
+0 0 0 100 450 450
+1 25000 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110045
+weighted training pants~
+&OWeighted Training Pants&D~
+A pair of heavy orange pants lies folded neatly here.~
+~
+9 1048576 33
+0 0 0 100 450 450
+1 25000 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110046
+weighted training pants~
+&rWeighted Training Pants&D~
+A pair of heavy red pants lies folded neatly here.~
+~
+9 1048576 33
+0 0 0 100 450 450
+1 25000 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110047
+weighted training pants~
+&wWeighted Training Pants&D~
+A pair of heavy grey pants lies folded neatly here.~
+~
+9 1048576 33
+0 0 0 100 450 450
+1 25000 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110048
+weighted training pants~
+&bWeighted Training Pants&D~
+A pair of heavy blue pants lies folded neatly here.~
+~
+9 1048576 33
+0 0 0 100 450 450
+1 25000 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110049
+weighted training pants~
+&WWeighted Training Pants&D~
+A pair of heavy white pants lies folded neatly here.~
+~
+9 1048576 33
+0 0 0 100 450 450
+1 25000 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110050
+weighted training pants~
+&PWeighted Training Pants&D~
+A pair of heavy pink pants lies folded neatly here.~
+~
+9 1048576 33
+0 0 0 100 450 450
+1 25000 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110051
+weighted training pants~
+&GWeighted Training Pants&D~
+A pair of heavy green pants lies folded neatly here.~
+~
+9 1048576 33
+0 0 0 100 450 450
+1 25000 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110052
+weighted training boots~
+&OWeighted Training Boots&D~
+A heavy-looking pair of orange boots is here.~
+~
+9 1048576 65
+0 0 0 100 225 225
+1 2500 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110053
+weighted training boots~
+&rWeighted Training Boots&D~
+A heavy-looking pair of red boots is here.~
+~
+9 1048576 65
+0 0 0 100 225 225
+1 2500 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110054
+weighted training boots~
+&wWeighted Training Boots&D~
+A heavy-looking pair of grey boots is here.~
+~
+9 1048576 65
+0 0 0 100 225 225
+1 2500 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110055
+weighted training boots~
+&bWeighted Training Boots&D~
+A heavy-looking pair of blue boots is here.~
+~
+9 1048576 65
+0 0 0 100 225 225
+1 2500 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110056
+weighted training boots~
+&WWeighted Training Boots&D~
+A heavy-looking pair of white boots is here.~
+~
+9 1048576 65
+0 0 0 100 225 225
+1 2500 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110057
+weighted training boots~
+&PWeighted Training Boots&D~
+A heavy-looking pair of pink boots is here.~
+~
+9 1048576 65
+0 0 0 100 225 225
+1 2500 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110058
+weighted training boots~
+&GWeighted Training Boots&D~
+A heavy-looking pair of green boots is here.~
+~
+9 1048576 65
+0 0 0 100 225 225
+1 2500 21262
+ 100000000
+A
+1 -2
+A
+2 -2
+A
+3 -2
+A
+4 -2
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110059
+weighted training bracer~
+&OA Weighted Training Bracer&D~
+A heavy orange bracer is lying on the ground here.~
+~
+9 1048576 4097
+0 0 0 50 225 225
+1 12500 11137
+ 100000000
+A
+1 -1
+A
+2 -1
+A
+3 -1
+A
+4 -1
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110060
+weighted training bracer~
+&rA Weighted Training Bracer&D~
+A heavy red bracer is lying on the ground here.~
+~
+9 1048576 4097
+0 0 0 50 225 225
+1 12500 11137
+ 100000000
+A
+1 -1
+A
+2 -1
+A
+3 -1
+A
+4 -1
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110061
+weighted training bracer~
+&wA Weighted Training Bracer&D~
+A heavy grey bracer is lying on the ground here.~
+~
+9 1048576 4097
+0 0 0 50 225 225
+1 12500 11137
+ 100000000
+A
+1 -1
+A
+2 -1
+A
+3 -1
+A
+4 -1
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110062
+weighted training bracer~
+&bA Weighted Training Bracer&D~
+A heavy blue bracer is lying on the ground here.~
+~
+9 1048576 4097
+0 0 0 50 225 225
+1 12500 11137
+ 100000000
+A
+1 -1
+A
+2 -1
+A
+3 -1
+A
+4 -1
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110063
+weighted training bracer~
+&WA Weighted Training Bracer&D~
+A heavy white bracer is lying on the ground here.~
+~
+9 1048576 4097
+0 0 0 50 225 225
+1 12500 11137
+ 100000000
+A
+1 -1
+A
+2 -1
+A
+3 -1
+A
+4 -1
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110064
+weighted training bracer~
+&PA Weighted Training Bracer&D~
+A heavy pink bracer is lying on the ground here.~
+~
+9 1048576 4097
+0 0 0 50 225 225
+1 12500 11137
+ 100000000
+A
+1 -1
+A
+2 -1
+A
+3 -1
+A
+4 -1
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110065
+weighted training bracer~
+&GA Weighted Training Bracer&D~
+A heavy green bracer is lying on the ground here.~
+~
+9 1048576 4097
+0 0 0 50 225 225
+1 12500 11137
+ 100000000
+A
+1 -1
+A
+2 -1
+A
+3 -1
+A
+4 -1
+> wear_prog 100~
+if race($n) == android
+mpecho There is no point in an android wearing weighted equipment, you realize.
+mpforce $n remove weighted
+mpforce $n drop weighted
+mpforce $n sac weighted
+endif
+~
+|
+#110066
+transporter~
+A Transporter~
+&CA large, glass cylinder is here, available for anyone wishing to use it.&D~
+~
+12 1048576 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#110067
+skull~
+Sigma's Decapitated Head~
+Sigma's head rests here.  What a loser he was~
+~
+1 1048577 16385
+0 0 -1 0 0 0
+1 -100 -10
+ 0
+#110068
+sack afro~
+Nabeshin's Afro~
+A poofy afro is here, full of stuff!~
+~
+15 1048576 17
+10000 0 0 0 0 0
+1 200000 20000
+ 0
+#110069
+Vegeta's Boxer Boxers Shorts~
+Vegeta's Boxer Shorts~
+A pair of boxers is here, with a hole in the back...maybe for a tail?~
+~
+9 1048576 33 1
+0 0 0 0 10 10
+1 1000 15
+ 0
+#110070
+sword heaven weapon~
+The Sword of Heaven~
+Cao Cao's Sword of Heaven is driven into the ground here.~
+~
+5 9437440 8193
+0 100 100 1 0 0
+1 10000000 1000000
+ 0
+#110071
+sword light weapon~
+The Sword of Light~
+The Sword of Light rests on the ground, gleaming brightly.~
+~
+5 9437440 8193
+0 100 100 3 0 0
+1 10000000 1000000
+ 0
+#110072
+caster weapon~
+Gene Starwind's Caster~
+A rusty, yet massive gun rests here on the ground.~
+~
+5 9437440 8193
+0 100 100 6 0 0
+1 10000000 1000000
+ 0
+#110073
+vicious katana weapon~
+Vicious' Katana~
+A sinister looking Katana is driven into the ground here.~
+~
+5 9437440 8193
+0 100 100 3 0 0
+1 10000000 1000000
+ 0
+#110074
+sephiroth masamune weapon~
+Sephiroth's Masamune~
+The longest sword EVER rests here.~
+~
+5 9437440 8193
+0 100 100 3 0 0
+1 10000000 1000000
+ 0
+#110075
+gara murasame weapon~
+Gara's Murasame Blade~
+A demonic katana is driven into the ground here.~
+~
+5 9437440 8193
+0 100 100 3 0 0
+1 10000000 1000000
+ 0
+#110298
+key~
+a metallic click.~
+Some god dropped a newly created key here.~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#110299
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#110000
+The Entrance of Capsule Corporation~
+ This is the entrance of the Capsule Corporation main building.  Known
+for its advanced technology and genius cadre of workers, it's a place of
+great pride to most of West City's inhabitants.  Commonly filled with
+visitors, the main hallway entrance is decorated, though simply.  The
+occasional painting hangs on plastered walls, with a red carpet leading
+deeper into the building covering the hard marble floor.  The ceiling is
+dotted regularly with lights keeping the building at a comfortable level of
+illumination.
+~
+0 8 1
+D0
+~
+~
+0 -1 110001
+S
+#110001
+The Capsule Corporation Entrance Hallway~
+ Farther ahead is the main lobby of Capsule Corp.  As it is, you stand a
+little farther in from the entrance.  Except for the placement of two doors
+in this room, the hall has been a long, monothematic walk so far. The same
+cold emptiness of the building continues, though you can hear the warmer
+sounds of talking and the telltale sounds of invention in progress coming
+from deeper inside the building.
+~
+0 8 1
+D0
+~
+~
+0 -1 110004
+D1
+~
+~
+0 -1 110003
+D2
+~
+~
+0 -1 110000
+D3
+~
+~
+0 -1 110002
+S
+#110002
+Professor Briefs' Original Workshop~
+ This tidy little room is well kept, for it is in fact the birthplace of
+what is now Capsule Corporation.  The workshop where the Professor began
+all of his studies, it has been kept in perfect condition as a memento.  A
+small cleaner bot wheels itself around making sure everything is perfect
+and not a speck of dust is on the plain white desk or small bookcase.
+Besides those objects, there is only a chair and small lamp in this room.
+~
+0 538969480 1
+D1
+~
+~
+0 -1 110001
+S
+#110003
+The Janitor's Closet~
+ Back when Professor Briefs' workshop was a tiny little thing, he had a
+janitor come in once a week and clean up for him.  The closet has been
+preseved as well as his could be, with a small cleaning bot roving around
+to take care of dust or any other problems with the small collection of
+mops, buckets, and brooms this room contains.  The shelves are spotless,
+each still with half-full containers of the cleaning supplies the janitor
+used.  It's a simple room built for a simple man.
+~
+0 538969480 1
+D3
+~
+~
+0 -1 110001
+S
+#110004
+The Capsule Corporation Lobby~
+ Here is where the hustle and bustle are most evident.  Men and women
+in lab coats are everywhere around here, some walking from one place
+to another, others racing to or from something you'll probably never
+know of.  Almost opposite of the empty hallway leading to here, this
+room is a hub of social activity.  A line of lights dots the ceiling
+leading farther along to the center of the lobby.
+~
+0 8 1
+D0
+~
+~
+0 -1 110008
+D1
+~
+~
+0 -1 110288
+D2
+~
+~
+0 -1 110001
+D3
+~
+~
+0 -1 110289
+D6
+~
+~
+0 -1 110005
+D7
+~
+~
+0 -1 110007
+S
+#110005
+The Capsule Corporation Lobby~
+ The eastern side of the lobby seems to be a cacaphony of confusion.
+A constant stream of scientists and other workers flows in and out of
+the double doors leading to the workshops and laboratories.  Most seem
+too busy to notice anything at all, their minds lost in their work and
+planning.  Behind these doors is a world of infinate possibility and
+proof that the powers of imagination and ingenuity can truly create
+anything they wish to.
+~
+0 12 1
+D0
+~
+~
+0 -1 110287
+D1
+~
+~
+0 -1 110009
+D2
+~
+~
+0 -1 110288
+D7
+~
+~
+0 -1 110006
+D9
+~
+~
+0 -1 110004
+S
+#110006
+The Capsule Corporation Lobby~
+ The northern end of the lobby sees a bit less traffic than the rest.
+A few of the scientists around here tell some visitors that it's best
+to try to avoid Dr. Briefs while he's in his lab, but it only dissuades
+a few of them.  As far as you can tell, it looks the same as any other
+part of the building, but scanning down the hallway to the north, you
+see the large steel doors to his lab are tightly closed.
+~
+0 12 1
+D0
+~
+~
+0 -1 110071
+D1
+~
+~
+0 -1 110287
+D3
+~
+~
+0 -1 110286
+D8
+~
+~
+0 -1 110005
+D9
+~
+~
+0 -1 110007
+S
+#110007
+The Capsule Corporation Lobby~
+ Though the West Wing of Capsule Corporation is basically off limits
+to visitors, the doors are wide open and the scent of a nice breeze
+can be smelled coming from down the hallway.  Few scientists are either
+coming or going from this direction, but by all seemings, you're free
+to head that way if you wish.
+~
+0 12 1
+D0
+~
+~
+0 -1 110286
+D2
+~
+~
+0 -1 110289
+D3
+~
+~
+0 -1 110083
+D6
+~
+~
+0 -1 110006
+D8
+~
+~
+0 -1 110004
+S
+#110008
+The Receptionist's Desk~
+ The center of the Capsule Corporation lobby is marked by the large,
+semi-circular desk of Matilda, the receptionist.  A hemispherical light
+is in the ceiling directly over her chair, the light which the others
+in the ceiling lead from.  Here to answer all questions for visitors
+and new employees, Matilda has taken care to keep her area immaculate
+and spotless.
+~
+0 12 1
+D2
+~
+~
+0 -1 110004
+S
+#110009
+Entering the Research and Development Wing~
+ The dotted lights expand into much larger rings in the ceiling here,
+giving a warm glow through the length of the hallway leading into the
+Research and Development Wing of Capsule Corporation.  Frequented by
+scientist and sightseer alike, the R & D wing is assumed safe by most
+of Capsule Corporation, and visitors are always welcome to look, but
+warned against getting too close to any of the projects.
+~
+0 12 1
+D1
+~
+~
+0 -1 110010
+D3
+~
+~
+0 -1 110005
+S
+#110010
+The Hallway of Hopes and Progress~
+ Framed and mounted, hung and photographed, here are the memories and
+accomplishments of Capsule Corporation through the years.  Few of the
+scientists notice this part of the walk anymore, but many first timers
+can't help be stand in awe of the history of progression of the once
+small, uninteresting building that became a worldwide technological
+empire.  Photographs of Dr. Briefs giving his daughter her first tool
+kit hang next to the case his own is mounted in.  A trail of hope and
+dreams come to life, this hallway is one that Capsule Corporation is
+very well known for.
+~
+0 12 1
+D1
+~
+~
+0 -1 110011
+D3
+~
+~
+0 -1 110009
+S
+#110011
+The Hallway of Hopes and Progress~
+ As the hallway stretches on, so do the sentimental treasures of the
+building and its inhabitants.  From Bulma's first working machine to
+the remains of Android 16's chest bomb, hardly anything from the ages
+of Capsule Corporation is missing from this hall.  To call it amazing
+would be calling the sun a spark.  It is truly marvelous to behold, and
+many visitors moving on are left with a sense of awe long afterwards.
+~
+0 12 1
+D1
+~
+~
+0 -1 110012
+D3
+~
+~
+0 -1 110010
+S
+#110012
+Divided Paths~
+ As the Hallway of Hopes ends, the hallway itself branches.  A sign
+on the wall ahead states that the North Wing is Matter Displacement
+and that the South Wing leads to Cellular Reconstruction.  Scientists
+flow freely to and from each path, so the choice is up to you.  The
+west hallway will lead out of the Research and Development Wing.
+~
+0 12 1
+D0
+~
+~
+0 -1 110013
+D2
+~
+~
+0 -1 110151
+D3
+~
+~
+0 -1 110011
+S
+#110013
+A Hallway to the Matter Displacement Wing~
+ This is a simple, nondescript hallway leading to the Matter Displacement
+Wing of Capsule Corporations Research and Development Facilities.  On
+occasion, a random scientist or other visitor may wander these halls, but
+other than their immaculate cleanliness, little differentiates this hallway
+from any other.
+~
+0 12 1
+D0
+~
+~
+0 -1 110014
+D2
+~
+~
+0 -1 110012
+S
+#110014
+A Hallway to the Matter Displacement Wing~
+ This is a simple, nondescript hallway leading to the Matter Displacement
+Wing of Capsule Corporations Research and Development Facilities.  On
+occasion, a random scientist or other visitor may wander these halls, but
+other than their immaculate cleanliness, little differentiates this hallway
+from any other.
+~
+0 12 1
+D0
+~
+~
+0 -1 110015
+D2
+~
+~
+0 -1 110013
+S
+#110015
+A Hallway to the Matter Displacement Wing~
+ This is a simple, nondescript hallway leading to the Matter Displacement
+Wing of Capsule Corporations Research and Development Facilities.  On
+occasion, a random scientist or other visitor may wander these halls, but
+other than their immaculate cleanliness, little differentiates this hallway
+from any other.
+~
+0 12 1
+D0
+~
+~
+0 -1 110043
+D2
+~
+~
+0 -1 110014
+S
+#110016
+Matter Displacement - Space Stations~
+ Like the rest of the rooms in this hall, the second sector of the
+Matter Displacement Wing has exits to both the north and the south.
+Clearly labeled on each door is a small sign, idendifying the northern
+door as one leading to the Center of the Universe Space Station and
+the southern door as a path to what they've called the Maverick Space
+Station.  Again, as you stand pondering which way to go, you can't help
+but admire the detail to perfection that each inch of this metallic
+hallway is composed of.  The walls and floors are smooth enough to
+seem one piece of metal each, in fact!
+~
+0 12 1
+D0
+~
+~
+0 -1 110046
+D1
+~
+~
+0 -1 110017
+D2
+~
+~
+0 -1 110047
+D3
+~
+~
+0 -1 110042
+S
+#110017
+Matter Displacement - Alien Worlds~
+ Another stage in the hallway of Matter Displacement, this one seems
+to have a less than balanced flow of traffic.  Very few of the scientists
+running to and fro seem to enter the southern door, though many are
+often seen heading in and out of the door to the north.  As you wonder
+what this could mean, you see the tell-tale signs of where each leads.
+To the north, Planet Namek.  To the south, though, the name of the planet
+is left blank.  Strage...
+~
+0 12 1
+D0
+~
+~
+0 -1 110048
+D1
+~
+~
+0 -1 110150
+D2
+~
+~
+0 -1 110050
+D3
+~
+~
+0 -1 110016
+S
+#110018
+Matter Displacement - Under Construction~
+ It seems this area of the Wing is under construction.  The doors to
+the north and south are closed off, and sounds of labor can be heard
+coming from each.  Capsule Corporation must be preparing to send more
+people into new realms of the universe.  One would do good to check
+back here someday...
+~
+0 12 1
+D0
+~
+~
+0 -1 110049
+D1
+~
+~
+0 -1 110019
+D2
+~
+~
+0 -1 110157
+D3
+~
+~
+0 -1 110150
+S
+#110019
+Matter Displacement - Alien Worlds~
+ One of the few hallways in the Matter Displacement Wing with only one
+doorway, this particular area sees very little in the means of traffic
+stopping by to look around.  It seems the visitors and scientists both
+avoid heading into the door to the north, though this room is as pristine
+and clean as any other.
+~
+0 12 1
+D0
+~
+~
+0 -1 110051
+D1
+~
+~
+0 -1 110020
+D2
+~
+~
+0 -1 110052
+D3
+~
+~
+0 -1 110018
+S
+#110020
+Matter Displacement - Under Construction~
+ It seems this area of the Wing is under construction.  The doors to
+the north and south are closed off, and sounds of labor can be heard
+coming from each.  Capsule Corporation must be preparing to send more
+people into new realms of the universe.  One would do good to check
+back here someday...
+~
+0 12 1
+D0
+~
+~
+0 -1 110053
+D1
+~
+~
+0 -1 110021
+D2
+~
+~
+0 -1 110054
+D3
+~
+~
+0 -1 110019
+S
+#110021
+Matter Displacement - Earth~
+ Another frequently travelled room, this one has exits marked Space Port
+Alpha and Kame House to the north and south, respectively.  Many visitors
+and scientists alike travel in and out of each room of this, also spotless,
+part of the Wing.  Strangely though, not many women are seen entering or
+leaving the door to the south.
+~
+0 12 1
+D0
+~
+~
+0 -1 110055
+D1
+~
+~
+0 -1 110022
+D2
+~
+~
+0 -1 110056
+D3
+~
+~
+0 -1 110020
+S
+#110022
+Northern Wing of R & D - Matter Displacement~
+ The Northern Wing of Research and Development begins here.  Through the
+length of the hallway you see scientists rushing to and fro, from room to
+room.  Some of them come out calling for comrades, some don't come out at
+all.  It seems to be a very strange, yet very busy place this time of day.
+Of course, Capsule Corporation is busy every time of day.
+~
+0 12 1
+D2
+~
+~
+0 -1 110023
+D3
+~
+~
+0 -1 110021
+S
+#110023
+A Warm, Bright Hallway~
+ Simply put, this is a long hallway that emenates a soft orange glow.
+The light seems to come from all around at once, though nothing but the
+metal of the walls, floor, and ceiling could possibly be giving it off.
+Strange as it is, you feel a warmth enter your body, relaxing your mind
+and refreshing your body.
+~
+0 536870924 1
+D0
+~
+~
+0 -1 110022
+D2
+~
+~
+0 -1 110024
+S
+#110024
+A Warm, Bright Hallway~
+ Simply put, this is a long hallway that emenates a soft orange glow.
+The light seems to come from all around at once, though nothing but the
+metal of the walls, floor, and ceiling could possibly be giving it off.
+Strange as it is, you feel a warmth enter your body, relaxing your mind
+and refreshing your body.
+~
+0 536870924 1
+D0
+~
+~
+0 -1 110023
+D2
+~
+~
+0 -1 110025
+S
+#110025
+A Warm, Bright Hallway~
+ Simply put, this is a long hallway that emenates a soft orange glow.
+The light seems to come from all around at once, though nothing but the
+metal of the walls, floor, and ceiling could possibly be giving it off.
+Strange as it is, you feel a warmth enter your body, relaxing your mind
+and refreshing your body.
+~
+0 536870924 1
+D0
+~
+~
+0 -1 110024
+D2
+~
+~
+0 -1 110149
+S
+#110026
+A Warm, Bright Hallway~
+ Simply put, this is a long hallway that emenates a soft orange glow.
+The light seems to come from all around at once, though nothing but the
+metal of the walls, floor, and ceiling could possibly be giving it off.
+Strange as it is, you feel a warmth enter your body, relaxing your mind
+and refreshing your body.
+~
+0 536870924 1
+D0
+~
+~
+0 -1 110149
+D2
+~
+~
+0 -1 110027
+S
+#110027
+A Warm, Bright Hallway~
+ Simply put, this is a long hallway that emenates a soft orange glow.
+The light seems to come from all around at once, though nothing but the
+metal of the walls, floor, and ceiling could possibly be giving it off.
+Strange as it is, you feel a warmth enter your body, relaxing your mind
+and refreshing your body.
+~
+0 536870924 1
+D0
+~
+~
+0 -1 110026
+D2
+~
+~
+0 -1 110028
+S
+#110028
+A Warm, Bright Hallway~
+ Simply put, this is a long hallway that emenates a soft orange glow.
+The light seems to come from all around at once, though nothing but the
+metal of the walls, floor, and ceiling could possibly be giving it off.
+Strange as it is, you feel a warmth enter your body, relaxing your mind
+and refreshing your body.
+~
+0 536870924 1
+D0
+~
+~
+0 -1 110027
+D2
+~
+~
+0 -1 110029
+S
+#110029
+A Warm, Bright Hallway~
+ Simply put, this is a long hallway that emenates a soft orange glow.
+The light seems to come from all around at once, though nothing but the
+metal of the walls, floor, and ceiling could possibly be giving it off.
+Strange as it is, you feel a warmth enter your body, relaxing your mind
+and refreshing your body.
+~
+0 536870924 1
+D0
+~
+~
+0 -1 110028
+D2
+~
+~
+0 -1 110030
+S
+#110030
+Southern Wing of R & D - Cellular Reconstruction~
+ This portion of the East Wing is dedicated to Cellular Reconstruction.
+Compared to the Matter Displacement Wing, this hallway is cluttered with
+carts, filled with busy scientists, and gives off a rather unpleasant
+odor.  As far as you can tell though, visitors are allowed.
+~
+0 12 1
+D0
+~
+~
+0 -1 110029
+D3
+~
+~
+0 -1 110031
+S
+#110031
+Cellular Reconstruction Level 1~
+ So close to the bend leading towards the orange glow to the east, it
+seems this section of the wing is cleaner than those which preceed it.
+Perhaps the director is hoping to have at least a little bit of a good
+impression on visitors, though exploring too much around here would most
+likely shatter that impression rather quickly.
+~
+0 12 1
+D0
+~
+~
+0 -1 110057
+D1
+~
+~
+0 -1 110030
+D2
+~
+~
+0 -1 110058
+D3
+~
+~
+0 -1 110032
+S
+#110032
+Cellular Reconstruction Level 2~
+ The post-apocalyptic-esque rubble seems to shallow out here, compared
+to the rest of the hallway, anyway.  Relishing what little clean air
+you can from this brief respite, you dread the nightmares you know that
+mess in there will sear into your dreams.
+~
+0 12 1
+D0
+~
+~
+0 -1 110059
+D1
+~
+~
+0 -1 110031
+D2
+~
+~
+0 -1 110060
+D3
+~
+~
+0 -1 110146
+S
+#110033
+Cellular Reconstruction Level 4~
+ Do I even need to go on about how trashed this place is by now, or
+are you starting to catch on?
+~
+0 12 1
+D0
+~
+~
+0 -1 110061
+D1
+~
+~
+0 -1 110146
+D2
+~
+~
+0 -1 110062
+D3
+~
+~
+0 -1 110034
+S
+#110034
+Cellular Reconstruction Level 4~
+ Do I even need to go on about how trashed this place is by now, or
+are you starting to catch on?
+~
+0 12 1
+D0
+~
+~
+0 -1 110063
+D1
+~
+~
+0 -1 110033
+D2
+~
+~
+0 -1 110064
+D3
+~
+~
+0 -1 110035
+S
+#110035
+Cellular Reconstruction Level 3~
+ By now stains you'll never identify have begun to soak into the cuffs
+of your pants.  What this refuse has done to your shoes, if you had any,
+is beyond imagination.  In one corner, the heap of trash grunts and
+shifts its weight.  You decide it's best to spend as little time here
+as possible.
+~
+0 12 1
+D0
+~
+~
+0 -1 110065
+D1
+~
+~
+0 -1 110034
+D2
+~
+~
+0 -1 110066
+D3
+~
+~
+0 -1 110036
+S
+#110036
+Cellular Reconstruction Level 2~
+ Out of the frying pan and into the fire.  Each step you take is accented
+with the sound of breaking glass, crinkling paper, or the groan of someone
+most likely sleeping off a long night's work.  The mess gets thicker here,
+moreso than you could have ever imagined.  It seems half of all the technology
+of Capsule Corp is thrown in this very spot.  And that's only the heap of
+it that you're standing on at the moment.  What a mess.
+~
+0 12 1
+D0
+~
+~
+0 -1 110067
+D1
+~
+~
+0 -1 110035
+D2
+~
+~
+0 -1 110068
+D3
+~
+~
+0 -1 110037
+S
+#110037
+Cellular Reconstruction Level 1~
+ The first area of the Cellular Reconstruction project is about as clean
+as it'll be, from the look down the hall.  Apparently the equipment strewn
+about is only put there to allow ease of movement.  None of the scientists
+seem to be worrying about using any of it.  Unlike the Matter Displacement
+project, none of the rooms in this hallway are labeled, save for the glowing
+sign on the ceiling identifying the level of reconstruction...whatever that
+means.
+~
+0 12 1
+D0
+~
+~
+0 -1 110069
+D1
+~
+~
+0 -1 110036
+D2
+~
+~
+0 -1 110070
+D3
+~
+~
+0 -1 110038
+S
+#110038
+Southern Wing of R & D - Cellular Reconstruction~
+ This portion of the East Wing is dedicated to Cellular Reconstruction.
+Compared to the Matter Displacement Wing, this hallway is cluttered with
+carts, filled with busy scientists, and gives off a rather unpleasant
+odor.  As far as you can tell though, visitors are allowed.
+~
+0 12 1
+D0
+~
+~
+0 -1 110039
+D1
+~
+~
+0 -1 110037
+S
+#110039
+A Hallway to the Cellular Reconstruction Wing~
+ The hallway leading to the southern part of the Research and Development
+Wing is a mess.  Loose paper lies on the ground, scientists run around,
+not even noticing the mess...parts of week old lunches still sit on the
+carts around here!  Either the director is a very lazy person, or these
+people have been too hard at work on this project to notice the mess.
+~
+0 12 1
+D0
+~
+~
+0 -1 110040
+D2
+~
+~
+0 -1 110038
+S
+#110040
+A Hallway to the Cellular Reconstruction Wing~
+ The hallway leading to the southern part of the Research and Development
+Wing is a mess.  Loose paper lies on the ground, scientists run around,
+not even noticing the mess...parts of week old lunches still sit on the
+carts around here!  Either the director is a very lazy person, or these
+people have been too hard at work on this project to notice the mess.
+~
+0 12 1
+D0
+~
+~
+0 -1 110041
+D2
+~
+~
+0 -1 110039
+S
+#110041
+A Hallway to the Cellular Reconstruction Wing~
+ The hallway leading to the southern part of the Research and Development
+Wing is a mess.  Loose paper lies on the ground, scientists run around,
+not even noticing the mess...parts of week old lunches still sit on the
+carts around here!  Either the director is a very lazy person, or these
+people have been too hard at work on this project to notice the mess.
+~
+0 12 1
+D0
+~
+~
+0 -1 110151
+D2
+~
+~
+0 -1 110040
+S
+#110042
+Matter Displacement - Earth~
+ The first branch of the Matter Displacement Wing has doors to both the
+north and the south.  Clearly labeled on each door is a small sign, labeling
+the north door South City and the south door Korin's Tower.  This entire hallway,
+from ceiling to floor shines with the luster of polished, sterile, metal.
+Apparently, the director of the Matter Displacement Wing runs a tight ship.
+~
+0 12 1
+D0
+~
+~
+0 -1 110044
+D1
+~
+~
+0 -1 110016
+D2
+~
+~
+0 -1 110045
+D3
+~
+~
+0 -1 110043
+S
+#110043
+Northern Wing of R & D - Matter Displacement~
+ The Northern Wing of Research and Development begins here.  Through the
+length of the hallway you see scientists rushing to and fro, from room to
+room.  Some of them come out calling for comrades, some don't come out at
+all.  It seems to be a very strange, yet very busy place this time of day.
+Of course, Capsule Corporation is busy every time of day.
+~
+0 12 1
+D1
+~
+~
+0 -1 110042
+D2
+~
+~
+0 -1 110015
+S
+#110044
+Matter Displacement - South City~
+ Completely spotless and pure, the Matter Displacement rooms in Capsule
+Corporation all look the same.  Each houses a chamber large enough for
+a few people to stand in, and each has a panel with instructions on how
+to operate the chambers next to it.  Apparently, though, it's quite simple.
+To use the displacement chambers, one has only to say he or she wishes to
+be transported.
+
+ A plaque next to the capsule reads: &C"This chamber will transport the
+&Ctraveller to the center of South City, Friendship Square."
+
+~
+0 1036 1
+D2
+~
+~
+0 -1 110042
+> speech_prog transport me~
+mpecho &YIn a brilliant flash of light, you're instantly transported somewhere else!&D
+mptransfer $n 9001
+~
+|
+S
+#110045
+Matter Displacement - Korin's Tower~
+ Completely spotless and pure, the Matter Displacement rooms in Capsule
+Corporation all look the same.  Each houses a chamber large enough for
+a few people to stand in, and each has a panel with instructions on how
+to operate the chambers next to it.  Apparently, though, it's quite simple.
+To use the displacement chambers, one has only to say he or she wishes to
+be transported.
+
+ A plaque next to the capsule reads: &C"This chamber will transport the
+&Ctraveller to the base of the mysterious monument known as Korin's Tower."
+
+~
+0 1036 1
+D0
+~
+~
+0 -1 110042
+> speech_prog transport me~
+mpecho &YIn a brilliant flash of light, you're instantly transported somewhere else!&D
+mptransfer $n 2121
+~
+|
+S
+#110046
+Matter Displacement - The Center of the Universe Space Station~
+ Completely spotless and pure, the Matter Displacement rooms in Capsule
+Corporation all look the same.  Each houses a chamber large enough for
+a few people to stand in, and each has a panel with instructions on how
+to operate the chambers next to it.  Apparently, though, it's quite simple.
+To use the displacement chambers, one has only to say he or she wishes to
+be transported.
+
+ A plaque next to the capsule reads: &C"This chamber will transport the
+&Ctraveller to the center of the Center of the Universe Space Station,
+&Cwhich is actually only a few thousand miles from Earth itself."
+
+~
+0 1036 1
+D2
+~
+~
+0 -1 110016
+> speech_prog transport me~
+mpecho &YIn a brilliant flash of light, you're instantly transported somewhere else!&D
+mptransfer $n 6000
+~
+|
+S
+#110047
+Matter Displacement - The Maverick Space Station~
+ Completely spotless and pure, the Matter Displacement rooms in Capsule
+Corporation all look the same.  Each houses a chamber large enough for
+a few people to stand in, and each has a panel with instructions on how
+to operate the chambers next to it.  Apparently, though, it's quite simple.
+To use the displacement chambers, one has only to say he or she wishes to
+be transported.
+
+ A plaque next to the capsule reads: &C"This chamber will transport the
+&Ctraveller to the entrance of the Maverick Space Station, a very dangerous
+&Cplace, and hard to escape from for those that are transported there."
+
+~
+0 1036 1
+D0
+~
+~
+0 -1 110016
+> speech_prog transport me~
+mpecho &YIn a brilliant flash of light, you're instantly transported somewhere else!&D
+mptransfer $n 50104
+~
+|
+S
+#110048
+Matter Displacement - Planet Namek~
+ Completely spotless and pure, the Matter Displacement rooms in Capsule
+Corporation all look the same.  Each houses a chamber large enough for
+a few people to stand in, and each has a panel with instructions on how
+to operate the chambers next to it.  Apparently, though, it's quite simple.
+To use the displacement chambers, one has only to say he or she wishes to
+be transported.
+
+ A plaque next to the capsule reads: &C"This chamber will transport the
+&Ctraveller to the center of a small village on the peaceful Planet Namek."
+
+~
+0 1036 1
+D2
+~
+~
+0 -1 110017
+> speech_prog transport me~
+mpecho &YIn a brilliant flash of light, you're instantly transported somewhere else!&D
+mptransfer $n 5003
+~
+|
+S
+#110049
+Matter Displacement - Under Construction~
+ Completely spotless and pure, the Matter Displacement rooms in Capsule
+Corporation all look the same.  Each houses a chamber large enough for
+a few people to stand in, and each has a panel with instructions on how
+to operate the chambers next to it.  Apparently, though, it's quite simple.
+To use the displacement chambers, one has only to say he or she wishes to
+be transported.
+~
+0 1036 1
+D2
+~
+~
+0 -1 110018
+S
+#110050
+Matter Displacement - Unknown Planet~
+ Completely spotless and pure, the Matter Displacement rooms in Capsule
+Corporation all look the same.  Each houses a chamber large enough for
+a few people to stand in, and each has a panel with instructions on how
+to operate the chambers next to it.  Apparently, though, it's quite simple.
+To use the displacement chambers, one has only to say he or she wishes to
+be transported.
+
+ A plaque next to the capsule reads: &C"This chamber will transport the
+&Ctraveller to a safe area on a very dangerous planet we have yet to fully
+&Cexplore.  Travellers are advised to proceed with extreme caution."
+
+~
+0 1036 1
+D0
+~
+~
+0 -1 110017
+> speech_prog transport me~
+mpecho &YIn a brilliant flash of light, you're instantly transported somewhere else!&D
+mptransfer $n 40000
+~
+|
+S
+#110051
+Matter Displacement - Planet Vegeta~
+ Completely spotless and pure, the Matter Displacement rooms in Capsule
+Corporation all look the same.  Each houses a chamber large enough for
+a few people to stand in, and each has a panel with instructions on how
+to operate the chambers next to it.  Apparently, though, it's quite simple.
+To use the displacement chambers, one has only to say he or she wishes to
+be transported.
+
+ A plaque next to the capsule reads: &C"This chamber will transport the
+&Ctraveller to a small hill near the capital city of Planet Vegeta, home
+&Cof the Saiyan race.  Travellers are advised to proceed with extreme caution."
+
+~
+0 1036 1
+D2
+~
+~
+0 -1 110019
+> speech_prog transport me~
+mpecho &YIn a brilliant flash of light, you're instantly transported somewhere else!&D
+mptransfer $n 60000
+~
+|
+S
+#110052
+Matter Displacement - Under Construction~
+ Completely spotless and pure, the Matter Displacement rooms in Capsule
+Corporation all look the same.  Each houses a chamber large enough for
+a few people to stand in, and each has a panel with instructions on how
+to operate the chambers next to it.  Apparently, though, it's quite simple.
+To use the displacement chambers, one has only to say he or she wishes to
+be transported.
+~
+0 1036 1
+D0
+~
+~
+0 -1 110019
+S
+#110053
+Matter Displacement - Under Construction~
+ Completely spotless and pure, the Matter Displacement rooms in Capsule
+Corporation all look the same.  Each houses a chamber large enough for
+a few people to stand in, and each has a panel with instructions on how
+to operate the chambers next to it.  Apparently, though, it's quite simple.
+To use the displacement chambers, one has only to say he or she wishes to
+be transported.
+~
+0 1036 1
+D2
+~
+~
+0 -1 110020
+S
+#110054
+Matter Displacement - Under Construction~
+ Completely spotless and pure, the Matter Displacement rooms in Capsule
+Corporation all look the same.  Each houses a chamber large enough for
+a few people to stand in, and each has a panel with instructions on how
+to operate the chambers next to it.  Apparently, though, it's quite simple.
+To use the displacement chambers, one has only to say he or she wishes to
+be transported.
+~
+0 1036 1
+D0
+~
+~
+0 -1 110020
+S
+#110055
+Matter Displacement - Space Port Alpha~
+ Completely spotless and pure, the Matter Displacement rooms in Capsule
+Corporation all look the same.  Each houses a chamber large enough for
+a few people to stand in, and each has a panel with instructions on how
+to operate the chambers next to it.  Apparently, though, it's quite simple.
+To use the displacement chambers, one has only to say he or she wishes to
+be transported.
+
+ A plaque next to the capsule reads: &C"This chamber will transport the
+&Ctraveller to Space Port Alpha, in the large city of Hercule."
+
+~
+0 1036 1
+D2
+~
+~
+0 -1 110021
+> speech_prog transport me~
+mpecho &YIn a brilliant flash of light, you're instantly transported somewhere else!&D
+mptransfer $n 3871
+~
+|
+S
+#110056
+Matter Displacement - Kame House~
+ Completely spotless and pure, the Matter Displacement rooms in Capsule
+Corporation all look the same.  Each houses a chamber large enough for
+a few people to stand in, and each has a panel with instructions on how
+to operate the chambers next to it.  Apparently, though, it's quite simple.
+To use the displacement chambers, one has only to say he or she wishes to
+be transported.
+
+ A plaque next to the capsule reads: &C"This chamber will transport the
+&Ctraveller to the entrance of Kame House, home of the great Master Roshi.
+&CFemale travellers are advised to proceed with extreme caution."
+
+~
+0 1036 1
+D0
+~
+~
+0 -1 110021
+> speech_prog transport me~
+mpecho &YIn a brilliant flash of light, you're instantly transported somewhere else!&D
+mptransfer $n 2131
+~
+|
+S
+#110057
+Cellular Reconstruction Level 1 - Elite Crane Style Human Warrior~
+ Each room of the Cellular Reconstruction area is identical.  Or rather,
+each room started that way.  As it is, various clutter lies strewn about
+and the entire area is in a general disarray.  The one thing that each
+room does share though, is a large cylinder in the middle of the room.
+~
+0 12 1
+D2
+~
+~
+0 -1 110031
+S
+#110058
+Cellular Reconstruction Level 1 - Royal Crane Style Human Warrior~
+ Each room of the Cellular Reconstruction area is identical.  Or rather,
+each room started that way.  As it is, various clutter lies strewn about
+and the entire area is in a general disarray.  The one thing that each
+room does share though, is a large cylinder in the middle of the room.
+~
+0 12 1
+D0
+~
+~
+0 -1 110031
+S
+#110059
+Cellular Reconstruction Level 2 - Monastic Style/Turtle Style Human Warrior~
+ Each room of the Cellular Reconstruction area is identical.  Or rather,
+each room started that way.  As it is, various clutter lies strewn about
+and the entire area is in a general disarray.  The one thing that each
+room does share though, is a large cylinder in the middle of the room.
+~
+0 12 1
+D2
+~
+~
+0 -1 110032
+S
+#110060
+Cellular Reconstruction Level 2 - Wolf Fang Style/Turtle Style Human Warrior~
+ Each room of the Cellular Reconstruction area is identical.  Or rather,
+each room started that way.  As it is, various clutter lies strewn about
+and the entire area is in a general disarray.  The one thing that each
+room does share though, is a large cylinder in the middle of the room.
+~
+0 12 1
+D0
+~
+~
+0 -1 110032
+S
+#110061
+Cellular Reconstruction Level 4 - Pinnacle of Saiyan Perfection, Type Fusion Dance~
+ Each room of the Cellular Reconstruction area is identical.  Or rather,
+each room started that way.  As it is, various clutter lies strewn about
+and the entire area is in a general disarray.  The one thing that each
+room does share though, is a large cylinder in the middle of the room.
+~
+0 12 1
+D2
+~
+~
+0 -1 110033
+S
+#110062
+Cellular Reconstruction Level 4 - Pinnacle of Saiyan Perfection, Type Earring Fuse~
+ Each room of the Cellular Reconstruction area is identical.  Or rather,
+each room started that way.  As it is, various clutter lies strewn about
+and the entire area is in a general disarray.  The one thing that each
+room does share though, is a large cylinder in the middle of the room.
+~
+0 12 1
+D0
+~
+~
+0 -1 110033
+S
+#110063
+Cellular Reconstruction Level 4 - Pinnacle of Namekian Perfection~
+ Each room of the Cellular Reconstruction area is identical.  Or rather,
+each room started that way.  As it is, various clutter lies strewn about
+and the entire area is in a general disarray.  The one thing that each
+room does share though, is a large cylinder in the middle of the room.
+~
+0 12 1
+D2
+~
+~
+0 -1 110034
+S
+#110064
+Cellular Reconstruction Level 4 - Pinnacle of Human Perfection~
+ Each room of the Cellular Reconstruction area is identical.  Or rather,
+each room started that way.  As it is, various clutter lies strewn about
+and the entire area is in a general disarray.  The one thing that each
+room does share though, is a large cylinder in the middle of the room.
+~
+0 12 1
+D0
+~
+~
+0 -1 110034
+S
+#110065
+Cellular Reconstruction Level 3 - Traditional Icerian Elite Warrior~
+ Each room of the Cellular Reconstruction area is identical.  Or rather,
+each room started that way.  As it is, various clutter lies strewn about
+and the entire area is in a general disarray.  The one thing that each
+room does share though, is a large cylinder in the middle of the room.
+~
+0 12 1
+D2
+~
+~
+0 -1 110035
+S
+#110066
+Cellular Reconstruction Level 3 - Traditional Icerian Elite Warrior~
+ Each room of the Cellular Reconstruction area is identical.  Or rather,
+each room started that way.  As it is, various clutter lies strewn about
+and the entire area is in a general disarray.  The one thing that each
+room does share though, is a large cylinder in the middle of the room.
+~
+0 12 1
+D0
+~
+~
+0 -1 110035
+S
+#110067
+Cellular Reconstruction Level 2 - Unorthodox Namekian Style Warrior~
+ Each room of the Cellular Reconstruction area is identical.  Or rather,
+each room started that way.  As it is, various clutter lies strewn about
+and the entire area is in a general disarray.  The one thing that each
+room does share though, is a large cylinder in the middle of the room.
+~
+0 12 1
+D2
+~
+~
+0 -1 110036
+S
+#110068
+Cellular Reconstruction Level 2 - Unorthodox Namekian Style Warrior~
+ Each room of the Cellular Reconstruction area is identical.  Or rather,
+each room started that way.  As it is, various clutter lies strewn about
+and the entire area is in a general disarray.  The one thing that each
+room does share though, is a large cylinder in the middle of the room.
+~
+0 12 1
+D0
+~
+~
+0 -1 110036
+S
+#110069
+Cellular Reconstruction Level 1 - Traditional Saiyan Warrior~
+ Each room of the Cellular Reconstruction area is identical.  Or rather,
+each room started that way.  As it is, various clutter lies strewn about
+and the entire area is in a general disarray.  The one thing that each
+room does share though, is a large cylinder in the middle of the room.
+
+ Next to this cylindar is a plaque that reads &YSubject: Raditz.  A
+Saiyan warrior that attacked Planet Earth some years ago.  Seems a basic
+form for the Saiyan race as a whole, though hair growth is above normal.
+
+~
+0 12 1
+D2
+~
+~
+0 -1 110037
+S
+#110070
+Cellular Reconstruction Level 1 - Traditional Saiyan Warrior~
+ Each room of the Cellular Reconstruction area is identical.  Or rather,
+each room started that way.  As it is, various clutter lies strewn about
+and the entire area is in a general disarray.  The one thing that each
+room does share though, is a large cylinder in the middle of the room.
+~
+0 12 1
+D0
+~
+~
+0 -1 110037
+S
+#110071
+Hallway to the North Wing~
+ This hallway seems a bit narrower than the rest in the building.  It
+has the same dotted lights above, leading towards the end of it, but
+it seems no more than two or three people could walk side by side in
+comfort at this point.  Dr. Briefs is a pretty social guy, but even
+he enjoys his privacy at times it seems.
+~
+0 12 1
+D0
+~
+~
+0 -1 110072
+D2
+~
+~
+0 -1 110006
+S
+#110072
+Hallway to the North Wing~
+ Two small openings in the wall at this point of the walk house the
+cleaner bots for this wing of the building.  While its infrequent that
+they are ever actually near this small area, it's still a bit interesting
+becuase when you look at the spot in the wall they fit into, you notice
+that had they been in there places, you wouldn't be able to tell them
+from the rest of the wall.  As you innocently admire the craftsmanship
+of the building, a strange sound is heard to the north, followed by a
+quick flash of red light and a scream!
+~
+0 12 1
+D0
+~
+~
+0 -1 110073
+D2
+~
+~
+0 -1 110071
+S
+#110073
+Standing Before the Professor's Lab~
+ You stand before the large, steel double doors of Dr. Briefs' lab.
+A strange smell, reminiscent of ozone, is heavy in the air here for
+some reason.  Just above the door, you notice a small red lens placed
+into the wall.  As far as you can tell, there is no way to open the
+doors.
+~
+0 12 1
+D0
+~
+~
+7 110298 110074
+D2
+~
+~
+0 -1 110072
+S
+#110074
+Professor Briefs' Laboratory~
+ The difference in the laboratory and the building outside is
+astounding.  Soft plush carpet covers all but a few areas and pictures of
+friends and family hang everywhere.  There is a small kitchen area, even a
+small door hinting to a bathroom in the back.  It's no wonder Dr.  Briefs
+is rarely seen outside of his lab...he has everything he could ever need
+right here inside it!
+~
+0 2097292&8 1
+D0
+~
+~
+0 -1 110077
+D1
+~
+~
+0 -1 110075
+D2
+~
+~
+7 110298 110072
+D3
+~
+~
+0 -1 110076
+S
+#110075
+Professor Briefs' Laboratory~
+ This small, kitchenlike area of the lab is well stocked for the long
+haul, as they say.  Fresh produce and meats are engineered to last for
+extended periods of time here, and the shelves and refrigerator seem
+to go back endlessly.  There is enough food to feed an army in here, or
+even a couple of Saiyans.
+~
+0 2097292&8 1
+D0
+~
+~
+0 -1 110078
+D3
+~
+~
+0 -1 110074
+S
+#110076
+Professor Briefs' Laboratory~
+ There is nothing in this area of the lab but a large pile of junk.
+Discarded inventions, worthless blueprints, and failed ideas litter
+the area.  Strange that Dr. Briefs wouldn't have had the cleaner bots
+take care of this yet.  Perhaps he just likes holding on to old ideas.
+~
+0 2097292&8 1
+D0
+~
+~
+0 -1 110079
+D1
+~
+~
+0 -1 110074
+S
+#110077
+Professor Briefs' Laboratory~
+ The center of the lab is cozily decorated.  A small couch and comfortable
+chair sit around a quaint coffee table for when Dr. Briefs has visitors.
+And though the cleaner bots do a good job at what they do, there's no way
+they could have fluffed the furniture to show such a lack of use.  Apparently
+Dr. Briefs doesn't entertain much company.
+~
+0 2097292&8 1
+D0
+~
+~
+0 -1 110080
+D1
+~
+~
+0 -1 110078
+D2
+~
+~
+0 -1 110074
+D3
+~
+~
+0 -1 110079
+S
+#110078
+Professor Briefs' Laboratory~
+ Continuing lack of carpet along the eastern wall gives rise to the
+idea that this is an area where dropping things happens alot.  This
+small area, though, houses Dr. Briefs' computer and rolling chair.
+Why there wouldn't be carpet here seems a bit strange to you, until
+you see the large pile of jelly donuts on the floor next to the chair
+and the massive sippy cup of coffee he needs to make it through the
+long nights.  Apparently, Dr. Briefs, genius that he is, hasn't really
+discovered how unhealthy his diet is.
+~
+0 2097292&8 1
+D0
+~
+~
+0 -1 110082
+D2
+~
+~
+0 -1 110075
+D3
+~
+~
+0 -1 110077
+S
+#110079
+Professor Briefs' Laboratory~
+ This is Capsule Corporation's security panel.  A few dozen monitors
+and a few thousand buttons make up Dr. Briefs' role of surveillance
+in the building, and he seems to enjoy his job.  The 'Smite' button
+just under the monitor showing the hallway outside his lab is almost
+worn down to the keyboard as often as he's pressed it.  Apparently
+even the sanest of scientists are a touch mad...or maybe they just
+enjoy their job.
+~
+0 2097292&8 1
+D0
+~
+~
+0 -1 110081
+D1
+~
+~
+0 -1 110077
+D2
+~
+~
+0 -1 110076
+S
+#110080
+Professor Briefs' Laboratory~
+ The observatory area of Dr. Briefs' lab is taken up with a small stool
+and a large telescope.  Next to them is a writing table with a few notes
+written on the scraps of paper on it.  A rather uninteresting room for
+most, there isn't really much here to draw attention.
+~
+0 2097292&8 1
+D1
+~
+~
+0 -1 110082
+D2
+~
+~
+0 -1 110077
+D3
+~
+~
+0 -1 110081
+S
+#110081
+Professor Briefs' Laboratory~
+ This is Dr. Briefs' bedroom, per se.  A comfortable, twin sized bed
+with a lamp and nightstand next to it makes for a cozy nights rest
+after a long day's work.  From the look of the sheets though, it doesn't
+wind up getting much use.  It looks like its never been slept in at all.
+Either Dr. Briefs works even harder than he is rumored to, or those
+cleaner bots do their job remarkably well.
+~
+0 2097292&8 1
+D1
+~
+~
+0 -1 110080
+D2
+~
+~
+0 -1 110079
+S
+#110082
+Professor Briefs' Laboratory~
+ Here he is.  The man, the myth, the legend...and that stuipd cat thing
+too.  Dr. Briefs' private study area is very well organized, contrary to
+what you may have thought.  File cabinets and shelves upon shelves take
+up almost every bit of spare room in this area, and the carpeted floor
+is worn threadbare from pacing.  Wrapped up in his work, it seems Dr.
+Briefs hasn't even noticed you coming in.
+~
+0 2097292&8 1
+D2
+~
+~
+0 -1 110078
+D3
+~
+~
+0 -1 110080
+S
+#110083
+Hallway to the West Wing~
+ The hallway is unnecessarily wide at this point, allowing almost a half
+dozen people to walk comfortably wherever they wish.  However, this part
+of the hallway is usually attended to by two large cyborgs, guardians of
+the west wing.  It's a place you should either walk lightly in when they're
+around or try to rush through.  But they're probably here to keep people
+from going in for a reason, right?
+~
+0 12 1
+D1
+~
+~
+0 -1 110007
+D3
+~
+~
+0 -1 110084
+S
+#110084
+Hallway to the West Wing~
+ The wide hallway leading to the West Wing continues.  Stationed in
+this room, like the one to the east are two large figures, absolutely
+identical to each other and the two in the next room.  Further on to
+the west, you can see that the hallway ends soon and branches.
+~
+0 12 1
+D1
+~
+~
+0 -1 110083
+D3
+~
+~
+0 -1 110085
+S
+#110085
+Hallway to the West Wing~
+ Empty.  This portion of the hall is completely empty, without even a
+scientist in it.  It's almost creepy how quiet things are.  Maybe it's
+a sign of something ominious further ahead...
+~
+0 12 1
+D1
+~
+~
+0 -1 110084
+D3
+~
+~
+0 -1 110086
+S
+#110086
+Hallway to the West Wing~
+ At the end of the hallway leadin to the West Wing, there are two
+branches.  The one to the north seems dark and forboding.  In fact,
+you're unable to even see to the end of the hall.  Maybe there's a
+good reason visitors aren't allowed in this part of the building.
+To the south, though, is a door leading outside by the looks of it.
+~
+0 12 1
+D0
+~
+~
+0 -1 110091
+D1
+~
+~
+0 -1 110085
+D2
+~
+~
+0 -1 110087
+S
+#110087
+Exit of the West Wing~
+ Well this is it.  Capsule Corporation's only other exit.  It's strange,
+but you don't quite feel like you'll be welcome here.  It's a small,
+simple door that's open freely with sounds of frivolity flowing in from
+outside.  Of course, you can always head back to the north for some more
+looking around the Corporation.
+~
+0 8 1
+D0
+~
+~
+0 -1 110086
+D2
+~
+~
+0 -1 110088
+S
+#110088
+Stepping Out~
+ You're standing on a small stone path leading out of the building.
+Further ahead, some people are lounging and enjoying the weather.
+There isn't really anything that stands out about this area, but while
+standing here enjoying the weather, you're narrowly missed by the
+droppings of some bird far, far above.  Gross.
+~
+0 12 1
+D0
+~
+~
+0 -1 110087
+D2
+~
+~
+0 -1 110089
+S
+#110089
+Walkway to the Promenade~
+ The stone walkway ends here at the beginning of a large, round patio,
+a Promenade of sorts.  It seems a friendly, inviting place.  No matter
+how bad the weather, or what time of night, these people seem to be
+out here, doing the same things they're always doing.
+~
+0 12 1
+D0
+~
+~
+0 -1 110088
+D2
+~
+~
+0 -1 110090
+S
+#110090
+A Small Promenade~
+ At this edge of the patio, Bulma's mom is greeting everyone and everything
+that is within sight of her and probably a few things that only she can see.
+Either way, she's the kind of person that makes the day a little brighter and
+food a little tastier than anyone else can.  Besides her, about the only thing
+here are a few patio chairs around a table with an umbrella in it.
+~
+0 12 1
+D0
+~
+~
+0 -1 110089
+D1
+~
+~
+0 -1 110145
+D2
+~
+~
+0 -1 110153
+D3
+~
+~
+0 -1 110144
+S
+#110091
+The West Wing~
+ The lights flicker here, as if someone is either lax on the upkeep or
+just wishing to drive away company.  Nonetheless, the hall continues to
+the north and south, with the south being a much brighter, cheerier place.
+~
+0 12 1
+D0
+~
+~
+0 -1 110092
+D2
+~
+~
+0 -1 110086
+S
+#110092
+The West Wing~
+ Nearing the end of this hallway, a rancid, metallic stench is starting
+to tickle your nose.  It doesn't smell like blood, but it seems to be
+coming from beyond the door to the north.  Perhaps you should stick with
+the advice of the employees and stay away from this area...?
+~
+0 12 1
+D0
+~
+~
+0 -1 110093
+D2
+~
+~
+0 -1 110091
+S
+#110093
+The West Wing~
+ Here it is.  Beyond this doorway is the source of the stench and all
+around dark feeling to this Wing of the building.  You still have time
+to turn back, you know...
+~
+0 12 1
+D0
+~
+~
+0 -1 110094
+D2
+~
+~
+0 -1 110092
+S
+#110094
+Entrance to the Basement~
+ All there is to this small, simple room is a staircase leading down to
+a deeper part of the building and the same door you came through to get
+here.  The plaster is peeling, the floor is rotted...it is definately
+not a pretty picture.
+~
+0 12 1
+D2
+~
+~
+0 -1 110093
+D5
+~
+~
+0 -1 110095
+S
+#110095
+Capsule Corporation's Basement~
+ Even this close to the surface world you can hear the screaming of metal
+grinding against metal from below.  The thought is not unlike that of a
+robot being tortured, though this is a childish thought...right?
+~
+0 12 1
+D2
+~
+~
+0 -1 110096
+D4
+~
+~
+0 -1 110094
+S
+#110096
+Capsule Corporation's Basement~
+ Piles of broken machines and rejected inventions lay strewn about here.
+Apparently, when Capsule Corporation wants to remove something from sight
+and not quite get rid of it, they store it down here.  Some of the bits
+and pieces have been corroded completely through, while others shine as
+if they had been polished moments ago.  Truly, this is a creepy place.
+~
+0 12 1
+D0
+~
+~
+0 -1 110095
+D2
+~
+~
+0 -1 110097
+S
+#110097
+Capsule Corporation's Basement~
+ Occasionally called the "Oil Room," this part of the basement's floor
+curves inward a bit, letting the runoff of the other rooms collect into
+one greasy, disgusting mess here.  The cleaner bots won't go down this
+far, so this room has been drawing in more and more heavy liquid over
+the course of the many years its been here.
+~
+0 12 1
+D0
+~
+~
+0 -1 110096
+D2
+~
+~
+0 -1 110098
+S
+#110098
+Capsule Corporation's Basement~
+~
+0 12 1
+D0
+~
+~
+0 -1 110097
+D2
+~
+~
+0 -1 110099
+S
+#110099
+Capsule Corporation's Basement~
+ Besides the gross amounts of junk and inventions laying here and there,
+this room has a thin, rusty ladder protruding from the floor that leads
+deeper into this reeking, hellish pit of inspiration's nightmare.  Further
+on to the south is yet another room, though you can't tell what's in it
+from here.
+~
+0 12 1
+D0
+~
+~
+0 -1 110098
+D2
+~
+~
+0 -1 110100
+D5
+~
+~
+0 -1 110101
+S
+#110100
+Capsule Corporation's Basement~
+ There is nothing really to this room but boxes.  Hundreds upon hundreds
+of boxes are stacked neatly against the walls.  At least some part of
+this place is organized.
+~
+0 12 1
+D0
+~
+~
+0 -1 110099
+S
+#110101
+Descending a Rusty Ladder~
+ The slippery rungs of the ladder are far from sure footing.  Each step
+down looks like it could be the last...and the bottom of this place doesn't
+look like something anyone would want to land on.  Oh well, there's always
+flying, isn't there?
+~
+0 12 1
+D4
+~
+~
+0 -1 110099
+D5
+~
+~
+0 -1 110102
+S
+#110102
+Descending a Rusty Ladder~
+ The slippery rungs of the ladder are far from sure footing.  Each step
+down looks like it could be the last...and the bottom of this place doesn't
+look like something anyone would want to land on.  Oh well, there's always
+flying, isn't there?
+~
+0 12 1
+D4
+~
+~
+0 -1 110101
+D5
+~
+~
+0 -1 110103
+S
+#110103
+Descending a Rusty Ladder~
+ The slippery rungs of the ladder are far from sure footing.  Each step
+down looks like it could be the last...and the bottom of this place doesn't
+look like something anyone would want to land on.  Oh well, there's always
+flying, isn't there?
+~
+0 12 1
+D4
+~
+~
+0 -1 110102
+D5
+~
+~
+0 -1 110104
+S
+#110104
+Descending a Rusty Ladder~
+ The slippery rungs of the ladder are far from sure footing.  Each step
+down looks like it could be the last...and the bottom of this place doesn't
+look like something anyone would want to land on.  Oh well, there's always
+flying, isn't there?
+~
+0 12 1
+D4
+~
+~
+0 -1 110103
+D5
+~
+~
+0 -1 110105
+S
+#110105
+Descending a Rusty Ladder~
+ The actual end of this ladder is buried under a mountain of scrap metal
+and broken appliances.  The descent leaves you standing on top of this
+mound of mechanical madness and with a feeling that maybe it would be a
+better idea to just head back up...
+~
+0 12 1
+D1
+~
+~
+0 -1 110106
+D4
+~
+~
+0 -1 110104
+S
+#110106
+The Mechacombs of Capsule Corporation~
+ The Mechacombs, as they are called by the employees unfortunate enough
+to wind up down here, are nothing more than dumping grounds.  To call
+this place the equivalent of a dump would be to call the sun a candle.
+Broken bodies of androids, hollowed shells of devices, and the horrible
+stench of something burning are all you can take in down here.  It's
+like something out of a mechanic's worst nightmare.
+~
+0 12 1
+D1
+~
+~
+0 -1 110107
+D3
+~
+~
+0 -1 110105
+S
+#110107
+The Mechacombs of Capsule Corporation~
+ The Mechacombs, as they are called by the employees unfortunate enough
+to wind up down here, are nothing more than dumping grounds.  To call
+this place the equivalent of a dump would be to call the sun a candle.
+Broken bodies of androids, hollowed shells of devices, and the horrible
+stench of something burning are all you can take in down here.  It is
+like something out of a mechanic's worst nightmare.
+~
+0 12 1
+D1
+~
+~
+0 -1 110108
+D3
+~
+~
+0 -1 110106
+S
+#110108
+The Mechacombs of Capsule Corporation~
+ The Mechacombs, as they are called by the employees unfortunate enough
+to wind up down here, are nothing more than dumping grounds.  To call
+this place the equivalent of a dump would be to call the sun a candle.
+Broken bodies of androids, hollowed shells of devices, and the horrible
+stench of something burning are all you can take in down here.  It is
+like something out of a mechanic's worst nightmare.
+~
+0 12 1
+D1
+~
+~
+0 -1 110109
+D3
+~
+~
+0 -1 110107
+S
+#110109
+The Mechacombs of Capsule Corporation~
+The Mechacombs, as they are called by the employees unfortunate enough
+to wind up down here, are nothing more than dumping grounds.  To call
+this place the equivalent of a dump would be to call the sun a candle.
+Broken bodies of androids, hollowed shells of devices, and the horrible
+stench of something burning are all you can take in down here.  It is
+like something out of a mechanic's worst nightmare.
+~
+0 12 1
+D0
+~
+~
+0 -1 110110
+D2
+~
+~
+0 -1 110113
+D3
+~
+~
+0 -1 110108
+S
+#110110
+The Mechacombs of Capsule Corporation~
+The Mechacombs, as they are called by the employees unfortunate enough
+to wind up down here, are nothing more than dumping grounds.  To call
+this place the equivalent of a dump would be to call the sun a candle.
+Broken bodies of androids, hollowed shells of devices, and the horrible
+stench of something burning are all you can take in down here.  It is
+like something out of a mechanic's worst nightmare.
+~
+0 12 1
+D2
+~
+~
+0 -1 110109
+D3
+~
+~
+0 -1 110111
+S
+#110111
+The Mechacombs of Capsule Corporation~
+The Mechacombs, as they are called by the employees unfortunate enough
+to wind up down here, are nothing more than dumping grounds.  To call
+this place the equivalent of a dump would be to call the sun a candle.
+Broken bodies of androids, hollowed shells of devices, and the horrible
+stench of something burning are all you can take in down here.  It is
+like something out of a mechanic's worst nightmare.
+~
+0 12 1
+D0
+~
+~
+0 -1 110112
+D1
+~
+~
+0 -1 110110
+S
+#110112
+The Mechacombs of Capsule Corporation~
+The Mechacombs, as they are called by the employees unfortunate enough
+to wind up down here, are nothing more than dumping grounds.  To call
+this place the equivalent of a dump would be to call the sun a candle.
+Broken bodies of androids, hollowed shells of devices, and the horrible
+stench of something burning are all you can take in down here.  It is
+like something out of a mechanic's worst nightmare.
+~
+0 12 1
+D2
+~
+~
+0 -1 110111
+S
+#110113
+The Mechacombs of Capsule Corporation~
+The Mechacombs, as they are called by the employees unfortunate enough
+to wind up down here, are nothing more than dumping grounds.  To call
+this place the equivalent of a dump would be to call the sun a candle.
+Broken bodies of androids, hollowed shells of devices, and the horrible
+stench of something burning are all you can take in down here.  It is
+like something out of a mechanic's worst nightmare.
+~
+0 12 1
+D0
+~
+~
+0 -1 110109
+D2
+~
+~
+0 -1 110114
+S
+#110114
+The Mechacombs of Capsule Corporation~
+The Mechacombs, as they are called by the employees unfortunate enough
+to wind up down here, are nothing more than dumping grounds.  To call
+this place the equivalent of a dump would be to call the sun a candle.
+Broken bodies of androids, hollowed shells of devices, and the horrible
+stench of something burning are all you can take in down here.  It is
+like something out of a mechanic's worst nightmare.
+~
+0 12 1
+D0
+~
+~
+0 -1 110113
+D2
+~
+~
+0 -1 110115
+S
+#110115
+The Mechacombs of Capsule Corporation~
+The Mechacombs, as they are called by the employees unfortunate enough
+to wind up down here, are nothing more than dumping grounds.  To call
+this place the equivalent of a dump would be to call the sun a candle.
+Broken bodies of androids, hollowed shells of devices, and the horrible
+stench of something burning are all you can take in down here.  It is
+like something out of a mechanic's worst nightmare.
+~
+0 12 1
+D0
+~
+~
+0 -1 110114
+D1
+~
+~
+0 -1 110116
+D2
+~
+~
+0 -1 110120
+S
+#110116
+The Mechacombs of Capsule Corporation~
+The Mechacombs, as they are called by the employees unfortunate enough
+to wind up down here, are nothing more than dumping grounds.  To call
+this place the equivalent of a dump would be to call the sun a candle.
+Broken bodies of androids, hollowed shells of devices, and the horrible
+stench of something burning are all you can take in down here.  It is
+like something out of a mechanic's worst nightmare.
+~
+0 12 1
+D0
+~
+~
+0 -1 110121
+D2
+~
+~
+0 -1 110117
+D3
+~
+~
+0 -1 110115
+S
+#110117
+The Mechacombs of Capsule Corporation~
+The Mechacombs, as they are called by the employees unfortunate enough
+to wind up down here, are nothing more than dumping grounds.  To call
+this place the equivalent of a dump would be to call the sun a candle.
+Broken bodies of androids, hollowed shells of devices, and the horrible
+stench of something burning are all you can take in down here.  It is
+like something out of a mechanic's worst nightmare.
+~
+0 12 1
+D0
+~
+~
+0 -1 110116
+D1
+~
+~
+0 -1 110118
+S
+#110118
+The Mechacombs of Capsule Corporation~
+The Mechacombs, as they are called by the employees unfortunate enough
+to wind up down here, are nothing more than dumping grounds.  To call
+this place the equivalent of a dump would be to call the sun a candle.
+Broken bodies of androids, hollowed shells of devices, and the horrible
+stench of something burning are all you can take in down here.  It is
+like something out of a mechanic's worst nightmare.
+~
+0 12 1
+D0
+~
+~
+0 -1 110119
+D3
+~
+~
+0 -1 110117
+S
+#110119
+The Mechacombs of Capsule Corporation~
+The Mechacombs, as they are called by the employees unfortunate enough
+to wind up down here, are nothing more than dumping grounds.  To call
+this place the equivalent of a dump would be to call the sun a candle.
+Broken bodies of androids, hollowed shells of devices, and the horrible
+stench of something burning are all you can take in down here.  It is
+like something out of a mechanic's worst nightmare.
+~
+0 12 1
+D2
+~
+~
+0 -1 110118
+S
+#110120
+The Mechacombs of Capsule Corporation~
+The Mechacombs, as they are called by the employees unfortunate enough
+to wind up down here, are nothing more than dumping grounds.  To call
+this place the equivalent of a dump would be to call the sun a candle.
+Broken bodies of androids, hollowed shells of devices, and the horrible
+stench of something burning are all you can take in down here.  It is
+like something out of a mechanic's worst nightmare.
+~
+0 12 1
+D0
+~
+~
+0 -1 110115
+S
+#110121
+The Mechacombs of Capsule Corporation~
+The Mechacombs, as they are called by the employees unfortunate enough
+to wind up down here, are nothing more than dumping grounds.  To call
+this place the equivalent of a dump would be to call the sun a candle.
+Broken bodies of androids, hollowed shells of devices, and the horrible
+stench of something burning are all you can take in down here.  It is
+like something out of a mechanic's worst nightmare.
+~
+0 12 1
+D0
+~
+~
+0 -1 110122
+D2
+~
+~
+0 -1 110116
+S
+#110122
+The Mechacombs of Capsule Corporation~
+The Mechacombs, as they are called by the employees unfortunate enough
+to wind up down here, are nothing more than dumping grounds.  To call
+this place the equivalent of a dump would be to call the sun a candle.
+Broken bodies of androids, hollowed shells of devices, and the horrible
+stench of something burning are all you can take in down here.  It is
+like something out of a mechanic's worst nightmare.
+~
+0 12 1
+D1
+~
+~
+0 -1 110123
+D2
+~
+~
+0 -1 110121
+D3
+~
+~
+0 -1 110124
+S
+#110123
+The Mechacombs of Capsule Corporation~
+The Mechacombs, as they are called by the employees unfortunate enough
+to wind up down here, are nothing more than dumping grounds.  To call
+this place the equivalent of a dump would be to call the sun a candle.
+Broken bodies of androids, hollowed shells of devices, and the horrible
+stench of something burning are all you can take in down here.  It is
+like something out of a mechanic's worst nightmare.
+~
+0 4 1
+D3
+~
+~
+0 -1 110122
+S
+#110124
+The Mechacombs of Capsule Corporation~
+The Mechacombs, as they are called by the employees unfortunate enough
+to wind up down here, are nothing more than dumping grounds.  To call
+this place the equivalent of a dump would be to call the sun a candle.
+Broken bodies of androids, hollowed shells of devices, and the horrible
+stench of something burning are all you can take in down here.  It is
+like something out of a mechanic's worst nightmare.
+~
+0 12 1
+D1
+~
+~
+0 -1 110122
+D2
+~
+~
+0 -1 110125
+S
+#110125
+The Mechacombs of Capsule Corporation~
+The Mechacombs, as they are called by the employees unfortunate enough
+to wind up down here, are nothing more than dumping grounds.  To call
+this place the equivalent of a dump would be to call the sun a candle.
+Broken bodies of androids, hollowed shells of devices, and the horrible
+stench of something burning are all you can take in down here.  It is
+like something out of a mechanic's worst nightmare.
+~
+0 12 1
+D0
+~
+~
+0 -1 110124
+D5
+~
+~
+0 -1 110126
+S
+#110126
+The Nightmare~
+ The small hole in the floor from above has dropped you truly into a
+place of horrors beyond imagination.  Akin to the intelligence the
+machines above were developing, the area down here seems to be an almost
+sentient wave of barbaric rage.  The sounds are too horrible for you to
+describe or ever want to remember...but you won't have a choice after
+too long down here.
+~
+0 12 1
+D0
+~
+~
+0 -1 110127
+D3
+~
+~
+0 -1 110130
+D4
+~
+~
+0 -1 110125
+S
+#110127
+The Nightmare~
+The Nightmare seems endless.  Shattered husks of failed androids lie
+lifelessly among mundane sheet metal and machines whose uses could only
+be guessed.  Through it all, a dim shower of sparks comes from the
+horizon, lighting the way for visitors and giving life to the Nightmare.
+~
+0 12 1
+D1
+~
+~
+0 -1 110128
+D2
+~
+~
+0 -1 110126
+S
+#110128
+The Nightmare~
+The Nightmare seems endless.  Shattered husks of failed androids lie
+lifelessly among mundane sheet metal and machines whose uses could only
+be guessed.  Through it all, a dim shower of sparks comes from the
+horizon, lighting the way for visitors and giving life to the Nightmare.
+~
+0 12 1
+D2
+~
+~
+0 -1 110129
+D3
+~
+~
+0 -1 110127
+S
+#110129
+The Nightmare~
+ The Nightmare seems endless.  Shattered husks of failed androids lie
+lifelessly among mundane sheet metal and machines whose uses could only
+be guessed.  Through it all, a dim shower of sparks comes from the
+horizon, lighting the way for visitors and giving life to the Nightmare.
+~
+0 12 1
+D0
+~
+~
+0 -1 110128
+S
+#110130
+The Nightmare~
+The Nightmare seems endless.  Shattered husks of failed androids lie
+lifelessly among mundane sheet metal and machines whose uses could only
+be guessed.  Through it all, a dim shower of sparks comes from the
+horizon, lighting the way for visitors and giving life to the Nightmare.
+~
+0 12 1
+D1
+~
+~
+0 -1 110126
+D3
+~
+~
+0 -1 110131
+S
+#110131
+The Nightmare~
+The Nightmare seems endless.  Shattered husks of failed androids lie
+lifelessly among mundane sheet metal and machines whose uses could only
+be guessed.  Through it all, a dim shower of sparks comes from the
+horizon, lighting the way for visitors and giving life to the Nightmare.
+~
+0 12 1
+D0
+~
+~
+0 -1 110134
+D1
+~
+~
+0 -1 110130
+D2
+~
+~
+0 -1 110132
+S
+#110132
+The Nightmare~
+The Nightmare seems endless.  Shattered husks of failed androids lie
+lifelessly among mundane sheet metal and machines whose uses could only
+be guessed.  Through it all, a dim shower of sparks comes from the
+horizon, lighting the way for visitors and giving life to the Nightmare.
+~
+0 12 1
+D0
+~
+~
+0 -1 110131
+D3
+~
+~
+0 -1 110133
+S
+#110133
+The Nightmare~
+The Nightmare seems endless.  Shattered husks of failed androids lie
+lifelessly among mundane sheet metal and machines whose uses could only
+be guessed.  Through it all, a dim shower of sparks comes from the
+horizon, lighting the way for visitors and giving life to the Nightmare.
+~
+0 12 1
+D1
+~
+~
+0 -1 110132
+S
+#110134
+The Nightmare~
+The Nightmare seems endless.  Shattered husks of failed androids lie
+lifelessly among mundane sheet metal and machines whose uses could only
+be guessed.  Through it all, a dim shower of sparks comes from the
+horizon, lighting the way for visitors and giving life to the Nightmare.
+~
+0 12 1
+D0
+~
+~
+0 -1 110135
+D2
+~
+~
+0 -1 110131
+S
+#110135
+The Nightmare~
+The Nightmare seems endless.  Shattered husks of failed androids lie
+lifelessly among mundane sheet metal and machines whose uses could only
+be guessed.  Through it all, a dim shower of sparks comes from the
+horizon, lighting the way for visitors and giving life to the Nightmare.
+~
+0 12 1
+D1
+~
+~
+0 -1 110136
+D2
+~
+~
+0 -1 110134
+S
+#110136
+The Nightmare~
+The Nightmare seems endless.  Shattered husks of failed androids lie
+lifelessly among mundane sheet metal and machines whose uses could only
+be guessed.  Through it all, a dim shower of sparks comes from the
+horizon, lighting the way for visitors and giving life to the Nightmare.
+~
+0 12 1
+D0
+~
+~
+0 -1 110137
+D3
+~
+~
+0 -1 110135
+S
+#110137
+The Nightmare~
+The Nightmare seems endless.  Shattered husks of failed androids lie
+lifelessly among mundane sheet metal and machines whose uses could only
+be guessed.  Through it all, a dim shower of sparks comes from the
+horizon, lighting the way for visitors and giving life to the Nightmare.
+~
+0 2097164 1
+D2
+~
+~
+0 -1 110136
+D3
+~
+~
+0 -1 110138
+S
+#110138
+The Nightmare~
+The Nightmare seems endless.  Shattered husks of failed androids lie
+lifelessly among mundane sheet metal and machines whose uses could only
+be guessed.  Through it all, a dim shower of sparks comes from the
+horizon, lighting the way for visitors and giving life to the Nightmare.
+~
+0 2097164 1
+D1
+~
+~
+0 -1 110137
+D3
+~
+~
+0 -1 110139
+S
+#110139
+The Nightmare~
+The Nightmare seems endless.  Shattered husks of failed androids lie
+lifelessly among mundane sheet metal and machines whose uses could only
+be guessed.  Through it all, a dim shower of sparks comes from the
+horizon, lighting the way for visitors and giving life to the Nightmare.
+~
+0 2097164 1
+D0
+~
+~
+0 -1 110140
+D1
+~
+~
+0 -1 110138
+S
+#110140
+The Forgotten Room~
+ The Nightmare stops.  It doesn't decline, it doesn't relent, it just
+stops.  At the end of it, though, is a sight far more horrific than
+any part of what you've come through.  This is the place of the Great
+Machine.  Lifeless bodies of visitors and scientists alike are here,
+killed by the heartless machine that was built to do nothing else.
+~
+0 2097164 1
+D0
+~
+~
+0 -1 110141
+D2
+~
+~
+0 -1 110139
+S
+#110141
+The Scrapyard~
+ If what you walked through before was a Nightmare, this is a cold chill.
+Small piles of scrap and dead machinery lie everywhere.  As if a calm
+after a storm, this place is eerily quiet.
+~
+0 538968332 1
+D1
+~
+~
+0 -1 110142
+D2
+~
+~
+0 -1 110140
+D3
+~
+~
+0 -1 110143
+S
+#110142
+Mechanic's Workshop~
+This mechanic's workshop has pieces of trash stacked everywhere.
+The concrete floor has one huge oil stain covering its entire surface.
+Scattered around the room and in the piles of trash are many pieces of
+twisted scrap metal, suits of torn-apart armor, chunks of plastic, and
+all sorts of old junk. Some of it looks like it may be useful, but
+the vast majority is just trash.
+~
+0 538968332 1
+D3
+~
+~
+0 -1 110141
+S
+#110143
+The Scrapyard~
+ If what you walked through before was a Nightmare, this is a cold chill.
+Small piles of scrap and dead machinery lie everywhere.  As if a calm
+after a storm, this place is eerily quiet.
+
+ The door to the north has a sign labeled &r"DO NOT ENTER!"&d
+~
+0 538968332 1
+D1
+~
+~
+0 -1 110141
+> entry_prog 100~
+if race($n) == android
+mpecho &CBulma squeals with delight at the sight of an android and
+mpecho &Cgrabs you tightly, shoving you into her lab to the north!!
+mpforce $n n
+endif
+~
+|
+S
+#110144
+A Small Promenade~
+ This small, shaded part of the promenade is where Krillin's family
+likes to relax.  His daughter's toys lie strewn about and his wife
+stands dispassionately to the side.  On occasion, though she gives
+her daughter a quiet smile.  They're the ideal image of the perfect
+family...well, as perfect as one can be with a half-android daughter!
+~
+0 12 1
+D1
+~
+~
+0 -1 110090
+S
+#110145
+A Small Promenade~
+ This peaceful corner of the promenade is where Yamcha comes to relax.
+Next to his usual seat rests a badmiton racket, though it doesn't seem
+to get any more play than he does these days. This is a small, shaded
+portion of of the patio, and seems to have enough room to comfortably
+stretch out...or make trouble.
+~
+0 12 1
+D2
+~
+~
+0 -1 110154
+D3
+~
+~
+0 -1 110090
+S
+#110146
+Cellular Reconstruction Level 3~
+ As heaped up as the garbage is in the middle of this hallway, it's the
+smell of this particular area that's truly stomach turning.  Week old
+fish left in the sun and soaked in vomit is the kind of smell this place
+might had had two years ago.  You can't help it...the smell overpowers
+you and you retch, adding to the mess around you.
+~
+0 12 1
+D0
+~
+~
+0 -1 110147
+D1
+~
+~
+0 -1 110032
+D2
+~
+~
+0 -1 110148
+D3
+~
+~
+0 -1 110033
+> entry_prog 100~
+mpforce $n puke
+~
+|
+S
+#110147
+Cellular Reconstruction Level 3 - Multi-Specialized Saiyan~
+ Each room of the Cellular Reconstruction area is identical.  Or rather,
+each room started that way.  As it is, various clutter lies strewn about
+and the entire area is in a general disarray.  The one thing that each
+room does share though, is a large cylinder in the middle of the room.
+~
+0 12 1
+D2
+~
+~
+0 -1 110146
+S
+#110148
+Cellular Reconstruction Level 3 - Perfect Saiyan Elite Warrior~
+ Each room of the Cellular Reconstruction area is identical.  Or rather,
+each room started that way.  As it is, various clutter lies strewn about
+and the entire area is in a general disarray.  The one thing that each
+room does share though, is a large cylinder in the middle of the room.
+~
+0 12 1
+D0
+~
+~
+0 -1 110146
+S
+#110149
+A Warm, Bright Hallway~
+ Simply put, this is a long hallway that emenates a soft orange glow.
+The light seems to come from all around at once, though nothing but the
+metal of the walls, floor, and ceiling could possibly be giving it off.
+Strange as it is, you feel a warmth enter your body, relaxing your mind
+and refreshing your body.
+~
+0 536870924 1
+D0
+~
+~
+0 -1 110025
+D2
+~
+~
+0 -1 110026
+S
+#110150
+Matter Displacement - Under Construction~
+ It seems this area of the Wing is under construction.  The doors to
+the north and south are closed off, and sounds of labor can be heard
+coming from each.  Capsule Corporation must be preparing to send more
+people into new realms of the universe.  One would do good to check
+back here someday...
+~
+0 12 1
+D0
+~
+~
+0 -1 110155
+D1
+~
+~
+0 -1 110018
+D2
+~
+~
+0 -1 110156
+D3
+~
+~
+0 -1 110017
+S
+#110151
+A Hallway to the Cellular Reconstruction Wing~
+ The hallway leading to the southern part of the Research and Development
+Wing is a mess.  Loose paper lies on the ground, scientists run around,
+not even noticing the mess...parts of week old lunches still sit on the
+carts around here!  Either the director is a very lazy person, or these
+people have been too hard at work on this project to notice the mess.
+~
+0 12 1
+D0
+~
+~
+0 -1 110012
+D2
+~
+~
+0 -1 110041
+S
+#110152
+The Capsule Corporation Gravity Pod~
+ This big, round room is usually occupied by one person and one person
+alone, Vegeta, the Prince of the Saiyan Race. The gravity in the room
+is oppressive, even to the hardiest of warriors and there isn't a sign
+of food or a place to rest anywhere. Each second that passes feels like
+its taken a week to do...every part of this room is stress on one part
+of the body or another.
+~
+0 807403532 1
+D1
+~
+~
+0 -1 110153
+S
+#110153
+A Small Promenade~
+ Usually free of people, this part of the patio is a bit less well-kept
+than the rest. What stands out the most, though, is the walkway to the
+west leading up and into Vegeta's training pod. It would take either a
+great warrior or a great fool to interrupt him during training, as shown
+and evidenced by the small flecks of dried blood that the cleaning bots
+couldn't quite scrub up from the last person that bothered him.
+~
+0 12 1
+D0
+~
+~
+0 -1 110090
+D1
+~
+~
+0 -1 110154
+D3
+~
+~
+0 -1 110152
+S
+#110154
+A Small Promenade~
+ A large jungle gym takes up most of this area. Gotenks and Trunks are
+often seen playing on and around it, but only when they don't have any
+other trouble to get into. The brightest part of the Promenade, it's
+usually littered with toys and any other mess kids can get into, but
+looks pretty clean today.
+~
+0 12 1
+D0
+~
+~
+0 -1 110145
+D3
+~
+~
+0 -1 110153
+S
+#110155
+Matter Displacement - Under Construction~
+ Completely spotless and pure, the Matter Displacement rooms in Capsule
+Corporation all look the same.  Each houses a chamber large enough for
+a few people to stand in, and each has a panel with instructions on how
+to operate the chambers next to it.  Apparently, though, it's quite simple.
+To use the displacement chambers, one has only to say he or she wishes to
+be transported.
+~
+0 1036 1
+D2
+~
+~
+0 -1 110150
+S
+#110156
+Matter Displacement - Under Construction~
+ Completely spotless and pure, the Matter Displacement rooms in Capsule
+Corporation all look the same.  Each houses a chamber large enough for
+a few people to stand in, and each has a panel with instructions on how
+to operate the chambers next to it.  Apparently, though, it's quite simple.
+To use the displacement chambers, one has only to say he or she wishes to
+be transported.
+~
+0 1036 1
+D0
+~
+~
+0 -1 110150
+S
+#110157
+Matter Displacement - Under Construction~
+ Completely spotless and pure, the Matter Displacement rooms in Capsule
+Corporation all look the same.  Each houses a chamber large enough for
+a few people to stand in, and each has a panel with instructions on how
+to operate the chambers next to it.  Apparently, though, it's quite simple.
+To use the displacement chambers, one has only to say he or she wishes to
+be transported.
+~
+0 1036 1
+D0
+~
+~
+0 -1 110018
+S
+#110158
+The Deconstruction Room~
+ Upon entry into this room, large mechanical arms grab your own and
+haul you to a table.  Before you can react, two more arms grab your
+legs and another, your head.  Within seconds you've just been unscrewed!
+~
+0 14 1
+D2
+~
+~
+0 -1 110143
+S
+#110159
+Floating in a void~
+~
+0 4 1
+S
+#110160
+In Sight of the Temple~
+~
+0 4 1
+S
+#110161
+Floating in a void~
+~
+0 2097156 1
+S
+#110162
+Floating in a void~
+~
+0 2097156 1
+S
+#110163
+Floating in a void~
+~
+0 2097156 1
+S
+#110164
+Floating in a void~
+~
+0 2097156 1
+S
+#110165
+Floating in a void~
+~
+0 2097156 1
+S
+#110166
+Floating in a void~
+~
+0 2097156 1
+S
+#110167
+Floating in a void~
+~
+0 2097156 1
+S
+#110168
+Floating in a void~
+~
+0 2097156 1
+S
+#110169
+Floating in a void~
+~
+0 2097156 1
+S
+#110170
+Floating in a void~
+~
+0 2097156 1
+S
+#110171
+Floating in a void~
+~
+0 2097156 1
+S
+#110172
+Floating in a void~
+~
+0 2097156 1
+S
+#110173
+Floating in a void~
+~
+0 2097156 1
+S
+#110174
+Floating in a void~
+~
+0 2097156 1
+S
+#110175
+Floating in a void~
+~
+0 2097156 1
+S
+#110176
+Floating in a void~
+~
+0 2097156 1
+S
+#110177
+Floating in a void~
+~
+0 2097156 1
+S
+#110178
+Floating in a void~
+~
+0 2097156 1
+S
+#110179
+Floating in a void~
+~
+0 2097156 1
+S
+#110180
+Floating in a void~
+~
+0 2097156 1
+S
+#110181
+Floating in a void~
+~
+0 2097156 1
+S
+#110182
+Floating in a void~
+~
+0 2097156 1
+S
+#110183
+Floating in a void~
+~
+0 2097156 1
+S
+#110184
+Floating in a void~
+~
+0 2097156 1
+S
+#110185
+Floating in a void~
+~
+0 2097156 1
+S
+#110186
+Floating in a void~
+~
+0 2097156 1
+S
+#110187
+Floating in a void~
+~
+0 2097156 1
+S
+#110188
+Floating in a void~
+~
+0 2097156 1
+S
+#110189
+Floating in a void~
+~
+0 2097156 1
+S
+#110190
+Floating in a void~
+~
+0 2097156 1
+S
+#110191
+Floating in a void~
+~
+0 2097156 1
+S
+#110192
+Floating in a void~
+~
+0 2097156 1
+S
+#110193
+Floating in a void~
+~
+0 2097156 1
+S
+#110194
+Floating in a void~
+~
+0 2097156 1
+S
+#110195
+Floating in a void~
+~
+0 2097156 1
+S
+#110196
+A screw up that I can't get rid of~
+~
+0 2097292 1
+S
+#110197
+Floating in a void~
+~
+0 2097156 1
+S
+#110198
+Floating in a void~
+~
+0 2097156 1
+S
+#110199
+Floating in a void~
+~
+0 2097156 1
+S
+#110200
+Floating in a void~
+~
+0 2097156 1
+S
+#110201
+Floating in a void~
+~
+0 2097156 1
+S
+#110202
+Floating in a void~
+~
+0 2097156 1
+S
+#110203
+Floating in a void~
+~
+0 2097156 1
+S
+#110204
+Floating in a void~
+~
+0 2097156 1
+S
+#110205
+Floating in a void~
+~
+0 2097156 1
+S
+#110206
+Floating in a void~
+~
+0 2097156 1
+S
+#110207
+Floating in a void~
+~
+0 2097156 1
+S
+#110208
+Floating in a void~
+~
+0 2097156 1
+S
+#110209
+Floating in a void~
+~
+0 2097156 1
+S
+#110210
+Floating in a void~
+~
+0 2097156 1
+S
+#110211
+Floating in a void~
+~
+0 2097156 1
+S
+#110212
+Floating in a void~
+~
+0 2097156 1
+S
+#110213
+Floating in a void~
+~
+0 2097156 1
+S
+#110214
+Floating in a void~
+~
+0 2097156 1
+S
+#110215
+Floating in a void~
+~
+0 2097156 1
+S
+#110216
+Floating in a void~
+~
+0 2097156 1
+S
+#110217
+Floating in a void~
+~
+0 2097156 1
+S
+#110218
+Floating in a void~
+~
+0 2097156 1
+S
+#110219
+Floating in a void~
+~
+0 2097156 1
+S
+#110220
+Floating in a void~
+~
+0 2097156 1
+S
+#110221
+Floating in a void~
+~
+0 2097156 1
+S
+#110222
+Floating in a void~
+~
+0 2097156 1
+S
+#110223
+Floating in a void~
+~
+0 2097156 1
+S
+#110224
+Floating in a void~
+~
+0 2097156 1
+S
+#110225
+Floating in a void~
+~
+0 2097156 1
+S
+#110226
+Floating in a void~
+~
+0 2097156 1
+S
+#110227
+Floating in a void~
+~
+0 2097156 1
+S
+#110228
+Floating in a void~
+~
+0 2097156 1
+S
+#110229
+Floating in a void~
+~
+0 2097156 1
+S
+#110230
+Floating in a void~
+~
+0 2097156 1
+S
+#110231
+Floating in a void~
+~
+0 2097156 1
+S
+#110232
+Floating in a void~
+~
+0 2097156 1
+S
+#110233
+Floating in a void~
+~
+0 2097156 1
+S
+#110234
+Floating in a void~
+~
+0 2097156 1
+S
+#110235
+Floating in a void~
+~
+0 2097156 1
+S
+#110236
+Floating in a void~
+~
+0 2097156 1
+S
+#110237
+Floating in a void~
+~
+0 2097156 1
+S
+#110238
+Floating in a void~
+~
+0 2097156 1
+S
+#110239
+Floating in a void~
+~
+0 2097156 1
+S
+#110240
+Floating in a void~
+~
+0 2097156 1
+S
+#110241
+Floating in a void~
+~
+0 2097156 1
+S
+#110242
+Floating in a void~
+~
+0 2097156 1
+S
+#110243
+Floating in a void~
+~
+0 2097156 1
+S
+#110244
+Floating in a void~
+~
+0 2097156 1
+S
+#110245
+Floating in a void~
+~
+0 2097156 1
+S
+#110246
+Floating in a void~
+~
+0 2097156 1
+S
+#110247
+Floating in a void~
+~
+0 2097156 1
+S
+#110248
+Floating in a void~
+~
+0 2097156 1
+S
+#110249
+Floating in a void~
+~
+0 2097156 1
+S
+#110250
+Floating in a void~
+~
+0 2097156 1
+S
+#110251
+Floating in a void~
+~
+0 2097156 1
+S
+#110252
+Floating in a void~
+~
+0 2097156 1
+S
+#110253
+Floating in a void~
+~
+0 2097156 1
+S
+#110254
+Floating in a void~
+~
+0 2097156 1
+S
+#110255
+Floating in a void~
+~
+0 2097156 1
+S
+#110256
+Floating in a void~
+~
+0 2097156 1
+S
+#110257
+Floating in a void~
+~
+0 2097156 1
+S
+#110258
+Floating in a void~
+~
+0 2097156 1
+S
+#110259
+Floating in a void~
+~
+0 2097156 1
+S
+#110260
+Floating in a void~
+~
+0 2097156 1
+S
+#110261
+Floating in a void~
+~
+0 2097156 1
+S
+#110262
+Floating in a void~
+~
+0 2097156 1
+S
+#110263
+Floating in a void~
+~
+0 2097156 1
+S
+#110264
+Floating in a void~
+~
+0 2097156 1
+S
+#110265
+Floating in a void~
+~
+0 2097156 1
+S
+#110266
+Floating in a void~
+~
+0 2097156 1
+S
+#110267
+Floating in a void~
+~
+0 2097156 1
+S
+#110268
+Floating in a void~
+~
+0 2097156 1
+S
+#110269
+Floating in a void~
+~
+0 2097156 1
+S
+#110270
+Floating in a void~
+~
+0 2097156 1
+S
+#110271
+Floating in a void~
+~
+0 2097156 1
+S
+#110272
+Floating in a void~
+~
+0 2097156 1
+S
+#110273
+Floating in a void~
+~
+0 2097156 1
+S
+#110274
+Floating in a void~
+~
+0 2097156 1
+S
+#110275
+Floating in a void~
+~
+0 2097156 1
+S
+#110276
+Floating in a void~
+~
+0 2097156 1
+S
+#110277
+Floating in a void~
+~
+0 2097156 1
+S
+#110278
+Floating in a void~
+~
+0 2097156 1
+S
+#110279
+Floating in a void~
+~
+0 2097156 1
+S
+#110280
+Floating in a void~
+~
+0 2097156 1
+S
+#110281
+Floating in a void~
+~
+0 2097156 1
+S
+#110282
+Floating in a void~
+~
+0 2097156 1
+S
+#110283
+Floating in a void~
+~
+0 2097156 1
+S
+#110284
+Floating in a void~
+~
+0 2097156 1
+S
+#110285
+Floating in a void~
+~
+0 2097156 1
+S
+#110286
+The Capsule Corporation Lobby~
+ The northwest area of the Capsule Corporation lobby is the bend that
+leads to either the Project and Waste Disposal facility to the south, or to
+Professor Briefs' lab to the east.  The curving walls of this big, round
+room seem to be all sculpted of the same solid piece of marble. All science
+and architecture in perspective, this is one of the most amazing buildings
+in not only West Ctiy, but quite possibly the entire world.
+~
+0 12 1
+D1
+~
+~
+0 -1 110006
+D2
+~
+~
+0 -1 110007
+S
+#110287
+The Capsule Corporation Lobby~
+ The northeast area of the Capsule Corporation lobby is the bend that
+leads to either the Research and Development facility to the south, or to
+Professor Briefs' lab to the west.  The curving walls of this big, round
+room seem to be all sculpted of the same solid piece of marble. All science
+and architecture in perspective, this is one of the most amazing buildings
+in not only West Ctiy, but quite possibly the entire world.
+~
+0 12 1
+D2
+~
+~
+0 -1 110005
+D3
+~
+~
+0 -1 110006
+S
+#110288
+The Capsule Corporation Lobby~
+ The southeast area of the Capsule Corporation lobby is the bend that
+leads to either the Research and Development facility to the north, or back
+towards the entrance to the west.  The curving walls of this big, round
+room seem to be all sculpted of the same solid piece of marble. All science
+and architecture in perspective, this is one of the most amazing buildings
+in not only West Ctiy, but quite possibly the entire world.
+~
+0 12 1
+D0
+~
+~
+0 -1 110005
+D3
+~
+~
+0 -1 110004
+S
+#110289
+The Capsule Corporation Lobby~
+ The southwest area of the Capsule Corporation lobby is the bend that
+leads to either the Research and Development facility to the north, or back
+towards the entrance to the east.  The curving walls of this big, round
+room seem to be all sculpted of the same solid piece of marble. All science
+and architecture in perspective, this is one of the most amazing buildings
+in not only West Ctiy, but quite possibly the entire world.
+~
+0 12 1
+D0
+~
+~
+0 -1 110007
+D1
+~
+~
+0 -1 110004
+S
+#110290
+Floating in a void~
+~
+0 2097156 1
+S
+#110291
+Floating in a void~
+~
+0 2097156 1
+S
+#110292
+Floating in a void~
+~
+0 2097156 1
+S
+#110293
+Floating in a void~
+~
+0 2097156 1
+S
+#110294
+Floating in a void~
+~
+0 2097156 1
+S
+#110295
+Floating in a void~
+~
+0 2097156 1
+S
+#110296
+Ferrin's Fourth Monster Room~
+~
+0 2097292 1
+D2
+~
+~
+0 -1 110297
+D3
+~
+~
+0 -1 110299
+S
+#110297
+Ferrin's Third Monster Room~
+~
+0 2097292 1
+D0
+~
+~
+0 -1 110296
+D3
+~
+~
+0 -1 110298
+S
+#110298
+Ferrin's Second Monster Room~
+~
+0 2097292 1
+D0
+~
+~
+0 -1 110299
+D1
+~
+~
+0 -1 110297
+S
+#110299
+Ferrin's First Monster Room~
+~
+0 2097292 1
+D1
+~
+~
+0 -1 110296
+D2
+~
+~
+0 -1 110298
+S
+#0
+
+
+#RESETS
+M 1 110025 1 110004
+E 1 110009 1 12
+M 1 110025 1 110004
+E 1 110009 1 12
+M 1 110025 1 110288
+E 1 110009 1 12
+M 1 110025 1 110288
+E 1 110009 1 12
+M 1 110025 1 110005
+E 1 110009 1 12
+M 1 110025 1 110005
+E 1 110009 1 12
+M 1 110025 1 110287
+E 1 110009 1 12
+M 1 110025 1 110287
+E 1 110009 1 12
+M 1 110025 1 110006
+E 1 110009 1 12
+M 1 110025 1 110006
+E 1 110009 1 12
+M 1 110025 1 110286
+E 1 110009 1 12
+M 1 110025 1 110286
+E 1 110009 1 12
+M 1 110025 1 110007
+E 1 110009 1 12
+M 1 110025 1 110007
+E 1 110009 1 12
+M 1 110025 1 110289
+E 1 110009 1 12
+M 1 110025 1 110289
+E 1 110009 1 12
+M 1 110025 1 110012
+E 1 110009 1 12
+M 1 110025 1 110012
+E 1 110009 1 12
+M 1 110025 1 110018
+E 1 110009 1 12
+M 1 110025 1 110018
+E 1 110009 1 12
+M 1 110025 1 110026
+E 1 110009 1 12
+M 1 110025 1 110026
+E 1 110009 1 12
+M 1 110025 1 110034
+E 1 110009 1 12
+M 1 110025 1 110034
+E 1 110009 1 12
+M 1 110025 1 110086
+E 1 110009 1 12
+M 1 110025 1 110086
+E 1 110009 1 12
+M 1 110025 1 110091
+E 1 110009 1 12
+M 1 110025 1 110091
+E 1 110009 1 12
+M 1 110003 1 110073
+D 0 110073 0 2
+M 1 110004 1 110074
+D 0 110074 2 2
+M 1 110054 1 110069
+M 1 110056 1 110070
+M 1 110032 1 110068
+M 1 110030 1 110067
+M 1 110034 1 110065
+M 1 110036 1 110066
+M 1 110052 1 110063
+M 1 110050 1 110064
+M 1 110038 1 110061
+M 1 110040 1 110062
+M 1 110046 1 110057
+M 1 110048 1 110058
+M 1 110042 1 110059
+M 1 110028 1 110148
+M 1 110026 1 110147
+M 1 110005 1 110082
+M 1 110011 1 110082
+M 1 110010 1 110154
+M 1 110009 1 110154
+M 1 110024 1 110144
+M 1 110021 1 110144
+M 1 110023 1 110144
+M 1 110059 1 110090
+M 1 110012 1 110145
+M 1 110018 1 110002
+M 1 110018 1 110003
+M 1 110018 1 110009
+M 1 110019 1 110083
+M 1 110019 1 110083
+M 1 110018 1 110072
+M 1 110018 1 110072
+M 1 110018 1 110038
+M 1 110018 1 110022
+M 1 110061 1 110140
+M 1 110002 1 110008
+M 1 110062 1 110008
+M 1 110020 1 110106
+M 1 110020 1 110107
+M 1 110020 1 110108
+M 1 110020 1 110110
+M 1 110020 1 110111
+M 1 110020 1 110112
+M 1 110020 1 110109
+M 1 110020 1 110113
+M 1 110020 1 110114
+M 1 110020 1 110115
+M 1 110020 1 110120
+M 1 110020 1 110116
+M 1 110020 1 110117
+M 1 110020 1 110118
+M 1 110020 1 110119
+M 1 110020 1 110121
+M 1 110020 1 110122
+M 1 110020 1 110124
+M 1 110020 1 110125
+M 1 110020 1 110123
+M 1 110020 1 110127
+M 1 110020 1 110128
+M 1 110020 1 110129
+M 1 110020 1 110130
+M 1 110020 1 110131
+M 1 110020 1 110134
+M 1 110020 1 110135
+M 1 110020 1 110136
+M 1 110020 1 110132
+M 1 110020 1 110133
+M 1 110020 1 110137
+M 1 110020 1 110138
+M 1 110020 1 110139
+M 1 110058 1 110143
+G 1 1205 1
+G 1 110069 1
+G 1 110065 1
+G 1 110064 1
+G 1 110063 1
+G 1 110062 1
+G 1 110061 1
+G 1 110060 1
+G 1 110059 1
+G 1 110058 1
+G 1 110057 1
+G 1 110056 1
+G 1 110055 1
+G 1 110054 1
+G 1 110053 1
+G 1 110052 1
+G 1 110051 1
+G 1 110050 1
+G 1 110049 1
+G 1 110048 1
+G 1 110047 1
+G 1 110046 1
+G 1 110045 1
+G 1 110044 1
+G 1 110043 1
+G 1 110042 1
+G 1 110041 1
+G 1 110040 1
+G 1 110039 1
+G 1 110038 1
+G 1 110037 1
+G 1 110036 1
+G 1 110035 1
+G 1 110034 1
+G 1 110033 1
+G 1 110032 1
+G 1 110031 1
+O 1 110066 1 110045
+O 1 110066 1 110044
+O 1 110066 1 110046
+O 1 110066 1 110047
+O 1 110066 1 110048
+O 1 110066 1 110050
+O 1 110066 1 110155
+O 1 110066 1 110156
+O 1 110066 1 110049
+O 1 110066 1 110157
+O 1 110066 1 110051
+O 1 110066 1 110052
+O 1 110066 1 110053
+O 1 110066 1 110054
+O 1 110066 1 110055
+O 1 110066 1 110056
+M 1 110060 1 110030
+M 1 110019 1 110084
+M 1 110019 1 110084
+M 1 110044 1 110060
+M 1 110063 1 110142
+S
+
+
+#SHOPS
+ 110058    0  0  0  0  0   100  90         0 23    ; Bulma
+ 110063    1  5  8  9 13   100  90         0 23    ; Trash Mechanic
+0
+
+
+#REPAIRS
+ 110063    9  0  0         100   1         0 23    ; Trash Mechanic
+0
+
+
+#SPECIALS
+M  110022 spec_cast_adept
+S
+
+
+#$

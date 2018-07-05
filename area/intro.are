@@ -1,0 +1,282 @@
+#AREA   Intro to DBS~
+
+
+
+#VERSION 252
+#AUTHOR Goku~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 1
+
+#FLAGS
+0
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#100
+training android~
+An android~
+An android is here ready to fight you.
+~
+~
+67 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 50
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 100
+~
+|
+#199
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 1
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#100
+~
+Newbie Saiyan Battle Armor~
+Newbie Saiyan Battle Armor is laying on the ground here.~
+~
+9 8192&1 8
+95 0 0 0 0 0
+1 0 10
+ 0
+#199
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#100
+The Beginning~
+You are entering the world of the DragonBall Saga.  Here lies within
+many adventures and battles that you will go though.  Hopefully your time
+here will be entertaining.  Right now we will start a tutoral program for
+you so that you may learn how to play this MUD.  Please continue north by
+typing "north".
+
+&RIF YOU ARE A RETURNING PLAYER, BE SURE YOU READ THE NEW HELP FILES IN
+HELP START&D 
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 101
+S
+#101
+Lesson 1 - Simple Commands~
+Here you will be introduced to simple commands. First we shall teach you
+how to move around in this world.  By typing in the direction you wish to go
+that is where you shall be moved.  north, south, west, east, northwest,
+northeast, southwest, and southeast.  All of these directions can be
+abbreviated like this: n, s, w, e, nw, ne, sw, se.  That is all for this
+lesson. Now type "up" to continue with the tutorial.
+~
+0 4 1
+D2
+~
+~
+0 -1 100
+D4
+~
+~
+0 -1 102
+S
+#102
+Lesson 2 - Communication~
+Communication is the key to surviving in any world.  You can talk to
+people in the same room as you by typing "say <what you want to say>". You
+may also talk to a person not in the same room as you with the "tell"
+command.  The public channels are channels that everyone who has them
+activated will hear what you say.  You may use all of them how ever, the
+"CHAT" channel is only for role playing messages.  If you are wanting to
+talk to people, but you don't want to role play at the moment then please
+use the "OOC" channel.  OOC stands for Out of Charecter.
+~
+0 4 1
+D4
+~
+~
+0 -1 103
+D5
+~
+~
+0 -1 101
+S
+#103
+Lesson 3 - Combat~
+You will have to fight many diffrent battles in this world.  So you will
+need to learn how to fight back.  Use the "kill" command to get into a fight
+with someone.  Your powerlevel determinds how well you can fight in many
+ways.  It determinds how how strong you are compaired to your oponent.  If
+you would like to pratice fighting go to the "east" to the west are the
+"healing tanks" where you can quickly gain back your strength.
+~
+0 4 1
+D1
+~
+~
+0 -1 104
+D3
+~
+~
+0 -1 105
+D4
+~
+~
+0 -1 107
+D5
+~
+~
+0 -1 102
+S
+#104
+Lesson 3a - Fighting~
+Here you will pratice actual combat.  There is an android here that is
+programed to help you learn how to fight.  Just type "kill android" to begin
+the battle.
+~
+0 4 1
+D3
+~
+~
+0 -1 103
+S
+#105
+Break Room - The Healing Tanks~
+Take a load off and step into one of the state of the art healing tanks.
+While in this room your lifeforce and energy will go up two times faster
+then when you are not in the healing tanks.
+~
+0 4 1
+D1
+~
+~
+0 -1 103
+S
+#106
+Tutoral End~
+That is all that you need to know to survive in the DragonBall Saga.
+There is much, much more for you to learn, but you should now have a basic
+understanding of this world.  If you are ready to leave this tutoral then
+answer one question using say.
+
+"What kind of Triggers are allowed?"
+
+Upon answering the question, you will be transported to South City, or
+Dr. Gero's lab, if you are an Android. Happy Mudding and G'luck.
+
+This is where your Journey shall begin.
+~
+0 4 1
+D5
+~
+~
+0 -1 107
+> speech_prog 'none'~
+if race($n) == android
+ mpecho You have completed the tutoral.
+ mpecho You are engulfed in a bright white light
+ mptransfer $n 2308
+ mpat 2308 mpforce $n look
+else
+ mpecho You have completed the tutoral.
+ mpecho You are engulfed in a bright white light
+ mpecho As you regain your senses you find yourself
+ mpecho on your home world.
+ mptransfer $n 9001
+ mpat 9001 mpforce $n look
+endif
+~
+|
+S
+#107
+Lesson 4 - Rules of the Game~
+You must become familiar with the rules of this game to continue.  Type
+'help rules', 'help swear', 'help botting', 'help misc_rules' and 'help
+punishment' to read all the rules.  When you are done reading all of the
+rules you must agree to follow them by saying "I agree".  You will not be
+permited to continue this game without agreeing to the rules. 
+~
+0 4 1
+D5
+~
+~
+0 -1 103
+> speech_prog 'i agree'~
+mpecho Okay.
+mptransfer $n 106
+mpat 106 mpforce $n look
+~
+|
+S
+#108
+Room 9~
+~
+0 4 1
+S
+#109
+Room 10~
+~
+0 4 1
+S
+#110
+Room 11~
+~
+0 4 1
+S
+#199
+Floating in a void~
+~
+0 4 1
+S
+#0
+
+
+#RESETS
+M 1 100 1 104
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

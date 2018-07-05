@@ -1,0 +1,55 @@
+#SHIP
+Name         Light Fighter FS1-019~
+Filename     light_fighter_fs1-019.ship~
+Description  A small fighter ship equiped with lazers and a few missiles.~
+Owner        ~
+Pilot        avatar~
+Copilot      nimis~
+Class        0
+Tractorbeam  0
+Shipyard     3871
+Hanger       0
+Turret1      0
+Turret2      0
+Statet0      0
+Statet1      0
+Statet2      0
+Lasers       1
+Missiles     4
+Maxmissiles  4
+Rockets     0
+Maxrockets  0
+Torpedos     1
+Maxtorpedos  1
+Lastdoc      210
+Firstroom    1073
+Lastroom     1073
+Shield       0
+Maxshield    250
+Hull         100
+Maxhull      100
+Maxenergy    5000
+Hyperspeed   75
+Comm         0
+Chaff        5
+Maxchaff     5
+Sensor       0
+Astro_array  0
+Realspeed    75
+Type         0
+Cockpit      1073
+Coseat       1073
+Pilotseat    1073
+Gunseat      1073
+Navseat      1073
+Engineroom   0
+Entrance     1073
+Shipstate    0
+Missilestate 0
+Energy       5000
+Manuever     10
+Cost         10000000
+Home         CoU~
+End
+
+#END

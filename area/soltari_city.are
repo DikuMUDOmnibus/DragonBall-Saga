@@ -1,0 +1,3261 @@
+#AREA   Soltari City~
+
+
+
+#VERSION 252
+#AUTHOR Islvin~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 6
+
+#FLAGS
+2
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#60000
+Saiyan Royal Guard~
+a Saiyan Royal Guard~
+A member of the Saiyan Royal Guard stands here at attention.
+~
+He stands tall, a good two meters in height, attention unwavering as you
+look at him.  On the right side of his face is a large scar that runs just
+from below his eye down to his jaw.  His armor is that of the royal saiyan
+elite: solid red, trimmed in gold, and engraved with the crest of House
+Vegeta.
+~
+131073 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 10000000000
+112 112 1
+100 100 100 100 10
+0 0 0 0 0
+0 0 0 0 1 1 2
+50 25 0 0 0 0 48 0
+> fight_prog 10~
+final flash
+~
+|
+#60001
+saiyan bartender~
+a saiyan bartender~
+A bardender stands behind the bar, one eye peering out at the patrons.
+~
+Though he appears to be elderly, he still retains much of the muscle
+mass and general fitness of the saiyan warriors.  Unlike them, however, he
+is quite tidy in appearance -- hair has been neatly arranged, clothes are
+neatly kept and of upper class.
+~
+67108871 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#60002
+woman elderly saiyan tailor~
+the royal tailor~
+A blind, elderly saiyan woman sits behind a desk, sewing at some cloth.
+~
+She's somewhat shorter than the average saiyan female, and a bit heavier
+set as well.  Her long, grey hair has been pulled back into a neat
+ponytail, and her dress is that of the upper class from a few decades ago.
+Unaware that you're looking at her, she continues sewing, eyes shut.
+~
+67108871 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#60003
+saiyan armourer~
+a saiyan armourer~
+A dirty, muscular saiyan peers out from behind a wall at you.
+~
+The wall hides the majority of his features, save for a single arm, his
+head, and part of his neck.  His dark hair is cut short, unkept, and
+covered in dirt.  While his face appears somewhat handsome, the dirt and
+dust from his work detract from the features.
+~
+67108871 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#60004
+drunk soldier~
+a drunk soldier~
+A drunken soldier is passed out on the floor.
+~
+One of the average low-ranked saiyan warriors.  He's passed out here,
+drool collecting in a small puddle on the floor under his mouth.  His
+armor's been cracked just slightly from the impact with the floor, and he
+absolutely reeks of alcohol.
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#60005
+drone~
+an automated serving drone~
+An odd-looking machine is rolling around, checking the inventory.
+~
+This machine, made of a grey-colored metal, has rolled itself into a
+sphere about a meter in diameter.  It rolls about the floor, stopping at
+shelves, and extending a scanner to inspect the shelf's contents.  When it
+registers you looking at it, it stops momentarily, extending a scanner, and
+scans you, then returns to its business.
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#60006
+bartender~
+a New Year's bartender~
+A bartender is here, dressed in party clothes, guarding a large stack of beer kegs.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#60007
+sign~
+a sign~
+A sign with writing on it floats here.
+~
+It simply reads:
+Say 'begin' to start the program.
+Say 'power' to get a report on the mobs' powerlevel.
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#60008
+alpha droid~
+an alpha training droid~
+An alpha draining droid is standing here in a defensive stance.
+~
+This droid has been built of the cheapest parts available.  It has no
+artificial skin to cover the metal frame which it has been built upon.  Its
+legs are shaking under the stress of carrying its own weight, but it is
+still dangerous.
+~
+16777219 0&0&64 0 C
+1 0 100 1d20+0 2d5+0
+-1 200
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#60009
+beta droid~
+a beta training droid~
+A beta training droid stands here in a defensive stance.
+~
+Only a step above the alpha series, this droid is a much better design.
+It can easily support its own weight, and can move around with average
+agility.  While it still lacks any form of artificial skin, its metal
+structure has been given thin armor to make it more damage resistant.
+~
+16777219 0&0&64 0 C
+1 0 100 1d20+0 2d5+0
+-1 500
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#60010
+gamma droid~
+a gamma training droid~
+A gamma training droid stands here in a defensive stance.
+~
+While this droid is a step above the beta series, it is not much
+superior at all.  The droid, physically, is identical to the beta series,
+with the exception of having double the armor plating.  The internal
+mechanisms, however, have been upgraded to allow this series to move
+faster, fight harder.
+~
+16777219 0&0&64 0 C
+1 0 100 1d20+0 2d5+0
+-1 750
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#60011
+delta droid~
+a delta training droid~
+A delta training droid stands here in a defensive stance.
+~
+The top of the line in saiyan training droids, this droid features
+state-of-the-art training equipment.  It still lacks any skin since it was
+designed to be destroyed, but its frame has been built solid.  Frame armor
+has been upgraded to a full centimeter thick, and its circuitry and
+mechanics are designed to respond as fast as possible and fight as hard as
+possible.
+~
+16777219 0&0&64 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#60012
+weak saibaman~
+a weak saibaman~
+A weak saibaman crouches here, unsure to attack or flee.
+~
+This saibaman has a blue skin, with the normal black dots all around.
+It's of average height for its race--a meter tall, roughly.  However, it
+was not strong enough to make the cut to be used in war, so it has been
+assigned as training fodder.
+~
+16777219 0&0&64 0 C
+1 0 100 1d20+0 2d5+0
+-1 2000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+72 72 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#60013
+immature saibaman~
+an immature saibaman~
+A small saibaman stands here, gritting its teeth.
+~
+Green skin, black dots.  This saibaman is identical to the stereotypical
+warrior variety, with one major exception.  It was too young when it
+emerged from the growth chambers, and since it could not be put back in, it
+was sent here so young saiyans could grow stronger from this mistake.
+~
+16777219 0&0&64 0 C
+1 0 100 1d20+0 2d5+0
+-1 5000
+112 112 0
+10 10 15 10 0
+0 0 0 0 0
+72 72 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#60014
+standard saibaman~
+a standard saibaman~
+An average saibaman is crouching here, ready to attack at an instant.
+~
+This is your stereotypical saibaman--green skin, black polka dots, and
+downright ugly to the bone.  It used to help the saiyans in their raids on
+other worlds.  But due to saiyan successes without saibamen, it has been
+sent to this training complex to help young saiyans grow.
+~
+16777219 0&0&64 0 C
+1 0 100 1d20+0 2d5+0
+-1 10000
+112 112 0
+15 10 10 10 0
+0 0 0 0 0
+72 72 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#60015
+superior saibaman~
+a superior saibaman~
+A superior saibaman is crouched here, waving its claws slowly.
+~
+A red saibaman with dark green dots--a rare thing for their race, and a
+sign of unusual power.  This little critter was bred with the purpose of
+being one of the strongest saibamen around.  However, since it is no longer
+needed on the fronts, it was assigned here to challenge saiyan warriors.
+~
+16777219 0&0&64 0 C
+1 0 100 1d20+0 2d5+0
+-1 20000
+112 112 0
+15 10 15 10 0
+0 0 0 0 0
+72 72 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#60016
+boar~
+a wild boar~
+A boar-like animal is rooting around, looking for food.
+~
+While not normally hostile, the boar will attack if it feels threatened.
+It stands just under a meter tall.  Its coat is dark brown with patches of
+black, providing an ideal disguise for hiding in the forest.  But the most
+noticible thing about it is its teeth, some of which are a good ten
+centimeters long.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 40000
+112 112 0
+20 10 15 10 10
+0 0 0 0 0
+26 26 0 0 1 1 0
+0 0 0 0 0 0 1 0
+#60017
+bear~
+a saiyan bear~
+An extremely large, furry animal resembling a bear is curled up in a corner.
+~
+Standing just under a meter tall, this bear is one of the giants of the
+forest.  Its hair is nearly half a meter long, and incredibly thick, as if
+it came from some planet that was in the middle of an ice age.  Due to the
+shape of its mouth, its bite isn't extremely dangerous, but its razor-sharp
+claws are another story.
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 80000
+112 112 0
+25 10 10 10 10
+0 0 0 0 0
+23 23 0 0 1 1 0
+0 0 0 0 0 0 2 0
+#60018
+ape cat~
+an ape-cat~
+A creature that appears to be a cat and ape hybrid is stalking in the brush.
+~
+A native creature of Planet Vegeta and distant cousin to the saiyan
+race.  It bears moderate similarity to the Earth cougar in size, but its
+shape is another story.  While its head and claws are that of a large
+feline, the hand structure is that of an ape, making it very dangerous with
+its claws.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 60000
+112 112 0
+15 10 20 10 10
+0 0 0 0 0
+28 28 0 0 1 1 0
+0 0 0 0 0 0 3 0
+#60019
+water serpent~
+a water serpent~
+A two-headed serpent swims through the water.
+~
+With a body that's two meters long, three centimeters in diameter, and a
+weight of roughly one hundred kilos, this serpent is the ruler of the
+forest's rivers.  Making it even more dangerous is the fact that it has two
+heads, one of which seems to be a slave to the other.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 30000
+112 112 0
+15 10 15 10 0
+0 0 0 0 0
+47 47 0 0 1 1 0
+0 0 0 0 0 0 1 0
+#60020
+forest giant~
+a forest giant~
+A tall humanoid figure stands next to a poorly built hut.
+~
+From a distance, this giant could pass for a tall saiyan.  However upon
+closer inspection, you see that it is covered with a layer of fur that is
+similar to the legendary SSJ4 transformation.  It has a longer and larger
+than average tail, and appears to be somewhat slow yet muscular.  Topping
+it all off is that it only has one eye.
+~
+16777219 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100000
+112 112 0
+25 10 10 10 0
+0 0 0 0 0
+39 39 0 0 1 1 0
+0 0 0 0 0 0 16 0
+#60021
+snow saiyan~
+an abominable snow saiyan~
+An extremely furry, all white-haired saiyan walks around in the snow.
+~
+Though only the size of the average saiyan, this beast more closely
+resembles the famed Oozaru transformation.  In fact, it is identical to an
+Oozaru, except for its longer and perfectly white fur.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 500000
+112 112 0
+15 10 25 10 0
+0 0 0 0 0
+39 39 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#60022
+snow wolf~
+a snow wolf~
+A wolf with fur as white as the snow is crouched here.
+~
+This is one of the exotic creatures created by this simulation.  The
+beast is native to an ice world several dozen light years from Vegeta.  It
+stands only half a meter tall, but though built small, it is very quick,
+and its jaws appear to possess quite a bit of power.  Now if only it'd move
+again so you could figure out where exactly it was...
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 200000
+112 112 0
+15 10 15 10 0
+0 0 0 0 0
+52 52 0 0 1 1 0
+0 0 0 0 0 0 1 0
+#60023
+ice~
+an ice creature~
+A piece of the ice on the wall moves slightly... Odd.
+~
+Made of solid ice, this creature blends in perfectly with the ice on the
+walls -- even the rocks are properly distorted when seen through it.
+Discerning the exact shape of this creature seems impossible, but it
+appears roughly humanoid.  Where it's from is also a mystery, but it's
+definitely not native to Vegeta.
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 700000
+112 112 0
+25 10 25 10 0
+0 0 0 0 0
+72 72 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#60024
+owl~
+a giant ice owl~
+A large piece of ice shaped like a bird is flying towards you...
+~
+This is literally a large chunk of ice that happens to be in the shape
+of a giant bird, an owl more specifically.  By all natural laws, it
+shouldn't be able to fly, but, yet, it is.  For the most part, it's
+transparent, however around its neck is a series of dark spots.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000000
+112 112 0
+20 10 40 10 0
+0 0 0 0 0
+72 72 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#60199
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#60000
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#60001
+red pants~
+a pair of red pants~
+A pair of red pants has been discarded here.~
+~
+9 1966080 33
+25 25 0 0 25 25
+5 2500 4
+ 100
+#60002
+blue pants~
+a pair of blue pants~
+A set of blue cotton-like pants lies on the ground.~
+~
+9 1966080 33
+25 25 0 0 25 25
+5 2500 4
+ 100
+#60003
+black spandex bodysuit~
+a black spandex bodysuit~
+A piece of black, rubber-like material is balled up here.~
+~
+9 1966080 9
+100 100 0 0 100 100
+2 10000 100
+ 10000
+> wear_prog 100~
+mpechoat $n The bodysuit stretches to get a snug fit on your body.
+~
+|
+#60004
+blue spandex bodysuit~
+a blue spandex bodysuit~
+A blue piece of rubber is on the ground.~
+~
+9 1966080 9
+100 100 0 0 100 100
+2 10000 100
+ 10000
+> wear_prog 100~
+mpechoat $n The bodysuit stretches to get a snug fit on your body.
+~
+|
+#60005
+red cape~
+a red royal cape~
+A red cape with the Vegeta crest has been tossed aside here.~
+~
+9 2064384 5
+100 100 0 0 50 50
+15 5000 2500
+ 10000000
+#60006
+red headband~
+a red headband~
+A band of red cloth tumbles around with the wind.~
+~
+9 1966080 17
+15 15 0 0 15 15
+1 1500 2
+ 200
+#60007
+black muscle shirt~
+a black muscle shirt~
+A shirt that leaves little to the imagination is lying here.~
+~
+9 1966080 9
+30 30 0 0 30 30
+3 3000 3
+ 100
+#60008
+white belt~
+a white spandex belt~
+A white, stretchy belt is cluttering up the ground.~
+~
+9 1966080 2049
+25 25 0 0 25 25
+1 2500 2
+ 5000
+#60009
+small beer glass~
+a small beer glass~
+A small beer glass has been abandoned here.~
+~
+17 0 16385
+2 2 1 0 0 0
+1 0 100
+ 1
+#60010
+large beer glass~
+a large beer glass~
+A large beer glass has been abandoned here.~
+~
+17 0 16385
+4 4 1 0 0 0
+1 0 200
+ 1
+#60011
+wine glass~
+a wine glass~
+A glass filled with a dark red liquid is sitting here.~
+~
+17 0 16385
+3 3 2 0 0 0
+1 0 250
+ 1
+#60012
+shot glass~
+a shot glass~
+A small glass is sitting here.~
+~
+17 0 16385
+1 1 5 0 0 0
+1 0 350
+ 1
+#60013
+soda can~
+a soda can~
+A red can with writing on it has been dropped here.~
+~
+17 0 16385
+10 10 15 0 0 0
+1 0 50
+ 1
+#60014
+tea cup~
+a cup of tea~
+A cup filled with a semi-translucent brown liquid is sitting here.~
+~
+17 0 16385
+5 5 11 0 0 0
+1 0 75
+ 1
+#60015
+coffee cup~
+a cup of coffee~
+A cup filled with a dark brown liquid is sitting here.~
+~
+17 0 16385
+5 5 12 0 0 0
+1 0 75
+ 1
+#60016
+white gloves~
+white spandex gloves~
+A pair of stretchy white gloves has been discarded here.~
+~
+9 1966080 129
+10 10 0 0 10 10
+1 1000 5
+ 2000
+#60017
+spandex boots~
+white spandex boots~
+A pair of white boots with gold trimming have been tossed here.~
+~
+9 1966080 65
+30 30 0 0 30 30
+1 3000 50
+ 10000
+#60018
+ration mre~
+a vacuum-sealed combat ration~
+A silver food package has been discarded for the hungry.~
+~
+19 0 1
+20 0 0 0 0 0
+1 0 100
+ 1
+#60019
+slab meat~
+a slab of medium-rare meat~
+A chunk of barely cooked meat is covered in dirt now.~
+~
+19 0 1
+10 0 0 0 0 0
+1 0 65
+ 1
+#60199
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#60000
+Planet Vegeta - Soltari Spaceport~
+Multiple large hangers have been built in a circular pattern here,
+surrounding four landing platforms of various sizes.  One of the hangers is
+open, providing a glimpse of saiyan space pods and dropships that would be
+used in invasions of other worlds.  In the distance, to the northwest,
+Castle Vegeta towers over the land, and to the southwest, Vegeta's capital
+city lies at the desert's perimeter.
+~
+0 1024 1
+D7
+~
+~
+0 -1 60001
+D9
+~
+~
+0 -1 60003
+S
+#60001
+Before Castle Vegeta~
+Only roughly a hundred meters away, Castle Vegeta, one of the prides of
+saiyan architecture, stands tall, built upon a cliff overlooking the
+massive desert of this world.  The single stone path leading to it shows
+sign of great wear from the years of use.  A series of guard stations have
+been built along the path in case anyone should try to invade the castle.
+~
+0 0 1
+D0
+~
+drawbridge~
+7 -1 60001
+D8
+~
+~
+0 -1 60000
+D9
+~
+~
+0 -1 60002
+S
+#60002
+Outside the Training Complex~
+This structure, uncharacteristic of normal saiyan design, stands alone
+and isolated from all other buildings.  It's made of a dark metal and is
+built in a circular shape, capped with a silver-colored metallic dome.  A
+single set of metal doors provides access to the inside of the complex.
+~
+0 0 1
+D3
+~
+~
+0 -1 60018
+D6
+~
+~
+0 -1 60001
+D8
+~
+~
+0 -1 60003
+S
+#60003
+Atop Royal Hill~
+While this is technically a cliff, it is referred to among the saiyans
+as 'Royal Hill' because it is the royalty's favored spot to overlook and
+address the city.  Soltari City lies near the bottom of this mountain,
+built on another plateau.  A cave has been made into the mountain with
+steps leading down to the city.
+~
+0 0 1
+D5
+~
+~
+0 -1 60004
+D6
+~
+~
+0 -1 60000
+D7
+~
+~
+0 -1 60002
+S
+#60004
+Royal Way~
+This is the northern boundary of the city.  Just a few meters north is
+the cliff's rock wall and the cave leading up to the castle grounds.
+Tower-like saiyan buildings are all around this area, some of which have a
+balcony built onto them so that they can launch pods without going to the
+spaceport.
+~
+0 0 1
+D1
+~
+~
+0 -1 60008
+D2
+~
+~
+0 -1 60005
+D4
+~
+~
+0 -1 60003
+S
+#60005
+Royal Way~
+Buildings line each side of the path along here, all of them virtually
+identical to each other -- typical saiyan architecture.  Some small shop
+stalls of no importance have been established by lower class saiyans along
+the outer edge of the path.  Because of the large number of people passing
+through this particular section, two guard stations have been built.
+~
+0 0 1
+D0
+~
+~
+0 -1 60004
+D2
+~
+~
+0 -1 60006
+S
+#60006
+Royal Way~
+A little sand has been tracked around by those coming in from the
+desert.  The buildings are quite dense here, and the path between them more
+narrow than elsewhere in the city.
+~
+0 256 1 0 0 3
+D0
+~
+~
+0 -1 60005
+D1
+~
+~
+0 -1 60012
+D2
+~
+~
+0 -1 60007
+S
+#60007
+Soltari Desert Gate~
+This large steel and stone gate provides the only direct access through
+the city's wall, and is heavily guarded to ensure that those not wanted do
+not get into the city.  Sand has been heavily tracked in from the desert as
+if there were little concern with keeping the city clean.
+~
+0 0 1
+D0
+~
+~
+0 -1 60006
+D2
+~
+gate~
+7 -1 60007
+S
+#60008
+Supply District~
+While the structures of this district are of average saiyan
+architecture, they have been built smaller since their purpose is to sell
+goods.  Elegant pieces of red cloth with gold embroidery hang in the
+windows and, to a less extent, on the outside of a particular shop to the
+north.
+~
+0 0 1
+D0
+~
+~
+0 -1 60013
+D1
+~
+~
+0 -1 60009
+D3
+~
+~
+0 -1 60004
+S
+#60009
+Supply District~
+While the structures of this district are of average saiyan
+architecture, they have been built smaller since their purpose is to sell
+goods.  A small plume of smoke floats up from the shop to the north of
+here, and sound of clanging metal comes from within.  On its door is a
+picture of saiyan battle armor.
+~
+0 0 1
+D0
+~
+~
+0 -1 60014
+D2
+~
+~
+0 -1 60010
+D3
+~
+~
+0 -1 60008
+S
+#60010
+Supply District~
+While the structures of this district are of average saiyan
+architecture, they have been built smaller since their purpose is to sell
+goods.  Light reflects off of a scouter in the window of the shop to the
+east and hits you in the eye.  Faint chirping sounds can also, just barely,
+be heard coming from that direction as well.
+~
+0 0 1
+D0
+~
+~
+0 -1 60009
+D1
+~
+~
+0 -1 60015
+D2
+~
+~
+0 -1 60011
+S
+#60011
+Supply District~
+While the structures of this district are of average saiyan
+architecture, they have been built smaller since their purpose is to sell
+goods.  Even for this district, there is one building to the east that is
+smaller than the rest.  And from that building, the sound of faint cheers
+and drunken rantings can be heard.
+~
+0 0 1
+D0
+~
+~
+0 -1 60010
+D1
+~
+~
+0 -1 60016
+D3
+~
+~
+0 -1 60012
+S
+#60012
+Supply District~
+While the structures of this district are of average saiyan
+architecture, they have been built smaller since their purpose is to sell
+goods.  The only shop of importance here is a weapon shop to the south,
+though from here, no weapons can be seen through the shop's windows.
+~
+0 0 1
+D1
+~
+~
+0 -1 60011
+D2
+~
+~
+0 -1 60017
+D3
+~
+~
+0 -1 60006
+S
+#60013
+Royal Tailors~
+Plastic mannequins are placed near center of the room, each displaying a
+different type of upper class suit or dress.  Along the walls, various
+articles of clothing for the lower and middle classes have been hung.  On
+the back wall, a variety of pants, shirts, and jumpsuits for the soldiers
+are on display.
+~
+0 0 0
+D2
+~
+~
+0 -1 60008
+S
+#60014
+Armourers Interplanetary~
+Lifesize, plastic figurines stand around this room, each wearing a
+slightly different piece of armor.  Inside the display case rest several
+more, presumably more expensive, pieces of armor which the proprietor has
+chosen not to put out in the open.  Sounds of metal being hammered and
+mechanical noises are coming from the back of the shop.
+~
+0 0 0
+D2
+~
+~
+0 -1 60009
+S
+#60015
+The Scouter Outlet~
+Dozens of scouters sit grouped upon shelves in this shop.  Their
+grouping has been based on scanning ability, and then they've been
+sub-grouped based on lens color: green, blue, red.  Over each group is a
+piece of paper with a price on it, and on the display case there is a sign
+that reads: "All prices and sales final."
+~
+0 0 0
+D3
+~
+~
+0 -1 60010
+S
+#60016
+Soldiers' Bar~
+Several circular and long rectangular tables are scattered around the
+room, each surrounded by a number of chairs.  Bottles of various types of
+liquor, both domestic and exotic, sit on the shelves behind the bar.  The
+purple walls and ceiling of this room, combined with the alcohol, seem to
+have created a very relaxed atmosphere -- most everyone looks to be calm
+and happy.
+~
+0 2098176 0
+D3
+~
+~
+0 -1 60011
+S
+#60017
+A Deserted Weapon Store~
+This shop is completely empty, even though it appears to have been
+stocked full of a variety of weapons at one point.  But now, there are no
+weapons along the walls, in the windows, or even in the display case.  For
+that matter, there is a lack of a shopkeeper too.
+~
+0 0 0
+D0
+~
+~
+0 -1 60012
+S
+#60018
+Training Complex - Entrance~
+This entire room is but a single shade of light grey.  The walls have
+been built in a circular fashion to allow for this to serve as a hub for
+all those entering and leaving this complex.  There are also no objects in
+this room, aside from a single sign on the eastern side of the wall.
+~
+0 2098188 0
+D0
+~
+~
+0 -1 60023
+D1
+~
+~
+0 -1 60002
+D3
+~
+~
+0 -1 60025
+D4
+~
+~
+0 -1 60019
+D5
+~
+~
+0 -1 60022
+D7
+~
+~
+0 -1 60024
+D9
+~
+~
+0 -1 60026
+E
+sign~
+Up        - Sparring Areas
+Down      - Medical Ward
+North     - Beginner's Training
+Northwest - Level 2 Training
+West      - Intermediate Training
+Southwest - Advanced Training
+
+Be advised that the complex administration is not responsible for any loss
+of personal property or body appendages, severe or permanent injury, or
+death.
+~
+S
+#60019
+Training Complex - Second Floor Junction~
+This room is more of an extention of the entrance than an isolated room.
+It too is entirely solid grey on the ceilings, walls, and floor.  The sound
+of fighting echoes around this room from the north and west.
+~
+0 2098188 0
+D0
+~
+~
+0 -1 60020
+D3
+~
+~
+0 -1 60021
+D5
+~
+~
+0 -1 60018
+S
+#60020
+Training Complex - Sparring Room 1~
+This whole room has been lined with dark, energy-absorbing plates
+imported from the Center of Universe space station.  At the very center of
+the room, surrounded by a barrier made of more plates, is a large
+gravity-generating device used to help train the warriors.
+~
+0 337641484 0
+D2
+~
+~
+0 -1 60019
+S
+#60021
+Training Complex - Sparring Room 2~
+This whole room has been lined with dark, energy-absorbing plates
+imported from the Center of Universe space station.  At the very center of
+the room, surrounded by a barrier made of more plates, is a large
+gravity-generating device used to help train the warriors.
+~
+0 337641484 0
+D1
+~
+~
+0 -1 60019
+S
+#60022
+Training Complex - Medical Ward~
+The walls of this room are a white color with just a hint of blue,
+making it seem larger than it actually is.  Roughly a dozen healing tanks
+are lining the perimeter of the room, some of them occupied by injured
+warriors.  In the center of the room are three tanks that are larger than
+the rest and are surrounded by tables with various surgical tools -- those
+are for the more seriously injured.
+~
+0 540279816 0
+D4
+~
+~
+0 -1 60018
+S
+#60023
+Training Complex - Beginner's Level Entrance~
+The entrance expands into a slight bubble to create this small room, the
+only difference being that this is a much darker shade of grey.  Directly
+north is a set of automated double doors, and above them, a device reads
+"100 to 1000" in digital red numbers and letters.
+~
+0 2097164 0
+D0
+~
+~
+0 -1 60057
+D2
+~
+~
+0 -1 60018
+> entry_prog 100~
+if level($n) > 1
+  mpechoat $n You are too powerful to use this training wing.
+  mpforce $n s
+endif
+~
+|
+S
+#60024
+Training Complex - Level 2 Training Entrance~
+The entrance expands into a slight bubble to create this small room, the
+only difference being that this is a much darker shade of grey.  To the
+north is a set of automated double doors, and above them, a device reads
+"1000 to 20000" in digital red numbers and letters.
+~
+0 2097164 0
+D0
+~
+~
+0 -1 60061
+D8
+~
+~
+0 -1 60018
+> entry_prog 100~
+if level($n) > 2
+  mpechoat $n You are too powerful to use this training wing.
+  mpforce $n se
+endif
+~
+|
+S
+#60025
+Training Complex - Intermediate Level Entrance~
+The entrance expands into a slight bubble to create this small room, the
+only difference being that this is a much darker shade of grey.  West is a
+set of automated double doors, and above them, a device reads "20000 to
+100000" in digital red numbers and letters.
+~
+0 2097164 0
+D1
+~
+~
+0 -1 60018
+D3
+~
+~
+0 -1 60027
+> entry_prog 100~
+if level($n) > 3
+  mpechoat $n You are too powerful to use this training wing.
+  mpforce $n e
+endif
+~
+|
+S
+#60026
+Training Complex - Advanced Level Entrance~
+The entrance expands into a slight bubble to create this small room, the
+only difference being that this is a much darker shade of grey.  West is a
+set of automated double doors, and above them, a device reads "100000 to
+1000000" in digital red numbers and letters.
+~
+0 2097164 0
+D3
+~
+~
+0 -1 60067
+D6
+~
+~
+0 -1 60018
+> entry_prog 100~
+if level($n) > 4
+  mpechoat $n You are too powerful to use this training wing.
+  mpforce $n ne
+endif
+~
+|
+S
+#60027
+Holographic Forest - Entrance~
+The dark metal of the room disappears from view as the room grows
+completely dark.  Gradually, light is restored, and when it is, you are
+just beyond the tree line of a vast forest that stretches as far as the eye
+can see.  From some distance away, the sound of a waterfall can be heard.
+A rough path leads west, into the forest.
+~
+0 2097156 2
+D3
+~
+~
+0 -1 60028
+S
+#60028
+Holographic Forest~
+The path splits here, the original continuing west, and an offshoot
+heading north.  Tree coverage is reasonably light yet, at least for a meter
+or so to each side of the path.  However, the path is bordered by numerous
+types of shrubbery, some of which contain sharp thorns.  The path north is
+particularly dense with these thorny bushes.
+~
+0 2097152 3
+D0
+~
+~
+0 -1 60029
+D3
+~
+~
+0 -1 60031
+S
+#60029
+Holographic Forest - A Path Through the Thorny Bushes~
+No matter how hard one may try, the thorns of the bushes are impossible
+to avoid due to their incredible denseness.  Thus, you are repeatedly poked
+by the thorns, but they do little more than cut your flesh.  Flying above
+the bushes is impossible due to the branches overhead.
+~
+0 2097152 3
+D2
+~
+~
+0 -1 60028
+D3
+~
+~
+0 -1 60030
+> entry_prog 100~
+if hps($n) > 10
+  mpechoat $n You get scratched as you pass through the bushes.
+  mpdamage $n 2
+endif
+
+if hps($n) <= 10
+  mpechoat $n You barely avoid getting scratched by the bushes.
+endif
+~
+|
+S
+#60030
+Holographic Forest - A Small Clearing~
+In the middle of this forest, a small, circular area has been cleared of
+trees, yet it shows no stumps or any other signs of trees being removed by
+artificial means.  Bushes, including the thorned variety, and shrubs grow
+in abundance in this area.  At the far side of the clearing, a small hut
+has been assembled from local plantlife.
+~
+0 2097152 3
+D1
+~
+~
+0 -1 60029
+S
+#60031
+Holographic Forest~
+The small path twists and turns as if it was made by migrating snakes.
+Several smaller paths of matted grass and weeds can be seen leading from
+elsewhere in the forest.  In a small puddle of mud that formed from recent
+rain, a series of hoof marks can be seen.
+~
+0 2097152 3
+D1
+~
+~
+0 -1 60028
+D3
+~
+~
+0 -1 60032
+S
+#60032
+Holographic Forest - Climbing a Small Hill~
+The forest thins dramatically here, leaving only a handful of trees
+scattered in the immediate area.  From here, one can see the river to the
+west, and the waterfall can be heard all the more clearly.
+~
+0 2097152 3
+D1
+~
+~
+0 -1 60031
+D7
+~
+~
+0 -1 60033
+S
+#60033
+Holographic Forest - Entering the Darkwoods~
+Here the forest thickens again already.  To the north is the very heart
+of the forest -- it is quite thick, and dark, unlike the majority of the
+forest to the east.  The main path continues north, with another small
+branch heading down the hill, toward the river.
+~
+0 2097152 3
+D0
+~
+~
+0 -1 60039
+D3
+~
+~
+0 -1 60034
+D8
+~
+~
+0 -1 60032
+S
+#60034
+Holographic Forest - A River Bank~
+Silt and sand has been washed up along the bank from where the river has
+flooded in times past.  From here, the source of the river can't be seen,
+though it appears to come from somewhere within the forest to the north.
+The river turns to the west.
+~
+0 2097156 3
+D1
+~
+~
+0 -1 60033
+D9
+~
+~
+0 -1 60035
+S
+#60035
+Holographic Forest - A Raging River~
+The river becomes more narrow as it moves to the west, picking up more
+speed.  Already, the river is quite rapid, though it can be easily
+navigated, providing one avoids the rocks near the banks.  The sound of the
+waterfall grows louder to the west.
+~
+0 2097152 6
+D3
+~
+~
+0 -1 60036
+D6
+~
+~
+0 -1 60034
+S
+#60036
+Holographic Forest - Approaching Dangerous Rapids~
+The water's speed is beginning to grow dangerously fast now, the river
+having narrowed to less than half its size when it made the turn to the
+west.  Small rocks are becoming hard to avoid with the narrowness of the
+channel and the speed of the water.
+~
+0 2097152 6
+D1
+~
+~
+0 -1 60035
+D3
+~
+~
+0 -1 60037
+S
+#60037
+Holographic Forest - Dangerous Rapids~
+The water is moving dangerously fast now.  Rocks are nearly impossible
+to avoid at this speed, and the river is now merely a quarter of its
+original size.  Mist from the nearby waterfall fills the air but is even
+more thick to the west.  From this distance, the gigantic waterfall can
+even be seen, and if one would get any closer, it would be impossible to
+turn back.  And going over the waterfall would mean death.
+~
+0 2097152 6
+D1
+~
+~
+0 -1 60036
+S
+#60038
+Holographic Forest - The Waterfall~
+Ignoring the signs that the area ahead is dangerous, you swim towards
+the waterfall.  Before you know it, you're caught in the rapids, and pulled
+along by sharp currents straight towards the waterfall.  Seconds later,
+you're falling straight down, unable to even attempt to fly because of all
+the water around.  Your trip doesn't last long though -- in a very short
+time, you impact hard with the jagged rocks below, and despite your power,
+you're left a bloody corpse.  The moral of the story: READ THE ROOM DESCS!
+~
+0 3153926 1
+S
+#60039
+Holographic Forest - Within the Darkwoods~
+Trees have grown extremely dense, having had nothing to keep their
+growth in check.  The canopy created by the massive growth almost
+completely blocks out the sunlight.  And the lack of sunlight has prevented
+any smaller plants, such as bushes, from taking root around here.
+~
+0 2097152 3
+D2
+~
+~
+0 -1 60033
+D6
+~
+~
+0 -1 60040
+D7
+~
+~
+0 -1 60043
+S
+#60040
+Holographic Forest - Path in the Darkwoods~
+A series of trees in this forest have been cut down, leaving an
+artificial path, in both the ground and the canopy, that heads east.  The
+path also seems to be somewhat worn from travel, despite the remaining
+stumps, though no distinct footprints are visible.
+~
+0 2097152 3
+D1
+~
+~
+0 -1 60041
+D9
+~
+~
+0 -1 60039
+S
+#60041
+Holographic Forest - Leaving the Darkwoods~
+The path from the west makes a turn to the south here.  This must be
+near the forest border, as the tree density is moderately thinner than what
+it has been in the rest of the Darkwoods.  This has allowed types of flora
+that don't reach the canopy to begin to grow.
+~
+0 2097152 3
+D2
+~
+~
+0 -1 60042
+D3
+~
+~
+0 -1 60040
+S
+#60042
+Holographic Forest - Outside the Forest~
+As if by some unnatural force, the forest abruptly stops growing at one
+particular point, and the environment changes from one of thick trees to a
+grassy plain.  From here, the forest looks more like a natural wall of wood
+than a forest.  A path has been made through the knee-high grass to the
+south.
+~
+0 2097156 2
+D0
+~
+~
+0 -1 60041
+D2
+~
+~
+0 -1 60056
+S
+#60043
+Holographic Forest - Heading Deeper into the Darkwoods~
+Though one would think that a forest couldn't get any thicker, the
+further in this direction one goes, the thicker the forest gets.  Just
+walking through the forest is all but impossible due to the density.  To
+continue, you're required to squeeze through trees or sometimes break one
+in two.
+~
+0 2097152 3
+D3
+~
+~
+0 -1 60044
+D8
+~
+~
+0 -1 60039
+S
+#60044
+Holographic Forest - A Well-worn Path in the Deep Darkwoods~
+With very little warning, save for a few small paths of matted leaves, a
+fairly well-worn, dirt path appears in the forest.  It runs in a straight
+line for the most part, swirving only to move around large trees.  The only
+prints visible are a series of what would best be described as bear tracks.
+~
+0 2097152 3
+D0
+~
+~
+0 -1 60045
+D1
+~
+~
+0 -1 60043
+S
+#60045
+Holographic Forest - A Well-worn Path in the Deep Darkwoods~
+The suspicious path swings west here, for some reason that's not
+obvious.  Some small, dark rocks that have not been seen elsewhere in the
+forest also appear to be scattered about on the path in small quantities.
+And there seems to be more of them off to the west.
+~
+0 2097152 3
+D2
+~
+~
+0 -1 60044
+D3
+~
+~
+0 -1 60046
+S
+#60046
+Holographic Forest - A Cave Built Into the Cliffs~
+A cliff that was undetectable from further inside the forest now towers
+above you.  The tree line runs all the way up to the base of the cliff, and
+a few of the more brave trees have attempted to take root on the cliff
+itself.  The path from the east leads into a dark cave at the base of the
+cliffs.
+~
+0 2097156 3
+D1
+~
+~
+0 -1 60045
+D5
+~
+~
+0 -1 60047
+S
+#60047
+Dark Cavern - Entrance~
+Water drips from small stalagtites in the ceiling, forming small muddy
+puddles on the ground.  An odor of damp soil permeates this entire section
+of the cave.  Tracks also litter the ground, coming from the direction of
+the surface.  In one corner, some fur has been shed.
+~
+0 2097153 13
+D0
+~
+~
+0 -1 60048
+D4
+~
+~
+0 -1 60046
+S
+#60048
+Dark Cavern - Edge of a Slippery Slope~
+A series of small trickles of water run past here, down the slope.  The
+same odor from the cave entrance is present still.  The slope that leads
+down looks quite slippery with mud.
+~
+0 2097153 13
+D2
+~
+~
+0 -1 60047
+D5
+~
+~
+0 -1 60049
+S
+#60049
+Dark Cavern - Sliding Down a Slippery Slope~
+You start to make your way down the slope, but after a few meters, the
+ground under your feet slides out from under you.  Uncontrollably, you
+slide down the slope, covering yourself in mud in the process.
+~
+0 2097157 13
+D5
+~
+~
+0 -1 60050
+> entry_prog 100~
+mpforce $n d
+~
+|
+S
+#60050
+Dark Cavern - Bottom of a Slippery Slope~
+Having learned from experience, the slope leading up is far too slippery
+to attempt to climb, and the passage is too narrow to attempt to fly.
+Muddy water continues to drain down the slope from your recent slide.  The
+water flows off toward the east.
+~
+0 2097153 13
+D1
+~
+~
+0 -1 60051
+S
+#60051
+Dark Cavern - Ankle Deep in Water~
+The water from the slope has collected here and combined with other
+trickles from underground springs, forming a slow-moving stream.  The
+further one moves south, the deeper the stream becomes, though at the
+moment, it's only up to your ankles.
+~
+0 2097153 13
+D2
+~
+~
+0 -1 60052
+D3
+~
+~
+0 -1 60050
+S
+#60052
+Dark Cavern - Knee Deep in Water~
+The water is now up to your knees, the current moving slightly faster as
+the stream makes its way southwards.  Moving water implies some sort of
+exit.  But exit to what?
+~
+0 2097153 13
+D0
+~
+~
+0 -1 60051
+D8
+~
+~
+0 -1 60053
+S
+#60053
+Dark Cavern - Waist Deep in Water~
+The water is now up to your waist, while standing, and it has a faster
+current than before, implying that there must be some sort of exit.  A
+small whirlpool has formed, due to the current, in the southern section of
+this part of the tunnel.
+~
+0 2097153 13
+D5
+~
+~
+0 -1 60054
+D7
+~
+~
+0 -1 60052
+S
+#60054
+Dark Cavern - Underwater~
+After diving into the whirlpool above, you find yourself underwater.
+This explains where the water was draining to.  At the moment, though, the
+only possible exit is a small hole in the rock near where the whirlpool
+brought you down.
+~
+0 2097157 8
+D4
+~
+~
+0 -1 60055
+S
+#60055
+Dark Cavern - Approaching the Surface~
+You swim up through the small hole, barely able to fit.  The further up
+you go, the more light becomes visible in the water.  After a brief moment,
+light can be seen coming from another hole straight up -- an exit?
+~
+0 2097157 8
+D4
+~
+~
+0 -1 60035
+S
+#60056
+Training Complex - Holographic Forest Exit~
+As suddenly as before, this entire area turns completely black.  When
+the light is restored, the forest and grassy plain has completely vanished.
+In their place is now a dark metal room with odd patterns on the wall that
+have a faint glow.  South of here is the door.
+~
+0 2097164 0
+D2
+~
+~
+0 -1 60025
+S
+#60057
+Training Complex - Beginner's Level~
+Dark metal plates designed to absorb stray energy blasts line the floor,
+walls, and ceiling.  A network of small, crossed metal bars and fibers
+rests atop the lining on the walls and floor.  Dim light that is just
+enough to see by comes from lights carefully placed within the network of
+plates.
+~
+0 2097164 0
+D0
+~
+~
+0 -1 60058
+D2
+~
+~
+0 -1 60023
+D3
+~
+~
+0 -1 60060
+> speech_prog begin~
+if mobinroom(60008) > 0
+mea $n Only one mob may be fought in this room at a time.
+else
+if isfight($n)
+  mpechoat $n You can only fight one mob at a time.
+else
+mpmload 60008
+mpforce alpha mpkill $n
+endif
+endif
+~
+> speech_prog power~
+mpechoat $n The mob power for this room is: 200.
+~
+|
+S
+#60058
+Training Complex - Beginner's Level~
+Dark metal plates designed to absorb stray energy blasts line the floor,
+walls, and ceiling.  A network of small, crossed metal bars and fibers
+rests atop the lining on the walls and floor.  Dim light that is just
+enough to see by comes from lights carefully placed within the network of
+plates.
+~
+0 2097164 0
+D2
+~
+~
+0 -1 60057
+D3
+~
+~
+0 -1 60059
+> speech_prog begin~
+if mobinroom(60010) < 0
+mea $n Only one mob may be fought at a time.
+else
+if isfight($n)
+mpechoat $n You can only fight one mob at a time.
+else
+mpmload 60010
+mpforce gamma mpkill $n
+endif
+endif
+~
+> speech_prog power~
+mpechoat $n The mob power for this room is: 750.
+~
+|
+S
+#60059
+Training Complex - Beginner's Level~
+Dark metal plates designed to absorb stray energy blasts line the floor,
+walls, and ceiling.  A network of small, crossed metal bars and fibers
+rests atop the lining on the walls and floor.  Dim light that is just
+enough to see by comes from lights carefully placed within the network of
+plates.
+~
+0 2097164 0
+D1
+~
+~
+0 -1 60058
+D2
+~
+~
+0 -1 60060
+> speech_prog begin~
+if mobinroom(60011) > 0
+mea $n Only one mob may be fought in this room at a time.
+else
+if isfight($n)
+mpechoat $n You can only fight one mob at a time.
+else
+mpmload 60011
+mpforce delta mpkill $n
+endif
+endif
+~
+> speech_prog power~
+mpechoat $n The mob power for this room is: 1000.
+~
+|
+S
+#60060
+Training Complex - Beginner's Level~
+Dark metal plates designed to absorb stray energy blasts line the floor,
+walls, and ceiling.  A network of small, crossed metal bars and fibers
+rests atop the lining on the walls and floor.  Dim light that is just
+enough to see by comes from lights carefully placed within the network of
+plates.
+~
+0 2097164 0
+D0
+~
+~
+0 -1 60059
+D1
+~
+~
+0 -1 60057
+> speech_prog begin~
+if mobinroom(60009) > 0
+mea $n Only one mob may be fought in this room at a time.
+else
+if isfight($n)
+mpechoat $n You can only fight one mob at a time.
+else
+mpmload 60009
+mpforce beta mpkill $n
+endif
+endif
+~
+> speech_prog power~
+mpechoat $n The mob power for this room is: 500.
+~
+|
+S
+#60061
+Training Complex - Level 2 Training~
+Dark metal plates designed to absorb stray energy blasts line the floor,
+walls, and ceiling.  A network of small, crossed metal bars and fibers
+rests atop the lining on the walls and floor.  Dim light that is just
+enough to see by comes from lights carefully placed within the network of
+plates.
+~
+0 2097164 0
+D0
+~
+~
+0 -1 60062
+D2
+~
+~
+0 -1 60024
+D3
+~
+~
+0 -1 60066
+> speech_prog begin~
+if mobinroom(60012) > 0
+mea $n Only one mob may be fought in this room at a time.
+else
+if isfight($n)
+mpechoat $n You can only fight one mob at a time.
+else
+mpmload 60012
+mpforce saibaman mpkill $n
+endif
+endif
+~
+> speech_prog power~
+mpechoat $n The mob power for this room is: 2000.
+~
+|
+S
+#60062
+Training Complex - Level 2 Training~
+Dark metal plates designed to absorb stray energy blasts line the floor,
+walls, and ceiling.  A network of small, crossed metal bars and fibers
+rests atop the lining on the walls and floor.  Dim light that is just
+enough to see by comes from lights carefully placed within the network of
+plates.
+~
+0 2097164 0
+D0
+~
+~
+0 -1 60063
+D2
+~
+~
+0 -1 60061
+D3
+~
+~
+0 -1 60065
+> speech_prog begin~
+if mobinroom(60013) > 0
+mea $n Only one mob may be fought in this room at a time.
+else
+if isfight($n)
+mpechoat $n You can only fight one mob at a time.
+else
+mpmload 60013
+mpforce saibaman mpkill $n
+endif
+endif
+~
+> speech_prog power~
+mpechoat $n The mob power for this room is: 5000.
+~
+|
+S
+#60063
+Training Complex - Level 2 Training~
+Dark metal plates designed to absorb stray energy blasts line the floor,
+walls, and ceiling.  A network of small, crossed metal bars and fibers
+rests atop the lining on the walls and floor.  Dim light that is just
+enough to see by comes from lights carefully placed within the network of
+plates.
+~
+0 2097164 0
+D2
+~
+~
+0 -1 60062
+D3
+~
+~
+0 -1 60064
+> speech_prog begin~
+if mobinroom(60014) > 0
+mea $n Only one mob may be fought in this room at a time.
+else
+if isfight($n)
+mpechoat $n You can only fight one mob at a time.
+else
+mpmload 60014
+mpforce saibaman mpkill $n
+endif
+endif
+~
+> speech_prog power~
+mpechoat $n The mob power for this room is: 10000.
+~
+|
+S
+#60064
+Training Complex - Level 2 Training~
+Dark metal plates designed to absorb stray energy blasts line the floor,
+walls, and ceiling.  A network of small, crossed metal bars and fibers
+rests atop the lining on the walls and floor.  Dim light that is just
+enough to see by comes from lights carefully placed within the network of
+plates.
+~
+0 2097164 0
+D1
+~
+~
+0 -1 60063
+D2
+~
+~
+0 -1 60065
+> speech_prog begin~
+if mobinroom(60015) > 0
+mea $n Only one mob may be fought in this room at a time.
+else
+if isfight($n)
+mpechoat $n You can only fight one mob at a time.
+else
+mpmload 60015
+mpforce saibaman mpkill $n
+endif
+endif
+~
+> speech_prog power~
+mpechoat $n The mob power for this room is: 20000.
+~
+|
+S
+#60065
+Training Complex - Level 2 Training~
+Dark metal plates designed to absorb stray energy blasts line the floor,
+walls, and ceiling.  A network of small, crossed metal bars and fibers
+rests atop the lining on the walls and floor.  Dim light that is just
+enough to see by comes from lights carefully placed within the network of
+plates.
+~
+0 2097164 0
+D0
+~
+~
+0 -1 60064
+D1
+~
+~
+0 -1 60062
+D2
+~
+~
+0 -1 60066
+> speech_prog begin~
+if mobinroom(60014) > 0
+mea $n Only one mob may be fought in this room at a time.
+else
+if isfight($n)
+mpechoat $n You can only fight one mob at a time.
+else
+mpmload 60014
+mpforce saibaman mpkill $n
+endif
+endif
+~
+> speech_prog power~
+mpechoat $n The mob power for this room is: 10000.
+~
+|
+S
+#60066
+Training Complex - Level 2 Training~
+Dark metal plates designed to absorb stray energy blasts line the floor,
+walls, and ceiling.  A network of small, crossed metal bars and fibers
+rests atop the lining on the walls and floor.  Dim light that is just
+enough to see by comes from lights carefully placed within the network of
+plates.
+~
+0 2097164 0
+D0
+~
+~
+0 -1 60065
+D1
+~
+~
+0 -1 60061
+> speech_prog begin~
+if mobinroom(60013) > 0
+mea $n Only one mob may be fought in this room at a time.
+else
+if isfight($n)
+mpechoat $n You can only fight one mob at a time.
+else
+mpmload 60013
+mpforce saibaman mpkill $n
+endif
+endif
+~
+> speech_prog power~
+mpechoat $n The mob power for this room is: 5000.
+~
+|
+S
+#60067
+Icy Mountain - Entrance~
+After taking a few steps away from the doors, the room fades to complete
+blackness.  Several seconds later, images take shape again.  You're
+ankle-deep in snow, with snow falling all around you, and an icy wind
+stings at your exposed skin.  A few dozen meters away is a path leading up
+a snow-covered mountain.
+~
+0 2097156 5
+D0
+~
+~
+0 -1 60068
+S
+#60068
+Icy Mountain - Bottom of the Mountain~
+The wind is but a small breeze here, with the mountain acting as a
+shield.  Snow falls freely all around, piling up on what already lies on
+the ground.  A series of footprints lead up a steep path to higher
+elevations.
+~
+0 2097152 5
+D2
+~
+~
+0 -1 60093
+D4
+~
+~
+0 -1 60069
+S
+#60069
+Icy Mountain - Snow-covered Footpath~
+This particular part of the path is less shielded than some other
+sections.  As a result, it's covered with several inches of snow, and winds
+have blown the snow so that all traces of the footprints from further down
+the mountain are gone.
+~
+0 2097152 5
+D1
+~
+~
+0 -1 60070
+D5
+~
+~
+0 -1 60068
+S
+#60070
+Icy Mountain - Narrow Footpath~
+The ledge grows narrow here, allowing only one person to move along it
+at a time.  Any more than one person would cause this little ledge to
+collapse under the weight.  Adding further danger, the snow has just
+slightly melted, making it slippery.
+~
+0 2099204 5
+D0
+~
+~
+0 -1 60071
+D3
+~
+~
+0 -1 60069
+S
+#60071
+Icy Mountain - Bottom of an Icy Cliff~
+The path up the mountain ends at a rocky cliff that's covered in ice.
+Climbing it will be impossible, as there is nothing which would suffice for
+proper grips -- the ice has made a smooth, shiny coating over the rocks.
+That means the only way up this cliff is to fly.
+~
+0 2097152 5
+D2
+~
+~
+0 -1 60070
+D4
+~
+~
+0 -1 60072
+S
+#60072
+Icy Mountain - Floating Beside an Icy Cliff~
+Even at this height, the ice covering on the rocks is very smooth,
+preventing anyone from getting a good grip on the cliff.  The wind has
+started to pick up at this altitude, but it's not dangerous enough to knock
+you around.  Good thing, too, because a fall from up here would really
+hurt.
+~
+0 18874372 9
+D4
+~
+~
+0 -1 60073
+D5
+~
+~
+0 -1 60071
+S
+#60073
+Icy Mountain - Atop an Icy Cliff~
+A small stream of water once flowed from the north and down over the
+cliff.  Now all that remains is a sheet of ice.  Enough snow has gathered
+along the edges of the ice to enable you to get traction.
+~
+0 2097152 5
+D0
+~
+~
+0 -1 60074
+D5
+~
+~
+0 -1 60072
+S
+#60074
+Icy Mountain - Outside a Frozen Cavern~
+This cave entrance appears to have been made by natural means -- the
+edges of the rock are smooth but not perfectly shaped.  But even so, it is
+angled just right that a chilling wind blows straight inside it.  A small
+sheet of ice leads from within the cave to the south.
+~
+0 2097152 5
+D2
+~
+~
+0 -1 60073
+D3
+~
+~
+0 -1 60075
+S
+#60075
+Frozen Cavern - Entrance~
+A freezing breeze blows into this room from the west.  Aside from that
+on the floor, the rock of this cavern is free from being covered with snow
+and ice.  The cavern narrows significantly to the west, and branches to a
+little slope to the south.
+~
+0 2098176 13
+D1
+~
+~
+0 -1 60074
+D2
+~
+~
+0 -1 60076
+D3
+~
+~
+0 -1 60080
+S
+#60076
+Frozen Cavern - Top of an Icy Slope~
+Though the ground beneath you is sloped mildly, just a meter more to the
+south, the slope really starts to drop.  A smooth sheet of ice is also
+covering the entire slope, making it impossible to go down without sliding.
+~
+0 2098176 13
+D0
+~
+~
+0 -1 60075
+D2
+~
+~
+0 -1 60077
+S
+#60077
+Sliding Down an Icy Slope~
+Deciding to continue, you step down onto the ice sheet, trying to keep
+your feet under you.  Unfortunately, your own weight, in combination with
+gravity forces your feet out from under you, and you fall into an
+uncontrollable slide.
+~
+0 2097156 13
+D0
+~
+~
+0 -1 60078
+> entry_prog 100~
+mpforce $n n
+~
+|
+S
+#60078
+Sliding Down an Icy Slope~
+You continue to slide down the slope, bouncing off the rocky wall of a
+turn in the process.  There's a light ahead about a dozen meters, and
+you're rapidly picking up speed towards it.
+~
+0 2097156 13
+D2
+~
+~
+0 -1 60079
+> entry_prog 100~
+mpforce $n s
+~
+|
+S
+#60079
+Icy Mountain - Floating Beside an Icy Cliff~
+You're sent flying out of a small hole in the cliff.  This scenery is
+that of something you've already seen -- the frozen cliff you flew up
+earlier to get into the cavern.  The hole you were spat out of was
+invisible the first time you passed through here, but now it's not so
+difficult to spot.
+~
+0 18874372 5
+D4
+~
+~
+0 -1 60073
+D5
+~
+~
+0 -1 60071
+S
+#60080
+Frozen Cavern - Icy Path~
+A thin layer of ice has built up on the bottom of the floor as the
+frozen remnants of an old stream that passed through this cave.  Though
+thin, the ice is extremely smooth and slippery, and the rock walls are just
+smooth enough that they won't provide adequate handholds for someone if
+balance was lost.
+~
+0 2098180 13
+D0
+~
+~
+0 -1 60081
+D1
+~
+~
+0 -1 60075
+> entry_prog 5~
+mpechoat $n You slip on the ice and slide out of the room.
+mpforce $n n
+~
+> entry_prog 5~
+mpechoat $n You slip on the ice and slide out of the room.
+mpforce $n e
+~
+|
+S
+#60081
+Frozen Cavern - Icy Path~
+A thin layer of smooth, slippery ice lines the floor in here too.  Like
+the southern area, the walls won't provide much support if one were to slip
+on the ice.  Some of the ice to the west has melted just a little.
+~
+0 2098180 13
+D2
+~
+~
+0 -1 60080
+D3
+~
+~
+0 -1 60082
+> entry_prog 5~
+mpechoat $n You slip on the ice and slide out of the room.
+mpforce $n w
+~
+> entry_prog 5~
+mpechoat $n You slip on the ice and slide out of the room.
+mpforce $n s
+~
+|
+S
+#60082
+Frozen Cavern - Slightly Melted Icy Path~
+A small trickle of water flows past here from the north.  That trickle
+has melted the ice just a little, but it's enough to make the ice even more
+slippery than ever.  As with the eastern rooms, the walls are useless for
+support.
+~
+0 2098180 13
+D0
+~
+~
+0 -1 60083
+D1
+~
+~
+0 -1 60081
+> entry_prog 15~
+mpechoat $n You slip on the ice and slide out of the room.
+mpforce $n e
+~
+> entry_prog 15~
+mpechoat $n You slip on the ice and slide out of the room.
+mpforce $n n
+~
+|
+S
+#60083
+Frozen Cavern - Slightly Melted Icy Path~
+This is where the little trickle that created all the ice seems to
+begin.  It runs down the northern wall, coating it in a sheet of ice.  Once
+on the ground, the trickle flows south, lining this entire passage with
+ice.  The breeze from outside is more noticible due to the hole above.
+~
+0 2098180 13
+D2
+~
+~
+0 -1 60082
+D4
+~
+~
+0 -1 60084
+> entry_prog 25~
+mpechoat $n You slip on the ice and slide out of the room.
+mpforce $n s
+~
+|
+S
+#60084
+Icy Mountain - Windy Footpath~
+Water trickles down the side of the mountain, then down into the cavern
+below.  At this altitute, the wind whips about wildly, stinging at your
+exposed skin, almost cutting.  Snow falls heavily, and aided by the wind,
+makes visibility minimal.
+~
+0 2098176 5
+D1
+~
+~
+0 -1 60085
+D5
+~
+~
+0 -1 60083
+S
+#60085
+Icy Mountain - Windy Footpath~
+The wind continues to whip about, cutting at you, stabbing, shoving, as
+if attempting to knock you off the mountain entirely.  Visibility is still
+poor, but, to the south, there appears to be a large structure of some
+kind.  What type of structure can't be determined from this distance.
+~
+0 2097152 5
+D2
+~
+~
+0 -1 60086
+D3
+~
+~
+0 -1 60084
+S
+#60086
+Icy Mountain - Ledge In a Cliff~
+The path from the north ends at the edge of a cliff that goes straight
+down at least a hundred meters.  A small ledge has been created by the
+formation of the rock wall, making it possible to also climb up the cliff.
+Unfortunately, the wind is so strong up here that flying up the cliff is
+impossible.
+~
+0 2097152 5
+D0
+~
+~
+0 -1 60085
+D4
+~
+~
+0 -1 60087
+S
+#60087
+Icy Mountain - Scaling a Windy Cliff~
+The wind whips about even harder now, impacting you hard, and in some
+cases, knocking you slightly to the side.  The rockface is fairly smooth,
+making adequate grips a rare thing.  A few dozen meters above, the cliff
+appears to end.
+~
+0 2097156 5
+D4
+~
+~
+0 -1 60088
+D5
+~
+~
+0 -1 60086
+> entry_prog 35~
+mpechoat $n A powerful gust of wind hits you, and you lose your grip, sliding down the cliff several meters.
+mpforce $n d
+~
+|
+S
+#60088
+Icy Mountain - Summit~
+Unlike the ground down the cliff, this circular-shaped summit is free of
+harsh winds and cold snow.  While there is a layer of snow covering the
+ground, it's not in any way slippery.  Occasionally, some odd shadows from
+above pass over the ground.
+~
+0 2097156 5
+D4
+~
+~
+0 -1 60089
+D5
+~
+~
+0 -1 60087
+S
+#60089
+Floating Above the Icy Mountain~
+The wind once again blows, but it's now a gentle breeze, though still
+cold.  You're above the clouds that rest directly over the mountain, and
+can see for kilometers in every direction.  Further east, a dark grey cloud
+floats above several others.  There is an oddly strong smell of bird in the
+air.
+~
+0 2097152 9
+D0
+~
+~
+0 -1 60090
+D1
+~
+~
+0 -1 60092
+D5
+~
+~
+0 -1 60088
+S
+#60090
+Floating Above the Icy Mountain~
+The wind once again blows, but it's now a gentle breeze, though still
+cold.  You're above the clouds that rest directly over the mountain, and
+can see for kilometers in every direction.  Further east, a dark grey cloud
+floats above several others.  There is an oddly strong smell of bird in the
+air.
+~
+0 2097152 9
+D1
+~
+~
+0 -1 60091
+D2
+~
+~
+0 -1 60089
+S
+#60091
+Floating Above the Icy Mountain~
+Visibility is near zero in this cloud due to its denseness.  Most of
+what you can see is just grey haze all around.  The air is still, no wind
+at all.  But due to the moisture content of this cloud, droplets of water
+are rapidly forming on you -- stay in here too long, and you'll be soaked.
+~
+0 2097152 9
+D2
+~
+~
+0 -1 60092
+D3
+~
+~
+0 -1 60090
+S
+#60092
+Floating Above the Icy Mountain~
+Visibility is near zero in this cloud due to its denseness.  Most of
+what you can see is just grey haze all around.  The air is still, no wind
+at all.  But due to the moisture content of this cloud, droplets of water
+are rapidly forming on you -- stay in here too long, and you'll be soaked.
+~
+0 2097152 9
+D0
+~
+~
+0 -1 60091
+D3
+~
+~
+0 -1 60089
+S
+#60093
+Icy Mountain - Exit~
+As you move towards where you recall this simulation beginning,
+everything suddenly goes dark.  Gradually, lighting comes back on, and when
+it does, you're back in the room where it all began.  The unusual patterns
+on the walls slowly lose their small golden glows and return to their
+silver color.
+~
+0 2097164 0
+D2
+~
+~
+0 -1 60026
+S
+#60094
+Duelling Room - Waiting Area~
+~
+0 1036 0
+D0
+~
+~
+0 -1 60018
+S
+#60095
+Floating in a void~
+~
+0 2097156 1
+S
+#60096
+Floating in a void~
+~
+0 2097156 1
+S
+#60097
+Floating in a void~
+~
+0 2097156 1
+S
+#60098
+Floating in a void~
+~
+0 2097156 1
+S
+#60099
+Floating in a void~
+~
+0 2097156 1
+S
+#60100
+A holding cell deep within the bowels of Castle Vegeta~
+Moss grows in scattered spots along the brick walls of this cell. From a
+corner, water slowly drips down through the ceiling, forming a small puddle
+on the ground. The are no doors to this room, no windows, and no bars.
+Through divine intervention, you were brought here, and only through divine
+intervention may you leave. This is not Hell, but this is something close
+to it.
+~
+0 36709516&16 0
+D5
+~
+~
+2048 -1 6000
+S
+#60101
+Floating in a void~
+~
+0 2097156 1
+S
+#60102
+Floating in a void~
+~
+0 2097156 1
+S
+#60103
+Floating in a void~
+~
+0 2097156 1
+S
+#60104
+Floating in a void~
+~
+0 2097156 1
+S
+#60105
+Floating in a void~
+~
+0 2097156 1
+S
+#60106
+Floating in a void~
+~
+0 2097156 1
+S
+#60107
+Floating in a void~
+~
+0 2097156 1
+S
+#60108
+Floating in a void~
+~
+0 2097156 1
+S
+#60109
+Floating in a void~
+~
+0 2097156 1
+S
+#60110
+Floating in a void~
+~
+0 2097156 1
+D5
+~
+~
+2048 -1 60100
+D9
+~
+~
+2048 -1 6153
+S
+#60111
+Floating in a void~
+~
+0 2097156 1
+S
+#60112
+Floating in a void~
+~
+0 2097156 1
+S
+#60113
+Floating in a void~
+~
+0 2097156 1
+S
+#60114
+Floating in a void~
+~
+0 2097156 1
+S
+#60115
+Floating in a void~
+~
+0 2097156 1
+S
+#60116
+Floating in a void~
+~
+0 2097156 1
+S
+#60117
+Floating in a void~
+~
+0 2097156 1
+S
+#60118
+Floating in a void~
+~
+0 2097156 1
+S
+#60119
+Floating in a void~
+~
+0 2097156 1
+S
+#60120
+Floating in a void~
+~
+0 2097156 1
+S
+#60121
+Floating in a void~
+~
+0 2097156 1
+S
+#60122
+Floating in a void~
+~
+0 2097156 1
+S
+#60123
+Floating in a void~
+~
+0 2097156 1
+S
+#60124
+Floating in a void~
+~
+0 2097156 1
+S
+#60125
+Floating in a void~
+~
+0 2097156 1
+S
+#60126
+Floating in a void~
+~
+0 2097156 1
+S
+#60127
+Floating in a void~
+~
+0 2097156 1
+S
+#60128
+Floating in a void~
+~
+0 2097156 1
+S
+#60129
+Floating in a void~
+~
+0 2097156 1
+S
+#60130
+Floating in a void~
+~
+0 2097156 1
+S
+#60131
+Floating in a void~
+~
+0 2097156 1
+S
+#60132
+Floating in a void~
+~
+0 2097156 1
+S
+#60133
+Floating in a void~
+~
+0 2097156 1
+S
+#60134
+Floating in a void~
+~
+0 2097156 1
+S
+#60135
+Floating in a void~
+~
+0 2097156 1
+S
+#60136
+Floating in a void~
+~
+0 2097156 1
+S
+#60137
+Floating in a void~
+~
+0 2097156 1
+S
+#60138
+Floating in a void~
+~
+0 2097156 1
+S
+#60139
+Floating in a void~
+~
+0 2097156 1
+S
+#60140
+Floating in a void~
+~
+0 2097156 1
+S
+#60141
+Floating in a void~
+~
+0 2097156 1
+S
+#60142
+Floating in a void~
+~
+0 2097156 1
+S
+#60143
+Floating in a void~
+~
+0 2097156 1
+S
+#60144
+Floating in a void~
+~
+0 2097156 1
+S
+#60145
+Floating in a void~
+~
+0 2097156 1
+S
+#60146
+Floating in a void~
+~
+0 2097156 1
+S
+#60147
+Floating in a void~
+~
+0 2097156 1
+S
+#60148
+Floating in a void~
+~
+0 2097156 1
+S
+#60149
+Floating in a void~
+~
+0 2097156 1
+S
+#60150
+Floating in a void~
+~
+0 2097156 1
+S
+#60151
+Floating in a void~
+~
+0 2097156 1
+S
+#60152
+Floating in a void~
+~
+0 2097156 1
+S
+#60153
+Floating in a void~
+~
+0 2097156 1
+S
+#60154
+Floating in a void~
+~
+0 2097156 1
+S
+#60155
+Floating in a void~
+~
+0 2097156 1
+S
+#60156
+Floating in a void~
+~
+0 2097156 1
+S
+#60157
+Floating in a void~
+~
+0 2097156 1
+S
+#60158
+Floating in a void~
+~
+0 2097156 1
+S
+#60159
+Floating in a void~
+~
+0 2097156 1
+S
+#60160
+Floating in a void~
+~
+0 2097156 1
+S
+#60161
+Floating in a void~
+~
+0 2097156 1
+S
+#60162
+Floating in a void~
+~
+0 2097156 1
+S
+#60163
+Floating in a void~
+~
+0 2097156 1
+S
+#60164
+Floating in a void~
+~
+0 2097156 1
+S
+#60165
+Floating in a void~
+~
+0 2097156 1
+S
+#60166
+Floating in a void~
+~
+0 2097156 1
+S
+#60167
+Floating in a void~
+~
+0 2097156 1
+S
+#60168
+Floating in a void~
+~
+0 2097156 1
+S
+#60169
+Floating in a void~
+~
+0 2097156 1
+S
+#60170
+Floating in a void~
+~
+0 2097156 1
+S
+#60171
+Floating in a void~
+~
+0 2097156 1
+S
+#60172
+Floating in a void~
+~
+0 2097156 1
+S
+#60173
+Floating in a void~
+~
+0 2097156 1
+S
+#60174
+Floating in a void~
+~
+0 2097156 1
+S
+#60175
+Floating in a void~
+~
+0 2097156 1
+S
+#60176
+Floating in a void~
+~
+0 2097156 1
+S
+#60177
+Floating in a void~
+~
+0 2097156 1
+S
+#60178
+Floating in a void~
+~
+0 2097156 1
+S
+#60179
+Floating in a void~
+~
+0 2097156 1
+S
+#60180
+Floating in a void~
+~
+0 2097156 1
+S
+#60181
+Floating in a void~
+~
+0 2097156 1
+S
+#60182
+Floating in a void~
+~
+0 2097156 1
+S
+#60183
+Floating in a void~
+~
+0 2097156 1
+S
+#60184
+Floating in a void~
+~
+0 2097156 1
+S
+#60185
+Floating in a void~
+~
+0 2097156 1
+S
+#60186
+Floating in a void~
+~
+0 2097156 1
+S
+#60187
+Floating in a void~
+~
+0 2097156 1
+S
+#60188
+Floating in a void~
+~
+0 2097156 1
+S
+#60189
+Floating in a void~
+~
+0 2097156 1
+S
+#60190
+Floating in a void~
+~
+0 2097156 1
+S
+#60191
+Floating in a void~
+~
+0 2097156 1
+S
+#60192
+Floating in a void~
+~
+0 2097156 1
+S
+#60193
+Floating in a void~
+~
+0 2097156 1
+S
+#60194
+Floating in a void~
+~
+0 2097156 1
+S
+#60195
+Floating in a void~
+~
+0 2097156 1
+S
+#60196
+Floating in a void~
+~
+0 2097156 1
+S
+#60197
+Floating in a void~
+~
+0 2097156 1
+S
+#60198
+Floating in a void~
+~
+0 2097156 1
+S
+#60199
+Floating in a void~
+~
+0 2097156 1
+S
+#0
+
+
+#RESETS
+M 0 60002 1 60013
+G 1 60001 1
+G 1 60002 1
+G 1 60003 1
+G 1 60004 1
+G 1 60005 1
+G 1 60006 1
+G 1 60007 1
+G 1 60008 1
+G 1 60016 1
+G 1 60017 1
+M 0 60003 1 60014
+G 1 6012 1
+G 1 6013 1
+G 1 6014 1
+G 1 6015 1
+M 0 60001 1 60016
+G 1 60009 1
+G 1 60010 1
+G 1 60011 1
+G 1 60012 1
+G 1 60013 1
+G 1 60014 1
+G 1 60015 1
+G 1 60018 1
+G 1 60019 1
+M 0 60000 1 60001
+M 0 60000 1 60005
+M 0 60000 1 60007
+M 0 60000 1 60007
+M 0 60004 1 60016
+M 0 60005 1 60015
+G 1 6016 1
+G 1 6017 1
+G 1 6018 1
+G 1 6019 1
+G 1 6020 1
+G 1 6021 1
+M 0 60000 1 60000
+M 0 60007 1 60057
+M 0 60007 1 60058
+M 0 60007 1 60059
+M 0 60007 1 60060
+M 0 60007 1 60061
+M 0 60007 1 60062
+M 0 60007 1 60063
+M 0 60007 1 60064
+M 0 60007 1 60065
+M 0 60007 1 60066
+M 1 60016 1 60028
+M 1 60020 1 60030
+M 1 60018 1 60032
+M 1 60018 1 60033
+M 1 60019 1 60036
+M 1 60019 1 60035
+M 1 60016 1 60039
+M 1 60016 1 60040
+M 1 60018 1 60041
+M 1 60018 1 60041
+M 1 60017 1 60048
+M 1 60017 1 60047
+M 1 60018 1 60044
+M 1 60016 1 60045
+M 1 60016 1 60045
+M 1 60019 1 60051
+M 1 60019 1 60053
+M 1 60019 1 60053
+M 1 60022 1 60068
+M 1 60021 1 60073
+M 1 60021 1 60074
+M 1 60021 1 60075
+M 1 60023 1 60082
+M 1 60023 1 60082
+M 1 60023 1 60080
+M 1 60023 1 60083
+M 1 60022 1 60085
+M 1 60022 1 60085
+M 1 60021 1 60088
+M 1 60021 1 60088
+M 1 60024 1 60092
+M 1 60024 1 60089
+M 1 60024 1 60090
+M 1 60024 1 60091
+M 1 60023 1 60071
+S
+
+
+#SHOPS
+ 60001    0  0  0  0  0   100  90         0 23    ; a saiyan bartender
+ 60002    0  0  0  0  0   100  90         0 23    ; the royal tailor
+ 60003    0  0  0  0  0   100  90         0 23    ; a saiyan armourer
+ 60005    0  0  0  0  0   100  90         0 23    ; an automated serving drone
+ 60006    0  0  0  0  0   100  90         0 23    ; a New Year's bartender
+0
+
+
+#REPAIRS
+ 60003    9  0  0         100   1         0 23    ; a saiyan armourer
+0
+
+
+#SPECIALS
+S
+
+
+#$

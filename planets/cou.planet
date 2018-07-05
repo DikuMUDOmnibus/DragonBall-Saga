@@ -1,0 +1,10 @@
+#PLANET
+Name         CoU~
+Filename     cou.planet~
+BaseValue    0
+Flags        1
+PopSupport   0
+Area         CoU.are~
+End
+
+#END

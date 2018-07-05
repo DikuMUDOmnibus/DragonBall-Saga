@@ -1,0 +1,5539 @@
+#AREA   The Big Gete Star~
+
+
+
+#VERSION 252
+#AUTHOR Viola~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 5
+
+#RESETMSG The living metal skin of the Big Gete Star ripples silently.~
+
+#FLAGS
+2 11
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#100000
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#100001
+robot droid hammer energy guard~
+A hammer-armed guard droid~
+A hammer-armed guard droid searches for volunteers
+~
+This squat little robot stands about three feet tall, and doesn't look
+aggressive or very powerful.  Some might even say it's cute.  However, when
+it notices you it raises its arms to show off thick mallets instead of
+hands, coated with dried, purple fluid. 
+~
+33 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 500000
+112 112 0
+40 30 40 40 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 50~
+mpecho $I states, "The Big Gete Star hopes you will volunteer for energy collection.  Or else."
+~
+> greet_prog 40~
+mpecho $I states, "We don't want to hurt you.  We just want to chop you up into little pieces!"
+~
+|
+#100002
+absorb pincer claw droid robot guard~
+A clawed guard droid~
+A clawed droid searches for energy to drain
+~
+This squat little robot stands about three feet tall, and doesn't look
+aggressive or very powerful.  Some might even say it's cute.  However, when
+it notices you it raises its arms to show off its two clawed hands. A
+small, red device seems to be implanted on the 'palm' of each hand. 
+~
+33 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 750000
+112 112 0
+60 40 60 40 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 50~
+mpecho $I states, "We don't want to hurt you.  We just want to chop you up into little pieces!"
+~
+> fight_prog 15~
+mpecho $I states, "Don't worry, this won't hurt a bit.  Well, *this* will."
+~
+> greet_prog 30~
+mpecho $I states, "The Big Gete Star hopes you will volunteer for energy collection.  Or else."
+~
+> fight_prog 15~
+'masenko'
+~
+|
+#100003
+cyclops robot droid guard giant~
+A cyclopean robot guard~
+A giant robot with one gleaming red eye watches over its prisoners
+~
+This giant robot stands at least nine feet tall, with one pulsing, red,
+electronic eye set in the middle of its head.  Its arms end in four
+pincers, and it's body seems to be constructed from super strong materials.
+~
+16777217 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 500000000
+112 112 0
+100 60 70 100 0
+0 0 0 0 0
+4 4 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 12~
+mpecho &G$I points towards $n, as its forearm starts to open up.  Amidst much whirring and grinding, what looks like a futuristic machine gun emerges from its hiding spot.&D
+mpecho &GSpent shells clatter off the robot's armored form and onto the ground, the strange gun firing repeatedly.  Specially crafted bullets spray out and penetrate $n's defences, riddling $s body.&D
+mppldamage $n 7
+~
+> fight_prog 14~
+mpecho &G$I points towards $n, as its forearm starts to open up.  Amidst much whirring and grinding, what looks like a futuristic machine gun emerges from its hiding spot.&D
+mpecho &GSpent shells clatter off the robot's armored form and onto the ground, the strange gun firing repeatedly.  Specially crafted bullets spray out and penetrate $n's defences, riddling $s body.&D
+mppldamage $n 15
+~
+> fight_prog 19~
+mpecho &G$I points towards $n, as its forearm starts to open up.  Amidst much whirring and grinding, what looks like a futuristic machine gun emerges from its hiding spot.&D
+mpecho &GSpent shells clatter off the robot's armored form and onto the ground, the strange gun firing repeatedly.  Specially crafted bullets spray out and penetrate $n's defences, riddling $s body.&D
+mppldamage $n 23
+~
+> fight_prog 25~
+mpecho &G$I points towards $n, as its forearm starts to open up.  Amidst much whirring and grinding, what looks like a futuristic machine gun emerges from its hiding spot.&D
+mpecho &GSpent shells clatter off the robot's armored form and onto the ground, the strange gun firing repeatedly.  Specially crafted bullets spray out and penetrate $n's defences, riddling $s body.&D
+mppldamage $n 34
+~
+> death_prog 10~
+mpoload 100006
+~
+|
+#100004
+cyclops robot droid giant wing fly~
+A winged, cyclopean droid~
+A giant, winged robot flies here, searching for escaped prisoners
+~
+This giant robot stands at least nine feet tall, with one pulsing, red,
+electronic eye set in the middle of its head.  Its arms end in four
+pincers, and it's body seems to be constructed from super strong materials.
+This particular model has a pair of large wings, like something you'd see
+on a jet plane, and a jet engine that enables it to soar through the skies
+in pursuit of fleeing prisoners. 
+~
+16777217 524288 0 C
+1 0 100 1d20+0 2d5+0
+-1 750000000
+112 112 0
+100 60 80 100 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 30~
+'rocket punch'
+~
+> death_prog 10~
+mpoload 100005
+~
+|
+#100005
+grey metal cooler icer~
+Metal Cooler~
+Metal Cooler stands in the middle of the corridor, smirking
+~
+This is a standard model Metal Cooler that is mass produced by the Gete
+Star.  It is modeled after, and controlled by, the Icer named Cooler.  The
+shiny, smooth metal that makes up his body is formed from an unkown and
+highly durable space-age alloy. Being made out of this metal and the Big
+Gete Star's nanites, this creature can regenerate from almost any wound
+instantly, even quickly recovering from what seems like death. 
+~
+16777217 0 -1000 C
+1 0 100 1d20+0 2d5+0
+-1 10000000000
+112 112 1
+100 100 100 100 0
+0 0 0 0 0
+5 5 0 0 1 1 2
+0 0 0 0 0 0 4 0
+> fight_prog 40~
+'death ball'
+~
+> fight_prog 33~
+'finger beam'
+~
+> death_prog 50~
+if rand(50)
+mpmload 100005
+mpecho &PAs Metal Cooler is defeated, thin wires extend from his remains, quickly repairing his form for another battle.&D
+endif
+~
+|
+#100006
+white metal cooler icer~
+Metal Cooler~
+Metal Cooler stands in the middle of the corridor, smirking
+~
+This is a standard model Metal Cooler that is mass produced by the Gete
+Star.  It is modeled after, and controlled by, the Icer named Cooler.  The
+shiny, smooth metal that makes up his body is formed from an unkown and
+highly durable space-age alloy. Being made out of this metal and the Big
+Gete Star's nanites, this creature can regenerate from almost any wound
+instantly, even quickly recovering from what seems like death. 
+~
+1 0 -1000 C
+1 0 100 1d20+0 2d5+0
+-1 100000000000
+112 112 1
+125 100 150 125 0
+0 0 0 0 0
+5 5 0 0 1 1 2
+0 0 0 0 0 0 4 0
+> fight_prog 40~
+'finger beam'
+~
+> fight_prog 33~
+'death ball'
+~
+> death_prog 50~
+if rand(50)
+mpmload 100006
+mpecho &PAs Metal Cooler is defeated, thin wires extend from his remains, quickly repairing his form for another battle.&D
+endif
+~
+|
+#100007
+blue metal cooler icer~
+Metal Cooler~
+Metal Cooler stands in the middle of the corridor, smirking
+~
+This is a standard model Metal Cooler that is mass produced by the Gete
+Star.  It is modeled after, and controlled by, the Icer named Cooler.  The
+shiny, smooth metal that makes up his body is formed from an unkown and
+highly durable space-age alloy. Being made out of this metal and the Big
+Gete Star's nanites, this creature can regenerate from almost any wound
+instantly, even quickly recovering from what seems like death. 
+~
+1 0 -1000 C
+1 0 100 1d20+0 2d5+0
+-1 500000000000
+112 112 1
+150 125 165 145 0
+0 0 0 0 0
+5 5 0 0 1 1 2
+10 0 0 0 0 0 4 0
+> fight_prog 40~
+'death ball'
+~
+> fight_prog 33~
+'finger beam'
+~
+> death_prog 100~
+if rand (5)
+mpoload 100003
+else
+if rand(25)
+mpmload 100007
+mpecho &PAs Metal Cooler is defeated, thin wires extend from his remains, quickly repairing his form for another battle.&D
+endif
+endif
+~
+> fight_prog 15~
+'eye beam'
+~
+|
+#100008
+purple metal cooler icer~
+Metal Cooler~
+Metal Cooler stands in the middle of the corridor, smirking
+~
+This is a standard model Metal Cooler that is mass produced by the Gete
+Star.  It is modeled after, and controlled by, the Icer named Cooler.  The
+shiny, smooth metal that makes up his body is formed from an unkown and
+highly durable space-age alloy. Being made out of this metal and the Big
+Gete Star's nanites, this creature can regenerate from almost any wound
+instantly, even quickly recovering from what seems like death. 
+~
+1 0 -1000 C
+1 0 100 1d20+0 2d5+0
+-1 1000000000000
+112 112 1
+200 150 210 180 0
+0 0 0 0 0
+5 5 0 0 1 1 2
+20 0 0 0 0 0 4 3
+> fight_prog 40~
+'finger beam'
+~
+> fight_prog 33~
+'death ball'
+~
+> death_prog 100~
+if rand (2)
+mpoload 100004
+else
+if rand(25)
+mpmload 100008
+mpecho &PAs Metal Cooler is defeated, thin wires extend from his remains, quickly repairing his form for another battle.&D
+endif
+endif
+~
+|
+#100291
+monitor eye slot vend~
+A large, red monitor set above a slot in the wall~
+A large, electronic, red eye is set in the wall here, right above a strange slot
+~
+This thing looks oddly like a space age vending machine. 
+~
+83886083 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#100292
+super namek~
+A Super Namek~
+A Super Namek floats here, doing what he can to stop the cyclopean droids
+~
+This fierce and powerful warrior has managed to transform into a Super
+Namek, and is now fighting a seemingly endless number of cyclopean guards. 
+The Super Namek is tearing through one robot after another, but is quickly
+tiring. 
+~
+16778241 524288&1024 1000 C
+1 0 100 1d20+0 2d5+0
+-1 650000000
+112 112 0
+40 50 45 45 0
+0 0 0 0 0
+3 3 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 27~
+'special beam cannon'
+~
+|
+#100293
+namek prisoner~
+A Namekian prisoner~
+A frightened Namekian cringes here, chained up like a prisoner
+~
+A frightend Namek stands here, chained to a its fellows, kept under the
+watchful eye of a cyclopean guard. 
+~
+16777217 0 1000 C
+1 0 100 1d20+0 2d5+0
+-1 250000
+112 112 0
+20 30 30 40 10
+0 0 0 0 0
+3 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 13~
+'energy ball'
+~
+|
+#100294
+prisoner namek~
+A Namekian prisoner~
+A Namekian prisoner stands in the cell, looking hopeless
+~
+A tired Namek sits against the far wall.  Its badly injured, and looks
+to have lost all hope.  Apparently, the robotic guards are ignoring him for
+now, preferring to send the more energetic Nameks off to the grinders
+first. 
+~
+67108867 0 1000 C
+1 0 100 1d20+0 2d5+0
+-1 200000
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+3 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#100295
+prisoner fly namek escape green~
+An escaped Namekian prisoner~
+A Namek escapee is flying quickly, trying to stay away from the winged guards
+~
+A Namek is hovering here, looking around desperately for some escape
+route.  Apparently it has managed to temporarily evade its captors, but is
+still hopelessly trapped by the Big Gete Star's tendrils. The Namek notices
+you, and a look of hope washes over its face. 
+~
+16777217 524288 1000 C
+1 0 100 1d20+0 2d5+0
+-1 300000
+112 112 0
+20 35 35 45 0
+0 0 0 0 0
+3 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 35~
+'masenko'
+~
+|
+#100296
+fakeyajirobe yajirobe samurai fat human~
+Yajirobe~
+A fat human dressed like a samurai stands here, grumbling to himself
+~
+Yajirobe is slowly pacing around his cell, not getting far with all the
+Nameks packed inside with him.  Flopping around at his side is an empty
+sword sheath.  He doesnt look injured, just scared and rather annoyed. 
+~
+67108867 0 150 C
+1 0 100 1d20+0 2d5+0
+-1 5000
+112 112 1
+15 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 14~
+mpecho $I looks over.  "Hey! You there!  What are you waiting for? Think you could help us 'escape' already?!?"
+~
+> rand_prog 10~
+mpecho $I grumbles, "If they hadn't taken my sword, I'd teach 'em not to mess with the great Yajirobe! ...you don't think they heard me, do yah?"
+~
+> rand_prog 8~
+mpecho $I snorts.  "Where's Goku at anyway?  Isn't Goku always supposed to save us!?"
+~
+> rand_prog 5~
+mpecho $I clenches his eyes tightly shut and murmers quiet prayers, rolling a lucky rabbit's foot between his palms.
+~
+> speech_prog escape~
+if carryingvnum($n) == 100001
+else
+mpechoat $n $I blinks as you say that.  "Huh?  Wow, thanks man.  Here, take this, I found it on the ground...now where's my sword...?"
+pechoaround $I blinks as $n says that.  "Huh?  Wow, thanks man.  Here, take this, I found it on the ground...now where's my sword...?"
+mpoload 100001
+give key $n
+endif
+~
+|
+#100297
+fakekrillin krillin human bald monk~
+Krillin~
+A bruised, battered, and bald monk is huddled in the corner
+~
+Krillin stands here holding his injured arm close to his body with his
+good hand, glaring defiantly through the bars of the cell, one eye squinted
+half closed.  His clothes are torn in several places and stained with
+trails of blood. 
+~
+67109891 0 1000 C
+1 0 100 1d20+0 2d5+0
+-1 475000000
+112 112 1
+50 60 80 15 0
+0 0 0 0 0
+1 1 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> rand_prog 5~
+mpecho $I grits his teeth, in obvious pain.
+~
+> rand_prog 10~
+mpecho $I sighs.  "If only I were as strong as Goku, I'd show these rust buckets a thing or two!"
+~
+> rand_prog 15~
+mpecho $I growls, seeming at his wits end.  "Hey there.  If you're not too busy, mind rescuing us!?!?  We're in a bit of spot here, you see, and we could use some help to 'escape' this wacked out prison."
+~
+> speech_prog escape~
+if carryingvnum($n) == 100002
+else
+mpechoat $n $I looks up at you, eyes full of renewed hope.  "Really, we can escape now!?  Oh, man...thanks!  Hey, take this...not like I need it."
+mpechoaround $n $I looks up at $n, eyes full of renewed hope.  "Really, we can escape now!?  Oh, man...thanks!  Hey, take this...not like I need it."
+mpoload 100002
+give key $n
+endif
+~
+> rand_prog 10~
+mpecho $I nods.  "Goku will save us...I know he will!  At least, I hope so.  He's never let us down before..."
+~
+|
+#100298
+metal cooler icer giant~
+Giant Metal Cooler~
+Giant Metal Cooler stands here, half emerged from a strange pillar
+~
+This is the orignal Cooler, the monster Icer that now rules the Big Gete
+Star.  His body has been absorbed into this pillar in the middle of the
+room, kept alive by a special Heart Chip, half-coated in metal and shifting
+circuitry. 
+~
+16777219 0&8192 -1000 C
+1 0 100 1d20+0 2d5+0
+-1 1500000000000
+112 112 1
+300 200 275 350 10
+0 0 0 0 0
+5 5 0 0 1 1 2
+0 0 0 0 0 0 4 0
+> fight_prog 40~
+'finger beam'
+~
+> fight_prog 33~
+'death ball'
+~
+> fight_prog 8~
+mprestore self 40
+mpecho $I &plaughs&D, as his new form is &Rrepaired&D by the &YBig Gete Star's&D nanites.
+~
+> death_prog 1~
+if carryingvnum($n) 100289
+mptransfer all 100084
+else
+mpechoat $n &CCooler's systems shut down, revealing your prize...&D
+mpoload 100289
+endif
+~
+|
+#100299
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#100000
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#100001
+key card keycard white~
+A white keycard~
+A rather plain, white, plastic card has been dropped here~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100002
+key card keycard blue~
+A blue keycard~
+A rather plain, blue, plastic card has been dropped here~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100003
+key card keycard purple~
+A purple keycard~
+A rather plain, purple, plastic card has been dropped here~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100004
+key card keycard metal grey~
+A thick, grey, metal keycard~
+A thick, grey, metal keycard has been dropped here~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100005
+key card keycard upper prison~
+A thin, metallic card with white stripes~
+A thin, metallic card with white stripes lies here, forgotten~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100006
+key card keycard lower prison~
+A thin, metallic card with black stripes~
+A thin, metallic card with black stripes lies here, forgotten~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100007
+key card keycard fake green~
+A green keycard~
+A rather plain, green, plastic card has been dropped here~
+~
+18 128 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100008
+key card keycard fake red~
+A red keycard~
+A rather plain, red, plastic card has been dropped here~
+~
+18 128 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#100288
+eye infrared red laser cybernetic~
+An infrared eye~
+A cybernetic eye, glowing with a red laser light, lies here~
+~
+9 1818625 131073
+0 0 0 0 35 35
+1 520500 52050
+ 0
+A
+3 1
+A
+4 1
+A
+24 512
+#100289
+heart chip circuit red~
+A heart chip~
+A small, red chip with crackling circuity lies forgotten here~
+~
+9 1269763 9 128
+0 0 0 0 25 25
+1 40000 4000
+ 2000000000
+A
+4 15
+> use_prog 100~
+if race($n) == human
+mpechoat $n As you place the heart chip to your chest, it melds with your flesh, the red glow pulsing with your heartbeat.
+mpechoaround $n As $n places the heart chip to $s chest, it melds with $s flesh, the red glow pulsing with $s heartbeat.
+else
+if race($n) == android
+mpechoat $n As you place the heart chip to your chest, it digs into your synthetic skin, fusing with your circuity.  The red glow pulses along with your energy flow.
+mpechoaround $n As $n places the heart chip to $s chest, it digs into $s synthetic skin, fusing with $s circuity.  The red glow pulses along with $s energy flow.
+else
+if race($n) == icer
+  if wearingvnum($n)50007
+    mpechoat $n As you place the heart chip to your chest, it melds with your Mecha-Icer Augmentation, the red glow shifting to a cool blue that spreads through your circuitry.
+    mpechoaround $n As $n places the heart chip to $s chest, it melds with $s Mecha-Icer Augmentation, the red glow shifting to a cool blue that spreads through $s circuitry.
+  else
+    mpechoat $n The heart chip seems to be inert in your hands.
+    mpforce $n remove chip
+  endif
+else
+endif
+endif
+endif
+~
+|
+#100290
+shirt logo words~
+A black T-shirt with a strange, silver logo~
+A black T-shirt with a strange, silver logo is laid out on the floor here~
+~
+9 8192 9 2
+0 0 0 0 0 0
+1 0 77
+ 0
+E
+delete~
+~
+E
+shirt logo words~
+}xThis black shirt has something printed on it, in bold, capital letters.
+In puffy, silver paint, this shirt declares :
+}wI VISITED THE BIG GETE STAR, AND ALL I GOT WAS THIS LOUSY T-SHIRT
+&D
+~
+#100291
+scouter metal grey~
+A grey, metallic scouter~
+A metal scouter with a grey screen beeps quietly as it lies here~
+~
+65 8192 131073
+0 0 150000000 0 0 0
+1 4000000 40000
+ 1000000000
+#100292
+trash pile garbage~
+A pile of trash~
+Assorted bits of metal, robot parts, and other waste have been gathered here into a pile~
+~
+15 0 0
+50 0 0 0 0 0
+1 1000 100
+ 0
+#100293
+headset microphone earpiece~
+A headset microphone~
+A headset with a yellow logo on it lies here~
+~
+9 8192 65537
+0 0 0 0 80 80
+1 8000 300
+ 100000
+#100294
+buckle red ribbon belt~
+A Red Ribbon Army belt buckle~
+A strange piece of metal with a red logo stamped on it has been forgotten here~
+~
+9 8192 2049
+0 0 0 0 25 25
+1 2500 4000
+ 10000000
+#100295
+shoes pointy namekian~
+Some brown, pointy, Namekian shoes~
+A pair of pointy brown shoes are waiting here for their Namekian owner~
+~
+9 8192 65
+0 0 0 0 15 15
+1 1500 150
+ 10000000
+#100296
+namekian collar neck ruff~
+A white Namekian collar~
+A thick, white piece of cloth designed to be worn around a Namek's neck lies here~
+~
+9 1950720 5
+0 0 0 0 25 25
+1 7500 250
+ 100000
+A
+3 1
+A
+1 1
+#100297
+cape namekian shoulder~
+A Namekian cape~
+A long, white cape with large shoulderpads has been left here~
+~
+9 1892352 1025
+0 0 0 0 500 500
+1 50000 500
+ 400000000
+> rand_prog 20~
+mpecho A Namekian cape ripples in a wind that appears out of nowhere, seeming to affect only it.
+~
+|
+#100298
+gun blaster energy~
+A wrist-mounted energy blaster~
+What looks like a futuristic gun, strapped to a wristband, rests on the ground~
+~
+3 8194 16385
+0 20 20 -1 0 0
+1 20000 50
+ 100
+'magic missile'
+> use_prog 14~
+if pl($n) >= 40000
+mpforce $n remove gun
+else
+if pl($n) < 40000
+mpecho &BA brilliant ball of energy shoots from the blaster's muzzle.&D
+mpecho &BThe energy ball explodes in a flash of light as it impacts $T.  [4]&D
+mpdamage $t 4
+else
+endif
+endif
+~
+> use_prog 17~
+if pl($n) >= 40000
+mpforce $n remove gun
+else
+if pl($n) < 40000
+mpecho &BA brilliant ball of energy shoots from the blaster's muzzle.&D
+mpecho &BThe energy ball explodes in a flash of light as it impacts $T.  [6]&D
+mpdamage $t 6
+else
+endif
+endif
+~
+> use_prog 20~
+if pl($n) >= 40000
+mpforce $n remove gun
+else
+if pl($n) < 40000
+mpecho &BA brilliant ball of energy shoots from the blaster's muzzle.&D
+mpecho &BThe energy ball explodes in a flash of light as it impacts $T.  [8]&D
+mpdamage $t 8
+else
+endif
+endif
+~
+> use_prog 25~
+if pl($n) >= 40000
+mpforce $n remove gun
+else
+if pl($n) < 40000
+mpecho &BA brilliant ball of energy shoots from the blaster's muzzle.&D
+mpecho &BThe energy ball explodes in a flash of light as it impacts $T.  [10]&D
+mpdamage $t 10
+else
+endif
+endif
+~
+> use_prog 33~
+if pl($n) >= 40000
+mpforce $n remove gun
+else
+if pl($n) < 40000
+mpecho &BA brilliant ball of energy shoots from the blaster's muzzle.&D
+mpecho &BThe energy ball explodes in a flash of light as it impacts $T.  [12]&D
+mpdamage $t 12
+else
+endif
+endif
+~
+> wear_prog 100~
+if pl($n) >= 40000
+mpforce $n remove gun
+else
+if pl($n) < 40000
+mpechoat $n You strap the blaster to your wrist, gripping the handle and placing your finger on the trigger.
+mpechoaround $n $n straps the blaster to $s wrist, gripping the handle and placing $s finger on the trigger.
+else
+endif
+endif
+~
+|
+#100299
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#100000
+Wide Open Room~
+This seems to simply be a wide open area, with no floor or ceiling. 
+Below you is a shadowy pit, the bottom seeming to contain different types
+of debris. Above you is what looks to be another open room, at the very top
+of the Big Gete Star, with healing tanks welded to every wall. 
+~
+0 16777228 0
+D0
+~
+~
+0 -1 100011
+D1
+~
+~
+0 -1 100014
+D2
+~
+~
+0 -1 100002
+D3
+~
+~
+0 -1 100005
+D4
+~
+~
+64 -1 100013
+D5
+~
+~
+0 -1 100102
+S
+#100001
+Before the Elevator~
+This hallway is very simple, the walls the familiar liquid metal you've
+seen throughout the Big Gete Star.  However, there seems to be a thin seam
+in the southern wall. Suddenly it tears open, one of the little robots
+zipping out of a small room to continue on its way.  What could this be?  
+~
+0 8 1
+D0
+~
+~
+0 -1 100002
+D2
+~
+~
+16777216 -1 100020
+S
+#100002
+Corridor~
+This corridor seems alive with movement, though nothing living is to be
+seen.  Thin, sparking wires are everywhere, all busy dragging scraps of
+metal that have fallen to the ground back up, welding them into place on
+bare spots of the walls around you.  
+~
+0 8 0
+D0
+~
+~
+0 -1 100000
+D1
+~
+~
+0 -1 100003
+D2
+~
+~
+0 -1 100001
+D3
+~
+~
+0 -1 100004
+S
+#100003
+Corner~
+This corridor ends abruptly, making a sharp turn.  What looks like the
+corpse of an unwary Saiyan is plastered against the wall, thousands of thin
+wires weaving in and out of him.  Crackling light from other, sparking
+wires illuminates the corpse, as it is slowly pulled into the wall. 
+~
+0 8 0
+D0
+~
+~
+0 -1 100014
+D3
+~
+~
+0 -1 100002
+S
+#100004
+Corner~
+As you head closer to this corner, it suddenly becomes very well lit.
+Thin, sparking wires appear from every shadow and turn their full attention
+to you.  They follow your movements as if waiting for a chance to strike,
+while the liquid metal walls ooze slowly behind them, pulling the stray
+wires back in. 
+~
+0 8 0
+D0
+~
+~
+0 -1 100005
+D1
+~
+~
+0 -1 100002
+S
+#100005
+Near the Prison~
+This particular area is in much better repair than some of the others. 
+The metal patchwork that makes up the walls is flawless, with nary a stray
+wire or circuit to be seen. Waves of an eerie, pulsating glow occasionally
+move through the walls...energy flowing outwards from the heart of the Big
+Gete Star. 
+~
+0 8 0
+D0
+~
+~
+0 -1 100010
+D1
+~
+~
+0 -1 100000
+D2
+~
+~
+0 -1 100004
+D3
+~
+~
+0 -1 100006
+S
+#100006
+Outside the Cells~
+You are standing outside what looks like some sort of prison.  To the
+north and south are holding cells, the barred doors looking rather
+primitive.  The metal bars ripple with the now familiar sight of liquid
+metal, a surge of electricty running through the bars a moment later. 
+Things aren't as simple as they first appeared. 
+~
+0 8 0
+D0
+~
+~
+7 100005 100007
+D1
+~
+~
+0 -1 100005
+D2
+~
+~
+7 100005 100008
+D3
+~
+~
+0 -1 100009
+S
+#100007
+Holding Cell~
+This cell seems to be in rather bad shape.  Parts of the wall are ripped
+off, bare wires dangling out to shock any prisoners who get too close. The
+walls seem to be trying to repair themselves, though the bars of the cell
+door are in perfect condition.  All the Nameks that are locked up seem
+content to wait, silently, in the middle of the holding cell. 
+~
+0 8 0
+D2
+~
+~
+7 100005 100006
+S
+#100008
+Holding Cell~
+We interrupt your regularly scheduled description of a futuristic prison
+to bring you this poem.  "The ends of forever locked in bars of light. 
+There is no day, there is no night.  Stuck within these walls.  Echoing
+down the hollow halls.  You are made a prisoner of it all." As you return
+to your surroundings...the cell you currently find yourself in is packed
+with Namekian prisoners.  They seem to have lost all hope, simply standing
+in the cramped room.  They know what awaits them, they can hear the
+screams... 
+~
+0 8 0
+D0
+~
+~
+7 100005 100006
+S
+#100009
+Grinders~
+Entering this room, a horrific scene is laid out for you inside.  The
+putrid smell of fresh and old blood, smeared and splattered over most every
+surface. Huge things that look like gears are busy smashing a few young
+Nameks into green and purple paste.  The mess splashes off, oozing into a
+drain that takes it away to the energy collection centers. 
+~
+0 8 0
+D1
+~
+~
+0 -1 100006
+S
+#100010
+Corner~
+The hallway makes a sharp turn here, watched by a pulsing, red eye. 
+This cybernetic orb hangs from the ceiling, a silent witness to your
+invasion of the Big Gete Star. 
+~
+0 8 0
+D1
+~
+~
+0 -1 100011
+D2
+~
+~
+0 -1 100005
+S
+#100011
+Corridor~
+Multiple corridors intersect here, leading off in the cardinal
+directions.  A red, cybernetic eye mounted on the ceiling monitors the
+intersection.  Though motionless, lifeless, and soundless, it seems to be
+watching you... 
+~
+0 8 0
+D0
+~
+~
+0 -1 100012
+D1
+~
+~
+0 -1 100015
+D2
+~
+~
+0 -1 100000
+D3
+~
+~
+0 -1 100010
+S
+#100012
+Dead End~
+This neglected cranny of the Big Gete Star seems to have fallen into
+disrepair. A red, cybernetic eye is mounted on the wall, with a giant crack
+down the middle.  It throws off sparks and produces weak, strained noises
+as it trys to follow your movement. Sparking wires twitch, extended from
+the dead end, finding no spare materials to use for repair. 
+~
+0 8 0
+D2
+~
+~
+0 -1 100011
+S
+#100013
+Top of the Star~
+This seems to be the sickbay of some long dead spaceship, absorbed and
+modified for the Big Gete Star's uses.  Healing tanks line the walls, a few
+already filled with vaugely humanoid shapes. You can look down and see the
+room below, that you flew up from to get here, as this particular area
+lacks a floor.  Further below is the shadowy pit. The walls the tanks are
+attached to seem to be much more liquid than most sections of this
+monstrous planet.  The metal shifts and ripples over every surface, a large
+patch of the ceiling twitching offbeat.  Another red, silent, electronic
+eye sits on a wall, calmly watching the inhabitants of this open air room. 
+~
+0 555746316 0
+D4
+~
+~
+2048 -1 100103
+D5
+~
+~
+0 -1 100000
+S
+#100014
+Corridor~
+Erratic flashes of light illuminate this intersection of corridors. 
+Sparks shower through the air as a mass of thin wires, extending out from a
+shadowy corner, focus their attention on welding a large plate of metal
+onto the floor. 
+~
+0 8 0
+D0
+~
+~
+0 -1 100015
+D1
+~
+~
+0 -1 100016
+D2
+~
+~
+0 -1 100003
+D3
+~
+~
+0 -1 100000
+S
+#100015
+Corner~
+The hall turns sharply here, as the corridor continues.  On the wall
+beside you, a crack reveals more hidden wires and circuitry.  Some of the
+wires spark, attempting to repair and weld the wound closed again. 
+~
+0 8 0
+D2
+~
+~
+0 -1 100014
+D3
+~
+~
+0 -1 100011
+S
+#100016
+Outside the Cells~
+This looks to be some sort of prison, most likely where the cyclopean
+guards have been bringing the prisoners you saw outside.  You hear a
+dreadful scream, cut short and replaced with the loud whirr of a sawblade.
+All this noise comes from the east, the cells to the north and south much
+quieter.  
+~
+0 8 0
+D0
+~
+~
+7 100005 100017
+D1
+~
+~
+0 -1 100019
+D2
+~
+~
+7 100005 100018
+D3
+~
+~
+0 -1 100014
+S
+#100017
+Holding Cell~
+This cell seems to be in rather bad shape.  Parts of the wall are ripped
+off, bare wires dangling out to shock any prisoners who get too close.  The
+walls seem to be trying to repair themselves, though the bars of the cell
+door are in perfect condition.  All the Nameks that are locked up seem
+content to wait, silently, in the middle of the holding cell. 
+~
+0 2097160 0
+D2
+~
+~
+7 100005 100016
+S
+#100018
+Holding Cell~
+The walls of this cell are barren, the only light coming from a red lens
+pulsing warmly in the ceiling.  The floor is scarred with the scratches of
+prisoners who have tried to somehow dig their way out, to no avail.  Having
+given up hope, the Nameks simply stand around in the cell, awaiting what
+seems to be the end. 
+~
+0 8 0
+D0
+~
+~
+7 100005 100016
+S
+#100019
+Grinders~
+The moment you enter this room, your senses are assaulted by the
+horrific scene waiting inside.  The putrid smell of fresh and old blood,
+smeared and splattered over most every surface, along with bits of other
+gore.  It drips off of four slender metal arms which end in large, sharp
+sawblades.  The saws are currently busy dicing a still struggling Namek
+into easily digestable pieces.  The screams are even worse than the mess. 
+~
+0 8 0
+D3
+~
+~
+0 -1 100016
+S
+#100020
+Elevator~
+As you enter the tiny room, the seam seals shut behind you.  The
+lighting is dim, almost nonexistant, and there seems to be no way out.  On
+one wall, there seems to be some sort of speaker.  Perhaps this thing is
+controlled by voice commands?  
+~
+0 12 0
+D4
+~
+~
+2048 -1 100013
+> speech_prog down~
+if isfight($n)
+  mpechoat $n You can't use the elevator while you're fighting.
+else
+mpechoat $n You feel the elevator rushing downwards smoothly, and you exit as the doors slide open.
+mpechoaround $n You feel the elevator moving downwards as $n asks to go down.  $n exits the open doors before they seal shut, the elevator rushing you back to the top floor.
+mptransfer $n 100021
+mpat 100021 mpforce $n look
+endif
+~
+> speech_prog up~
+if isfight($n)
+  mpechoat $n You can't use the elevator while fighting.
+else
+mpechoat $n You feel the elevator rushing upwards smoothly, and you exit as the doors slide open.
+mpechoaround $n You feel the elevator moving upwards as $n asks to go up.  $n exits the open doors before they seal shut, the elevator rushing you back to the lower floor.
+mptransfer $n 100001
+mpat 100001 mpforce $n look
+endif
+~
+|
+S
+#100021
+Corridor Before the Elevator~
+This hallway is very simple, the walls the familiar liquid metal you've
+seen throughout the Big Gete Star.  However, there seems to be a thin seam
+in the southern wall. Suddenly it tears open, one of the little robots
+zipping out of a small room to continue on its way.  What could this be?  
+~
+0 2097160 0
+D1
+~
+~
+0 -1 100023
+D2
+~
+~
+16777216 -1 100020
+D3
+~
+~
+0 -1 100022
+S
+#100022
+Corridor~
+This corridor seems alive with movement, though nothing living is to be
+seen.  Thin, sparking wires are everywhere, all busy dragging scraps of
+metal that have fallen to the ground back up, welding them into place on
+bare spots of the walls around you.  
+~
+0 2097160 0
+D1
+~
+~
+0 -1 100021
+D3
+~
+~
+0 -1 100024
+S
+#100023
+Corner~
+The hallway makes a sharp turn here, watched by a pulsing, red eye. 
+This cybernetic orb hangs from the ceiling, a silent witness to your
+further invasion of the Big Gete Star. 
+~
+0 2097160 0
+D2
+~
+~
+0 -1 100032
+D3
+~
+~
+0 -1 100021
+S
+#100024
+Corridor~
+This particular corridor is in much better repair than some of the
+others.  The metal patchwork that makes up the walls is flawless, with nary
+a stray wire or circuit to be seen. Waves of an eerie, pulsating glow
+occasionally move through these blue walls...energy flowing outwards from
+the heart of the Big Gete Star. 
+~
+0 2097160 0
+D1
+~
+~
+0 -1 100022
+D3
+~
+~
+0 -1 100025
+S
+#100025
+Corner~
+The hall turns sharply here, as the corridor continues.  On the blue
+wall beside you, a crack reveals more hidden wires and circuitry.  Some of
+the wires spark, attempting to repair and weld the wound closed again. 
+~
+0 2097160 0
+D1
+~
+~
+0 -1 100024
+D2
+~
+~
+0 -1 100026
+S
+#100026
+Corridor~
+Patched pieces of metal form the walls of this corridor stretching out
+before you, seeming to melt and flow together in some areas. Spots not
+covered by this living metal reveal an impossibly complex mass of thin
+wires that crackle and pop with the flow of electric power, sparks
+sometimes jumping out and fading before they reach the ground. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100025
+D2
+~
+~
+0 -1 100027
+S
+#100027
+Corridor~
+A long hall stretches out before you, its walls in good shape, the whole
+thing fairly nondescript.  There doesn't seem to be any sign of the
+sparking wires, this particular piece of blue wall free of circuitry.  
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100026
+D2
+~
+~
+0 -1 100028
+S
+#100028
+Corridor~
+As you head down this long hallway, it suddenly becomes very well lit. 
+Thin, sparking wires appear from every shadow and turn their full attention
+to you. They follow your movements as if waiting for a chance to strike,
+while the liquid metal walls ooze slowly behind them, pulling the stray
+wires back in. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100027
+D2
+~
+~
+0 -1 100029
+S
+#100029
+Corridor~
+A red, cybernetic eye is mounted on either side of the blue corridor. 
+They both seem to stare straight at you, watching you for the Big Gete
+Star.  A soft beep emits from one, followed by a second from the other eye,
+before they both grow dim... 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100028
+D2
+~
+~
+0 -1 100030
+S
+#100030
+Corner~
+This corridor ends abruptly, making a sharp turn.  What looks like the
+corpse of an unwary Icer is plastered against the wall, thousands of thin
+wires weaving in and out of it.  Crackling light from other, sparking wires
+illuminate the corpse, as it's slowly pulled into the wall, the shifting
+metal coating its features making the remains resemble a Metal Cooler. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100029
+D1
+~
+~
+0 -1 100031
+S
+#100031
+West of Blue Door~
+The walls in this corridor are a deep blue, ending in a blue door.  It
+has no handle or lock, merely a slot in the wall next to it for a keycard
+to be inserted.  Below this are a few buttons, that might assist in opening
+the unlocked door. 
+~
+0 2097160 0
+D1
+~
+~
+16777223 100002 100048
+D3
+~
+~
+0 -1 100030
+S
+#100032
+Corridor~
+This corridor seems little used and neglected...by living beings, at
+least.  Sparking wires hang down from spots in the ceiling where the
+patchwork of scrap metal is incomplete.  On parts of the wall where the
+liquid metal coating has somehow been peeled away, bare circuitry is
+exposed. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100023
+D2
+~
+~
+0 -1 100033
+S
+#100033
+Corridor~
+A gruesome sight awaits you in this corridor.  A Metal Cooler, already
+half torn apart, is suspended in the air here by countless thin wires that,
+for whatever reason, are tearing him to bits.  His remains are being
+absorbed into the walls, to be used for something else... 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100032
+D2
+~
+~
+0 -1 100034
+S
+#100034
+Corridor~
+A red, cybernetic eye is mounted on either side of this corridor.  They
+both seem to stare straight at you, watching you journey through the Big
+Gete Star.  A soft beep emits from one, followed by a second from the other
+eye. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100033
+D2
+~
+~
+0 -1 100035
+S
+#100035
+East of Purple Door~
+The walls in this corridor fade from deep blue to an icy purple, ending
+in a purple door.  It has no handle or lock, merely a slot in the wall next
+to it for a keycard to be inserted. Below this are a few buttons, that
+might assist in opening the unlocked door. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100034
+D3
+~
+~
+16777223 100003 100036
+S
+#100036
+West of Purple Door~
+The walls in this corridor are stained an icy purple, coming to an end
+at a purple door.  It has no handle or lock, merely a slot in the wall next
+to it for a keycard to be inserted. Below this are a few buttons, that
+might assist in opening the unlocked door. 
+~
+0 2097160 0
+D1
+~
+~
+16777223 100003 100035
+D3
+~
+~
+0 -1 100037
+S
+#100037
+Corridor~
+Rapidly and repeatedly, pulses of energy pass through the walls of this
+corridor feeding energy down through to the outer extremities of the Big
+Gete Star.  The heart of the Star is close.  Very, very close. 
+~
+0 2097160 0
+D1
+~
+~
+0 -1 100036
+D3
+~
+~
+0 -1 100038
+S
+#100038
+Corner~
+This corridor ends abruptly, making a sharp turn.  What looks to be the
+remains of an adventurous Human are plastered against the wall, thousands
+of thin wires weaving in and out of the body. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100039
+D1
+~
+~
+0 -1 100037
+S
+#100039
+Corridor~
+This corridor seems alive with movement, though nothing living is to be
+seen.  Thin, sparking wires are everywhere, all busy dragging scraps of
+metal that have fallen to the ground back up, welding them into place on
+bare spots of the purple walls around you. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100040
+D2
+~
+~
+0 -1 100038
+S
+#100040
+Corridor~
+This corridor seems little used and neglected...by living beings, at
+least.  Sparking wires hang down from spots in the ceiling where the
+patchwork of scrap metal is incomplete. On parts of the wall where the
+liquid metal coating has somehow been peeled away, bare circuitry is
+exposed. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100041
+D2
+~
+~
+0 -1 100039
+S
+#100041
+Corner~
+The hall turns sharply here, as the corridor continues.  On the purple
+wall beside you, a crack reveals more hidden wires and pulsing circuitry. 
+Some of the wires spark, attempting to repair and weld the wound closed
+again. 
+~
+0 2097160 0
+D1
+~
+~
+0 -1 100042
+D2
+~
+~
+0 -1 100040
+S
+#100042
+Corridor~
+Patched pieces of metal form the walls of this corridor stretching out
+before you, seeming to melt and flow together in some areas. Spots not
+covered by this living metal reveal an impossibly complex mass of thin
+wires that crackle and pop with the flow of electric power, sparks
+sometimes jumping out and fading before they reach the ground. 
+~
+0 2097160 0
+D1
+~
+~
+0 -1 100043
+D3
+~
+~
+0 -1 100041
+S
+#100043
+Corner~
+The corridor turns here, leading off to the west and south.  A red,
+cybernetic eye mounted on the wall monitors the intersection.  Though
+motionless, lifeless, and soundless, it seems to be watching you...  
+~
+0 2097160 0
+D2
+~
+~
+0 -1 100044
+D3
+~
+~
+0 -1 100042
+S
+#100044
+Corridor~
+A gruesome sight awaits you in this corridor.  A Metal Cooler, already
+half torn apart, is suspended in the air here by countless thin wires that,
+for whatever reason, are tearing him to bits.  His remains are being
+absorbed into the purple walls, to be used somewhere else. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100043
+D2
+~
+~
+0 -1 100045
+S
+#100045
+Corner~
+As you head closer to this corner, it suddenly becomes very well lit. 
+Thin, sparking wires appear from every shadow and turn their full attention
+to you. They follow your movements as if waiting for a chance to strike,
+while the liquid metal walls ooze slowly behind them, pulling the stray
+wires back in. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100044
+D3
+~
+~
+0 -1 100046
+S
+#100046
+Outside the Central Room~
+The walls in this corridor fade from frigid purple into a familiar,
+metallic grey.  A thick, grey door stands here, with no handle or lock,
+merely a slot in the wall next to it for a keycard to be inserted.  Below
+this are a few buttons, that might assist in opening the unlocked door. 
+Could this be the center, the heart of the Big Gete Star?  The walls pulse
+with life, a soft glow seeping out from the edges of this final door. 
+~
+0 2097160 0
+D0
+~
+~
+16777223 100004 100047
+D1
+~
+~
+0 -1 100045
+S
+#100047
+Innermost Chamber~
+This room sits in the very center, the core of the computerized
+planetoid you have journeyed through.  Like the other rooms, its walls are
+composed of shifting metal and crackling circuits.  However, in the middle
+there is a large pillar with one side opened up.  Inside you spot what
+seems to be the remains of an Icer, partially covered in more of the
+shifting metal. 
+~
+0 2097160 0
+D2
+~
+~
+16777223 100004 100046
+S
+#100048
+East of Blue Door~
+The walls in this section fade from a dull white into a deep blue,
+ending in a blue door.  It has no handle or lock, merely a slot in the wall
+next to it for a keycard to be inserted.  Below this are a few buttons,
+that might assist in opening the unlocked door. 
+~
+0 2097160 0
+D1
+~
+~
+0 -1 100049
+D3
+~
+~
+16777223 100002 100031
+S
+#100049
+Corridor~
+Patched pieces of metal form the walls of this corridor stretching out
+before you, seeming to melt and flow together in some areas. Spots not
+covered by this living metal reveal an impossibly complex mass of thin
+wires that crackle and pop with the flow of electric power, sparks
+sometimes jumping out and fading before they reach the ground. 
+~
+0 2097160 0
+D1
+~
+~
+0 -1 100050
+D3
+~
+~
+0 -1 100048
+S
+#100050
+Corridor~
+This particular corridor is in much better repair than some of the
+others.  The metal patchwork that makes up the dull, white walls is
+flawless, with nary a stray wire or circuit to be seen. 
+~
+0 2097160 0
+D1
+~
+~
+0 -1 100051
+D3
+~
+~
+0 -1 100049
+S
+#100051
+Corner~
+The hall turns sharply here, as the corridor continues.  On the wall
+beside you, a crack reveals more hidden wires and circuitry.  Some of the
+wires spark, attempting to repair and weld the wound closed again. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100052
+D3
+~
+~
+0 -1 100050
+S
+#100052
+Corridor~
+This corridor seems little used and neglected...by living beings, at
+least.  Sparking wires hang down from spots in the ceiling where the
+patchwork of scrap metal is incomplete. Waves of an eerie, pulsating glow
+occasionally move through the white walls...energy flowing outwards from
+the heart of the Big Gete Star. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100053
+D2
+~
+~
+0 -1 100051
+S
+#100053
+Corridor~
+A long hall stretches out before you, its walls in good shape, the whole
+thing fairly nondescript.  There doesn't seem to be any sign of the
+sparking wires, this particular piece of wall free of circuitry. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100054
+D2
+~
+~
+0 -1 100052
+S
+#100054
+Corridor~
+Erratic flashes of light illuminate this corridor.  Sparks shower
+through the air as a mass of thin wires, extending out from a shadowy
+corner, focus their attention on welding a large plate of metal onto the
+floor. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100055
+D2
+~
+~
+0 -1 100053
+S
+#100055
+Corridor~
+Rapidly and repeatedly, pulses of energy pass through the white walls of
+this corridor, feeding energy to the outer extremities of the Big Gete
+Star.  The heart of the Star is close.  Very close indeed. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100056
+D2
+~
+~
+0 -1 100054
+S
+#100056
+Corridor~
+A gruesome sight awaits you in this corridor.  A Metal Cooler, already
+half torn apart, is suspended in the air here by countless thin wires that,
+for whatever reason, are tearing him to bits.  His remains are being
+absorbed into the white walls, to be used somewhere else. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100057
+D2
+~
+~
+0 -1 100055
+S
+#100057
+Corner~
+The corridor turns here, leading you deeper into the Big Gete Star.  A
+red, cybernetic eye mounted on the wall monitors the intersection.  Though
+motionless, lifeless, and soundless, it seems to be watching you... 
+~
+0 2097160 0
+D2
+~
+~
+0 -1 100056
+D3
+~
+~
+0 -1 100058
+S
+#100058
+Corridor~
+This corridor seems little used and neglected...by living beings, at
+least.  Sparking wires hang down from spots in the ceiling where the
+patchwork of scrap metal is incomplete. The white walls are ripped back in
+these spots, revealing hidden layers of circuitry. 
+~
+0 2097160 0
+D1
+~
+~
+0 -1 100057
+D3
+~
+~
+0 -1 100059
+S
+#100059
+Corridor~
+A long hall stretches out before you, its white walls in good shape, the
+whole thing fairly nondescript.  There doesn't seem to be any sign of the
+sparking wires, this particular piece of wall free of circuitry. 
+~
+0 2097160 0
+D1
+~
+~
+0 -1 100058
+D3
+~
+~
+0 -1 100060
+S
+#100060
+Corridor~
+Rapidly and repeatedly, pulses of energy pass through the walls of this
+corridor feeding energy down through to the outer extremities of the Big
+Gete Star.  The heart of the Star is close.  Very close... 
+~
+0 2097160 0
+D1
+~
+~
+0 -1 100059
+D3
+~
+~
+0 -1 100061
+S
+#100061
+East of White Door~
+The walls in this corridor are a dull white, ending in a white door.  It
+has no handle or lock, merely a slot in the wall next to it for a keycard
+to be inserted.  Below this are a few buttons, that might assist in opening
+the unlocked door. 
+~
+0 2097160 0
+D1
+~
+~
+0 -1 100060
+D3
+~
+~
+16777223 100001 100062
+S
+#100062
+West of White Door~
+The walls in this corridor fade from metallic grey into a dull white,
+ending in a white door.  It has no handle or lock, merely a slot in the
+wall next to it for a keycard to be inserted.  Below this are a few
+buttons, that might assist in opening the unlocked door. 
+~
+0 2097160 0
+D1
+~
+~
+16777223 100001 100061
+D3
+~
+~
+0 -1 100063
+S
+#100063
+Corner~
+As you head closer to this corner, it suddenly becomes very well lit. 
+Thin, sparking wires appear from every shadow and turn their full attention
+to you. They follow your movements as if waiting for a chance to strike,
+while the liquid metal walls ooze slowly behind them, pulling the stray
+wires back in. 
+~
+0 2097160 0
+D1
+~
+~
+0 -1 100062
+D2
+~
+~
+0 -1 100064
+S
+#100064
+Corridor~
+An odd sight awaits you in this corridor.  One of the hammer robots,
+already apart, is suspended in the air here by countless thin wires that,
+for whatever reason, are tearing him to bits.  His remains are being
+absorbed into the walls, to be used somewhere else. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100063
+D2
+~
+~
+0 -1 100065
+S
+#100065
+Corridor~
+A long hall stretches out before you, its walls in good shape, the whole
+thing fairly nondescript.  There doesn't seem to be any sign of the
+sparking wires, this particular piece of wall free of circuitry. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100064
+D2
+~
+~
+0 -1 100066
+S
+#100066
+Corridor~
+This corridor seems little used and neglected...by living beings, at
+least.  Sparking wires hang down from spots in the ceiling where the
+patchwork of scrap metal is incomplete. On parts of the wall where the
+liquid metal coating has somehow been peeled away, bare circuitry is
+exposed. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100065
+D2
+~
+~
+0 -1 100067
+S
+#100067
+Corridor~
+This relatively neglected corridor continues on.  A red, incomplete,
+cybernetic eye is mounted on the wall.  It throws off sparks and produces
+weak, strained noises as it tries to follow your movement. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100066
+D2
+~
+~
+0 -1 100068
+S
+#100068
+Corridor~
+Rapidly and repeatedly, pulses of energy pass through the walls of this
+corridor feeding energy down through to the outer extremities of the Big
+Gete Star.  The heart of the Star is close.  Very close... 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100067
+D2
+~
+~
+0 -1 100069
+S
+#100069
+Corridor~
+A gruesome sight awaits you in this corridor.  A Metal Cooler, already
+half torn apart, is suspended in the air here by countless thin wires that,
+for whatever reason, are tearing him to bits.  His remains are being
+absorbed into the walls, to be used somewhere else. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100068
+D2
+~
+~
+0 -1 100070
+S
+#100070
+Corridor~
+Patched pieces of metal form the walls of this corridor stretching out
+before you, seeming to melt and flow together in some areas.  Spots not
+covered by this living metal reveal an impossibly complex mass of thin
+wires that crackle and pop with the flow of electric power, sparks
+sometimes jumping out and fading before they reach the ground. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100069
+D2
+~
+~
+0 -1 100071
+S
+#100071
+Corner~
+The hallway makes a sharp turn here, watched by a pulsing, red eye. 
+This cybernetic orb hangs from the ceiling, a silent witness to your
+invasion of the Big Gete Star. 
+~
+0 2097160 0
+D0
+~
+~
+0 -1 100070
+D1
+~
+~
+0 -1 100072
+S
+#100072
+Corridor Before the Elevator~
+This hallway is very simple, the walls the familiar liquid metal you've
+seen throughout the Big Gete Star.  However, there seems to be a thin seam
+in the southern wall. Suddenly it tears open, one of the little robots
+zipping out of a small room to continue on its way.  What could this be?  
+~
+0 2097160 0
+D1
+~
+~
+0 -1 100075
+D2
+~
+~
+16777216 -1 100073
+D3
+~
+~
+0 -1 100071
+S
+#100073
+Elevator~
+As you enter the tiny room, the seam seals shut behind you.  The
+lighting is dim, almost nonexistant, and there seems to be no way out.  On
+one wall, there seems to be some sort of speaker.  Perhaps this thing is
+controlled by voice commands?  
+~
+0 12 0
+> speech_prog up~
+mpechoat $n You feel the elevator rushing upwards smoothly, and you exit as the doors slide open.
+mpechoaround $n You feel the elevator moving upwards as $n asks to go up.  $n exits the open doors before they seal shut, the elevator rushing you back to the lower floor.
+mptransfer $n 100072
+mpat 100072 mpforce $n look
+~
+> speech_prog down~
+mpechoat $n You feel the elevator rushing downwards smoothly, and you exit as the doors slide open.
+mpechoaround $n You feel the elevator moving downwards as $n asks to go down.  $n exits the open doors before they seal shut, the elevator rushing you back to the top floor.
+mptransfer $n 100074
+mpat 100074 mpforce $n look
+~
+|
+S
+#100074
+Before the Elevator~
+This hallway is very simple, the walls the familiar liquid metal you've
+seen throughout the Big Gete Star.  However, there seems to be a thin seam
+in the northern wall. Suddenly it tears open, one of the little robots
+zipping out of a small room to continue on its way.  What could this be?  
+~
+0 8 0
+D0
+~
+~
+16777216 -1 100073
+D2
+~
+~
+0 -1 100080
+S
+#100075
+Corridor~
+A long hall stretches out before you, its walls in good shape, the whole
+thing fairly nondescript.  There doesn't seem to be any sign of the
+sparking wires, this particular piece of wall free of circuitry. 
+~
+0 2097160 0
+D1
+~
+~
+0 -1 100076
+D3
+~
+~
+0 -1 100072
+S
+#100076
+Corridor~
+This particular corridor is in much better repair than some of the
+others.  The metal patchwork that makes up the walls is flawless, with nary
+a stray wire or circuit to be seen. Waves of an eerie, pulsating glow
+occasionally move through these walls...energy flowing outwards from the
+heart of the Big Gete Star. 
+~
+0 2097160 0
+D1
+~
+~
+0 -1 100077
+D3
+~
+~
+0 -1 100075
+S
+#100077
+Corridor~
+This corridor seems alive with movement, though nothing living is to be
+seen.  Thin, sparking wires are everywhere, all busy dragging scraps of
+metal that have fallen to the ground back up, welding them into place on
+bare spots of the walls around you. 
+~
+0 2097160 0
+D1
+~
+~
+0 -1 100078
+D3
+~
+~
+0 -1 100076
+S
+#100078
+Corridor~
+Erratic flashes of light illuminate this section of corridor.  Sparks
+shower through the air as a mass of thin wires, extending out from a
+shadowy corner, focus their attention on welding a large plate of metal
+onto the floor. 
+~
+0 2097160 0
+D1
+~
+~
+0 -1 100079
+D3
+~
+~
+0 -1 100077
+S
+#100079
+Dead End~
+This corridor ends abruptly, quite literally a dead end.  What looks
+like the corpse of an unwary Bio-Android is plastered against the wall,
+thousands of thin wires weaving in and out of it. Crackling light from
+other, sparking wires illuminates the remains, as they're slowly pulled
+into the wall. 
+~
+0 2097160 0
+D3
+~
+~
+0 -1 100078
+S
+#100080
+Corridor~
+Patched pieces of metal form the walls of this corridor stretching out
+before you, seeming to melt and flow together in some areas.  Spots not
+covered by this living metal reveal an impossibly complex mass of thin
+wires that crackle and pop with the flow of electric power, sparks
+sometimes jumping out and fading before they reach the ground. 
+~
+0 8 0
+D0
+~
+~
+0 -1 100074
+D1
+~
+~
+0 -1 100081
+D2
+~
+~
+0 -1 100083
+D3
+~
+~
+0 -1 100082
+S
+#100081
+Corner~
+This corridor ends abruptly, making a sharp turn.  What looks like the
+remains of an unwary Ghetti is plastered against the wall, thousands of
+thin wires weaving in and out of it. Crackling light from other, sparking
+wires illuminate the corpse, as it's slowly pulled into the wall. 
+~
+0 8 0
+D0
+~
+~
+0 -1 100093
+D3
+~
+~
+0 -1 100080
+S
+#100082
+Corner~
+The hallway makes a sharp turn here, watched by a pulsing, red eye. 
+This cybernetic orb hangs from the ceiling, a silent witness to your
+invasion of the Big Gete Star. 
+~
+0 8 0
+D0
+~
+~
+0 -1 100085
+D1
+~
+~
+0 -1 100080
+S
+#100083
+Near the Southern Entrance~
+This corridor seems alive with movement, though nothing living is to be
+seen.  Thin, sparking wires are everywhere, all busy dragging scraps of
+metal that have fallen to the ground back up, welding them into place on
+bare spots of the walls around you. 
+~
+0 8 0
+D0
+~
+~
+0 -1 100080
+D2
+~
+~
+0 -1 100084
+S
+#100084
+Southern Exit~
+A red, cybernetic eye is mounted on either side of the entrance
+corridor.  They both seem to stare straight at you, watching you venture
+into the Big Gete Star.  A soft beep emits from one, followed by a second
+from the other eye, before they both grow dim... 
+~
+0 8 0
+D0
+~
+~
+0 -1 100083
+D2
+~
+~
+16777216 -1 100159
+S
+#100085
+T Intersection~
+Three corridors intersect here, leading off to the north, south, and
+west.  A red, cybernetic eye mounted on the wall monitors the intersection.
+Though motionless, lifeless, and soundless, it seems to be watching you... 
+~
+0 8 0
+D0
+~
+~
+0 -1 100087
+D2
+~
+~
+0 -1 100082
+D3
+~
+~
+0 -1 100086
+S
+#100086
+Outside the Cells~
+This looks to be some sort of prison, most likely where the cyclopean
+guards have been bringing the prisoners you saw outside. You hear a
+dreadful scream, cut short and replaced with the loud whirr of a sawblade.
+All this noise comes from the east, the cells to the north and south much
+quieter. 
+~
+0 8 0
+D0
+~
+~
+7 100006 100088
+D1
+~
+~
+0 -1 100085
+D2
+~
+~
+7 100006 100089
+D3
+~
+~
+0 -1 100090
+S
+#100087
+Corner~
+The hall turns sharply here, as the corridor continues.  On the wall
+beside you, a crack reveals more hidden wires and circuitry.  Some of the
+wires spark, attempting to repair and weld the wound closed again. 
+~
+0 8 0
+D1
+~
+~
+0 -1 100091
+D2
+~
+~
+0 -1 100085
+S
+#100088
+Holding Cell~
+The cell you currently find yourself in is packed with Namekian
+prisoners.  They simply stand around, looking completely drained of hope
+and energy. Parts of the wall are ripped off, bare wires dangling out to
+shock any prisoners who get too close.  The walls seem to be trying to
+repair themselves, though the bars of the cell door are in perfect
+condition. 
+~
+0 8 0
+D2
+~
+~
+7 100006 100086
+S
+#100089
+Holding Cell~
+The walls of this cell are barren, the only light coming from a red lens
+pulsing warmly in the ceiling.  The floor is scarred with the scratches of
+prisoners who have tried to somehow dig their way out, to no avail.  Having
+given up hope, the Nameks simply stand around the cell, waiting.  They know
+what is going on so near them, they can hear the screams...and they know
+they will be next. 
+~
+0 2097160 0
+D0
+~
+~
+7 100006 100086
+S
+#100090
+Grinders~
+The moment you enter this room, your senses are assaulted by the
+horrific scene waiting inside.  The putrid smell of fresh and old blood,
+smeared and splattered over most every surface, along with bits of other
+gore.  It drips off of four slender metal arms which end in large, sharp
+sawblades.  The saws are currently busy dicing a still struggling Namek
+into easily digestable pieces.  The screams are even worse than the mess. 
+~
+0 8 0
+D1
+~
+~
+0 -1 100086
+D3
+~
+~
+0 -1 100100
+S
+#100091
+T Intersection~
+Erratic flashes of light illuminate this intersection of corridors. 
+Sparks shower through the air as a mass of thin wires, extending out from a
+shadowy corner, focus their attention on welding a large plate of metal
+onto the floor. 
+~
+0 8 0
+D0
+~
+~
+0 -1 100098
+D1
+~
+~
+0 -1 100092
+D3
+~
+~
+0 -1 100087
+S
+#100092
+Corner~
+As you head closer to this corner, it suddenly becomes very well lit. 
+Thin, sparking wires appear from every shadow and turn their full attention
+to you. They follow your movements as if waiting for a chance to strike,
+while the liquid metal walls ooze slowly behind them, pulling the stray
+wires back in. 
+~
+0 8 0
+D2
+~
+~
+0 -1 100093
+D3
+~
+~
+0 -1 100091
+S
+#100093
+T Intersection~
+This relatively neglected corridor branches out into three directions. 
+A red, incomplete, cybernetic eye is mounted on the wall.  It throws off
+sparks and produces weak, strained noises as it trys to follow your
+movement. 
+~
+0 8 0
+D0
+~
+~
+0 -1 100092
+D1
+~
+~
+0 -1 100094
+D2
+~
+~
+0 -1 100081
+S
+#100094
+Outside the Cells~
+You are standing outside what looks like some sort of prison.  To the
+north and south are holding cells, the barred doors looking rather
+primitive.  The metal bars ripple with the now familiar sight of liquid
+metal, a surge of electricty running through the bars a moment later. 
+Things aren't as simple as they first appeared. 
+~
+0 8 0
+D0
+~
+~
+7 100006 100095
+D1
+~
+~
+0 -1 100097
+D2
+~
+~
+7 100006 100096
+D3
+~
+~
+0 -1 100093
+S
+#100095
+Holding Cell~
+The walls of this cell are barren, the only light coming from a red lens
+pulsing warmly in the ceiling.  The floor is scarred with the scratches of
+prisoners who have tried to somehow dig their way out, to no avail. Having
+given up hope, the Nameks simply stand around in the cell, awaiting what
+seems to be the end. 
+~
+0 8 0
+D2
+~
+~
+7 100006 100094
+S
+#100096
+Holding Cell~
+This cell seems to be in rather bad shape.  Parts of the wall are ripped
+off, bare wires dangling out to shock any prisoners who get too close. The
+walls seem to be trying to repair themselves, though the bars of the cell
+door are in perfect condition.  All the Nameks that are locked up seem
+content to wait, silently, in the middle of the holding cell. 
+~
+0 8 0
+D0
+~
+~
+7 100006 100094
+S
+#100097
+Grinders~
+Entering this room, a horrific scene is laid out for you inside.  The
+putrid smell of fresh and old blood, smeared and splattered over most every
+surface. Huge things that look like gears are busy smashing a few young
+Nameks into green and purple paste.  The mess splashes off, oozing into a
+drain that takes it away to the energy collection centers. 
+~
+0 8 0
+D1
+~
+~
+0 -1 100101
+D3
+~
+~
+0 -1 100094
+S
+#100098
+Near the Northern Entrance~
+This corridor seems little used and neglected...by living beings, at
+least.  Sparking wires hang down from spots in the ceiling where the
+patchwork of scrap metal is incomplete. On parts of the wall where the
+liquid metal coating has somehow been peeled away, bare circuitry is
+exposed. 
+~
+0 8 0
+D0
+~
+~
+0 -1 100099
+D2
+~
+~
+0 -1 100091
+S
+#100099
+Northern Exit~
+A red, cybernetic eye is mounted on either side of the entrance
+corridor.  They both seem to stare straight at you, watching you venture
+into the Big Gete Star.  A soft beep emits from one, followed by a second
+from the other eye, before they both grow suddenly brighter... 
+~
+0 8 0
+D0
+~
+~
+16777216 -1 100177
+D2
+~
+~
+0 -1 100098
+S
+#100100
+Energy Collection Center~
+This room is naturally dark, the only thing visible without some sort of
+light are some glowing tubes attached to the strangely calm walls.  They
+seem to contain mostly purple fluid, that is being pumped directly into
+this Big Gete Star. Something about this process seems to promote rapid
+recovery, almost as if the entire room were a healing tank.  This seems
+like a good place to rest, but it's doubtful that any part of this
+monstrous planetoid is really safe. 
+~
+0 538968073 0
+D1
+~
+~
+0 -1 100090
+S
+#100101
+Energy Collection Center~
+This room is naturally dark, the only thing visible without some sort of
+light are some glowing tubes attached to the strangely calm walls.  They
+seem to contain mostly purple fluid, that is being pumped directly into
+this Big Gete Star. Something about this process seems to promote rapid
+recovery, almost as if the entire room were a healing tank.  This seems
+like a good place to rest, but it's doubtful that any part of this
+monstrous planetoid is really safe. 
+~
+0 538968073 0
+D3
+~
+~
+0 -1 100097
+S
+#100102
+Pit~
+Piles of refuse has built up at the bottom of this dark pit, containing
+most anything the monstrous orb cannot properly digest or use.  Various
+parts of robots, spaceships, rocks, and waste take up space in this deep
+pocket. Climbing out doesn't seem to be an option, as the sides are coated
+in oil and grease. 
+~
+0 12 0
+D4
+~
+~
+64 -1 100000
+S
+#100103
+Above the Top of the Big Gete Star.~
+You've finally reached the very top of this monster planetoid.  Like the
+rest of this orb, the top is covered in shifting, living metal.  Faint
+noises seem to come from below.  Sounds of life, flickers of movement
+beneath the hull of the ship.  Perhaps if you stopped flying and landed on
+the hull, both feet on the ground, you could get a closer look?  
+~
+0 16777220 9
+D0
+~
+~
+0 -1 100104
+D1
+~
+~
+0 -1 100105
+D2
+~
+~
+0 -1 100106
+D3
+~
+~
+0 -1 100107
+D5
+~
+~
+2048 -1 100013
+S
+#100104
+In the Air~
+High up here you can see the whole of the Big Gete Star down below.  The
+orb is simply massive, taking up most of this huge plain.  Up here it seems
+motionless, even lifeless, if not for the distant moving dots that are the
+Nameks being led to their doom by the cyclopean drones. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100127
+D1
+~
+~
+0 -1 100110
+D2
+~
+~
+0 -1 100103
+D3
+~
+~
+0 -1 100111
+D5
+~
+~
+2048 -1 100141
+S
+#100105
+In the Air~
+Nothing obstructs your seemingly endless view of that around you, save
+the occasional cloud.  Far below you, the robotic guards and their
+prisoners resemble ants.  Sitting in the middle of the plains, tall enough
+that you're just now nearing the top, is the huge orb that is ripping the
+planet apart.  Devouring it, and its helpless inhabitants. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100110
+D1
+~
+~
+0 -1 100123
+D2
+~
+~
+0 -1 100109
+D3
+~
+~
+0 -1 100103
+D5
+~
+~
+2048 -1 100132
+S
+#100106
+In the Air~
+The trees, the prisoners, even the gigantic guards seem small and
+insignificant so far below you, as you hover here in midair.  Hills and
+mountains are now merely small landmarks, like a map spreading out
+underneath you. The metalic orb, this Big Gete Star, sits quietly in the
+middle of it all.  Content to absorb both the planet and whatever unwary
+denizens its guards happen to collect. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100103
+D1
+~
+~
+0 -1 100109
+D2
+~
+~
+0 -1 100119
+D3
+~
+~
+0 -1 100108
+D5
+~
+~
+2048 -1 100131
+S
+#100107
+In the Air~
+From way up here, high above the Namekian plains, you can get a better
+feel for the entire scene.  The arm-like protrusions that have extended
+from the main body of the Big Gete Star are moving, shifting slightly.
+They're slowly spreading outwards, digging themselves deeper into the
+planet.  Rooting the giant sphere into Namek. 
+~
+0 16777220 9
+D0
+~
+~
+0 -1 100111
+D1
+~
+~
+0 -1 100103
+D2
+~
+~
+0 -1 100108
+D3
+~
+~
+0 -1 100115
+D5
+~
+~
+2048 -1 100147
+S
+#100108
+Flying Nimbus~
+A cloud is parked here, slightly different from all the others you've
+seen floating through this sky.  This one is orangish, and seems to be
+rather firm.  In fact, you think you'd be able to land upon it quite
+easily. It's also wide enough to fit at least two people, and seems perfect
+for a quick spar before entering the murderous deathtrap nearby. 
+~
+0 67109380 9
+D0
+~
+~
+0 -1 100107
+D1
+~
+~
+0 -1 100106
+D2
+~
+~
+0 -1 100118
+D3
+~
+~
+0 -1 100116
+S
+#100109
+In the Air~
+Suddenly the winds seem to rise and swirl around you, a burst of energy
+flying up from the ground and fizzling out harmlessly before reaching you.
+Was it launched by a cyclopean horror, or a Namek simply trying to escape
+the cruel fate in store for it?  The silent guardians that fly the skies
+around you have no answer. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100105
+D1
+~
+~
+0 -1 100122
+D2
+~
+~
+0 -1 100120
+D3
+~
+~
+0 -1 100106
+D5
+~
+~
+2048 -1 100129
+S
+#100110
+In the Air~
+High up here you can see the whole of the Big Gete Star down below.  The
+orb is simply massive, taking up most of this huge plain. Up here it seems
+motionless, even lifeless, if not for the distant moving dots that are the
+Nameks being lead to their doom by the cyclopean drones. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100126
+D1
+~
+~
+0 -1 100124
+D2
+~
+~
+0 -1 100105
+D3
+~
+~
+0 -1 100104
+D5
+~
+~
+2048 -1 100135
+S
+#100111
+In the Air~
+Nothing obstructs your seemingly endless view of that around you, save
+the occasional cloud.  Far below you, the robotic guards and their
+prisoners resemble ants. Sitting in the middle of the plains, tall enough
+that you're just now nearing the top, is the huge orb that is seemingly
+devouring the planet itself.  Piece by piece. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100112
+D1
+~
+~
+0 -1 100104
+D2
+~
+~
+0 -1 100107
+D3
+~
+~
+0 -1 100113
+D5
+~
+~
+2048 -1 100145
+S
+#100112
+In the Air~
+The air is thin and the wind very strong at this high altitude.  Not far
+below you, peaceful puffs of cloud slowly move past, temporarily
+obstructing your view of the ugly monstrosity that is the Big Gete Star. A
+faint scream, and flashes of light from the far away ground remind you once
+more of what is going on around and inside the invading planetoid. 
+~
+0 16777216 9
+D1
+~
+~
+0 -1 100127
+D2
+~
+~
+0 -1 100111
+D3
+~
+~
+0 -1 100114
+D5
+~
+~
+0 -1 100142
+S
+#100113
+In the Air~
+The trees, the prisoners, even the gigantic guards seem small and
+insignificant so far below you, as you hover here in midair.  Hills and
+mountains are now merely small landmarks, like a map spreading out
+underneath you. The mettalic orb, this Big Gete Star, sits quietly in the
+middle of it all.  Content to absorb both the planet and whatever unwary
+denizens its guards happen to collect. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100114
+D1
+~
+~
+0 -1 100111
+D2
+~
+~
+0 -1 100115
+D5
+~
+~
+0 -1 100145
+S
+#100114
+In the Air~
+Freedom.  Unrestricted by ground or gravity.  That's what it is to fly. 
+Nothing obstructs your seemingly endless view of that around you, save the
+occasional cloud.  Far below you, the robotic guards and their prisoners
+resemble ants.  Sitting in the middle of the plains, tall enough that
+you're just now nearing the top, is the huge orb that is seemingly
+devouring the planet itself.  Piece by piece. 
+~
+0 16777216 9
+D1
+~
+~
+0 -1 100112
+D2
+~
+~
+0 -1 100113
+D5
+~
+~
+0 -1 100143
+S
+#100115
+In the Air~
+Floating here, you take notice of the clouds swirling around you, and
+the grand plains below you.  The silent beauty of the sky, this otherwise
+peaceful scene interrupted by the chaos and panic created by the Big Gete
+Star. There it sits, in the middle of it all...prisoners and guards
+scrambling around on the ground, or flying through the skies around the
+monstrous orb. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100113
+D1
+~
+~
+0 -1 100107
+D2
+~
+~
+0 -1 100116
+D5
+~
+~
+0 -1 100147
+S
+#100116
+In the Air~
+From way up here, high above the Namekian plains, you can get a better
+feel for the entire scene.  The arm-like protrusions that have extended
+from the main body of the Big Gete Star are moving, shifting slightly.
+They're slowly spreading outwards, digging themselves deeper into the
+planet.  Rooting the giant sphere into Namek. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100115
+D1
+~
+~
+0 -1 100108
+D2
+~
+~
+0 -1 100117
+D5
+~
+~
+0 -1 100150
+S
+#100117
+In the Air~
+High up here you can see the whole of the Big Gete Star down below.  The
+orb is simply massive, taking up most of this huge plain.  Up here it seems
+motionless, even lifeless, if not for the distant moving dots that are the
+Nameks being lead to their doom by the cyclopean drones. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100116
+D1
+~
+~
+0 -1 100118
+D5
+~
+~
+0 -1 100152
+S
+#100118
+In the Air~
+The trees, the prisoners, even the gigantic guards seem small and
+insignificant so far below you, as you hover here in midair. The metalic
+orb, this Big Gete Star, sits quietly in the middle of it all.  Content to
+absorb both the planet and whatever unwary denizens its guards happen to
+collect. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100108
+D1
+~
+~
+0 -1 100119
+D3
+~
+~
+0 -1 100117
+D5
+~
+~
+0 -1 100153
+S
+#100119
+In the Air~
+Freedom.  Unrestricted by ground or gravity.  That's what it is to fly. 
+Nothing obstructs your seemingly endless view of that around you, save the
+occasional cloud. Far below you, the robotic guards and their prisoners
+resemble ants.  Sitting in the middle of the plains, tall enough that
+you're just now nearing the top, is the huge orb that is seemingly
+devouring the planet itself.  Piece by piece. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100106
+D1
+~
+~
+0 -1 100120
+D3
+~
+~
+0 -1 100118
+D5
+~
+~
+0 -1 100131
+S
+#100120
+In the Air~
+From way up here, high above the Namekian plains, you can get a better
+feel for the entire scene.  The arm-like protrusions that have extended
+from the main body of the Big Gete Star are moving, shifting slightly.
+They're slowly spreading outwards, digging themselves deeper into the
+planet.  Rooting the giant sphere into Namek, where it can devour the
+planet and its children at its leisure. 
+~
+0 16777224 9
+D0
+~
+~
+0 -1 100109
+D1
+~
+~
+0 -1 100121
+D3
+~
+~
+0 -1 100119
+D5
+~
+~
+0 -1 100130
+S
+#100121
+In the Air~
+The air is thin and the wind very strong at this high altitude.  Not far
+below you, peaceful puffs of cloud slowly move past, temporarily
+obstructing your view of the ugly monstrosity that is the Big Gete Star. A
+faint scream, and flashes of light from the far away ground remind you once
+more of what is going on around and inside the invading planetoid. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100122
+D3
+~
+~
+0 -1 100120
+D5
+~
+~
+0 -1 100128
+S
+#100122
+In the Air~
+Far down below Nameks are being guided toward the main body of the Big
+Gete Star.  You watch a bold young Namek break from the group and attack
+one of the cyclopean guards. It looks like a green dot from this height,
+but its easy to tell what the huge, powerful robots do to the young Namek,
+as they gather around it. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100123
+D2
+~
+~
+0 -1 100121
+D3
+~
+~
+0 -1 100109
+D5
+~
+~
+0 -1 100129
+S
+#100123
+In the Air~
+From way up here, high above the Namekian plains, you can get a better
+feel for the entire scene.  The arm-like protrusions that have extended
+from the main body of the Big Gete Star are moving, shifting slightly.
+They're slowly spreading outwards, digging themselves deeper into the
+planet.  Rooting the giant sphere into Namek.  
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100124
+D2
+~
+~
+0 -1 100122
+D3
+~
+~
+0 -1 100105
+D5
+~
+~
+0 -1 100132
+S
+#100124
+In the Air~
+The trees, the prisoners, even the gigantic guards seem small and
+insignificant so far below you, as you hover here in midair.  Hills and
+mountains are now merely small landmarks, like a map spreading out
+underneath you.  The mettalic orb, this Big Gete Star, sits quietly in the
+middle of it all.  Content to absorb both the planet and whatever unwary
+denizens its guards happen to collect. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100125
+D2
+~
+~
+0 -1 100123
+D3
+~
+~
+0 -1 100110
+D5
+~
+~
+0 -1 100133
+S
+#100125
+In the Air~
+Freedom.  Unrestricted by ground or gravity.  That's what it is to fly. 
+Nothing obstructs your seemingly endless view of that around you, save the
+occasional cloud. Far below you, the robotic guards and their prisoners
+resemble ants.  Sitting in the middle of the plains, tall enough that
+you're just now nearing the top, is the huge orb that is seemingly
+devouring the planet itself.  Piece by piece. 
+~
+0 16777216 9
+D2
+~
+~
+0 -1 100124
+D3
+~
+~
+0 -1 100126
+D5
+~
+~
+0 -1 100134
+S
+#100126
+In the Air~
+The air is thin and the wind very strong at this high altitude.  Not far
+below you, peaceful puffs of cloud slowly move past, temporarily
+obstructing your view of the ugly monstrosity that is the Big Gete Star.
+Then the couds pass, and there it sits, in the middle of it all...prisoners
+and guards scrambling around on the ground, or flying through the skies
+around the monstrous orb. 
+~
+0 16777216 9
+D1
+~
+~
+0 -1 100125
+D2
+~
+~
+0 -1 100110
+D3
+~
+~
+0 -1 100127
+D5
+~
+~
+0 -1 100135
+S
+#100127
+In the Air~
+Far down below Nameks are being guided toward the main body of the Big
+Gete Star.  You watch a bold young Namek break from the group and attack
+one of the cyclopean guards. It looks like a green dot from this height,
+but its easy to tell what the huge, powerful robots do to the young Namek,
+as they gather around it. 
+~
+0 16777216 9
+D1
+~
+~
+0 -1 100126
+D2
+~
+~
+0 -1 100104
+D3
+~
+~
+0 -1 100112
+D5
+~
+~
+0 -1 100141
+S
+#100128
+In the Air~
+Even at this height, among the clouds, the Big Gete Star rudely blocks
+your view of the Namekian landscape.  From here it looks lifeless, almost
+peaceful.  But the sudden scream of a Namek reminds you of the horrible
+acts being committed below. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100129
+D1
+~
+~
+0 -1 100140
+D3
+~
+~
+0 -1 100130
+D4
+~
+~
+0 -1 100121
+D5
+~
+~
+16777216 -1 100164
+S
+#100129
+In the Air~
+You watch a bold young Namek break from the group and attack one of the
+cyclopean guards.  They resemble dots from this height, but it's easily to
+tell what the powerful robots do to the poor Namek.  Peaceful puffs of
+cloud slowly move past, temporarily obstructing your view of the latest
+scene of horror inspired by the Big Gete Star. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100132
+D1
+~
+~
+0 -1 100139
+D2
+~
+~
+0 -1 100128
+D4
+~
+~
+0 -1 100122
+D5
+~
+~
+16779264 -1 100166
+S
+#100130
+In the Air~
+Suddenly the winds seem to rise and swirl around you, as battles flare
+up left and right.  Hovering in midair a ways above the plains of Namek,
+atrocities and horrors are occurring every second.  What is this monster
+planet doing to peaceful Namek?  
+~
+0 16777216 9
+D1
+~
+~
+0 -1 100128
+D3
+~
+~
+0 -1 100131
+D4
+~
+~
+0 -1 100120
+D5
+~
+~
+16779264 -1 100162
+S
+#100131
+In the Air~
+Taking up most of your view, at this low of an altitude, is the massive
+ball that is dug into the grassy plain.  This living metal planet that is
+devouring both the planet Namek, and its children.  A sudden burst of
+energy flies up from the ground and harmlessly past you into the sky,
+launched by a cyclopean guard or a Namek simply trying to escape the cruel
+fate in store for it. 
+~
+0 16777216 9
+D1
+~
+~
+0 -1 100130
+D3
+~
+~
+0 -1 100153
+D4
+~
+~
+0 -1 100119
+D5
+~
+~
+16779264 -1 100157
+S
+#100132
+In the Air~
+From your current vantage point, floating above the ravaged fields of
+Namek, you see enough carnage and devastation to fill a dozen wars. A
+sudden burst of energy flies up from the ground and harmlessly past you
+into the sky, launched by a cyclopean guard or a Namek simply trying to
+escape the cruel fate in store for it. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100133
+D1
+~
+~
+0 -1 100138
+D2
+~
+~
+0 -1 100129
+D4
+~
+~
+0 -1 100123
+D5
+~
+~
+16779264 -1 100168
+S
+#100133
+In the Air~
+A sudden burst of energy flies up from the ground and harmlessly past
+you into the sky, launched by a cyclopean guard or a Namek simply trying to
+escape the cruel fate in store for it. Turning your attention back to the
+Big Gete Star, you notice the massive sphere doesn't seem to have any other
+openings besides the two near the ground. Its hull is a shifting, seamless
+sea of liquid metal.  Why has it landed here, on Namek?  The silent
+guardians that walk the ground and fly the skies around you have no answer.
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100134
+D1
+~
+~
+0 -1 100137
+D2
+~
+~
+0 -1 100132
+D4
+~
+~
+0 -1 100124
+D5
+~
+~
+16779264 -1 100171
+S
+#100134
+In the Air~
+Suddenly the winds seem to rise and swirl around you, as battles flare
+up left and right.  Hovering in midair a ways above the plains of Namek,
+atrocities and horrors are occurring every second. It smells like fire, it
+looks like rain...what is going on here?  What is this monster planet doing
+to peaceful Namek?  
+~
+0 16777220 9
+D1
+~
+~
+0 -1 100136
+D2
+~
+~
+0 -1 100133
+D3
+~
+~
+0 -1 100135
+D4
+~
+~
+0 -1 100125
+D5
+~
+~
+16777216 -1 100173
+S
+#100135
+In the Air~
+Down below, Nameks are being guided toward the main body of the Big Gete
+Star. You watch a bold young Namek break from the group and attack one of
+the cyclopean droids. After his death, the line of Nameks resume their walk
+towards the entrance of this massive orb. 
+~
+0 16777216 9
+D1
+~
+~
+0 -1 100134
+D3
+~
+~
+0 -1 100141
+D4
+~
+~
+0 -1 100126
+D5
+~
+~
+16779264 -1 100175
+S
+#100136
+In the Air~
+From your current vantage point, floating above the ravaged fields of
+Namek, you see enough carnage and devastation to fill a dozen wars. It
+smells like fire, it looks like rain...what is going on here?  What is this
+monster planet doing to peaceful Namek?  
+~
+0 16777220 9
+D2
+~
+~
+0 -1 100137
+D3
+~
+~
+0 -1 100134
+D5
+~
+~
+16777216 -1 100172
+S
+#100137
+In the Air~
+Even at this height, among the clouds, the Big Gete Star rudely blocks
+your view of the Namekian landscape.  From here it looks lifeless, almost
+peaceful.  But the sudden scream of a Namek reminds you of the horrible
+acts being committed below. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100136
+D2
+~
+~
+0 -1 100138
+D3
+~
+~
+0 -1 100133
+D5
+~
+~
+16777216 -1 100171
+S
+#100138
+In the Air~
+Hovering here, you can observe the Big Gete Star from a different angle.
+The arm-like protrusions extending from the main body of the star are
+moving and shifting slightly, slowly spreading themselves deeper into
+Namek. Expanding, moving the ground as they anchro the orb firmly into the
+planet. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100137
+D2
+~
+~
+0 -1 100139
+D3
+~
+~
+0 -1 100132
+D5
+~
+~
+16777216 -1 100168
+S
+#100139
+In the Air~
+You float here in midair, low enough to make out what goes on below you
+yet high enough take in a bigger picture of this horrible scene. Taking up
+most of your view, at this low of an altitude, is the massive ball that is
+dug into the grassy plain.  This living metal planet that is devouring both
+the planet Namek, and its children. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100138
+D2
+~
+~
+0 -1 100140
+D3
+~
+~
+0 -1 100129
+D5
+~
+~
+16777216 -1 100166
+S
+#100140
+In the Air~
+Suddenly the winds seem to rise and swirl around you, as battles flare
+up left and right.  Hovering in midair a ways above the plains of Namek,
+atrocities and horrors are occurring every second. It smells like fire, it
+looks like rain...what is going on here?  What is this monster planet doing
+to peaceful Namek?  The silent guardians that walk the ground and fly the
+skies around you have no answer. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100139
+D3
+~
+~
+0 -1 100128
+D5
+~
+~
+16777216 -1 100165
+S
+#100141
+In the Air~
+Taking up most of your view, at this low of an altitude, is the massive
+ball that is dug into the grassy plain.  This living metal planet that is
+devouring both the planet Namek, and its children. Hovering here, you can
+observe the Big Gete Star from a different angle. From here it looks
+lifeless, almost peaceful.  But the sudden scream of a Namek reminds you of
+the horrible crimes and atrocites being commited by this monster planet. 
+~
+0 16777216 9
+D1
+~
+~
+0 -1 100135
+D3
+~
+~
+0 -1 100142
+D4
+~
+~
+0 -1 100127
+D5
+~
+~
+16779264 -1 100175
+S
+#100142
+In the Air~
+Hovering in midair a ways above the plains of Namek, atrocities and
+horrors are occurring every second. It smells like fire, it looks like
+rain...what is going on here?  Suddenly the winds seem to rise and swirl
+around you, as battles flare up left and right. Perhaps more information
+will be found inside... 
+~
+0 16777216 9
+D1
+~
+~
+0 -1 100141
+D3
+~
+~
+0 -1 100143
+D4
+~
+~
+0 -1 100112
+D5
+~
+~
+16779264 -1 100179
+S
+#100143
+In the Air~
+Even at this height, among the clouds, the Big Gete Star rudely blocks
+your view of the Namekian landscape. A sudden burst of energy flies up from
+the ground and harmlessly past you into the sky, launched by a cyclopean
+guard or a Namek simply trying to escape the cruel fate in store for it. 
+~
+0 16777216 9
+D1
+~
+~
+0 -1 100142
+D2
+~
+~
+0 -1 100145
+D3
+~
+~
+0 -1 100144
+D4
+~
+~
+0 -1 100114
+D5
+~
+~
+16777216 -1 100181
+S
+#100144
+In the Air~
+Suddenly the winds seem to rise and swirl around you, as battles flare
+up left and right.  Hovering in midair a ways above the plains of Namek,
+atrocities and horrors are occurring every second. Why has it landed here,
+on Namek?  The silent guardians that walk the ground and fly the skies
+around you have no answer. 
+~
+0 16777216 9
+D1
+~
+~
+0 -1 100143
+D2
+~
+~
+0 -1 100146
+D5
+~
+~
+16777216 -1 100182
+S
+#100145
+In the Air~
+You float here in midair, low enough to make out what goes on below you
+yet high enough take in a bigger picture of this horrible scene.  Taking up
+most of your view, at this low of an altitude, is the massive ball that is
+dug into the grassy plain. From here it looks lifeless, almost peaceful. 
+But the sudden scream of a Namek reminds you of the horrible acts being
+committed below. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100143
+D2
+~
+~
+0 -1 100147
+D3
+~
+~
+0 -1 100146
+D4
+~
+~
+0 -1 100113
+D5
+~
+~
+16779264 -1 100183
+S
+#100146
+In the Air~
+From your current vantage point, floating above the ravaged fields of
+Namek, you see enough carnage and devastation to fill a dozen wars. A
+sudden burst of energy flies up from the ground and harmlessly past you
+into the sky, launched by a cyclopean guard or a Namek simply trying to
+escape the cruel fate in store for it. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100144
+D1
+~
+~
+0 -1 100145
+D2
+~
+~
+0 -1 100148
+D5
+~
+~
+16777216 -1 100183
+S
+#100147
+In the Air~
+Suddenly the winds seem to rise and swirl around you, as battles flare
+up left and right.  Hovering in midair a ways above the plains of Namek,
+atrocities and horrors are occurring every second. It smells like fire, it
+looks like rain...what is going on here?  What is this monster planet doing
+to peaceful Namek?  
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100145
+D2
+~
+~
+0 -1 100150
+D3
+~
+~
+0 -1 100148
+D4
+~
+~
+0 -1 100115
+D5
+~
+~
+16779264 -1 100184
+S
+#100148
+In the Air~
+Hovering here, you can observe the Big Gete Star from a different angle.
+The massive sphere doesn't seem to have any other openings besides the two
+near the ground, its hull a shifting, seamless sea of liquid metal. Why has
+it landed here, on Namek?  The silent guardians that walk the ground and
+fly the skies around you have no answer.  Perhaps more information will be
+found inside... 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100146
+D1
+~
+~
+0 -1 100147
+D2
+~
+~
+0 -1 100149
+D5
+~
+~
+16777216 -1 100184
+S
+#100149
+In the Air~
+Even at this height, among the clouds, the Big Gete Star rudely blocks
+your view of the Namekian landscape.  From here it looks lifeless, almost
+peaceful.  But the sudden scream of a Namek reminds you of the horrible
+acts being committed below. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100148
+D1
+~
+~
+0 -1 100150
+D2
+~
+~
+0 -1 100151
+D5
+~
+~
+16777216 -1 100185
+S
+#100150
+In the Air~
+You float here in midair, low enough to make out what goes on below you
+yet high enough take in a bigger picture of this horrible scene.  Taking up
+most of your view, at this low of an altitude, is the massive ball that is
+dug into the grassy plain. The mettalic orb, this Big Gete Star, sits
+quietly in the middle of it all.  Content to absorb both the planet and
+whatever unwary denizens its guards happen to collect. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100147
+D2
+~
+~
+0 -1 100152
+D3
+~
+~
+0 -1 100149
+D4
+~
+~
+0 -1 100116
+D5
+~
+~
+16779264 -1 100185
+S
+#100151
+In the Air~
+From here you can better make out the full length of those arm-like
+protrusions that extend from the main body of the Big Gete Star.  They seem
+to be moving slightly, shifting the earth as they slowly spread and dig
+themselves deeper into Namek. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100149
+D1
+~
+~
+0 -1 100152
+D5
+~
+~
+16777216 -1 100155
+S
+#100152
+In the Air~
+You float here in midair, low enough to make out what goes on below you
+yet high enough take in a bigger picture of this horrible scene.  Taking up
+most of your view, at this low of an altitude, is the massive ball that is
+dug into the grassy plain. This living metal planet that is devouring both
+the planet Namek, and its children. 
+~
+0 16777216 9
+D0
+~
+~
+0 -1 100150
+D1
+~
+~
+0 -1 100153
+D3
+~
+~
+0 -1 100151
+D4
+~
+~
+0 -1 100117
+D5
+~
+~
+16777216 -1 100154
+S
+#100153
+In the Air~
+You float here in midair, low enough to make out what goes on below you
+yet high enough take in a bigger picture of this horrible scene. Suddenly
+the winds seem to rise and swirl around you, as battles flare up left and
+right. It smells like fire, it looks like rain...what is going on here?  
+~
+0 16777216 9
+D1
+~
+~
+0 -1 100131
+D3
+~
+~
+0 -1 100152
+D4
+~
+~
+0 -1 100118
+D5
+~
+~
+16779264 -1 100157
+S
+#100154
+Next to the Big Gete Star~
+Up in the air, flashes of movement...green and grey, powered by jets and
+ki energy.  Perhaps a few prisoners have managed to escape the clutches of
+the Big Gete Star's cyclopean drones. What remains to be seen is, how long
+can they elude the clutches of the monster planet resting so close to you. 
+~
+0 0 2
+D2
+~
+~
+0 -1 100156
+D3
+~
+~
+0 -1 100155
+D4
+~
+~
+16777280 -1 100152
+S
+#100155
+Namekian Plains~
+This is the edge of some massive, arm-like protrusion that extends out
+of the Big Gete Star.  It blocks your way, and many other tendrils are
+driven into the planet elsewhere.  Almost as if the metallic predator has
+enclosed the planet Namek in a deadly embrace. 
+~
+0 0 2
+D0
+~
+~
+0 -1 100185
+D1
+~
+~
+0 -1 100154
+D4
+~
+~
+16777280 -1 100151
+S
+#100156
+Namekian Plains~
+Their spirits broken by the overwhelming power of the red eyed drones,
+chained Nameks continue past here without resistance into an opening in the
+circuit coated hull of the Big Gete Star.  They must know that, inside,
+only their demise awaits them. 
+~
+0 0 2
+D0
+~
+~
+0 -1 100154
+D1
+~
+~
+0 -1 100157
+S
+#100157
+Next to the Big Gete Star~
+The liquid metal hull of this crashed giant ripples nearby, close enough
+to reach out and touch.  To every side, Nameks are being rounded up and
+dragged into the Big Gete Star by cyclopean droids. Up in the sky, there
+seems to be some sort of movement.  A flash of green, followed quickly by a
+shining, metallic figure. 
+~
+0 0 2
+D2
+~
+~
+0 -1 100158
+D3
+~
+~
+0 -1 100156
+S
+#100158
+Namekian Plains~
+A line of chained Nameks can be seen here, drudging along toward the
+waiting maw of the monster planet.  They plod forward helplessly, under the
+cold and watchful cybernetic eyes of the huge robots. 
+~
+0 0 2
+D0
+~
+~
+0 -1 100157
+D1
+~
+~
+0 -1 100159
+S
+#100159
+Entrance to the Big Gete Star~
+The main body of the Big Gete Star looms before you.  A living metal
+mass bent on devouring this planet, its inhabitants, and everyone else for
+power to fuel its evil ambition, for energy to sate its foul appetites. A
+wide hole in the side of the structure swallows Namek after Namek into its
+dark interior, led to the entrance by cyclopean robots. 
+~
+0 0 0
+D0
+~
+~
+16777216 -1 100084
+D1
+~
+~
+0 -1 100161
+D2
+~
+~
+0 -1 100160
+D3
+~
+~
+0 -1 100158
+S
+#100160
+Entering a Namekian Plain~
+As you enter this Namekian field, something huge and definately metal
+fills most of your view.  It looks like an asteroid or small moon has
+simply crashed right into Namek, digging it's way into the earth. However,
+this seems to be more than a mere space rock.  The metallic coating seems
+almost...alive... 
+~
+0 4 0
+D0
+~
+~
+0 -1 100159
+D3
+~
+~
+0 -1 5001
+S
+#100161
+Namekian Plains~
+This is the edge of some massive, arm-like protrusion that extends out
+of the Big Gete Star.  It blocks your way, and many other tendrils are
+driven into the planet elsewhere.  Almost as if the metallic predator has
+enclosed the planet Namek in a deadly embrace.  Perhaps by ascending into
+the sky you would be able to avoid this blockade?  Though the skies seem
+just as 'friendly' as the ground. 
+~
+0 0 2
+D0
+~
+~
+0 -1 100162
+D3
+~
+~
+0 -1 100159
+S
+#100162
+Next to the Big Gete Star~
+Their spirits broken by the overwhelming power of the red eyed drones,
+chained Nameks continue past here without resistance into an opening in the
+circuit coated hull of the Big Gete Star.  They must know that, inside,
+only their demise awaits them. Up in the sky, there seems to be some sort
+of movement.  A flash of green, followed quickly by a shining, metallic
+figure. 
+~
+0 0 2
+D1
+~
+~
+0 -1 100163
+D2
+~
+~
+0 -1 100161
+S
+#100163
+Namekian Plains~
+The main body of the Big Gete Star rises upwards near you.  A living
+metal sphere focused on devouring this planet and its peaceful inhabitants
+to fuel its evil ambition and sate its foul appetites. 
+~
+0 0 2
+D0
+~
+~
+0 -1 100164
+D3
+~
+~
+0 -1 100162
+S
+#100164
+Next to the Big Gete Star~
+A group of chained Nameks can be seen here, waiting for their turn to
+plod toward the gaping maw of the monster orb.  They look around
+helplessly, kept under the cold and watchful cybernetic eyes of the huge,
+robotic guards. 
+~
+0 0 2
+D1
+~
+~
+0 -1 100165
+D2
+~
+~
+0 -1 100163
+D4
+~
+~
+16777280 -1 100128
+S
+#100165
+Namekian Plains~
+The rippling, liquid metal hull of the menacing orb ripples nearby,
+almost close enough to reach out and touch.  To every side, Nameks are
+being rounded up and dragged towards Big Gete Star by cyclopean guards.
+Perhaps by ascending into the sky you would be better able to observe the
+situation?  Though the skies seem just as 'friendly' as the ground. 
+~
+0 0 2
+D0
+~
+~
+0 -1 100166
+D3
+~
+~
+0 -1 100164
+D4
+~
+~
+16777280 -1 100140
+S
+#100166
+Next to the Big Gete Star~
+To every side, Nameks are being rounded up and dragged into the Big Gete
+Star by cyclopean droids. The liquid metal hull of this crashed giant
+ripples nearby, as if trying to reach out and grasp the helpless Nameks. 
+~
+0 0 2
+D0
+~
+~
+0 -1 100168
+D1
+~
+~
+0 -1 100167
+D2
+~
+~
+0 -1 100165
+D4
+~
+~
+16777280 -1 100139
+S
+#100167
+Namekian Plains~
+This is the edge of some massive, arm-like protrusion that extends out
+of the Big Gete Star.  It blocks your way, and many other tendrils are
+driven into the planet elsewhere.  Almost as if the metallic predator has
+enclosed the planet Namek in a deadly embrace. 
+~
+0 0 2
+D0
+~
+~
+0 -1 100169
+D3
+~
+~
+0 -1 100166
+S
+#100168
+Next to the Big Gete Star~
+The liquid metal hull of this crashed giant ripples nearby, close enough
+to reach out and touch.  To every side, Nameks are being rounded up and
+dragged into the Big Gete Star by cyclopean droids.  
+~
+0 0 2
+D0
+~
+~
+0 -1 100171
+D1
+~
+~
+0 -1 100169
+D2
+~
+~
+0 -1 100166
+D4
+~
+~
+16777280 -1 100138
+S
+#100169
+Namekian Plains~
+To every side, Nameks are being rounded up and dragged into the Big Gete
+Star by cyclopean droids.  Up in the sky, there seems to be some sort of
+movement. Perhaps a few prisoners have managed to escape the clutches of
+the Big Gete Star's cyclopean drones... 
+~
+0 0 2
+D0
+~
+~
+0 -1 100170
+D2
+~
+~
+0 -1 100167
+D3
+~
+~
+0 -1 100168
+S
+#100170
+Namekian Plains~
+A line of chained Nameks can be seen here, drudging along toward the
+waiting maw of the monster planet.  They plod forward helplessly, under the
+cold and watchful cybernetic eyes of the huge robots. 
+~
+0 0 2
+D2
+~
+~
+0 -1 100169
+D3
+~
+~
+0 -1 100171
+S
+#100171
+Next to the Big Gete Star~
+The main body of the Big Gete Star rises upwards near you.  A living
+metal sphere focused on devouring this planet and its peaceful inhabitants
+to fuel its evil ambition and sate its foul appetites. 
+~
+0 0 2
+D0
+~
+~
+0 -1 100172
+D1
+~
+~
+0 -1 100170
+D2
+~
+~
+0 -1 100168
+D4
+~
+~
+16777280 -1 100137
+S
+#100172
+Namekian Plains~
+Their spirits broken by the overwhelming power of the red eyed drones,
+chained Nameks continue past here without resistance into an opening in the
+circuit coated hull of the Big Gete Star.  They must know that, inside,
+only their demise awaits them. 
+~
+0 0 2
+D2
+~
+~
+0 -1 100171
+D3
+~
+~
+0 -1 100173
+D4
+~
+~
+16777280 -1 100136
+S
+#100173
+Next to the Big Gete Star~
+To every side, Nameks are being rounded up and dragged into the Big Gete
+Star by cyclopean droids.  Up in the sky, there seems to be some sort of
+movement.  A flash of green, followed quickly by a shining, metallic
+figure.  The liquid metal hull of this crashed giant ripples nearby, as if
+trying to reach out and grasp the fleeing Namek. 
+~
+0 0 2
+D0
+~
+~
+0 -1 100174
+D1
+~
+~
+0 -1 100172
+D4
+~
+~
+16777280 -1 100134
+S
+#100174
+Namekian Plains~
+This is the edge of some massive, arm-like protrusion that extends out
+of the Big Gete Star.  It blocks your way, and many other tendrils are
+driven into the planet elsewhere.  Almost as if the metallic predator has
+enclosed the planet Namek in a deadly embrace. 
+~
+0 0 2
+D2
+~
+~
+0 -1 100173
+D3
+~
+~
+0 -1 100175
+S
+#100175
+Next to the Big Gete Star~
+The rippling, liquid metal hull of the menacing orb ripples nearby,
+almost close enough to reach out and touch.  To every side, Nameks are
+being rounded up and dragged towards Big Gete Star by cyclopean guards.
+Perhaps by ascending into the sky you would be better able to observe the
+situation?  Though the skies seem just as 'friendly' as the ground. 
+~
+0 0 2
+D0
+~
+~
+0 -1 100176
+D1
+~
+~
+0 -1 100174
+S
+#100176
+Namekian Plains~
+Up in the air, flashes of movement...green and grey, powered by jets and
+ki energy.  Perhaps a few prisoners have managed to escape the clutches of
+the Big Gete Star's cyclopean drones. What remains to be seen is, how long
+can they elude the clutches of the monster planet resting so close to you. 
+~
+0 0 2
+D2
+~
+~
+0 -1 100175
+D3
+~
+~
+0 -1 100177
+S
+#100177
+Entrance to the Big Gete Star~
+The main body of the Big Gete Star looms before you.  A living metal
+mass bent on devouring this planet, its inhabitants, and everyone else for
+power to fuel its evil ambition, for energy to sate its foul appetites. A
+wide, jagged hole in the side of the structure swallows Namek after Namek
+into its dark interior, led to the entrance by cyclopean guards. 
+~
+0 0 2
+D1
+~
+~
+0 -1 100176
+D2
+~
+~
+16777216 -1 100099
+D3
+~
+~
+0 -1 100178
+S
+#100178
+Namekian Plains~
+To every side, Nameks are being rounded up and dragged into the Big Gete
+Star by cyclopean droids.  Up in the sky, there seems to be some sort of
+movement.  A flash of green, followed quickly by a shining, metallic
+figure. The liquid metal hull of this crashed giant ripples nearby, as if
+trying to reach out and grasp the fleeing Namek. 
+~
+0 0 2
+D1
+~
+~
+0 -1 100177
+D2
+~
+~
+0 -1 100179
+S
+#100179
+Next to the Big Gete Star~
+The rippling, liquid metal hull of the menacing orb ripples nearby,
+almost close enough to reach out and touch.  To every side, Nameks are
+being rounded up and dragged towards Big Gete Star by cyclopean guards. 
+~
+0 0 2
+D0
+~
+~
+0 -1 100178
+D3
+~
+~
+0 -1 100180
+S
+#100180
+Namekian Plains~
+A line of chained Nameks can be seen here, drudging along toward the
+waiting maw of the monster planet.  They plod forward helplessly, under the
+cold and watchful cybernetic eyes of the huge robots. 
+~
+0 0 1
+D1
+~
+~
+0 -1 100179
+D2
+~
+~
+0 -1 100181
+S
+#100181
+Next to the Big Gete Star~
+The liquid metal hull of this crashed giant ripples nearby, close enough
+to reach out and touch.  To every side, Nameks are being rounded up and
+dragged into the Big Gete Star by cyclopean droids. Up in the sky, there
+seems to be some sort of movement.  A flash of green, followed quickly by a
+shining, metallic figure. 
+~
+0 0 2
+D0
+~
+~
+0 -1 100180
+D3
+~
+~
+0 -1 100182
+D4
+~
+~
+16777280 -1 100143
+S
+#100182
+Namekian Plains~
+Their spirits broken by the overwhelming power of the red eyed drones,
+chained Nameks continue past here without resistance into an opening in the
+circuit coated hull of the Big Gete Star.  They must know that, inside,
+only their demise awaits them. 
+~
+0 0 2
+D1
+~
+~
+0 -1 100181
+D2
+~
+~
+0 -1 100183
+D4
+~
+~
+16777280 -1 100144
+S
+#100183
+Next to the Big Gete Star~
+Up in the air, flashes of movement...green and grey, powered by jets and
+ki energy.  Perhaps a few prisoners have managed to escape the clutches of
+the Big Gete Star's cyclopean drones. What remains to be seen is, how long
+can they elude the clutches of the monster planet resting so close to you. 
+~
+0 0 2
+D0
+~
+~
+0 -1 100182
+D2
+~
+~
+0 -1 100184
+D3
+~
+~
+0 -1 100188
+D4
+~
+~
+16777280 -1 100146
+S
+#100184
+Next to the Big Gete Star~
+The main body of the Big Gete Star rises upwards near you.  A living
+metal sphere focused on devouring this planet and its peaceful inhabitants
+to fuel its evil ambition and sate its foul appetites. 
+~
+0 0 2
+D0
+~
+~
+0 -1 100183
+D2
+~
+~
+0 -1 100185
+D3
+~
+~
+0 -1 100187
+D4
+~
+~
+16777280 -1 100148
+S
+#100185
+Next to the Big Gete Star~
+The rippling, liquid metal hull of the menacing orb ripples nearby,
+almost close enough to reach out and touch.  To every side, Nameks are
+being rounded up and dragged towards Big Gete Star by cyclopean guards.
+Perhaps by ascending into the sky you would be better able to observe the
+situation?  Though the skies seem just as 'friendly' as the ground. 
+~
+0 0 2
+D0
+~
+~
+0 -1 100184
+D2
+~
+~
+0 -1 100155
+D3
+~
+~
+0 -1 100186
+D4
+~
+~
+16777280 -1 100149
+S
+#100186
+Namekian Plains~
+A group of chained Nameks can be seen here, waiting for their turn to
+plod toward the gaping maw of the monster orb.  They look around
+helplessly, kept under the cold and watchful cybernetic eyes of the huge,
+robotic guards. 
+~
+0 0 2
+D0
+~
+~
+0 -1 100187
+D1
+~
+~
+0 -1 100185
+S
+#100187
+Namekian Plains~
+Up in the air, flashes of movement...green and grey, powered by jets and
+ki energy.  Perhaps a few prisoners have managed to escape the clutches of
+the Big Gete Star's cyclopean drones.  What remains to be seen is, how long
+can they elude the clutches of the monster planet resting so close to you. 
+~
+0 0 2
+D0
+~
+~
+0 -1 100188
+D1
+~
+~
+0 -1 100184
+D2
+~
+~
+0 -1 100186
+S
+#100188
+Namekian Plains~
+This is the edge of some massive, arm-like protrusion that extends out
+of the Big Gete Star.  It blocks your way, and many other tendrils are
+driven into the planet elsewhere.  Almost as if the metallic predator has
+enclosed the planet Namek in a deadly embrace. 
+~
+0 0 2
+D1
+~
+~
+0 -1 100183
+D2
+~
+~
+0 -1 100187
+S
+#100189
+Floating in a void~
+~
+0 2097156 1
+S
+#100190
+Floating in a void~
+~
+0 2097156 1
+S
+#100191
+Floating in a void~
+~
+0 2097156 1
+S
+#100192
+Floating in a void~
+~
+0 2097156 1
+S
+#100193
+Floating in a void~
+~
+0 2097156 1
+S
+#100194
+Floating in a void~
+~
+0 2097156 1
+S
+#100195
+Floating in a void~
+~
+0 2097156 1
+S
+#100196
+Floating in a void~
+~
+0 2097156 1
+S
+#100197
+Floating in a void~
+~
+0 2097156 1
+S
+#100198
+Floating in a void~
+~
+0 2097156 1
+S
+#100199
+Floating in a void~
+~
+0 2097156 1
+S
+#100200
+Floating in a void~
+~
+0 2097156 1
+S
+#100201
+Floating in a void~
+~
+0 2097156 1
+S
+#100202
+Floating in a void~
+~
+0 2097156 1
+S
+#100203
+Floating in a void~
+~
+0 2097156 1
+S
+#100204
+Floating in a void~
+~
+0 2097156 1
+S
+#100205
+Floating in a void~
+~
+0 2097156 1
+S
+#100206
+Floating in a void~
+~
+0 2097156 1
+S
+#100207
+Floating in a void~
+~
+0 2097156 1
+S
+#100208
+Floating in a void~
+~
+0 2097156 1
+S
+#100209
+Floating in a void~
+~
+0 2097156 1
+S
+#100210
+Floating in a void~
+~
+0 2097156 1
+S
+#100211
+Floating in a void~
+~
+0 2097156 1
+S
+#100212
+Floating in a void~
+~
+0 2097156 1
+S
+#100213
+Floating in a void~
+~
+0 2097156 1
+S
+#100214
+Floating in a void~
+~
+0 2097156 1
+S
+#100215
+Floating in a void~
+~
+0 2097156 1
+S
+#100216
+Floating in a void~
+~
+0 2097156 1
+S
+#100217
+Floating in a void~
+~
+0 2097156 1
+S
+#100218
+Floating in a void~
+~
+0 2097156 1
+S
+#100219
+Floating in a void~
+~
+0 2097156 1
+S
+#100220
+Floating in a void~
+~
+0 2097156 1
+S
+#100221
+Floating in a void~
+~
+0 2097156 1
+S
+#100222
+Floating in a void~
+~
+0 2097156 1
+S
+#100223
+Floating in a void~
+~
+0 2097156 1
+S
+#100224
+Floating in a void~
+~
+0 2097156 1
+S
+#100225
+Floating in a void~
+~
+0 2097156 1
+S
+#100226
+Floating in a void~
+~
+0 2097156 1
+S
+#100227
+Floating in a void~
+~
+0 2097156 1
+S
+#100228
+Floating in a void~
+~
+0 2097156 1
+S
+#100229
+Floating in a void~
+~
+0 2097156 1
+S
+#100230
+Floating in a void~
+~
+0 2097156 1
+S
+#100231
+Floating in a void~
+~
+0 2097156 1
+S
+#100232
+Floating in a void~
+~
+0 2097156 1
+S
+#100233
+Floating in a void~
+~
+0 2097156 1
+S
+#100234
+Floating in a void~
+~
+0 2097156 1
+S
+#100235
+Floating in a void~
+~
+0 2097156 1
+S
+#100236
+Floating in a void~
+~
+0 2097156 1
+S
+#100237
+Floating in a void~
+~
+0 2097156 1
+S
+#100238
+Floating in a void~
+~
+0 2097156 1
+S
+#100239
+Floating in a void~
+~
+0 2097156 1
+S
+#100240
+Floating in a void~
+~
+0 2097156 1
+S
+#100241
+Floating in a void~
+~
+0 2097156 1
+S
+#100242
+Floating in a void~
+~
+0 2097156 1
+S
+#100243
+Floating in a void~
+~
+0 2097156 1
+S
+#100244
+Floating in a void~
+~
+0 2097156 1
+S
+#100245
+Floating in a void~
+~
+0 2097156 1
+S
+#100246
+Floating in a void~
+~
+0 2097156 1
+S
+#100247
+Floating in a void~
+~
+0 2097156 1
+S
+#100248
+Floating in a void~
+~
+0 2097156 1
+S
+#100249
+Floating in a void~
+~
+0 2097156 1
+S
+#100250
+Floating in a void~
+~
+0 2097156 1
+S
+#100251
+Floating in a void~
+~
+0 2097156 1
+S
+#100252
+Floating in a void~
+~
+0 2097156 1
+S
+#100253
+Floating in a void~
+~
+0 2097156 1
+S
+#100254
+Floating in a void~
+~
+0 2097156 1
+S
+#100255
+Floating in a void~
+~
+0 2097156 1
+S
+#100256
+Floating in a void~
+~
+0 2097156 1
+S
+#100257
+Floating in a void~
+~
+0 2097156 1
+S
+#100258
+Floating in a void~
+~
+0 2097156 1
+S
+#100259
+Floating in a void~
+~
+0 2097156 1
+S
+#100260
+Floating in a void~
+~
+0 2097156 1
+S
+#100261
+Floating in a void~
+~
+0 2097156 1
+S
+#100262
+Floating in a void~
+~
+0 2097156 1
+S
+#100263
+Floating in a void~
+~
+0 2097156 1
+S
+#100264
+Floating in a void~
+~
+0 2097156 1
+S
+#100265
+Floating in a void~
+~
+0 2097156 1
+S
+#100266
+Floating in a void~
+~
+0 2097156 1
+S
+#100267
+Floating in a void~
+~
+0 2097156 1
+S
+#100268
+Floating in a void~
+~
+0 2097156 1
+S
+#100269
+Floating in a void~
+~
+0 2097156 1
+S
+#100270
+Floating in a void~
+~
+0 2097156 1
+S
+#100271
+Floating in a void~
+~
+0 2097156 1
+S
+#100272
+Floating in a void~
+~
+0 2097156 1
+S
+#100273
+Floating in a void~
+~
+0 2097156 1
+S
+#100274
+Floating in a void~
+~
+0 2097156 1
+S
+#100275
+Floating in a void~
+~
+0 2097156 1
+S
+#100276
+Floating in a void~
+~
+0 2097156 1
+S
+#100277
+Floating in a void~
+~
+0 2097156 1
+S
+#100278
+Floating in a void~
+~
+0 2097156 1
+S
+#100279
+Floating in a void~
+~
+0 2097156 1
+S
+#100280
+Floating in a void~
+~
+0 2097156 1
+S
+#100281
+Floating in a void~
+~
+0 2097156 1
+S
+#100282
+Floating in a void~
+~
+0 2097156 1
+S
+#100283
+Floating in a void~
+~
+0 2097156 1
+S
+#100284
+Floating in a void~
+~
+0 2097156 1
+S
+#100285
+Floating in a void~
+~
+0 2097156 1
+S
+#100286
+Floating in a void~
+~
+0 2097156 1
+S
+#100287
+Floating in a void~
+~
+0 2097156 1
+S
+#100288
+Floating in a void~
+~
+0 2097156 1
+S
+#100289
+Floating in a void~
+~
+0 2097156 1
+S
+#100290
+Floating in a void~
+~
+0 2097156 1
+S
+#100291
+Floating in a void~
+~
+0 2097156 1
+S
+#100292
+Floating in a void~
+~
+0 2097156 1
+S
+#100293
+Floating in a void~
+~
+0 2097156 1
+S
+#100294
+Floating in a void~
+~
+0 2097156 1
+S
+#100295
+Floating in a void~
+~
+0 2097156 1
+S
+#100296
+Floating in a void~
+~
+0 2097156 1
+S
+#100297
+Floating in a void~
+~
+0 2097156 1
+S
+#100298
+Floating in a void~
+~
+0 2097156 1
+S
+#100299
+Viola's Pad~
+~
+0 2097164 0
+S
+#0
+
+
+#RESETS
+M 1 100291 1 100083
+G 1 100298 1
+G 1 100294 1
+G 1 100293 1
+G 1 100291 1
+G 1 100290 1
+O 1 100292 1 100102
+P 0 100288 1 0
+P 0 100008 1 0
+P 0 100007 1 0
+M 1 100298 1 100047
+D 0 100047 2 2
+M 1 100008 1 100045
+M 1 100008 1 100043
+M 1 100008 1 100037
+M 1 100007 1 100034
+M 1 100007 1 100032
+M 1 100007 1 100021
+M 1 100007 1 100024
+M 1 100007 1 100026
+M 1 100007 1 100028
+M 1 100007 1 100030
+M 1 100006 1 100049
+M 1 100006 1 100051
+M 1 100006 1 100053
+M 1 100006 1 100055
+M 1 100006 1 100057
+M 1 100006 1 100059
+M 1 100006 1 100061
+D 0 100061 3 2
+M 1 100005 1 100062
+D 0 100062 1 2
+M 1 100005 1 100064
+M 1 100005 1 100066
+M 1 100005 1 100068
+M 1 100005 1 100070
+M 1 100005 1 100072
+M 1 100005 1 100076
+M 1 100005 1 100078
+M 1 100002 1 100001
+M 1 100002 1 100003
+M 1 100002 1 100015
+M 1 100002 1 100010
+M 1 100002 1 100004
+M 1 100294 1 100017
+M 1 100297 1 100017
+D 0 100017 2 2
+M 1 100294 1 100008
+M 1 100294 1 100008
+D 0 100008 0 2
+M 1 100001 1 100084
+M 1 100001 1 100080
+M 1 100001 1 100085
+M 1 100001 1 100090
+M 1 100001 1 100091
+M 1 100001 1 100099
+M 1 100001 1 100093
+M 1 100001 1 100097
+M 1 100296 1 100089
+M 1 100294 1 100089
+D 0 100089 0 2
+M 1 100294 1 100096
+M 1 100294 1 100096
+D 0 100096 0 2
+M 1 100294 1 100095
+M 1 100294 1 100095
+M 1 100294 1 100095
+D 0 100095 2 2
+M 1 100294 1 100088
+M 1 100294 1 100088
+D 0 100088 2 2
+M 1 100294 1 100007
+M 1 100294 1 100007
+M 1 100294 1 100007
+D 0 100007 2 2
+M 1 100294 1 100018
+M 1 100294 1 100018
+D 0 100018 0 2
+M 1 100293 1 100156
+E 1 100295 1 8
+M 1 100003 1 100157
+M 1 100003 1 100154
+M 1 100293 1 100154
+E 1 100295 1 8
+M 1 100293 1 100186
+E 1 100295 1 8
+M 1 100293 1 100186
+E 1 100295 1 8
+M 1 100003 1 100185
+M 1 100003 1 100159
+M 1 100293 1 100159
+E 1 100295 1 8
+M 1 100293 1 100159
+E 1 100295 1 8
+D 0 100048 3 2
+D 0 100031 1 2
+D 0 100046 0 2
+D 0 100036 1 2
+D 0 100035 3 2
+M 1 100292 1 100187
+E 1 100297 1 12
+M 1 100003 1 100187
+M 1 100293 1 100183
+E 1 100295 1 8
+M 1 100293 1 100183
+E 1 100295 1 8
+M 1 100003 1 100183
+M 1 100003 1 100181
+M 1 100293 1 100181
+E 1 100295 1 8
+M 1 100293 1 100180
+E 1 100295 1 8
+M 1 100293 1 100178
+E 1 100295 1 8
+M 1 100293 1 100178
+E 1 100295 1 8
+M 1 100003 1 100177
+M 1 100293 1 100177
+E 1 100295 1 8
+M 1 100003 1 100175
+M 1 100003 1 100175
+M 1 100293 1 100174
+E 1 100295 1 8
+M 1 100293 1 100172
+E 1 100295 1 8
+M 1 100003 1 100172
+M 1 100003 1 100170
+M 1 100293 1 100170
+E 1 100295 1 8
+M 1 100293 1 100170
+E 1 100295 1 8
+M 1 100293 1 100167
+E 1 100295 1 8
+M 1 100293 1 100167
+E 1 100295 1 8
+M 1 100293 1 100167
+E 1 100295 1 8
+M 1 100003 1 100164
+M 1 100003 1 100164
+M 1 100293 1 100164
+E 1 100295 1 8
+M 1 100293 1 100162
+E 1 100295 1 8
+M 1 100295 1 100140
+E 1 100296 1 3
+M 1 100004 1 100129
+M 1 100004 1 100138
+M 1 100295 1 100133
+E 1 100296 1 3
+M 1 100295 1 100134
+E 1 100296 1 3
+M 1 100004 1 100141
+M 1 100004 1 100141
+M 1 100295 1 100144
+E 1 100296 1 3
+M 1 100004 1 100145
+M 1 100295 1 100148
+E 1 100296 1 3
+M 1 100295 1 100148
+E 1 100296 1 3
+M 1 100004 1 100152
+M 1 100004 1 100131
+M 1 100004 1 100121
+M 1 100295 1 100109
+E 1 100296 1 3
+M 1 100004 1 100110
+M 1 100295 1 100127
+E 1 100296 1 3
+M 1 100295 1 100127
+E 1 100296 1 3
+M 1 100004 1 100114
+M 1 100004 1 100103
+M 1 100295 1 100103
+E 1 100296 1 3
+M 1 100004 1 100116
+M 1 100295 1 100115
+E 1 100296 1 3
+M 1 100295 1 100107
+E 1 100296 1 3
+M 1 100295 1 100119
+E 1 100296 1 3
+M 1 100004 1 100119
+D 0 100006 0 2
+D 0 100006 2 2
+D 0 100016 0 2
+D 0 100016 2 2
+D 0 100086 0 2
+D 0 100086 2 2
+D 0 100094 0 2
+D 0 100094 2 2
+S
+
+
+#SHOPS
+ 100291    0  0  0  0  0   100  90         0 23    ; A large, red monitor set above a slot in the wall
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

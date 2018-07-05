@@ -1,0 +1,1233 @@
+#AREA   Item and Mob Storage~
+
+
+
+#VERSION 252
+#AUTHOR Goku~
+
+#RANGES
+55 65 55 65
+$
+
+#PLANET 1
+
+#FLAGS
+0
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#600
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 1
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#601
+Perfect Cell~
+Ultra Perfect Cell~
+Ultra Perfect Cell is powered up and ready to destroy the universe.
+~
+~
+16777217 524416&16777280 -1000 C
+1 0 80 1d20+2 2d5+1
+-1 250000000000
+112 112 1
+85 250 90 100 100
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 0 2
+> death_prog 100~
+if pl($n) <= 875000000000
+  if rand(1)
+    mpoload 604
+  else
+    mpmload 601
+    mpecho &GPerfect Cell regenerates from a small cell that wasn't destroyed
+  endif
+else
+  mpmload 601
+  mpecho &GPerfect Cell regenerates from a small cell that wasn't destroyed
+endif
+~
+> fight_prog 2~
+mpecho Perfect Cell's veins bulge as he forces five creatures from his tail.
+mpmload 602
+mpmload 602
+mpmload 602
+mpmload 602
+mpmload 602
+~
+> fight_prog 25~
+mpecho &GCell holds both arms forward, hands together.&D
+mpechoat $n &GA large ball of ki forms and turns into a beam, heading towards you.&D
+mpechoaround $n &GA large ball of ki forms and turns into a beam, heading towards $n.&D
+mppldamage $n 60
+~
+> fight_prog 20~
+mpecho &GCell put its arms back and cup its hands. 'KA-ME-HA-ME-HA!!!!'&D
+mpechoat $n &GCell pushes its hands forward, throwing a blue beam at you.&D
+mpechoaround $n &GCell pushes its hands forward, throwing a blue beam at $n.&D
+mppldamage $n 25
+~
+> fight_prog 15~
+mpechoat $n &GTurning one side of Cells's body towards you, it raises its hand, palm facing you.  A huge ball of blue energy begins to form.&D
+mpechoat $n &GCell shouts, 'BIG BANG!' as the ball of ki fires from its palm, leaving a trail of energy behind as it rockets towards you.&D
+mpechoaround $n &GTurning one side of Cells's body towards $n, it raises its hand, palm facing $n.  A huge ball of blue energy begins to form.&D
+mpechoaround $n &GCell shouts, 'BIG BANG!' as the ball of ki fires from its palm, leaving a trail of energy behind as it rockets towards $n.&D
+mppldamage $n 32
+~
+> fight_prog 10~
+mpecho &GCell holds its hand aloft and create a spinning ki disk above its palm.&D
+mpechoat $n &GCell throws the whirling disk and it quickly slices through the air on its way to you.&D
+mpechoaround $n &GCell throws the whirling disk and it quickly slices through the air on its way to $n.&D
+mppldamage $n 15
+~
+> fight_prog 10~
+mpecho &GCell puts two fingers to its forehead, crackling energy gathering at their tips.&D
+mpechoat $n &GCell thrusts its fingers toward you, sending out a corkscrew beam.
+mpechoaround $n &GCell thrusts its fingers toward $n, sending out a corkscrew beam.
+mppldamage $n 25
+~
+|
+#602
+A Cell Junior~
+A Cell Junior~
+A Cell Junior is here making funny faces.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 25000000000
+112 112 0
+65 40 60 60 40
+0 0 0 0 0
+0 3 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> fight_prog 25~
+special beam cannon
+~
+> fight_prog 25~
+kamehameha
+~
+> fight_prog 25~
+final flash
+~
+> fight_prog 25~
+destructo disk
+~
+|
+#603
+Majin Buu~
+Majin Buu~
+Majin Buu is wandering around looking for something to eat.
+~
+~
+3 524416&8192 -1000 C
+1 0 25 1d20+0 2d5+0
+-1 3500000000000
+112 112 0
+250 500 250 170 100
+0 0 0 0 0
+0 3 0 0 1 1 6
+0 0 0 0 0 0 0 0
+> fight_prog 1~
+mpechoaround $n &Y$I points his antennae at $n and yells, 'BECOME CHOCOLATE!!'&D
+mpechoat $n &Y$I points his antennae at you and yells, 'BECOME CHOCOLATE!!'&D
+mpechoaround $n &Y$n screams in pain as $s body begins to transform.&D
+mpechoat $n &YYou scream in pain as your body begins to transform.&D
+mpechoaround $n &RWith a *POOF* $n becomes a small bar of chocolate; and $I quickly chows it down.&D
+mpechoat $n &RWith a *POOF* you become a small bar of chocolate; and $I quickly chows you down.&D
+mpslay $n
+~
+> death_prog 100~
+if pl($n) <= 12250000000000
+  if rand(1)
+    mpecho _pin Majin Buu is disintegrated, leaving no cells remaining.
+    mpoload 605
+  else
+    mpecho _pin Majin Buu regenerates himself from a small piece of pink
+    mpecho _pin material that was left behind.
+    mpmload 603
+    mpecho _pin $I yells, 'Buu!'
+  endif
+else
+    mpecho _pin Majin Buu regenerates himself from a small piece of pink
+    mpecho _pin material that was left behind.
+    mpmload 603
+    mpecho _pin $I yells, 'Buu!'
+endif
+~
+> fight_prog 1~
+mpechoaround $n &Y$I points his antennae at $n and yells, 'BECOME A COOKIE!!'&D
+mpechoat $n &Y$I points his antennae at you and yells, 'BECOME A COOKIE!!'&D
+mpechoaround $n &Y$n screams in pain as $s body begins to transform.&D
+mpechoat $n &YYou scream in pain as your body begins to transform.&D
+mpechoaround $n &RWith a *POOF* $n becomes a large cookie; and $I quickly chows it down.&D
+mpechoat $n &RWith a *POOF* you become a large cookie; and $I quickly chows you down.&D
+mpslay $n
+~
+> fight_prog 20~
+mpechoat $n &GTurning one side of Buu's body towards you, he raises his hand, palm facing you.  A huge ball of blue energy begins to form.&D
+mpechoat $n &GBuu shouts, 'BIG BANG!' as the ball of ki fires from his palm, leaving a trail of energy behind as it rockets towards you.&D
+mpechoaround $n &GTurning one side of Buu's body towards $n, he raises his hand, palm facing $n.  A huge ball of blue energy begins to form.&D
+mpechoaround $n &GBuu shouts, 'BIG BANG!' as the ball of ki fires from his palm, leaving a trail of energy behind as it rockets towards $n.&D
+mppldamage $n 32
+~
+> fight_prog 45~
+mpecho &GBuu put his arms back and cup his hands. 'KA-ME-HA-ME-HA!!!!'&D
+mpechoat $n &GBuu pushes his hands forward, throwing a blue beam at you.&D
+mpechoaround $n &GBuu pushes his hands forward, throwing a blue beam at $n.&D
+mppldamage $n 25
+~
+> fight_prog 25~
+mpecho &GBuu leans his head back for a short second.&D
+mpechoat $n &GBuu throws his head forward, a yellow bolt of energy firing from his antennae, striking you.&D
+mpechoaround $n &GBuu throws his head forward, a yellow bolt of energy firing from his antennae, striking $n.&D
+mppldamage $n 50
+~
+> fight_prog 100~
+if pl($n) > 12250000000000
+  mpecho &PSensing the power radiating from $n, Buu decides to end the fight now.&D
+  mpechoat $n &PBuu points his antennae at you, and you turn into a tiny coffee jawbreaker.&D
+  mpechoaround $n &PBuu points his antennae at $n, and $e turns into a tiny coffee jawbreaker.&D
+  mpslay $n
+endif
+~
+|
+#604
+Your Mother~
+Your Mother~
+Your Mother is standing here.
+~
+~
+285474821 0 0 C
+1 0 5 1d20+0 2d5+0
+-1 1000000000
+112 112 2
+125 125 125 125 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> hitprcnt_prog 10~
+say Talk to the hand!
+mpdamage $n 10
+if hitprcnt($n) < 5
+  if rand(50)
+    say Go to your room!
+  else
+    say Your grounded!
+  endif
+  if ispc($n)
+    mpecho $n bows his head in shame and heads to his room.
+  else
+    mpecho $I bows his head in shame and heads to his room.
+  endif
+endif
+  if position($n) > 0
+    mptransfer $n 200
+  endif
+mprestore self 100
+~
+> fight_prog 10~
+say What did you say!?!
+mpdamage $n 5
+if hitprcnt($n) < 5
+  if rand(50)
+    say Go to your room!
+  else
+    say Your grounded!
+  endif
+  if ispc($n)
+    mpecho $n bows his head in shame and heads to his room.
+    mptransfer $n 262
+  else
+    mpecho $I bows his head in shame and heads to his room.
+    mppurge $n
+  endif
+endif
+~
+> fight_prog 10~
+say Oh no you didn't!
+mpdamage $n 5
+if hitprcnt($n) < 5
+  if rand(50)
+    say Go to your room!
+  else
+    say Your grounded!
+  endif
+  if ispc($n)
+    mpecho $n bows his head in shame and heads to his room.
+    mptransfer $n 262
+  else
+    mpecho $I bows his head in shame and heads to his room.
+    mppurge $n
+  endif
+endif
+~
+> fight_prog 10~
+say Don't make me break my foot off in your ass!
+mpdamage $n 5
+if hitprcnt($n) < 5
+  if rand(50)
+    say Go to your room!
+  else
+    say Your grounded!
+  endif
+  if ispc($n)
+    mpecho $n bows his head in shame and heads to his room.
+    mptransfer $n 262
+  else
+    mpecho $I bows his head in shame and heads to his room.
+    mppurge $n
+  endif
+endif
+~
+> fight_prog 100~
+if hitprcnt($n) < 5
+  if rand(50)
+    say Go to your room!
+  else
+    say Your grounded!
+  endif
+  if ispc($n)
+    mpecho $n bows his head in shame and heads to his room.
+    mptransfer $n 262
+  else
+    mpecho $I bows his head in shame and heads to his room.
+    mppurge $n
+  endif
+endif
+~
+> entry_prog 100~
+if rand(33)
+  say What are YOU looking at?
+else if rand(33)
+  say You did NOT just look at me!
+else
+  say Don't you sass me!
+endif
+~
+|
+#605
+Prototype X~
+Prototype X~
+Prototype X is here causing havoc.
+~
+~
+65 128 -1000 C
+1 0 100 1d20+0 2d5+0
+-1 4000000000000
+112 112 0
+20 18 19 18 20
+0 0 0 0 0
+4 4 0 0 1 1 4
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+absorb
+~
+> fight_prog 30~
+scatter shot
+~
+> fight_prog 10~
+rocket punch
+~
+> fight_prog 45 ~
+heal
+mpecho $I says, &R'Repairing systems'
+~
+|
+#606
+SSJ4 Vegeta~
+Super Saiya-jin 4 Vegeta~
+Vegeta stands here, powered up into full Super Saiya-jin 4.
+~
+~
+1 128&960 0 C
+1 0 100 1d20+0 2d5+0
+-1 10000000000000
+112 112 1
+200 500 100 500 15
+0 0 0 0 0
+9 9 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpjunk royal
+if pl($n) <= 35000000000000
+  if rand(1)
+    mpecho &RVegeta does not rise this time.&D
+    mpecho }C$n has slain the Price of all Saiya-jins!!&D
+    mpoload 613
+  else
+    mpecho &RVegeta arrogantly jumps back on his feet, still determined to win.&D
+    mpmload 606
+    mpforce 2.vegeta mpoload 612
+    mpforce 2.vegeta wear armor
+  endif
+else
+  mpecho &RVegeta arrogantly jumps back up onto his feet, still determined to win.&D
+  mpecho }C$n is too powerful to claim the prize.&D
+  mpmload 606
+  mpforce 2.vegeta mpoload 612
+  mpforce 2.vegeta wear armor
+endif
+~
+> fight_prog 25~
+if pl($n) > pl($i)
+  if hps($i) <= 25
+    mpecho &RVegeta, determined to win, summons all of his remaining power in a last-ditch effort!&D
+    mpecho &RIn the ultimate act of spite, Vegeta overloads his power, and annhilates himself in a gigantic explosion!&D
+    mpechoat $n &GYou are caught up in Vegeta's explosion and are severely wounded. &W[40]&D
+    mpechoaround $n &G$n is caught up in Vegeta's explosion and $e is severely wounded. &W[40]&D
+    mpdamage $n 40
+    mpecho &RBut Vegeta emerges from the smoke of the explosion, completely restored.&D
+    mpmload 606
+    mpforce 2.vegeta mpoload 612
+    mpforce 2.vegeta wear armor
+    mptransfer vegeta 601
+    say tangoepsilontheta
+  endif
+endif
+~
+> fight_prog 25~
+mpecho &GVegeta holds both arms forward, hands together.&D
+mpechoat $n &GA large ball of ki forms and turns into a beam, heading towards you.&D
+mpechoaround $n &GA large ball of ki forms and turns into a beam, heading towards $n.&D
+mppldamage $n 60
+~
+> fight_prog 40~
+mpecho &GVegeta pulls its hands to one side of its body, a dark purple sphere of energy flaring up suddenly around him.&D
+mpechoat $n &GVegeta thrusts both hands towards you, a beam of ki blasting from his purple aura, screaming, 'Gallic Gun...FIRE!'&D
+mpechoaround $n &GVegeta thrusts both hands towards $n, a beam of ki blasting from his purple aura, screaming, 'Gallic Gun...FIRE!'&D
+mppldamage $n 30
+~
+> fight_prog 100~
+if pl($n) > 35000000000000
+  mpecho &RVegeta, determined to win, summons all of his remaining power in a last-ditch effort!&D
+  mpecho &RIn the ultimate act of spite, Vegeta overloads his power, and annhilates himself in a gigantic explosion!&D
+  mpechoat $n &GYou are caught up in Vegeta's explosion and are severely wounded. &W40&D
+  mpechoaround $n &G$n is caught up in Vegeta's explosion and $e is severely wounded. &W40&D
+  mpdamage $n 40
+  mpecho &RBut Vegeta emerges from the smoke of the explosion, completely restored.&D
+  mpmload 606
+  mpforce 2.vegeta mpoload 612
+  mpforce 2.vegeta wear armor
+  mptransfer vegeta 601
+  say tangoepsilontheta
+endif
+~
+|
+#607
+vpurger~
+The Vegeta Purger~
+The Vegeta Purger - Do Not Purge This Room
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog tangoepsilontheta~
+mppurge vegeta
+~
+|
+#608
+Meta King Cold~
+Meta King Cold~
+Meta King Cold is standing tall, arms folded across his chest.
+~
+~
+1 128&2048 0 C
+1 0 100 1d20+0 2d5+0
+-1 50000000000
+112 112 1
+100 500 10 100 0
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+if level($n) < 10
+if pl($n) <= 175000000000
+  if rand(1)
+    mpecho &PKing Cold's meta enhancements fail to regenerate him this time.&D
+    mpoload 614
+  else
+    mpecho &PKing Cold's meta enhancements regenerate his damaged body, and he rises to his feet once more.&D
+    mpmload 608
+  endif
+else
+  mpecho &PKing Cold's meta enhancements regenerate his damaged body, and he rises to his feet once more.&D
+  mpecho }C$n is too powerful to claim victory over King Cold.&D
+  mpmload 608
+endif
+else
+  mpecho &PKing Cold's meta enhancements regenerate his damaged body, and he rises to his feet once more.&D
+  mpecho }COnly warriors below the rank of kai can kill King Cold. $n is a kai!!&D
+  mpmload 608
+endif
+~
+> fight_prog 20~
+mpechoat $n &GKing Cold charges a huge ball of energy on the tip of his finger and then directs it quickly towards you.&D
+mpechoaround $n &GKing Cold charges a huge ball of energy on the tip of his finger and then directs it quickly towards $n.&D
+mppldamage $n 55
+~
+> fight_prog 45~
+mpechoat $n &GKing Cold charges two spinning energy disks above his head and hurls them towards you.&D
+mpechoaround $n &GKing Cold charges two spinning energy disks above his head and hurls them towards $n.&D
+mppldamage $n 30
+~
+> fight_prog 2~
+mpechoat $n &GKing Cold points one finger from each hand at you, repeatedly jabbing them at you.&D
+mpechoaround $n &GKing Cold points one finger from each hand at $n, repeatedly jabbing them at $m.&D
+mpechoat $n &GYou stagger as 50 tiny beams of energy are fired at you from King Cold's stabbing fingers.&D
+mpechoaround $n &G$n staggers as 50 tiny beams of energy are fired at $m from King Cold's stabbing fingers.&D
+mppldamage $n 100
+~
+|
+#609
+Brolli~
+Brolli, Super Saiya-jin of Legend~
+Brolli, the Super Saiya-jin of Legend stands here.
+~
+~
+83886081 128&-1073741760 0 C
+1 0 100 1d20+0 2d5+0
+-1 10000000000000000
+112 112 1
+300 500 200 500 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> entry_prog 100~
+glare $n
+~
+> fight_prog 50~
+final
+~
+> fight_prog 60~
+big bang
+~
+|
+#610
+namek body~
+An empty namek body~
+An empty namek body is standing here.
+~
+~
+16777219 0 0 C
+1 0 100 1d20+0 2d4+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+3 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#620
+bioandroid invader~
+Puff~
+Puff the Fractal Dragon is here, contemplating a higher reality.
+~
+~
+1073741827 4203176 1000 C
+50 20 -30 5d10+30550 4d10+200
+-1 1000
+112 112 2
+13 13 13 13 13
+0 0 0 0 0
+31 0 0 0 1 1 0
+0 0 0 0 3156992 0 2 3
+#630
+onetril bioandroid invader~
+an invading bioandroid~
+&gA large bioandroid stands here, peering about for its next target.&D
+~
+~
+1 128&8388608 0 C
+10 0 100 1d20+0 2d5+0
+-1 1000000000000
+112 112 0
+150 150 150 150 0
+0 0 0 0 0
+6 6 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpechoat $n &g$I's eyes suddenly lock on you as you enter its field of vision.&D
+say DIE!!
+mpkill $n
+~
+> death_prog 100~
+if pl($n) < 3500000000000
+  if rand(10)
+    mpecho &pThe invader is totally destroyed.&D
+    mpoload 630
+  else
+    mpecho &pThe bioandroid regenerates from a few remaining cells and rises to its feet again.&D
+    mpmload 630
+  endif
+else
+  mpecho &pFeeding on $n's massive power, the bioandroid regenerates from what would have been total annhilation.&D
+  mpmload 630
+endif
+~
+> fight_prog 25~
+mpecho &GThe invader holds both arms forward, hands together.&D
+mpechoat $n &GA large ball of ki forms and turns into a beam, heading towards you.&D
+mpechoaround $n &GA large ball of ki forms and turns into a beam, heading towards $n.&D
+mppldamage $n 60
+~
+> fight_prog 40~
+mpecho &GThe invader puts two fingers to its forehead, crackling energy gathering at their tips.&D
+mpechoat $n &GThe invader thrusts its fingers toward you, sending out a corkscrew beam.&D
+mpechoaround $n &GThe invader thrusts its fingers toward $n, sending out a corkscrew beam.&D
+mppldamage $n 25
+~
+> fight_prog 75~
+mpecho &GThe invader holds its hand aloft and create a spinning ki disk above its palm.&D
+mpechoat $n &GThe invader throws the whirling disk and it quickly slices through the air on its way to you.&D
+mpechoaround $n &GThe invader throws the whirling disk and it quickly slices through the air on its way to $n.&D
+mppldamage $n 15
+~
+|
+#631
+fivetril bioandroid invader~
+an invading bioandroid~
+&gA large bioandroid stands here, peering about for its next target.&D
+~
+~
+1 128&8388608 0 C
+1 0 100 1d20+0 2d5+0
+-1 5000000000000
+112 112 0
+150 500 150 150 0
+0 0 0 0 0
+6 6 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpechoat $n &g$I's eyes suddenly lock on you as you enter its field of vision.&D
+say DIE!!
+mpkill $n
+~
+> death_prog 100~
+if pl($n) < 17500000000000
+  if rand(10)
+  mpecho &pThe invader is totally destroyed.&D
+  mpoload 631
+  else
+    mpecho &pThe bioandroid regenerates from a few remaining cells and rises to its feet again.&D
+    mpmload 631
+  endif
+else
+  mpecho &pFeeding on $n's massive power, the bioandroid regenerates from what would have been total annhilation.&D
+  mpmload 631
+endif
+~
+> fight_prog 25~
+mpecho &GThe invader holds both arms forward, hands together.&D
+mpechoat $n &GA large ball of ki forms and turns into a beam, heading towards you.&D
+mpechoaround $n &GA large ball of ki forms and turns into a beam, heading towards $n.&D
+mppldamage $n 60
+~
+> fight_prog 40~
+mpecho &GThe invader puts two fingers to its forehead, crackling energy gathering at their tips.&D
+mpechoat $n &GThe invader thrusts its fingers toward you, sending out a corkscrew beam.&D
+mpechoaround $n &GThe invader thrusts its fingers toward $n, sending out a corkscrew beam.&D
+mppldamage $n 25
+~
+> fight_prog 75~
+mpecho &GThe invader holds its hand aloft and create a spinning ki disk above its palm.&D
+mpechoat $n &GThe invader throws the whirling disk and it quickly slices through the air on its way to you.&D
+mpechoaround $n &GThe invader throws the whirling disk and it quickly slices through the air on its way to $n.&D
+mppldamage $n 15
+~
+|
+#632
+tentril bioandroid invader~
+an invading bioandroid~
+&gA large bioandroid stands here, peering about for its next target.&D
+~
+~
+1 128&8388608 0 C
+1 0 100 1d20+0 2d5+0
+-1 10000000000000
+112 112 0
+150 500 150 150 0
+0 0 0 0 0
+6 6 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpechoat $n &g$I's eyes suddenly lock on you as you enter its field of vision.&D
+say DIE!!
+mpkill $n
+~
+> death_prog 100~
+if pl($n) < 35000000000000
+  if rand(10)
+    mpecho &pThe invader is totally destroyed.&D
+    mpoload 632
+  else
+    mpecho &pThe bioandroid regenerates from a few remaining cells and rises to its feet again.&D
+    mpmload 632
+  endif
+else
+  mpecho &pFeeding on $n's massive power, the bioandroid regenerates from what would have been total annhilation.&D
+  mpmload 632
+endif
+~
+> fight_prog 25~
+mpecho &GThe invader holds both arms forward, hands together.&D
+mpechoat $n &GA large ball of ki forms and turns into a beam, heading towards you.&D
+mpechoaround $n &GA large ball of ki forms and turns into a beam, heading towards $n.&D
+mppldamage $n 60
+~
+> fight_prog 40~
+mpecho &GThe invader puts two fingers to its forehead, crackling energy gathering at their tips.&D
+mpechoat $n &GThe invader thrusts its fingers toward you, sending out a corkscrew beam.&D
+mpechoaround $n &GThe invader thrusts its fingers toward $n, sending out a corkscrew beam.&D
+mppldamage $n 25
+~
+> fight_prog 75~
+mpecho &GThe invader holds its hand aloft and create a spinning ki disk above its palm.&D
+mpechoat $n &GThe invader throws the whirling disk and it quickly slices through the air on its way to you.&D
+mpechoaround $n &GThe invader throws the whirling disk and it quickly slices through the air on its way to $n.&D
+mppldamage $n 15
+~
+|
+#633
+twentyfivetril bioandroid invader~
+an invading bioandroid~
+&gA large bioandroid stands here, peering about for its next target.&D
+~
+~
+1 128&8388608 0 C
+1 0 100 1d20+0 2d5+0
+-1 25000000000000
+112 112 0
+150 500 150 150 0
+0 0 0 0 0
+6 6 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpechoat $n &g$I's eyes suddenly lock on you as you enter its field of vision.&D
+say DIE!!
+mpkill $n
+~
+> death_prog 100~
+if pl($n) < 87500000000000
+  if rand(5)
+    mpecho &pThe invader is totally destroyed.&D
+    mpoload 633
+  else
+    mpecho &pThe bioandroid regenerates from a few remaining cells and rises to its feet again.&D
+    mpmload 633
+  endif
+else
+  mpecho &pFeeding on $n's massive power, the bioandroid regenerates from what would have been total annhilation.&D
+  mpmload 633
+endif
+~
+> fight_prog 25~
+mpecho &GThe invader holds both arms forward, hands together.&D
+mpechoat $n &GA large ball of ki forms and turns into a beam, heading towards you.&D
+mpechoaround $n &GA large ball of ki forms and turns into a beam, heading towards $n.&D
+mppldamage $n 60
+~
+> fight_prog 40~
+mpecho &GThe invader puts two fingers to its forehead, crackling energy gathering at their tips.&D
+mpechoat $n &GThe invader thrusts its fingers toward you, sending out a corkscrew beam.&D
+mpechoaround $n &GThe invader thrusts its fingers toward $n, sending out a corkscrew beam.&D
+mppldamage $n 25
+~
+> fight_prog 75~
+mpecho &GThe invader holds its hand aloft and create a spinning ki disk above its palm.&D
+mpechoat $n &GThe invader throws the whirling disk and it quickly slices through the air on its way to you.&D
+mpechoaround $n &GThe invader throws the whirling disk and it quickly slices through the air on its way to $n.&D
+mppldamage $n 15
+~
+|
+#634
+fiftytril bioandroid invader commander~
+the Invasion Commander~
+&gThe Invasion Commander stands here, issuing orders to his troops.&D
+~
+~
+1 128&16777216 0 C
+1 0 100 1d20+0 2d5+0
+-1 50000000000000
+112 112 0
+150 500 150 150 0
+0 0 0 0 0
+6 6 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpechoat $n &g$I's eyes suddenly lock on you as you enter its field of vision.&D
+say DIE!!
+mpkill $n
+~
+> death_prog 100~
+if pl($n) < 175000000000000
+  if rand(2)
+    mpecho &pThe invasion commander is totally destroyed!&D
+    mpoload 634
+  else
+    mpecho &pThe invasion commander regenerates from a few remaining cells and rises to its feet again.&D
+    mpmload 634
+  endif
+else
+  mpecho &pFeeding on $n's massive power, the commander regenerates from what would have been total annhilation.&D
+  mpmload 634
+endif
+~
+> fight_prog 25~
+mpecho &GThe commander holds both arms forward, hands together.&D
+mpechoat $n &GA large ball of ki forms and turns into a beam, heading towards you.&D
+mpechoaround $n &GA large ball of ki forms and turns into a beam, heading towards $n.&D
+mppldamage $n 60
+~
+> fight_prog 40~
+mpecho &GThe commander puts two fingers to its forehead, crackling energy gathering at their tips.&D
+mpechoat $n &GThe commander thrusts its fingers toward you, sending out a corkscrew beam.&D
+mpechoaround $n &GThe commander thrusts its fingers toward $n, sending out a corkscrew beam.&D
+mppldamage $n 25
+~
+> fight_prog 75~
+mpecho &GThe commander holds its hand aloft and create a spinning ki disk above its palm.&D
+mpechoat $n &GThe commander throws the whirling disk and it quickly slices through the air on its way to you.&D
+mpechoaround $n &GThe commander throws the whirling disk and it quickly slices through the air on its way to $n.&D
+mppldamage $n 15
+~
+|
+#666
+anti-bug bug~
+The anti-bug bug~
+The anti-bug bug is crawling around here.
+~
+~
+67 2 0 C
+1 0 100 0d0+0 1d5+0
+-1 1
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#999
+last mob~
+last mob~
+Last mob
+~
+~
+1140850691 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 1
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#600
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#601
+furry tail~
+%s's tail~
+A furry monkey tail.~
+~
+13 0 18437
+0 0 0 0 0 0
+1 0 0
+ 0
+#602
+beer keg~
+A beer keg~
+A full beer keg is here.~
+~
+25 0 0
+0 100 1 0 0 0
+1 0 0
+ 0
+#603
+beer mug~
+A beer mug~
+A nice cool refreshing beer is here.~
+~
+17 0 1
+5 5 1 0 0 0
+1 0 0
+ 0
+#604
+bio-synth armor~
+Bio-synth armor~
+A green scale-like casing is lying on the ground.~
+~
+9 0 1025 1
+0 0 0 0 2000 2000
+1 200000 400
+ 100000000
+> wear_prog 100~
+mpecho The armor molds itself to the body of $n as they wear it
+~
+|
+#605
+A Sparkling Golden Aura~
+A Sparkling Golden Aura~
+Some god dropped a newly created A Sparkling Golden Aura here.~
+~
+9 8388609 1025 128
+0 0 0 0 1000 1000
+1 175000 17500
+ 2147483647
+A
+3 20
+A
+2 10
+> wear_prog 100~
+if name($n) == seraphim
+  mpecho _yel $n upgrades to Super Hellfighter $n as $e wears an upgrade frame.
+else
+mpecho _yel $n sparkles and shimmers as the aura flares up around $m.
+endif
+~
+|
+#606
+A Large Striped Candycane~
+A Large Striped Candycane~
+A large striped candycane has been left here.~
+~
+9 8388865 16385
+0 0 0 0 50 50
+1 7000 700
+ 0
+A
+25 2
+> wear_prog 100~
+mpecho &RM&We&Rr&Wr&Ry &WC&Rh&Wr&Ri&Ws&Rt&Wm&Ra&Ws &R!
+~
+|
+#607
+A X-1 prototype chip~
+A X-1 prototype chip~
+A small piece of silicon and metal is lying here.~
+~
+9 1818626 4194305
+0 0 0 0 1250 1250
+1 5000000 500000
+ 0
+A
+1 25
+A
+2 25
+A
+3 25
+A
+4 25
+> remove_prog 100 ~
+mpechoat $n &RYou feel drained as the chip is removed.
+mpplmult $n 1
+~
+> wear_prog 100~
+mpechoat $n &RA dark red aura explodes around you as you fit the chip into place.
+mpechoaround $n &RA dark red aura explodes around $n as they fit the chip into place.
+mpplmult $n 25
+~
+|
+#608
+Some of THIS~
+Some of THIS~
+Some of THIS is lying here.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#609
+A Pumpkin Mask~
+A Pumpkin Mask~
+A pumpkin-like visage lies here.~
+~
+9 0 17
+0 0 0 0 200 200
+1 22500 2250
+ 0
+A
+2 1
+#610
+%s death certificate~
+%s's death certificate~
+Someone's death certificate is laying here.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#611
+proof purchase~
+A proof of purchase for a space pod~
+Some god dropped a newly created proof purchase here.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#612
+armor royal vegeta~
+Vegeta's Royal Armor~
+Vegeta's Royal Armor is lying here on the ground.~
+~
+9 2080768 1025
+0 0 0 0 5000 5000
+1000 500000 50000
+ 0
+#613
+quest token~
+a quest token~
+A small, shiny object is lying on the ground.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#614
+royal icerian armor cold~
+royal icerian armor~
+A piece of pink and white armor, with the emblem of House Cold, rests on the ground.~
+~
+9 0 1025
+0 0 0 0 2000 2000
+1 250000 25000
+ 1000000000
+A
+1 5
+A
+2 5
+A
+3 5
+A
+4 5
+> wear_prog 100~
+if level($n) > 9
+  mpechoat $n &PYou are too powerful to use this armor.&D
+  mpforce $n remove cold
+endif
+~
+|
+#615
+ring ages~
+&zThe Ring of Ages~
+A gold band engraved with archaic writing rests on the ground.~
+~
+9 0 3
+0 0 0 0 0 0
+1 200000 20000
+ 100000000000
+A
+1 20
+A
+2 20
+A
+3 20
+A
+4 20
+#616
+typo finder badge~
+&YA &CTypo &Yfinder badge&D~
+A nifty little badge is sitting on the ground.~
+~
+9 0 9 64
+0 0 0 0 5 5
+1 8000 800
+ 0
+A
+3 1
+A
+29 1
+#617
+koronto says I'm cool badge~
+&YA large badge that reads: &G"Koronto says I'm cool!"&D~
+A nifty little badge is sitting on the ground.~
+~
+9 0 9 64
+0 0 0 0 0 0
+1 7500 750
+ 0
+A
+3 1
+A
+29 1
+#618
+an IT~
+an IT~
+An IT is hovering here~
+~
+9 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#620
+random item~
+a newly created random item~
+Some god dropped a newly created random item here.~
+~
+9 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#630
+onetril bioandroid invader head~
+a one-tril bioandroid's head~
+The head of an invading bioandroid is lying on the ground.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#631
+fivetril bioandroid invader head~
+a five-tril bioandroid's head~
+The head of an invading bioandroid is lying on the ground.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#632
+tentril bioandroid invader head~
+a ten-tril bioandroid's head~
+The head of an invading bioandroid is lying on the ground.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#633
+twentyfivetril bioandroid invader head~
+a twenty-five-tril bioandroid's head~
+The head of an invading bioandroid is lying on the ground.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#634
+fiftytril bioandroid invader head commander~
+the Invasion Commander's head~
+The head of an invading bioandroid is lying on the ground.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#635
+note notice prominently pinned wall selling~
+A Notice Regarding Selling Items~
+A note is pinned prominently to the wall.~
+~
+13 0&2048 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+note notice prominently pinned wall selling~
+NOTICE:
+-------
+Sorry, but we're unable to purchase any items from the general public
+at this time. Try going elsewhere. We've heard that there may be a man
+buying all sorts of trash and useful items somewhere on Earth.
+~
+#999
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#600
+Work Shop Alpha~
+   You are in a small work shop.  There are all kinds of strange, unknown
+pieces of junk and debris laying around.  You can't even begin to describe
+some of the items in here.
+~
+0 4 1
+S
+#601
+Floating in a void~
+~
+0 2097156 1
+S
+#602
+Floating in a void~
+~
+0 1073741828 1
+S
+#666
+The REAL hell~
+This should be hell, if you ask us.
+~
+0 1073741828 1
+S
+#999
+Mob-Purging Room~
+This room is here to purge mobs, since having them purge themselves gives
+bug messages, and we don't need a seperate room for this function in each
+area.
+
+To use this room, have a mob mpgoto 999, and then say "purge"
+~
+0 4 1
+> speech_prog purge~
+if isnpc($n)
+mpsleep 1
+mppurge $n
+endif
+~
+|
+S
+#0
+
+
+#RESETS
+M 0 666 1 600
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+M  620 spec_breath_gas
+S
+
+
+#$

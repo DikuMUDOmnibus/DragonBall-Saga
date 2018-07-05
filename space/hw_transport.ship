@@ -1,0 +1,54 @@
+#SHIP
+Name         Home World Transport Ship~
+Filename     hw_transport.ship~
+Description  The Home World Transport Ship~
+Owner        Private~
+Pilot        ~
+Copilot      ~
+Class        0
+Tractorbeam  0
+Shipyard     368
+Hanger       0
+Turret1      0
+Turret2      0
+Statet0      0
+Statet1      0
+Statet2      0
+Lasers       0
+Missiles     0
+Maxmissiles  0
+Rockets     0
+Maxrockets  0
+Torpedos     0
+Maxtorpedos  0
+Lastdoc      9042
+Firstroom    1001
+Lastroom     1002
+Shield       0
+Maxshield    0
+Hull         100
+Maxhull      100
+Maxenergy    1000
+Hyperspeed   10
+Comm         0
+Chaff        0
+Maxchaff     0
+Sensor       0
+Astro_array  0
+Realspeed    10
+Type         0
+Cockpit      1001
+Coseat       1001
+Pilotseat    1001
+Gunseat      1001
+Navseat      1001
+Engineroom   0
+Entrance     1002
+Shipstate    1
+Missilestate 0
+Energy       925
+Manuever     10
+Home         corperate~
+End
+
+#END

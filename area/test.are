@@ -1,0 +1,758 @@
+#AREA   Test~
+
+
+
+#VERSION 252
+#AUTHOR Goku~
+
+#RANGES
+51 65 0 65
+$
+
+#PLANET 1
+
+#RESETMSG A low humming noise can be heard.~
+
+#FLAGS
+1
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#10000
+Newbie Fighter~
+A Newbie Fighter~
+A Newbie Fighter is trembling here.
+~
+~
+67 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+2 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 10000
+~
+|
+#10001
+Saiyan Trainer~
+The Saiyan trainer~
+The Saiyan trainer is here ready to teach you.
+~
+~
+579 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 10000
+112 112 0
+13 13 13 13 13
+0 0 0 0 0
+0 0 0 0 252 1 0
+0 0 0 0 0 0 0 0
+#10002
+saiyan master~
+The Saiyan Master~
+The Saiyan Master is standing here ready to help you practice.
+~
+~
+1091 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 10000
+112 112 0
+13 13 13 13 13
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#10003
+saiyan store owner~
+A Saiyan store owner~
+A Saiyan store owner is looking over her inventory.
+~
+~
+67 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 5000
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#10005
+saiyan fighter~
+A Saiyan Fighter~
+A Saiyan Fighter stands here trying to do some moves.
+~
+~
+67 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 10005
+~
+|
+#10006
+better saiyan fighter~
+A Better Saiyan Fighter~
+A Better Saiyan Fighter is here doing some fancy moves.
+~
+~
+67 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 10000
+112 112 0
+6 6 6 6 6
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 10006
+~
+|
+#10007
+advanced saiyan fighter~
+An Advanced Saiyan Fighter~
+An Advanced Saiyan Fighter is here jumping around practiing his moves.
+~
+~
+67 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100000
+112 112 0
+7 7 7 7 7
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 10007
+~
+|
+#10008
+supreme saiyan fighter~
+A Supreme Saiyan Fighter~
+An Supreme Saiyan Fighter is standing here waiting for a chalanger.
+~
+~
+67 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000000
+112 112 0
+8 8 8 8 8
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 10008
+~
+|
+#10010
+repair guy~
+The armor repair guy~
+The armor repair guy is working.
+~
+~
+67 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#10015
+goku~
+Goku~
+&P(&WAdmin&P) Goku, &YEarth's Greatest Warrior &Pis standing here.&w
+~
+~
+83886099 0 0 C
+55 0 100 1d20+0 2d4+0
+-1 471686
+112 112 1
+18 18 14 14 14
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#10030
+newbie fighter~
+A Newbie Fighter~
+A Newbie Fighter is trembling in fear.
+~
+This guy looks like he will be an easy battle.~
+16777283 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 10030
+~
+|
+#10031
+fighter~
+A Fighter~
+A Fighter is here looking nervious.
+~
+~
+16777283 0 0 C
+1 0 100 1d20+1 2d5+1
+-1 1000
+112 112 1
+6 6 6 6 6
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 10031
+~
+|
+#10032
+better fighter~
+A Better Fighter~
+A Better Fighter is here, atempting to look strong.
+~
+~
+16777283 0 0 C
+1 0 90 1d20+1 2d5+1
+-1 10000
+112 112 1
+6 6 6 6 6
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 10032
+~
+|
+#10033
+advanced fighter~
+An Advanced Fighter~
+An Advanced Fighter is here jumping around practiing his moves.
+~
+~
+16777283 0 0 C
+1 0 90 1d20+1 2d5+1
+-1 100000
+112 112 1
+7 7 7 7 7
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 10033
+~
+|
+#10034
+supreme fighter~
+A Supreme Fighter~
+An Supreme Fighter is powering up getting read to fight.
+~
+~
+16777283 0 0 C
+1 0 85 1d20+1 2d5+2
+-1 1000000
+112 112 1
+8 8 8 8 8
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 10034
+~
+|
+#10035
+ultimate fighter~
+An Ultimate Fighter~
+An Ultimate Fighter is standing with her arms crossed, waiting for a chalanger.
+~
+~
+16777283 0 0 C
+1 0 80 1d20+2 2d5+2
+-1 10000000
+112 112 2
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 10035
+~
+|
+#10036
+master fighter~
+The Master Fighter~
+The Master Fighter is ready to put your skills to the test.
+~
+~
+16777283 0 0 C
+1 0 70 1d20+3 2d5+2
+-1 100000000
+112 112 1
+12 12 12 12 12
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 10036
+~
+|
+#10099
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1073741825 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 1
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#10000
+armor~
+Newbie Saiyan Battle Armor~
+Newbie Saiyan Battle Armor is laying on the ground here.~
+~
+9 8192&1 8
+95 0 0 0 0 0
+1 0 10
+ 0
+> exa_prog 100~
+mpecho blah
+mpoload 10020
+~
+|
+#10001
+saiyan scouter~
+a low level Icerian scouter~
+A small metal object is lies here beeping a flashing.~
+~
+65 0 131073
+0 0 1 0 0 0
+1 7000 70
+ 0
+#10002
+orange fighting gi~
+An Orange Fighting Gi~
+An Orange Fighting Gi is here nicely folded up.~
+~
+9 0 8
+0 0 0 0 0 0
+1 0 0
+ 0
+#10003
+black weighted boots~
+Black Training Boots~
+A pair of Black Training Boots are sitting in the corner.~
+~
+9 0 64
+0 0 0 0 0 0
+1 0 0
+ 0
+#10004
+black weighted wrist band~
+A Black Wrist Band~
+A Black Wrist Band lies here on the ground.~
+~
+9 0 4096
+0 0 0 0 0 0
+1 0 0
+ 0
+#10005
+orange pants~
+Orange Pants~
+A pair of Orange Pants are nicely folded here.~
+~
+9 0 32
+0 0 0 0 0 0
+1 0 0
+ 0
+#10006
+black belt~
+A Black Belt~
+A Black Belt is nicely rolled up here.~
+~
+9 0 2048
+0 0 0 0 0 0
+1 0 0
+ 0
+#10007
+tapion sword~
+Tapion's Sword~
+Tapion's Sword is stuck here in the ground.~
+~
+5 0 0
+12 2 4 3 0 0
+1 8000 800
+ 0
+#10014
+long sword~
+A long sword~
+A long sword is stuck in the ground.~
+~
+5 0 8193
+12 2 4 3 0 0
+1 8000 800
+ 0
+> rand_prog 1~
+mpecho &c This is really strange.
+~
+> wear_prog 25~
+mpforce $n remove sword
+~
+> remove_prog 15~
+mpforce $n drop sword
+~
+|
+#10098
+A Token of Ubuu's Love~
+A Token of Ubuu's Love~
+A glowing circle of pure love is laying here.~
+~
+9 1 3
+0 0 0 0 0 0
+1 0 0
+ 0
+> wear_prog 100~
+mpechoat $n &BAs you wear the ring you feel Ubuu's love surge through you.
+~
+|
+#10099
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0&1 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#10000
+Welcome to Planet name~
+You are standing in a very new looking building.  It seems as if it
+was just built a few weeks ago.  There is a small computer console
+on the wall that is beeping at you.
+ 
+~
+0 2097152 1
+D0
+~
+~
+0 -1 10002
+D1
+~
+~
+0 -1 10001
+D2
+~
+~
+0 -1 10003
+D3
+~
+~
+0 -1 10004
+D5
+~
+~
+0 -1 10011
+E
+console~
+*BEEP* *BEEP*
+Welcome to Planet name.  You are currently in the temporary training
+facility of this planet.  You will be allowed to pratice and train
+here until your home world is rebuilt.
+~
+S
+#10001
+The Beginning of the Battle Tower~
+You are at the bottom of the Battle Tower.  Work your way up to the
+top to become the strongest warrior.
+ 
+~
+0 2097152 1
+D3
+~
+~
+0 -1 10000
+D4
+~
+~
+0 -1 10008
+S
+#10002
+Sick Bay~
+This is the Medical Office.  Here all your wounds will be healed up
+by the doctors.  Along the walls are some big tanks filled with some
+kind of blue liquid.  Some people whom are in critital condition are
+inside the healing tanks.  As you look at one of them you can actualy
+see their wounds healing and closing up.
+ 
+~
+0 538968064 1
+D2
+~
+~
+0 -1 10000
+S
+#10003
+The Gravity Training Room~
+You can hear a low humming sound coming from the center console.
+There are many stains in this room, and from what you can tell they
+are from the blood and sweat of other people using this room.  Why
+didn't they clean up after them selfs?  That's just gross.
+ 
+~
+0 270532608 1
+D0
+~
+~
+0 -1 10000
+S
+#10004
+4 Way Intersection~
+You are in a nice looking hall way.  There are many pictures of
+diffrent warriors hung on the walls.  From here you can hear the
+sounds of people training hard to the west and south.  To the north
+you can see the local store owner.  Some doctors are walking off to
+the east.
+ 
+~
+0 2097152 1
+D0
+~
+~
+0 -1 10005
+D1
+~
+~
+0 -1 10000
+D2
+~
+~
+0 -1 10006
+D3
+~
+~
+0 -1 10007
+S
+#10005
+The Saiyan Equiptment Store~
+As you enter the store you see a bunch of arrmor hung on the walls
+along with some diffrent types of scouters.  The shop keeper is a
+good looking girl who seems bussy orgnizing her supplies.
+ 
+~
+0 2097152 1
+D2
+~
+~
+0 -1 10004
+D3
+~
+~
+0 -1 10050
+S
+#10006
+The Training Room~
+You enter a nice looking dojo.  There are a few other people here
+training hard to better them selfs.  On one side of this dojo there
+appiers to be a desk with some books laying around.  The other side
+is covered with padding, probably so the trainer doesn't hurt you
+when you train with him.
+ 
+~
+0 2097152 1
+D0
+~
+~
+0 -1 10004
+S
+#10007
+The Pratice Room~
+This room has many diffrent machines and targets all over the place.
+Everything in this room seems to be chard, most likely from inexperneced
+warriors learning how to aim their energy attacks.
+ 
+~
+0 2097152 1
+D1
+~
+~
+0 -1 10004
+S
+#10008
+Newbie Battle Tower -- Level 01~
+This is a wide open room with some other warriors sparing with
+each other.
+ 
+~
+0 2097152 1
+D4
+~
+~
+0 -1 10009
+D5
+~
+~
+0 -1 10001
+S
+#10009
+Newbie Battle Tower -- Level 02~
+This is a wide open room with some other warriors sparing with
+each other.
+ 
+~
+0 2097152 1
+D4
+~
+~
+0 -1 10010
+D5
+~
+~
+0 -1 10008
+S
+#10010
+Newbie Battle Tower -- Level 03~
+This is a wide open room with some other warriors sparing with
+each other.
+ 
+~
+0 2097152 1
+D4
+~
+~
+0 -1 10012
+D5
+~
+~
+0 -1 10009
+S
+#10011
+Sparing Arena~
+This is the sparing arena.  Many people are here watching all the
+fighting.
+ 
+~
+0 67108864 1
+D4
+~
+~
+0 -1 10000
+S
+#10012
+Newbie Battle Tower -- Level 04~
+This is a wide open room with some other warriors sparing with
+each other.
+ 
+~
+0 2097152 1
+D4
+~
+~
+0 -1 10013
+D5
+~
+~
+0 -1 10010
+S
+#10013
+Newbie Battle Tower -- Level 05~
+This is a wide open room with some other warriors sparing with
+each other.
+ 
+~
+0 1075838976 1
+D4
+~
+~
+0 -1 10014
+D5
+~
+~
+0 -1 10012
+S
+#10014
+Newbie Battle Tower -- Level 06~
+This is a wide open room with some other warriors sparing with
+each other.
+ 
+~
+0 1075838976 1
+D5
+~
+~
+0 -1 10013
+S
+#10050
+Armor Repair Shop~
+The room that the space ship starts at.
+armor repair stuff is in the room.
+~
+0 2098180 1
+D1
+~
+~
+0 -1 10005
+S
+#10051
+Ship~
+This is inside the space ship.
+~
+0 1073741828 1
+S
+#10052
+Point B~
+The room that the space ship goes to.
+~
+0 1073741828 1
+S
+#10099
+Floating in a void~
+~
+0 1073741828 1
+S
+#0
+
+
+#RESETS
+M 1 10003 1 10005
+M 1 10001 1 10006
+M 1 10002 1 10007
+M 1 10010 1 10050
+S
+
+
+#SHOPS
+ 10003    0  0  0  0  0   120  90         0 23    ; A Saiyan store owner
+0
+
+
+#REPAIRS
+ 10010    9  0  0         100   1         0 23    ; The armor repair guy
+0
+
+
+#SPECIALS
+S
+
+
+#$

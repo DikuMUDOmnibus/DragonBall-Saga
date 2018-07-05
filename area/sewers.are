@@ -1,0 +1,3429 @@
+#AREA   The Sewer System~
+
+
+
+#VERSION 252
+#AUTHOR Melora~
+
+#RANGES
+0 3 0 3
+$
+
+#PLANET 4
+
+#RESETMSG The sounds of the sewers echo ominously.~
+
+#FLAGS
+0 5
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#5500
+baby alligator~
+A small alligator~
+A small alligator swims about in the water, here.
+~
+This is a very small, and presumably very young, alligator.  How it got here
+in the sewers is quite a mystery, but one would hope that it doesn't have any
+parents or older siblings around.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 500
+112 112 0
+35 10 10 10 10
+0 0 0 0 0
+62 62 0 0 1 1 0
+0 1 0 0 0 0 0 0
+#5501
+brown rat~
+A filthy, brown rat~
+A brown-furred rat, covered in dirt and refuse, is here.
+~
+Beady black eyes stare back at you from a grime-smudged rodent face.  The
+matted, soggy, dirty brown fur on this rat looks, and smells, horrible.
+Maybe you shouldn't drink the water.
+
+~
+1 0 0 C
+1 0 50 1d20+0 2d5+0
+-1 500
+112 112 0
+10 10 35 10 0
+0 0 0 0 0
+41 41 0 0 1 1 0
+0 1 0 0 0 0 0 0
+#5502
+black rat~
+A muddy, black rat~
+A black rat, whose fur is caked with mud, is here.
+~
+This black rat has shining, beady black eyes that seem to look at you
+hungrily as its whiskers twitch.  It's matted black fur is caked with
+dried mud and it yellow teeth look awfully sharp.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+20 10 25 10 0
+0 0 0 0 0
+41 41 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#5503
+small white rat~
+A small, white rat~
+A small rat with white fur scurries around here.
+~
+This small white rat seems to be agitated or on some sort of mood enhancer,
+because it just can't stop running to and fro.  It looks to be mostly clean,
+in spite of the sewage that's about.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100
+112 112 0
+15 10 20 10 0
+0 0 0 0 0
+41 41 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#5504
+grey rat~
+A grimy grey rat~
+A grey rat, covered in filth and grime, squeaks at you.
+~
+A rat with matted, grimy fur is here, reared up on its hind legs and
+squeaking as if someone had just stolen its favorite piece of trash.
+The teeth and claws it shows off in its frantic squeaking look to be
+a little more than what one would expect.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 200
+112 112 0
+20 10 35 10 3
+0 0 0 0 0
+41 41 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#5505
+green snake~
+A hissing, green snake~
+A green snake, with glistening scales, is hissing here.
+~
+A small, green snake, with moist, glistening scales, slithers around in
+the muck and lets out the occasional hiss.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 150
+112 112 0
+15 10 20 30 0
+0 0 0 0 0
+47 47 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#5506
+red yellow black snake~
+A red, yellow and black snake~
+A red snake, with black and yellow bands, sits here innocuously.
+~
+A &Rred&D snake with &zblack&D bands, surrounded by &Yyellow&D bands, sits
+here looking all pure and innocent.  You vaguely remember that the color
+combination of red, yellow and black bands means that it's a coral snake, but
+you can't remember if it's black surrounded by yellow or a yellow snake with red
+bands surrounded by black.  If you're wrong, you could be quite dead.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 500
+112 112 0
+30 10 40 20 0
+0 0 0 0 0
+47 47 0 0 1 1 1
+0 0 0 0 0 0 262144 0
+#5507
+albino snake~
+An albino snake~
+A white snake with red eyes sits here, curled up and staring at you.
+~
+This white snake can be nother other than an albino, with those glaring red
+eyes that are staring at you.  Its tongue flickers in and out of its mouth
+and it sits coiled and ready to strike.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 300
+112 112 0
+15 10 20 10 0
+0 0 0 0 0
+47 47 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#5508
+floating ball robot~
+A floating ball-style robot~
+A floating sphere, with a few spiky bits on its surface, hovers here.
+~
+This metallic, floating sphere hovers here with a faint hum.  Along its
+surface are several spiky protuberances that look like they could be quite
+wicked if this thing took a notion to diving at someone.  A large, central
+blue "eye" seems to be how this thing "sees".
+~
+1 524288 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000
+112 112 0
+40 30 75 20 0
+0 0 0 0 0
+72 72 0 0 1 1 1
+0 0 0 0 0 0 0 1024
+#5509
+four legged lizard robot~
+A four-legged, lizard robot~
+A four-legged lizard-like robot hisses at you.
+~
+This four-legged robot is shaped like a lizard and is about the size of a
+medium dog.  Its metallic skin looks like it's been sculpted to give the
+appearance of scales, its yellow eyes are slitted, and a silvery tongue
+flits in and out of its mouth every once in a while.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 700
+112 112 0
+75 10 30 75 0
+0 0 0 0 0
+62 62 0 0 1 1 1
+0 0 0 0 0 0 8196 0
+#5510
+ice robot~
+A frigid, humanoid-shaped robot~
+A humanoid-shaped robot caked in ice and icicles stands guard here.
+~
+This humanoid-shaped robot stands a little over 2 meters tall.  Its barrel-
+shaped body is caked in a sheet of ice and its spindly arms end in three-
+fingered hands that have icicles hanging from the digits.  The legs are also
+long and spindly and end in two blocks of metal which vaguely look like
+feet.  Icy blue eyes stare from the bucket-shaped head.
+~
+1 512 0 C
+1 0 100 1d20+0 2d5+0
+-1 5000
+112 112 0
+80 10 30 80 0
+0 0 0 0 0
+71 71 0 0 1 1 0
+0 0 0 0 0 0 16 1048576
+#5511
+mad scientist akosha short man~
+Akosha, the Mad Scientist~
+A short, unkempt man, whose right arm is robotic, leaps about madly.
+~
+This short man is unkempt and dissheveled.  His hair is a tangled, wild
+mop on top of his head and shows some grey interspersed with the black.
+His white lab coat is grimy, stained, and torn is a few spots while his
+metallic goggles are a bit over-sized for his face and show a few singe
+marks.  What's really striking about this man is the fact that a metal,
+robotic arm, ending in a crab-like claw, resides where a normal right
+arm would.
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 437
+112 112 0
+35 100 20 25 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 2 0
+> speech_prog 'belt'~
+if ovnuminv(5530) == 1
+  mpoload 5531
+  give belt $n
+  say There you go, now leave me alone!
+  mpjunk skin
+endif
+~
+> speech_prog 'boots'~
+if ovnuminv(5530) == 1
+  mpoload 5532
+  give boots $n
+  say Boy you kids are so demanding anymore!
+  mpjunk skin
+endif
+~
+> rand_prog 5~
+if rand(10)
+  say It's amazing what you can do with a little bit of serpent skin!
+else
+  if rand(10)
+    say I used to be quite the boot and belt maker!
+  else
+    say What are you doing lounging around here?  Go find me something interesting!
+  endif
+endif
+~
+|
+#5512
+giant robot~
+A giant robot~
+A giant, humanoid robot, with glaring red eyes, stands at attention here.
+~
+This giant robot looks quite human in shape... if a human stood about 5
+meters tall!  Its design is a bit on the blocky side and there doesn't
+appear to have been much work done to hide the skull-like look of the
+head, but the ominous red glow that emanates from the eyes certainly does
+lend a frightening air to the monstrosity.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 15000
+112 112 0
+80 15 25 50 0
+0 0 0 0 0
+71 71 0 0 1 1 2
+0 0 0 0 0 0 160 1
+#5513
+flame robot~
+A robot wreathed in fire~
+A metallic, humanoid shape surrounded by flame stands here.
+~
+The flames licking around this vaguely humanoid shape make it difficult
+to determine what it truly looks like.  You can make out the fact that
+it's bipedal, has only two arms, and the skull-like head has two brightly
+glowing yellow eyes in it.  Other than that, the only other thing you can
+tell is the fact that its arms seem to end in nozzles that spit out gouts
+of flame.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 2500
+112 112 0
+35 20 50 30 0
+0 0 0 0 0
+71 71 0 0 1 1 1
+0 0 0 0 0 0 8192 512
+#5514
+brownish red rat~
+A brownish-red rat~
+A small rat with brownish-red fur scampers into hiding.
+~
+Black, beady eyes stare out at you from this small rat's face.  Its
+brownish-red fur seems reasonably clean and well groomed, not to mention
+the fact that this rat looks to be rather well-fed.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 450
+112 112 0
+15 10 30 10 0
+0 0 0 0 0
+41 41 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#5515
+black rat~
+A lazy black rat~
+A slow, lazy-looking black rat waddles along around its distended belly.
+~
+This black rat looks like it's eaten so much that it can barely move!
+Its little belly bulges out more than it normally should and its small
+black eyes look to be somewhat cloudy and sleepy.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 225
+112 112 0
+10 10 15 15 0
+0 0 0 0 0
+41 41 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#5516
+silver fish~
+A vicious-looking silver fish~
+A small silver fish swims around in the water.
+~
+This small silver fish is more than it appears to be at first blush.
+A close examination shows that it has a couple of rows of sharp-looking
+teeth as well as feral eyes with a hungry look in them.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 700
+112 112 0
+35 15 55 20 0
+0 0 0 0 0
+64 64 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 5~
+em gnashes its teeth.
+~
+|
+#5517
+large alligator~
+A large, mean-looking alligator~
+A large alligator floats in the water stalking its prey.
+~
+Green, scaly skin is barely discernable as this scary beast floats in
+the water looking for something to eat.  The eyes, the nose holes, and
+the small ridges along its back are all that can be really seen, but
+it's enough to send a shiver down most normal people's spines.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 7000
+112 112 0
+80 20 50 50 0
+0 0 0 0 0
+62 62 0 0 1 1 1
+0 0 0 0 0 0 4 0
+#5518
+filthy bum~
+A filthy bum~
+A bedraggled and filthy man, who looks down on his luck, sits here morosely.
+~
+This man is filthy from head to toe.  Dark circles caked in dirt are under
+his eyes, you can't tell if he's bearded or just plain dirty, and his clothes
+look like they've been dragged through a manure pile.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 97
+112 112 0
+10 15 10 30 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#5519
+smelly bum~
+A smelly bum~
+A dirty bum who reeks of alcohol and smells of waste is here.
+~
+This bum is a filthy mess and smells very strongly of alcohol.  His clothes
+are in tatters, his nose is red and bulbous, and his dark eyes are 
+completely bloodshot.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 114
+112 112 0
+10 12 17 32 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#5520
+ragged bum~
+A ragged-looking bum~
+A ragged-looking man who is down on his luck.
+~
+This man looks like he was once probably quite rugged, but now he's covered
+in rags.  His clothes look like they've been through a war and have become
+a dingy shade of brown.  His few remaining teeth seem to match the color of
+his clothes.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 216
+112 112 0
+15 18 27 22 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#5521
+fit bum~
+A fit and trim-looking bum~
+A fit and trim-looking man wearing tattered rags.
+~
+If you can make your way past the dissheveled appearance of this man you
+think he might actually be in quite good physical shape.  His arms are
+reasonably well-muscled, he has a spring to his step, and his dirty cheeks
+have a ruddy, healthy look to them.  What also strikes you as interesting
+is the fact that his eyes seem to hold absolutely no intelligence.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 275
+112 112 0
+28 7 30 25 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#5522
+leader bum~
+The Leader of the Bums~
+A tall, powerful-looking bum stands here, tall and proud.
+~
+While this man's clothes are still unkempt and dirty they look to be in
+relatively decent shape.  His eyes betray a keen wit and his physical
+form is quite imposing.  While he's still a bum, he appears to be a bum
+who holds a bit of power in his hands.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1621
+112 112 0
+35 45 47 30 0
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+#5523
+clawed mutant man~
+A clawed, mutant human~
+A tall, mutant humanoid whose hands end in nasty claws.
+~
+This tall, sinewy man looks to have been mutated in some way.  His hands,
+while looking mostly normal, have fingers that end in nasty, dripping claws.
+His face is rather pinched-looking, his yellow eyes seem to radiate hate,
+and his hairless head has veins popping up everywhere.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 3200
+112 112 0
+60 15 25 50 0
+0 0 0 0 0
+71 71 0 0 1 1 1
+0 0 0 0 0 0 2 0
+#5524
+crazy mutant man~
+A short, crazy mutant~
+A short, wiry mutant with a crazy look in his eyes cackles here.
+~
+Sparsh clumps of hair dot the oddly-shaped head of this man-like thing.
+Blood-shot purple eyes stare out of a face that's twisted into a constant
+crazed grin, showing off needle-like teeth.  This short human's powerful
+looking arms twitch uncontrollably, as if itching for a fight.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1500
+112 112 0
+25 50 20 20 0
+0 0 0 0 0
+71 71 0 0 1 1 0
+0 0 0 0 0 0 32 0
+#5525
+hairy mutant man~
+A hairy mutant~
+An average-height man covered from head to toe in fur.
+~
+This man is of average-height, which is rather unremarkable.  What _IS_
+remarkable is the fact that every inch of his body (you presume) is
+covered in a fine, brown fur.  Other than his lips you can see no bare
+flesh on the man.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 2000
+112 112 0
+45 10 30 15 0
+0 0 0 0 0
+71 71 0 0 1 1 0
+0 0 0 0 0 0 16 0
+#5526
+orange mutant man~
+An orange-skinned mutant~
+An orange-skinned man stands here wearing nothing but a loin cloth.
+~
+This man's skin is a bright shade of orange that stands out no matter how
+hard you try not to stare.  His eyes are an enchanting shade of blue and
+his teeth are pearly-white.  The way his mouth is twisted into a nasty
+snarl leads you to believe that he's none too friendly.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 2750
+112 112 0
+15 30 55 20 0
+0 0 0 0 0
+71 71 0 0 1 1 2
+0 0 0 0 0 0 0 0
+#5527
+giant mutant man~
+A giant mutant~
+A giant of a man, with various mutations of the body, stands here and bellows in rage!
+~
+This man is a giant, in every sense of the word.  He easily stands at 4
+meters in height and looks to be nearly as broad, through the shoulders.
+His biceps are huge, his calves are immense, and his breath is HORRIBLE!
+~
+1 0 0 C
+1 0 80 1d20+0 2d5+0
+-1 20000
+112 112 0
+80 20 40 90 0
+0 0 0 0 0
+71 71 0 0 1 1 2
+0 0 0 0 0 0 272 0
+#5528
+cannibal cook short man~
+A short cannibal~
+A short man, dressed like a cook and covered in blood grins at you.
+~
+This short man has a cook's frock and hat, albeit mostly red due to blood
+being splattered on them, as his clothing.  He also has an excited grin 
+due to the fact that he believes you're going to be his next culinary
+masterpiece!
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 650
+112 112 0
+30 20 14 25 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#5529
+fat cannibal cook man~
+A fat cannibal~
+A fat man, dressed in blood-stained clothing, shakes a cleaver in your direction.
+~
+Rolls of fat are everywhere on this man.  He has at least half a dozen
+chins and two or three sets of knees!  He's also covered, head to toe,
+in the blood of his victims.... to him it's all a minor sacrifice in
+the name of preparing the flesh of sentient beings!
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 525
+112 112 0
+32 10 18 41 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpjunk cleaver
+~
+|
+#5530
+tall thin cannibal man~
+A tall, thin cannibal~
+A tall, thin man, with a necklace made of finger bones around his neck, stands guard here.
+~
+This tall, thin man looks to be all business.  He stands here impassively,
+keeping a watchful eye on everything that happens.  Around his neck is a
+necklace made of finger bones... whose, you're not sure.  He also has a
+short spear at his side, in case anyone wants to make any trouble.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 827
+112 112 0
+28 22 42 24 0
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+#5531
+large mean cannibal man~
+A large, mean-looking cannibal~
+You're sized up by this large, mean-looking man.
+~
+This man is not only large, but mean-looking as well.  The various pieces
+of jewelery made of bone only help add to the air of danger that surrounds
+him.  A wicked grin spreads across his face as he notices that you're
+checking him out and he readies himself to make you his next victim.
+~
+1 0 0 C
+1 0 75 1d20+0 2d5+0
+-1 7200
+112 112 0
+55 43 50 65 0
+0 0 0 0 0
+1 1 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 20~
+mea $n &Y$I grabs a random body part and throws it at you! [5]&D
+mpechoaround $n A large, mean-looking cannibal grabs a random body part and throws it at $n! [5]
+mpdamage $n 5
+~
+|
+#5532
+average cannibal man~
+A cannibal~
+A rather non-descript man stands here.  From the look of him he probably partakes in human flesh.
+~
+This cannibal is pretty plain and boring... he's what you'd call average
+(though what does "average" mean when speaking of a cannibal).  He yawns
+as he stands here, obviously bored with his duties, but he seems to be
+too worried about _something_ to just up and wander off.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1250
+112 112 0
+35 35 35 35 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#5533
+serpent giant monster~
+A giant serpent~
+A giant, snake-like monster rears up out of the pool!
+~
+The only way to describe this thing is as a giant, snake-like creature.
+It has a long, wet, scaly body, a wedge-shaped head, and a mouth full
+of very vicious-looking teeth.  It stares at you with reptillian eyes
+full of hunger and hatred, tensing its body for the fatal strike.
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 13634
+112 112 0
+75 20 80 50 0
+0 0 0 0 0
+47 47 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> death_prog 5~
+if ovnumroom(5530) < 1
+mpecho &WWith the dealing of the death blow, the serpent's skin is shorn from its body.
+mpoload 5530
+endif
+~
+|
+#5598
+test~
+A test mob~
+A test mob, used for ... testing purposes!
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 603
+~
+|
+#5599
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#5500
+card key~
+A white key card~
+A small, white card with a magnetic stripe on it, is on the floor.~
+~
+18 0 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+card key~
+This is a plain, white, credit-card sized piece of plastic.  Judging by the
+odd &Rred&D symbols on it, and the magnetic stripe, you'd guess it's used
+to open doors and not to buy things.
+~
+#5501
+padlock key~
+A small padlock key~
+A small brass key has been discarded here.~
+~
+18 0 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+padlock key~
+A small, brass-colored key with the digits RX-432 engraved on it.
+~
+#5502
+office key~
+An office key~
+A small silver key hanging from a loop of wire.~
+~
+18 0 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+office key~
+A small piece of wire, bent into a loop, winds through the hole at the
+top of this silver key.  The edges of the key are a bit worn, which 
+has caused the brass-colored core to show through the silver plating.
+~
+#5503
+sign wooden~
+A wooden sign~
+A wooden sign has been nailed into the wall.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+sign~
+Welcome to the Sewer System!  You may find that things down here smell
+a little, and even flouresce, but don't worry, it's all perfectly safe!
+
+There are also times when things shift and various portions of the older
+sewer system can be entered, please avoid doing so, because those areas
+are less secure and pose a much greater threat.
+
+Enjoy your stay!
+~
+#5504
+padded chair~
+A padded chair~
+A well-worn, padded chair rests here.~
+~
+12 0 0
+0 0 0 0 0 0
+5 0 0
+ 0
+E
+padded chair~
+This is a standard metal chair with a semblance of padding where one would
+sit.  It wouldn't be all that comfortable over the long haul, but that's the
+point of its design.
+~
+#5505
+broken chair~
+A broken chair~
+The broken pieces of a chair are scattered about.~
+~
+12 0 0
+0 0 0 0 0 0
+3 0 0
+ 0
+E
+broken chair~
+These broken bits of chair look like they used to be a rather uncomfortable
+chair.  Chances are the person who smashed the chair got tired of sitting
+in it and wanted to take out his frustration.
+~
+#5506
+wooden table~
+An old, wooden table~
+A wooden table, with various pits and scars on its top, stands here.~
+~
+12 0 0
+0 0 0 0 0 0
+20 0 0
+ 0
+E
+scars~
+Long scars mar the top of the table, making one wonder what was dragged,
+or slashed, across the surface to cause so much damage.
+~
+E
+table wodden~
+This wooden table looks old but sturdy.  The legs are good and thick,
+which would allow one to put an awful lot of 'stuff' on it.  It also looks
+like it's been through a lot, judging by the scars on its surface.
+~
+#5507
+stool wooden~
+A wooden stool~
+A plain, unformfortable-looking wooden stool is here.~
+~
+12 0 0
+0 0 0 0 0 0
+3 0 0
+ 0
+E
+stool wooden~
+This wooden stool has a flat, hard seat and long, sturdy legs.  It's not
+meant for comfort, but it'll do in a pinch... for a short while.
+~
+#5508
+bank computer computers~
+A bank of old-style computers~
+A bank of old-style computers, complete with reel-to-reel drives and blinking LEDs, occupies the corner.~
+The computers whir and hum away, working on who knows what.~
+12 0 0
+0 0 0 0 0 0
+400 0 0
+ 0
+E
+bank computer computers~
+These comptuers look to be several decades old.  They have old LEDs flashing
+all over the place, levers and switches everywhere, and a reel-to-reel tape
+drive for storage.... sad.
+~
+#5509
+gear robot part~
+A toothed gear~
+A circular part, probably for a robot, with notches that form teeth around its circumference.~
+~
+13 0 1
+0 0 0 0 0 0
+10 0 0
+ 0
+E
+gear robot part~
+This is a large, circular, gear-shaped piece of junk.  It probably served
+some purpose, at one point in its life, but it's now been discarded and
+left to collect rust.
+~
+#5510
+metallic leg~
+A metallic leg~
+A human-shaped leg, made of metal, rests on the floor.~
+~
+13 0 1
+0 0 0 0 0 0
+8 0 0
+ 0
+E
+leg metallic~
+This metallic object is shaped like a human's leg.  Its knee joint looks
+quite functional, the calves are nicely sculpted, and the foot actually
+ends in articulated toes.  Why has it been tossed aside?
+~
+#5511
+coat white lab~
+A grimy, stained, torn lab coat~
+What once was a white lab coat, and now looks to be a pile of grimy, stained, torn rags, is here.~
+~
+9 0 1025 2
+5 5 0 0 0 0
+3 0 0
+ 1
+E
+coat white lab~
+This is a grimy, torn, stained, nasty-looking lab coat.  The sleeves are
+frayed, the breast pocket hangs from a few thin threads, and half the
+buttons are missing.
+~
+#5512
+widget object~
+A widget~
+A small, oddly-shaped object is here.~
+~
+13 0 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+widget object~
+This small, palm-sized object looks to be the world's most versatile
+multi-tool.  It has a small saw, a magnifying glass, a complete socket
+set, and several other handy things.
+~
+#5513
+sign warning~
+A metallic &RWARNING&D sign~
+A metallic sign with the word &RWARNING&O written on it.~
+~
+13 0 0
+0 0 0 0 0 0
+50 0 0
+ 0
+E
+sign~
+&R                     WARNING&D
+&W             You have entered a restricted&D
+&W             area and may end up quite dead&D
+&W             You've been warned....&D
+~
+#5514
+crate wooden~
+A wooden crate~
+A large wooden storage crate rests on the floor.~
+~
+15 0 0
+75 5 0 0 0 0
+50 1500 150
+ 0
+E
+crate~
+This looks like your standard wooden crate.  It's a large cube with a
+lid that can be opened or closed.
+~
+#5515
+box cardboard~
+A cardboard box~
+A rectangular box, made of cardboard, is stacked here.~
+~
+15 0 0
+10 5 0 0 0 0
+5 200 20
+ 0
+E
+box~
+This cardboard box is in amazingly good shape for being in such a damp,
+dark environment.  The flaps are intact which means you can open and
+close the box, as well as keep its contents rather safe.
+~
+#5516
+bottle glass water~
+A glass bottle~
+A small bottle made of glass.~
+~
+17 0 16385
+1 1 0 0 0 0
+1 0 0
+ 0
+E
+bottle~
+The glass of this bottle has a bluish tint.  A small metal cap screws
+into place to seal it up.  Other than that it's rather unremarkable.
+~
+#5517
+meal mre crap~
+An MRE~
+A packaged 'meal ready to eat' is here, probably discarded because no one wants to eat it!~
+~
+19 0 16385
+10 0 0 0 0 0
+1 0 0
+ 0
+E
+meal mre~
+This is a standard, military 'meal ready to eat', also known as an MRE.
+It's supposed to be something that will provide all the nutrients you
+need to survive, but it's also known for its lack of taste... unless
+you're lucky enough to get one with a bottle of Tabasco Sauce!
+~
+#5518
+shiny gold necklace~
+A shiny, &Ygold&D necklace~
+&D~
+~
+8 0 5
+0 0 0 0 0 0
+1 2500 200
+ 0
+E
+necklace shiny gold~
+Finely shaped rectangles of gold are linked together to make a stunning
+necklace.  Every fifth rectangle is shot through with a silvery metal,
+probably platinum, and a clear, &Rred&D ruby is set opposite the clasp.
+~
+A
+3 1
+#5519
+cabinet metal supplies~
+A metal supply cabinet~
+A tall, narrow, metal cabinet stands against the wall.~
+~
+15 0 0
+200 5 0 0 0 0
+75 4000 400
+ 0
+E
+cabinet metal~
+This tall, narrow, metal cabinet looks beaten and battered.  It has dents
+in several places and is showing the signs of rust in a couple of other
+spots.  The thin metals doors are held in place by magnets and circular
+knobs serve as handles.
+~
+E
+cabinet metal~
+This tall, narrow, metal cabinet looks beaten and battered.  It has dents
+in several places and is showing the signs of rust in a couple of other
+spots.  The thin metal doors are held in place by magnets and circular
+knobs serve as handles.
+~
+#5520
+gloves sparring padded~
+A pair of padded sparring gloves~
+A padded pair of gloves has been tossed on the floor.~
+~
+9 0 129
+5 4 0 0 0 0
+2 2500 250
+ 0
+E
+gloves sparring padded~
+These padded gloves are ideal for use when sparring.  They're made of
+soft, supple leather and are padded at the knuckles, both for the user
+and the recipient of the blows.
+~
+A
+1 1
+#5521
+shorts white~
+A pair of white shorts~
+Here rests a pair of clean, white shorts, suitable for use when working out.~
+~
+9 0 0
+2 2 0 0 0 0
+1 0 0
+ 0
+E
+shorts white~
+Clean white shorts, ideal for use when working out, have always been a
+staple of those who frequent gyms.  This pair looks like it would do
+very nicely.
+~
+#5522
+cook pot metal~
+A large, metal cook pot~
+A large, black iron cookpot is here, suspended from thick iron chains.~
+~
+15 0 0
+100 0 0 0 0 0
+50 2000 1
+ 0
+E
+pot cook large~
+Made from black iron, this cook pot is easily big enough to hold two or
+three human bodies.  A layer of carbon has been scorched onto the bottom,
+where it's presumably put over a flame.
+~
+#5523
+murky bubbling water~
+Murky, bubbling water~
+A pool of murky water bubbles here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#5524
+hand human~
+A severed human hand~
+A human hand has been separated from its body.~
+~
+19 0 1
+2 0 0 0 0 0
+1 0 0
+ 0
+E
+hand human~
+A bloody stump at the wrist is all that shows this hand used to be connected
+to a body.  The fingers are slightly curled and the fingernails are clean
+and nicely manicured.
+~
+#5525
+head human~
+A severed human head~
+A bodiless head, missing an eye and several teeth, is here.~
+~
+19 0 1
+3 0 0 0 0 0
+3 0 0
+ 0
+E
+head human~
+This head once belonged to a human.  Its right eye is missing while its
+left stares blankly into space.  A few of its teeth are gone, and the
+left ear looks like it's been nibbled on....
+~
+#5526
+leg severed~
+A severed leg~
+A dismembered leg has been tossed here.~
+~
+13 0 1
+0 0 0 0 0 0
+5 0 0
+ 0
+E
+leg severed~
+This leg has seen better days... which can easily be gathered by the fact
+that it's no longer attached to a body.
+~
+#5527
+pool large dark~
+A large, dark pool~
+This large pool takes up most of the tunnel.  The water is quite dark.~
+~
+12 0 0
+0 0 0 0 0 0
+2000 0 0
+ 0
+E
+pool large dark~
+The dark water of this pool does a good job of hiding any secrets it
+contains.  Faint ripples can be seen, every once in a while, and bubbles
+come to the surface at odd intervals.
+~
+#5528
+pants tattered~
+A tattered pair of pants~
+A tattered, bedraggled-looking pair of pants.~
+~
+9 0 33
+2 0 0 0 0 0
+2 0 0
+ 0
+E
+pants tattered~
+Moth-eaten, dirt-stained, and generally torn to almost useless shreds are
+the words that come to mind when looking at this pair of pants.
+~
+#5529
+bottle booze~
+A bottle of booze~
+A bottle filled with a rich, amber liquid.~
+~
+17 0 16385
+5 3 5 0 0 0
+3 0 0
+ 0
+E
+bottle booze~
+The label on this bottle is smudged and unreadable, but you can tell, just
+by the smell, that its contents are alcoholic.
+~
+#5530
+skin serpent~
+The skin of a serpent~
+A hunk of dark, scaly skin lies folded on the floor.~
+~
+8 0 1
+0 0 0 0 0 0
+10 0 0
+ 0
+E
+skin serpent~
+Dark scales overlap to make up this skin.  It looks like it came from a
+snake, but its size shows that it was not ordinary snake.  Perhaps there's
+some use for this, if you can find the right person for the job....
+~
+#5531
+belt serpent skin~
+A serpent-skin belt~
+A length of serpent-skin that has been made into a belt.~
+~
+9 0 2049
+1 1 0 0 0 0
+1 0 1
+ 0
+E
+belt serpent skin~
+The shiny scales of this length of serpent skin give this belt an exotic look.
+You want to touch it, to see if it's actually as slimy as it looks, but you're not
+sure if you should.
+~
+#5532
+boots serpent skin~
+A pair of serpent-skin boots~
+A pair of boots, made from serpent-skin, are sitting here.~
+~
+9 0 65
+1 1 0 0 0 0
+3 2500 10
+ 0
+E
+boots serpent skin~
+Shiny, dark, slimy-looking serpent skin was used to makes these boots.  The
+soles are made of a hard but pliable substance and the insides look to be
+rather well-padded.  You'd probably be styling if you had a pair of these!
+~
+A
+2 1
+#5533
+cleaver meat~
+A wicked-looking meat cleaver~
+A large, butcher-like meat cleaver has been left on the ground.~
+~
+5 8192 8193
+10 3 4 2 0 0
+3 12000 1200
+ 0
+E
+cleaver meat~
+A stained wooden handle is what's used to wield this wicked-looking meat
+cleaver.  The blade is about a foot long, 6 inches wide, and one edge is
+sharpened to a keen edge.
+~
+#5534
+necklace finger bones~
+A necklace of finger bones~
+A few dozen finger bones strung together to form a necklace is piled here.~
+~
+9 0 5
+1 1 0 0 0 0
+4 0 0
+ 0
+E
+necklace finger bones~
+This gruesome piece of jewelry consists of several dozen finger bones that
+have been strung onto a piece of wire.  In places strands of several bones
+have been wired together to form long dangly bits.
+~
+#5596
+black leggings~
+A pair of &zblack&D leggings~
+A neatly folded pair of black leggings has been left on the floor.~
+~
+9 0 33
+10000 10000 0 0 100000 100000
+1 10000000 1000000
+ 2000000000
+E
+black leggings~
+These black leggings are made of a stretchy, form-fitting material.  They
+don't have any obvious seams, pockets or fasteners, but they do look
+awfully comfy.
+~
+#5597
+shirt white tank top~
+A tight &Wwhite&D tank top~
+A snug-looking white tank top has been tossed here.~
+~
+9 0 9 1
+10000 10000 0 0 100000 100000
+1 10000000 1000000
+ 2000000000
+E
+shirt white tank top~
+This is a very snug-looking tank top made of a comfortable material.  It is
+soft to the touch and would probably accent the curves of anyone wearing it.
+~
+#5598
+melora custom scouter~
+&WMelora&D's &RCustom&D &GScouter&D~
+This scouter is very stylish and modern-looking.~
+~
+65 0 131073
+0 0 20000000 0 0 0
+1 0 0
+ 2000000000
+E
+melora custom scouter~
+This scouter is done up in &Wwhite&D and &Ggreen&D with a &Rred&D-hued eye-
+piece.  It looks to be very lightweight and much more technologically
+advanced than any other scouter you've seen.
+~
+#5599
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#5500
+The Sewer Entrance~
+This is the main entry point into the sewers under Satan City.  On the wall
+are a set of rungs that can be used as a ladder and lead to the man hole that
+will lead you out of the sewers.  A certain stench hangs in the damp air, and
+the sound of running water is a constant that can not be avoided.  Some &Cpuddles&g
+of water have formed on the ground, and odd noises echo from the walls.
+~
+0 524 13
+D1
+~
+~
+0 -1 5549
+D3
+~
+~
+0 -1 5501
+D4
+~
+grate~
+1 -1 9001
+E
+puddle puddles~
+The puddle is dark and dank, and doesn't look entirely healthy.  You think you
+can barely make out small ripples on the surface every once in a while, and you
+wonder what could possibly be causing it.
+~
+S
+#5501
+Interesting Intersection~
+The sewer seems to strech on for miles, with various side passages evident
+every few feet.  The stench alternates between almost bearable and completely
+overwhelming, seemingly at random.  In this particular stretch of sewer you
+can see some larger side tunnels which might lead you to something a bit more
+interesting than what you've seen thus far.
+~
+0 520 13
+D1
+~
+~
+0 -1 5500
+D3
+~
+~
+0 -1 5502
+D7
+~
+~
+0 -1 5507
+D9
+~
+~
+0 -1 5505
+S
+#5502
+Less Smelly Sewer Tunnel~
+This strech of sewer looks just like the last strech of sewer.  Actually, they
+all pretty much look the same.  Small outlet pipes dump sewage into channels
+which then lead to the main flow of &Bwater&g that runs down the middle of the
+tunnel.  The stench here isn't quite as bad as in other sections, but it's still
+not some place you'd want to live.
+~
+0 520 13
+D1
+~
+~
+0 -1 5501
+D3
+~
+~
+0 -1 5503
+E
+water~
+The water boils and bubbles, for no apparent reason.  It also gives off a bit
+of a noisome stench.  Perhaps it's best to not mess with things you don't fully
+understand.
+~
+S
+#5503
+Moss-laden Sewer Tunnel~
+The water flow here seems to be a bit slow, almost to the point of being
+stagnant.  Patches of &Ggreen&g moss-like growths float at various points
+in the middle of the tunnel, and the smell here is a bit worse than in
+other parts of the sewer.
+~
+0 520 13
+D1
+~
+~
+0 -1 5502
+D3
+~
+~
+0 -1 5504
+E
+moss green~
+This green moss-like substance seems to almost crawl with a life of its own.
+You could swear it just made a face at you....
+~
+S
+#5504
+Gator Suprise!~
+The sewer tunnel seems to have come to a dead end.  There's a pipe on the west
+wall, dripping a nasty-looking ooze, but it's way too small for anyone to go
+through.  The odd noises seem to be a bit louder here, while the smell isn't
+quite as bad.
+~
+0 520 13
+D1
+~
+~
+0 -1 5503
+S
+#5505
+Small Side Tunnel~
+This is a small side tunnel off the main sewer tunnel.  There is something
+floating in the water, but it's difficult to make out what it is without
+getting a bit closer.  The normal stench of the sewers has been replaced with
+on that's a bit more medicinal, but it's still faint.
+~
+0 520 13
+D2
+~
+~
+0 -1 5506
+D6
+~
+~
+0 -1 5501
+E
+something~
+Upon closer examination, the object floating in the water looks to be a
+plastic IV bag.
+~
+S
+#5506
+Refuse-strewn Dead End~
+The sewer tunnel ends here, and the tunnels in the walls not only spew out
+sewage, but various objects as well.  Most of these objects seem to be floating
+on the surface of the water, but a few of them sink never to be seen again.
+~
+0 8 13
+D0
+~
+~
+0 -1 5505
+E
+objects~
+The objects floating in the water look to be syringes, IV bags, gauze and
+various other items that would be used in a hospital.  Perhaps someone is
+just dumping their hazardous materials right down the drain?
+~
+S
+#5507
+Glowing Sewer Tunnel Junction~
+This sewer tunnel isn't quite as large of the main tunnel, but it is larger
+than some of the various side branches in this system.  The stench is worse
+here than in the main tunnel, and the water has a faint green luminescence.
+~
+0 520 13
+D0
+~
+~
+0 -1 5508
+D1
+~
+~
+0 -1 5510
+D3
+~
+~
+0 -1 5509
+D8
+~
+~
+0 -1 5501
+S
+#5508
+A Nest of Rodents~
+This is a dead end in the sewer system, with pipes of various sizes set into
+the walls.  Unlike most of the other pipes down here, these are stuffed full
+of all manner of things, from straw to gauze to packed mud and beyond.  The
+gunk clogging up the pipes doesn't look like it was a result of what came
+from above, though.
+~
+0 8 13
+D2
+~
+~
+0 -1 5507
+S
+#5509
+Glowing Dead End~
+The sewers end here, with no visible exits other than back into the tunnel.
+Pipe of various sizes stick out of the walls and deposit their filthy contents
+into channels which flow into the river of sewage that runs down the center
+of the tunnel.  The moss on the walls glows with an odd &Ggreen&g light.
+~
+0 520 13
+D1
+~
+~
+0 -1 5507
+E
+moss green~
+Other than the fact that this moss glows with an odd green light, it looks
+completely natural.
+~
+S
+#5510
+Sewer Tunnel~
+This sewer tunnel smells horrible and the water glows with an eerie green
+light.  Some of the pipes which feed the water running down the main channel
+have become clogged with some noxious goo.
+~
+0 520 13
+D1
+~
+~
+0 -1 5511
+D3
+~
+~
+0 -1 5507
+E
+goo pipes~
+This goo glows with a faint green light and has a very thick viscosity.
+~
+S
+#5511
+Noxious Sewer Tunnel~
+The stench here is reminiscent of decaying flesh mixed with burning hair mixed
+with human waste.  It is less than pleasant.  The water glows with a green hue
+and there seems to be some light coming from the east.
+~
+0 520 13
+D1
+~
+~
+0 -1 5512
+D3
+~
+~
+0 -1 5510
+S
+#5512
+Glowing Sewer Tunnel~
+The glowing water here is so bright that you don't need a light source of
+your own.  The problem is that the smell is almost so thick that you can
+just about see it, too!  Nearly every feed pipe is clogged to some extent,
+and what looks like either mold or moss is growing on just about every
+surface.
+~
+0 520 13
+D1
+~
+~
+0 -1 5513
+D3
+~
+~
+0 -1 5511
+S
+#5513
+Access Room~
+The main water flow goes through a large grate set in the eastern wall.
+There are very few feed pipes in here, and the few there are look to be
+clogged up with some nasty green slime.  The sewer tunnel stretches off
+to the west, and a small acess door is in the east wall.
+~
+0 520 13
+D1
+~
+~
+1 -1 5514
+D3
+~
+~
+0 -1 5512
+E
+slime nasty green~
+This stuff is gunking up the pipes and making it so that the best water
+flow is little more than a weak trickle.
+~
+S
+#5514
+Sewage Treatment Room~
+This room is huge and smells horrible.  It looks like this is where a good
+chunk of the sewer water is treated before it's sent further along in its
+journey.  You can see a catwalk running around the room, above the level of
+the water, as well as a rusty metal ladder leading up to a small room.
+~
+0 8 13
+D0
+~
+~
+3 -1 5516
+D3
+~
+~
+3 -1 5513
+D4
+~
+~
+0 -1 5515
+E
+catwalk~
+The catwalk runs around the perimeter of the room and looks to be not only
+rusty, but also rickety.  It probabl wouldn't hold much weight and all and
+you don't think it's been used in quite some time.
+~
+S
+#5515
+Sewage Treatment Control Room~
+This is the control room for the sewage treatment plant below.  Various
+panels and monitors blink and flash, and a soothing humming comes from the
+banks of computers set against the east wall.  The floor looks to be made
+of metal grating, and there are two large windows set in the west wall to
+allow those in here to see into the treatment plant below.
+~
+0 520 13
+D3
+~
+~
+33554432 -1 5514
+D5
+~
+~
+0 -1 5514
+E
+panels~
+There are all sorts of toggle switches and push buttons on the panels.  There
+are also several LED displays and blinky buttons.  You're not entirely certain
+if they all do anything, or not, but they do look pretty.
+~
+E
+monitors~
+The screen reads: '&WShall we play a game?&D'
+~
+E
+computers banks~
+These are tall, mainframe looking computers, complete with reel-to-reel tapes
+and blinking lights.
+~
+S
+#5516
+Sewage Flow Continues~
+The tunnel slopes down to the north and the flow of water from the large
+grate in the south wall follows in kind.  It doesn't smell quite as bad, here
+as it has in the rest of the sewer, but the water still has an odd colored
+sheen to it.
+~
+0 520 13
+D0
+~
+~
+0 -1 5517
+D2
+~
+~
+1 -1 5514
+S
+#5517
+Soggy Intersection~
+The water here has overflowed the bounds of the channel and it's difficult
+to walk anywhere without getting wet.  A slight breeze wafts from somewhere,
+and the smell is almost bearable.  About the only oddity is the fact that
+the water has a bit of a greenish glow to it.
+~
+0 520 13
+D2
+~
+~
+0 -1 5516
+D6
+~
+~
+0 -1 5518
+D7
+~
+~
+0 -1 5522
+S
+#5518
+Passable Sewer Tunnel~
+A light breeze stirs the dankness in here, and the water seems to flow a
+little more clearly than elsewhere.  The feed pipes look to be in pretty
+good condition, and there's barely a sewage stench in here at all.  A
+faint green glow helps throw some light in the tunnel.
+~
+0 520 13
+D1
+~
+~
+0 -1 5519
+D9
+~
+~
+0 -1 5517
+E
+pipes~
+These pipes look to be in great repair.  Unlike most of the other feed
+pipes down here, they show no signs of rust, and the water that flows
+from them looks clean and almost has a flowery scent to it.
+~
+S
+#5519
+A Gentle Breeze~
+Vents set in the ceiling of the tunnel emit a crisp, clean-smelling breeze.
+The water in the central channel is clear and sparkling, and emits an almost
+happy tinkle as it runs its course.  A faint greenish glow permeates the whole
+tunnel and a hint of flowers hangs in the air.
+~
+0 8 13
+D1
+~
+~
+0 -1 5520
+D3
+~
+~
+0 -1 5518
+E
+vents~
+These vents are covered with shining steel covers and let a fresh, crisp
+breeze into the tunnel.
+~
+S
+#5520
+Flowery Dead End~
+The sewer tunnel ends here in a mound of flowers.  There are &Bblue&g ones
+and &Rred&g ones and even &Yyellow&g ones.  The air is filled with their
+scent and the water is crystal clear.  In fact, the water continues to flow
+through this room, even though there's no apparent exit, since the channel
+is blocked by the large &Omound&g of flowers.
+~
+0 520 13
+D3
+~
+~
+0 -1 5519
+E
+flowers~
+These flowers are all small and delicate looking.  They emit a smell that
+soothes and relaxes the soul.
+~
+E
+mound~
+The mound looks very out of place.  It is decorated with pretty flowers and
+seems to just swallow the flow of water.  You think there might be enough
+room to squeeze behind it and search for where the water may be going.
+~
+> speech_prog 'sanctuary'~
+mea $n A shimmering light forms around you then flares up brightly.
+mpechoaround $n A shimmering light forms around $n, enveloping $m.
+mptransfer $n 5521
+mpat 5521 mpforce $n look
+~
+|
+S
+#5521
+Peaceful Retreat~
+A peaceful, soothing aura permeates this room, causing all aggressions to
+slip away.  It seems that nothing evil could cause harm to anyone in this
+room, and the soft scents and warm light will help to ease the wounds of
+those who rest here.  Flowers have sprung up in several small mounds of
+dirt, and the sounds of the tiny fountain help add to the relaxing nature
+of the room.
+~
+0 2098188 13
+D3
+~
+~
+0 -1 5520
+S
+#5522
+Mossy Tunnel~
+The air is damp and stuffy here, and moss seems to be growing on just about
+every surface on which it can get a foothold.  A faint smell lingers in the air
+but there's not enough of it to determine what it is.  The water in the channel
+looks a bit muddy.
+~
+0 520 13
+D3
+~
+~
+0 -1 5523
+D8
+~
+~
+0 -1 5517
+S
+#5523
+Dark Tunnel~
+Moss has overgrown everything here, cutting off what little light was being
+provided by the bulbs set overhead.  The ground is slippery from the water
+that's gotten onto the moss, and the sewage smell is mingled with something
+else to create an odd, unpleasant odor.
+~
+0 520 13
+D1
+~
+~
+0 -1 5522
+D3
+~
+~
+0 -1 5524
+E
+moss~
+This moss looks be to thriving in this damp, dark environment.  It seems
+to give off a faint green light, but other than that it's pretty plain
+and unremarkable.
+~
+S
+#5524
+Aromatic Tunnel~
+Instead of the normal sewage smell, this tunnel is filled with the smell of
+cooking food.  There is nothing in sight to imply that there actually is any
+food nearby, but the smell is unmistakable.  The feed pipes here are somewhat
+clogged with moss, and the water in the channel is dank and dark.
+~
+0 520 13
+D1
+~
+~
+0 -1 5523
+D3
+~
+~
+0 -1 5525
+E
+water~
+As you look at the water some &Cbubbles&D come to the surface.  What could
+that possibly be?
+~
+S
+#5525
+Four-Way Intersection~
+Four tunnels, going in the cardinal directions, meet here.  The water seems
+to flow in from the east and out to the south, west and north.  What determines
+how the water gets routed to one of the three locations doesn't seem to be
+apparent, but somehow it all works out.
+~
+0 520 13
+D0
+~
+~
+0 -1 5541
+D1
+~
+~
+0 -1 5524
+D2
+~
+~
+0 -1 5526
+D3
+~
+~
+0 -1 5527
+S
+#5526
+Debris-strewn Mound~
+The sewer tunnel comes to a dead end here, but the southern part of the
+tunnel is a built up mound of dirt and debris.  The water in the channel
+runs up to the mound but seems to stop there.  A strange hissing noise
+can be heard throughout the room, but it's difficult to determine the
+location of the source.
+~
+0 8 1
+D0
+~
+~
+0 -1 5525
+E
+mound~
+Upon further examination, various holes mar the surface.  It also seems that
+the hissing noise, as well as a faint rattling, is coming from deep within
+the mound.
+~
+> rand_prog 5~
+mpecho A strange hissing noise can be heard.
+~
+|
+S
+#5527
+Silent Tunnel~
+The silence here is almost oppressive.  The water is still and stagnant,
+nothing flows out of the feed pipes, nothing drips, not even the scurring
+of little feet can be heard.  It's enough to make one want to scream.  On
+the bright side, the tunnel seems to have quite a bit of phosphorescent
+moss all over the place, so at least the lighting is good!
+~
+0 520 13
+D1
+~
+~
+0 -1 5525
+D3
+~
+~
+0 -1 5528
+S
+#5528
+Descent to Darkness~
+A faint dripping noise can be heard echoing from parts unknown and moss
+seems to have crept into just about every crevice available.  The sewer
+tunnel ends in a heap of rubble, as if a cave-in happened at some point.
+There's also a dark hole in the floor, probably caused by the same cave-in,
+into which some of the water flows.
+~
+0 520 13
+D1
+~
+~
+0 -1 5527
+D5
+~
+~
+0 -1 5529
+E
+rubble heap~
+This looks to be a combination of support pillars and ceiling slabs.  It's
+hard to tell, but the rubble could be blocking what used to be a continuation
+of this particular sewer tunnel.
+~
+S
+#5529
+Nautral Tunnel Entrance~
+This looks to be the entrance to a natural system of caves.  Oddly enough,
+this area seems to be a bit on the roomy side, and would probably allow
+several people to travel through it abreast.  Water drips from an opening
+that leads up, and the faint sound of metal on metal can be heard from
+deeper within the cave system.
+~
+0 2097160 13
+D3
+~
+~
+0 -1 5530
+D4
+~
+~
+0 -1 5528
+S
+#5530
+Chilly Cave~
+A &Ccold&g breeze flows through this natural cavern and small &Wic&Cicl&Wes&g have even
+started to form on some of the stalagtites.  A thin layer of what looks to be
+&Wsnow&g covers the floor, and some footprints cut through the cavern and
+run off to the south.  The northern end of the cavern looks to have less
+in the way of ice and snow compared to the southern end.  A small, tube-like
+tunnel is set low in the northern wall.
+~
+0 2097160 13
+D0
+~
+~
+0 -1 5540
+D1
+~
+~
+0 -1 5529
+D2
+~
+~
+0 -1 5531
+D3
+~
+~
+0 -1 5533
+E
+footprints~
+These footprints look to be about human-sized and appear to have been made
+by booted feet.
+~
+E
+icicles~
+These icicles range in length from a few centimeters to almost a meter long.
+There doesn't appear to be any source of water which would account for
+their being here, though.
+~
+S
+#5531
+Cavern With A Surprise!~
+The natural cavern looks like it, at one time, ended here.  Someone, or
+something, has carved an addition out of the living stone to the east,
+however.  Sparks of light and odd sounds emanate from the addition.
+~
+0 8 13
+D0
+~
+~
+0 -1 5530
+D1
+~
+~
+0 -1 5532
+S
+#5532
+Jumbled Workshop~
+The living stone has been carved into a rough cube here and made into what
+looks to be a workshop for someone who likes to dabble in all things
+electronic.  A grate is set in the floor, flourescent lights hang from
+the ceiling, and all manner of objects lie strewn about the room.
+~
+0 8 13
+D3
+~
+~
+0 -1 5531
+E
+grate~
+This grate is made of a silvery metal and shows no signs of oxidation.
+The sound of running water can be heard from it, but nothing can be seen
+when examined closely.
+~
+E
+flourescent lights~
+These look like your standard flourescent lights.  They hang from the
+ceiling and provice very good illumination.
+~
+S
+#5533
+Icy Crossing~
+Ice covers the cavern floor here and icicles hang from just about every
+stalagtite in sight.  The air is chilly and dry and a sense of foreboding
+surrounds you.  The passage through the cavern splits three ways: north,
+west and east.  The icy build up seems to be the greatest to the west.
+~
+0 2097160 13
+D0
+~
+~
+0 -1 5537
+D1
+~
+~
+0 -1 5530
+D3
+~
+~
+0 -1 5534
+E
+icicles stalagtites~
+Just about every stalagtite in sight has a meter-long icicle hanging from
+it.  Every once in a while you hear a crack and assume it's an icicle
+breaking free as its weight becomes too much for it to hold.
+~
+S
+#5534
+The Freezer~
+The entirety of this cavern, floor, ceiling, walls, stalagtites and 
+stalagmites, is covered in ice.  The air is downright frigid, a breeze
+is blowing from parts unknown, and unless you're dressed well or grew up
+somewhere &Wvery&g cold, you probably don't want to stay here for very
+long.  A section of the cavern wall, to the south, looks odd compared to
+the rest of the cavern.
+~
+0 2097160 13
+D1
+~
+~
+0 -1 5533
+D2
+~
+~
+39 5500 5535
+S
+#5535
+Chilly Antechamber~
+This is a spacious metal-clad room that has a bit of a chill to it.  To
+the north is a large metal door and to the south is an open archway.  The
+floor here is made of a metal grate set over what looks to be a sheet of
+ice.  Various lights blink on the walls and light panels are set in the
+ceiling.
+~
+0 2097160 13
+D0
+~
+~
+33 5500 5534
+D2
+~
+~
+0 -1 5536
+S
+#5536
+Mad Scientist's Lab~
+This room is huge.  It looks to be clad entirely in metal, with several sets
+of catwalks running around the perimeter at various levels.  Light panels are
+set in the ceiling, high above you, as well as in the walls.  Several large
+tables and mainframe-style computers sit in various locations about the
+room as well as the parts of what look to be various robots.
+~
+0 2097160 13
+D0
+~
+~
+0 -1 5535
+E
+catwalk catwalks~
+These catwalks wander around the perimeter of the room with various sets
+of either ladders or staircases leading from one to another.  It looks like
+there are about 6 sets, each spaced about 4 meters higher than the one below
+it, before one hits the roof.
+~
+S
+#5537
+Soggy Cavern~
+Parts of this natural cavern are covered in ice while other parts have
+small puddles of water.  Only a few stalgtites have icicles, and those
+that do are closer to the southern side of the cavern.  The north side
+seems to be a bit warmer, and you think you can hear the sound of a
+fire further along.
+~
+0 2097160 13
+D0
+~
+~
+0 -1 5538
+D2
+~
+~
+0 -1 5533
+S
+#5538
+Junk Pile~
+The natural cavern opens up into a high-vaulted area, here, with the ceiling
+shrouded in darkness somewhere above.  Strewn along the floor, around and
+sometimes impaled upon the stalagmites, are the remains of what appear to be
+several robots of varied purpose.  There are also some bare, broken bones
+to be found, in the detritus.  A small, narrow tube-like tunnel is in the
+southeast wall.  It looks like only one person could fit through at a time.
+~
+0 2097160 13
+D0
+~
+~
+0 -1 5539
+D2
+~
+~
+0 -1 5537
+D8
+~
+~
+0 -1 5540
+E
+remains robots~
+The parts that can be found on the floor are all broken and non-functional.
+There are tracked legs, arms that end in broken, scythe-like blades, and
+even a few campy-looking robot heads.
+~
+E
+bones~
+These bones look like they've been stripped of their flesh and muscle and
+have been sitting here for quite some time.  Some of them show deep gouges,
+as if they were cloven into by some sort of bladed weapon, while others
+are broken and splintered, as if some heavy object or over-whelming force
+smashed into them.
+~
+S
+#5539
+Uncomfortably Warm~
+The air in here is thick and muggy, making it difficult to breathe if one's
+not used to intense heat.  Various cracks in the natural stone floor seem
+to ooze further heat into the cavern and the stone itself looks like it's
+melting and dripping in areas.
+~
+0 2097160 13
+D2
+~
+~
+0 -1 5538
+E
+cracks~
+Intense heat emanates from the cracks in the floor.  As you listen closely
+you think you can hear the sound of flames from somewhere deep in the bowels
+of the earth.
+~
+S
+#5540
+Narrow Tube~
+The fit is close and cramped in here, but there doesn't seem to be a
+danger of getting stuck.  This tube-like tunnel is odd in the fact that
+its sides are perfectly smooth and it's perfectly round.  It almost looks
+like it was made by something and not natural.
+~
+0 2099208 13
+D2
+~
+~
+0 -1 5530
+D7
+~
+~
+0 -1 5538
+S
+#5541
+Quiet Side Tunnel~
+Other than the sound of the water flowing through the channel in the center
+of the tunnel, it's pretty quiet.  The faint smell of cooking food can barely
+be detected hanging in the air and it mingles with the lingering odor of
+the sewer system in general.
+~
+0 520 13
+D2
+~
+~
+0 -1 5525
+D6
+~
+~
+0 -1 5542
+S
+#5542
+Sweet-smelling Sewer Exit~
+The smell of food hangs heavy in the air, here.  The water flows at a
+decent rate down the channel, and heads off to the east.  The feed pipes
+look to be in average shape, but are at least doing their job and dumping
+the sewage into the main channel.  Metal rungs are set into the wall and
+end at a grate set in the ceiling.
+~
+0 520 13
+D1
+~
+~
+0 -1 5544
+D4
+~
+grate~
+1 -1 5543
+D9
+~
+~
+0 -1 5541
+S
+#5543
+Well-stocked Basement~
+This appears to be a basement used for the storage of perishable and non-
+perishable food items.  Various crates are stacked around the room as well
+as jars, bottles and boxes.  The smell of cooking food is very strong here,
+and light filters in under the door at the top of the stairs.  The din of
+conversation can be heard from the other side of the door.  A grate is set in
+the floor and appears to lead down.
+~
+0 8 0
+D5
+~
+grate~
+3 -1 5542
+E
+door~
+Light comes in from under the door, conversation can be heard, and the
+door appears to be locked.
+~
+S
+#5544
+Boring Sewer Tunnel~
+There's nothing remarkable here.  Feed pipes are set in the walls and dump
+their contents into channels that lead to the central water flow down the
+middle of the tunnel.  The smell isn't as bad as one would expect, especially
+since there's a slight hint of cooking food lingering in the air.  Other
+than that, it's dark, and slightly damp.
+~
+0 520 13
+D1
+~
+~
+0 -1 5545
+D3
+~
+~
+0 -1 5542
+S
+#5545
+Run-down Sewer Tunnel~
+The walls here are cracked and crumbling, as is the channel through which
+the water is supposed to flow.  Due to its erosion and the fact that the
+feed pipes are spewing their filth-ridden water where ever they please its
+almost impossible to walk through here without getting one's feet wet.  The
+smell is pretty horrible here, to boot, so it's probably not on anyone's
+top vacation spots in the Universe.
+~
+0 520 13
+D1
+~
+~
+0 -1 5546
+D3
+~
+~
+0 -1 5544
+S
+#5546
+Flooded Sewer Tunnel~
+The &Bwater&g has taken over this long strech of sewer tunnel and left it
+so there's no place to walk.  The water is dark and cloudy and emits a
+horrible smell, which only compounds the fact that you're probably going
+to have to swim through it.
+~
+0 8 6
+D1
+~
+~
+0 -1 5547
+D3
+~
+~
+0 -1 5545
+> rand_prog 20~
+mpecho The water suddenly ripples and the explodes in a shower as a silver-
+scaled fish leaps into the air.
+~
+|
+S
+#5547
+Mostly Dry Access Hatch~
+The sewer water coming in from the east all gets fed down a large grate
+that takes up most of the floor in the eastern end of the tunnel.  This
+leaves the western end amazingly dry.  The smell is only so-so, with the
+odd scent of ozone mixing with the raw sewage smell that prevails in the
+tunnel system.  A set of metal rungs is in the west wall and lead up to
+a grate in the ceiling.
+~
+0 520 13
+D3
+~
+~
+0 -1 5546
+D4
+~
+grate~
+1 -1 5548
+S
+#5548
+Overlooking The Subway Tracks~
+This is a small, caged room that looks out onto the subway tracks.  You can't
+hear the sound of the train, currently, and you're not even certain if these
+tracks are still in use.  The smell of ozone hangs in the air, probably coming
+from the crackling third rail that's on the other side of the cage.  Perhaps
+that high-pitched squealing is the sound of an oncoming subway train.  Or maybe
+it's just your brain playing tricks on you.
+~
+0 520 13
+D5
+~
+grate~
+1 -1 5547
+S
+#5549
+Well-worn Sewer Tunnel~
+The paths along the main channel look to be well-worn and in need of repair.
+The feed pipes are in pretty good shape and deposit their payload without
+any difficulty.  This, of course, is what makes the tunnel smell like raw
+sewage.  Of course, what's to be exptect in the sewers?
+~
+0 520 13
+D1
+~
+~
+0 -1 5550
+D3
+~
+~
+0 -1 5500
+S
+#5550
+T-Intersection~
+A t-intersection is formed by the meeting of east-bound, west-bound and
+south-bound tunnels here.  Water flows in from the east and west and then
+flows out to the south, leaving its noxious smell as it passes by.  The
+sound of a roaring flow of water can be heard to the east while an odd
+clinking noise comes from the south.
+~
+0 520 13
+D1
+~
+~
+0 -1 5551
+D2
+~
+~
+0 -1 5552
+D3
+~
+~
+0 -1 5549
+S
+#5551
+Residential Dead End?~
+The entire east wall of the tunnel is compirsed of a gigantic metal grate
+which allows the waterfall of water to flow into the rest of the tunnel.
+The sound of this water makes it nearly imposible to hear anything!  Set on
+the western end of the tunnel are a few cardboard boxes, arranged so that
+they almost look like a small tenement, though who would want to live in
+a place as filthy and noisome as this is beyond you.
+~
+0 65544 13
+D3
+~
+~
+0 -1 5550
+E
+cardboard boxes~
+These boxes look a bit water-logged but still seem to be sound.  Little
+cut-outs, reminiscent of windows, can be seen at various points, and what
+barely passes as rags are stuffed inside of them.
+~
+S
+#5552
+Clean Sewer Tunnel~
+Compared to most of the rest of the sewer tunnels, this one seems rather
+clean and doesn't even smell bad.  The feed pipes are in great shape,
+and the water they deposit into the main channel is crystal clear and
+almost sweet-smelling.  This just doesn't seem right.
+~
+0 520 13
+D0
+~
+~
+0 -1 5550
+D2
+~
+~
+0 -1 5553
+S
+#5553
+Sparkling T-Intersection~
+The stone-work here nearly sparkles with cleanliness.  A fresh, pine scent
+pervades the entire tunnel and the water looks, and smells, clean enough
+to drink.  The feed pipes have been buffed to a mirror sheen and little
+red bows have been tied around each one.  What's going on here?!?!
+~
+0 520 13
+D0
+~
+~
+0 -1 5552
+D1
+~
+~
+0 -1 5554
+D2
+~
+~
+0 -1 5557
+S
+#5554
+A Forest?~
+Even though this is still in the middle of the sewer system there are
+trees and shrubs growing here.  They seem to have seamlessly grown into
+the rock and stone and are flourishing despite the lack of sunlight.
+The whole tunnel seems vibrant and alive and has the clean, fresh smell
+of a forest about it.
+~
+0 520 13
+D1
+~
+~
+0 -1 5555
+D3
+~
+~
+0 -1 5553
+S
+#5555
+A Savannah?~
+You can't believe your eyes.  The walls and ceiling of the tunnel are still
+the same stone work that's throughout the sewer system, but the floor and
+channel have been transformed into a flat grassland with a river flowing
+through it.  The water looks clear and clean, the grass is real, living
+grass, and everything looks to be thriving.  The question is, who or what
+did this?
+~
+0 520 13
+D1
+~
+~
+0 -1 5556
+D3
+~
+~
+0 -1 5554
+S
+#5556
+Rocky Overlook~
+The tunnel has been modified and transformed so that it look like what
+one would expect to find in the mountains or foothills.  The water flowing
+through the channel has rocks built up around it to make it look like
+a mountain stream, the floor is uneven and craggy looking, and there are
+even a few scraggly-looking pines dotting the landscape.  In spite of this
+oddity, the other thing that catches your eye is the fact that the entire
+eastern side of the tunnel is a huge grate which looks out onto a river.
+~
+0 520 13
+D3
+~
+~
+0 -1 5555
+E
+grate~
+This grate looks to be made of solid metal and is securely anchored to the
+walls, floor and ceiling.  It doesn't look like it's going to budge.  It
+does look out onto an idyllic riverscape and fresh air from outside makes
+this entire tunnel section feel quite relaxing.
+~
+E
+river~
+Through the grate you can see the river as it lazily makes its way through
+its bed.  Various trees and plants line the banks and several rocky
+outcroppings can be seen from this vantage point.  All in all the river
+looks quite nice and inviting.
+~
+S
+#5557
+Trashed Sewer Tunnel~
+This portion of the sewer tunnel system is trashed.... literally.  There
+is refuse of just about every kind imaginable strewn about everything in
+the tunnel.  What looks like food wrappers are on the feed pipes, soiled
+under-garments float in the water, a rusted-out front quarter-panel is
+resting against a nearby wall, and innumerable other bits of debris are
+about.
+~
+0 520 13
+D0
+~
+~
+0 -1 5553
+D2
+~
+~
+0 -1 5558
+S
+#5558
+Clothes?!?!~
+Instead of a sewer tunnel it looks like you've stepped into the back room
+of a very busy laundry!  Clothes of just about every size, shape and color
+are stacked in neat piles all over the place.  It almost looks like each pile
+is sorted based on race and gender, but you're not entirely certain.  All in
+all, the entire scene is just very odd.
+~
+0 520 13
+D0
+~
+~
+0 -1 5557
+D3
+~
+~
+0 -1 5559
+S
+#5559
+Boxed In~
+Boxes, boxes, everywhere and not a drop to drink... no, wait, that's not
+how that goes.  But there are boxes everywhere.  This portion of the sewers
+has been turned into a massive store room for boxes of all shapes and
+sizes.  Some of them are even out in the middle of the channel, floating
+on top of a small wooden raft that's in the water.
+~
+0 520 13
+D1
+~
+~
+0 -1 5558
+D2
+~
+~
+0 -1 5565
+D3
+~
+~
+0 -1 5560
+E
+boxes~
+These boxes are all in very good shape, considering they're in such a
+dark, damp environment.  Most of the boxes are unmarked, but a few do
+have some labels on them.
+~
+E
+label labels~
+One box has a label that reads "Clothes 0-3m", another says "Shoes" and
+yet antoher says "College Notes".
+~
+S
+#5560
+The Tunnel Widens~
+The sewer tunnel is wider here than at most other points in the system.
+To the west it looks like the tunnel opens into a large chamber and to
+the east it narrows down to the normal size found throughout the sewer
+complex.  The feed pipes are oddly silent and the water seems to move
+very lazily in the channel.
+~
+0 520 13
+D1
+~
+~
+0 -1 5559
+D3
+~
+~
+0 -1 5561
+S
+#5561
+Crazy Town~
+This looks to have been some form of convergence of sewer tunnel pipes, but
+probably hasn't been used for that purpose in many years.  Instead this has
+become a small town of cardboard boxes.  The boxes have all been converted
+into make-shift housing and seem to be keeping pretty dry, in spite of the
+dampness that surrounds them.  A grate is set in the floor and held fast by a
+large, rusted padlock.
+~
+0 8 13
+D1
+~
+~
+0 -1 5560
+D4
+~
+~
+0 -1 5562
+D5
+~
+grate~
+7 5501 5563
+E
+boxes~
+These boxes have been cobbled together to form one, two and even three-
+story homes.  Windows and doors have been cut in them, and what vaguely
+passes for landscaping has been constructed from cardboard cutouts and
+placed in front of some of the "houses".
+~
+S
+#5562
+Empty Room~
+This room is dreadfully empty.  There's not even any dust on the floor.
+You're not certain what the purpose of this room used to be, but it's
+not doing anything now.  The floor is made of sturdy metal and the open
+doorway looks like it still has half the hinges that would have gone to
+a door.
+~
+0 520 13
+D5
+~
+~
+0 -1 5561
+S
+#5563
+Sump Room~
+The whirring sound of a working sump pump dominates this room.  It looks
+like it's barely holding its own, though, because the room is flooded to
+about knee height on a full-grown human.  There doesn't appear to be any
+water coming in through the grate, up above, so you're not entirely
+certain why this room is so flooded.
+~
+0 8 13
+D3
+~
+~
+0 -1 5564
+D4
+~
+grate~
+7 5501 5561
+S
+#5564
+Leaky Room~
+The west wall of this room has sprung a rather major leak.  Clear water gushes
+in through the sizable crack in the wall and has not only left this room 
+flooded to about knee height on a full-grown human, but it's run off into the
+adjoining room to the east.  Through the foam of where the water hits the
+surface of what's already in the room something &Wsparkles&g.
+~
+0 520 13
+D1
+~
+~
+0 -1 5563
+E
+something sparkle~
+You can barely make out something small and shiny in the foam of the water.
+You think it may be a necklace of some kind, but you're not entirely certain.
+~
+S
+#5565
+Jungle Fever~
+A jungle?!?  In the sewers?!?  You can't believe your eyes, but it certainly
+looks like you've stepped out of the sewers and into a jungle.  The trees,
+the underbrush, even the blank-faced monkey staring at you.  Wait a minute....
+that monkey's been staring at you for quite a while and he hasn't blinked.
+Now that you look a bit more closely, everything looks a little flat.  Well,
+it turns out this isn't a jungle at all.  It's just a bunch of cardboard cut
+into jungle shapes and painted.  Why would someone go to all this trouble?
+~
+0 520 13
+D0
+~
+~
+0 -1 5559
+D2
+~
+~
+0 -1 5566
+S
+#5566
+Turn In The Sewers~
+The sewer tunnel runs both north and southeast from here, with an
+assortment of feed pipes set along all the walls.  The smell here isn't
+too bad, and for the most part this is pretty nondescript.  Except for
+human-sized crack in the southwest corner of the tunnel.  It looks like
+it leads off to somewhere else.
+~
+0 520 13
+D0
+~
+~
+0 -1 5565
+D8
+~
+~
+0 -1 5567
+D9
+~
+~
+0 -1 5577
+S
+#5567
+Sewage!~
+This portion of the sewer tunnel smells HORRIBLE!  The feed pipes leak all
+manner of raw sewage into the main channel and the smell has just really
+mucked the place up.  This is NOT a place you'd want to vacation.  Perhaps
+things are a little better back to the northwest, which is where the water
+here is coming from.  Of course, they could also be better to the east,
+where the sewage is being swept away....
+~
+0 520 13
+D1
+~
+~
+0 -1 5568
+D7
+~
+~
+0 -1 5566
+S
+#5568
+Glowing Sewage~
+The water flowing through the channel, from the west, is just loaded with
+excrement and filth, which smells horrible.  What worries you, though is
+the fact that the liquid pouring out of the feed pipes is glowing a sickly
+shade of green.  It looks like it's causing some pretty nasty things to
+happen to the floaters as the two liquids mix.
+~
+0 520 13
+D1
+~
+~
+0 -1 5569
+D3
+~
+~
+0 -1 5567
+S
+#5569
+Slashed Tunnel~
+This portion of the tunnel looks like it's been through some pretty rough
+times.  The feed pipes, and even the stone walls and floor, have been gouged
+and rended with something.  You're not entirely certain what caused the
+damage, but if you had to place a guess you'd think it was some form of
+claw-like device.
+~
+0 520 13
+D1
+~
+~
+0 -1 5570
+D3
+~
+~
+0 -1 5568
+S
+#5570
+Daylight!~
+Daylight streams in from the broken grating that takes up the entire east
+side of the tunnel.  A peaceful looking river can be seen through the exit
+that yawns in the grating.  The glowing, filthy sewage that's been carried
+along the water-flow is being dumped right into that peaceful river, though,
+which means that anyone who chooses to swim, downstream, is in for a big
+surprise!
+~
+0 8 13
+D1
+~
+~
+0 -1 5571
+D3
+~
+~
+0 -1 5569
+S
+#5571
+On The River~
+You find yourself in the middle of a river.  The water flows from the north
+to the south, and a loud roaring noise can be faintly heard downstream.  The
+eastern bank is overgrown and does not appear to have a suitable spot to land
+nor does it have a path through the forest.
+~
+0 0 6
+D0
+~
+~
+0 -1 5572
+D2
+~
+~
+0 -1 5575
+D3
+~
+~
+0 -1 5570
+S
+#5572
+On The River, Near the Bank~
+The river looks to be somewhat choppy and flows at a pretty decent rate
+as it makes its way south.  The western bank is a tall, sheer cliff that
+looks to be unclimbable while the eastern bank seems to have a small
+clearing in the vegetation that would be suitable for someone to check
+out.
+~
+0 0 6
+D0
+~
+~
+0 -1 5574
+D1
+~
+~
+0 -1 5573
+D2
+~
+~
+0 -1 5571
+S
+#5573
+Wooded River Bank~
+Tall trees with white bark line this river bank while lush, green foliage
+covers most of the ground.  Rocks of various sizes not only jut into the
+river but poke up from the dirt as well.  The trees and underbrush are
+very thick and make passage through the forest impossible.
+~
+0 0 3
+D3
+~
+~
+0 -1 5572
+S
+#5574
+Cliff Face~
+An imposing, granite cliff face is the only visible feature to the north.
+A river flows from its base and wends its way to the south.  There is very
+little room between the water and the cliff and coupled with the strength
+of the current it would be impossible to swim under the cliff and see
+where the river leads.
+~
+0 0 6
+D2
+~
+~
+0 -1 5572
+S
+#5575
+Class 3 Rapids~
+Large rocks and a powerful current have made this portion of the river
+into a Class 3 rapids.  The water foams around the rocks and driftwood
+ends up getting splintered through certain passages within the water.
+You think that this particular rapids might hit Class 4, or even Class
+5, if the water gets to moving fast enough.
+~
+0 0 6
+D0
+~
+~
+0 -1 5571
+D2
+~
+~
+0 -1 5576
+S
+#5576
+Top of the Waterfall~
+he river ends here, rather suddenly, at the top of a waterfall.  You can
+see the water cascade down for dozens of meters before it's dashed against
+the rocks below.  A dark opening yawns in the western cliff face and
+the eastern bank is dotted with large rocks and overgrown with trees and
+shrubs.
+~
+0 0 6
+D0
+~
+~
+0 -1 5575
+D3
+~
+~
+0 -1 5590
+S
+#5577
+Old Sewers~
+The stone work here is done up in a style that hasn't been used in several
+decades, if not several centuries.  Instead of a large central channel to
+carry the sewage there are several aqueducts making a criss-crossing pattern
+high over-head.  There doesn't appear to be any water flowing, and everything
+looks run down and in need of maintenance.
+~
+0 520 13
+D2
+~
+~
+0 -1 5578
+D6
+~
+~
+0 -1 5566
+S
+#5578
+And They All Fell Down~
+The aqueducts here have fallen into such disrepair that there are only
+bits and pieces of them left standing.  Solitary suport pillars dot the
+landscape and moss has grown between the cracks in the stone floor and
+walls.
+~
+0 520 13
+D0
+~
+~
+0 -1 5577
+D2
+~
+~
+0 -1 5579
+S
+#5579
+Aqueducts Meet~
+The tangle of stone that starts about 2 meters off the ground and rises to
+the ceiling is impressive.  This looks to have been a major switching station
+for the ancient sewer system that is in place here.  No water currently flows
+through the stone channels high above, but it must have made quiet a noise
+back when all of this was actually in use.
+~
+0 520 13
+D0
+~
+~
+0 -1 5578
+D2
+~
+~
+0 -1 5585
+D3
+~
+~
+0 -1 5580
+S
+#5580
+Gradual Incline~
+The passage gradually rises to the west but seems the same other than that.
+Stone aqueducts stand at various points in here, set up to carry water to
+and from points unknown.  An aura of quiet hangs in the air which lends to
+the ancient, revered feeling that surrounds the stone work.
+~
+0 520 13
+D1
+~
+~
+0 -1 5579
+D3
+~
+~
+0 -1 5581
+S
+#5581
+Going Up?~
+The ancient sewer system that's evident looks like it has a starting point
+here.  The reason you believe that is due to the fact that the aqueducts
+run downhill from here to the east.  The aqueducts themselves are quite a
+marvel to look at, since they're made entire of stone.  A set of rusty,
+metal rungs are set into the north wall and lead up to a rusted grate
+that you're not entirely certain will still open.
+~
+0 520 13
+D1
+~
+~
+0 -1 5580
+D4
+~
+grate rusted~
+1 -1 5582
+S
+#5582
+Small Office~
+This smallish room looks to have been an office at some point.  The scattered
+remains of office furniture are strewn about the place along with some pretty
+hefty chunks of stone.  It looks like this room was buried under a lot of
+rock and soil and some point, which would account for the collapse of the
+roof in the northeast corner.  There are doors leading out of the room to the
+north and the west.
+~
+0 8 13
+D0
+~
+~
+1 -1 5583
+D3
+~
+~
+1 -1 5583
+D5
+~
+grate rusted~
+1 -1 5581
+S
+#5583
+Abandoned, Buried Warehouse~
+This huge empty space looks to have been a warehouse at one point in time.
+Now it seems to serve as some form of meeting area.  The few crates that
+haven't rotted away are stacked in the southwest corner of the warehouse.
+A cave-in has blocked most of the northeastern corner, but the small walls
+of what looks to be an office take up the southeastern corner, with doors
+that let one in going both south and east.  Another small, office-like
+structure takes up the northwestern corner, with the access points leading
+north and west.
+~
+0 8 13
+D0
+~
+~
+7 5502 5584
+D1
+~
+~
+3 -1 5582
+D2
+~
+~
+3 -1 5582
+D3
+~
+~
+7 5502 5584
+S
+#5584
+Converted Office~
+At one point in time this was an office, that much is evident from the desks
+and chairs that have been piled in one corner.  At this point in time, the
+room has been converted to a storage shed.  Several of the cabinets in here
+have doors that hang open on broken hinges, but there are still a couple
+others that look to still be in working condition.
+~
+0 8 13
+D1
+~
+~
+7 5502 5583
+D2
+~
+~
+7 5502 5583
+S
+#5585
+Gruesome T-Intersection~
+This looks like a scene straight out of a horror movie.  Streamers of what
+you're pretty sure are entrails are strung along the walls and hang from
+the aqueducts.  Severed hands and feet and nailed into the stone, some with
+mostly decayed flesh hanging loosely from the bones, and blood is splattered
+just about everywhere.
+~
+0 520 13
+D0
+~
+~
+0 -1 5579
+D2
+~
+~
+0 -1 5586
+D3
+~
+~
+0 -1 5591
+S
+#5586
+Boneyard~
+Most of the aqueducts here have fallen over and are nothing more than a
+pile of rocks and debris.  Scattered among these piles of rubble are the
+bones of various hapless victims.  To the southeast, however, is a very
+large pile of bones, with an assortment of skulls placed on the top as
+some form of grisly headstone, perhaps.
+~
+0 520 13
+D0
+~
+~
+0 -1 5585
+D1
+~
+~
+0 -1 5587
+S
+#5587
+Aqueducts End~
+The aqueducts look to come to an end here, angling down to deposit their
+payload (which they aren't transporting now, and probably haven't in a
+very long time) into the large grate that takes up most of the floor.  The
+grate still looks sound and is made of metal.  It appears to be quite
+securely fastened into the floor and it would take an awful lot of force to
+either move it or destroy it.  A large rent has been torn in the the stone
+wall to the northeast.
+~
+0 520 13
+D3
+~
+~
+0 -1 5586
+D6
+~
+~
+0 -1 5588
+S
+#5588
+Natural Tunnel~
+A natural tunnel goes off to the east, here, and a nasty-looking hole has
+been torn int he southwest portion of the cave.  Stalagtites and stalagmites
+dot the ceiling and floor while small pools of water stand in various spots
+in the cave.
+~
+0 8 13
+D1
+~
+~
+0 -1 5589
+D9
+~
+~
+0 -1 5587
+E
+pools water~
+These pools look to be rather clear and clean.  They may even be safe to
+drink!
+~
+S
+#5589
+Underground Amphitheatre~
+A large natural cavern has been formed here, most likely through natural
+means.  What doesn't look natural, however, is the large, flat, open space
+set near the middle of the cavern.  What also doesn't look natural are the
+indentations in some stone shelves set in the floor around the open area.
+While they don't look entirely natural, they have been fashioned to mostly
+resemble natural structures, given the whole place an aesthetically appealing
+look.  With the way everything is arrange, you'd have to assume that this
+was, at one point, an amphitheatre or arena.
+~
+0 8 13
+D1
+~
+~
+0 -1 5590
+D3
+~
+~
+0 -1 5588
+S
+#5590
+Misty Tunnel~
+A load roaring noise can be heard from the cave opening to the east.  A
+light mist sprays in from that direction as well, making the entire tunnel
+slippery and hazardous for much more than a walking pace.  To the west the
+tunnel seems to widen into a large open area.
+~
+0 8 13
+D1
+~
+~
+0 -1 5576
+D3
+~
+~
+0 -1 5589
+S
+#5591
+Meat Locker~
+The stone aqueducts here serve as little more than solid, ornate hanging
+racks for quite an assortment of dead bodies.  The bodies range from all
+manner of animal to several humanoid shapes and are in various states of
+completeness.  From the look of things, this is a large meat locker and
+the hanging bodies are the meat!
+~
+0 520 13
+D1
+~
+~
+0 -1 5585
+D3
+~
+~
+0 -1 5592
+S
+#5592
+Preparation Area~
+Bits and pieces of bodies are in various forms of preparation here.  Some
+look to be just in the skinning and portioning stage while others have been
+cured and/or marinated and are getting ready to be cooked.  Some large metal
+cook-pots have been hung by heavy metal chains that are attached to the
+stone aqueducts about 2 meters above the floor.  The smell is oddly 
+appealing, considering what some of the pieces being cooked used to be...
+~
+0 8 13
+D1
+~
+~
+0 -1 5591
+D3
+~
+~
+0 -1 5593
+S
+#5593
+Feast!~
+What was a tunnel has opened into a huge room, with criss-crossing stone
+aqueducts winding and wending their way throughout it.  A tunnel entrance
+is barely visible off to the west, both because of the size of the room
+and due to the fact that there are huge piles of bones and bodies all
+over the room.  Most of the body parts do look like they've been cooked,
+but not all of them look all that appealing.
+~
+0 8 13
+D1
+~
+~
+0 -1 5592
+D3
+~
+~
+0 -1 5594
+S
+#5594
+Trash~
+Refuse is piled high and deep, here.  You can see bones, clothing, boxes,
+paper, metal, a little bit of everything.  Most of it looks like it was
+ripped from whoever owned it and then just thrown here.  It also looks
+like something may make its home in the piles, as evidenced by the various
+holes and tunnels that have been made.
+~
+0 12 13
+D1
+~
+~
+0 -1 5593
+D3
+~
+~
+0 -1 5595
+S
+#5595
+Everyone Out of the Pool!~
+The stone work on the floor has ben fashioned into a large pool that takes
+up the better part of this section of the tunnel.  Only a couple of aqueducts
+stand here, angled so the water they'd carry would be taken to the northwest.
+Steam rises from the pool, giving the air a humid quality.
+~
+0 12 13
+D1
+~
+~
+0 -1 5594
+D7
+~
+~
+0 -1 5596
+S
+#5596
+Abrupt End~
+The tunnel has collapsed, to the north, cutting off any further travel in
+that direction.  The aqueducts that lead that way end in jagged edges a
+couple of meters before the cave-in, but they do lead off to the southeast,
+where it looks like the tunnel is still intact.
+~
+0 12 13
+D8
+~
+~
+0 -1 5595
+S
+#5597
+Floating in a void~
+~
+0 2097156 1
+S
+#5598
+Floating in a void~
+~
+0 2097156 1
+S
+#5599
+Floating in a void~
+~
+0 2097156 1
+S
+#0
+
+
+#RESETS
+M 1 5500 1 5504
+M 1 5501 1 5506
+M 1 5502 1 5506
+M 1 5503 1 5508
+M 1 5504 1 5508
+M 1 5505 1 5526
+M 1 5506 1 5526
+M 1 5507 1 5526
+M 1 5513 1 5539
+M 1 5516 1 5546
+M 1 5516 1 5546
+M 1 5516 1 5546
+M 1 5516 1 5546
+M 1 5517 1 5546
+M 1 5520 1 5561
+M 1 5521 1 5561
+M 1 5522 1 5561
+G 1 5501 1
+D 0 5561 5 2
+M 1 5523 1 5570
+M 1 5524 1 5583
+M 1 5525 1 5583
+M 1 5526 1 5583
+G 1 5502 1
+D 0 5583 0 2
+D 0 5583 1 1
+D 0 5583 2 1
+D 0 5583 3 2
+M 1 5527 1 5589
+M 1 5510 1 5534
+G 1 5500 1
+D 0 5534 2 2
+O 1 5503 1 5500
+O 1 5504 1 5515
+O 1 5505 1 5515
+M 1 5508 1 5532
+M 1 5509 1 5532
+O 1 5506 1 5532
+O 1 5507 1 5532
+O 1 5508 1 5532
+M 1 5512 1 5536
+M 1 5511 1 5536
+E 1 5512 1 17
+E 1 5511 1 12
+O 1 5509 1 5536
+O 1 5510 1 5536
+O 1 5513 1 5529
+M 1 5514 1 5543
+M 1 5515 1 5543
+O 1 5515 1 5543
+O 1 5514 1 5543
+D 0 5543 5 1
+O 1 5518 1 5564
+O 1 5519 1 5584
+D 0 5584 1 2
+D 0 5584 2 2
+M 1 5528 1 5592
+M 1 5529 1 5592
+E 1 5533 1 16
+M 1 5530 1 5592
+E 1 5534 1 3
+O 1 5522 1 5592
+M 1 5531 1 5593
+M 1 5532 1 5593
+M 1 5532 1 5593
+M 1 5532 1 5593
+M 1 5532 1 5593
+O 1 5524 3 5593
+O 1 5526 1 5593
+O 1 5525 1 5593
+M 1 5533 1 5595
+O 1 5527 1 5595
+M 1 5518 1 5551
+M 1 5519 1 5551
+M 1 5501 1 5549
+M 1 5517 1 5514
+M 1 5506 1 5514
+D 0 5514 0 1
+D 0 5514 3 1
+M 1 5506 1 5522
+M 1 5500 1 5545
+M 1 5505 1 5519
+M 1 5500 1 5563
+M 1 5507 1 5563
+D 0 5563 4 2
+M 1 5517 1 5572
+M 1 5516 1 5574
+M 1 5516 1 5574
+M 1 5516 1 5574
+M 1 5515 1 5573
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

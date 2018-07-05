@@ -1,0 +1,222 @@
+Name          Wizard~
+Class         9
+AttrPrime     1
+AttrSecond    0
+AttrDeficient 0
+Weapon        0
+Guild         0
+Skilladept    95
+Thac0         18
+Thac32        6
+Hpmin         11
+Hpmax         15
+Mana          0
+Expbase       1150
+Affected      0
+Resist        0
+Suscept       0
+Skill 'aid' 1000 95
+Skill 'block' 15000 95
+Skill 'dcd' 2500000 95
+Skill 'dodge' 100000 95
+Skill 'dodon ray' 50000000 95
+Skill 'fly' 50000 95
+Title
+Newbie Fighter~
+Newbie Fighter~
+Title
+Fighter in Training~
+Fighter in Training~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Not set.~
+Not set.~
+Title
+Avatar~
+Avatar~
+Title
+Neophyte~
+Neophyte~
+Title
+Acolyte~
+Acolyte~
+Title
+Creator~
+Creator~
+Title
+Savior~
+Savior~
+Title
+Demi God~
+Demi Goddess~
+Title
+Immortal~
+Immortal~
+Title
+Lesser God~
+Lesser Goddess~
+Title
+God~
+Goddess~
+Title
+Greater God~
+Greater Goddess~
+Title
+Ascendant God~
+Acendant Goddess~
+Title
+Exalted God~
+Exalted Goddess~
+Title
+Ancient One~
+Ancient One~
+Title
+Eternal One~
+Eternal One~
+Title
+Infinite One~
+Infinite One~
+Title
+Supreme Entity~
+Supreme Entity~
+End

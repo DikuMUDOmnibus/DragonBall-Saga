@@ -1,0 +1,3123 @@
+#AREA   Kame's lookout/Korins tower~
+
+
+
+#VERSION 252
+#AUTHOR Ubuu~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 4
+
+#RESETMSG You hear a soft wind whistle through the palace halls~
+
+#FLAGS
+2 10
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#2000
+Mr. Popo~
+Mr. Popo~
+Mr. Popo is here, tending to the lookout.
+~
+~
+67109953 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 1
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#2001
+mustard mean ghetti~
+Mustard~
+A mean looking Ghetti is here, watching your every move.
+~
+~
+65 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 145000000
+112 112 0
+12 5 13 6 14
+0 0 0 0 0
+3 3 0 0 1 1 3
+0 0 0 0 0 0 48 4096
+#2002
+a former guardian of earth~
+A former guardian of earth~
+A former guardian of earth is floating here.
+~
+~
+35 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 200000000
+112 112 0
+40 80 40 60 40
+0 0 0 0 0
+1 1 0 0 1 1 5
+0 0 0 0 0 0 304 0
+#2003
+spice large ghetti~
+Spice~
+A large Ghetti is looking for someone to beat up.
+~
+~
+65 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 145000000
+112 112 0
+12 5 13 5 7
+0 0 0 0 0
+3 3 0 0 1 1 4
+0 0 0 0 0 0 16 0
+> greet_prog 100~
+mpecho $i says, 'Hey, who are you?!'
+mpecho $i says, 'get ready for some pain!'
+~
+|
+#2004
+vinegar strong ghetti~
+Vinegar~
+A strong looking Ghetti is sneaking around here.
+~
+~
+65 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 150000000
+112 112 0
+13 5 14 7 12
+0 0 0 0 0
+3 3 0 0 1 1 4
+0 0 0 0 0 0 32 0
+#2005
+salt powerful ghetti~
+Salt~
+A powerful Ghetti is here looking for blood.
+~
+~
+65 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 150000000
+112 112 0
+14 15 14 12 12
+0 0 0 0 0
+3 3 0 0 1 1 4
+0 0 0 0 0 0 48 0
+#2006
+Garlic Jr.~
+Garlic Jr.~
+Garlic Jr. is here, plotting his evil revenge.
+~
+~
+3 128 -1000 C
+1 0 80 1d20+0 2d5+0
+-1 100000000000
+112 112 0
+90 70 90 100 50
+0 0 0 0 0
+3 3 0 0 1 1 5
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpecho $I grins at you
+mpecho $I says, 'I will rule this world!'
+mpecho $I says, 'Now what are you going to do about it?!'
+mpecho $I cackles insanely
+~
+> fight_prog 10~
+mpecho $I yells, "Belly Blast!!"
+mpecho $I fires several large rings from his stomach
+mpdamage $n 4
+~
+> death_prog 100~
+if rand(1)
+if rand(33)
+mpoload 100321
+endif
+endif
+~
+|
+#2007
+korin~
+Korin~
+A fluffy white cat with a long cane is standing here.
+~
+~
+67108867 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 1
+112 112 0
+5 18 5 5 18
+0 0 0 0 0
+0 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpecho $I smiles
+mpecho $I says, 'Welcome welcome!'
+mpecho $I says, 'What can I do for you today?'
+~
+|
+#0
+
+
+#OBJECTS
+#2000
+an assortment of beautifull flowers~
+an assortment of beautifull flowers~
+An assortment of beautifull flowers are growing here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#2001
+a Senzu Bean~
+a Senzu Bean~
+Someone has carelessly dropped a precious Senzu Bean here.~
+~
+26 64 1
+1 -1 -1 -1 20 0
+1 0 5000
+ 0
+'sensu bean' 'none' 'none'
+#2002
+The Key of Spirit and Time~
+The Key of Spirit and Time~
+A long glowing key is lying on the floor.~
+~
+18 8388609 1
+2060 0 0 0 0 0
+1 0 0
+ 0
+#2003
+a huge hourglass~
+a huge hourglass~
+A huge hourglass is resting here, keeping track of a warriors time in this
+
+dimension.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#2004
+a large bed~
+a large bed~
+A large four-poster bed sits in northeast corner of the room.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#2005
+kame's throne~
+Kame's Throne~
+Kame's throne rests against the northern wall.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#2006
+sacred water~
+sacred water~
+Someone has abandoned a bottle of super pure water.~
+~
+10 0 1
+50 -1 -1 -1 0 0
+1 0 0
+ 0
+'heal' 'heal' 'heal'
+#2007
+the seven air currents of the world~
+the seven air currents of the world~
+The seven air currents of the world are swirling and thrashing about here.~
+~
+13 2 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#2008
+a small senzu bag~
+a small senzu bag~
+A small brown bag is lying in the dirt.~
+~
+15 0 2049
+3 0 0 0 0 0
+1 60 100
+ 0
+#2009
+a long ladder~
+a long ladder~
+A long ladder is hanging from the side of the lookout here.~
+~
+13 8388608 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#2000
+Southern Tip of Kame's Lookout~
+This is the southernmost point of Kame's lookout.  Gazing down at the
+world and it's inhabitants below, you notice everything has become a
+colorfull blur.  Kame's palace lies to the north and Korins tower awaits you
+to the south.
+~
+0 0 1
+D0
+~
+~
+0 -1 2003
+D1
+~
+~
+0 -1 2001
+S
+#2001
+Southern Tip of Kame's Lookout~
+This is the southernmost point of Kame's lookout.  Gazing down at the
+world and it's inhabitants below, you notice everything has become a
+colorfull blur.  Kame's palace lies to the north and Korin's tower awaits
+you to the south.
+~
+0 0 1
+D0
+~
+~
+0 -1 2005
+D1
+~
+~
+0 -1 2002
+D3
+~
+~
+0 -1 2000
+D5
+~
+~
+0 -1 2123
+S
+#2002
+Southern Tip of Kame's Lookout~
+This is the southernmost point of Kame's lookout.  Gazing down at the
+world and it's inhabitants below, you notice everything has become a
+colorfull blur.  Kame's palace lies to the north and Korin's tower awaits
+you to the south.
+~
+0 0 1
+D0
+~
+~
+0 -1 2006
+D3
+~
+~
+0 -1 2001
+S
+#2003
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2010
+D1
+~
+~
+0 -1 2005
+D2
+~
+~
+0 -1 2000
+D3
+~
+~
+0 -1 2004
+S
+#2004
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2008
+D1
+~
+~
+0 -1 2003
+S
+#2005
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2011
+D1
+~
+~
+0 -1 2006
+D2
+~
+~
+0 -1 2001
+D3
+~
+~
+0 -1 2003
+S
+#2006
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2012
+D1
+~
+~
+0 -1 2007
+D2
+~
+~
+0 -1 2002
+D3
+~
+~
+0 -1 2005
+S
+#2007
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2013
+D3
+~
+~
+0 -1 2006
+S
+#2008
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2017
+D1
+~
+~
+0 -1 2010
+D2
+~
+~
+0 -1 2004
+D3
+~
+~
+0 -1 2009
+S
+#2009
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2015
+D1
+~
+~
+0 -1 2008
+S
+#2010
+Mr. Popo's Garden~
+The smell here is wonderfull!  You're in the middle of Mr. Popo's garden
+and it's evident he has a real talent.  Exotic flowers of every variety are
+blossoming here, as their sweet aroma fills your nostrils you feel calmed.
+~
+0 0 1
+D0
+~
+~
+0 -1 2018
+D1
+~
+~
+0 -1 2011
+D2
+~
+~
+0 -1 2003
+D3
+~
+~
+0 -1 2008
+S
+#2011
+Approaching Kame's Palace~
+As you further approach Kame's palace you notice a wonderfull smell
+wafting in from either side of you, for a moment it even draws your
+attention away from the massive structure which lies to the north, should
+you take a break and investigate?
+~
+0 0 1
+D0
+~
+~
+0 -1 2019
+D1
+~
+~
+0 -1 2012
+D2
+~
+~
+0 -1 2005
+D3
+~
+~
+0 -1 2010
+S
+#2012
+Mr. Popo's Garden~
+The smell here is wonderfull!  You're in the middle of Mr. Popo's garden
+and it's evident he has a real talent.  Exotic flowers of every variety are
+blossoming here, as their sweet aroma fills your nostrils you feel calmed.
+~
+0 0 1
+D0
+~
+~
+0 -1 2020
+D1
+~
+~
+0 -1 2013
+D2
+~
+~
+0 -1 2006
+D3
+~
+~
+0 -1 2011
+S
+#2013
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2021
+D1
+~
+~
+0 -1 2014
+D2
+~
+~
+0 -1 2007
+D3
+~
+~
+0 -1 2012
+S
+#2014
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2022
+D3
+~
+~
+0 -1 2013
+S
+#2015
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2027
+D1
+~
+~
+0 -1 2017
+D2
+~
+~
+0 -1 2009
+D3
+~
+~
+0 -1 2016
+S
+#2016
+Skirting Kame's Lookout~
+Your cheek is carressed by a gentle breeze as you hesitantly gaze over
+the side of the lookout, the cars and citizens look no bigger than ants, you
+decide a fall from this distance would kill you and move further from the
+edge.
+~
+0 0 1
+D0
+~
+~
+0 -1 2028
+D1
+~
+~
+0 -1 2015
+S
+#2017
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2026
+D1
+~
+~
+0 -1 2018
+D2
+~
+~
+0 -1 2008
+D3
+~
+~
+0 -1 2015
+S
+#2018
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2025
+D1
+~
+~
+0 -1 2019
+D2
+~
+~
+0 -1 2010
+D3
+~
+~
+0 -1 2017
+S
+#2019
+Standing in front of Kame's Palace~
+Wind whips all around you as a strong breeze blows forcefully through the
+lookout, chilling you to the bone. Kame's palace is located directly north,
+the exit ladder is further south.
+~
+0 0 1
+D0
+~
+~
+0 -1 2024
+D1
+~
+~
+0 -1 2020
+D2
+~
+~
+0 -1 2011
+D3
+~
+~
+0 -1 2018
+S
+#2020
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2030
+D1
+~
+~
+0 -1 2021
+D2
+~
+~
+0 -1 2012
+D3
+~
+~
+0 -1 2019
+S
+#2021
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2031
+D1
+~
+~
+0 -1 2022
+D2
+~
+~
+0 -1 2013
+D3
+~
+~
+0 -1 2020
+S
+#2022
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2032
+D1
+~
+~
+0 -1 2023
+D3
+~
+~
+0 -1 2021
+S
+#2023
+Skirting Kame's Lookout~
+Your cheek is carressed by a gentle breeze as you hesitantly gaze over
+the side of the lookout, the cars and citizens look no bigger than ants, you
+decide a fall from this distance would kill you and move further from the
+edge.
+~
+0 0 1
+D0
+~
+~
+0 -1 2033
+D3
+~
+~
+0 -1 2022
+S
+#2024
+Palace Entrance~
+You're standing under a bright pink canopy, the entrance to the palace of
+the guardian of earth.  The palace door lies to the north, the lookout is
+further south.
+~
+0 8 1
+D0
+~
+~
+0 -1 2035
+D2
+~
+~
+0 -1 2019
+S
+#2025
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2036
+D2
+~
+~
+0 -1 2018
+D3
+~
+~
+0 -1 2026
+S
+#2026
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2037
+D1
+~
+~
+0 -1 2025
+D2
+~
+~
+0 -1 2017
+D3
+~
+~
+0 -1 2027
+S
+#2027
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2038
+D1
+~
+~
+0 -1 2026
+D2
+~
+~
+0 -1 2015
+D3
+~
+~
+0 -1 2028
+S
+#2028
+Western Side of Kame's Lookout~
+You are travelling the western side of the lookout, the palace is further
+east while the western tip of the lookout is found further west.
+~
+0 0 1
+D0
+~
+~
+0 -1 2039
+D1
+~
+~
+0 -1 2027
+D2
+~
+~
+0 -1 2016
+D3
+~
+~
+0 -1 2029
+S
+#2029
+Western Side of Kame's Lookout~
+You are travelling the western side of the lookout, the palace is further
+east while the western tip of the lookout is found further west.
+~
+0 0 1
+D0
+~
+~
+0 -1 2040
+D1
+~
+~
+0 -1 2028
+S
+#2030
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2042
+D1
+~
+~
+0 -1 2031
+D2
+~
+~
+0 -1 2020
+S
+#2031
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2043
+D1
+~
+~
+0 -1 2032
+D2
+~
+~
+0 -1 2021
+D3
+~
+~
+0 -1 2030
+S
+#2032
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2044
+D1
+~
+~
+0 -1 2033
+D2
+~
+~
+0 -1 2022
+D3
+~
+~
+0 -1 2031
+S
+#2033
+Eastern Side of Kame's Lookout~
+You are travelling the eastern side of the lookout, the palace is further
+west while the eastern tip of the lookout is found further east.
+~
+0 0 1
+D0
+~
+~
+0 -1 2045
+D1
+~
+~
+0 -1 2034
+D2
+~
+~
+0 -1 2023
+D3
+~
+~
+0 -1 2032
+S
+#2034
+Eastern Side of Kame's Lookout~
+You are travelling the eastern side of the lookout, the palace is further
+west while the eastern tip of the lookout is found further east.
+~
+0 0 1
+D0
+~
+~
+0 -1 2046
+D3
+~
+~
+0 -1 2033
+S
+#2035
+Before the Palace Doors~
+You stand before the door to Kame's palace, it appears to be set in gold
+and etched with several ancient looking runes.  You push on the door and it
+seems to be open, maybe you should find your own way in.
+~
+0 8 1
+D0
+~
+door~
+1 -1 2048
+D2
+~
+~
+0 -1 2024
+S
+#2036
+Next to the Palace~
+A large palace towers above you to the east.
+~
+0 0 1
+D0
+~
+~
+0 -1 2068
+D2
+~
+~
+0 -1 2025
+D3
+~
+~
+0 -1 2037
+S
+#2037
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2069
+D1
+~
+~
+0 -1 2036
+D2
+~
+~
+0 -1 2026
+D3
+~
+~
+0 -1 2038
+S
+#2038
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2070
+D1
+~
+~
+0 -1 2037
+D2
+~
+~
+0 -1 2027
+D3
+~
+~
+0 -1 2039
+S
+#2039
+Western Side of Kame's Lookout~
+You are travelling the western side of the lookout, the palace is further
+east while the western tip of the lookout is found further west.
+~
+0 0 1
+D0
+~
+~
+0 -1 2071
+D1
+~
+~
+0 -1 2038
+D2
+~
+~
+0 -1 2028
+D3
+~
+~
+0 -1 2040
+S
+#2040
+Western Side of Kame's Lookout~
+You are travelling the western side of the lookout, the palace is further
+east while the western tip of the lookout is found further west.
+~
+0 0 1
+D0
+~
+~
+0 -1 2072
+D1
+~
+~
+0 -1 2039
+D2
+~
+~
+0 -1 2029
+D3
+~
+~
+0 -1 2041
+S
+#2041
+Western Tip of Kame's Lookout~
+This is the westernmost point of Kame's lookout.
+~
+0 0 1
+D0
+~
+~
+0 -1 2073
+D1
+~
+~
+0 -1 2040
+S
+#2042
+Next to the Palace~
+A large palace towers above you to the west.
+~
+0 0 1
+D0
+~
+~
+0 -1 2074
+D1
+~
+~
+0 -1 2043
+D2
+~
+~
+0 -1 2030
+S
+#2043
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2075
+D1
+~
+~
+0 -1 2044
+D2
+~
+~
+0 -1 2031
+D3
+~
+~
+0 -1 2042
+S
+#2044
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2076
+D1
+~
+~
+0 -1 2045
+D2
+~
+~
+0 -1 2032
+D3
+~
+~
+0 -1 2043
+S
+#2045
+Eastern Side of Kame's Lookout~
+You are travelling the eastern side of the lookout, the palace is further
+west while the eastern tip of the lookout is found further east.
+~
+0 0 1
+D0
+~
+~
+0 -1 2077
+D1
+~
+~
+0 -1 2046
+D2
+~
+~
+0 -1 2033
+D3
+~
+~
+0 -1 2044
+S
+#2046
+Eastern Side of Kame's Lookout~
+You are travelling the eastern side of the lookout, the palace is further
+west while the eastern tip of the lookout is found further east.
+~
+0 0 1
+D0
+~
+~
+0 -1 2078
+D1
+~
+~
+0 -1 2047
+D2
+~
+~
+0 -1 2034
+D3
+~
+~
+0 -1 2045
+S
+#2047
+Eastern Tip of Kame's Lookout~
+This is the easternmost point of Kame's lookout.
+~
+0 0 1
+D0
+~
+~
+0 -1 2079
+D3
+~
+~
+0 -1 2046
+S
+#2048
+Palace Entrance Hall~
+You've now entered Kame's palace, and what a grand palace. Everything you
+see leaves you in awe, from the towering stone pillars to the masterfully
+carved woodwork, it is a work of art indeed. A faint flickering light can be
+seen to the north and the beggining of a large staircase to the northeast.
+~
+0 2097160 1
+D0
+~
+~
+0 -1 2055
+D1
+~
+door~
+1 -1 2050
+D2
+~
+door~
+1 -1 2035
+D6
+~
+~
+0 -1 2053
+D7
+~
+~
+0 -1 2049
+S
+#2049
+A Long Circular Hallway~
+This is the main hallway, leading you to every destination in the palace.
+The walls are smooth and are solid white etched in gold as well as the floor
+which is made from the same material, giving a regal and dignified
+appearance to the entire building.  You smell something wonderfull seeping
+from the kitchen to the west, should you grab a quick snack or continue with
+your exploration?
+~
+0 8 1
+D0
+~
+door~
+1 -1 2052
+D1
+~
+~
+0 -1 2062
+D3
+~
+door~
+1 -1 2051
+D8
+~
+~
+0 -1 2048
+S
+#2050
+Mr. Popo's Sleeping Chambers~
+The surroundings here consist of a bed and a small lamp. You decide that
+whoever lives here must have either poor eyes or very bad taste.
+~
+0 8 1
+D3
+~
+door~
+1 -1 2048
+S
+#2051
+The Kitchen~
+A rather plain looking kitchen, it consists of nothing but a few pots and
+pans hanging over sturdy looking pot-bellied stove, as well as a sturdy
+wooden table which has been placed in the center of the room.
+~
+0 8 1
+D1
+~
+door~
+1 -1 2049
+S
+#2052
+Food and Water Storage~
+This room is filled with towering shelves containing the palace's supply
+of food and water.  The floor is unswept and the shelves are undusted, maybe
+you should move on to a more interesting part of the palace.
+~
+0 8 1
+D2
+~
+door~
+1 -1 2049
+S
+#2053
+A Long Circular Hallway~
+This is the main hallway, leading you to every destination in the palace.
+The walls are smooth and are solid white etched in gold as well as the floor
+which is made from the same material. A large staircase leads you further up
+into the palace and the hall continues to the west and southwest.
+~
+0 8 1
+D3
+~
+~
+0 -1 2062
+D4
+~
+~
+0 -1 2054
+D9
+~
+~
+0 -1 2048
+S
+#2054
+On a Long Winding Staircase~
+You are on a long stone staircase that seems to run through the entire
+palace.  You see a large platform to the west and the bottom of the
+staircase below you.
+~
+0 8 1
+D3
+~
+~
+0 -1 2057
+D5
+~
+~
+0 -1 2053
+S
+#2055
+A Meditation Chamber~
+This place has a cosmic feel about it.  Candles have been placed
+throughout the room, casting eerie shadows on the wall behind you.  In the
+center of the room sits a small golden idol, dedicated to some long
+forgotten namekian god.  You can also see the faint outline of a grate set
+into the floor near the eastern corner of the room.
+~
+0 8 1
+D0
+~
+~
+0 -1 2056
+D2
+~
+~
+0 -1 2048
+D5
+~
+grate~
+1 -1 2064
+S
+#2056
+Kame's Throneroom~
+This place is huge!  Massive stone pillars have been place in every
+corner of the room to hold up the lage dome-shaped ceiling.  Exotic
+tapestries and velvet curtains have been hung from the roof and walls and
+are further accented by the light of a hundred candles, which dances and
+flickers all about you.  In the center of everything, resting against the
+northern wall is a large white throne inset with gold, the throne of the
+guardian of earth.
+~
+0 8 1
+D2
+~
+~
+0 -1 2055
+S
+#2057
+An Intersection~
+From far atop this large stone platform you can see the entire palace.
+As you take your first step you start to hear a slight echo that startles
+you at first, but then starts to arouse your curiosity. Further ahead of you
+to the north is a cramped looking passage and the stairs are located to the
+east.
+~
+0 8 1
+D0
+~
+~
+0 -1 2059
+D1
+~
+~
+0 -1 2054
+D4
+~
+~
+0 -1 2058
+S
+#2058
+The Top of Kame's Watchtower~
+You stop momentarily to steady yourself, this is the the highest place on
+the earth.  From this distance you can observe the entire planet, it looks
+like the perfect place to stop and gather your thoughts.
+~
+0 0 1
+D5
+~
+~
+0 -1 2057
+S
+#2059
+A Small Passage~
+The walls are only three feet apart here , leaving you feeling a little
+confined.  As you try and move around here you notice that even the smallest
+sound creates a loud booming echo.  Suddenly your vision is obscurred by a
+bright light radiating from a crack in the door to the north, you then
+wonder if you should explore any further, or return to the large stone
+platform to the south.
+~
+0 1032 1
+D0
+~
+~
+1 -1 2060
+D2
+~
+~
+0 -1 2057
+> entry_prog 100~
+mpecho &wA radiant light shines brightly from a crack in the door.
+~
+|
+S
+#2060
+The Room of Spirit and Time~
+The air here is humid, making it slightly difficult to breath. The
+gravity is also many times more than that of the earth, you are a bit
+overwhelmed.  Peering around you see nothing but white in every direction,
+you wonder how anyone could survive in this place ...
+~
+0 874512652&4 1 0 0 2
+D1
+~
+~
+0 -1 2060
+D2
+~
+~
+1 -1 2059
+D3
+~
+~
+0 -1 2060
+D6
+~
+~
+0 -1 2061
+D7
+~
+~
+0 -1 2060
+D8
+~
+~
+0 -1 2060
+S
+#2061
+Kitchen and Bath~
+This is where visitors to the universe bath and cook thier meals. A lone
+wall is all that seperates the room from the rest of the endless emptiness.
+High shelves are stocked with large clay pots, filled with food and water.
+You also notice that the bathwater is kept warm by the humid atmosphere, the
+only exit is to the southwest.
+~
+0 2097160&4 1
+D9
+~
+~
+0 -1 2060
+S
+#2062
+Hallways Converge~
+You are now deep inside the palace, a small door beckons you from the
+north; the hallway continues to the east and west.
+~
+0 8 1
+D0
+~
+~
+1 -1 2063
+D1
+~
+~
+0 -1 2053
+D3
+~
+~
+0 -1 2049
+S
+#2063
+Kame's Sleeping Chambers~
+The only thing you can see in this room is a small cramped looking cot
+and a shabby nightstand.  It escapes you how someone who lives in such
+beautifull palace can sleep in such common surroundings.
+~
+0 8 1
+D2
+~
+~
+1 -1 2062
+S
+#2064
+The Former Gaurdians Resting Place~
+Now in the middle of what looks like a barren wasteland, you pause for
+moment to let your lungs adjust to the unusually thin air.  The ground
+around you is broken and depleted of all life, while the sky is shimmering
+and streaked with shades of purple, blue and red.  You wonder how a place
+can be such a contradiction.
+~
+0 8 1
+D4
+~
+grate~
+1 -1 2055
+D7
+~
+~
+0 -1 2065
+S
+#2065
+The Former Gaurdians Resting Place~
+Now in the middle of what looks like a barren wasteland, you pause for
+moment to let your lungs adjust to the unusually thin air.  The ground
+around you is broken and depleted of all life, while the sky is shimmering
+and streaked with shades of purple, blue and red.  You wonder how a place
+can be such a contradiction.
+~
+0 8 1
+D3
+~
+~
+0 -1 2066
+D8
+~
+~
+0 -1 2064
+S
+#2066
+The Former Gaurdians Resting Place~
+Now in the middle of what looks like a barren wasteland, you pause for
+moment to let your lungs adjust to the unusually thin air.  The ground
+around you is broken and depleted of all life, while the sky is shimmering
+and streaked with shades of purple, blue and red.  You wonder how a place
+can be such a contradiction.
+~
+0 8 1
+D0
+~
+~
+0 -1 2067
+D1
+~
+~
+0 -1 2065
+S
+#2067
+The Former Gaurdians Resting Place~
+Now in the middle of what looks like a barren wasteland, you pause for
+moment to let your lungs adjust to the unusually thin air.  The ground
+around you is broken and depleted of all life, while the sky is shimmering
+and streaked with shades of purple, blue and red.  You wonder how a place
+can be such a contradiction.
+~
+0 8 1
+D2
+~
+~
+0 -1 2066
+S
+#2068
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2084
+D2
+~
+~
+0 -1 2036
+D3
+~
+~
+0 -1 2069
+S
+#2069
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2083
+D1
+~
+~
+0 -1 2068
+D2
+~
+~
+0 -1 2037
+D3
+~
+~
+0 -1 2070
+S
+#2070
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2082
+D1
+~
+~
+0 -1 2069
+D2
+~
+~
+0 -1 2038
+D3
+~
+~
+0 -1 2071
+S
+#2071
+Western Side of Kame's Lookout~
+You are travelling the western side of the lookout, the palace is further
+east while the western tip of the lookout is found further west.
+~
+0 0 1
+D0
+~
+~
+0 -1 2081
+D1
+~
+~
+0 -1 2070
+D2
+~
+~
+0 -1 2039
+D3
+~
+~
+0 -1 2072
+S
+#2072
+Western Side of Kame's Lookout~
+You are travelling the western side of the lookout, the palace is further
+east while the western tip of the lookout is found further west.
+~
+0 0 1
+D0
+~
+~
+0 -1 2080
+D1
+~
+~
+0 -1 2071
+D2
+~
+~
+0 -1 2040
+D3
+~
+~
+0 -1 2073
+S
+#2073
+Western Tip of Kame's Lookout~
+This is the westernmost point of Kame's lookout.
+~
+0 0 1
+D1
+~
+~
+0 -1 2072
+D2
+~
+~
+0 -1 2041
+S
+#2074
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2086
+D1
+~
+~
+0 -1 2075
+D2
+~
+~
+0 -1 2042
+S
+#2075
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2087
+D1
+~
+~
+0 -1 2076
+D2
+~
+~
+0 -1 2043
+D3
+~
+~
+0 -1 2074
+S
+#2076
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2088
+D1
+~
+~
+0 -1 2077
+D2
+~
+~
+0 -1 2044
+D3
+~
+~
+0 -1 2075
+S
+#2077
+Eastern Side of Kame's Lookout~
+You are travelling the eastern side of the lookout, the palace is further
+west while the eastern tip of the lookout is found further east.
+~
+0 0 1
+D0
+~
+~
+0 -1 2089
+D1
+~
+~
+0 -1 2078
+D2
+~
+~
+0 -1 2045
+D3
+~
+~
+0 -1 2076
+S
+#2078
+Eastern Side of Kame's Lookout~
+You are travelling the eastern side of the lookout, the palace is further
+west while the eastern tip of the lookout is found further east.
+~
+0 0 1
+D0
+~
+~
+0 -1 2090
+D1
+~
+~
+0 -1 2079
+D2
+~
+~
+0 -1 2046
+D3
+~
+~
+0 -1 2077
+S
+#2079
+Eastern Tip of Kame's Lookout~
+This is the easternmost point of Kame's lookout.
+~
+0 0 1
+D2
+~
+~
+0 -1 2047
+D3
+~
+~
+0 -1 2078
+S
+#2080
+Western Side of Kame's Lookout~
+You are travelling the western side of the lookout, the palace is further
+east while the western tip of the lookout is found further west.
+~
+0 0 1
+D1
+~
+~
+0 -1 2081
+D2
+~
+~
+0 -1 2072
+S
+#2081
+Western Side of Kame's Lookout~
+You are travelling the western side of the lookout, the palace is further
+east while the western tip of the lookout is found further west.
+~
+0 0 1
+D0
+~
+~
+0 -1 2091
+D1
+~
+~
+0 -1 2082
+D2
+~
+~
+0 -1 2071
+D3
+~
+~
+0 -1 2080
+S
+#2082
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2092
+D1
+~
+~
+0 -1 2083
+D2
+~
+~
+0 -1 2070
+D3
+~
+~
+0 -1 2081
+S
+#2083
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2093
+D1
+~
+~
+0 -1 2084
+D2
+~
+~
+0 -1 2069
+D3
+~
+~
+0 -1 2082
+S
+#2084
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2094
+D1
+~
+~
+0 -1 2085
+D2
+~
+~
+0 -1 2068
+D3
+~
+~
+0 -1 2083
+S
+#2085
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2095
+D1
+~
+~
+0 -1 2086
+D3
+~
+~
+0 -1 2084
+S
+#2086
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2096
+D1
+~
+~
+0 -1 2087
+D2
+~
+~
+0 -1 2074
+D3
+~
+~
+0 -1 2085
+S
+#2087
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2097
+D1
+~
+~
+0 -1 2088
+D2
+~
+~
+0 -1 2075
+D3
+~
+~
+0 -1 2086
+S
+#2088
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2098
+D1
+~
+~
+0 -1 2089
+D2
+~
+~
+0 -1 2076
+D3
+~
+~
+0 -1 2087
+S
+#2089
+Eastern Side of Kame's Lookout~
+You are travelling the eastern side of the lookout, the palace is further
+west while the eastern tip of the lookout is found further east.
+~
+0 0 1
+D0
+~
+~
+0 -1 2099
+D1
+~
+~
+0 -1 2090
+D2
+~
+~
+0 -1 2077
+D3
+~
+~
+0 -1 2088
+S
+#2090
+Eastern Side of Kame's Lookout~
+You are travelling the eastern side of the lookout, the palace is further
+west while the eastern tip of the lookout is found further east.
+~
+0 0 1
+D2
+~
+~
+0 -1 2078
+D3
+~
+~
+0 -1 2089
+S
+#2091
+Skirting Kame's Lookout~
+Your cheek is carressed by a gentle breeze as you hesitantly gaze over
+the side of the lookout, the cars and citizens look no bigger than ants, you
+decide a fall from this distance would kill you and move further from the
+edge.
+~
+0 0 1
+D1
+~
+~
+0 -1 2092
+D2
+~
+~
+0 -1 2081
+S
+#2092
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2100
+D1
+~
+~
+0 -1 2093
+D2
+~
+~
+0 -1 2082
+D3
+~
+~
+0 -1 2091
+S
+#2093
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2101
+D1
+~
+~
+0 -1 2094
+D2
+~
+~
+0 -1 2083
+D3
+~
+~
+0 -1 2092
+S
+#2094
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2102
+D1
+~
+~
+0 -1 2095
+D2
+~
+~
+0 -1 2084
+D3
+~
+~
+0 -1 2093
+S
+#2095
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2103
+D1
+~
+~
+0 -1 2096
+D2
+~
+~
+0 -1 2085
+D3
+~
+~
+0 -1 2094
+S
+#2096
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2104
+D1
+~
+~
+0 -1 2097
+D2
+~
+~
+0 -1 2086
+D3
+~
+~
+0 -1 2095
+S
+#2097
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2105
+D1
+~
+~
+0 -1 2098
+D2
+~
+~
+0 -1 2087
+D3
+~
+~
+0 -1 2096
+S
+#2098
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2106
+D1
+~
+~
+0 -1 2099
+D2
+~
+~
+0 -1 2088
+D3
+~
+~
+0 -1 2097
+S
+#2099
+Skirting Kame's lookout~
+Your cheek is carressed by a gentle breeze as you hesitantly gaze over
+the side of the lookout, the cars and citizens look no bigger than ants, you
+decide a fall from this distance would kill you and move further from the
+edge.
+~
+0 0 1
+D2
+~
+~
+0 -1 2089
+D3
+~
+~
+0 -1 2098
+S
+#2100
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D1
+~
+~
+0 -1 2101
+D2
+~
+~
+0 -1 2092
+S
+#2101
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2107
+D1
+~
+~
+0 -1 2102
+D2
+~
+~
+0 -1 2093
+D3
+~
+~
+0 -1 2100
+S
+#2102
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2108
+D1
+~
+~
+0 -1 2103
+D2
+~
+~
+0 -1 2094
+D3
+~
+~
+0 -1 2101
+S
+#2103
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2109
+D1
+~
+~
+0 -1 2104
+D2
+~
+~
+0 -1 2095
+D3
+~
+~
+0 -1 2102
+S
+#2104
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2110
+D1
+~
+~
+0 -1 2105
+D2
+~
+~
+0 -1 2096
+D3
+~
+~
+0 -1 2103
+S
+#2105
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2111
+D1
+~
+~
+0 -1 2106
+D2
+~
+~
+0 -1 2097
+D3
+~
+~
+0 -1 2104
+S
+#2106
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D2
+~
+~
+0 -1 2098
+D3
+~
+~
+0 -1 2105
+S
+#2107
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D1
+~
+~
+0 -1 2108
+D2
+~
+~
+0 -1 2101
+S
+#2108
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2112
+D1
+~
+~
+0 -1 2109
+D2
+~
+~
+0 -1 2102
+D3
+~
+~
+0 -1 2107
+S
+#2109
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2113
+D1
+~
+~
+0 -1 2110
+D2
+~
+~
+0 -1 2103
+D3
+~
+~
+0 -1 2108
+S
+#2110
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D0
+~
+~
+0 -1 2114
+D1
+~
+~
+0 -1 2111
+D2
+~
+~
+0 -1 2104
+D3
+~
+~
+0 -1 2109
+S
+#2111
+Kame's Lookout~
+The floor here is constructed of thick square shaped blocks of stone,
+giving it a strong steady feel.  Looking up to observe the rest of the
+lookout, you notice that it is suprisingly well maintained. Well trimmed
+hedges and large trees line the edge of the structure , as well as a
+bountifull looking garden, which graces the center of the lookout.  Further
+accenting Kame's is his palace, which sits dominately in the center of
+everything.  You can either make your way into the palace, or head south
+back towards Korin's.
+~
+0 0 1
+D2
+~
+~
+0 -1 2105
+D3
+~
+~
+0 -1 2110
+S
+#2112
+Northern Tip of Kame's Lookout~
+This is the northernmost point of Kame's lookout.
+~
+0 0 1
+D1
+~
+~
+0 -1 2113
+D2
+~
+~
+0 -1 2108
+S
+#2113
+Northern Tip of Kame's Lookout~
+This is the northernmost point of Kame's lookout.
+~
+0 0 1
+D1
+~
+~
+0 -1 2114
+D2
+~
+~
+0 -1 2109
+D3
+~
+~
+0 -1 2112
+S
+#2114
+Northern Tip of Kame's Lookout~
+This is the northernmost point of Kame's lookout.
+~
+0 0 1
+D2
+~
+~
+0 -1 2110
+D3
+~
+~
+0 -1 2113
+S
+#2115
+A Circular Platform on Korin's Tower~
+Floating near a large circular platform that spans the entire base of the
+tower, you notice an odd looking animal studying you from a safe distance,
+could this be the legendary sage Korin?  It might be a good idea to seek his
+wisdom before continuing with your quest.
+~
+0 4 1
+D4
+~
+~
+0 -1 2122
+D5
+~
+~
+0 -1 2118
+S
+#2116
+The Earth Transporter~
+~
+0 4 1
+S
+#2117
+Soaring Along Side Korin's Tower~
+~
+0 4 1
+S
+#2118
+Soaring Along Side Korin's Tower~
+As your eyes begin to adjust you can make out a small stable looking
+structure built into the side of the tower, maybe you should take a rest and
+heal before continuing your journey.
+~
+0 4 9
+D4
+~
+~
+0 -1 2115
+D5
+~
+~
+0 -1 2119
+S
+#2119
+Soaring Along Side Korin's Tower~
+As your eyes begin to adjust you can make out a small stable looking
+structure built into the side of the tower, maybe you should take a rest and
+heal before continuing your journey.
+~
+0 4 9
+D4
+~
+~
+0 -1 2118
+D5
+~
+~
+0 -1 2120
+S
+#2120
+Soaring Along Side Korin's Tower~
+Wind streaks down your face as you begin your ascent up the side of
+Korins tower.  You cant seem to see the top anywhere, who could built such a
+monumental structure?
+~
+0 4 9
+D4
+~
+~
+0 -1 2119
+D5
+~
+~
+0 -1 2121
+S
+#2121
+The Base of Korin's Tower~
+You're now standing at the base of a large, well-built tower that
+stretches into the heavens as far as the eye can see.  The only way up is to
+fly.
+~
+0 4 1
+D4
+~
+~
+0 -1 2120
+D8
+~
+~
+0 -1 2124
+S
+#2122
+High Above Korin's Tower~
+Your now soaring high above Korin's tower, Kame's is floating above you
+and Korin's platform is further down below.
+~
+0 4 9
+D2
+~
+~
+0 -1 2123
+D5
+~
+~
+0 -1 2115
+S
+#2123
+Near the Edge of Kame's Lookout~
+Kame's appears to be a large bowl shaped base, housing a large grand
+looking palace near the very center.  The air is calm here and you can hear
+nothing but the beating of your own heart, this leaves you feeling uneasy
+and unsure of what awaits you.
+~
+0 4 9
+D0
+~
+~
+0 -1 2122
+D4
+~
+~
+0 -1 2001
+S
+#2124
+The Path to Korin's Tower~
+As you proceed along this small dirt path the dry broken soil crunches
+under your feet, stirring up small clouds of dust.  You see a gigantic white
+tower to the north, it is said to be the home of the powerfull magician
+Korin.
+~
+0 4 1
+D1
+~
+~
+0 -1 2167
+D7
+~
+~
+0 -1 2121
+S
+#0
+
+
+#RESETS
+O 1 2000 1 2010
+O 1 2000 1 2012
+M 1 2003 1 2032
+M 1 2000 1 2035
+D 0 2035 0 0
+M 1 2004 1 2042
+M 1 2006 1 2048
+D 0 2048 1 0
+D 0 2048 2 0
+D 0 2049 0 0
+D 0 2049 3 0
+D 0 2050 3 0
+D 0 2051 1 0
+D 0 2052 2 0
+D 0 2055 5 0
+O 1 2005 1 2056
+O 1 2004 1 2060
+O 1 2003 1 2060
+D 0 2062 0 0
+D 0 2063 2 0
+M 1 2002 4 2064
+D 0 2064 4 0
+M 1 2002 4 2065
+M 1 2002 4 2066
+M 1 2002 4 2067
+O 1 2007 1 2067
+M 1 2005 1 2089
+M 1 2001 1 2114
+M 1 2007 1 2115
+G 1 2001 1
+G 1 2008 1
+O 1 2009 1 2123
+S
+
+
+#SHOPS
+ 2007    0  0  0  0  0   120  90         1  0    ; Korin
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+M  2000 spec_janitor
+S
+
+
+#$

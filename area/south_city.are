@@ -1,0 +1,1638 @@
+#AREA   South City~
+
+
+
+#VERSION 252
+#AUTHOR Goku~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 4
+
+#FLAGS
+2
+
+#CLIMATE 4 1 2
+
+#MOBILES
+#9000
+old couple~
+an old couple~
+An old couple is walking down the street.
+~
+~
+16777281 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 500
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9001
+kids~
+a group of kids~
+Some kids are playing around the fountain.
+~
+~
+16777283 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 2500
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9002
+kids~
+a group of kids~
+Some kids swinging in the swing set.
+~
+~
+16777283 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 2500
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9003
+kids~
+a group of kids~
+Some kids climbing on the jungle gym.
+~
+~
+16777283 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 2500
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9004
+nurse~
+a nurse~
+A nurse is walking around checking up on her patients.
+~
+~
+67 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100
+112 112 2
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9005
+doctor~
+a doctor~
+A doctor is taking care of a badly injured man.
+~
+~
+67 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9006
+receptionist~
+a receptionist~
+The receptionist is sitting down, filing her nails.
+~
+~
+67108931 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100
+112 112 2
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9007
+karate students~
+some karate students~
+Some karate students are sitting here watching their teacher closely.
+~
+~
+67 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 5000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9008
+karate teacher~
+a karate teacher~
+The karate teacher is showing his students some new moves.
+~
+~
+67 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 10000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9009
+tall black belt master~
+the tall black belt master~
+The tall black belt master is helping some students train.
+~
+~
+67109443 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 16000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9010
+short black belt master~
+the short black belt master~
+The short black belt master is helping some students practice.
+~
+~
+67109955 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 15000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9011
+clothing store owner~
+the clothing store owner~
+The clothing store owner is standing next to her register.
+~
+~
+67108931 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100
+112 112 2
+100 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+tell $n Welcome to my store $n!  Type '&glist&G' to browse.
+~
+|
+#9012
+shoe store owner~
+the shoe store owner~
+The shoe store owner is standing next to his register.
+~
+~
+67108931 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100
+112 112 1
+100 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+tell $n Welcome to my store $n!  Type '&glist&G' to browse.
+~
+|
+#9013
+family~
+a family~
+A nice family is sitting on their porch chatting with each other.
+~
+~
+16777283 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 3500
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9014
+kids~
+a group of kids~
+A small group of kids are playing around in the middle of the road.
+~
+~
+16777281 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9015
+kids~
+a pair of kids~
+A pair of kids are playing catch.
+~
+~
+16777281 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1500
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9016
+bum~
+a bum~
+A bum is sitting on the curb.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 150
+112 112 1
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 5~
+mpecho &C$I says, 'Could you please spare a few zeni?'
+~
+> bribe_prog 1~
+mpecho &C$I says, 'Thank you so much!'
+~
+|
+#9017
+homeless man~
+a homeless man~
+A homeless man is here trying to keep warm.
+~
+~
+16777281 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 200
+112 112 1
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9018
+homeless woman~
+a homeless woman~
+A homeless woman here trying to find some shelter.
+~
+~
+16777281 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 175
+112 112 2
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9019
+homeless boy~
+a homeless boy~
+A homeless boy is playing around with some trash.
+~
+~
+16777281 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 125
+112 112 1
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9020
+homeless girl~
+a homeless girl~
+A homeless girl playing in a pile of garbage.
+~
+~
+16777281 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100
+112 112 2
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9021
+homeless family~
+a homeless family~
+A homeless family is huddled together trying to stay warm.
+~
+~
+16777281 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 750
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9022
+benny~
+Benny~
+Benny, the greatest h4x0r in the world, is working on his homework.
+~
+~
+67108947 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000
+112 112 1
+100 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+tell $n Welcome to my store $n!  I can repair your equipment or you can just browse.
+~
+|
+#9023
+policeman~
+a policeman~
+A policeman is walking around keeping the peace.
+~
+~
+65 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 50000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9024
+policewoman~
+a policewoman~
+A policewoman is here giving a parking tickets to people.
+~
+~
+65 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 50000
+112 112 2
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9025
+cute couple~
+a cute couple~
+A cute couple are holding hands and walking together happily.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 6500
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9026
+business man~
+a business man~
+A business man looks like he's in a hurry to get some where.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 4500
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9027
+business woman~
+a business woman~
+A business woman is walking down the sidewalk.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 4500
+112 112 2
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9028
+policeman~
+a policeman~
+A policeman is trying to direct traffic.
+~
+~
+67 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 50000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9029
+lost child~
+a lost child~
+A lost child is looking for his mommy.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 850
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9099
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#9000
+trash~
+a piece of trash~
+A piece of trash is blowing away.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#9001
+garbage~
+a piece of garbage~
+A piece of garbage has been tossed here.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#9002
+burning barrel~
+a burning barrel~
+A burning barrel is here warming people up.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#9003
+hospital bed~
+an empty hospital bed~
+An empty hospital bed has been prepped for a new patient.~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#9004
+fountain~
+a fountain~
+A beautiful, ornate fountain is filled with fresh water.~
+~
+25 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#9005
+receptionists desk~
+the receptionists desk~
+The receptionists desk is cluttered with papers.~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#9006
+running shoes~
+a pair of running shoes~
+A pair of white running shoes have been tossed aside.~
+~
+9 0 65
+0 0 0 0 10 10
+1 1000 1
+ 1
+#9007
+pink bunny slippers~
+a pair of pink bunny slippers~
+A pair of pink bunny slippers have been covered in dirt.~
+~
+9 0 65
+0 0 0 0 5 5
+1 500 1
+ 1
+#9008
+combat boots~
+a pair of combat boots~
+A really nice pair of combat boots have just been left laying on the ground.~
+~
+9 0 65
+0 0 0 0 35 35
+2 3500 7
+ 1000
+#9009
+scarf~
+a purple scarf~
+A purple scarf is blowing around in the wind.~
+~
+9 0 5
+0 0 0 0 0 0
+1 0 0
+ 1
+#9010
+leather gloves~
+a pair of leather gloves~
+An old pair of leather gloves have been left on the ground.~
+~
+9 0 129
+0 0 0 0 10 10
+1 1000 2
+ 1
+#9011
+mittens~
+a pair of white mittens~
+Some white mittens are laying on the ground.~
+~
+9 0 129
+0 0 0 0 1 1
+1 100 1
+ 1
+#9012
+turtle neck sweater~
+a turtle neck sweater~
+A very nice looking turtle neck sweater has been left on the ground.~
+~
+9 0 9
+0 0 0 0 25 25
+1 2500 3
+ 1
+#9013
+striped tee-shirt~
+a striped tee-shirt~
+A red and yellow striped tee-shirt has been tossed on the ground.~
+~
+9 0 9
+0 0 0 0 1 1
+1 100 10
+ 1
+#9014
+baby doll tee-shirt~
+a light blue baby doll tee-shirt~
+A light blue baby doll tee-shirt is laying on the ground.~
+~
+9 0 9
+0 0 0 0 10 10
+1 1000 1
+ 1
+#9015
+long sleeve shirt~
+a brown long sleeve shirt~
+A brown long sleeve shirt has been covered in dirt.~
+~
+9 0 9
+0 0 0 0 20 20
+1 2000 2
+ 1
+#9016
+blue jeans~
+a pair of blue jeans~
+A nice pair of blue jeans have been left here.~
+~
+9 0 33
+0 0 0 0 50 50
+1 5000 2
+ 1
+#9017
+long plaid skirt~
+a long plaid skirt~
+A long plaid skirt has been left on the ground.~
+~
+9 0 33
+0 0 0 0 20 20
+1 2000 2
+ 1
+#9018
+pink baseball cap~
+a pink baseball cap~
+A pink baseball cap is here, laying on the ground.~
+~
+9 0 17
+0 0 0 0 30 30
+1 3000 1
+ 1
+#9019
+black backpack back pack~
+a black backpack~
+A nice looking black backpack has been left on the ground.~
+~
+15 0 524289
+15 0 0 0 0 0
+1 300 10
+ 1
+#9020
+long sleeve kevlar shirt~
+a long sleeve kevlar shirt~
+A long sleeve kevlar shirt has been left on the ground.~
+~
+9 0 9
+0 0 0 0 50 50
+2 5000 250
+ 7500
+#9021
+kevlar pants~
+a pair of kevlar pants~
+A pair of kevlar pants have been tossed on the ground.~
+~
+9 0 33
+0 0 0 0 65 65
+2 6500 500
+ 25000
+#9022
+bulletproof jacket~
+a bulletproof jacket~
+A bulletproof jacket is laying on the ground.~
+~
+9 0 1025
+0 0 0 0 400 400
+15 35000 1000
+ 50000
+A
+2 -2
+#9023
+energy detection unit~
+an energy detection unit~
+An small energy detection unit has been left on the ground.~
+~
+65 0 16385
+0 0 10 0 0 0
+1 100 1
+ 100
+#9024
+police issue kevlar shirt~
+a police issue kevlar shirt~
+A police issue kevlar shirt has been left on the ground.~
+~
+9 0 9
+0 0 0 0 60 60
+3 6000 250
+ 7500
+#9025
+police issue kevlar pants~
+a pair of police issue kevlar pants~
+A pair of police issue kevlar pants have been tossed on the ground.~
+~
+9 0 33
+0 0 0 0 75 75
+3 7500 500
+ 25000
+#9026
+police issue bulletproof jacket~
+a police issue bulletproof jacket~
+A police issue bulletproof jacket is laying on the ground.~
+~
+9 0 1025
+0 0 0 0 410 410
+15 36000 1000
+ 50000
+A
+2 -2
+#9027
+lantern~
+a lantern~
+A small lantern has been left here on the ground.~
+~
+1 0 16385
+0 0 24 0 0 0
+3 2400 2
+ 0
+#9099
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#9000
+Main Street~
+   You are standing in the main intersection of South City.  Many small,
+single story buildings aline the sides of the road.  To the west is one of
+the largest buildings in town.  It has a huge sign above it reading 'South
+City Dojo'.  The city center is to the north and to the east is the South
+City Mini-Mall.
+
+~
+0 0 1
+D0
+~
+~
+0 -1 9001
+D1
+~
+~
+0 -1 9008
+D2
+~
+~
+0 -1 9004
+D3
+~
+~
+0 -1 9006
+S
+#9001
+Friendship Square~
+   Main street cuts right though this park that most of South City's
+children come to play in.  On the western side of Friendship Square, some
+kids are playing around in a beautiful, ornate fountain, splashing each
+other.  On the eastern side, is a huge play ground where some more kids are
+climbing and swinging around.
+
+~
+0 1024 1
+D0
+~
+~
+0 -1 9002
+D2
+~
+~
+0 -1 9000
+D5
+~
+grate~
+1 -1 5500
+S
+#9002
+In Front of the Hospital~
+   You can see Main street beginning to merge into the main northern
+highway. There seems to be a lot of traffic going though here.  To the east
+you can see South City's hospital.  You've heard many great things about the
+hospital here, so you know that if you get injured somewhere, you'll be well
+taken care of.
+
+~
+0 0 1
+D0
+~
+~
+0 -1 9003
+D2
+~
+~
+0 -1 9001
+D3
+~
+~
+0 -1 9030
+S
+#9003
+Northern Highway~
+   You are standing along side the beginning of northern highway.  This is
+where most visitors to South City enter.  There seems to be quite a few cars
+on the highway.  It would be best to look both ways before you cross the
+street.
+
+~
+0 4 1
+D0
+~
+~
+0 -1 9037
+D1
+~
+~
+0 -1 9015
+D2
+~
+~
+0 -1 9002
+D3
+~
+~
+0 -1 9016
+S
+#9004
+Busy Street~
+   Many people are walking up and down the side walk here.  There also seems
+to be a lot of cars on the road, but they aren't going any where.  All you
+can hear is the obnoxious honking of horns and people swearing.
+
+~
+0 0 1
+D0
+~
+~
+0 -1 9000
+D2
+~
+~
+0 -1 9005
+S
+#9005
+Crowed Intersection~
+   Cars are piled up in every direction.  It looks as if the traffic lights
+stopped working.  A helpful police man is directing traffic while the lights
+wait to be fixed.
+
+~
+0 0 1
+D0
+~
+~
+0 -1 9004
+D1
+~
+~
+0 -1 9026
+D2
+~
+~
+0 -1 9039
+D3
+~
+~
+0 -1 9025
+S
+#9006
+A Small Dojo~
+   You are standing at the entrance to South City's dojo.  There is a young
+woman sitting behind a desk filing her nails and talking on the phone.  You
+can hear the sounds of combat behind her in the main room.
+
+~
+0 1028 1
+D1
+~
+~
+0 -1 9000
+D3
+~
+~
+0 -1 9007
+S
+#9007
+Main Demonstration Floor~
+   This is a well padded room.  The teacher is showing off some interesting
+fighting techniques to his students as they all look on with awe.
+
+~
+0 67108864 1
+D0
+~
+~
+0 -1 9031
+D1
+~
+~
+0 -1 9006
+D2
+~
+~
+0 -1 9034
+S
+#9008
+In front of the Mini-Mall~
+   You are at South City's mini-mall.  There are lots of small stores filled
+with very few people.  Unfortunately there doesn't seem to be many stores
+that sell anything interesting.
+
+~
+0 0 1
+D0
+~
+~
+0 -1 9032
+D1
+~
+~
+0 -1 9009
+D3
+~
+~
+0 -1 9000
+S
+#9009
+In front of the Mini-Mall~
+   You are at South City's mini-mall.  There are lots of small stores filled
+with very few people.  Unfortunately there doesn't seem to be many stores
+that sell anything interesting.
+
+~
+0 4 1
+D0
+~
+~
+0 -1 9033
+D1
+~
+~
+0 -1 9010
+D3
+~
+~
+0 -1 9008
+S
+#9010
+Empty Intersection~
+   This intersection seems much less traveled than any where else in South
+City. This whole area is very quiet compared to the rest of the town.  The
+only people you see around here are a few old couples walking on the side
+walk together.
+
+~
+0 0 1
+D0
+~
+~
+0 -1 9011
+D1
+~
+~
+0 -1 9038
+D2
+~
+~
+0 -1 9029
+D3
+~
+~
+0 -1 9009
+S
+#9011
+Grey Avenue~
+   Grey Avenue is where most of the retired people in South City live.  It
+is a very quiet place, because that is the way that the residents like it.
+There are many beautiful gardens full of different kinds of flowers, in
+every ones yards.
+
+~
+0 0 1
+D0
+~
+~
+0 -1 9012
+D2
+~
+~
+0 -1 9010
+S
+#9012
+Grey Avenue~
+   Grey Avenue is where most of the retired people in South City live.  It
+is a very quiet place, because that is the way that the residents like it.
+Everyone here seems to have wonderfully kept up lawns.  They are all bight
+green and cut perfectly.
+~
+0 0 1
+D0
+~
+~
+0 -1 9013
+D2
+~
+~
+0 -1 9011
+S
+#9013
+Corner of Grey and First~
+   This corner looks very well kept up and clean.  There are some kids
+playing in the middle of the road, along with their parents watching over
+them.  You also see a few old couples walking along the sidewalk heading
+down to the south.
+
+~
+0 0 1
+D0
+~
+~
+0 -1 4000
+D2
+~
+~
+0 -1 9012
+D3
+~
+~
+0 -1 9014
+S
+#9014
+First Street~
+   This is the main residential area in South City.  Many large houses line
+the sides of the street.  There are quite a few children play all different
+kinds of fun games with each other.  A few families are sitting out on their
+porches talking and watching the kids play.
+
+~
+0 0 1
+D1
+~
+~
+0 -1 9013
+D3
+~
+~
+0 -1 9015
+S
+#9015
+First Street~
+   You can hear the loud sounds of the northern highway from here.  Even
+though this is the main residential area of South City, not many people are
+out side.  The houses here are a bit smaller than the rest on First street.
+Most likely because this area has been around since the city was founded.
+
+~
+0 0 1
+D1
+~
+~
+0 -1 9014
+D3
+~
+~
+0 -1 9003
+S
+#9016
+First Street~
+   You can hear the loud sounds of the northern highway from here.  Even
+though this is the main residential area of South City, not many people are
+out side.  The houses here look significantly older than the rest of the
+houses on First street.  Most likely because this area has been around since
+the city was first founded.
+
+~
+0 0 1
+D1
+~
+~
+0 -1 9003
+D3
+~
+~
+0 -1 9017
+S
+#9017
+First Street~
+   You can tell that this is the main residential area in South City from
+all the houses.  The sounds of children playing echoes throughout this
+street.  There is also a few families having a big get together.
+
+~
+0 0 1
+D1
+~
+~
+0 -1 9016
+D3
+~
+~
+0 -1 9018
+S
+#9018
+First Street~
+   You can hear the loud sounds of the northern highway from here.  Even
+though this is the main residential area of South City, not many people are
+out side.  The houses here are a bit smaller than the rest on First street.
+Most likely because this area has been around since the city was founded.
+
+~
+0 0 1
+D1
+~
+~
+0 -1 9017
+D2
+~
+~
+0 -1 9019
+S
+#9019
+Rundown Road~
+   You are standing in the run down part of South City.  The grass is over
+grown and dead looking.  All kinds of trash litters the area.  Some very old
+condemned looking buildings are along the side of the road, looking like
+they will collapse at any moment.
+
+~
+0 4 1
+D0
+~
+~
+0 -1 9018
+D2
+~
+~
+0 -1 9020
+S
+#9020
+Rundown Road~
+   There is garbage everywhere along this old run down road.  You can see
+some homeless people hanging around a burning barrel next to one of the
+buildings. The road it self is all broken and cracked.  Many potholes line
+the road.
+
+~
+0 0 1
+D0
+~
+~
+0 -1 9019
+D2
+~
+~
+0 -1 9021
+S
+#9021
+Outskirts of Town~
+   This used to be the main road everyone would take to get to South City,
+but it has long since been closed off.  Ever since the Northern Highway was
+built people stopped using this road.  Now only bums and homeless families
+populate this once well traveled road.
+
+~
+0 0 1
+D0
+~
+~
+0 -1 9020
+D2
+~
+~
+0 -1 9022
+D3
+~
+~
+0 -1 9040
+S
+#9022
+Rundown Road~
+   You are standing in the run down part of South City.  The grass is over
+grown and dead looking.  All kinds of trash litters the area.  Some very old
+condemned looking buildings are along the side of the road, looking like
+they will collapse at any moment.
+
+~
+0 0 1
+D0
+~
+~
+0 -1 9021
+D2
+~
+~
+0 -1 9023
+S
+#9023
+Rundown Road~
+   There is garbage everywhere along this old run down road.  You can see
+some homeless people hanging around a burning barrel next to one of the
+buildings. The road it self is all broken and cracked.  Many potholes line
+the road.
+
+~
+0 0 1
+D0
+~
+~
+0 -1 9022
+D1
+~
+~
+0 -1 9024
+S
+#9024
+Western Parking Area~
+   Many cars fill up this parking section.  This is where everyone parks
+their vehicles when they visit the South City Shopping district.  You can
+see a lot of people entering and leaving the shopping district from this
+place.
+
+~
+0 4 1
+D1
+~
+~
+0 -1 9025
+D3
+~
+~
+0 -1 9023
+S
+#9025
+Shopping District~
+   You have entered the shopping district of South City.  There are lots of
+people walking around window shopping at the many stores South City has to
+offer.
+
+~
+0 0 1
+D0
+~
+~
+0 -1 9035
+D1
+~
+~
+0 -1 9005
+D3
+~
+~
+0 -1 9024
+S
+#9026
+Shopping District~
+   You are surprised at how many people are here considering how small this
+town seems to be.  Many families are doing their shopping here, along with
+some kids playing around being obnoxious.
+
+~
+0 0 1
+D1
+~
+~
+0 -1 9027
+D3
+~
+~
+0 -1 9005
+S
+#9027
+Eastern Parking Area~
+   Many cars fill up this parking section.  This is where everyone parks
+their vehicles when they visit the South City Shopping district.  You can
+see a lot of people entering and leaving the shopping district from this
+place.
+
+~
+0 0 1
+D1
+~
+~
+0 -1 9028
+D3
+~
+~
+0 -1 9026
+S
+#9028
+Grey Avenue~
+   Grey Avenue is where most of the retired people in South City live.  It
+is a very quiet place, because that is the way that the residents like it.
+There are many beautiful gardens full of different kinds of flowers, in
+every ones yards.
+
+~
+0 0 1
+D0
+~
+~
+0 -1 9029
+D3
+~
+~
+0 -1 9027
+S
+#9029
+Grey Avenue~
+   Grey Avenue is where most of the retired people in South City live.  It
+is a very quiet place, because that is the way that the residents like it.
+Everyone here seems to have wonderfully kept up lawns.  They are all bight
+green and cut perfectly.
+
+~
+0 0 1
+D0
+~
+~
+0 -1 9010
+D2
+~
+~
+0 -1 9028
+S
+#9030
+South City Hospital~
+   This place unnaturally clean and sterile.  There are quite a few nurses
+checking up on all the patients and a few doctors taking care of some of the
+more seriously injured people.
+
+~
+0 538969088&16 1
+D1
+~
+~
+0 -1 9002
+S
+#9031
+The Trainers Room~
+   This section of the dojo is dedicated to the development of ones personal
+and physical traits.  The black belt master is trying to show a new student
+how to increase his agility.
+
+~
+0 268436480 1
+D2
+~
+~
+0 -1 9007
+S
+#9032
+Clothing Store~
+   You have entered a small used clothing store.  There are all kinds of
+clothing here.  A lot of it is hanging up on racks, but there is sill quite
+a few piles of unsorted clothes on the ground and in boxes.
+
+~
+0 1024 1
+D2
+~
+~
+0 -1 9008
+S
+#9033
+Shoe Store~
+   This is a new shoe store that just opened up.  The selection isn't very
+good yet since all their shipments of new shoes haven't come in yet.
+
+~
+0 1024 1
+D2
+~
+~
+0 -1 9009
+S
+#9034
+Practicing Arena~
+   The master black belt of the South City Dojo teaches some of his advanced
+students some new attacks in this room.  Unfortunately his students need a
+lot more practice...
+
+~
+0 1024 1
+D0
+~
+~
+0 -1 9007
+S
+#9035
+Benny's Tech Shop~
+   This room is very futuristic looking.  Fancy computers and specialized
+machines line most of the walls.  In the center of the room are some very
+heavy and durable looking sets of clothing.  Off in the back, you can see
+what looks like a workshop.
+
+~
+0 1024 1
+D2
+~
+~
+0 -1 9025
+S
+#9036
+The Bakery~
+   You are standing inside the small bakery.  A sweet scent of Danish and
+fine bread fills the room.  The bread and Danish are arranged in fine order
+on the shelves, and seem to be of the finest quality.
+
+~
+0 0 1
+D2
+~
+~
+0 -1 9026
+S
+#9037
+The Northern Highway~
+   This is the main highway that connects South City to the rest of the
+world.  Many different kinds of vehicles travel this huge highway.  To the
+northwest you can see the space transport landing pad.  Far off to the east
+you can see a huge mountain range and forest.
+
+~
+0 0 1
+D0
+~
+~
+0 -1 9041
+D2
+~
+~
+0 -1 9003
+S
+#9038
+An Old Dirt Road~
+   This is an old dirt road that leads into the lush, green forest that
+surrounds the eastern side of South City.  Not many people travel on this
+road anymore.
+
+~
+0 4 1
+D0
+~
+~
+0 -1 50000
+D3
+~
+~
+0 -1 9010
+S
+#9039
+Farm Road~
+   You are standing by a large dirt road that the farmers who work in the
+fields around South City use to get in and out of town by.  
+
+~
+0 4 1
+D0
+~
+~
+0 -1 9005
+D2
+~
+~
+0 -1 9100
+S
+#9040
+Western Desert~
+   You are standing just outside of South City.  As you look around, all you
+see is desert land.  Everything west of South City is dry desert terrain,
+for as far as you can see.
+
+~
+0 0 1
+D1
+~
+~
+0 -1 9021
+D3
+~
+~
+0 -1 70001
+S
+#9041
+Highway Exit to Space Port Delta~
+   Many different kinds of vehicles travel this huge highway.  To the west
+you can see the space transport landing pad.  Far off to the east you can
+see a huge mountain range and forest.
+
+~
+0 4 1
+D2
+~
+~
+0 -1 9037
+D3
+~
+~
+0 -1 9042
+S
+#9042
+Space Port Delta~
+   You can see many ships here, landing and taking off.  Quite a few people
+are wondering around, either looking for their flight, or heading back
+towards the highway.
+
+A digital ticker sign displays the following message:
+&RHomeworld transport comes to Spaceport Alpha.
+Take turbo car to Satan City, look for spaceport in northeast section.
+&D
+~
+0 4 1
+D1
+~
+~
+0 -1 9041
+S
+#9099
+Floating in a void~
+~
+0 2097156 1
+S
+#0
+
+
+#RESETS
+M 1 9016 2 9000
+M 1 9001 1 9001
+M 1 9002 1 9001
+M 1 9003 1 9001
+M 1 9024 1 9001
+G 1 9024 1
+O 1 9004 1 9001
+M 1 9023 1 9004
+G 1 9026 1
+M 1 9028 1 9005
+G 1 9025 1
+M 1 9026 1 9005
+M 1 9006 1 9006
+O 1 9005 1 9006
+M 1 9007 1 9007
+M 1 9008 1 9007
+M 1 9000 2 9010
+M 1 9000 2 9013
+M 1 9015 1 9013
+M 1 9014 2 9014
+M 1 9013 2 9014
+M 1 9013 2 9017
+M 1 9014 2 9018
+M 1 9019 2 9019
+M 1 9020 1 9019
+O 1 9000 1 9019
+O 1 9001 1 9019
+M 1 9021 1 9020
+M 1 9017 2 9020
+O 1 9002 1 9020
+O 1 9001 1 9020
+O 1 9000 1 9020
+M 1 9019 2 9021
+O 1 9000 1 9021
+O 1 9001 1 9021
+M 1 9018 1 9022
+M 1 9016 2 9022
+O 1 9000 1 9022
+O 1 9001 1 9022
+M 1 9017 2 9023
+O 1 9001 1 9023
+O 1 9000 1 9023
+M 1 9029 1 9025
+M 1 9025 2 9025
+M 1 9027 1 9026
+M 1 9025 2 9026
+M 1 9004 2 9030
+M 1 9004 2 9030
+M 1 9005 1 9030
+O 1 9003 1 9030
+M 1 9009 1 9031
+M 1 9011 1 9032
+G 1 9018 1
+G 1 9017 1
+G 1 9016 1
+G 1 9015 1
+G 1 9014 1
+G 1 9013 1
+G 1 9012 1
+G 1 9011 1
+G 1 9010 1
+G 1 9009 1
+M 1 9010 1 9034
+M 1 9022 1 9035
+G 1 9027 1
+G 1 9022 1
+G 1 9023 1
+G 1 9021 1
+G 1 9020 1
+G 1 9019 1
+M 1 9012 1 9033
+G 1 9008 1
+G 1 9007 1
+G 1 9006 1
+S
+
+
+#SHOPS
+ 9011    0  0  0  0  0   100  90         0 23    ; the clothing store owner
+ 9012    0  0  0  0  0   100  90         0 23    ; the shoe store owner
+ 9022    1  0  0  0  0   100  90         0 23    ; Benny
+0
+
+
+#REPAIRS
+ 9022    0  0  0         100   1         0 23    ; Benny
+0
+
+
+#SPECIALS
+S
+
+
+#$

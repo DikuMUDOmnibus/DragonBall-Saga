@@ -1,0 +1,1364 @@
+#AREA   Satan City Sanitarium~
+
+
+
+#VERSION 252
+#AUTHOR Dabura~
+
+#RANGES
+0 0 0 0
+$
+
+#PLANET 0
+
+#FLAGS
+0
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#210000
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#210001
+The Sanitarium Secretary~
+The Sanitarium Secretary~
+The Sanitarium Secretary sits at her desk, typing loudly.
+~
+~
+67 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 2
+2 2 2 2 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho The secretary falls to her knees, near death. Seeing this, the nearby orderlies rush to her aid, scowling.
+mpecho &CAn orderly says, 'If you don't stop I'll call the cops!'&D
+mpmload 210001
+if rand(60)
+mpecho The orderly runs over to the phone, and calls the cops!
+mpmload 210002
+mpforce 210002 mpkill $n
+endif
+~
+|
+#210002
+A Police Officer~
+A Police Officer~
+A police officer lolls about, looking for violators of the law.
+~
+~
+67 0 100 C
+1 0 100 1d20+0 2d5+0
+-1 80000
+112 112 1
+5 5 3 5 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#210003
+An Orderly~
+An Orderly~
+An orderly stands alert, watching for misbehaving patients.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 50000
+112 112 1
+15 15 15 15 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#210004
+A Patient~
+A patient~
+A mentally unstable patient looks around, not aware of their surroundings.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000
+112 112 1
+15 1 10 1 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 50~
+if rand(5)
+pant
+endif
+if rand(5)
+worship
+endif
+if rand(5)
+boko
+endif
+if rand(5)
+frolick
+endif
+~
+|
+#210005
+An Unstable Patient~
+An unstable patient~
+A severely unstable patient stares forward, veins throbbing on his forehead.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 7500
+112 112 1
+15 1 10 1 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 35~
+if rand(5)
+alligator
+endif
+if rand(5)
+men
+endif
+if rand(5)
+cheesecake
+endif
+if rand(5)
+vampire
+endif
+if rand(5)
+caress
+endif
+~
+|
+#210006
+A solitary patient~
+A solitary patient~
+A patient sits here in the corner, rocking back and forth.
+~
+~
+35 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 30000
+112 112 1
+25 1 15 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 10~
+growl
+~
+|
+#210007
+A Janitor~
+A strong-looking Janitor~
+The janitor sits on a bench, lifting massive weights.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 75000
+112 112 1
+20 20 20 20 0
+0 0 0 0 0
+2 2 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog ~
+if race($n)==android
+emote gets up from his bench.
+say Well, hello there. You're one of them newfangled 'androids', aren't you?
+say I think those androids are somethin' special. You look like you're pretty rough off though - I'll help you.
+say If you find any large pieces of metal, just let me know, cause I've got a nice set o' tools and I'll fix that into some armor right fast.
+say Just say that you have some metal.
+endif
+~
+> speech_prog metal~
+Say Well, that's nice.
+if race($n)==android
+emote gets up.
+say Well, what have we got here...
+if carryingvnum($n) 210002
+say That's some pretty nice looking iron you've got there.
+mpforce $n give sheets $i
+if carryingvnum($i) 210002
+mppurge sheets
+say Well, let me see what I can make with this..
+mpsleep 2
+emote gets out his tools and begins working.
+mpsleep 5
+mpoload 210003
+give chest $n
+if rand(50)
+mpoload 210004
+give plating $n
+say Lucky you. There was enough to make both pieces.
+else
+say There ya go. Good luck!
+endif
+endif
+endif
+endif
+~
+|
+#210008
+The Director~
+The Sanitarium Director~
+The director of the Satan City Sanitarium sits at her desk, eyes closed.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100000
+112 112 2
+25 25 25 25 0
+0 0 0 0 0
+2 2 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog ~
+emote opens her eyes slowly, looking at you.
+say Are you aware this room is private?
+say I recommend you leave.
+~
+|
+#210009
+The Cook~
+The sanitarium cook~
+The cook stands over a range, watching a pot of boiling water.
+~
+~
+3 0 250 C
+1 0 100 1d20+0 2d5+0
+-1 10000
+112 112 2
+5 5 5 5 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog 'Da boiler foiler'~
+mpoload 210001
+drop boiler
+~
+|
+#210099
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#210000
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#210001
+a boiler~
+a boiler~
+A boiler boils the day away by the wall.~
+~
+15 0 0
+15 0 0 0 0 0
+1 0 0
+ 0
+#210002
+iron plating sheets~
+iron plating sheets~
+Large sheets of thick iron plating lie on the ground.~
+~
+8 0 1
+0 0 0 0 0 0
+10 0 0
+ 0
+#210003
+iron chest plating~
+Iron Chest Plating~
+Shiny, curved iron sheets lie on the ground.~
+~
+9 9682944 9 16
+0 0 0 0 50 50
+5 0 0
+ 0
+#210004
+iron leg plating~
+Iron Leg Plating~
+Shiny, long iron sheets lie on the ground.~
+~
+9 9682944 33 16
+0 0 0 0 50 50
+5 0 0
+ 0
+#210099
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#210000
+Entrance to the Sanitarium~
+~
+0 0 1
+D0
+~
+~
+0 -1 210001
+D1
+~
+~
+0 -1 3757
+S
+#210001
+Sanitarium Lobby~
+~
+0 0 1
+D0
+~
+~
+3 -1 210002
+D1
+~
+~
+0 -1 210006
+D2
+~
+~
+0 -1 210000
+D3
+~
+~
+0 -1 210007
+D5
+~
+~
+0 -1 210032
+S
+#210002
+The Television Room~
+~
+0 0 1
+D0
+~
+~
+3 -1 210005
+D1
+~
+~
+0 -1 210003
+D2
+~
+~
+3 -1 210001
+D3
+~
+~
+0 -1 210004
+S
+#210003
+Kitchens~
+~
+0 0 1
+D3
+~
+~
+0 -1 210002
+S
+#210004
+Recreational Room~
+~
+0 0 1
+D1
+~
+~
+0 -1 210002
+S
+#210005
+The Sanitarium Director's Room~
+~
+0 0 1
+D2
+~
+~
+3 -1 210002
+D8
+~
+~
+3 -1 210017
+D9
+~
+~
+3 -1 210029
+S
+#210006
+Entrance to Wing A~
+~
+0 0 1
+D0
+~
+~
+0 -1 210008
+D3
+~
+~
+0 -1 210001
+S
+#210007
+Entrance to Wing B~
+~
+0 0 1
+D0
+~
+~
+0 -1 210020
+D1
+~
+~
+0 -1 210001
+S
+#210008
+The Wing A Hallway~
+~
+0 0 1
+D0
+~
+~
+0 -1 210011
+D1
+~
+~
+0 -1 210010
+D2
+~
+~
+0 -1 210006
+D3
+~
+~
+0 -1 210009
+S
+#210009
+Patients' Rooms~
+~
+0 0 1
+D1
+~
+~
+0 -1 210008
+S
+#210010
+Patients' Rooms~
+~
+0 0 1
+D3
+~
+~
+0 -1 210008
+S
+#210011
+The Wing A Hallway~
+~
+0 0 1
+D0
+~
+~
+0 -1 210014
+D1
+~
+~
+0 -1 210013
+D2
+~
+~
+0 -1 210008
+D3
+~
+~
+0 -1 210012
+S
+#210012
+Patients' Rooms~
+~
+0 0 1
+D1
+~
+~
+0 -1 210011
+S
+#210013
+Patients' Rooms~
+~
+0 0 1
+D3
+~
+~
+0 -1 210011
+S
+#210014
+The Wing A Hallway~
+~
+0 0 1
+D0
+~
+~
+0 -1 210017
+D1
+~
+~
+0 -1 210015
+D2
+~
+~
+0 -1 210011
+D3
+~
+~
+0 -1 210016
+S
+#210015
+Patients' Rooms~
+~
+0 0 1
+D3
+~
+~
+0 -1 210014
+S
+#210016
+Patients' Rooms~
+~
+0 0 1
+D1
+~
+~
+0 -1 210014
+S
+#210017
+The Wing A Hallway~
+~
+0 0 1
+D1
+~
+~
+0 -1 210018
+D2
+~
+~
+0 -1 210014
+D3
+~
+~
+0 -1 210019
+D4
+~
+~
+0 -1 210045
+D7
+~
+~
+1 -1 210005
+S
+#210018
+Patients' Rooms~
+~
+0 0 1
+D3
+~
+~
+0 -1 210017
+S
+#210019
+Patients' Rooms~
+~
+0 0 1
+D1
+~
+~
+0 -1 210017
+S
+#210020
+The Wing B Hallway~
+~
+0 0 1
+D0
+~
+~
+0 -1 210023
+D1
+~
+~
+0 -1 210021
+D2
+~
+~
+0 -1 210007
+D3
+~
+~
+0 -1 210022
+S
+#210021
+Patients' Rooms~
+~
+0 0 1
+D3
+~
+~
+0 -1 210020
+S
+#210022
+Patients' Rooms~
+~
+0 0 1
+D1
+~
+~
+0 -1 210020
+S
+#210023
+The Wing B Hallway~
+~
+0 0 1
+D0
+~
+~
+0 -1 210026
+D1
+~
+~
+0 -1 210024
+D2
+~
+~
+0 -1 210020
+D3
+~
+~
+0 -1 210025
+S
+#210024
+Patients' Rooms~
+~
+0 0 1
+D3
+~
+~
+0 -1 210023
+S
+#210025
+Patients' Rooms~
+~
+0 0 1
+D1
+~
+~
+0 -1 210023
+S
+#210026
+The Wing B Hallway~
+~
+0 0 1
+D0
+~
+~
+0 -1 210029
+D1
+~
+~
+0 -1 210027
+D2
+~
+~
+0 -1 210023
+D3
+~
+~
+0 -1 210028
+S
+#210027
+Patients' Rooms~
+~
+0 0 1
+D3
+~
+~
+0 -1 210026
+S
+#210028
+Patients' Rooms~
+~
+0 0 1
+D1
+~
+~
+0 -1 210026
+S
+#210029
+The Wing B Hallway~
+~
+0 0 1
+D1
+~
+~
+0 -1 210030
+D2
+~
+~
+0 -1 210026
+D3
+~
+~
+0 -1 210031
+D4
+~
+~
+0 -1 210049
+D6
+~
+~
+1 -1 210005
+S
+#210030
+Patients' Rooms~
+~
+0 0 1
+D3
+~
+~
+0 -1 210029
+S
+#210031
+Patients' Rooms~
+~
+0 0 1
+D1
+~
+~
+0 -1 210029
+S
+#210032
+By the Basement Stairs~
+~
+0 0 1
+D0
+~
+~
+3 -1 210034
+D1
+~
+~
+3 -1 210033
+D3
+~
+~
+0 -1 210035
+D4
+~
+~
+0 -1 210001
+S
+#210033
+The Boiler Room~
+~
+0 0 1
+D3
+~
+~
+3 -1 210032
+S
+#210034
+The Janitor's Closet~
+~
+0 0 1
+D2
+~
+~
+3 -1 210032
+S
+#210035
+Orderly's Quarters Hallway~
+~
+0 0 1
+D0
+~
+~
+0 -1 210036
+D1
+~
+~
+0 -1 210032
+D2
+~
+~
+0 -1 210037
+D3
+~
+~
+0 -1 210038
+S
+#210036
+An Orderly's Room~
+~
+0 0 1
+D2
+~
+~
+0 -1 210035
+S
+#210037
+An Orderly's Room~
+~
+0 0 1
+D0
+~
+~
+0 -1 210035
+S
+#210038
+Orderly's Quarters Hallway~
+~
+0 0 1
+D0
+~
+~
+0 -1 210039
+D1
+~
+~
+0 -1 210035
+D2
+~
+~
+0 -1 210040
+D3
+~
+~
+0 -1 210041
+S
+#210039
+An Orderly's Room~
+~
+0 0 1
+D2
+~
+~
+0 -1 210038
+S
+#210040
+An Orderly's Room~
+~
+0 0 1
+D0
+~
+~
+0 -1 210038
+S
+#210041
+Orderly's Quarters Hallway~
+~
+0 0 1
+D0
+~
+~
+0 -1 210042
+D1
+~
+~
+0 -1 210038
+D2
+~
+~
+0 -1 210043
+D3
+~
+~
+0 -1 210044
+S
+#210042
+An Orderly's Room~
+~
+0 0 1
+D2
+~
+~
+0 -1 210041
+S
+#210043
+An Orderly's Room~
+~
+0 0 1
+D0
+~
+~
+0 -1 210041
+S
+#210044
+An Orderly's Room~
+~
+0 0 1
+D1
+~
+~
+0 -1 210041
+S
+#210045
+Solitary Confinement Sector A~
+~
+0 0 1
+D0
+~
+~
+3 -1 210047
+D1
+~
+~
+3 -1 210046
+D3
+~
+~
+3 -1 210048
+D5
+~
+~
+0 -1 210017
+S
+#210046
+Solitary Confinement Room 1~
+~
+0 0 1
+D3
+~
+~
+3 -1 210045
+S
+#210047
+Solitary Confinement Room 2~
+~
+0 0 1
+D2
+~
+~
+3 -1 210045
+S
+#210048
+Solitary Confinement Room 3~
+~
+0 0 1
+D1
+~
+~
+3 -1 210045
+S
+#210049
+Solitary Confinement Sector B~
+~
+0 0 1
+D0
+~
+~
+3 -1 210051
+D1
+~
+~
+3 -1 210050
+D3
+~
+~
+3 -1 210052
+D5
+~
+~
+0 -1 210029
+S
+#210050
+Solitary Confinement Room 4~
+~
+0 0 1
+D3
+~
+~
+3 -1 210049
+S
+#210051
+Solitary Confinement Room 5~
+~
+0 0 1
+D2
+~
+~
+3 -1 210049
+S
+#210052
+Solitary Confinement Room 6~
+~
+0 0 1
+D1
+~
+~
+3 -1 210049
+S
+#210053
+Nothin'.~
+~
+0 2097156 1
+S
+#210054
+Floating in a void~
+~
+0 4 1
+S
+#210055
+Floating in a void~
+~
+0 4 1
+S
+#210056
+Floating in a void~
+~
+0 4 1
+S
+#210057
+Floating in a void~
+~
+0 4 1
+S
+#210058
+Floating in a void~
+~
+0 4 1
+S
+#210059
+Floating in a void~
+~
+0 4 1
+S
+#210060
+Floating in a void~
+~
+0 4 1
+S
+#210061
+Floating in a void~
+~
+0 4 1
+S
+#210062
+Floating in a void~
+~
+0 4 1
+S
+#210063
+Floating in a void~
+~
+0 4 1
+S
+#210064
+Floating in a void~
+~
+0 4 1
+S
+#210065
+Floating in a void~
+~
+0 4 1
+S
+#210066
+Floating in a void~
+~
+0 4 1
+S
+#210067
+Floating in a void~
+~
+0 4 1
+S
+#210068
+Floating in a void~
+~
+0 4 1
+S
+#210069
+Floating in a void~
+~
+0 4 1
+S
+#210070
+Floating in a void~
+~
+0 4 1
+S
+#210071
+Floating in a void~
+~
+0 4 1
+S
+#210072
+Floating in a void~
+~
+0 4 1
+S
+#210073
+Floating in a void~
+~
+0 4 1
+S
+#210074
+Floating in a void~
+~
+0 4 1
+S
+#210075
+Floating in a void~
+~
+0 4 1
+S
+#210076
+Floating in a void~
+~
+0 4 1
+S
+#210077
+Floating in a void~
+~
+0 4 1
+S
+#210078
+Floating in a void~
+~
+0 4 1
+S
+#210079
+Floating in a void~
+~
+0 4 1
+S
+#210080
+Floating in a void~
+~
+0 4 1
+S
+#210081
+Floating in a void~
+~
+0 4 1
+S
+#210082
+Floating in a void~
+~
+0 4 1
+S
+#210083
+Floating in a void~
+~
+0 4 1
+S
+#210084
+Floating in a void~
+~
+0 4 1
+S
+#210085
+Floating in a void~
+~
+0 4 1
+S
+#210086
+Floating in a void~
+~
+0 4 1
+S
+#210087
+Floating in a void~
+~
+0 4 1
+S
+#210088
+Floating in a void~
+~
+0 4 1
+S
+#210089
+Floating in a void~
+~
+0 4 1
+S
+#210090
+Floating in a void~
+~
+0 4 1
+S
+#210091
+Floating in a void~
+~
+0 4 1
+S
+#210092
+Floating in a void~
+~
+0 4 1
+S
+#210093
+Floating in a void~
+~
+0 4 1
+S
+#210094
+Floating in a void~
+~
+0 4 1
+S
+#210095
+Floating in a void~
+~
+0 4 1
+S
+#210096
+Floating in a void~
+~
+0 4 1
+S
+#210097
+Floating in a void~
+~
+0 4 1
+S
+#210098
+Floating in a void~
+~
+0 4 1
+S
+#210099
+Floating in a void~
+~
+0 4 1
+S
+#0
+
+
+#RESETS
+M 1 210008 1 210005
+D 0 210005 2 1
+D 0 210005 8 1
+D 0 210005 9 1
+M 1 210009 1 210003
+M 1 210004 1 210002
+M 1 210004 1 210002
+D 0 210002 0 1
+D 0 210002 2 1
+M 1 210004 1 210004
+M 1 210004 1 210019
+M 1 210004 1 210019
+M 1 210004 1 210019
+M 1 210004 1 210018
+M 1 210004 1 210018
+M 1 210004 1 210018
+M 1 210004 1 210015
+M 1 210004 1 210015
+M 1 210004 1 210015
+M 1 210004 1 210016
+M 1 210004 1 210016
+M 1 210004 1 210016
+M 1 210004 1 210013
+M 1 210004 1 210013
+M 1 210004 1 210013
+M 1 210004 1 210012
+M 1 210004 1 210012
+M 1 210004 1 210012
+M 1 210004 1 210010
+M 1 210004 1 210010
+M 1 210004 1 210010
+M 1 210004 1 210009
+M 1 210004 1 210009
+M 1 210004 1 210009
+M 1 210005 1 210030
+M 1 210005 1 210030
+M 1 210005 1 210031
+M 1 210005 1 210031
+M 1 210005 1 210027
+M 1 210005 1 210027
+M 1 210005 1 210028
+M 1 210005 1 210028
+M 1 210005 1 210024
+M 1 210005 1 210024
+M 1 210005 1 210025
+M 1 210005 1 210025
+M 1 210005 1 210021
+M 1 210005 1 210021
+M 1 210005 1 210022
+M 1 210005 1 210022
+M 1 210006 1 210050
+M 1 210006 1 210051
+M 1 210006 1 210052
+M 1 210006 1 210046
+M 1 210006 1 210047
+M 1 210006 1 210048
+M 1 210007 1 210034
+D 0 210034 2 1
+M 1 210003 1 210036
+M 1 210003 1 210037
+M 1 210003 1 210040
+M 1 210003 1 210039
+M 1 210003 1 210042
+M 1 210003 1 210043
+M 1 210003 1 210044
+M 1 210003 1 210020
+M 1 210003 1 210026
+M 1 210003 1 210014
+M 1 210003 1 210008
+M 1 210001 1 210001
+M 1 210003 1 210001
+D 0 210001 0 1
+D 0 210032 0 1
+D 0 210032 1 1
+O 1 210001 1 210033
+P 0 210002 1 0
+D 0 210033 3 1
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

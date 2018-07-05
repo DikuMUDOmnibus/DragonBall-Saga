@@ -1,0 +1,55 @@
+#SHIP
+Name         Space Pod PXL-012~
+Filename     space_pod_pxl-012.ship~
+Description  A larger space pod, big enough multiple people.~
+Owner        ~
+Pilot        ~
+Copilot      ~
+Class        0
+Tractorbeam  0
+Shipyard     3871
+Hanger       0
+Turret1      0
+Turret2      0
+Statet0      0
+Statet1      0
+Statet2      0
+Lasers       0
+Missiles     0
+Maxmissiles  0
+Rockets     0
+Maxrockets  0
+Torpedos     0
+Maxtorpedos  0
+Lastdoc      3871
+Firstroom    1041
+Lastroom     1041
+Shield       0
+Maxshield    100
+Hull         50
+Maxhull      50
+Maxenergy    6000
+Hyperspeed   80
+Comm         0
+Chaff        0
+Maxchaff     0
+Sensor       0
+Astro_array  0
+Realspeed    80
+Type         0
+Cockpit      1041
+Coseat       1041
+Pilotseat    1041
+Gunseat      1041
+Navseat      1041
+Engineroom   0
+Entrance     1041
+Shipstate    0
+Missilestate 0
+Energy       6000
+Manuever     10
+Cost         1000000
+Home         corperate~
+End
+
+#END

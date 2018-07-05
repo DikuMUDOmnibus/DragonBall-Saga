@@ -1,0 +1,54 @@
+#SHIP
+Name         Namek Transport Ship~
+Filename     namek_transport.ship~
+Description  ~
+Owner        Private~
+Pilot        ~
+Copilot      ~
+Class        0
+Tractorbeam  0
+Shipyard     369
+Hanger       0
+Turret1      0
+Turret2      0
+Statet0      0
+Statet1      0
+Statet2      0
+Lasers       0
+Missiles     0
+Maxmissiles  0
+Rockets     0
+Maxrockets  0
+Torpedos     0
+Maxtorpedos  0
+Lastdoc      5000
+Firstroom    1003
+Lastroom     1004
+Shield       0
+Maxshield    0
+Hull         0
+Maxhull      0
+Maxenergy    0
+Hyperspeed   10
+Comm         0
+Chaff        0
+Maxchaff     0
+Sensor       0
+Astro_array  0
+Realspeed    10
+Type         0
+Cockpit      1003
+Coseat       1003
+Pilotseat    1003
+Gunseat      1003
+Navseat      1003
+Engineroom   0
+Entrance     1004
+Shipstate    1
+Missilestate 0
+Energy       0
+Manuever     10
+Home         corperate~
+End
+
+#END

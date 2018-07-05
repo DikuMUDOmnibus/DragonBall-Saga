@@ -1,0 +1,4826 @@
+#AREA   Mount Areukk~
+
+
+
+#VERSION 252
+#AUTHOR Dabura~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 7
+
+#RESETMSG A howling wind can be heard as another one of the endless storms passes through the mountains.~
+
+#FLAGS
+2
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#150000
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#150101
+controller landing icer~
+The landing controller~
+The Icer landing controller is here, watching a monitor and pressing buttons.
+~
+~
+67108867 0 -500 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+10 10 10 10 0
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#150102
+guard icer~
+An Icer Guard~
+An Icerian Guard stands at attention here.
+~
+~
+3 0 -500 C
+1 0 100 1d20+0 2d5+0
+-1 1000000000
+112 112 1
+75 75 75 75 0
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#150103
+guard icer city~
+An Icer Cityguard~
+An Icerian Cityguard stands at a rigid attention here.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1300000000
+112 112 1
+100 100 100 100 0
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#150104
+icer man male poor~
+A poor Icer man~
+A poor Icer man wanders around here, looking for a job.
+~
+~
+197 0 -100 C
+1 0 100 1d20+0 2d5+0
+-1 500000000
+112 112 1
+100 100 100 100 0
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#150105
+icer female woman poor~
+A poor Icer woman~
+A poor Icer woman wanders about here, with nothing to do.
+~
+~
+193 0 -300 C
+1 0 100 1d20+0 2d5+0
+-1 550000000
+112 112 2
+100 75 75 75 0
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#150106
+icer child poor kid~
+An icer child~
+A downcast Icer child looks for a playmate.
+~
+~
+1 0 -100 C
+1 0 100 1d20+0 2d5+0
+-1 400000000
+112 112 0
+75 75 75 75 10
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#150107
+icer man common commoner~
+An Icer Commoner~
+An Icer Commoner man moves back and forth, diligently at work.
+~
+~
+1 0 -400 C
+1 0 100 1d20+0 2d5+0
+-1 700000000
+112 112 1
+100 100 75 85 5
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#150108
+icer woman common commoner~
+An Icer Commoner~
+An Icer Commoner woman tends to her children here.
+~
+~
+1 0 -250 C
+1 0 100 1d20+0 2d5+0
+-1 675000000
+112 112 2
+75 100 100 75 10
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#150109
+icer child common commoner~
+A Commoner Icer Child~
+A young Icer Commoner frolicks with his friends here.
+~
+~
+1 0 -400 C
+1 0 100 1d20+0 2d5+0
+-1 600000000
+112 112 0
+75 75 75 75 0
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#150110
+rich high man icer~
+A Highcitizen Man~
+A richly dressed Icerian man preens himself here.
+~
+~
+1 0 -600 C
+1 0 100 1d20+0 2d5+0
+-1 950000000
+112 112 1
+100 80 80 100 5
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 1~
+if rand(2)
+mpoload 100320
+endif
+~
+|
+#150111
+rich high woman icer~
+A Highcitizen Woman~
+A finely-clad woman struts to and fro here.
+~
+~
+1 0 -600 C
+1 0 100 1d20+0 2d5+0
+-1 900000000
+112 112 2
+75 100 40 100 10
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#150112
+rich high child icer~
+A rich Icer child~
+A rich Icer child fumes and glares at everyone here.
+~
+~
+1 0 -500 C
+1 0 100 1d20+0 2d5+0
+-1 800000000
+112 112 0
+75 100 100 100 0
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#150113
+keeper bartender barkeep icer~
+An Icer bartender~
+An Icer bartender bustles about fixing various drinks.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 0
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Don't do anything stupid, or I'll call the guards!
+~
+|
+#150114
+merchant guard icer patrol~
+An Icer Merchantguard~
+An Icer guard stands here, keeping a close eye on all shoppers.
+~
+~
+3 0 -400 C
+1 0 100 1d20+0 2d5+0
+-1 1250000000
+112 112 1
+125 100 125 100 0
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#150115
+military shop man icer~
+An Icer shopkeeper~
+An Icer shopkeeper tends his inventory, muttering under his breath.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+500 10 10 10 0
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if ispc($n)
+say Welcome to my shop, $n!
+endif
+~
+|
+#150116
+warrior male icer~
+A Male Icerian Warrior~
+A male Warrior casts his haughty gaze upon all in the room.
+~
+~
+3 0&2048 -800 C
+1 0 100 1d20+0 2d5+0
+-1 6000000000
+112 112 1
+125 125 125 125 15
+0 0 0 0 0
+5 5 0 0 1 1 1
+0 0 0 0 0 0 4 0
+> fight_prog 20~
+'finger beam'
+~
+> fight_prog 5~
+trapball
+~
+> fight_prog 35~
+destructo
+~
+|
+#150117
+female warrior icer~
+A Female Icerian Warrior~
+A slightly less androgynous female warrior coldly stares about.
+~
+~
+3 0&8192 -800 C
+1 0 100 1d20+0 2d5+0
+-1 6000000000
+112 112 2
+125 125 125 125 15
+0 0 0 0 0
+5 5 0 0 1 1 2
+0 0 0 0 0 0 4 0
+> fight_prog 20~
+'dual destructo disk'
+~
+> fight_prog 35~
+destructo
+~
+|
+#150118
+male guardian icer~
+A towering Icer Guardian~
+A huge Icerian man meditates on the ground.
+~
+The male Guardian here appears to be asleep, although one with a cunning
+eye could easily discern he is simply meditating, his muscles tensed.
+Were he not on the ground, he would tower over most other Icers at nearly
+six and a half feet tall, and could easily smite the life out of any of his
+brethren, although his occupation does not include such activities. Mastery
+over his art is clear, as he appears ready to explode into a flurry of motion at
+any moment.
+~
+35 0&16384 -1000 C
+1 0 100 1d20+0 2d5+0
+-1 15000000000
+112 112 1
+150 150 150 150 20
+0 0 0 0 0
+5 5 0 0 1 1 2
+0 0 0 0 0 0 4 0
+> death_prog 5~
+mpoload 150220
+mpecho In his final death throes, the Guardian clutches a small silver key in his hand.
+mpecho As death finally takes him, it falls out of his hand, clinking softly on the floor.
+~
+> fight_prog 10~
+cackle
+trap
+~
+> fight_prog 4~
+say DIE!!
+'scattered finger beam' 50
+~
+> fight_prog 5~
+mpechoat $n Running towards you, $I grabs you by the legs, throws you directly above him and follows up with a barrage of
+mpechoat $n small ki blasts. [25]
+mpdamage $n 25
+~
+> fight_prog 20~
+'finger beam'
+~
+> fight_prog 15~
+'destructive wave'
+~
+|
+#150119
+female guardian icer~
+A ferocious Icer Guardian~
+A small, yet ferocious female Guardian readies herself for battle here.
+~
+Although she only appears to stand a few inches over five feet, this
+Guardian obviously can defend herself, as her androgyny has been
+stretched to an extraordinary limit, her massive muscles disguising
+her gender even more. Opaque, ice-like battle armor covers nearly
+her entire body.
+~
+35 0&8192 -1000 C
+1 0 100 1d20+0 2d5+0
+-1 15000000000
+112 112 2
+175 175 175 175 20
+0 0 0 0 0
+5 5 0 0 1 1 2
+0 0 0 0 0 0 4 0
+> death_prog 5~
+mpoload 150221
+mpecho As the Icer Guardian falls over, finally dead, a small golden key slowly falls out of her hand, landing softly on the floor.
+~
+> fight_prog 1~
+mpecho The Icer Guardian pauses in her relentless attack for a moment, staring at you. Out of nowhere, several quick bursts of energy
+mpecho from her eyes at you!
+'eye beam'
+'eye beam'
+'eye beam'
+~
+> fight_prog 10~
+'dual destructo disk'
+'destructo disk'
+~
+> fight_prog 15~
+'death ball'
+~
+> fight_prog 20~
+'finger beam'
+~
+|
+#150120
+ymir overlord icer~
+Ymir, Overlord of Mount Areukk~
+Ymir, Overlord of Mount Areukk sits on his throne, contemplating existance.
+~
+Standing at nearly eight feet tall, Overlord Ymir is an imposing figure, his
+mighty position in Mount Areukk no doubt cemented by his appearance, and way
+of carrying himself. Although he is sitting down, his muscles appear to be tensed,
+as if he were ready even now to battle, and most likely kill, anyone who challenges
+him. His eyes burn with an eerie red glow, made even more mystical by the reflection
+they receive from his armor.
+~
+35 128&16384 -1000 C
+1 0 100 1d20+0 2d5+0
+-1 45000000000
+112 112 1
+400 400 400 400 0
+0 0 0 0 0
+5 5 0 0 1 1 4
+0 0 0 0 0 0 4 0
+> hitprcnt_prog 15~
+if rand(75)
+  mea $n Ymir runs up towards you, grabbing you by the ankles! He spins you about rapidly, hurling you out of the room!
+  mea $n The last thing you hear before leaving the throne room is Ymir screaming for guards.
+  if mobcount(150046) < 4
+    mpmload 150121
+    mpmload 150121
+    mpmload 150121
+    mpmload 150121
+  endif
+  mpforce $n flee
+  mpforce $n flee
+  mpforce $n flee
+endif
+~
+> fight_prog 5~
+'death ball'
+'death ball'
+~
+> fight_prog 5~
+'scattered finger beam' 50
+~
+> fight_prog 10~
+'destructive wave'
+~
+> fight_prog 15~
+'energy ball'
+'energy ball'
+~
+> fight_prog 1~
+mpecho &CYmir powers up, his aura flaring. He screams out, "&RDEATH BEAM!!!!&C"
+mpecho &CHe holds his arms to his side, and then performs a punching motion with both, a spiraling beam of energy blasting
+mpecho &Ctowards you!
+mpdamage $n 100
+~
+> greet_prog 100~
+if ispc($n)
+mpechoat $n &ROverlord Ymir'seyes flare open from his contemplation, as he senses your arrival in the Throne Room.
+mpechoat $n &RHe darts into action, launching himself from a harmless-looking lounging position into a feral dash across the room!
+mpechoat $n &RAs he powers up, Ymir's subzero &Ppurple&R aura flares about the room, chilling you to the bone!
+endif
+if isimmort($n)
+mpechoat $n Ymir backs down from his attack, whimpering loudly.
+cower $n
+say Have you come to destroy me, $n?
+endif
+~
+> death_prog 100~
+if rand(1)
+if ispc($n)
+if pl($n)<=200000000000
+mpecho Falling to the ground, dead, Ymir's corpse lands upon a small switch, opening a panel on the side of the room.
+mpecho Upon further inspection, you find what appears to be his battle armor.
+mpoload 150223
+endif
+endif
+endif
+if rand(5)
+mpecho As Ymir slowly falls to the ground, he lands upon a small switch, opening a panel on the arm of his throne.
+mpecho Upon further examination, you find a small ice key inside.
+mpoload 150222 $n
+endif
+~
+> fight_prog 50~
+eyebeam
+~
+> fight_prog 65~
+'finger beam'
+~
+> fight_prog 30~
+destructo
+~
+|
+#150121
+royal guard icer~
+An Icerian Royal Guard~
+An Icerian Royal guard patrols the hallways here, looking for intruders.
+~
+~
+33 0&2048 -1000 C
+1 0 100 1d20+0 2d5+0
+-1 10000000000
+112 112 1
+150 150 150 150 0
+0 0 0 0 0
+5 5 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+'energy ball'
+'energy ball'
+~
+> fight_prog 10~
+'finger beam'
+~
+> fight_prog 15~
+destructo
+~
+> fight_prog 15~
+destructive
+~
+|
+#150122
+Ariemas icer~
+Ariemas~
+Ariemas stands here, perfecting his fighting techniques.
+~
+Wearing only a heavy set of pants, Ariemas' heavily muscled body flexes
+with every breath. A large ring has been pierced through two spots in his
+lower lip, and it appears to be made out of a pale reddish metal that
+oddly shimmers every few seconds. His skin is pale, threaded here and there
+by an angry shade of red. Its glasslike surface reflects the light of his
+room, making him appear to be blazing with light.
+~
+3 128&8192 -1000 C
+1 0 100 1d20+0 2d5+0
+-1 25000000000
+112 112 1
+200 150 175 150 20
+0 0 0 0 0
+5 5 0 0 1 1 7
+0 0 0 0 0 0 0 0
+> fight_prog 20~
+kick
+kick
+punch
+~
+> greet_prog 100~
+mpechoat $n Ariemas, sensing your presence, halts his flurry of punches towards an imaginary foe, and turns towards you.
+mpsleep 2
+mpechoat $n He flexes his muscles, stretches slightly, and grins in hope of a fight.
+mpsleep 2
+say I hope you've come here to fight, $n. You'll find I'm not another meek royal to be beaten down.
+~
+> fight_prog 30~
+if race($n)!=android
+mpechoat $n &RAriemas grabs ahold of your arm with both his hands, and twists as hard as he can, in an attempt to break the bone!
+mpdamage $n 15
+if rand(30)
+mpdamage $n 40
+endif
+else
+'dual destructo disk'
+endif
+~
+> fight_prog 15~
+if race($n)!=android
+mpechoat $n &r$I punches you viciously in the jaw, and while you are briefly stunned, he delivers a fearsome axekick to the side&D
+mpechoat $n &rof your neck!&D
+mpechoaround $n &r$I punches $n viciously in the jaw, and while $n is stunned, $i follows up with a fearsome axekick to $n's neck!&D
+mpdamage $n 25
+if rand(35)
+mpdamage $n 15
+if rand(5)
+mpechoat $n &r$I's axekick shatters your spine, sending your lifeless corpse crashing to the ground!&D
+mpechoaround $n &r$I's axekick shatters $n's spine, sending their lifeless corpse crashing to the ground!&D
+mpslay $n
+endif
+endif
+endif
+~
+> death_prog 5~
+mpechoat $n Falling roughly to the ground as he dies, Ariemas lands on a small object he
+mpechoat $n had on his person - a crystalline orb. It shatters into pieces, leaving only
+mpechoat $n one small shard remaining.
+mpoload 150242
+~
+|
+#150123
+ziranyth icer~
+Ziranyth~
+Ziranyth sits on a chair in the corner, holding up a magazine sideways.
+~
+Dressed in inordinately gilded clothing, Ziranyth appears to be quite
+a connoisseur for clothing, and by the decorations of his dwelling, also
+one for women. Large amounts of gold and jewelry cover his body, and by
+his posture one could ascertain that he is quite a lazy person.
+~
+1 0 -500 C
+1 0 100 1d20+0 2d5+0
+-1 15000000000
+112 112 1
+175 175 120 125 0
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+mpecho $I runs over to the drawer of his desk and pulls out a giant box, and then proceeds to hurl it at your face!
+mpdamage $n 10
+~
+> greet_prog 100~
+if sex($n)==2
+emote whips his head around upon your entrance. His face contorts into a sort of horrified, yet delighted grin.
+emote tries to hide the magazine he was looking at as quickly as possible, stuffing it haphazardly into a drawer.
+say Uhh.. can I help you?
+else
+emote tenses up, sensing your arrival. He puts the magazine he was looking at into a drawer quickly as if hiding something.
+say What are you doing here?!
+endif
+~
+> fight_prog 40~
+'energy ball'
+~
+> fight_prog 50~
+punch
+~
+> death_prog 5~
+mpechoat $n Falling roughly to the ground as he dies, Ziranyth lands on a small object he
+mpechoat $n had on his person - a crystalline orb. It shatters into pieces, leaving only
+mpechoat $n one small shard remaining.
+mpoload 150243
+~
+|
+#150124
+kauut icer~
+Ka-uut~
+Ka-uut sits on the floor, huddled up in a ball.
+~
+A small, yet brilliant sapphire-blue aura surrounds Ka-uut's body at all
+times, demonstrating his obviously amazing mastery over his ki. Very small
+amounts of armor cover some sections of his body, although in peculiar spots,
+such as the middle of his arm, and the segments of his fingers. He is garbed
+in a midnight black robe, one that hardly seems to make a noise despite the
+celerity of his movements.
+~
+35 0 -400 C
+1 0 100 1d20+0 2d5+0
+-1 20000000000
+112 112 1
+100 10 300 100 0
+0 0 0 0 0
+5 5 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+'destructive wave' $n
+~
+> fight_prog 10~
+'energy ball' $n
+'energy ball' $n
+~
+> fight_prog 10~
+'eye beam' $n
+~
+> fight_prog 5~
+'death ball' $n
+~
+> fight_prog 5~
+'dual destructo disk'
+~
+> fight_prog 10~
+'finger beam'
+'finger beam'
+~
+> fight_prog 1~
+'scattered finger beam' 50
+~
+> greet_prog 100~
+emote suddenly stops shivering upon your arrival in the room. He slowly clambers up onto his feet, turning to face you.
+emote growls softly - his face is contorted in rage. Slowly, he walks towards you, preparing himself for a fight.
+~
+> fight_prog 8~
+if rand(80)
+mpechoat $n &Y$I's fingertips begin to glow as ten blazing points of golden energy form on $I's hands. They pulse briefly, and then&D
+mpechoat $n &Ylaunch simultaneously in a whirling spiral towards you!&D
+mpechoaround $n &Y$I's fingertips begin to glow, as ten blazing points of golden energy form on $I's hands. They pulse briefly, and then&D
+mpechoaround $n &Ylaunch simultaneously in a whirling spiral towards you!&D
+mpdamage $n 15
+if rand(20)
+mpechoat $n &YThe spiraling balls of ki all explode on impact, making a gaping wound on your chest!&D
+mpechoaround $n &YThe spiraling balls of ki all explode on impact, making a gaping wound on $n's chest!&D
+mpdamage $n 20
+else
+mpechoat $n &R$I jumps back, sticks out his right forearm parallel to the floor, and he begins to scream as a writhing ball of black&D
+mpechoat $n &Rand red ki forms in his hand. After a moment, the ball grows to massive proportions!&D
+mpechoaround $n &R$I jumps back, sticks out his right forearm parallel to the floor, and he begins to scream as a writhing ball of black&D
+mpechoaround $n &Rand red ki forms in his hand. After a moment, the ball grows to massive proportions!&D
+mpsleep 3
+mpechoat $n &RSuddenly, $I stops screaming, and utters a single word - &WDie.&R -&D
+mpechoat $n &RThe ball of ki turns into a massive beam of energy racing towards you!&D
+mpechoaround $n &RSuddenly, $I stops screaming, and utters a single word - &WDie. &R-&D
+mpechoaround $n &RThe ball of ki turns into a massive beam of energy racing towards $n!&D
+mpdamage $n 55
+endif
+endif
+~
+> death_prog 5~
+mpechoat $n Falling roughly to the ground as he dies,  Ka-uut lands on a small object he
+mpechoat $n had on his person - a crystalline orb. It shatters into pieces, leaving only
+mpechoat $n one small shard remaining.
+mpoload 150245
+~
+|
+#150125
+gwelia icer~
+Gwelia~
+Gwelia sits in her chair here, staring at her reflection in the mirror.
+~
+Although she is a very meager-looking person, her muscles have the slight
+toning of someone who is versed in at least one style of martial art. Her
+clothes, although extraordinarly gaudy and overnecessarily stylish, still
+have some remaining amount of function, so she is not entirely hampered
+by what she wears, and is still able to defend herself. A small amount of
+gold hue contrasts starkly with her snow-white skin, although the gold appears
+to be limited to her face and head.
+~
+131 0 -800 C
+1 0 100 1d20+0 2d5+0
+-1 15000000000
+112 112 2
+150 150 150 150 0
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 2 0
+> fight_prog 10~
+mpecho Running up to you, $I kicks you in the shin, and then pokes your eyes repeatedly!
+kick $n
+mpdamage $n 10
+~
+> greet_prog 100~
+mpechoat $n &wGwelia stares dreamily at her reflection in the mirror, not noticing your arrival for several moments.
+mpechoat $n &wShe stands up, and turns around to look at you coldly. "&WYou are not one of the servants! Leave my chambers at once!&w"
+mpechoaround $n &wGwelia stares dreamily at her reflection in the mirror, not noticing $n's arrival for several moments.
+mpecharound $n &wShe stands up, and turns around to look at $n coldly. "&WYou are not one of the servants! Leave my chambers at once!&w"
+mpsleep 40
+if isfight($n)
+mpecho Gwelia screams for the guards!
+mpsleep 3
+else
+mpecho Gwelia runs past you, furious, as she calls for the guards!
+mpsleep 3
+endif
+~
+> fight_prog 10~
+mpechoat $n Gwelia kicks you in the shins!
+mpechoaround $n Gwelia kicks $n in the shins!
+kick
+mpdamage $n 5
+~
+> death_prog 5~
+mpechoat $n Falling roughly to the ground as she dies, Gwelia lands on a small object she
+mpechoat $n had on her person - a crystalline orb. It shatters into pieces, leaving only
+mpechoat $n one small shard remaining.
+mpoload 150244
+~
+|
+#150127
+master training~
+An Icerian Master~
+An Icerian Master attempts to perfect his subzero aura here.
+~
+~
+67110403 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+10 10 10 10 0
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if race($n) == icer
+emote stands up quickly, bowing to you.
+say If you desire training, I can give it to you.
+else
+emote clambers up slowly, but deliberately so, from the ground, his horribly scarred face glaring at you with disgust.
+say Were I not required by the great Lord Ymir to train all visitors to Mount Areukk, despite their race...
+spit
+say You would be dead.
+say However, I am, so.. if you require training or demonstration of various techniques, I am capable of such.
+endif
+~
+|
+#150128
+android upgrade maintenance device~
+A Mechasynthetic Maintenance Device~
+A large maintenance device takes up nearly the entire room here.
+~
+~
+-2147483645 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if race($n)==android
+mpecho The mechanical device begins to speak out of a small, hidden speaker.
+say Greetings, Synthetic Device. If you require maintenance, or upgrading, I am capable of doing such.
+else
+say This device is not built for maintenance of non-synthetic organic beings!
+mpforce $n west
+endif
+~
+> rand_prog ~
+if xp($n)<=500000000
+if rand(25)
+mpecho A small, transparent device appears out of nowhere near the optical input devices on the machine.
+mpecho A faint whirring noise can be heard as several calculations are rapidly made.
+say Synthetic Device $N, your output efficiency may be sub-normal. Recommended actions: proceed to the lower chamber for testing.
+endif
+endif
+~
+|
+#150129
+trainroom~
+A Trainroom Monitor~
+There's a Trainroom Monitor here.
+~
+~
+75497475 0 0 C
+14 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if ispc($n)
+mpoload 150227
+mpforce $I give gainer $n
+endif
+~
+> act_prog ne nw~
+mpat 0.$n mpforce $n remove gainer
+mpat 0.$n mpforce $n drop gainer
+~
+|
+#150130
+tester android machine humanoid~
+Combat Test Android BTL-002~
+A humanoid-looking machine stands in the middle of the room, in a fighting stance.
+~
+With its hands up, one higher than the other, only slightly above its 'head',
+and the other near the abdomen, this machine appears ready for combat, a
+notion made even more apparent by its slightly crouched legs.
+A thin, blue-tinted metal covers the most vital sections of its body, along with
+most of the appendages. Large, red eyes take up a large portion of the face, looking
+eerily humanlike.
+~
+3 0 -200 C
+1 0 100 1d20+0 2d5+0
+-1 400000000000
+112 112 0
+350 350 350 350 0
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 2~
+mpecho A large siren sounds throughout the chamber, and a warning is heard: "&RARTIFICIAL MODEL $N GENERATING DANGEROUS LEVELS OF
+mpecho &RENERGY OUTPUT: TERMINATE&w"
+mpecho &YSuddenly, the mechanical devices on the wall all recede, only to be replaced by large mechanized turrets. Aiming their
+mpechoaround $n &Ysights on $n, they fire, obliterating $n!
+mpechoat $n &Ysights on you, they fire, obliterating you!
+mpslay $n
+~
+> fight_prog 15~
+say Piercing class energy triggers required for analysis. Respond to input.
+'finger beam'
+'finger beam'
+~
+> fight_prog 30~
+say Physical overloading triggers required for analysis. Respond to input.
+kick
+kick
+kick
+punch
+punch
+punch
+uppercut
+~
+> fight_prog 15~
+say Thermal class energy triggers required. Respond to input.
+hells
+~
+> fight_prog 5~
+say Anti-defensive maneuver output required. Respond to input.
+'electric shield'
+~
+> death_prog 100~
+if rand(10)
+   mpecho As the machine crumples to the ground, a heap of useless metal, a panel emerges from the wall.
+   mpecho It beeps for nearly a second, then says, &C"ERROR: Insufficient data recording. Unable to compute android efficiency."&D
+   mpecho The concentric circles on the floor open up, the remains of $I falling down, only to be replaced by another $I.
+   mpmload 150130
+else
+   if rand(4)
+      mpecho A large portion of the ever-shifting mechanized wall disappears, and a loud whirring is heard as data is computed.
+      mpecho A small device appears from near the floor, turning towards you.
+      mpecho It says, &C"Effects of gravity too high, requiring body to expend excess amounts of power for movement."&D
+      mpecho It clicks for another second. &C"Use of incoming device will facilitate extra power output, possible parameters to be increased&D
+      mpecho &Cinclude input response time, alacrity and processor efficiency."&D
+      mpoload 150231
+   else
+      if rand(1)
+         if rand(30)
+            mpecho Nearly the entire wall recedes into itself, only to be replaced by more mechanical devices. A deafening roar
+            mpecho can be heard, originating somewhere in the vicinity.
+            mpsleep 1
+            mpecho A small panel moves itself into view, as a bright blue light scans your entire body.
+            mpecho After a moment, it says, &C"ERROR: Body type not found in database. ERROR: Insufficient combat technology acquisition rate."&D
+            mpecho It beeps, and adds, &C"Body type added to database. Recommend rectification for second error: installation of incoming&D
+            mpecho &Cdevice. Combat information acquisition rate will be greatly enhanced."&D
+            mpoload 150232
+         endif
+      endif
+   endif
+endif
+~
+|
+#150131
+namek lord slug~
+The Ancient Namek, Lord Slug~
+Lord Slug stands here, a smug grin on his gargantuan face.
+~
+A giant Namekian stands before you, its size compared only to the great
+Oozaru. It towers over you, a large black billowing cape blocking out
+the sun as the Namek looks down at you, its large chin planted on its
+chest as it squints to you and laughs, the whole planet rumbling.
+~
+67 128&100664320 -600 C
+51 0 100 1d20+0 2d5+0
+-1 3500000000000
+112 112 1
+400 400 400 400 400
+0 0 0 0 0
+3 3 0 0 1 1 4
+0 0 0 0 0 0 0 0
+> fight_prog 25~
+'special beam cannon'
+~
+> fight_prog 40~
+eyebeam
+~
+> fight_prog 20~
+makosen
+~
+> fight_prog 10~
+hellz 50
+~
+> fight_prog 5~
+heaven
+~
+> fight_prog 1~
+charge heaven
+mpsleep 20
+fire
+~
+> death_prog 100~
+if rand(1)
+if pl($n)<=10000000000000
+mpecho As Lord Slug falls to the ground, dead, his cloak falls open to reveal a resplendent, and ancient, robe!
+mpoload 150233
+else
+mpecho $n is too powerful to claim the prize!
+mpmload 150131
+endif
+else
+mpecho &GLord Slug, sensing his imminent death, jumps backwards, straightening his back, as he spits out a pearly white&D
+mpecho &Gegg into the air! It lands on the ground, and hatches. A smaller Lord Slug, fully clothed, emerges from the egg,&D
+mpecho &Ggrowing rapidly into another Lord Slug!&D
+mpmload 150131
+endif
+~
+> fight_prog 2~
+mpechoaround $n &zLord Slug reaches out with monstrous hands, grabbing onto $n with a ferocious grip! He begins to squeeze&D
+mpechoaround $n &zas hard as he possibly can. Soon, shattering noises can be heard coming from the body of $n as they die.&D
+mpechoaround $n &zLord Slug then drops their lifeless corpse to the ground.&D
+mpechoat $n &zLord Slug reaches out with monstrous hands, grabbing onto you with a ferocious grip! He begins to squeeze&D
+mpechoat $n &zas hard as he possibly can. Soon, shattering noises can be heard coming from your body, as you die.&D
+mpslay $n
+~
+> fight_prog 12~
+mpecho &GLord Slug jumps back from the melee suddenly, arching his back, and spreading his mouth open peculiarly.&D
+mpecho &GA large egg rockets of out his mouth, landing on the ground nearby! As it hatches, a small version of Lord&D
+mpecho &GSlug emerges, growing rapidly to his normal size!&D
+mpmload 150132
+mpforce 150132 mpkill $n
+~
+> rand_prog 5~
+cackle
+~
+> act_prog 100 flees~
+mpecho &RLord Slug laughs at the cowardice of $n, his arms stretching out towards their running body at lightning speeds!&D
+mpat 0.$n mpechoaround $n &WLord Slug's fists race towards $n, grabbing hold of their body, and pulling them back to him!&D
+mpat 0.$n mpechoat $n &WLord Slug's fists race towards you, grabbing hold of your body, and pulling you back towards him!&D
+mptransfer $n $i
+mpkill $n
+~
+|
+#150132
+namek slug copy~
+A Newborn Lord Slug~
+Lord Slug has hatched a copy of himself, and it is standing here.
+~
+~
+99 524288&33555456 -400 C
+1 0 100 1d20+0 2d5+0
+-1 1000000000000
+112 112 1
+200 200 200 100 0
+0 0 0 0 0
+3 3 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> fight_prog 30~
+'special beam cannon'
+~
+> fight_prog 20~
+eye
+~
+> fight_prog 5~
+heaven
+~
+> fight_prog 50~
+kick
+kick
+punch
+uppercut
+~
+|
+#150133
+forgotten master forlorn man~
+A Forgotten Master~
+An old, forlorn-looking man stands with his hands crossed over his chest here.
+~
+Obviously a man who trained heavily in the martial arts while still
+under the blessings of youth, his strength is still apparent in his
+well-toned and large muscles, most notably his legs and biceps. A dark,
+almost shadowy gi covers the majority of his torso and legs, but stops
+mid-shin, and heavy wooden sandals cover his feet, a very meager, and
+seemingly unintelligent type of footwear on such an icy planet as this.
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 200000000000
+112 112 1
+100 100 100 100 0
+0 0 0 0 0
+1 1 0 0 1 1 4
+0 0 0 0 0 0 0 0
+> fight_prog 20~
+mpecho &z$I stiffens his hands, and swirls around rapidly, using his hands as knives, slicing high and low at $n!&D
+mppldamage $n 10
+~
+> fight_prog 10~
+laugh
+kamehameha
+~
+> fight_prog 5~
+grin
+tri
+~
+> fight_prog 5~
+say You'll soon learn I am not a man to be trifled with!
+solar
+solar
+~
+> fight_prog 1~
+if rand(80)
+multi 50
+if rand(50)
+mpechoat $n &zThe disks all seem to have been charged with an extraordinary amount of energy, causing further damage to you!&D
+mppldamage $n 5
+endif
+endif
+~
+> fight_prog 25~
+destructo
+~
+> fight_prog 20~
+mpechoaround $n &z$I growls, holding his two hands together, and running up towards $n. He sweeps their feet off the ground, making&D
+mpechoaround $n &zthem fall face-forward to the ground. $I then follows up with a devastating two-handed blow to their back.&D
+mppldamage $n 10
+mppldamage $n 10
+~
+> fight_prog 10~
+mpecho $I runs up towards $n, his feet swirling in the air as he performs a fearsome-looking spinkick!
+mppldamage $n 5
+mppldamage $n 5
+~
+> death_prog 100~
+if rand(2)
+if pl($n)<=1000000000000
+mpecho &zAs the Master falls to the ground, dead, his hand lands roughly on a small, nearly hidden button. A whirring noise can be heard&D
+mpecho &zbriefly, as a small panel opens, revealing a magnificent belt.&D
+mpoload 150239
+endif
+endif
+if rand(2)
+if pl($n)<=1000000000000
+mpecho &zAs the Master falls to the ground, dead, his hand lands roughly on a small, nearly hidden button. A whirring noise can be heard&D
+mpecho &zbriefly, as a small panel opens, revealing a magnificent headband.&D
+mpoload 150234
+endif
+endif
+~
+|
+#150135
+royal attendant~
+Overlord Ymir's Royal Attendant~
+Overlord Ymir's attendant stands before the door to the throne room, overseeing the visitors.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+500 10 500 10 0
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+tsk $n
+say If you require an audience with Overlord Ymir, please present a crystalline orb. The one you SHOULD have received, if he will allow you to see him.
+say If, for some reason, it has broken, please present me with enough shards as to solidify your claim to having owned one previously, and I shall replace it.
+say Once you have given me your shards, simply tell me that you are ready.
+close north
+lock north
+~
+> speech_prog 'ready'~
+if ovnuminv(150242)>=1
+ if ovnuminv(150243)>=1
+  if ovnuminv(150244)>=1
+    if ovnuminv(150245)>=1
+    nod
+    say It appears you were indeed sent one of the orbs. I shall give you a replacement immediately. Use it to unlock the door.
+    mpjunk all
+    mpoload 150241 $n
+    else
+   say You do not have enough of the correct shards to prove you owned an orb.
+   mpjunk all
+   else
+  say You do not have enough of the correct shards to prove you owned an orb.
+  mpjunk all
+  else
+ say You do not have enough of the correct shards to prove you owned an orb.
+ mpjunk all
+ else
+say You do not have enough of the correct shards to prove you owned an orb.
+mpjunk all
+endif
+endif
+endif
+endif
+mpoload 150241
+~
+|
+#150136
+Gary the Janitor~
+Gary the Magical Janitor~
+&GGary the Magical Janitor is here, mopping up stuff.&D
+~
+~
+69 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+500 500 500 500 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 10~
+say Uhh... someone threw up.
+mpsleep 5
+emote goes wandering off.
+~
+> rand_prog 10~
+say The Kourck needs me, I heard. Uh.. fuuudge.
+emote nods, and changes stuff with his magic.
+~
+> rand_prog 5~
+say One time, I made this hat out of hair, but it went bad, so I had to destroy it.
+~
+> greet_prog 100~
+if number($n)==398
+say Well, well, well. If it isn't the Trix Rabbit, my ancient archnemesis!
+emote starts to change physics!
+emote turns his mop into a giant javelin and hurls it through the Trix Rabbit's body, skewering him to the wall.
+mpdamage $n 101
+~
+> rand_prog 10~
+grin
+say I remember back in the day, when I invented chickens... damn, was I good or what?
+~
+> greet_prog ~
+if name($n)==Dabura
+say Jumping Jehosophat! It's the Kourck!
+emote magically creates a few pizza trophies.
+say Three trophies for the Kourck!
+else
+if isimmort($n)
+say Well, it looks like $n has come to play. Shall we fight, ah today.. tonight.. just right.
+~
+> rand_prog 5~
+say Skacksbeaks!
+say :-M
+~
+> death_prog 100~
+mpecho As $n deals what would normally be a mortal blow to Gary the Janitor, he grins, and his mop turns into a giant flamethrower.
+mpecho He thumbs a switch to the ON position, and green, sparkling flames shoot out of it rapidly, blasting $n into nowhere.
+mptransfer $n 2
+mpecho Gary grins again, as he changes the laws of physics, healing his damaged body.
+mpmload 150136
+~
+> rand_prog 10~
+say The Kourck needs me, I heard.. uhh.. fudge.
+emote nods, and changes reality with a quick brandish of his mop.
+~
+|
+#150137
+icer transporter~
+An Icer Transporter~
+A nonescript Icer stands here, ready to transport you to and from CoU.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 1
+10 10 10 10 0
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog 'Transport me to COU'~
+if isfight($n)
+say I can't do that while you're fighting, $n!
+else
+say Very well.
+mea $n There's a bright flash as you're transported to CoU!
+mer $n There's a bright flash as $n is transported to CoU!
+mptransfer $n 6000
+endif
+~
+> greet_prog 100~
+say If you desire to return to the Center of the Universe space station, simply say, "transport me to COU".
+~
+|
+#150299
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#150000
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#150200
+yudkha alcohol drink bottle~
+A bottle of yudkha~
+A bottle of yudkha lies on the ground here.~
+~
+17 0 1
+5 5 7 0 0 0
+1 0 50
+ 0
+#150201
+mug grog alcohol~
+A mug of grog~
+A mug of grog lies on the ground here.~
+~
+17 0 1
+5 5 17 0 0 0
+1 0 5
+ 0
+#150202
+lantern glowing light~
+A glowing green lantern~
+A brightly growing green lantern has been left on its side here.~
+~
+1 0 16385
+0 0 75 0 0 0
+1 7500 20
+ 0
+#150203
+canteen metal water~
+A metallic canteen~
+Water trickling out of the top, a canteen is tipped over here.~
+~
+17 0 1
+10 10 0 0 0 0
+1 0 5
+ 0
+#150204
+food fungus package~
+A fungus ration package~
+A fungus-filled ration package's metallic wrapping glitters on the ground.~
+~
+19 0 1
+4 0 0 0 0 0
+1 0 2
+ 0
+#150205
+namek warrior vest~
+&gA &GN&gamekian &GW&garrior's &GW&geighted &GV&gest&D~
+&gAn evergreen colored vest has been dropped on the ground here.~
+~
+9 1949696 9 32
+0 0 0 75 500 500
+10 30000 25000
+ 105000000
+A
+2 -5
+A
+4 -3
+#150206
+saiyan battle bracers~
+&wa &RSaiyan &wBattle Bracer&D~
+A thick metallic bracer has been tossed to the side here.~
+~
+9 10387456 4097 32
+0 0 0 0 125 125
+15 20000 20000
+ 85000000
+A
+1 2
+A
+4 1
+#150207
+thorax plate plating~
+&zBiomechanical Thoraxic Plating&D~
+A peculiarly ridged chestplate is crumpled upon the ground.~
+~
+9 1032192 9 1
+0 0 0 0 750 750
+20 87500 22500
+ 120000000
+A
+4 4
+A
+2 1
+#150208
+pants karate~
+&CS&wteelcloth &CK&warate &CP&wants&D~
+A thickly woven pair of pants are on the ground here.~
+~
+9 10436608 33 32
+0 0 0 0 225 225
+1 40000 20000
+ 125000000
+A
+2 4
+A
+4 3
+#150209
+boots saiyan battle~
+&wa pair of shin-high &RSaiyan &wBattle Boots&D~
+A sturdy-looking pair of boots appear out of place on the ground here.~
+~
+9 1998848 65
+0 0 0 0 150 150
+5 22500 22500
+ 100000000
+A
+2 3
+#150210
+icer imperial battle armor~
+&zImperial Icerian Battlearmor&D~
+A thickly plated piece of armor lies on the ground.~
+~
+9 9830400 9 192
+0 0 0 0 240 240
+18 39000 85000
+ 40000000
+A
+1 4
+A
+3 2
+#150211
+icer imperial shinplates~
+&zImperial Icerian Shinplates&D~
+A pair of metallic shinplates gleam on the ground here.~
+~
+9 9830400 33 64
+0 0 0 0 225 225
+3 32500 80000
+ 35000000
+A
+2 2
+A
+4 2
+#150212
+icer imperial armplate~
+&zImperial Icerian Armplates&D~
+Two inch-thick armplates lay haphazardly on the ground.~
+~
+9 9830400 257 96
+0 0 0 0 120 120
+6 24500 80000
+ 35000000
+A
+1 5
+#150213
+icer imperial gauntlets~
+&zImperial Icerian Gauntlets&D~
+A heavily segmented pair of gauntlets lie on the ground.~
+~
+9 9830400 129
+0 0 0 0 75 75
+9 17500 77500
+ 35000000
+A
+2 4
+#150214
+icer imperial boots~
+&zImperial Icerian Boots&D~
+A pair of heavy metallic boots lie unnoticed.~
+~
+9 9830400 65
+0 0 0 0 100 100
+12 17500 80000
+ 35000000
+A
+4 3
+#150215
+mecha mechaicer body plating~
+&BM&cecha-&BI&ccer &BB&cody &BP&clating&D~
+Some Mecha-Icer Body Plating is here.~
+~
+9 1556480 9 1
+0 0 0 0 175 175
+35 35000 200000
+ 100000000
+A
+4 4
+A
+2 3
+#150216
+mecha mechaicer leg segment segments~
+&BM&cecha-&BI&ccer &BL&ceg &BS&cegments&D~
+Some Mecha-Icer Leg Segments are here.~
+~
+9 9945088 33 1
+0 0 0 0 125 125
+18 35000 180000
+ 100000000
+A
+2 4
+A
+1 2
+A
+4 1
+A
+3 2
+#150217
+mecha mechaicer cranial plating~
+&BM&cecha-&BI&ccer &BC&cranial &BP&clating&D~
+Some Mecha-Icer Cranial Plating is here.~
+~
+9 9945088 17 1
+0 0 0 0 200 200
+10 37500 175000
+ 100000000
+A
+3 4
+A
+4 2
+A
+2 1
+#150218
+mecha mechaicer forearm segment~
+&BM&cecha-&BI&ccer &BF&corearm &BS&cegments&D~
+Some Mecha-Icer Forearm Segments are here.~
+~
+9 1556480 4097 1
+0 0 0 0 200 200
+4 35000 100000
+ 100000000
+A
+1 2
+A
+4 2
+A
+2 1
+A
+3 1
+#150219
+mecha mechaicer brachial arm plating~
+&BM&cecha-&BI&ccer &BB&crachial &BP&clating&D~
+Some Mecha-Icer Brachial Plating is here.~
+~
+9 1556480 257 1
+0 0 0 0 200 200
+14 47500 150000
+ 100000000
+A
+2 5
+A
+1 3
+A
+4 3
+#150220
+key lock silver~
+An ornate silver key~
+There is a thin, ornately crafted silver key on the ground here.~
+~
+18 0 1
+150220 0 0 0 0 0
+1 0 0
+ 0
+#150221
+key gold~
+An ornate golden key~
+There is a thin, ornately crafted golden key on the ground here.~
+~
+13 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#150222
+ice key~
+A small, irregularly shaped ice key~
+A small, irregularly shaped ice key is on the ground here.~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#150223
+ragnarok battle armor~
+&rRagnarok Battle Armor&D~
+&rA large, thick chestplate with ruby-colored plates lies on the ground forgotten.~
+~
+9 0 1025 1
+0 0 0 0 1750 1750
+15 195000 19500
+ 10000000000
+A
+1 2
+A
+3 3
+A
+4 2
+A
+2 1
+> wear_prog 100~
+mpecho As $n dons the Ragnarok Battle Armor, a blood-red aura flares up about them.
+mpecho While the aura slowly dies down, the armor begins to shift slightly, molding
+mpecho itself to $n's body structure.
+~
+|
+#150224
+dsword~
+&RD&zabura's &RD&zemon &RS&zword&D~
+Some god dropped a newly created dsword here.~
+~
+5 8388752 8193
+0 15 50 250 0 0
+1 5250000 525000
+ 0
+A
+1 300
+A
+29 300
+A
+2 300
+A
+3 300
+A
+4 300
+#150225
+hiking pack~
+&OA Hiking Pack&D~
+A large hiking pack has been left on the ground here.~
+~
+15 4194304 524289
+35 0 0 0 0 0
+5 700 5500
+ 0
+#150226
+coins zeni treasure pile~
+A Pile of Treasure~
+Piles and mounds of treasure lie scattered about the room.~
+~
+20 0 1
+25000 0 0 0 0 0
+1 0 0
+ 0
+#150228
+namekian warrior cape~
+&gA &GN&gamekian &GW&garrior's &GW&geighted &GC&gape&D~
+&gA thick, heavy-looking cape lies draped across the ground here.&D~
+~
+9 1949696 9 128
+0 0 0 100 400 400
+15 20000 30000
+ 150000000
+A
+2 -6
+A
+4 -2
+#150229
+plating abdomen plate~
+&zBiomechanical Abdomen Plating&D~
+A peculiarly plated abdominal covering lies on the ground.~
+~
+9 1032192 2049 1
+0 0 0 0 200 200
+5 32500 14000
+ 110000000
+A
+1 3
+A
+2 2
+#150230
+hand wrappings karate~
+&CS&wteelcloth &CK&warate &CH&wandwrappings&D~
+&CA long trail of metallic-looking handwrappings lie on the ground.&D~
+~
+9 10436608 129 32
+0 0 0 1000 50 50
+1 22500 14000
+ 130000000
+A
+4 4
+A
+2 3
+#150231
+antigravity gravity implants~
+&YReinforced Anti-Gravity Implants&D~
+A peculiar mechanical device lies unused on the ground.~
+~
+9 10207232 2097153 1
+0 0 0 0 10 10
+1 18500 1850
+ 2000000000
+A
+2 5
+A
+3 2
+#150232
+cybernetic absorbtion cell~
+&RA Magnified Cybernetic Absorbtion Cell&D~
+A large red gem-like object lies glittering and abandoned on the ground.~
+~
+9 10207232 129 2
+0 0 0 250 35 35
+1 8500 850
+ 2000000000
+A
+1 2
+#150233
+ancient namek robes~
+&gAncient Namekian Robes&D~
+Large, green robes lie crumpled on the ground.~
+~
+9 8388608 9 128
+0 0 0 0 1 1
+5 77600 7760
+ 100000000000
+A
+1 5
+A
+2 10
+A
+4 6
+A
+3 10
+#150234
+karate master steelcloth headband~
+&zKarate Master's Steelcloth Headband&D~
+A long, narrow strip of metallic cloth flutters about on the ground here.~
+~
+9 10436608 17 32
+0 0 0 0 150 150
+3 42500 28000
+ 3000000000
+A
+3 5
+A
+4 6
+A
+2 3
+A
+1 -3
+#150235
+medical body wrap~
+&WA Medical Body Wrap&D~
+A long trail of bandages lay draped across the ground here.~
+~
+9 5505024 9 1
+0 0 0 0 30 30
+1 8000 1000
+ 100000000
+A
+4 2
+#150236
+medical leg wrap~
+&WMedical Leg Wrap&D~
+A long trail of bandages lay draped across the ground here.~
+~
+9 6029312 33 1
+0 0 0 0 15 15
+1 6500 500
+ 100000000
+A
+4 2
+#150237
+button~
+a newly created button~
+There is a small, red button to the side of the door of the ship.~
+~
+37 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+> push_prog 100~
+mpechoat $n The door slides open smoothly, a peculiar fog slowly billowing out of the ship.
+mpopenpassage 150092 150093 0
+mpforce $n north
+mpclosepassage 150092 0
+mpat 150092 pull button
+~
+|
+#150238
+button~
+a newly created button~
+There is a small, red button to the side of the door of the ship.~
+~
+37 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+> push_prog 100~
+mpechoat $n &WThe bright lights from outside illuminate the ship, as the door silently slides open.&D
+mpopenpassage 150093 150092 2
+mpforce $n south
+mpclosepassage 150093 2
+mpat 150093 pull button
+~
+|
+#150239
+master blackbelt belt~
+&zA Master's Blackbelt&D~
+&zA long, thick belt lies on the ground, forgotten.&D~
+~
+9 2048000 2049 1
+0 0 0 0 100 100
+1 25000 2500
+ 3000000000
+A
+1 3
+A
+2 3
+#150240
+orb~
+&WA Sparkling Diamond Orb&D~
+Some god dropped a newly created orb here.~
+~
+13 0 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+#150241
+small crystalline orb~
+A magnificent crystalline orb~
+A brilliant crystalline, sapphire-colored orb lies on the ground, its owner undoubtedly nearby.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#150242
+crystalline shard~
+A small, circular crystalline shard~
+A small, crystalline shard lies on the ground, abandoned by someone.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#150243
+crystalline shard~
+A long, narrow crystalline shard~
+A small, crystalline shard lies on the ground, abandoned by someone.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#150244
+crystalline shard~
+A thick, pyramidal crystalline shard~
+A small, crystalline shard lies on the ground, abandoned by someone.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#150245
+crystalline shard~
+A thin, rectangular crystalline shard~
+A small, crystalline shard lies on the ground, abandoned by someone.~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#150246
+out of order sign~
+A sign~
+This room is OUT OF ORDER~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#150299
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#150000
+&CA Crowded Landing Pad&D~
+Several dozen people mill about, all waiting for a ship to carry them to
+their respective home worlds, while small patrols of Icerian Guards patrol
+the area, making sure no fights escalate between the easily provoked
+fighters and merchants who grace this installation.  The rock-ice used as a
+landing platform is well-tended to.  Constant buffering and re-layering
+have caused it to glint quite fearfully in the light. 
+~
+0 4 1
+D3
+~
+~
+0 -1 150001
+S
+#150001
+&CA Windy Path&D~
+Between the primary landing pads, nowhere nearly as many people bustle
+about, yet the number is still surprising for such a desolate place.  Large
+regiments of Icer Warriors march nearby, practicing daily drills.  The path
+here is nowhere near as slippery as the ground on the landing pads;
+however, only by careful choosing of steps can one make it up toward the
+Mountain without several falls. 
+~
+0 0 1
+D0
+~
+~
+0 -1 150003
+D1
+~
+~
+0 -1 150000
+D3
+~
+~
+0 -1 150092
+D9
+~
+~
+0 -1 150002
+S
+#150002
+&YThe Landing Controller Hut&D~
+A myriad of blinking lights and monitors litter this room, all being
+quite haphazardly placed.  The majority of them are inactive, although the
+remainder is still enough to drive most people insane.  A large window
+faces out towards the landing platforms, though at the moment the blast
+doors have been lowered over the windows, though for what reason is
+unclear. 
+~
+0 0 0
+D6
+~
+~
+0 -1 150001
+E
+sign wall~
+&wTo book a shuttle for &CIceria City&w, simply say "Iceria City".
+~
+S
+#150003
+&CA Slippery Ledge&D~
+Being the only means of traffic between the landing pads and the
+mountain, this path is quite heavily trafficked.  Despite knowing this, the
+Icers built it extraordinarily slippery, although it is dotted with small
+foot niches, most likely to restrict passage to minimal numbers in case of
+invasion. 
+~
+0 0 1 0 0 5
+D0
+~
+~
+0 -1 150004
+D2
+~
+~
+0 -1 150001
+> entry_prog 10~
+if ispc($n)
+mpechoat $n You lose your footing on the narrow ledge and slip down towards the landing pad!
+mpechoaround $n loses their footing, and begins a slow yet sure descent to the landing pad!
+mpforce $n south
+endif
+~
+> leave_prog 10~
+if ispc($n)
+mpechoat $n You lose your footing on the narrow ledge and slip down towards the landing pad!
+mpechoaround $n loses their footing, and begins a slow yet sure descent to the landing pad!
+mpforce $n south
+mpat $n mpforce $n south
+endif
+~
+|
+S
+#150004
+&gEntrance to Mount Areukk&D~
+The path finally comes to a widened end, stopping at a large gate.  It
+glistens slightly from the body heat generated by the inhabitants, but its
+green-ice composition appears to be for the most part unaltered.  Save A
+small rectangular pad lies to one side of it, with the shape of an Icerian
+hand molded into it, another step to defend this behemoth mountain
+fortress. 
+~
+0 0 1
+D0
+~
+gate~
+1 -1 150005
+D2
+~
+~
+0 -1 150003
+S
+#150005
+&zThe Junction&D~
+Despite being very near to the entrance, the amount of light here has
+been reduced signifigantly, due to its blatant lack of lighting sources. 
+Whether this is another defensive measure used by the defenders of the
+mountain, or simply a desire to keep the ice at a constant subzero
+temperature. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150008
+D1
+~
+~
+0 -1 150007
+D2
+~
+gate~
+1 -1 150004
+D3
+~
+~
+0 -1 150006
+> entry_prog 100~
+if ispc($n)
+mpechoat $n &CA soft beeping noise can be heard, as a small speaker emerges near your position.&D
+mpsleep 6
+if inroom($n)==150005
+mpechoat $n "Greetings, $n, and welcome to Mount Areukk, Icerian Empire Military Installation 173F2C."
+mpechoat $n "While inside Mount Areukk, please be on your best behavior."
+mpechoat $n "For first time visitors: To the north is the Commerce Sector, and to the east and west are the entryways
+mpechoat $n to the housing sectors."
+mpsleep 10
+if inroom($n)==150005
+mpechoat $n The voice chimes, "Have a pleasant day," as the speaker slowly retreats into its nook.
+endif
+endif
+endif
+~
+|
+S
+#150006
+&cEntrance to the Poorcity&D~
+Much like the junction to the east, this section of the mountain is
+terribly lit.  During brief flares of light, rag-clothed citizens can be
+seen huddling on the ground.  The tunnel here is very poorly maintained,
+and has not been refrozen for what appears to be several years.  The floor
+is melted down to rock, and the ceiling is littered with stalagtites. 
+~
+0 0 0
+D1
+~
+~
+0 -1 150005
+D5
+~
+~
+0 -1 150057
+S
+#150007
+&cEntrance to the Highcity&D~
+The ice and rock walls here glow brightly with a peculiar green fungus,
+illuminating the higher ranking Icer civilians who travel to and fro, the
+grand stairway being used obviously leading to a more upper-class division
+of the city.  Security cameras are mounted on the walls, perhaps for
+security. 
+~
+0 0 0
+D3
+~
+~
+0 -1 150005
+D5
+~
+~
+0 -1 150084
+S
+#150008
+&gCommerce Section Gate&D~
+The facade of ice tunneling no longer exists here; rock serves both as
+floor and ceiling, obviously a necessity for the large amount of cargo
+being hauled in from outside.  The room is lit by a green variety of fungus
+that gives of an eerie light, causing the Icer merchants who hurry past to
+appear almost as ghosts. 
+~
+0 0 0
+D2
+~
+~
+0 -1 150005
+D4
+~
+hatch~
+1 -1 150009
+S
+#150009
+&wA Bustling Bazaar&D~
+A true wonder of Icerian architecture, the Commerce level is comprised
+of a gargantuan dome, the entire floor covered by a myriad of shops and
+stores, including several science research departments.  Several hundred
+Icerian citizens meander about from one shop to the next here, oblivious to
+the group of Icers near the entrance using their subzero auras to refreeze
+weakening portions of the wall. 
+~
+0 0 0
+D5
+~
+hatch~
+16777217 -1 150008
+D7
+~
+~
+0 -1 150010
+S
+#150010
+&wEntrance to the Liquor Store&D~
+Despite the large flashing sign of an alcoholic beverage, or perhaps
+because of it, the majority of the shoppers here stay away from the shop to
+the west, although quite a decent number of inebriated citizens stand near
+the entrance.  The shop appears to be in quite poor condition, the entrance
+not far from simply falling down. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150012
+D3
+~
+~
+0 -1 150011
+D8
+~
+~
+0 -1 150009
+S
+#150011
+&wA Dingy Liquor Shop&D~
+This store appears to be double as both a cantina of sorts, and a
+wholesale liquor distribution center, though the latter is experiencing
+much fewer customers than the former.  Not a single space on the wall is
+empty, all of them being covered with shelves and cases of a strange Icer
+liquor called "yudkha". 
+~
+0 1024 0
+D1
+~
+~
+0 -1 150010
+S
+#150012
+&wEntrance to the Survival Store&D~
+A small and somewhat dingy store lies to the west, the flashing neon
+sign boasting what appears to be a man covered in arctic survival clothing.
+Despite the apparent lack of customers, the store is kept in near top
+condition due to its proximity to the well-trafficked and nearby armor
+stores cluster. 
+~
+0 0 0
+D2
+~
+~
+0 -1 150010
+D3
+~
+~
+0 -1 150013
+D6
+~
+~
+0 -1 150014
+S
+#150013
+&wA Military Surplus Survival Gear Shop&D~
+Whether it is due to its size or nearly nonexistant customer base, this
+store is filled to nearly the brim with every sort of imaginable device
+that one could require to survive in the harsh enviroment of Iceria.  The
+walls are not even visible; the inventory has been stacked in such a manner
+that the only path to the shopkeeper is through a narrow walkway zigzagging
+through the some of the items that might appeal more to a customer. 
+~
+0 1024 0
+D1
+~
+~
+0 -1 150012
+S
+#150014
+&wPassing a Neglected Lab&D~
+Despite the overall quality and care shown in the Commerce section,
+several buildings show exemplary lack of such.  One of these buildings lies
+to the north, an Icerian laboratory facility, complete with overgrown
+light-fungus on the thin veneer of ice covering stark granite walls. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150015
+D1
+~
+~
+0 -1 150016
+D9
+~
+~
+0 -1 150012
+S
+#150015
+&gAlien Armor, R&&D Division&D~
+Albeit the clear lack of care on the outside, this laboratory's innards
+show a meticulous single-mindedness that can only be found in truly
+dedicated scientists.  It is apparent that this is the abode of one such
+scientist, with the painstakingly arranged experiments and pristine
+tabletops. 
+~
+0 1024 0
+D2
+~
+~
+0 -1 150014
+S
+#150016
+&wIn Front of a Large Military Complex&D~
+Around what may very well be the largest building in the entire domed
+Commerce sector, a crowd brimming with off-duty soldiers idles near the
+door, waiting for their turn to head inside.  Upon exiting, they are
+adorned with armor pieces ranging from the mediocre to the splendid,
+although each piece appears magnificently constructed. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150017
+D3
+~
+~
+0 -1 150014
+D8
+~
+~
+0 -1 150018
+S
+#150017
+&rA Crowded Icerian Empire Armor Store&D~
+The lobby of this store is consisted of a massive snaking line of
+unfitted soldiers, leading up towards a counter leading towards the
+stockroom.  Almost no inventory is being exhibited in the front half of the
+store, nearly every foot of which being needed for customers. 
+~
+0 1024 0
+D2
+~
+~
+0 -1 150016
+S
+#150018
+&wPassing A Crowded Kiosk&D~
+Standing in front of a large warehouse, this kiosk has a steady stream
+of workers toting back and forth large pieces of mechanical-looking items,
+all of which appear to be some sort of body augmentation.  Standing in such
+a poor business location as it is, a dark and shrouded corner, the kiosk is
+receiving a surprisingly large number of Icers. 
+~
+0 0 0
+D1
+~
+~
+0 -1 150019
+D2
+~
+~
+0 -1 150020
+D7
+~
+~
+0 -1 150016
+S
+#150019
+&cA Mecha-Icer Distribution Kiosk&D~
+In spite of its severe lack of advertisement concerning what this kiosk
+is selling, a plethora of warriors await their delivery of what is,
+according to the stone-carved sign hanging above the window, "Mecha-Icer
+Physical and Mental Augmentation Devices".  On the right side of the
+window, a large box of pamphlets concerning the mounting and installation
+of said devices lies near empty. 
+~
+0 1024 0
+D3
+~
+~
+0 -1 150018
+S
+#150020
+&CAn Icicle Staircase&D~
+Near the far end of the Commerce Sector dome, a short tunnel leads to a
+grandiosely constructed staircase, made of bundled and refrozen icicles,
+laid sideways to make what could be described as a tooth staircase, though
+in this situation the teeth are frozen and a thick shade of green. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150018
+D4
+~
+~
+16777216 -1 150021
+S
+#150021
+&REntrance to the Warrior & Guardian Floor&D~
+The entrance to the Warrior's floor appears strangely lonesome for what
+is supposed to be a last line of defense should the Mountain come under
+siege.  The bright red glazed walls cast a bloodlike aura over everything
+in the room, making the sparsely placed statues of ancient Icerian warriors
+appear quite macabre and almost corpselike. 
+~
+0 0 0
+D3
+~
+~
+0 -1 150022
+D5
+~
+~
+0 -1 150020
+S
+#150022
+&RA Split in the Hallway&D~
+Further along the hallway, it branches off into two seperate segments,
+though both appear uninhabited.  To one, the red glaze walls shine on in
+all their carnal glory, and the other leads into a sheer granite chamber
+with several other branching chambers.  There seems to be a large group of
+statues here, all of them Icerian warriors of seemingly giant stature and
+apparent monstrous strength.  Though their poses look peculiar, more than
+likely they were at one point in time fearsome warriors. 
+~
+0 0 0
+D1
+~
+~
+0 -1 150021
+D2
+~
+~
+0 -1 150023
+D3
+~
+~
+0 -1 150029
+S
+#150023
+&RA Cluttered Healing Room&D~
+This hexagonal granite chamber has a door in every major direction, all
+but one blocked by a midnight-black field of light-repulsing energy as to
+keep the contents and inhabitants of each room as private as possible. 
+Above each energy field, a light blinks to warn if the chamber beyond is
+inhabited. 
+~
+0 536871936 0
+D0
+~
+~
+0 -1 150022
+D1
+~
+~
+0 -1 150025
+D2
+~
+~
+0 -1 150026
+D3
+~
+~
+0 -1 150024
+D8
+~
+~
+0 -1 150027
+D9
+~
+~
+0 -1 150028
+S
+#150024
+&RA Small Frozen Alcove&D~
+Differing abruptly from the neighboring chamber, this small and somewhat
+cramped cell has been carved out of what originally was a larger chamber of
+rock, but due to an Icer's severely cold aura, water has actually been
+drawn from nearby to make a sort of ice-cocoon, a spherical chamber that
+would be suited quite well for one or two people to demonstrate techniques.
+~
+0 0 0
+D1
+~
+~
+0 -1 150023
+S
+#150025
+&RMechanical Lifeform Maintenance&D~
+The more advanced aspects of Icer technology and architecture have been
+brought together to form this room, making it into a giant apparatus
+capable of upgrading and modifying existing mechasentient lifeforms, be
+they heavily augmented Icer warriors, or android creations. 
+~
+0 2098176 0
+D3
+~
+~
+0 -1 150023
+D5
+~
+~
+0 -1 150091
+S
+#150026
+&RInside the Centrifuge Chamber&D~
+A long granite corridor leads from the healing room into this monstrous
+spherical chamber.  Inside, a giant motor spins rapidly in the center of
+the sphere, causing a small room to rotate about rapidly, creating a
+centrifugal artificial gravity effect.  A scientist stands near the control
+panel, adjusting the amount of gravity generated by this monstrosity of a
+contraption. 
+~
+0 268435456 0
+D0
+~
+~
+0 -1 150023
+S
+#150027
+&rA Boiling Hot Sparring Room&D~
+Another method of Icer warrior training, this room has been heated to
+extreme temperatures, to such a point that the rock floor has been slightly
+softened.  Only the most enduring of warriors can withstand temperatures so
+high, and as such, this room is rarely occupied. 
+~
+0 335544320 0
+D7
+~
+~
+0 -1 150023
+S
+#150028
+&CA Subzero Sparring Chamber&D~
+Maintained by an external power source, this room has been cooled to an
+extremely low temperature, as an aiding device for Icerian warriors to gain
+their transformations.  As such, only the hardiest of non-Icer warriors can
+survive in this room at all, and even then not for long. 
+~
+0 335544320 0
+D6
+~
+~
+0 -1 150023
+S
+#150029
+&wJunction to the Warrior Dormitories&D~
+Two entryways stand here, both branching off into what appear to be
+well-populated areas, though the entire Warrior's floor contains a
+surprising lack of action.  Another symbol of the Overlord's ever watchful
+gaze to his enemies, security turrets flank the turn in the corridor, ready
+to mow down any attacking force. 
+~
+0 0 0
+D1
+~
+~
+0 -1 150022
+D6
+~
+~
+0 -1 150030
+D7
+~
+~
+0 -1 150031
+S
+#150030
+&wThe Male Warrior Chambers&D~
+Even though this portion of men's dormitories is barely outside of the
+dormitory junction, it has been heavily decorated by artwork of battles and
+statues of warriors flexing and striking various poses.  The walls have
+been lacquered an off-white shade very similar to the Icerian skin tone. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150033
+D8
+~
+~
+0 -1 150032
+D9
+~
+~
+0 -1 150029
+S
+#150031
+&zThe Female Warrior Chambers&D~
+Different greatly from the male dormitories in more than the
+inhabitants, the entrance to the women's dormitories is wholly undecorated.
+To the untrained eye, the denizens of this place might appear to be male
+Icers, due to the only major difference between the physical appearance of
+genders being slightly differing amounts of androdgeny. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150038
+D8
+~
+~
+0 -1 150029
+D9
+~
+~
+0 -1 150042
+S
+#150032
+&wA Crowded Corner&D~
+Here at the intersection of the two corridors that comprise the men's
+dormitories, the floor has been worn thin from frequent visits by the
+warriors, either due to milling around or meditation, or perhaps both. 
+Several lacquered statues lie in the corner, vivid stone replicas of the
+more recent Guardians to have graced this mountain fort. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150034
+D7
+~
+~
+0 -1 150030
+S
+#150033
+&wLeaving the Male Dormitories&D~
+Here at the exit from the male dormitories, the walls have been worn
+down, and in most places nearly worn through, by repeated punching and
+kicking, as is being demonstrated by an aspiring Warrior nearby.  The
+doorway appears strangely out of place in this area, being such a pristine
+device, and the walls bearing such large cracks and craters. 
+~
+0 0 0
+D1
+~
+~
+0 -1 150035
+D2
+~
+~
+0 -1 150030
+D3
+~
+~
+0 -1 150037
+S
+#150034
+&wPassing the Doors&D~
+Through this corridor lies the majority of the male Warrior dormitories,
+though from the outside they can hardly be called such; stacked two-high
+and the hatches leading into them obviously shaped for crawling through,
+they are hardly a visage of comfort, or that of a place in the least
+desirable to sleep in, yet it truly is a monument to the hardiness of these
+people. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150035
+D2
+~
+~
+0 -1 150032
+S
+#150035
+&wBefore the Male Guardian's Chambers&D~
+In the far corner of the two primary corridors junction, a lone door
+lies, made of a peculiar blood-red ice, and from the lack of use, the ice
+has frozen over, nearly sealing the entryway to whatever may lie beyond. 
+Around the door spanning from floor to ceiling, a peculiar fresco has been
+painted, a chaotic pattern of greens, reds and blues all leading towards
+the door.  Obviously, whoever resides in the chamber is a person of great
+power. 
+~
+0 0 0
+D0
+~
+door~
+3 -1 150036
+D2
+~
+~
+0 -1 150034
+D3
+~
+~
+0 -1 150033
+S
+#150036
+&rInside the Guardian's Chambers&D~
+The entirety of this cylindrical chamber has been painted with a fresco
+of blindingly jarring patterns of green, red, blue and a deep near-black
+purple.  The ceilings and floor echo each other, with both centers
+containing idents.  On the floor indentation, the only semblance of
+furniture lies, a large floorcushion. 
+~
+0 0 0
+D2
+~
+door~
+3 -1 150035
+S
+#150037
+&cBefore A Giant Icedoor&D~
+The two hallways to the east and west of this chamber make a sudden
+curve, forming into a sort of U-shaped entryway.  The reason for this room
+is unclear, however, for the only possible way out would be north, although
+the entire northern wall consists of what would be transluscent ice, if it
+were not at least ten feet thick.  There is a small hole in the wall to the
+side of the gate. 
+~
+0 0 0
+D0
+~
+gate~
+7 150220 150043
+D1
+~
+~
+0 -1 150033
+D3
+~
+~
+0 -1 150038
+S
+#150038
+&zLeaving the Women's Dormitories&D~
+One of the several discrepancies between the male and female dormitories
+is manifested here, in the form of a small waiting-room of sorts, though
+little is different from the rest of the dormitories concerning the waiting
+room's architecture. Several busts of women line the walls, all with
+fearsome snarls adorning their face, and all facing the women's dormitories
+as if they were a deterrent from leaving, however peculiar. 
+~
+0 0 0
+D1
+~
+~
+0 -1 150037
+D2
+~
+~
+0 -1 150031
+D3
+~
+~
+0 -1 150039
+S
+#150039
+&zBefore the Guardian's Chambers&D~
+A massive, transluscent crystalline doorway blocks the entrance to the
+north, though by the glazed carvings on the wall, it would appear attention
+was meant to be drawn to it.  A diagram consisting of white, orange and
+yellow twine around the wall, with jutting curves and abrupt angles,
+forming a chaotic, yet orderly design. 
+~
+0 0 0
+D0
+~
+~
+3 -1 150041
+D1
+~
+~
+0 -1 150038
+D2
+~
+~
+0 -1 150040
+S
+#150040
+&zA Pristine Hallway&D~
+The tightly massed chambers that line this corridor on both sides are
+slightly more spaced than the similar rooms that cluster the men's
+dormitories, but even so, the amount of space provided for each warrior is
+barely enough to move around, and not even enough for someone to stand up. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150039
+D2
+~
+~
+0 -1 150042
+S
+#150041
+&rInside the Guardian's Chambers&D~
+This Guardian's personal chamber is what would appear to be a massive
+pyramid-shaped room, with a peculiar pattern etched throughout all four
+walls and the floor.  The floor is covered by a thin veneer of transparent
+ice, and the object in the room that could be considered comforting is a
+small mattress lying to one side. 
+~
+0 0 0
+D2
+~
+~
+3 -1 150039
+S
+#150042
+&zA Shadowy Corner&D~
+This shadowy corner is unadorned, bereft of any trappings or statues,
+although there is quite a collection of blood spatters on the wall and
+floor.  Even more peculiar is that several are very very old, and that they
+have not been cleaned recently, as if their placing was deliberate. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150040
+D6
+~
+~
+0 -1 150031
+S
+#150043
+An Elegant Staircase~
+This entire chamber, despite its ample size, is filled with a
+magnificent looking staircase.  Each and every step is made of dozens of
+rounded granite balls, each step supporting its previous.  The amount of
+labor that would be required for such a staircase is astounding; it is
+beyond doubt that wherever this staircase leads, it is of great importance.
+~
+0 4 0
+D2
+~
+gate~
+7 150220 150037
+D4
+~
+gate~
+7 150221 150044
+S
+#150044
+&pAn Elegant Lobby&D~
+This well-lighted antechamber is a prime example of the pride of the
+Icerian people.  Nearly all of the furniture is made either of humanoid
+skeleletons, or the skeletons of monstrous beasts that are likely native to
+this planet.  The door to the north is made entirely of femurs, and the
+chandelier that illuminates this room so well is made out of thousands of
+fingerbones. 
+~
+0 2097152 0
+D0
+~
+~
+0 -1 150045
+D3
+~
+~
+0 -1 150047
+D5
+~
+gate~
+1 150221 150043
+D8
+~
+~
+0 -1 150048
+S
+#150045
+A Well-Guarded Doorway~
+This alcove is even more macabre than the outside antechamber; the floor
+itself has been paved with skulls, and the door leading to wherever this
+corridor ends is constructed of shoulders.  The entire area smells horribly
+cadaverous; whoever lives here, if anyone could, must be terribly evil.
+~
+0 2097152&16 0
+D0
+~
+door~
+7 150241 150046
+D2
+~
+~
+0 -1 150044
+S
+#150046
+&gA Grand Throne Room&D~
+This room is apparently the source of the smell of death that pervades
+this upper chamber.  The reason is quite obvious; several Icer lay dead to
+the side of the focus of the room - a monolithic throne.  While the only
+grotesque feature of it is the arm handles being actually made of arms, it
+still provokes an aura of death, and power - whoever has the boldness to
+sit on it must be one with a truly black heart. 
+~
+0 2097152&16 0
+D2
+~
+door~
+7 150241 150045
+D5
+~
+~
+0 -1 150044
+> entry_prog 100~
+mpat 150045 mpforce attendant close n
+mpat 150045 mpforce attendant lock n
+~
+|
+S
+#150047
+&gEntrance to the Overlord's Family Chambers&D~
+The macabre architectural designs halt in this area, although the
+obviously powerful influence of the inhabitants does not, as is evident by
+the new style of design - pure gold.  While only the doors, wall fixtures,
+and floor tiles are solid gold, it still is something only the influential
+could possibly hope to have. 
+~
+0 2097152 0
+D1
+~
+~
+0 -1 150044
+D9
+~
+~
+0 -1 150049
+S
+#150048
+&gA Private Contemplation Room&D~
+A bone-white finish on this room's walls compliment the similarly pale
+plethora of furniture scattered about, even down to the wooden components
+of the chairs.  The lighting in this room is very subtle, and no aspect of
+the room would draw one's attention. 
+~
+0 2097152 0
+D2
+~
+wall~
+2063 150222 150056
+D7
+~
+~
+0 -1 150044
+S
+#150049
+&zA Dim Hallway&D~
+This hallway shows more of the monstrous amounts of wealth that have
+been amassed by the inhabitants.  A pattern of a peculiar light-absorbing
+precious gem nearly encompasses the entire ceiling and wall, and because of
+this the entire hallway's light is diminished greatly, though to the east
+and west two frozen doorways can be seen. 
+~
+0 2097152 0
+D1
+~
+~
+0 -1 150051
+D2
+~
+~
+0 -1 150052
+D3
+~
+~
+0 -1 150050
+D6
+~
+~
+0 -1 150047
+S
+#150050
+&bAriemas' Private Quarters&D~
+Whoever the occupant of this room is, he or she is quite the aficianado
+when it comes to fighting and training.  Every inch of the wall is covered
+with writing, all of them names with a distinct Icerian sound to them.  The
+floor is padded, and several dummies are strewn about the room, more lying
+broken and tattered on the floor than standing upright. 
+~
+0 2097152 0
+D1
+~
+~
+0 -1 150049
+S
+#150051
+&rZiranyth's Private Chambers&D~
+This room is truly appears as if a fight has occured only recently -
+books and tomes lie strewn about the floor, several pure gold statues lie
+on their sides and the furniture is nearly entirely overturned.  Lewd
+paintings cover the walls, and one of the open books reveals things to make
+even a debauchery addicted man blush.  The lechery of the inhabitant is
+quite apparent. 
+~
+0 2097152 0
+D3
+~
+~
+0 -1 150049
+S
+#150052
+&YA Bright, Gaudy Corridor&D~
+This corridor appears quite divided; on the eastern side, a dark and
+brooding atmosphere lingers in the air, and on the west side, a hodgepodge
+of brazen colors and trappings adorn a large door.  The contrasting styles
+jar the eye, though each seems to have a sort of unity, as if the two truly
+belonged together. 
+~
+0 2097156 0
+D0
+~
+~
+0 -1 150049
+D1
+~
+~
+0 -1 150054
+D2
+~
+~
+0 -1 150055
+D3
+~
+~
+0 -1 150053
+S
+#150053
+&pGwelia's Private Chambers&D~
+Bright purple painting, fluorescent blue and golden decorations, along
+with far too much lighting, accurately reflect the persona of this room's
+primary occupant.  A giant bed lies in one corner, and the rest of the room
+is filled with dolls, toys, and various other playthings including a
+mechnical and quite lifelike pony. 
+~
+0 2097152 0
+D1
+~
+~
+0 -1 150052
+S
+#150054
+&zKa-uut's Private Chambers&D~
+This bedchamber sports a bizarre method of lighting - the peculiar
+light-absorbing Icerian crystal thinly encases a mass of light-giving
+fungi, so the luminescence in the room appears somehow tainted, or perhaps
+lessened, though it may seem impossible for such a thing to be so.  The
+only adornment in the entire room is a massive bed directly in the center
+of the room, though with its size it could double as an adequate seating
+device. 
+~
+0 2097152 0
+D3
+~
+~
+0 -1 150052
+S
+#150055
+&BThe Overlord's Chambers&D~
+This room is a grisly parallel of a trophy room - humanoid skulls cover
+the entire room's walls.  Small plaques match each morbid trophy.  Its
+gruesome trophies notwithstanding, this room appears a bedroom fit for
+nobility.  A large four-posted bed flanks one of the walls, and several
+comfortable looking chairs lie abandoned. 
+~
+0 2097152 0
+D0
+~
+~
+0 -1 150052
+S
+#150056
+&gThe Overlord's Warspoils Chamber&D~
+The amount of wealth contained in this room could easily buy this
+mountain fortress, but it remains untouched.  Partially, this is due to its
+well-guarded nature.  Two sentry turrets scan the room continually.  The
+other is most likely due to the filmy gray substance covering every inch of
+every precious item in the room. 
+~
+0 0 0
+D0
+~
+wall~
+2049 150222 150048
+S
+#150057
+A Poorly Maintained Staircase~
+This small alcove is not only poorly maintained, the ice walls having
+nearly melted to rock, but also poorly built.  The majority of the
+components comprising this small staircase are, in fact, refuse and other
+items no longer wanted by their previous owners.  The staircase looks quite
+unstable, though appearances may be deceiving; the constant passing of feet
+has compressed the garbage into a state of near-sturdiness. 
+~
+0 0 0
+D4
+~
+~
+16777216 -1 150006
+D8
+~
+~
+0 -1 150058
+S
+#150058
+&rPoorcitizen District&D~
+Small ramshackle huts and houses flank this narrow street to the west. 
+The entire area appears dilapidated beyond hope, and it seems the other
+residents of this city know it, having built a large wall to the east,
+perhaps to block the view of this disgraceful area. 
+~
+0 0 0
+D2
+~
+~
+0 -1 150060
+D3
+~
+~
+0 -1 150059
+D7
+~
+~
+0 -1 150057
+S
+#150059
+A Messy Home~
+Despite the overall conditions in this part of town being terrible, some
+have managed to make the best of what is given to them as is shown by this
+home.  Despite its extreme untidiness, it appears generally free of rampant
+pests. 
+~
+0 0 1
+D1
+~
+~
+0 -1 150058
+S
+#150060
+&rPoorcitizen District&D~
+Small ramshackle huts and houses flank this narrow street to the west. 
+The entire area appears dilapidated beyond hope, and it seems the other
+residents of this city know it, having built a large wall to the east,
+perhaps to block the view of this disgraceful area. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150058
+D2
+~
+~
+0 -1 150062
+D3
+~
+~
+0 -1 150061
+S
+#150061
+A Home of Questionable Origin~
+Calling this aberration a "home" is truly an insult to all homes in
+existance - the foundation barely supports a hole-ridden roof, and the
+amount of pests living in here outnumbers the actual inhabitants by dozens
+of times. 
+~
+0 0 0
+D1
+~
+~
+0 -1 150060
+S
+#150062
+&rPoorcitizen District&D~
+Small ramshackle huts and houses flank this narrow street to the west. 
+The entire area appears dilapidated beyond hope, and it seems the other
+residents of this city know it, having built a large wall to the east,
+perhaps to block the view of this disgraceful area. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150060
+D2
+~
+~
+0 -1 150064
+D3
+~
+~
+0 -1 150063
+S
+#150063
+An Inhospitable Garbage Heap~
+Another example of the terrible "living" conditions provided to these
+people is this heap of garbage and trash, obviously what may have once been
+a home, and perhaps a decent one at that.  The foundations appear to have
+collapsed, causing the entire house to simply fall down, leaving it as just
+another heap of garbage in this refuse-ridden area. 
+~
+0 0 0
+D1
+~
+~
+0 -1 150062
+S
+#150064
+&rEntering a Derelict Portion of Town&D~
+Two extremely different areas of the city begin to collide, as the
+district restricted to the lowest of the low begins to fade, or perhaps
+sharpen into a slightly higher class part of town.  Despite this, the
+stench and clutter of the poor district pervades the area no less. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150062
+D3
+~
+~
+0 -1 150065
+D8
+~
+~
+16777216 -1 150066
+S
+#150065
+A Decrepit Shack~
+Somehow, a person has managed to find large sheets of metal and lean
+them in a position that this hovel they live in has the unglamorous
+appearance of a shack.  Though the metal may be thoroughly rusted and
+pitted, it provides an excellent shelter against the pest life that calls
+this domain home. 
+~
+0 0 0
+D1
+~
+~
+0 -1 150064
+S
+#150066
+&gIn Front of a Midcitizen's House&D~
+This area differs quite greatly from the neighboring poor section,
+though it is hardly what one would call upper class.  Those who have
+managed to eke out a meager living call this place home, a hardly
+extravagant yet quite hospitable area. 
+~
+0 0 0
+D1
+~
+~
+0 -1 150068
+D2
+~
+~
+0 -1 150067
+D7
+~
+~
+16777216 -1 150064
+S
+#150067
+&wAn Average Icerian House&D~
+The facade of a much higher income is prevalent throughout this home, in
+the form of attemptedly luxuriant furniture and cheap copies of famous
+paintings.  In spite of this, however, the home continually gives off a
+feeling of its true meagerness. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150066
+S
+#150068
+&gIn Front of a Midcitizen's House&D~
+This area differs quite greatly from the neighboring poor section,
+though it is hardly what one would call upper class.  Those who have
+managed to eke out a meager living call this place home, a hardly
+extravagant yet quite hospitable area. 
+~
+0 0 0
+D1
+~
+~
+0 -1 150070
+D2
+~
+~
+0 -1 150069
+D3
+~
+~
+0 -1 150066
+S
+#150069
+&wAn Average Icerian House&D~
+The facade of a much higher income is prevalent throughout this home, in
+the form of attemptedly luxuriant furniture and cheap copies of famous
+paintings.  In spite of this, however, the home continually gives off a
+feeling of its true meagerness. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150068
+S
+#150070
+&gBefore the City Square&D~
+The path that has stayed constant for so long finally makes a split here
+to the north, into a large open plaza, complete with a bubbling fountain
+and several well-sculpted statues.  At the far northern end of the square a
+large mansion-like house is visible, albeit barely. 
+~
+0 0 0
+D0
+~
+~
+16777216 -1 150085
+D1
+~
+~
+0 -1 150072
+D2
+~
+~
+0 -1 150071
+D3
+~
+~
+0 -1 150068
+S
+#150071
+&wAn Average Icerian House&D~
+The facade of a much higher income is prevalent throughout this home, in
+the form of attemptedly luxuriant furniture and cheap copies of famous
+paintings.  In spite of this, however, the home continually gives off a
+feeling of its true meagerness. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150070
+S
+#150072
+&gIn Front of a Midcitizen's House&D~
+A major step down from the neighboring upper class sector of this city,
+the middle class of Icerians hardly live in luxury, yet their homes invoke
+a feeling more of home and less of the extravagance that most would feel
+upon entering one of the richer homes to the northeast. 
+~
+0 0 0
+D1
+~
+~
+0 -1 150074
+D2
+~
+~
+0 -1 150073
+D3
+~
+~
+0 -1 150070
+S
+#150073
+&wAn Average Icerian House&D~
+The facade of a much higher income is prevalent throughout this home, in
+the form of attemptedly luxuriant furniture and cheap copies of famous
+paintings.  In spite of this, however, the home continually gives off a
+feeling of its true meagerness. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150072
+S
+#150074
+&gIn Front of a Midcitizen's House&D~
+A major step down from the neighboring upper class sector of this city,
+the middle class of Icerians hardly live in luxury, yet their homes invoke
+a feeling more of home and less of the extravagance that most would feel
+upon entering one of the richer homes to the northeast. 
+~
+0 0 0
+D2
+~
+~
+0 -1 150075
+D3
+~
+~
+0 -1 150072
+D6
+~
+~
+16777216 -1 150076
+S
+#150075
+&wAn Average Icerian House&D~
+The facade of a much higher income is prevalent throughout this home, in
+the form of attemptedly luxuriant furniture and cheap copies of famous
+paintings.  In spite of this, however, the home continually gives off a
+feeling of its true meagerness. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150074
+S
+#150076
+&cBefore A Highcitizen's House&D~
+When a person has the ability to bedeck their every possession with
+wealth, the person generally tends to do so.  Such is the case as to the
+houses in this area.  Every single aspect of them screams wealth, and was
+obviously meant to do exactly that. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150078
+D1
+~
+~
+0 -1 150077
+D9
+~
+~
+16777216 -1 150074
+S
+#150077
+&CA Highcitizen's Mainchamber&D~
+The lobby of this richly decorated home seems to be well-tended, most
+likely however it is not by the owner of the house.  A grand stairway leads
+up onto the second floor, though a strange mechanism appears to prevent
+accessing them. 
+~
+0 0 0
+D3
+~
+~
+0 -1 150076
+S
+#150078
+&cBefore A Highcitizen's House&D~
+When a person has the ability to bedeck their every possession with
+wealth, the person generally tends to do so.  Such is the case as to the
+houses in this area.  Every single aspect of them screams wealth, and was
+obviously meant to do exactly that. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150080
+D1
+~
+~
+0 -1 150079
+D2
+~
+~
+0 -1 150076
+S
+#150079
+&CA Highcitizen's Mainchamber&D~
+The lobby of this richly decorated home seems to be well-tended, most
+likely however it is not by the owner of the house.  A grand stairway leads
+up onto the second floor, though a strange mechanism appears to prevent
+accessing them. 
+~
+0 0 0
+D3
+~
+~
+0 -1 150078
+S
+#150080
+&cBefore A Highcitizen's House&D~
+When a person has the ability to bedeck their every possession with
+wealth, the person generally tends to do so.  Such is the case as to the
+houses in this area.  Every single aspect of them screams wealth, and was
+obviously meant to do exactly that. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150082
+D1
+~
+~
+0 -1 150081
+D2
+~
+~
+0 -1 150078
+S
+#150081
+&CA Highcitizen's Mainchamber&D~
+The lobby of this richly decorated home seems to be well-tended, most
+likely however it is not by the owner of the house.  A grand stairway leads
+up onto the second floor, though a strange mechanism appears to prevent
+accessing them. 
+~
+0 0 0
+D3
+~
+~
+0 -1 150080
+S
+#150082
+&cBefore A Highcitizen's House&D~
+When a person has the ability to bedeck their every possession with
+wealth, the person generally tends to do so.  Such is the case as to the
+houses in this area.  Every single aspect of them screams wealth, and was
+obviously meant to do exactly that. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150084
+D1
+~
+~
+0 -1 150083
+D2
+~
+~
+0 -1 150080
+S
+#150083
+&CA Highcitizen's Mainchamber&D~
+The lobby of this richly decorated home seems to be well-tended, most
+likely however it is not by the owner of the house.  A grand stairway leads
+up onto the second floor, though a strange mechanism appears to prevent
+accessing them. 
+~
+0 0 0
+D3
+~
+~
+0 -1 150082
+S
+#150084
+&cStairway to the Junction&D~
+A well-maintained and well-constructed stairway.  Each step is wrought
+of a durable-looking yet fiercely shimmering metallic substance, and the
+spiral of the stair gracefully hugs the wall of the cylindrical chamber. 
+~
+0 0 0
+D2
+~
+~
+0 -1 150082
+D4
+~
+~
+16777216 -1 150007
+S
+#150085
+&cHeaded Towards the Square&D~
+A well-laid stone path heads to the large plaza to the north.  Much like
+the other stonework in this mountain, it is comprised of large slabs of
+granite, though the amount of polish on this walkway seems almost excessive
+to the point of vanity, though why anyone would have such a pride of such a
+simple thing is quite peculiar. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150086
+D2
+~
+~
+0 -1 150070
+S
+#150086
+The City Square~
+A slight variance in the square here does not echo, yet does compliment,
+the walkway to the south.  The ground is no longer composed solely of
+granite, as a different variety of scarlet stone has been laid at random
+intervals throughout the common. 
+~
+0 0 0
+D0
+~
+~
+0 -1 150089
+D1
+~
+~
+0 -1 150088
+D2
+~
+~
+0 -1 150085
+D3
+~
+~
+0 -1 150087
+S
+#150087
+&wAn Iceplant Garden&D~
+In an attempt to spruce up the plaza, a large variety of foliage has
+been planted near here.  Large and slightly green crystalline plants sway
+in the slight breeze, looking so fragile they would break at the touch,
+though they must be quite hardy if they are able to root in such a hard
+rock as granite. 
+~
+0 0 0
+D1
+~
+~
+0 -1 150086
+S
+#150088
+&wAn Iceplant Garden&D~
+In an attempt to spruce up the plaza, a large variety of foliage has
+been planted near here.  Large and slightly green crystalline plants sway
+in the slight breeze, looking so fragile they would break at the touch,
+though they must be quite hardy if they are able to root in such a hard
+rock as granite. 
+~
+0 0 0
+D3
+~
+~
+0 -1 150086
+S
+#150089
+The Governor's Mansion~
+A magnificent set of stone steps lead up to the heavily pillared
+entryway into this grandiose mansion.  Despite the inviting manner it is
+presented, it is obvious that no visitors are wanted as a large shimmering
+field of energy blocks the sole door. 
+~
+0 0 0
+D2
+~
+~
+0 -1 150086
+S
+#150090
+&RDabura's Little Pocket o' Hell&D~
+With Dabura in the room, chaos is everywhere.  Midgets doing cartwheels,
+insects flying into speeding cars, pigs flying, and hippies being cool. 
+Damn, he's good. 
+~
+0 4 1
+S
+#150091
+&RMechanical Lifeform Test Chamber&D~
+A magnificent testament to the ingenuity of Icers, this chamber appears to
+have no aspect of it that is not highly technologically advanced. Even the
+lighting system fluctuates when necessary, altering itself to disperse any
+possible shadows generated by inadequate lightsources. A large set of concentric
+rings fill the center of the floor, possibly implemented as a system of transport
+to and from the room.
+~
+0 2097152 0
+D4
+~
+~
+0 -1 150025
+S
+#150092
+&CAn Empty Landing Pad&D~
+This section of the landing pad appears peculiarly empty, for the presence
+of the battered, yet heavily armed ship would, in most places, elicit at
+least a small response, though the Icerian patrols seem to ignore the ship.
+Though it has a large window in the cockpit, it appears to be tinted, so sight
+into the innards of the ship is impossible. However, a small button lies to the
+right of the main entryway, a likely means of entry.
+~
+0 0 1
+D1
+~
+~
+0 -1 150001
+S
+#150093
+&zInside A Dark Ship&D~
+Despite the peculiarity of the outside of this ship, the inside appears
+very human in design. Small letters in English scroll across a screen, and
+the seats are made of what appears to be a very comfortable black leather.
+The window in the anterior of the ship appears slightly tinted, though in
+a peculiar manner, as if whatever substance it is made of is not naturally
+so. A small red button lies to the left of the only door, a likely means of exit.
+~
+0 2097156 1
+> entry_prog 100~
+if race($n)!=human
+mpechoat $n &YA large yellow light near the control panel begins to flash, and a yellow scanner emerges from the wall, scanning your&D
+mpechoat $n &Ybody. After a moment, a female voice says, "&WRace not identified as human. Person not identified as guest. Ejecting.&Y"&D
+mpechoat $n &YA large, spherical yellow orb floats over to your position, a brilliant light emanating from it, as you are transported&D
+mpechoat $n &Yfrom the ship!&D
+mpopenpassage 150093 150092 2
+mpforce $n south
+mpclosepassage 150093 2
+endif
+~
+|
+S
+#150094
+Floating in a void~
+~
+0 2097156 1
+S
+#150095
+Floating in a void~
+~
+0 2097156 1
+S
+#150096
+Floating in a void~
+~
+0 2097156 1
+S
+#150097
+Floating in a void~
+~
+0 2097156 1
+S
+#150098
+Floating in a void~
+~
+0 2097156 1
+S
+#150099
+Floating in a void~
+~
+0 2097156 1
+S
+#150100
+Floating in a void~
+~
+0 2097156 1
+S
+#150101
+Floating in a void~
+~
+0 2097156 1
+S
+#150102
+Floating in a void~
+~
+0 2097156 1
+S
+#150103
+Floating in a void~
+~
+0 2097156 1
+S
+#150104
+Floating in a void~
+~
+0 2097156 1
+S
+#150105
+Floating in a void~
+~
+0 2097156 1
+S
+#150106
+Floating in a void~
+~
+0 2097156 1
+S
+#150107
+Floating in a void~
+~
+0 2097156 1
+S
+#150108
+Floating in a void~
+~
+0 2097156 1
+S
+#150109
+Floating in a void~
+~
+0 2097156 1
+S
+#150110
+Floating in a void~
+~
+0 2097156 1
+S
+#150111
+Floating in a void~
+~
+0 2097156 1
+S
+#150112
+Floating in a void~
+~
+0 2097156 1
+S
+#150113
+Floating in a void~
+~
+0 2097156 1
+S
+#150114
+Floating in a void~
+~
+0 2097156 1
+S
+#150115
+Floating in a void~
+~
+0 2097156 1
+S
+#150116
+Floating in a void~
+~
+0 2097156 1
+S
+#150117
+Floating in a void~
+~
+0 2097156 1
+S
+#150118
+Floating in a void~
+~
+0 2097156 1
+S
+#150119
+Floating in a void~
+~
+0 2097156 1
+S
+#150120
+Floating in a void~
+~
+0 2097156 1
+S
+#150121
+Floating in a void~
+~
+0 2097156 1
+S
+#150122
+Floating in a void~
+~
+0 2097156 1
+S
+#150123
+Floating in a void~
+~
+0 2097156 1
+S
+#150124
+Floating in a void~
+~
+0 2097156 1
+S
+#150125
+Floating in a void~
+~
+0 2097156 1
+S
+#150126
+Floating in a void~
+~
+0 2097156 1
+S
+#150127
+Floating in a void~
+~
+0 2097156 1
+S
+#150128
+Floating in a void~
+~
+0 2097156 1
+S
+#150129
+Floating in a void~
+~
+0 2097156 1
+S
+#150130
+Floating in a void~
+~
+0 2097156 1
+S
+#150131
+Floating in a void~
+~
+0 2097156 1
+S
+#150132
+Floating in a void~
+~
+0 2097156 1
+S
+#150133
+Floating in a void~
+~
+0 2097156 1
+S
+#150134
+Floating in a void~
+~
+0 2097156 1
+S
+#150135
+Floating in a void~
+~
+0 2097156 1
+S
+#150136
+Floating in a void~
+~
+0 2097156 1
+S
+#150137
+Floating in a void~
+~
+0 2097156 1
+S
+#150138
+Floating in a void~
+~
+0 2097156 1
+S
+#150139
+Floating in a void~
+~
+0 2097156 1
+S
+#150140
+Floating in a void~
+~
+0 2097156 1
+S
+#150141
+Floating in a void~
+~
+0 2097156 1
+S
+#150142
+Floating in a void~
+~
+0 2097156 1
+S
+#150143
+Floating in a void~
+~
+0 2097156 1
+S
+#150144
+Floating in a void~
+~
+0 2097156 1
+S
+#150145
+Floating in a void~
+~
+0 2097156 1
+S
+#150146
+Floating in a void~
+~
+0 2097156 1
+S
+#150147
+Floating in a void~
+~
+0 2097156 1
+S
+#150148
+Floating in a void~
+~
+0 2097156 1
+S
+#150149
+Floating in a void~
+~
+0 2097156 1
+S
+#150150
+Floating in a void~
+~
+0 2097156 1
+S
+#150151
+Floating in a void~
+~
+0 2097156 1
+S
+#150152
+Floating in a void~
+~
+0 2097156 1
+S
+#150153
+Floating in a void~
+~
+0 2097156 1
+S
+#150154
+Floating in a void~
+~
+0 2097156 1
+S
+#150155
+Floating in a void~
+~
+0 2097156 1
+S
+#150156
+Floating in a void~
+~
+0 2097156 1
+S
+#150157
+Floating in a void~
+~
+0 2097156 1
+S
+#150158
+Floating in a void~
+~
+0 2097156 1
+S
+#150159
+Floating in a void~
+~
+0 2097156 1
+S
+#150160
+Floating in a void~
+~
+0 2097156 1
+S
+#150161
+Floating in a void~
+~
+0 2097156 1
+S
+#150162
+Floating in a void~
+~
+0 2097156 1
+S
+#150163
+Floating in a void~
+~
+0 2097156 1
+S
+#150164
+Floating in a void~
+~
+0 2097156 1
+S
+#150165
+Floating in a void~
+~
+0 2097156 1
+S
+#150166
+Floating in a void~
+~
+0 2097156 1
+S
+#150167
+Floating in a void~
+~
+0 2097156 1
+S
+#150168
+Floating in a void~
+~
+0 2097156 1
+S
+#150169
+Floating in a void~
+~
+0 2097156 1
+S
+#150170
+Floating in a void~
+~
+0 2097156 1
+S
+#150171
+Floating in a void~
+~
+0 2097156 1
+S
+#150172
+Floating in a void~
+~
+0 2097156 1
+S
+#150173
+Floating in a void~
+~
+0 2097156 1
+S
+#150174
+Floating in a void~
+~
+0 2097156 1
+S
+#150175
+Floating in a void~
+~
+0 2097156 1
+S
+#150176
+Floating in a void~
+~
+0 2097156 1
+S
+#150177
+Floating in a void~
+~
+0 2097156 1
+S
+#150178
+Floating in a void~
+~
+0 2097156 1
+S
+#150179
+Floating in a void~
+~
+0 2097156 1
+S
+#150180
+Floating in a void~
+~
+0 2097156 1
+S
+#150181
+Floating in a void~
+~
+0 2097156 1
+S
+#150182
+Floating in a void~
+~
+0 2097156 1
+S
+#150183
+Floating in a void~
+~
+0 2097156 1
+S
+#150184
+Floating in a void~
+~
+0 2097156 1
+S
+#150185
+Floating in a void~
+~
+0 2097156 1
+S
+#150186
+Floating in a void~
+~
+0 2097156 1
+S
+#150187
+Floating in a void~
+~
+0 2097156 1
+S
+#150188
+Floating in a void~
+~
+0 2097156 1
+S
+#150189
+Floating in a void~
+~
+0 2097156 1
+S
+#150190
+Floating in a void~
+~
+0 2097156 1
+S
+#150191
+Floating in a void~
+~
+0 2097156 1
+S
+#150192
+Floating in a void~
+~
+0 2097156 1
+S
+#150193
+Floating in a void~
+~
+0 2097156 1
+S
+#150194
+Floating in a void~
+~
+0 2097156 1
+S
+#150195
+Floating in a void~
+~
+0 2097156 1
+S
+#150196
+Floating in a void~
+~
+0 2097156 1
+S
+#150197
+Floating in a void~
+~
+0 2097156 1
+S
+#150198
+Floating in a void~
+~
+0 2097156 1
+S
+#150199
+Floating in a void~
+~
+0 2097156 1
+S
+#150200
+Floating in a void~
+~
+0 2097156 1
+S
+#150201
+Floating in a void~
+~
+0 2097156 1
+S
+#150202
+Floating in a void~
+~
+0 2097156 1
+S
+#150203
+Floating in a void~
+~
+0 2097156 1
+S
+#150204
+Floating in a void~
+~
+0 2097156 1
+S
+#150205
+Floating in a void~
+~
+0 2097156 1
+S
+#150206
+Floating in a void~
+~
+0 2097156 1
+S
+#150207
+Floating in a void~
+~
+0 2097156 1
+S
+#150208
+Floating in a void~
+~
+0 2097156 1
+S
+#150209
+Floating in a void~
+~
+0 2097156 1
+S
+#150210
+Floating in a void~
+~
+0 2097156 1
+S
+#150211
+Floating in a void~
+~
+0 2097156 1
+S
+#150212
+Floating in a void~
+~
+0 2097156 1
+S
+#150213
+Floating in a void~
+~
+0 2097156 1
+S
+#150214
+Floating in a void~
+~
+0 2097156 1
+S
+#150215
+Floating in a void~
+~
+0 2097156 1
+S
+#150216
+Floating in a void~
+~
+0 2097156 1
+S
+#150217
+Floating in a void~
+~
+0 2097156 1
+S
+#150218
+Floating in a void~
+~
+0 2097156 1
+S
+#150219
+Floating in a void~
+~
+0 2097156 1
+S
+#150220
+Floating in a void~
+~
+0 2097156 1
+S
+#150221
+Floating in a void~
+~
+0 2097156 1
+S
+#150222
+Floating in a void~
+~
+0 2097156 1
+S
+#150223
+Floating in a void~
+~
+0 2097156 1
+S
+#150224
+Floating in a void~
+~
+0 2097156 1
+S
+#150225
+Floating in a void~
+~
+0 2097156 1
+S
+#150226
+Floating in a void~
+~
+0 2097156 1
+S
+#150227
+Floating in a void~
+~
+0 2097156 1
+S
+#150228
+Floating in a void~
+~
+0 2097156 1
+S
+#150229
+Floating in a void~
+~
+0 2097156 1
+S
+#150230
+Floating in a void~
+~
+0 2097156 1
+S
+#150231
+Floating in a void~
+~
+0 2097156 1
+S
+#150232
+Floating in a void~
+~
+0 2097156 1
+S
+#150233
+Floating in a void~
+~
+0 2097156 1
+S
+#150234
+Floating in a void~
+~
+0 2097156 1
+S
+#150235
+Floating in a void~
+~
+0 2097156 1
+S
+#150236
+Floating in a void~
+~
+0 2097156 1
+S
+#150237
+Floating in a void~
+~
+0 2097156 1
+S
+#150238
+Floating in a void~
+~
+0 2097156 1
+S
+#150239
+Floating in a void~
+~
+0 2097156 1
+S
+#150240
+Floating in a void~
+~
+0 2097156 1
+S
+#150241
+Floating in a void~
+~
+0 2097156 1
+S
+#150242
+Floating in a void~
+~
+0 2097156 1
+S
+#150243
+Floating in a void~
+~
+0 2097156 1
+S
+#150244
+Floating in a void~
+~
+0 2097156 1
+S
+#150245
+Floating in a void~
+~
+0 2097156 1
+S
+#150246
+Floating in a void~
+~
+0 2097156 1
+S
+#150247
+Floating in a void~
+~
+0 2097156 1
+S
+#150248
+Floating in a void~
+~
+0 2097156 1
+S
+#150249
+Floating in a void~
+~
+0 2097156 1
+S
+#150250
+Floating in a void~
+~
+0 2097156 1
+S
+#150251
+Floating in a void~
+~
+0 2097156 1
+S
+#150252
+Floating in a void~
+~
+0 2097156 1
+S
+#150253
+Floating in a void~
+~
+0 2097156 1
+S
+#150254
+Floating in a void~
+~
+0 2097156 1
+S
+#150255
+Floating in a void~
+~
+0 2097156 1
+S
+#150256
+Floating in a void~
+~
+0 2097156 1
+S
+#150257
+Floating in a void~
+~
+0 2097156 1
+S
+#150258
+Floating in a void~
+~
+0 2097156 1
+S
+#150259
+Floating in a void~
+~
+0 2097156 1
+S
+#150260
+Floating in a void~
+~
+0 2097156 1
+S
+#150261
+Floating in a void~
+~
+0 2097156 1
+S
+#150262
+Floating in a void~
+~
+0 2097156 1
+S
+#150263
+Floating in a void~
+~
+0 2097156 1
+S
+#150264
+Floating in a void~
+~
+0 2097156 1
+S
+#150265
+Floating in a void~
+~
+0 2097156 1
+S
+#150266
+Floating in a void~
+~
+0 2097156 1
+S
+#150267
+Floating in a void~
+~
+0 2097156 1
+S
+#150268
+Floating in a void~
+~
+0 2097156 1
+S
+#150269
+Floating in a void~
+~
+0 2097156 1
+S
+#150270
+Floating in a void~
+~
+0 2097156 1
+S
+#150271
+Floating in a void~
+~
+0 2097156 1
+S
+#150272
+Floating in a void~
+~
+0 2097156 1
+S
+#150273
+Floating in a void~
+~
+0 2097156 1
+S
+#150274
+Floating in a void~
+~
+0 2097156 1
+S
+#150275
+Floating in a void~
+~
+0 2097156 1
+S
+#150276
+Floating in a void~
+~
+0 2097156 1
+S
+#150277
+Floating in a void~
+~
+0 2097156 1
+S
+#150278
+Floating in a void~
+~
+0 2097156 1
+S
+#150279
+Floating in a void~
+~
+0 2097156 1
+S
+#150280
+Floating in a void~
+~
+0 2097156 1
+S
+#150281
+Floating in a void~
+~
+0 2097156 1
+S
+#150282
+Floating in a void~
+~
+0 2097156 1
+S
+#150283
+Floating in a void~
+~
+0 2097156 1
+S
+#150284
+Floating in a void~
+~
+0 2097156 1
+S
+#150285
+Floating in a void~
+~
+0 2097156 1
+S
+#150286
+Floating in a void~
+~
+0 2097156 1
+S
+#150287
+Floating in a void~
+~
+0 2097156 1
+S
+#150288
+Floating in a void~
+~
+0 2097156 1
+S
+#150289
+Floating in a void~
+~
+0 2097156 1
+S
+#150290
+Floating in a void~
+~
+0 2097156 1
+S
+#150291
+Floating in a void~
+~
+0 2097156 1
+S
+#150292
+Floating in a void~
+~
+0 2097156 1
+S
+#150293
+Floating in a void~
+~
+0 2097156 1
+S
+#150294
+Floating in a void~
+~
+0 2097156 1
+S
+#150295
+Floating in a void~
+~
+0 2097156 1
+S
+#150296
+Floating in a void~
+~
+0 2097156 1
+S
+#150297
+Floating in a void~
+~
+0 2097156 1
+S
+#150298
+Vacant Residence~
+~
+0 2097156 0
+S
+#150299
+Floating in a void~
+~
+0 2097156 1
+S
+#0
+
+
+#RESETS
+M 1 150137 1 150000
+M 1 150101 1 150002
+O 1 150246 1 150002
+M 1 150102 1 150003
+M 1 150102 1 150003
+M 1 150102 1 150004
+M 1 150102 1 150004
+D 0 150004 0 0
+D 0 150005 2 0
+M 1 150103 1 150006
+M 1 150103 1 150006
+M 1 150103 1 150007
+M 1 150103 1 150007
+M 1 150103 1 150008
+M 1 150103 1 150008
+D 0 150008 4 0
+D 0 150009 5 0
+M 1 150114 1 150010
+M 1 150113 1 150011
+G 1 150200 1
+G 1 150201 1
+M 1 150114 1 150012
+M 1 150115 1 150013
+G 1 150235 1
+G 1 150236 1
+G 1 150225 1
+G 1 150204 1
+G 1 150202 1
+G 1 150203 1
+M 1 150114 1 150014
+M 1 150115 1 150015
+G 1 150228 1
+G 1 150230 1
+G 1 150208 1
+G 1 150207 1
+G 1 150229 1
+G 1 150205 1
+G 1 150209 1
+G 1 150206 1
+M 1 150114 1 150016
+M 1 150115 1 150017
+G 1 150210 1
+G 1 150212 1
+G 1 150214 1
+G 1 150213 1
+G 1 150211 1
+M 1 150114 1 150018
+M 1 150115 1 150019
+G 1 150215 1
+G 1 150219 1
+G 1 150217 1
+G 1 150218 1
+G 1 150216 1
+M 1 150114 1 150020
+M 1 150127 1 150024
+M 1 150128 1 150025
+M 1 150116 1 150030
+M 1 150116 1 150030
+M 1 150116 1 150030
+M 1 150117 1 150031
+M 1 150117 1 150031
+M 1 150116 1 150032
+M 1 150116 1 150032
+M 1 150116 1 150032
+M 1 150116 1 150033
+M 1 150116 1 150034
+M 1 150116 1 150035
+D 0 150035 0 1
+M 1 150118 1 150036
+D 0 150036 2 1
+D 0 150037 0 2
+M 1 150117 1 150038
+M 1 150117 1 150039
+M 1 150117 1 150039
+D 0 150039 0 1
+M 1 150117 1 150040
+M 1 150117 1 150040
+M 1 150119 1 150041
+D 0 150041 2 1
+M 1 150117 1 150042
+M 1 150117 1 150042
+M 1 150117 1 150042
+D 0 150043 2 2
+D 0 150043 4 2
+M 1 150121 1 150044
+M 1 150121 1 150044
+D 0 150044 5 0
+M 1 150135 1 150045
+M 1 150121 1 150045
+M 1 150121 1 150045
+D 0 150045 0 2
+M 1 150120 1 150046
+D 0 150046 2 2
+M 1 150121 1 150047
+M 1 150121 1 150047
+D 0 150048 2 2
+M 1 150121 1 150049
+M 1 150121 1 150049
+M 1 150122 1 150050
+M 1 150123 1 150051
+M 1 150121 1 150052
+M 1 150121 1 150052
+M 1 150125 1 150053
+M 1 150124 1 150054
+D 0 150056 0 0
+M 1 150104 1 150057
+M 1 150104 1 150057
+M 1 150104 1 150058
+M 1 150105 1 150058
+M 1 150106 1 150058
+M 1 150104 1 150059
+M 1 150105 1 150059
+M 1 150104 1 150060
+M 1 150104 1 150060
+M 1 150105 1 150060
+M 1 150106 1 150061
+M 1 150106 1 150061
+M 1 150104 1 150062
+M 1 150105 1 150062
+M 1 150105 1 150062
+M 1 150105 1 150063
+M 1 150104 1 150064
+M 1 150104 1 150064
+M 1 150106 1 150064
+M 1 150105 1 150065
+M 1 150106 1 150065
+M 1 150107 1 150066
+M 1 150107 1 150066
+M 1 150109 1 150066
+M 1 150107 1 150067
+M 1 150109 1 150067
+M 1 150107 1 150068
+M 1 150109 1 150068
+M 1 150108 1 150069
+M 1 150107 1 150069
+M 1 150108 1 150070
+M 1 150109 1 150070
+M 1 150109 1 150071
+M 1 150109 1 150071
+M 1 150107 1 150071
+M 1 150107 1 150072
+M 1 150107 1 150072
+M 1 150109 1 150072
+M 1 150109 1 150072
+M 1 150107 1 150073
+M 1 150108 1 150073
+M 1 150109 1 150073
+M 1 150108 1 150074
+M 1 150109 1 150074
+M 1 150107 1 150074
+M 1 150107 1 150075
+M 1 150107 1 150075
+M 1 150110 1 150076
+M 1 150112 1 150076
+M 1 150110 1 150077
+M 1 150111 1 150077
+M 1 150111 1 150078
+M 1 150111 1 150078
+M 1 150110 1 150078
+M 1 150110 1 150079
+M 1 150110 1 150080
+M 1 150112 1 150080
+M 1 150111 1 150081
+M 1 150111 1 150081
+M 1 150111 1 150081
+M 1 150112 1 150081
+M 1 150110 1 150082
+M 1 150111 1 150082
+M 1 150112 1 150083
+M 1 150112 1 150083
+M 1 150110 1 150083
+M 1 150112 1 150084
+M 1 150112 1 150084
+M 1 150103 1 150086
+M 1 150103 1 150086
+M 1 150103 1 150089
+M 1 150103 1 150089
+M 1 150130 1 150091
+O 1 150237 1 150092
+M 1 150133 1 150093
+O 1 150238 1 150093
+S
+
+
+#SHOPS
+ 150113    0  0  0  0  0   100  90         0 23    ; An Icer bartender
+ 150115    0  0  0  0  0   100  90         0 23    ; An Icer shopkeeper
+0
+
+
+#REPAIRS
+ 150127    0  9  0         100   1         0 23    ; An Icerian Master
+0
+
+
+#SPECIALS
+S
+
+
+#$

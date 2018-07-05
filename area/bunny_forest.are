@@ -1,0 +1,990 @@
+#AREA   Bunny Forest~
+
+
+
+#VERSION 252
+#AUTHOR Goku~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 4
+
+#RESETMSG You hear many faint grunting sounds coming from all around you.~
+
+#FLAGS
+0 7
+
+#CLIMATE 3 2 1
+
+#MOBILES
+#9100
+squirrel~
+a small squirrel~
+A small squirrel is here searching for nuts.
+~
+~
+16777281 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 50
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+70 70 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9101
+cute fluffy white bunny~
+a cute fluffy white bunny~
+A cute fluffy white bunny nibbling on some grass.
+~
+~
+16777281 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 75
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+70 70 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9102
+brown rabbit~
+a small brown rabbit~
+A small brown rabbit digging a hole in the dirt.
+~
+~
+16777281 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+70 70 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9103
+black hare~
+a black hare~
+A black hare is hopping around here.
+~
+~
+16777281 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 250
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+70 70 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9104
+jack rabbit~
+a large jack rabbit~
+A large jack rabbit is listening to your movement.
+~
+~
+16777281 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 500
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+70 70 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9105
+cabbit~
+a cute cabbit~
+A cute cabbit is nibbling on a carrot here.
+~
+~
+16777281 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 750
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+70 70 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9106
+farmer john~
+farmer John~
+Farmer John is hunting down rabbits.
+~
+~
+16777281 0 0 C
+25 0 100 1d20+0 2d5+0
+-1 900
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9107
+grizzly bear~
+a huge grizzly bear~
+A huge grizzly bear is sleeping here.
+~
+~
+16777315 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000
+104 104 1
+10 10 10 10 10
+0 0 0 0 0
+23 23 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9108
+deer~
+a deer~
+A deer is here nibbling on some grass.
+~
+~
+16777281 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 600
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+70 70 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9109
+wolf~
+a wolf~
+A wolf is here looking for some dinner.
+~
+~
+16777281 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 850
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+52 52 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9199
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#9100
+overalls~
+a pair of overalls~
+An old ratty pair of overalls lay here on the ground.~
+~
+9 0 33
+0 0 0 0 5 5
+1 500 50
+ 0
+#9101
+rabbit's foot~
+a newly created rabbit's foot~
+Some god dropped a newly created rabbit's foot here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#9199
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#9100
+Farm Road~
+   This is the main road all the farmers use to get to South City.  The dirt
+road wanders off to the southwest though fields full of crops.  A small,
+overgrown path leads east towards a large forest.
+
+~
+0 0 2
+D0
+~
+~
+0 -1 9039
+D1
+~
+~
+0 -1 9101
+S
+#9101
+A Dirt Path~
+   You are standing on a slightly overgrown, dirt path.  Light foliage
+surrounds the area, however, off to the west, you can see South City, along
+with the dirt road that leads to the entrance. To the south, it looks like
+the forest begins.
+
+~
+0 0 2
+D2
+~
+~
+0 -1 9102
+D3
+~
+~
+0 -1 9100
+S
+#9102
+An Overgrown Path~
+   The path here is quite overgrown.  Many branches and sticks litter the
+ground. The path looks like it clears up off to the north and to the south
+you can see the forest truly begin.  From here it doesn't look as if the
+forest is very big, but looks can be deceiving.
+
+~
+0 0 3
+D0
+~
+~
+0 -1 9101
+D2
+~
+~
+0 -1 9103
+S
+#9103
+Entrance to the Bunny Forest~
+   You are standing at the entrance to the Bunny Forest.  The breeding
+grounds of the farmers most hated pests.  Even now, only being at the
+entrance, you can hear the sounds of the pests moving around in the grass
+underneath the sheltering trees.  The path continues into the forest towards
+the south.  To the north there is an overgrown path leading back to South
+City.
+
+~
+0 0 3
+D0
+~
+~
+0 -1 9102
+D2
+~
+~
+0 -1 9104
+S
+#9104
+Lush Green Forest~
+   You are standing in a lush green forest.  Tall trees of many different
+types cover this entire forest, providing shelter to the various animals
+that inhabit this beautiful place.  The sounds of animals playing and
+frolicking though the bright green grass that carpets the forest floor, can
+be heard all around.  The forest becomes very dense to the west and thins
+out to the east.  There also appears to be, what looks like foot prints in
+the soft forest floor, that headed south.
+
+~
+0 4 3
+D0
+~
+~
+0 -1 9103
+D1
+~
+~
+0 -1 9107
+D2
+~
+~
+0 -1 9114
+D3
+~
+~
+0 -1 9105
+S
+#9105
+The Heavy Forest~
+   You stomp your way through the underbrush.  The forest is pretty thick
+here, and the branches high above your head are so thick that they block out
+all direct sunlight.  While it is much too thick to go further north, you
+might be able to make your way though the forest to the south and west.  The
+forest appears to lighten up towards the east.
+
+~
+0 0 3
+D1
+~
+~
+0 -1 9104
+D2
+~
+~
+0 -1 9115
+D3
+~
+~
+0 -1 9106
+S
+#9106
+The Dark Forest~
+   The trees and underbrush have become so thick that it has become almost
+impossible to tell where you came from and where you can go.  It looks like
+it might be possible to get out of this dark place to the south or east, but
+you can't be quite sure.
+
+~
+0 0 3
+D1
+~
+~
+0 -1 9105
+D2
+~
+~
+0 -1 9116
+S
+#9107
+The Light Forest~
+   The forest thins out and allows bright sunlight to fall upon the damp
+forest floor.  A wispy, warm breeze blows over your body from the east.  You
+also notice light green moss covers the base of all the trees.
+
+~
+0 0 3
+D1
+~
+~
+0 -1 9108
+D2
+~
+~
+0 -1 9113
+D3
+~
+~
+0 -1 9104
+S
+#9108
+A Grassy Field~
+   You are in a grass covered field somewhere in the forest.  The dew
+covered grass, brushes along your ankles as you walk through this field.
+The trees form an almost wall-like thicket on the north side of the field
+that surrounds the entire area.
+
+~
+0 0 2
+D1
+~
+~
+0 -1 9109
+D2
+~
+~
+0 -1 9112
+D3
+~
+~
+0 -1 9107
+S
+#9109
+The Grassy Field~
+   You are in a grass covered field somewhere in the forest.  The trees form
+an almost wall-like thicket on the north side of the field that surrounds
+the entire area.  The field begins to merge with the forest again to the
+east.
+
+~
+0 0 2
+D1
+~
+~
+0 -1 9110
+D3
+~
+~
+0 -1 9108
+S
+#9110
+The Light Forest~
+   The field slowly becomes a forest again.  Bright sunlight falls down upon
+the damp grassy, forest floor.  A wispy, warm breeze blows over your body
+from the east.  You also notice light green moss covers the base of all the
+trees.
+
+~
+0 0 3
+D3
+~
+~
+0 -1 9109
+S
+#9111
+A Grassy Field~
+   You are in a grass covered field somewhere in the forest.  The dew
+covered grass, brushes along your ankles as you walk through this field.
+The trees form an almost wall-like thicket on the east side of the field
+that surrounds the entire area.
+
+~
+0 0 2
+D0
+~
+~
+0 -1 9108
+D3
+~
+~
+0 -1 9112
+S
+#9112
+The Grassy Field~
+   You are in a grass covered field somewhere in the forest.  The trees form
+an almost wall-like thicket that surrounds the entire area.  Many small
+holes have been dug into the dirt.  Those must be the bunny's homes.
+
+~
+0 0 2
+D0
+~
+~
+0 -1 9108
+D1
+~
+~
+0 -1 9111
+D2
+~
+~
+0 -1 9120
+D3
+~
+~
+0 -1 9113
+S
+#9113
+The Light Forest~
+   The field slowly becomes a forest again.  Bright sunlight falls down upon
+the damp grassy, forest floor.  A wispy, warm breeze blows over your body
+from the east.  You also notice light green moss covers the base of all the
+trees.
+
+~
+0 0 3
+D0
+~
+~
+0 -1 9107
+D1
+~
+~
+0 -1 9112
+D2
+~
+~
+0 -1 9119
+D3
+~
+~
+0 -1 9114
+S
+#9114
+Some Muddy Ground~
+   The ground is quite muddy here and puddles are all around.  Your boots
+make a disgusting SQUISH as you walk here.  You can go in any of the four
+cardinal directions from here.  Hopefully, it will be dryer.  You also
+notice some foot prints in the mud that look like who ever left them, was
+heading south.
+
+~
+0 0 3
+D0
+~
+~
+0 -1 9104
+D1
+~
+~
+0 -1 9113
+D2
+~
+~
+0 -1 9118
+D3
+~
+~
+0 -1 9115
+S
+#9115
+The Thick Forest~
+   The forest is becoming incredibility thick and dark.  There is so much
+underbrush that it makes travel though here close to impossible.  The forest
+only becomes thicker and darker to the west and south.  In the east the
+forest is much less dense.
+
+~
+0 0 3
+D0
+~
+~
+0 -1 9105
+D1
+~
+~
+0 -1 9114
+D2
+~
+~
+0 -1 9117
+D3
+~
+~
+0 -1 9116
+S
+#9116
+Darkness~
+   The forest has become so dense you can't see a single thing.  Your only
+choice is to head back to where you came from.  However, you do hear the
+sound of something moving further to the west.
+
+~
+0 4 3
+D0
+~
+~
+0 -1 9106
+D1
+~
+~
+0 -1 9115
+D3
+~
+~
+0 -1 9129
+S
+#9117
+Darkness~
+   The forest has become so dense you can't see a single thing.  Your only
+choice is to head back to where you came from.  However, you do hear the
+sound of something moving further to the south.
+
+~
+0 4 3
+D0
+~
+~
+0 -1 9115
+D1
+~
+~
+0 -1 9118
+D2
+~
+~
+0 -1 9125
+S
+#9118
+The Dense Forest~
+   You stomp your way through the underbrush.  The forest is pretty thick
+here, and the branches high above your head are so thick that they block out
+all direct sunlight.  You see a few foot prints in the soft ground that lead
+to the south.
+
+~
+0 0 3
+D0
+~
+~
+0 -1 9114
+D1
+~
+~
+0 -1 9119
+D2
+~
+~
+0 -1 9122
+D3
+~
+~
+0 -1 9117
+S
+#9119
+The Light Forest~
+   The forest thins out and allows bright sunlight to fall upon the damp
+forest floor.  A wispy, warm breeze blows over your body from the east.  You
+also notice light green moss covers the base of all the trees.  To the south
+stands a humongous tree.
+
+~
+0 0 3
+D0
+~
+~
+0 -1 9113
+D1
+~
+~
+0 -1 9120
+D2
+~
+~
+0 -1 9121
+D3
+~
+~
+0 -1 9118
+S
+#9120
+A Grassy Field~
+   You are in a grass covered field somewhere in the forest.  The dew
+covered grass, brushes along your ankles as you walk through this field.
+The trees form an almost wall-like thicket on the east side of the field
+that surrounds the entire area.
+
+~
+0 0 2
+D0
+~
+~
+0 -1 9112
+D3
+~
+~
+0 -1 9119
+S
+#9121
+A Large Tree~
+   A huge oak tree stands tall and proud in the middle of this clearing. 
+Moss of many shades of green cover most of the lower part of this tree.  All
+the animals of the forest love to sleep at the base of mighty oak tree, it
+makes them feel safe and protected.
+
+~
+0 1024 3
+D0
+~
+~
+0 -1 9119
+D3
+~
+~
+0 -1 9122
+S
+#9122
+Outside a Cave~
+   You are standing at the entrance to a damp, moss covered cave.  Many
+human sized foot prints litter the ground at the entrance, coming out of and
+going in to the dark cave.  Even though this forest is overpopulated with
+animals, none of them even dare to go near this cave.
+
+~
+0 0 3
+D0
+~
+~
+0 -1 9118
+D1
+~
+~
+0 -1 9121
+D2
+~
+~
+0 -1 9123
+S
+#9123
+Inside the Cave~
+   You are in what appears to be a natural cave.  The only light comes from
+the entrance.  Various sorts of debris cover the stone floor, emitting a
+rather unpleasant smell that makes the air thick and hard to breathe.  The
+human foot prints continue south, but there is another type of foot print
+here also.  A very large foot print, like a huge grizzly bear's foot print.
+You had better be careful.
+~
+0 5 0
+D0
+~
+~
+0 -1 9122
+D2
+~
+~
+0 -1 9124
+S
+#9124
+Back of the Cave~
+   It's incredibly dark in here, but the light from the entrance of the cave
+is providing enough light to see after your eyes adjust to the darkness. 
+The foot prints you've been following go down though a small dark hole in
+the ground. It's pitch black in the hole, making it impossible to see
+anything down there.
+
+~
+0 1 0
+D0
+~
+~
+0 -1 9123
+D5
+~
+~
+0 -1 9200
+S
+#9125
+The Forest Grove~
+   You are standing in a large clearing deep inside the forest.  The trees
+of the forest surround you preventing you from going back inside except for
+a very small space between two trees.  Bright green grass covers this entire
+grove.  The grass is quite short and strangely well kept.  Almost as if
+someone, or something takes care of this place.
+
+~
+0 0 2
+D0
+~
+~
+0 -1 9117
+D3
+~
+~
+0 -1 9126
+S
+#9126
+The Forest Grove~
+   You are standing in a large clearing deep inside the forest.  The trees
+of the forest surround you preventing you from going back inside from here.
+Beautiful flower of many different kinds and colors line the path you are
+walking.  To the north you can see a small pond.
+
+~
+0 0 2
+D0
+~
+~
+0 -1 9130
+D1
+~
+~
+0 -1 9125
+D3
+~
+~
+0 -1 9127
+S
+#9127
+The Forest Grove~
+   Continuing along the path of flowers and grass, all you can do is gaze at
+how colorful everything here is.  A light, warm breeze blows though the
+grove, making the flowers look as if they are waving to you.
+
+~
+0 0 2
+D0
+~
+~
+0 -1 9128
+D1
+~
+~
+0 -1 9126
+S
+#9128
+The Forest Grove~
+   You are standing in a large clearing deep inside the forest.  The trees
+of the forest surround you preventing you from going back inside from here.
+Beautiful flower of many different kinds and colors line the path you are
+walking.  To the east you can see a small pond.
+
+~
+0 0 2
+D0
+~
+~
+0 -1 9129
+D1
+~
+~
+0 -1 9130
+D2
+~
+~
+0 -1 9127
+S
+#9129
+The Forest Grove~
+   You are standing in a large clearing deep inside the forest.  The trees
+of the forest surround you preventing you from going back inside except for
+a very small space between two trees.  Bright green grass covers this entire
+grove.  The grass is quite short and strangely well kept.  Almost as if
+someone, or something takes care of this place.
+
+~
+0 0 2
+D1
+~
+~
+0 -1 9116
+D2
+~
+~
+0 -1 9128
+S
+#9130
+The Crystal Pond~
+   Flowers encircle this beautiful pond, along with two trees next to the
+edge of the pond.  The branches of the trees are long and they drape down
+providing shade to the side of the pond.  The water that fills this pond is
+crystal clear as the sunlight causes it to sparkle.  You can see all the way
+to the bottom of this incredibly deep pond.
+
+~
+0 4 2
+D2
+~
+~
+0 -1 9126
+D3
+~
+~
+0 -1 9128
+S
+#9199
+Floating in a void~
+~
+0 2097156 1
+S
+#0
+
+
+#RESETS
+M 0 9100 15 9107
+M 0 9100 15 9107
+M 0 9100 15 9107
+M 0 9100 15 9107
+M 0 9100 15 9107
+M 0 9100 15 9113
+M 0 9100 15 9113
+M 0 9100 15 9113
+M 0 9100 15 9113
+M 0 9100 15 9113
+M 0 9100 15 9121
+M 0 9100 15 9121
+M 0 9100 15 9121
+M 0 9100 15 9121
+M 0 9100 15 9121
+M 0 9101 15 9120
+M 0 9101 15 9120
+M 0 9101 15 9120
+M 0 9101 15 9120
+M 0 9101 15 9120
+M 0 9101 15 9112
+M 0 9101 15 9112
+M 0 9101 15 9112
+M 0 9101 15 9112
+M 0 9101 15 9112
+M 0 9101 15 9112
+M 0 9101 15 9112
+M 0 9101 15 9112
+M 0 9101 15 9112
+M 0 9101 15 9112
+M 0 9102 15 9108
+M 0 9102 15 9108
+M 0 9102 15 9108
+M 0 9102 15 9108
+M 0 9102 15 9108
+M 0 9102 15 9108
+M 0 9102 15 9108
+M 0 9102 15 9108
+M 0 9102 15 9108
+M 0 9102 15 9108
+M 0 9102 15 9109
+M 0 9102 15 9109
+M 0 9102 15 9109
+M 0 9102 15 9109
+M 0 9102 15 9109
+M 0 9102 15 9109
+M 0 9103 15 9109
+M 0 9103 15 9109
+M 0 9103 15 9109
+M 0 9103 15 9109
+M 0 9103 15 9109
+M 0 9103 15 9110
+M 0 9103 15 9110
+M 0 9103 15 9110
+M 0 9103 15 9110
+M 0 9103 15 9110
+M 0 9103 15 9110
+M 0 9103 15 9110
+M 0 9103 15 9110
+M 0 9103 15 9110
+M 0 9103 15 9110
+M 0 9104 15 9118
+M 0 9104 15 9118
+M 0 9104 15 9118
+M 0 9104 15 9118
+M 0 9104 15 9118
+M 0 9104 15 9118
+M 0 9104 15 9118
+M 0 9104 15 9118
+M 0 9104 15 9118
+M 0 9104 15 9118
+M 0 9104 15 9118
+M 0 9104 15 9118
+M 0 9104 15 9118
+M 0 9104 15 9118
+M 0 9104 15 9118
+M 0 9105 15 9130
+M 0 9105 15 9130
+M 0 9105 15 9130
+M 0 9105 15 9130
+M 0 9105 15 9130
+M 0 9105 15 9128
+M 0 9105 15 9128
+M 0 9105 15 9128
+M 0 9105 15 9128
+M 0 9105 15 9128
+M 0 9105 15 9128
+M 0 9105 15 9127
+M 0 9105 15 9127
+M 0 9105 15 9127
+M 0 9105 15 9127
+M 0 9105 15 9127
+M 0 9105 15 9127
+M 0 9105 15 9126
+M 0 9105 15 9126
+M 0 9105 15 9126
+M 0 9105 15 9126
+M 0 9105 15 9126
+M 0 9105 15 9126
+M 1 9106 1 9110
+E 1 9100 1 7
+M 0 9107 1 9124
+M 0 9108 5 9106
+M 0 9108 5 9106
+M 0 9109 5 9115
+M 0 9109 5 9115
+M 0 9109 5 9115
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

@@ -1,0 +1,2245 @@
+#AREA   {PROTO} Bardock's area in progress~
+
+
+
+#VERSION 251
+#AUTHOR Bardock~
+
+#RANGES
+0 0 0 0
+$
+
+#PLANET 0
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#40100
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#40112
+Super Thirteen~
+Super Thirteen~
+A towering blue man is here, his eyes seem devoid of all emotion. His bright orange hair gives him an odd sort of feel.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#40113
+Trainer/upgrader/practice~
+a newly created Trainer/upgrader/practice~
+Some god abandoned a newly created Trainer/upgrader/practice here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#40132
+Mystic Gohan~
+Mystic Gohan~
+Mystic Gohan stands here before you
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#40136
+The First Avatar~
+The First Avatar~
+&wA &rburning &ztor&cren&wt of &zswi&crli&Wng &Rred &wand &zblack energy&D is here.
+~
+This ancient being. swirling with red and black energy,  was the Lord's first true Incarnation. He took
+the body of a young Icer and wreaked havoc across the entire galaxy until finding that the body no 
+longer suited him. His many wounds have all healed and left their scars across his neon white body, 
+but some seem to ooze with purple blood.
+~
+-2147482109 0 0 C
+1 0 100 1d20+0 2d5+0
+0 5000000000000000000
+112 112 1
+500 500 500 500 500
+0 0 0 0 0
+5 5 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 50~
+death
+'finger beam'
+eyebeam
+~
+> greet_prog 100~
+if clan($n) == mod
+mpechoat Welcome $n to Minions of Darkness Headquarters
+else
+mpechoat &rAs soon as you enter, the First Avatar attacks you in a flurry of motion!&D
+mpforce avatar say You are not welcome here!
+mpkill $n
+endif
+endif
+~
+|
+#40144
+The First Myrmidon~
+The First Myrmidon~
+&wA &zmassive &csteel clad &zsoldier &wis here.
+~
+The first Myrmidon was once the great champion of the Lord of Darkness. 
+He had sworn his body, mind, and soul to him above all others.  Though, his
+massive steel-clad plated armor may look sturdy, it wasn't quite capable of
+staving off his death at the hands of his enemies.  Even in death, the Lord
+of Darkness would not permit him to leave his service.  He recreated his
+body and immortalized his spirit for all those who would come after him to
+view with Honor. 
+~
+67109379 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#40399
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#40100
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#40101
+Certificate~
+A 250k Certificate~
+A certificate that is worth 250k!!! Hand this in for zeni!! Hurry up!~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#40102
+Certificate~
+A 500k Certificate~
+A certificate that is worth 500k!!! Hand this in for zeni!! Hurry up!~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#40103
+Certificate~
+A 1mil Certificate~
+A certificate that is worth 1mil!!! Hand this in for zeni!! Hurry up!~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#40104
+100k certificate~
+100k Certificate~
+A certificate that is worth 100k!!! Hand this in for zeni!! Hurry up!~
+~
+8 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#40399
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#40100
+The Healing Chamber (SPF)~
+The Special Forces Sickbay.  The room is well lit with several large
+healing tanks lined along the wall.  The sparkling clan walls reflects
+light in all directions.  The healing tanks, which are of the latest
+technology, are filled with thick, green liquid.  The liquid bubbles
+softly, as the machine hums slightly.  The computers, lined against the
+healing tanks flicker and blink, waiting for command. 
+~
+0 538968072 1
+D4
+~
+~
+0 -1 40101
+S
+#40101
+Resting Hall (SPF)~
+The large room is covered in dark, red wood fixtures and furniture.  A
+large onyx colored fireplace crackles and burns on the one side, while two
+couches and several chairs line the wall on the opposite side of the
+fireplace.  Large pictures, hung here and tehre on the walls, with frames
+of gold depict the great leaders of the Special Forces. 
+~
+0 2097160 1
+D1
+~
+~
+0 -1 40106
+D3
+~
+~
+0 -1 40107
+D4
+~
+~
+0 -1 40102
+D5
+~
+~
+0 -1 40100
+S
+#40102
+A Large, Circular Room (SPF)~
+A large, golden chandelier dangles from the ceiling, filling the room
+with light.  Along the walls, various decorations sit adding eye candy to
+the already glorius room.  In the center of the room, is a spiral
+staircase. Leading down, to the lower levels, and up to the restricted,
+leader only suites and meeting rooms. 
+~
+0 2097160 1
+D0
+~
+~
+0 -1 40103
+D1
+~
+~
+0 -1 40104
+D3
+~
+~
+0 -1 40105
+D4
+~
+~
+0 -1 40108
+D5
+~
+~
+0 -1 40101
+S
+#40103
+The Sparring Chamber (SPF)~
+The large sparring chamber is lined with beautifully shining energy
+resistant plates.  There is a blinking and flashing computer, sank into the
+far wall, beeping and blinking.  It seems as though the combatants can
+raise, or lower the temperature, and increase or decrease the gravity
+within the room.  Above the computer, painted in a very odd way, are the
+initals: &RS-P-F. 
+~
+0 69206024 1
+D2
+~
+~
+0 -1 40102
+S
+#40104
+The Gravity Room (SPF)~
+The room is covered in huge plates of dark metal, barely able to
+withstand the forces of gravity that are generated within the room.  The
+large, orb shaped machine in the middle whirs and hums loudly, as large
+beams extend out of each side into the walls and floor.  A computer small
+panel on the far wall blinks and beeps, displaying various options and
+numbers. 
+~
+0 270532616 1
+D3
+~
+~
+0 -1 40102
+S
+#40105
+The Cell (SPF)~
+The Jail Cell, is not really a Jail Cell.  It's a statsis chamber,
+capable of holding the most powerful individuals in the universe.  The
+large pad in the middle of the room, sparks, and cracks, as arcs of
+electricity shoot out from it in every angle.  Large energy-resistant
+plates cover the rest of the room, for assurance that no one will escape. 
+~
+0 2097160 1
+D1
+~
+~
+0 -1 40102
+S
+#40106
+The Enterance Hall. (SPF)~
+As the doors open, the great Special Forces enterance hall is revealed,
+in all of it's glory.  The walls are covered with large decorative murals,
+depicting the victory of the clansman.  Large steps on either side of the
+room lead to one central oak door, concealing the path into the next room. 
+~
+0 2097160 1
+D3
+~
+~
+0 -1 40101
+S
+#40107
+The Training Room (SPF)~
+A large, golden chandelier dangles from the ceiling, filling the room
+with light.  Along the walls, various decorations sit adding eye candy to
+the already glorius room.  In the center of the room, is a spiral
+staircase. Leading down, to the lower levels, and up to the restricted,
+leader only suites and meeting rooms. 
+~
+0 2097160 1
+D1
+~
+~
+0 -1 40101
+S
+#40108
+The Leader Meeting Room (SPF)~
+The leaders room is decorated in dark, expensive red-wood.  In the
+center of the room, there is a large, red-wood table, with beautiful
+carvings etched into the soft wood.  Around the table, were are seven
+chairs, two on each side, with the execption of one.  The lone chair sits
+inbetween a fireplace, which dimly lights the room.  The chair itself, is
+decorated with dark, red cloth, and edges of the marvelous chair is lined
+with gold.  This chair is reserved for the great Bardock, and the rest, for
+the leaders of the clan. 
+~
+0 2097160 1
+D3
+~
+~
+0 -1 40109
+D5
+~
+~
+0 -1 40102
+S
+#40109
+Seph's sex hole(SPF)~
+~
+0 2097160 1
+D1
+~
+~
+0 -1 40108
+S
+#40110
+Behind the Mountain (RRA)~
+Looking about the room, one might notice that the floor is a solid sheet
+of metal.  There appears to be an elevator stationed in the bck of the
+room.  Thousands of Red Ribbon Army Insignas cover the boxes and walls
+about here. 
+~
+0 2097160 1
+D4
+~
+~
+0 -1 40111
+S
+#40111
+The Central Hallway (RRA)~
+It appears to be the main room of the Red Ribbon Army encampment.  Robot
+parts are strewn here and there as well as many chambers holding who knows
+what inside them.  A computer sits in the middle of the room on it reads
+"Rejuvination tanks to the east, Gravity alteration to the Northeast, and
+training simulations to the west." 
+~
+0 538968072 1
+D1
+~
+~
+0 -1 40112
+D3
+~
+~
+0 -1 40113
+D5
+~
+~
+0 -1 40110
+D6
+~
+~
+0 -1 40114
+S
+#40112
+Rest and Recreational Wing (RRA)~
+Here are the soldier's quarters.  Hundreds of cots and foot lockers are
+here, this room also seems to have a hard metallic floor as the rest of the
+encampment.  A large Red Ribbon Army insigna hangs on the wall in the back
+of the room, beside it a picture of Dr.  Gero.  "To the greatest man the
+Red Ribbon Army has ever known" is written beneath the picture on a small
+plaque. 
+~
+0 2097160 1
+D3
+~
+~
+0 -1 40111
+S
+#40113
+Advanced Practice and Training Simulation Pods (RRA)~
+Swords, daggers, staves...everythign one could imagine are hung here on
+racks and hangers.  Men and women alike can apparently come here to hone
+their fighting skills.  A machine rests in the corner, apparently for those
+of mechanical backgrounds, to upload there fighting data. Also upon the
+machine is a small insigna of the Red Ribbon Army.  The air seems stagnant
+and dirty.  Guess someone has been previouslly working out here. 
+~
+0 2097160 1
+D1
+~
+~
+0 -1 40111
+S
+#40114
+Gravitational Alteration Room (RRA)~
+A heavy humming noise echos from a large metallic cylinder in the middle
+of this room.  The room itsself is quite large, and looks like it is able
+to hold a good number of people in it at one time. Again the Red Ribbon
+Army Insigna shows up amongst the walls, never letting anyone forget who or
+what they stand for. 
+~
+0 337641480 1
+D9
+~
+~
+0 -1 40111
+S
+#40115
+IE1~
+~
+0 2097160 1
+D8
+~
+~
+0 -1 40117
+D9
+~
+~
+0 -1 40116
+S
+#40116
+IE2~
+~
+0 2097160 1
+D1
+~
+~
+0 -1 40118
+D6
+~
+~
+0 -1 40115
+S
+#40117
+IE3~
+~
+0 2097160 1
+D3
+~
+~
+0 -1 40118
+D7
+~
+~
+0 -1 40115
+S
+#40118
+IE4~
+~
+0 2097160 1
+D1
+~
+~
+0 -1 40117
+D2
+~
+~
+0 -1 40119
+D3
+~
+~
+0 -1 40116
+S
+#40119
+IE5~
+~
+0 2097160 1
+D0
+~
+~
+0 -1 40118
+D2
+~
+~
+0 -1 40120
+S
+#40120
+IE6~
+~
+0 2097160 1
+D0
+~
+~
+0 -1 40119
+D1
+~
+~
+0 -1 40121
+S
+#40121
+IE7~
+~
+0 2097160 1
+D1
+~
+~
+0 -1 40122
+D3
+~
+~
+0 -1 40120
+S
+#40122
+IE8~
+~
+0 2097160 1
+D1
+~
+~
+0 -1 40124
+D2
+~
+~
+0 -1 40123
+D3
+~
+~
+0 -1 40121
+D6
+~
+~
+0 -1 40127
+D7
+~
+~
+0 -1 40128
+S
+#40123
+IE9~
+~
+0 2097160 1
+D0
+~
+~
+0 -1 40122
+D1
+~
+~
+0 -1 40125
+D3
+~
+~
+0 -1 40126
+S
+#40124
+IE10~
+~
+0 2097160 1
+D3
+~
+~
+0 -1 40122
+S
+#40125
+IE11~
+~
+0 2097160 1
+D3
+~
+~
+0 -1 40123
+S
+#40126
+IE12~
+~
+0 2097160 1
+D1
+~
+~
+0 -1 40125
+S
+#40127
+IE13~
+~
+0 2097160 1
+D9
+~
+~
+0 -1 40122
+S
+#40128
+IE14~
+~
+0 2097160 1
+D4
+~
+~
+0 -1 40129
+D8
+~
+~
+0 -1 40122
+S
+#40129
+IE15~
+~
+0 2097164 1
+D5
+~
+~
+0 -1 40128
+S
+#40130
+Chamber of the Kaioshin (ZFIGHT)~
+The room is dimly lit, and in the center there is a giant Z symbol with
+a glowing Dragon intertwined around it.  In a semi-circular design around
+the back portion of the room is a judicial looking desk with 6 places
+spread out around it.  One light is above each seat, and a final larger one
+seems to shine from directly above, giving the floor symbol a strange glow
+that makes the dragoon seem to stare up at you.  A gathering place for the
+Kaioshin, supreme leaders of the Z-Fighters, this room is used as a place
+to hold leadership meetings for clan decisions and sometimes a place to
+decide the fate of a member who does not follow the rules.  
+~
+0 538968076 1
+D0
+~
+~
+0 -1 40132
+D5
+~
+~
+0 -1 40131
+D6
+~
+~
+0 -1 40133
+D7
+~
+~
+0 -1 40134
+S
+#40131
+Hall of Hero's (ZFIGHT)~
+You stand in a fairly long hallway, a beautifully woven blue carpet
+under your feet.  Along each side of the hall are statues of the original
+group of Z-Fighters, along with a few others; Goku, Gohan, Vegeta, Trunks,
+Tien, Piccolo, Yamcha and Chiaotzu.  Beneath each statue is a plaque with
+the name and dates of birth and death of each fighter.  A beam of light
+comming from the ceiling bathes each one, illuminating it and giving a near
+life-like feeling to them all.  You notice 3 doors before you, as well as
+an exit both above and beneath you. 
+~
+0 2097164 1
+D4
+~
+~
+0 -1 40130
+S
+#40132
+Item Storage (ZFIGHT)~
+This is a place for the newer people to get themselves suited up for
+combat.  There are racks for hanging armor, as well as shelves to put other
+things such as scouters and combat boots.  New recruits are free to take
+what they need, but the gear is not to be sold.  When the time comes that
+you no longer need it, you are asked to return it to this room so someone
+else can use it down the road.  Anyone who does not follow this rule will
+be dealt with, in a more or less severe manner depending on the gear that
+was taken. 
+~
+0 2637836 1
+D2
+~
+~
+0 -1 40130
+S
+#40133
+Sick Bay (ZFIGHT)~
+This is the recovery room for the Z-Fighters.  Along the far wall are
+several glass tubes, filled almost to the brim with a thick blue-green
+liquid.  There are a few beds along each of the side walls, and at each is
+a nurse waiting to take care of a wounded patient.  The fluorescent
+lighting above illuminates the room quite well, allowing the nurses to get
+a good look at any injuries a person may have.  
+~
+0 2097164 1
+D9
+~
+~
+0 -1 40130
+S
+#40134
+Training Dojo (ZFIGHT)~
+The Training Dojo is one large room, divided in 2 parts.  To the right
+is an open area with a set of thin blue mats lining the ground, the perfect
+place to spar with a friend.  To the left, the room is lined with a set of
+gravity generating plates, that can be set to different levels from the
+control panel on the far wall.  The sparring area is also lined with
+strange plating, that absorbs any stray bolts of energy that may find their
+way out of a fight.  
+~
+0 337641484 1
+D8
+~
+~
+0 -1 40130
+S
+#40135
+Before an Ominous Tower (MOD)~
+The forest comes to abrupt and complete halt here at the foot
+surrounding a bizarre, unnatural-looking tower.  It appears to be composed
+out of a shadowy metal, or perhaps stone, but it also seems slightly
+opaque, and small patterns of varied shadow swirl around in a peculiar
+pattern.  It stretches several hundred feet up into the air, and is over
+thirty feet across, yet it does not appear to have a means of entrance, or
+at least a conventional one.  Higher up, the tree branches appear to have
+peculiarly grown backwards upon nearing the tower so as not to grow towards
+the it.  
+~
+0 2097164 1
+D0
+~
+~
+0 -1 40136
+S
+#40136
+At the Base of the Tower (MOD)~
+This is an utterly massive room, devoid of any of the trappings of
+inhabitation, and far too large for its size as seen from the exterior.  A
+large stairway begins on the northern side, following the circular wall up
+to the second level of the tower.  Although no sources of light are
+visible, a very dim illumination, in varying degrees, is throughout the
+room.  Distant voices can be heard, although they seem detached, and not
+speaking a discernable language. 
+~
+0 2097164 1
+D2
+~
+~
+0 -1 40135
+D4
+~
+~
+0 -1 40137
+S
+#40137
+A Well-Furnished Hall (MOD)~
+Unlike the room below, this room is well-furnished, although with
+bizarre, and quite occult, furniture.  Several chairs have skulls capping
+the arms, and many of the leather on the other pieces seem to be made of
+tanned human skin.  The voices here have reached a obscure cacophony, and
+yet still seem intangible.  
+~
+0 2097164 1
+D4
+~
+~
+0 -1 40138
+D5
+~
+~
+0 -1 40136
+S
+#40138
+A Shadowy Stone Hall (MOD)~
+A maze of columns and arches, this room is undoubtedly the darkest of
+all in this bleak tower.  Corridors lead off to the north, east, and west,
+and a stair climbs up in a steep spiral from the center of the room. 
+Sounds of fighting can be heard, and for some reason the voices are not
+present here. 
+~
+0 538968076 1
+D0
+~
+~
+0 -1 40140
+D1
+~
+~
+0 -1 40139
+D3
+~
+~
+0 -1 40141
+D4
+~
+~
+0 -1 40142
+D5
+~
+~
+0 -1 40137
+S
+#40139
+The Art of War (MOD)~
+A rubbery-looking substance coats the walls and floor of this room, and
+although it is quite extraordinarily dark, one could discern its depth at
+around a foot.  It is rock-hard however, and quite capable of absorbing ki
+forces, if such were to go loose.  A deep, rumbling laughter can be heard
+now and then; its source is unseen, and most likely, not present.  
+~
+0 69206028 1
+D3
+~
+~
+0 -1 40138
+S
+#40140
+The Art of War (MOD)~
+A rubbery-looking substance coats the walls and floor of this room, and
+although it is quite extraordinarily dark, one could discern its depth at
+around a foot.  It is rock-hard however, and quite capable of absorbing ki
+forces, if such were to go loose.  A deep, rumbling laughter can be heard
+now and then; its source is unseen, and most likely, not present.  
+~
+0 69206028 1
+D2
+~
+~
+0 -1 40138
+S
+#40141
+The Art of War (MOD)~
+A rubbery-looking substance coats the walls and floor of this room, and
+although it is quite extraordinarily dark, one could discern its depth at
+around a foot.  It is rock-hard however, and quite capable of absorbing ki
+forces, if such were to go loose.  A deep, rumbling laughter can be heard
+now and then; its source is unseen, and most likely, not present.  
+~
+0 69206028 1
+D1
+~
+~
+0 -1 40138
+S
+#40142
+A Small Stairwell (MOD)~
+This room is strangely small, only around ten feet across, as if the
+tower were narrowing the higher it reached.  The air seems strangely
+viscous, as if the forces of gravity had a higher effect here, but the
+source seems to be coming from the north.  A midnight-black, circular
+design lies in the exact center of this also circular room, and a beam of
+darkness expands upwards from it to the ceiling.  
+~
+0 2097164 1
+D0
+~
+~
+0 -1 40144
+D4
+~
+~
+0 -1 40143
+D5
+~
+~
+0 -1 40138
+S
+#40143
+The Hall of Demons (MOD)~
+This utterly massive room has a black marble floor, upon which a large
+design has been carved.  It appears to be a strange rune, but its
+signifigance is obviously obscure and forgotten to most.  Hundreds of
+statues line the walls, perhaps of the fallen leaders of whoever inhabit
+these walls.  There are so many, in fact, that a second and third level
+have been established in a circular, room-encompassing niche.  A miniscule
+pedestal stands in the center of the room, with words in a peculiar
+language carved onto its top.  Six chairs surround it in a tight circle. 
+Large horns adorn the back of each of the chairs, interlocking them, as if
+to signify a sort of odd unity.  
+~
+0 2097164 1
+D5
+~
+~
+0 -1 40142
+E
+pedestal creed~
+A strange inscription lies upon this pedestal, entitled "The Creed". It reads: 
+"Scour the world with pain and horror. 
+Blight the land and salt the flower. 
+Kill the weak and slay the brave. 
+Crush the powerful and make them slaves. 
+Surrender to me what remains. 
+Dominate them all and put them in chains." 
+~
+S
+#40144
+A Cavernous Chamber (MOD)~
+A large suit of armor stands here in the room, appearing abandoned, but
+how it is standing without tangible support is a mystery, as the effects of
+gravity seem to be heavily increased in this room, but an even greater
+oddity is that they seem to be in spurts, or perhaps patches - certain
+parts of the room have a higher force than others, as if whatever
+mysterious force is causing this is intelligent, or at least sentient.  
+~
+0 270532620 1
+D2
+~
+~
+0 -1 40142
+S
+#40145
+Floating in a void~
+~
+0 2097164 1
+S
+#40146
+Floating in a void~
+~
+0 2097164 1
+S
+#40147
+Floating in a void~
+~
+0 2097164 1
+S
+#40148
+Floating in a void~
+~
+0 2097164 1
+S
+#40149
+Floating in a void~
+~
+0 2097164 1
+S
+#40150
+Floating in a void~
+~
+0 2097164 1
+S
+#40151
+Floating in a void~
+~
+0 2097164 1
+S
+#40152
+Floating in a void~
+~
+0 2097164 1
+S
+#40153
+Floating in a void~
+~
+0 2097164 1
+S
+#40154
+Floating in a void~
+~
+0 2097164 1
+S
+#40155
+Floating in a void~
+~
+0 2097164 1
+S
+#40156
+Floating in a void~
+~
+0 2097164 1
+S
+#40157
+Floating in a void~
+~
+0 2097164 1
+S
+#40158
+Floating in a void~
+~
+0 2097164 1
+S
+#40159
+Floating in a void~
+~
+0 2097164 1
+S
+#40160
+Floating in a void~
+~
+0 2097164 1
+S
+#40161
+Floating in a void~
+~
+0 2097164 1
+S
+#40162
+Floating in a void~
+~
+0 2097164 1
+S
+#40163
+Floating in a void~
+~
+0 2097164 1
+S
+#40164
+Floating in a void~
+~
+0 2097164 1
+S
+#40165
+Floating in a void~
+~
+0 2097164 1
+S
+#40166
+Floating in a void~
+~
+0 2097164 1
+S
+#40167
+Floating in a void~
+~
+0 2097164 1
+S
+#40168
+Floating in a void~
+~
+0 2097164 1
+S
+#40169
+Floating in a void~
+~
+0 2097164 1
+S
+#40170
+Floating in a void~
+~
+0 2097164 1
+S
+#40171
+Floating in a void~
+~
+0 2097164 1
+S
+#40172
+Floating in a void~
+~
+0 2097164 1
+S
+#40173
+Floating in a void~
+~
+0 2097164 1
+S
+#40174
+Floating in a void~
+~
+0 2097164 1
+S
+#40175
+Floating in a void~
+~
+0 2097164 1
+S
+#40176
+Floating in a void~
+~
+0 2097164 1
+S
+#40177
+Floating in a void~
+~
+0 2097164 1
+S
+#40178
+Floating in a void~
+~
+0 2097164 1
+S
+#40179
+Floating in a void~
+~
+0 2097164 1
+S
+#40180
+Floating in a void~
+~
+0 2097164 1
+S
+#40181
+Floating in a void~
+~
+0 2097164 1
+S
+#40182
+Floating in a void~
+~
+0 2097164 1
+S
+#40183
+Floating in a void~
+~
+0 2097164 1
+S
+#40184
+Floating in a void~
+~
+0 2097164 1
+S
+#40185
+Floating in a void~
+~
+0 2097164 1
+S
+#40186
+Floating in a void~
+~
+0 2097164 1
+S
+#40187
+Floating in a void~
+~
+0 2097164 1
+S
+#40188
+Floating in a void~
+~
+0 2097164 1
+S
+#40189
+Floating in a void~
+~
+0 2097164 1
+S
+#40190
+Floating in a void~
+~
+0 2097164 1
+S
+#40191
+Floating in a void~
+~
+0 2097164 1
+S
+#40192
+Floating in a void~
+~
+0 2097164 1
+S
+#40193
+Floating in a void~
+~
+0 2097164 1
+S
+#40194
+Floating in a void~
+~
+0 2097164 1
+S
+#40195
+Floating in a void~
+~
+0 2097164 1
+S
+#40196
+Floating in a void~
+~
+0 2097164 1
+S
+#40197
+Floating in a void~
+~
+0 2097164 1
+S
+#40198
+Floating in a void~
+~
+0 2097164 1
+S
+#40199
+Floating in a void~
+~
+0 2097156 1
+S
+#40200
+Floating in a void~
+~
+0 2097164 1
+S
+#40201
+Floating in a void~
+~
+0 2097164 1
+S
+#40202
+Floating in a void~
+~
+0 2097164 1
+S
+#40203
+Floating in a void~
+~
+0 2097164 1
+S
+#40204
+Floating in a void~
+~
+0 2097164 1
+S
+#40205
+Floating in a void~
+~
+0 2097164 1
+S
+#40206
+Floating in a void~
+~
+0 2097164 1
+S
+#40207
+Floating in a void~
+~
+0 2097164 1
+S
+#40208
+Floating in a void~
+~
+0 2097164 1
+S
+#40209
+Floating in a void~
+~
+0 2097164 1
+S
+#40210
+Floating in a void~
+~
+0 2097164 1
+S
+#40211
+Floating in a void~
+~
+0 2097164 1
+S
+#40212
+Floating in a void~
+~
+0 2097164 1
+S
+#40213
+Floating in a void~
+~
+0 2097164 1
+S
+#40214
+Floating in a void~
+~
+0 2097164 1
+S
+#40215
+Floating in a void~
+~
+0 2097164 1
+S
+#40216
+Floating in a void~
+~
+0 2097164 1
+S
+#40217
+Floating in a void~
+~
+0 2097164 1
+S
+#40218
+Floating in a void~
+~
+0 2097164 1
+S
+#40219
+Floating in a void~
+~
+0 2097164 1
+S
+#40220
+Floating in a void~
+~
+0 2097164 1
+S
+#40221
+Floating in a void~
+~
+0 2097164 1
+S
+#40222
+Floating in a void~
+~
+0 2097164 1
+S
+#40223
+Floating in a void~
+~
+0 2097164 1
+S
+#40224
+Floating in a void~
+~
+0 2097164 1
+S
+#40225
+Floating in a void~
+~
+0 2097164 1
+S
+#40226
+Floating in a void~
+~
+0 2097164 1
+S
+#40227
+Floating in a void~
+~
+0 2097164 1
+S
+#40228
+Floating in a void~
+~
+0 2097164 1
+S
+#40229
+Floating in a void~
+~
+0 2097164 1
+S
+#40230
+Floating in a void~
+~
+0 2097164 1
+S
+#40231
+Floating in a void~
+~
+0 2097164 1
+S
+#40232
+Floating in a void~
+~
+0 2097164 1
+S
+#40233
+Floating in a void~
+~
+0 2097164 1
+S
+#40234
+Floating in a void~
+~
+0 2097164 1
+S
+#40235
+Floating in a void~
+~
+0 2097164 1
+S
+#40236
+Floating in a void~
+~
+0 2097164 1
+S
+#40237
+Floating in a void~
+~
+0 2097164 1
+S
+#40238
+Floating in a void~
+~
+0 2097164 1
+S
+#40239
+Floating in a void~
+~
+0 2097164 1
+S
+#40240
+Floating in a void~
+~
+0 2097164 1
+S
+#40241
+Floating in a void~
+~
+0 2097164 1
+S
+#40242
+Floating in a void~
+~
+0 2097164 1
+S
+#40243
+Floating in a void~
+~
+0 2097164 1
+S
+#40244
+Floating in a void~
+~
+0 2097164 1
+S
+#40245
+Floating in a void~
+~
+0 2097164 1
+S
+#40246
+Floating in a void~
+~
+0 2097164 1
+S
+#40247
+Floating in a void~
+~
+0 2097164 1
+S
+#40248
+Floating in a void~
+~
+0 2097164 1
+S
+#40249
+Floating in a void~
+~
+0 2097164 1
+S
+#40250
+Floating in a void~
+~
+0 2097164 1
+S
+#40251
+Floating in a void~
+~
+0 2097164 1
+S
+#40252
+Floating in a void~
+~
+0 2097164 1
+S
+#40253
+Floating in a void~
+~
+0 2097164 1
+S
+#40254
+Floating in a void~
+~
+0 2097164 1
+S
+#40255
+Floating in a void~
+~
+0 2097164 1
+S
+#40256
+Floating in a void~
+~
+0 2097164 1
+S
+#40257
+Floating in a void~
+~
+0 2097164 1
+S
+#40258
+Floating in a void~
+~
+0 2097164 1
+S
+#40259
+Floating in a void~
+~
+0 2097164 1
+S
+#40260
+Floating in a void~
+~
+0 2097164 1
+S
+#40261
+Floating in a void~
+~
+0 2097164 1
+S
+#40262
+Floating in a void~
+~
+0 2097164 1
+S
+#40263
+Floating in a void~
+~
+0 2097164 1
+S
+#40264
+Floating in a void~
+~
+0 2097164 1
+S
+#40265
+Floating in a void~
+~
+0 2097164 1
+S
+#40266
+Floating in a void~
+~
+0 2097164 1
+S
+#40267
+Floating in a void~
+~
+0 2097164 1
+S
+#40268
+Floating in a void~
+~
+0 2097164 1
+S
+#40269
+Floating in a void~
+~
+0 2097164 1
+S
+#40270
+Floating in a void~
+~
+0 2097164 1
+S
+#40271
+Floating in a void~
+~
+0 2097164 1
+S
+#40272
+Floating in a void~
+~
+0 2097164 1
+S
+#40273
+Floating in a void~
+~
+0 2097164 1
+S
+#40274
+Floating in a void~
+~
+0 2097164 1
+S
+#40275
+Floating in a void~
+~
+0 2097164 1
+S
+#40276
+Floating in a void~
+~
+0 2097164 1
+S
+#40277
+Floating in a void~
+~
+0 2097164 1
+S
+#40278
+Floating in a void~
+~
+0 2097164 1
+S
+#40279
+Floating in a void~
+~
+0 2097164 1
+S
+#40280
+Floating in a void~
+~
+0 2097164 1
+S
+#40281
+Floating in a void~
+~
+0 2097164 1
+S
+#40282
+Floating in a void~
+~
+0 2097164 1
+S
+#40283
+Floating in a void~
+~
+0 2097164 1
+S
+#40284
+Floating in a void~
+~
+0 2097164 1
+S
+#40285
+Floating in a void~
+~
+0 2097164 1
+S
+#40286
+Floating in a void~
+~
+0 2097164 1
+S
+#40287
+Floating in a void~
+~
+0 2097164 1
+S
+#40288
+Floating in a void~
+~
+0 2097164 1
+S
+#40289
+Floating in a void~
+~
+0 2097164 1
+S
+#40290
+Floating in a void~
+~
+0 2097164 1
+S
+#40291
+Floating in a void~
+~
+0 2097164 1
+S
+#40292
+Floating in a void~
+~
+0 2097164 1
+S
+#40293
+Floating in a void~
+~
+0 2097164 1
+S
+#40294
+Floating in a void~
+~
+0 2097164 1
+S
+#40295
+Floating in a void~
+~
+0 2097164 1
+S
+#40296
+Floating in a void~
+~
+0 2097164 1
+S
+#40297
+Floating in a void~
+~
+0 2097164 1
+S
+#40298
+Floating in a void~
+~
+0 2097164 1
+S
+#40299
+Floating in a void~
+~
+0 2097156 1
+S
+#40300
+Floating in a void~
+~
+0 2097164 1
+S
+#40301
+Floating in a void~
+~
+0 2097164 1
+S
+#40302
+Floating in a void~
+~
+0 2097164 1
+S
+#40303
+Floating in a void~
+~
+0 2097164 1
+S
+#40304
+Floating in a void~
+~
+0 2097164 1
+S
+#40305
+Floating in a void~
+~
+0 2097164 1
+S
+#40306
+Floating in a void~
+~
+0 2097164 1
+S
+#40307
+Floating in a void~
+~
+0 2097164 1
+S
+#40308
+Floating in a void~
+~
+0 2097164 1
+S
+#40309
+Floating in a void~
+~
+0 2097164 1
+S
+#40310
+Floating in a void~
+~
+0 2097164 1
+S
+#40311
+Floating in a void~
+~
+0 2097164 1
+S
+#40312
+Floating in a void~
+~
+0 2097164 1
+S
+#40313
+Floating in a void~
+~
+0 2097164 1
+S
+#40314
+Floating in a void~
+~
+0 2097164 1
+S
+#40315
+Floating in a void~
+~
+0 2097164 1
+S
+#40316
+Floating in a void~
+~
+0 2097164 1
+S
+#40317
+Floating in a void~
+~
+0 2097164 1
+S
+#40318
+Floating in a void~
+~
+0 2097164 1
+S
+#40319
+Floating in a void~
+~
+0 2097164 1
+S
+#40320
+Floating in a void~
+~
+0 2097164 1
+S
+#40321
+Floating in a void~
+~
+0 2097164 1
+S
+#40322
+Floating in a void~
+~
+0 2097164 1
+S
+#40323
+Floating in a void~
+~
+0 2097164 1
+S
+#40324
+Floating in a void~
+~
+0 2097164 1
+S
+#40325
+Floating in a void~
+~
+0 2097164 1
+S
+#40326
+Floating in a void~
+~
+0 2097164 1
+S
+#40327
+Floating in a void~
+~
+0 2097164 1
+S
+#40328
+Floating in a void~
+~
+0 2097164 1
+S
+#40329
+Floating in a void~
+~
+0 2097164 1
+S
+#40330
+Floating in a void~
+~
+0 2097164 1
+S
+#40331
+Floating in a void~
+~
+0 2097164 1
+S
+#40332
+Floating in a void~
+~
+0 2097164 1
+S
+#40333
+Floating in a void~
+~
+0 2097164 1
+S
+#40334
+Floating in a void~
+~
+0 2097164 1
+S
+#40335
+Floating in a void~
+~
+0 2097164 1
+S
+#40336
+Floating in a void~
+~
+0 2097164 1
+S
+#40337
+Floating in a void~
+~
+0 2097164 1
+S
+#40338
+Floating in a void~
+~
+0 2097164 1
+S
+#40339
+Floating in a void~
+~
+0 2097164 1
+S
+#40340
+Floating in a void~
+~
+0 2097164 1
+S
+#40341
+Floating in a void~
+~
+0 2097164 1
+S
+#40342
+Floating in a void~
+~
+0 2097164 1
+S
+#40343
+Floating in a void~
+~
+0 2097164 1
+S
+#40344
+Floating in a void~
+~
+0 2097164 1
+S
+#40345
+Floating in a void~
+~
+0 2097164 1
+S
+#40346
+Floating in a void~
+~
+0 2097164 1
+S
+#40347
+Floating in a void~
+~
+0 2097164 1
+S
+#40348
+Floating in a void~
+~
+0 2097164 1
+S
+#40349
+Floating in a void~
+~
+0 2097164 1
+S
+#40350
+Floating in a void~
+~
+0 2097164 1
+S
+#40351
+Floating in a void~
+~
+0 2097164 1
+S
+#40352
+Floating in a void~
+~
+0 2097164 1
+S
+#40353
+Floating in a void~
+~
+0 2097164 1
+S
+#40354
+Floating in a void~
+~
+0 2097164 1
+S
+#40355
+Floating in a void~
+~
+0 2097164 1
+S
+#40356
+Floating in a void~
+~
+0 2097164 1
+S
+#40357
+Floating in a void~
+~
+0 2097164 1
+S
+#40358
+Floating in a void~
+~
+0 2097164 1
+S
+#40359
+Floating in a void~
+~
+0 2097164 1
+S
+#40360
+Floating in a void~
+~
+0 2097164 1
+S
+#40361
+Floating in a void~
+~
+0 2097164 1
+S
+#40362
+Floating in a void~
+~
+0 2097164 1
+S
+#40363
+Floating in a void~
+~
+0 2097164 1
+S
+#40364
+Floating in a void~
+~
+0 2097164 1
+S
+#40365
+Floating in a void~
+~
+0 2097164 1
+S
+#40366
+Floating in a void~
+~
+0 2097164 1
+S
+#40367
+Floating in a void~
+~
+0 2097164 1
+S
+#40368
+Floating in a void~
+~
+0 2097164 1
+S
+#40369
+Floating in a void~
+~
+0 2097164 1
+S
+#40370
+Floating in a void~
+~
+0 2097164 1
+S
+#40371
+Floating in a void~
+~
+0 2097164 1
+S
+#40372
+Floating in a void~
+~
+0 2097164 1
+S
+#40373
+Floating in a void~
+~
+0 2097164 1
+S
+#40374
+Floating in a void~
+~
+0 2097164 1
+S
+#40375
+Floating in a void~
+~
+0 2097164 1
+S
+#40376
+Floating in a void~
+~
+0 2097164 1
+S
+#40377
+Floating in a void~
+~
+0 2097164 1
+S
+#40378
+Floating in a void~
+~
+0 2097164 1
+S
+#40379
+Floating in a void~
+~
+0 2097164 1
+S
+#40380
+Floating in a void~
+~
+0 2097164 1
+S
+#40381
+Floating in a void~
+~
+0 2097164 1
+S
+#40382
+Floating in a void~
+~
+0 2097164 1
+S
+#40383
+Floating in a void~
+~
+0 2097164 1
+S
+#40384
+Floating in a void~
+~
+0 2097164 1
+S
+#40385
+Floating in a void~
+~
+0 2097164 1
+S
+#40386
+Floating in a void~
+~
+0 2097164 1
+S
+#40387
+Floating in a void~
+~
+0 2097164 1
+S
+#40388
+Floating in a void~
+~
+0 2097164 1
+S
+#40389
+Floating in a void~
+~
+0 2097164 1
+S
+#40390
+Floating in a void~
+~
+0 2097164 1
+S
+#40391
+Floating in a void~
+~
+0 2097164 1
+S
+#40392
+Floating in a void~
+~
+0 2097164 1
+S
+#40393
+Floating in a void~
+~
+0 2097164 1
+S
+#40394
+Floating in a void~
+~
+0 2097164 1
+S
+#40395
+Floating in a void~
+~
+0 2097164 1
+S
+#40396
+Floating in a void~
+~
+0 2097164 1
+S
+#40397
+Floating in a void~
+~
+0 2097164 1
+S
+#40398
+Floating in a void~
+~
+0 2097164 1
+S
+#40399
+Floating in a void~
+~
+0 2097164 1
+S
+#0
+
+
+#RESETS
+M 1 40136 1 40136
+M 1 40144 1 40144
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

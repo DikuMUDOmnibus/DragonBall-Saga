@@ -1,0 +1,10 @@
+#PLANET
+Name         Earth~
+Filename     earth.planet~
+BaseValue    0
+Flags        1
+PopSupport   0
+Area         capsule_corp.are~
+End
+
+#END

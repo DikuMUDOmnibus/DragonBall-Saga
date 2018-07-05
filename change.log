@@ -1,0 +1,27 @@
+DBSC 2.5
+--------
+First Release
+
+DBSC 2.5.1
+----------
+Minor Updates
+
+DBSC 2.5.2
+----------
+- Fixed things up so it should compile cleanly with no warnings or errors
+- Applied Saiyr's "hotboot.c recovery fix" patch
+- Applied Saiyr's "grub.c Diagnose fix to use EXT_BV" patch
+- Applied Saiyr's "Editor.c /f fix" patch
+- Implemented SHA256 password encryption
+- Reformated shop display for big numbers as suggested by Karn and Gehenom
+- Put the automatic GDB crash report commands file back (oops)
+- Fixed many crypt errors.
+- Changed left over floorl() function to use floor() instead
+- Added a "Super User" account to the distribution.
+  Name: Admin
+  Pass: admin
+- Added a comment in the Makefile pointing out the define for using MCCP
+- Disabling MCCP should now allow DBSC to run under Cygwin
+- Added a change log file (this file) to keep track of changes to DBSC
+- Added a windows install file (Windows Install.txt) detailing the
+  steps needed to run DBSC using Cygwin.

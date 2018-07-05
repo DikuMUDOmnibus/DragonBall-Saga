@@ -1,0 +1,4254 @@
+#AREA   South City MegaPlex~
+
+
+
+#VERSION 251
+#AUTHOR Koji~
+
+#RANGES
+51 0 0 0
+$
+
+#PLANET 4
+
+#FLAGS
+0
+
+#ECONOMY 0 40962101
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#400
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#401
+Helper~
+Koji's Helper~
+Koji's personal helper is here, waiting to serve his master.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 100
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> fight_prog 100~
+~
+> speech_prog 100~
+~
+> speech_prog 100 Test~
+~
+|
+#402
+Elevator~
+An Elevator Operator~
+An Elevator Operator is here, waiting to serve the MegaPlex clients.
+~
+~
+67240003 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog second~
+mpecho The elevator hums as the operator pushes a button, delivering $n to the second floor.
+mptransfer $n 419
+~
+> speech_prog 100 third~
+mpecho The elevator hums as the operator pushes a button, delivering $n to the third floor.
+mptransfer $n 436
+~
+> speech_prog 100 first~
+mpecho The elevator hums as the operator pushes a button, delivering $n to the first floor.
+mptransfer $n 402
+~
+> speech_prog 100 base~
+mpecho The elevator hums as the operator pushes a button, delivering $n to the first floor.
+mptransfer $n 402
+~
+> speech_prog 100 fourth~
+mpecho The elevator hums as the operator pushes a button, delivering $n to the fourth floor.
+mptransfer $n 550
+~
+> speech_prog 100 final~
+mpecho The elevator hums as the operator pushes a button, delivering $n to the fourth floor.
+mptransfer $n 550
+~
+> greet_prog 100~
+say If you'd like a list of all the different floors available look at the 'sign'.
+smile
+~
+> rand_prog 2~
+fondle $n
+~
+> speech_prog one~
+mpecho The elevator hums as the operator pushes a button, delivering $n to the first floor.
+mptransfer $n 402
+~
+> speech_prog two~
+mpecho The elevator hums as the operator pushes a button, delivering $n to the second floor.
+mptransfer $n 419
+~
+> speech_prog three~
+mpecho The elevator hums as the operator pushes a button, delivering $n to the third floor.
+mptransfer $n 436
+~
+> speech_prog four~
+mpecho The elevator hums as the operator pushes a button, delivering $n to the fourth floor.
+mptransfer $n 550
+~
+|
+#403
+receptionist~
+The MegaPlex Receptionist~
+The MegaPlex Receptionist sits here, behind a large oak desk.
+~
+~
+67240003 0 0 C
+1 0 100 1d20+0 2d5+0
+0 15
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hello, Welcome to the South City MegaPlex. I hope you enjoy your stay :)
+smile
+mpsleep 3
+say Apartments are located in the northwest...
+emote points towards the apartments.
+mpsleep 5
+say And if you wish to leave, the exit is in the south.
+smile
+~
+|
+#404
+invoker key helper~
+1~
+The Key Invoker
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+1 10 1 10 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog 100 452~
+mpoload 452
+~
+> speech_prog 100 453~
+mpoload 453
+~
+> speech_prog 100 454~
+mpoload 454
+~
+> speech_prog 100 455~
+mpoload 455
+~
+> speech_prog 100 456~
+mpoload 456
+~
+> speech_prog 100 457~
+mpoload 457
+~
+> speech_prog 100 458~
+mpoload 458
+~
+> speech_prog 100 459~
+mpoload 459
+~
+> speech_prog 100 455~
+mpoload 455
+~
+> speech_prog 100 460~
+mpoload 460
+~
+> speech_prog 100 461~
+mpoload 461
+~
+> speech_prog 100 462~
+mpoload 462
+~
+> speech_prog 100 463~
+mpoload 463
+~
+> speech_prog 100 464~
+mpoload 464
+~
+> speech_prog 100 465~
+mpoload 465
+~
+> speech_prog 100 466~
+mpoload 466
+~
+> speech_prog 100 467~
+mpoload 467
+~
+> speech_prog 100 468~
+mpoload 468
+~
+> speech_prog 100 469~
+mpoload 469
+~
+> speech_prog 100 470~
+mpoload 470
+~
+> speech_prog 100 471~
+mpoload 471
+~
+> speech_prog 100 472~
+mpoload 472
+~
+> speech_prog 100 473~
+mpoload 473
+~
+> speech_prog 100 474~
+mpoload 474
+~
+> speech_prog 100 475~
+mpoload 475
+~
+> speech_prog 100 476~
+mpoload 476
+~
+> speech_prog 100 477~
+mpoload 477
+~
+> speech_prog 100 478~
+mpoload 478
+~
+> speech_prog 100 479~
+mpoload 479
+~
+> speech_prog 100 480~
+mpoload 480
+~
+> speech_prog 100 481~
+mpoload 481
+~
+> speech_prog 100 482~
+mpoload 482
+~
+> speech_prog 100 483~
+mpoload 483
+~
+> speech_prog 100 484~
+mpoload 484
+~
+> speech_prog 100 422~
+mpoload 422
+~
+> speech_prog 100 485~
+mpoload 485
+~
+> speech_prog 100 486~
+mpoload 486
+~
+> speech_prog 100 487~
+mpoload 487
+~
+> speech_prog 100 488~
+mpoload 488
+~
+> speech_prog 100 489~
+mpoload 489
+~
+> speech_prog 100 490~
+mpoload 490
+~
+> speech_prog 100 491~
+mpoload 491
+~
+> speech_prog 100 492~
+mpoload 492
+~
+> speech_prog 100 493~
+mpoload 493
+~
+> speech_prog 100 494~
+mpoload 494
+~
+> speech_prog 100 495~
+mpoload 495
+~
+> speech_prog 100 496~
+mpoload 496
+~
+> speech_prog 100 497~
+mpoload 497
+~
+> speech_prog 100 498~
+mpoload 498
+~
+> speech_prog 100 499~
+mpoload 499
+~
+> speech_prog 100 500~
+mpoload 500
+~
+> speech_prog 100 501~
+mpoload 501
+~
+> speech_prog 100 502~
+mpoload 502
+~
+> speech_prog 100 503~
+mpoload 503
+~
+> speech_prog 100 504~
+mpoload 504
+~
+> speech_prog 100 505~
+mpoload 506
+~
+> speech_prog 100 507~
+mpoload 507
+~
+> speech_prog 100 508~
+mpoload 508
+~
+> speech_prog 100 509~
+mpoload 509
+~
+> speech_prog 100 510~
+mpoload 510
+~
+> speech_prog 100 511~
+mpoload 511
+~
+> speech_prog 100 512~
+mpoload 512
+~
+> speech_prog 100 513~
+mpoload 513
+~
+> speech_prog 100 514~
+mpoload 514
+~
+> speech_prog 100 515~
+mpoload 515
+~
+> speech_prog 100 516~
+mpoload 516
+~
+> speech_prog 100 517~
+mpoload 517
+~
+> speech_prog 100 518~
+mpoload 518
+~
+> speech_prog 100 519~
+mpoload 519
+~
+> speech_prog 100 520~
+mpoload 520
+~
+> speech_prog 100 521~
+mpoload 521
+~
+> speech_prog 100 522~
+mpoload 522
+~
+> speech_prog 100 523~
+mpoload 523
+~
+> speech_prog 100 524~
+mpoload 524
+~
+> speech_prog 100 525~
+mpoload 525
+~
+> speech_prog 100 526~
+mpoload 526
+~
+> speech_prog 100 527~
+mpoload 527
+~
+> speech_prog 100 528~
+mpoload 529
+~
+> speech_prog 100 530~
+mpoload 530
+~
+> speech_prog 100 531~
+mpoload 531
+~
+> speech_prog 100 532~
+mpoload 532
+~
+> speech_prog 100 533~
+mpoload 533
+~
+> speech_prog 100 534~
+mpoload 534
+~
+> speech_prog 100 535~
+mpoload 535
+~
+> speech_prog 100 536~
+mpoload 536
+~
+> speech_prog 100 537~
+mpoload 537
+~
+> speech_prog 100 538~
+mpoload 538
+~
+> speech_prog 100 539~
+mpoload 539
+~
+> speech_prog 100 540~
+mpoload 540
+~
+> speech_prog 100 541~
+mpoload 541
+~
+> speech_prog 100 542~
+mpoload 542
+~
+> speech_prog 100 543~
+mpoload 543
+~
+> speech_prog 100 544~
+mpoload 544
+~
+> speech_prog 100 545~
+mpoload 545
+~
+> speech_prog 100 546~
+mpoload 530
+~
+> speech_prog 100 547~
+mpoload 547
+~
+> speech_prog 100 548~
+mpoload 548
+~
+> speech_prog 100 549~
+mpoload 549
+~
+> speech_prog 100 566~
+mpoload 566
+~
+> speech_prog 100 567~
+mpoload 567
+~
+> speech_prog 100 568~
+mpoload 568
+~
+> speech_prog 100 569~
+mpoload 569
+~
+> speech_prog 100 570~
+mpoload 570
+~
+> speech_prog 100 571~
+mpoload 571
+~
+> speech_prog 100 572~
+mpoload 572
+~
+> speech_prog 100 573~
+mpoload 573
+~
+> speech_prog 100 574~
+mpoload 574
+~
+> speech_prog 100 575~
+mpoload 575
+~
+> speech_prog 100 576~
+mpoload 576
+~
+> speech_prog 100 577~
+mpoload 577
+~
+> speech_prog 100 578~
+mpoload 578
+~
+> speech_prog 100 579~
+mpoload 579
+~
+> speech_prog 100 580~
+mpoload 580
+~
+> speech_prog 100 581~
+mpoload 581
+~
+> speech_prog 100 582~
+mpoload 582
+~
+> speech_prog 100 583~
+mpoload 583
+~
+> speech_prog 100 584~
+mpoload 584
+~
+> speech_prog 100 585~
+mpoload 585
+~
+> speech_prog 100 586~
+mpoload 586
+~
+> speech_prog 100 587~
+mpoload 587
+~
+> speech_prog 100 588~
+mpoload 588
+~
+> speech_prog 100 589~
+mpoload 589
+~
+> speech_prog 100 590~
+mpoload 590
+~
+> speech_prog 100 591~
+mpoload 591
+~
+> speech_prog 100 592~
+mpoload 592
+~
+> speech_prog 100 593~
+mpoload 593
+~
+> speech_prog 100 594~
+mpoload 594
+~
+> speech_prog 100 595~
+mpoload 595
+~
+> speech_prog 100 596~
+mpoload 596
+~
+> speech_prog 100 597~
+mpoload 597
+~
+> speech_prog 100 598~
+mpoload 598
+~
+|
+#597
+Fighter~
+A Fighter~
+A Super Duper Mega Fighter of Death is here! Blarg!
+~
+~
+1 524288&148992&1 0 C
+1 0 100 1d20+0 2d5+0
+0 15000000000000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#598
+splitkoji~
+An empty namek body~
+An empty namek body is standing here.
+~
+~
+16777219 0 0 C
+1 0 100 1d20+0 2d4+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+3 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#599
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#401
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+> drop_prog 100~
+mpforce $n get key
+mpforce $n sac key
+say You shouldn't drop me!
+~
+|
+#402
+Break~
+Break~
+Some god dropped a newly created Break here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#403
+Couch~
+A Big Comfy Couch~
+&cA big, comfy, black couch sits here on along the far wall.~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+couch~
+The couch looks as though you could sink into it and never come back out.
+~
+#404
+Recliner~
+A Big Comfy Recliner~
+&cA big, comfy, black recliner sits against the east wall, begging for you to sit in it.~
+~
+12 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+couch~
+The couch looks as though you could sink into it and never come back out.
+~
+E
+recliner~
+The recliner looks as though you could sink into it and never find your way out.
+~
+#405
+TV Television~
+A 60" Plasma Screen.~
+&cA 60" Plasma screen is hanging on the wall~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+Plasma Television TV~
+The plasma screen is rather large and flat. The image displayed upon
+it is visible from any angle imaginable.
+~
+#421
+Break~
+Break~
+Some god dropped a newly created Break here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#431
+Scavanger's House Key~
+Scavanger's House Key~
+Some god dropped a newly created Scavanger's House Key here.~
+~
+8 0 16385
+431 0 0 0 0 0
+1 0 0
+ 1
+#452
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#485
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#486
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#487
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#488
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#489
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#490
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#491
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#492
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#493
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#494
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#521
+Rikimaru's House Key~
+Rikimaru's House Key~
+Some god dropped a newly created Rikimaru's House Key here.~
+~
+8 0 16385
+521 0 0 0 0 0
+1 0 0
+ 1
+#533
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#534
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#535
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#536
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#537
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#538
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#539
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#540
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#541
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#542
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#543
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#544
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#545
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#546
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#547
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#548
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#549
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#566
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#567
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#568
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#569
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#570
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#571
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#572
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#573
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#574
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#575
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#576
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#577
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#578
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#579
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#580
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#581
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#582
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#583
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#584
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#585
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#586
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#587
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#588
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#589
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#590
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#591
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#592
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#593
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#594
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#595
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#596
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#597
+Apartment Key~
+An Apartment key~
+An Apartment Key has been left here...~
+~
+18 128 16385
+0 0 0 0 0 0
+1 2147483647 214748364
+ 0
+#599
+Apartment Key Invoker~
+An Apartment Key Invoker~
+Ack! Don't pick this up!~
+~
+13 16781440&4 16385
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#400
+MegaPlex Entrance~
+The entrance to the South City MegaPlex is lined with a long, red
+carpet.  The enormous pillars support the hand carved roof, leaving it
+feeling very massive.  The lighting is very bright, and ranging in many
+different colours.  Two men stand at both sides of the doors, making sure
+no trouble enters the building.  All together, the entrance seems quite
+bizarre.  
+~
+0 2098188 1
+D0
+~
+~
+0 -1 401
+D2
+~
+~
+0 -1 9013
+S
+#401
+Receptionist Desk~
+This gigantic room has been painted completely red.  Old maps of
+locations are placed around the room, lighted by only candle light.  An
+enormous oak desk sits on the northern wall, loaded with several different
+important files.  The MegaPlex apartments are pass the corridor in the
+north-western sector. 
+~
+0 1032 0
+D2
+~
+~
+0 -1 400
+D7
+~
+~
+0 -1 402
+S
+#402
+Floor One Junction~
+The red carpet heads in the eastern, northern, and western direction. 
+Old photographs of famous explorers are placed about the walls for
+decoration.  The creamy wall color in which coats the entire building
+continues in this room, along with a chandelier which hangs down from the
+ceiling.  Apartments one through eleven are in the eastern direction,
+twelve through twenty-two in the western direction, and twenty-three
+through thirty-three in the northern direction.  The elevator lays in the
+south while the exit lays in the south-eastern direction. 
+~
+0 2098188 0
+D0
+~
+~
+0 -1 414
+D1
+~
+~
+0 -1 404
+D2
+~
+~
+0 -1 403
+D3
+~
+~
+0 -1 409
+D8
+~
+~
+0 -1 401
+S
+#403
+Elevator~
+Black fills the entire room, except for a few odd set objects.  The
+floor is a blue tile and the digital keypad in which the operator operates
+the elevator is also blue. A clean white line also goes around the elevator
+at waist height.  The flat lamps in which in brighten the room leave it
+feeling very modern. 
+~
+0 2098188 0
+S
+#404
+F1A - Eastern Hallway ~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "1" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "11" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent. 
+~
+0 2098188 0
+D0
+Apartment A
+~
+~
+0 -1 452
+D1
+~
+~
+0 -1 405
+D2
+~
+~
+0 -1 462
+D3
+~
+~
+0 -1 402
+S
+#405
+F1B - Eastern Hallway ~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "2" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "10" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 453
+D1
+~
+~
+0 -1 406
+D2
+~
+~
+0 -1 461
+D3
+~
+~
+0 -1 404
+S
+#406
+F1C - Eastern Hallway ~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "3" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "9" has been
+placed on the southern oak door.  Candles have been placed on both sides of
+the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 454
+D1
+~
+~
+0 -1 407
+D2
+~
+~
+0 -1 460
+D3
+~
+~
+0 -1 405
+S
+#407
+F1D - Eastern Hallway ~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "4" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "8" has been
+placed on the southern oak door.  Candles have been placed on both sides of
+the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 455
+D1
+~
+~
+0 -1 408
+D2
+~
+~
+0 -1 459
+D3
+~
+~
+0 -1 406
+S
+#408
+F1E - Eastern Hallway ~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "5" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "7" has been
+placed on the southern oak door.  A "6" also mounted on a gold plate is on
+the eastern door.  Candles have been placed on both sides of the doorways,
+leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 456
+D1
+~
+~
+0 -1 457
+D2
+~
+~
+0 -1 458
+D3
+~
+~
+0 -1 407
+S
+#409
+F1A - Western Hallway ~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "12" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "22" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 463
+D1
+~
+~
+0 -1 402
+D2
+~
+~
+39 473 473
+D3
+~
+~
+0 -1 410
+S
+#410
+F1B - Western Hallway ~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "13" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "21" has been
+placed on the southern oak door.  Candles have been placed on both sides of
+the doorways, leaving the room with a relaxing scent. 
+~
+0 2098188 0
+D0
+~
+~
+0 -1 464
+D1
+~
+~
+0 -1 409
+D2
+~
+~
+39 472 472
+D3
+~
+~
+0 -1 411
+S
+#411
+F1C - Western Hallway ~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "14" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "20" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 465
+D1
+~
+~
+0 -1 410
+D2
+~
+~
+39 471 471
+D3
+~
+~
+0 -1 412
+S
+#412
+F1D - Western Hallway ~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "15" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "19" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 466
+D1
+~
+~
+0 -1 411
+D2
+~
+~
+39 470 470
+D3
+~
+~
+0 -1 413
+S
+#413
+F1E - Western Hallway ~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "16" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "18" has
+been placed on the southern oak door.  A "17" also mounted on a gold plate
+is on the western door.  Candles have been placed on both sides of the
+doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 467
+D1
+~
+~
+0 -1 412
+D3
+~
+~
+39 468 468
+S
+#414
+F1A - Northern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "23" surrounded by a gold diamond
+shape has been placed on the eastern oak door, while one with "33" has been
+placed on the western oak door.  Candles have been placed on both sides of
+the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 415
+D1
+~
+~
+0 -1 474
+D2
+~
+~
+0 -1 402
+D3
+~
+~
+0 -1 484
+S
+#415
+F1B - Northern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "24" surrounded by a gold diamond
+shape has been placed on the eastern oak door, while one with "32" has been
+placed on the western oak door.  Candles have been placed on both sides of
+the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 416
+D1
+~
+~
+0 -1 475
+D2
+~
+~
+0 -1 414
+D3
+~
+~
+0 -1 483
+S
+#416
+F1C - Northern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "25" surrounded by a gold diamond
+shape has been placed on the eastern oak door, while one with "31" has been
+placed on the western oak door.  Candles have been placed on both sides of
+the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 417
+D1
+~
+~
+0 -1 476
+D2
+~
+~
+0 -1 415
+D3
+~
+~
+0 -1 482
+S
+#417
+F1D - Northern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "26" surrounded by a gold diamond
+shape has been placed on the eastern oak door, while one with "30" has been
+placed on the western oak door.  Candles have been placed on both sides of
+the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 418
+D1
+~
+~
+0 -1 477
+D2
+~
+~
+0 -1 416
+D3
+~
+~
+0 -1 481
+S
+#418
+F1E - Northern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "27" surrounded by a gold diamond
+shape has been placed on the eastern oak door, while one with "29" has been
+placed on the western oak door.  A "28" also mounted on a gold plate is on
+the the northern door.  Candles have been placed on both sides of the
+doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 479
+D1
+~
+~
+0 -1 478
+D2
+~
+~
+0 -1 417
+D3
+~
+~
+0 -1 480
+S
+#419
+Second Floor Junction~
+The red carpet heads in the eastern, northern, and western direction. 
+Old photographs of famous explorers are placed about the walls for
+decoration.  The creamy wall color in which coats the entire building
+continues in this room, along with a chandelier which hangs down from the
+ceiling. Apartments thirty-four through fourty-four are in the eastern
+direction, fourty-five through fifty-five in the western direction, and
+fifty-five through sixty-six in the northern direction.  The elevator lays
+in the south, which will take you to the other floors. 
+~
+0 2098188 0
+D0
+~
+~
+25166887 431 431
+D1
+~
+~
+0 -1 420
+D2
+~
+~
+0 -1 403
+D3
+~
+~
+0 -1 426
+S
+#420
+F2A - Eastern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "34" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "44" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 422
+D1
+~
+~
+0 -1 421
+D2
+~
+~
+39 494 494
+D3
+~
+~
+0 -1 419
+S
+#421
+F2B - Eastern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "35" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "43" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+39 485 485
+D1
+~
+~
+0 -1 423
+D2
+~
+~
+39 493 493
+D3
+~
+~
+0 -1 420
+S
+#422
+Vacant Residence~
+~
+0 4 0
+D2
+~
+~
+0 -1 420
+S
+#423
+Vacant Residence~
+~
+0 4 0
+D0
+~
+~
+0 -1 486
+D1
+~
+~
+0 -1 424
+D2
+~
+~
+0 -1 492
+D3
+~
+~
+0 -1 421
+S
+#424
+Vacant Residence~
+~
+0 4 0
+D0
+~
+~
+0 -1 487
+D1
+~
+~
+0 -1 425
+D2
+~
+~
+0 -1 491
+D3
+~
+~
+0 -1 423
+D5
+~
+~
+0 -1 420
+S
+#425
+Vacant Residence~
+~
+0 4 0
+D0
+~
+~
+0 -1 488
+D1
+~
+~
+0 -1 489
+D2
+~
+~
+0 -1 490
+D3
+~
+~
+0 -1 424
+S
+#426
+Vacant Residence~
+~
+0 4 0
+D0
+~
+~
+0 -1 495
+D1
+~
+~
+0 -1 419
+D2
+~
+~
+0 -1 505
+D3
+~
+~
+0 -1 427
+S
+#427
+Vacant Residence~
+~
+0 4 0
+D0
+~
+~
+0 -1 496
+D1
+~
+~
+0 -1 426
+D2
+~
+~
+0 -1 504
+D3
+~
+~
+0 -1 428
+S
+#428
+Vacant Residence~
+~
+0 4 0
+D0
+~
+~
+0 -1 497
+D1
+~
+~
+0 -1 427
+D2
+~
+~
+0 -1 503
+D3
+~
+~
+0 -1 429
+S
+#429
+Vacant Residence~
+~
+0 4 0
+D0
+~
+~
+0 -1 498
+D1
+~
+~
+0 -1 428
+D2
+~
+~
+0 -1 502
+D3
+~
+~
+0 -1 430
+S
+#430
+Vacant Residence~
+~
+0 4 0
+D0
+~
+~
+0 -1 499
+D1
+~
+~
+0 -1 429
+D2
+~
+~
+0 -1 501
+D3
+~
+~
+0 -1 500
+S
+#431
+&B(&rB&Ou&rr&On&ri&On&rg&B) &zScavangers Domain~
+&b Like your cliche gothic manner, this home is surround by
+sound of lightning and hammering rain. The walls are
+covered in flames and look very cavernous. Pictures of
+stern and old looking people in armor and suits hang in
+potraits on the rocky wall.
+~
+0 3146764 0
+D0
+~
+~
+25166887 431 432
+D1
+~
+~
+0 -1 506
+D2
+~
+~
+25166887 431 419
+D3
+~
+~
+0 -1 516
+S
+#432
+Vacant Residence~
+~
+0 4 0
+D0
+~
+~
+0 -1 433
+D1
+~
+~
+0 -1 507
+D2
+~
+~
+25166887 431 431
+D3
+~
+~
+0 -1 515
+S
+#433
+F2C - Northern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "58" surrounded by a gold diamond
+shape has been placed on the eastern oak door, while one with "64" has been
+placed on the western oak door.  Candles have been placed on both sides of
+the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 434
+D1
+~
+~
+0 -1 508
+D2
+~
+~
+0 -1 432
+D3
+~
+~
+0 -1 514
+S
+#434
+F2D - Northern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "59" surrounded by a gold diamond
+shape has been placed on the eastern oak door, while one with "63" has been
+placed on the western oak door.  Candles have been placed on both sides of
+the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 435
+D1
+~
+~
+0 -1 509
+D2
+~
+~
+0 -1 433
+D3
+~
+~
+0 -1 513
+S
+#435
+F2E - Northern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "60" surrounded by a gold diamond
+shape has been placed on the eastern oak door, while one with "62" has been
+placed on the western oak door.  A "61" also mounted on a gold plate is on
+the the northern door.  Candles have been placed on both sides of the
+doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 511
+D1
+~
+~
+0 -1 510
+D2
+~
+~
+0 -1 434
+D3
+~
+~
+0 -1 512
+S
+#436
+Third Floor Junction~
+The red carpet heads in the eastern, northern, and western direction. 
+Old photographs of famous explorers are placed about the walls for
+decoration.  The creamy wall color in which coats the entire building
+continues in this room, along with a chandelier which hangs down from the
+ceiling. Apartments sixty-seven through fourty-four are in the eastern
+direction, seventy-seven through eighty-seven in the western direction, and
+eighty-eight through ninety-nine in the northern direction.  The elevator
+lays in the south, which will take you to the other floors.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 447
+D1
+~
+~
+0 -1 437
+D2
+~
+~
+0 -1 403
+D3
+~
+~
+0 -1 442
+S
+#437
+F3A - Eastern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "67" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "77" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 517
+D1
+~
+~
+0 -1 438
+D2
+~
+~
+0 -1 527
+D3
+~
+~
+0 -1 436
+S
+#438
+F3B - Eastern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "68" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "76" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent. 
+~
+0 2098188 0
+D0
+~
+~
+0 -1 518
+D1
+~
+~
+0 -1 439
+D2
+~
+~
+0 -1 526
+D3
+~
+~
+0 -1 437
+S
+#439
+F3C - Eastern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "69" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "75" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 519
+D1
+~
+~
+0 -1 440
+D2
+~
+~
+0 -1 525
+D3
+~
+~
+0 -1 438
+S
+#440
+F3D - Eastern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "70" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "74" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 520
+D1
+~
+~
+0 -1 441
+D2
+~
+~
+0 -1 524
+D3
+~
+~
+0 -1 439
+S
+#441
+F3E - Eastern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "71" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "73" has
+been placed on the southern oak door.  A "72" also mounted on a gold plate
+is on the eastern door.  Candles have been placed on both sides of the
+doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+25166887 521 521
+D1
+~
+~
+0 -1 522
+D2
+~
+~
+0 -1 523
+D3
+~
+~
+0 -1 440
+S
+#442
+F3A - Western Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "78" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "88" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 528
+D1
+~
+~
+0 -1 436
+D2
+~
+~
+39 538 538
+D3
+~
+~
+0 -1 443
+S
+#443
+F3B - Western Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "79" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "87" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 529
+D1
+~
+~
+0 -1 442
+D2
+~
+~
+39 537 537
+D3
+~
+~
+0 -1 444
+S
+#444
+F3C - Western Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "80" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "86" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 530
+D1
+~
+~
+0 -1 443
+D2
+~
+~
+39 536 536
+D3
+~
+~
+0 -1 445
+S
+#445
+F3D - Western Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "81" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "85" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 531
+D1
+~
+~
+0 -1 444
+D2
+~
+~
+39 535 535
+D3
+~
+~
+0 -1 446
+S
+#446
+F3E - Western Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "82" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "84" has
+been placed on the southern oak door.  A "83" also mounted on a gold plate
+is on the western door.  Candles have been placed on both sides of the
+doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 532
+D1
+~
+~
+0 -1 445
+D2
+~
+~
+39 534 534
+D3
+~
+~
+39 533 533
+S
+#447
+F3A - Northern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "89" surrounded by a gold diamond
+shape has been placed on the eastern oak door, while one with "99" has been
+placed on the western oak door.  Candles have been placed on both sides of
+the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 448
+D1
+~
+~
+39 539 539
+D2
+~
+~
+0 -1 436
+D3
+~
+~
+39 549 549
+S
+#448
+F3B - Northern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "90" surrounded by a gold diamond
+shape has been placed on the eastern oak door, while one with "98" has been
+placed on the western oak door.  Candles have been placed on both sides of
+the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 449
+D1
+~
+~
+39 540 540
+D2
+~
+~
+0 -1 447
+D3
+~
+~
+39 548 548
+S
+#449
+F3C - Northern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "91" surrounded by a gold diamond
+shape has been placed on the eastern oak door, while one with "97" has been
+placed on the western oak door.  Candles have been placed on both sides of
+the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+0 -1 450
+D1
+~
+~
+39 541 541
+D2
+~
+~
+0 -1 448
+D3
+~
+~
+39 547 547
+S
+#450
+F3D - Northern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "92" surrounded by a gold diamond
+shape has been placed on the eastern oak door, while one with "96" has been
+placed on the western oak door.  Candles have been placed on both sides of
+the doorways, leaving the room with a relaxing scent. 
+~
+0 2098188 0
+D0
+~
+~
+0 -1 451
+D1
+~
+~
+39 542 542
+D2
+~
+~
+0 -1 449
+D3
+~
+~
+39 546 546
+S
+#451
+F3E - Northern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "93" surrounded by a gold diamond
+shape has been placed on the eastern oak door, while one with "94" has been
+placed on the western oak door.  A "95" also mounted on a gold plate is on
+the the northern door.  Candles have been placed on both sides of the
+doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+39 544 544
+D1
+~
+~
+39 543 543
+D2
+~
+~
+0 -1 450
+D3
+~
+~
+39 545 545
+S
+#452
+Vacant Residence~
+~
+0 4 0
+D2
+~
+~
+0 -1 404
+S
+#453
+Vacant Residence~
+~
+0 0 0
+D2
+~
+~
+0 -1 405
+S
+#454
+Vacant Residence~
+~
+0 0 0
+D2
+~
+~
+0 -1 406
+S
+#455
+Vacant Residence~
+~
+0 0 0
+D2
+~
+~
+0 -1 407
+S
+#456
+Vacant Residence~
+~
+0 0 0
+D2
+~
+~
+0 -1 408
+S
+#457
+Vacant Residence~
+~
+0 0 0
+D3
+~
+~
+0 -1 408
+S
+#458
+Vacant Residence~
+~
+0 0 0
+D0
+~
+~
+0 -1 408
+S
+#459
+Vacant Residence~
+~
+0 0 0
+D0
+~
+~
+0 -1 407
+S
+#460
+Vacant Residence~
+~
+0 0 0
+D0
+~
+~
+0 -1 406
+S
+#461
+Vacant Residence~
+~
+0 0 0
+D0
+~
+~
+0 -1 405
+S
+#462
+Vacant Residence~
+~
+0 0 0
+D0
+~
+~
+0 -1 404
+S
+#463
+Vacant Residence~
+~
+0 0 0
+D2
+~
+~
+0 -1 409
+S
+#464
+Vacant Residence~
+~
+0 0 0
+D2
+~
+~
+0 -1 410
+S
+#465
+Vacant Residence~
+~
+0 0 0
+D2
+~
+~
+0 -1 411
+S
+#466
+Vacant Residence~
+~
+0 0 0
+D2
+~
+~
+0 -1 412
+S
+#467
+Vacant Residence~
+~
+0 0 0
+D2
+~
+~
+0 -1 413
+S
+#468
+Vacant Residence~
+~
+0 0 0
+D0
+~
+~
+0 -1 413
+S
+#469
+Vacant Residence~
+~
+0 0 0
+D0
+~
+~
+0 -1 412
+S
+#470
+Vacant Residence~
+~
+0 0 0
+D0
+~
+~
+0 -1 411
+S
+#471
+Vacant Residence~
+~
+0 0 0
+D0
+~
+~
+0 -1 410
+S
+#472
+Vacant Residence~
+~
+0 0 0
+D0
+~
+~
+0 -1 409
+S
+#473
+Vacant Residence~
+~
+0 0 0
+D1
+~
+~
+0 -1 413
+D2
+~
+~
+0 -1 402
+S
+#474
+Vacant Residence~
+~
+0 0 0
+D3
+~
+~
+0 -1 414
+S
+#475
+Vacant Residence~
+~
+0 0 0
+D3
+~
+~
+0 -1 415
+S
+#476
+Vacant Residence~
+~
+0 4 0
+D3
+~
+~
+0 -1 416
+S
+#477
+Vacant Residence~
+~
+0 4 0
+D3
+~
+~
+0 -1 417
+S
+#478
+Vacant Residence~
+~
+0 4 0
+D3
+~
+~
+0 -1 418
+S
+#479
+Vacant Residence~
+~
+0 4 0
+D2
+~
+~
+0 -1 418
+S
+#480
+Vacant Residence~
+~
+0 4 0
+D1
+~
+~
+0 -1 418
+S
+#481
+Vacant Residence~
+~
+0 4 0
+D1
+~
+~
+0 -1 417
+S
+#482
+Vacant Residence~
+~
+0 4 0
+D1
+~
+~
+0 -1 416
+S
+#483
+Vacant Residence~
+~
+0 4 0
+D1
+~
+~
+0 -1 415
+S
+#484
+Vacant Residence~
+~
+0 4 0
+D1
+~
+~
+0 -1 414
+S
+#485
+MegaPlex Apartment 35~
+~
+0 2098188 0
+D2
+~
+~
+39 485 421
+S
+#486
+MegaPlex Apartment 36~
+~
+0 2098188 0
+D2
+~
+~
+0 -1 423
+S
+#487
+MegaPlex Apartment 37~
+~
+0 2098188 0
+D2
+~
+~
+0 -1 424
+S
+#488
+MegaPlex Apartment 38~
+~
+0 2098188 0
+D2
+~
+~
+0 -1 425
+S
+#489
+MegaPlex Apartment 39~
+~
+0 2098188 0
+D3
+~
+~
+0 -1 425
+S
+#490
+MegaPlex Apartment 40~
+~
+0 2098188 0
+D0
+~
+~
+0 -1 425
+S
+#491
+MegaPlex Apartment 41~
+~
+0 2098188 0
+D0
+~
+~
+0 -1 424
+S
+#492
+MegaPlex Apartment 42~
+~
+0 2098188 0
+D0
+~
+~
+0 -1 423
+S
+#493
+MegaPlex Apartment 43~
+~
+0 2098188 0
+D0
+~
+~
+39 493 421
+S
+#494
+MegaPlex Apartment 44~
+~
+0 2098188 0
+D0
+~
+~
+39 494 420
+S
+#495
+Vacant Residence~
+~
+0 4 0
+D2
+~
+~
+0 -1 426
+S
+#496
+Vacant Residence~
+~
+0 4 0
+D2
+~
+~
+0 -1 427
+S
+#497
+Vacant Residence~
+~
+0 4 0
+D2
+~
+~
+0 -1 428
+S
+#498
+Vacant Residence~
+~
+0 4 0
+D2
+~
+~
+0 -1 429
+S
+#499
+Vacant Residence~
+~
+0 4 0
+D2
+~
+~
+0 -1 430
+S
+#500
+Vacant Residence~
+~
+0 4 0
+D1
+~
+~
+0 -1 430
+S
+#501
+Vacant Residence~
+~
+0 4 0
+D0
+~
+~
+0 -1 430
+S
+#502
+Vacant Residence~
+~
+0 4 0
+D0
+~
+~
+0 -1 429
+S
+#503
+Vacant Residence~
+~
+0 4 0
+D0
+~
+~
+0 -1 428
+S
+#504
+Vacant Residence~
+~
+0 4 0
+D0
+~
+~
+0 -1 427
+S
+#505
+Vacant Residence~
+~
+0 4 0
+D0
+~
+~
+0 -1 426
+S
+#506
+Vacant Residence~
+~
+0 4 0
+D3
+~
+~
+0 -1 431
+S
+#507
+Vacant Residence~
+~
+0 4 0
+D3
+~
+~
+0 -1 432
+S
+#508
+Vacant Residence~
+~
+0 4 0
+D3
+~
+~
+0 -1 433
+S
+#509
+Vacant Residence~
+~
+0 4 0
+D3
+~
+~
+0 -1 434
+S
+#510
+Vacant Residence~
+~
+0 4 0
+D3
+~
+~
+0 -1 435
+S
+#511
+Vacant Residence~
+~
+0 4 0
+D2
+~
+~
+0 -1 435
+S
+#512
+Vacant Residence~
+~
+0 4 0
+D1
+~
+~
+0 -1 435
+S
+#513
+Vacant Residence~
+~
+0 4 0
+D1
+~
+~
+0 -1 434
+S
+#514
+Vacant Residence~
+~
+0 4 0
+D1
+~
+~
+0 -1 433
+S
+#515
+Vacant Residence~
+~
+0 4 0
+D1
+~
+~
+0 -1 432
+S
+#516
+Vacant Residence~
+~
+0 4 0
+D1
+~
+~
+0 -1 431
+S
+#517
+Vacant Residence~
+~
+0 4 0
+D2
+~
+~
+0 -1 437
+S
+#518
+Vacant Residence~
+~
+0 4 0
+D2
+~
+~
+0 -1 438
+S
+#519
+Vacant Residence~
+~
+0 4 0
+D2
+~
+~
+0 -1 439
+S
+#520
+Vacant Residence~
+~
+0 4 0
+D2
+~
+~
+0 -1 440
+S
+#521
+&zR&Ri&rk&zim&ra&Rr&zu and &rX&Ri&Pa&pvn&Pl&Ry&z'&rs &zL&bov&ze &BS&ch&za&cc&Bk &c;) &gAnyone else, fuck off out :D~
+Get the fuck out of my house. XD
+
+&RList of Niggers&C:
+
+
+
+Also; to anyone whom asks me to change this, FUCK OFF, it's my house,
+therefore I can have the description as what I want. :D
+
+&W .&R                                                      &W.
+&W        .&Rn                   .                 .                  n&W.
+&W  .   &R.dP                  dP                   9b                 9b.    &W.
+&W 4    &RqXb         .       dX                     Xb       .        dXp     &Wt
+&Wd&RX.    9Xb      .dXb    __                         __    dXb.     dXP     .X&Wb
+&W9X&RXb._       _.dXXXXb dXXXXbo.                 .odXXXXb dXXXXb._       _.dXX&WP
+&W 9X&RXXXXXXXXXXXXXXXXXXVXXXXXXXXOo.           .oOXXXXXXXXVXXXXXXXXXXXXXXXXXXX&WP
+&W  `9X&RXXXXXXXXXXXXXXXXXXXX'-   -`OOO8b   d8OOO'-   -`XXXXXXXXXXXXXXXXXXXXXP&W'
+&W    `9X&RXXXXXXXXXXP' `9XX'   &WD&zie    &R`98v8P'&WF&zucker  &R`XXP' `9XXXXXXXXXXXP&W'
+&W        -&R------       9X.          .db|db.          .XP       ------&W-
+&W                        )&Rb.  .dbo.dP'`v'`9b.odb.  .dX&W(
+&W                      ,d&RXXXXXXXXXXXb     dXXXXXXXXXXXb&W.
+&W                     d&RXXXXXXXXXXXP'   .   `9XXXXXXXXXXX&Wb
+&W                    d&RXXXXXXXXXXXXb   d|b   dXXXXXXXXXXXX&Wb
+&W                    9&RXXb'   `XXXXXb.dX|Xb.dXXXXX'   `dXX&WP
+&W                     `'      9&RXXXXXX(   )XXXXXXP      `&W'
+&W                              X&RXXX X.`v'.X XXX&WX
+&W                              X&RP^X'`b   d'`X^X&WX
+&W                              X&R. 9  `   '  P )&WX
+&W                              `&Rb  `       '  d&W'
+&W                               `             '
+                                  &zF&Wu&zc&Wk &zo&Wf&zf&W.
+
+            &z.&r,&z;&r: &W-&z=&R[[  &zGet out of my house dipshit. &R]]&z=&W- &r:&z;&r,&z.
+
+Would you morons STOP EDITING MY HOUSE DESC? :)
+
+&zI HATE PEOPLE.
+~
+0 3146764 0
+D2
+~
+~
+25166887 521 441
+S
+#522
+Vacant Residence~
+~
+0 4 0
+D3
+~
+~
+0 -1 441
+S
+#523
+Vacant Residence~
+~
+0 4 0
+D0
+~
+~
+0 -1 441
+S
+#524
+Vacant Residence~
+~
+0 4 0
+D0
+~
+~
+0 -1 440
+S
+#525
+Vacant Residence~
+~
+0 4 0
+D0
+~
+~
+0 -1 439
+S
+#526
+Vacant Residence~
+~
+0 4 0
+D0
+~
+~
+0 -1 438
+S
+#527
+Vacant Residence~
+~
+0 4 0
+D0
+~
+~
+0 -1 437
+S
+#528
+Vacant Residence~
+~
+0 4 0
+D2
+~
+~
+0 -1 442
+S
+#529
+Vacant Residence~
+~
+0 4 0
+D2
+~
+~
+0 -1 443
+S
+#530
+Vacant Residence~
+~
+0 4 0
+D2
+~
+~
+0 -1 444
+S
+#531
+Vacant Residence~
+~
+0 4 0
+D2
+~
+~
+0 -1 445
+S
+#532
+Vacant Residence~
+~
+0 4 0
+D2
+~
+~
+0 -1 446
+S
+#533
+MegaPlex Apartment 83~
+~
+0 2098188 0
+D1
+~
+~
+39 533 446
+S
+#534
+MegaPlex Apartment 84~
+~
+0 2098188 0
+D0
+~
+~
+39 534 446
+S
+#535
+MegaPlex Apartment 85~
+~
+0 2098188 0
+D0
+~
+~
+39 535 445
+S
+#536
+MegaPlex Apartment 86~
+~
+0 2098188 0
+D0
+~
+~
+39 536 444
+S
+#537
+MegaPlex Apartment 87~
+~
+0 2098188 0
+D0
+~
+~
+39 537 443
+S
+#538
+MegaPlex Apartment 88~
+~
+0 2098188 0
+D0
+~
+~
+39 538 442
+S
+#539
+MegaPlex Apartment 89~
+~
+0 2098188 0
+D3
+~
+~
+39 539 447
+S
+#540
+MegaPlex Apartment 90~
+~
+0 2098188 0
+D3
+~
+~
+39 540 448
+S
+#541
+MegaPlex Apartment 91~
+~
+0 2098188 0
+D3
+~
+~
+39 541 449
+S
+#542
+MegaPlex Apartment 92~
+~
+0 2098188 0
+D3
+~
+~
+39 542 450
+S
+#543
+MegaPlex Apartment 93~
+~
+0 2098188 0
+D3
+~
+~
+39 543 451
+S
+#544
+MegaPlex Apartment 94~
+~
+0 2098188 0
+D2
+~
+~
+39 544 451
+S
+#545
+MegaPlex Apartment 95~
+~
+0 2098184 0
+D1
+~
+~
+39 545 451
+S
+#546
+MegaPlex Apartment 96~
+~
+0 2098188 0
+D1
+~
+~
+39 546 450
+S
+#547
+MegaPlex Apartment 97~
+~
+0 2098188 0
+D1
+~
+~
+39 547 449
+S
+#548
+MegaPlex Apartment 98~
+~
+0 2098188 0
+D1
+~
+~
+39 548 448
+S
+#549
+MegaPlex Apartment 99~
+~
+0 2098188 0
+D1
+~
+~
+39 549 447
+S
+#550
+Final Floor Junction~
+The red carpet heads in the eastern, northern, and western direction. 
+Old photographs of famous explorers are placed about the walls for
+decoration.  The creamy wall color in which coats the entire building
+continues in this room, along with a chandelier which hangs down from the
+ceiling. Apartments one hundred through one hundred ten in the eastern
+direction, one hundred twenty-one through one hundred twenty-two in the
+western direction, and one hundred twenty-three through one hundred
+thirty-three in the northern direction.  The elevator lays in the south,
+which will take you to the other floors. 
+~
+0 2098188 0
+D0
+~
+~
+0 -1 561
+D1
+~
+~
+0 -1 551
+D2
+~
+~
+0 -1 402
+D3
+~
+~
+0 -1 556
+S
+#551
+F4A - Eastern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "110" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "110" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+39 566 566
+D1
+~
+~
+0 -1 552
+D2
+~
+~
+39 578 578
+D3
+~
+~
+0 -1 550
+S
+#552
+F4B - Eastern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "101" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "109" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+39 567 567
+D1
+~
+~
+0 -1 553
+D2
+~
+~
+39 575 575
+D3
+~
+~
+0 -1 551
+S
+#553
+F4C - Eastern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "102" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "108" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+39 568 568
+D1
+~
+~
+0 -1 554
+D2
+~
+~
+39 574 574
+D3
+~
+~
+0 -1 552
+S
+#554
+F4D - Eastern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "103" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "107" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+39 569 569
+D1
+~
+~
+0 -1 555
+D2
+~
+~
+39 573 573
+D3
+~
+~
+0 -1 553
+S
+#555
+F4E - Eastern Hallway~
+N The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "104" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "106" has
+been placed on the southern oak door.  A "105" also mounted on a gold plate
+is on the eastern door.  Candles have been placed on both sides of the
+doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+39 570 570
+D1
+~
+~
+39 571 571
+D2
+~
+~
+39 572 572
+D3
+~
+~
+0 -1 554
+S
+#556
+F4A - Western Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "111" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "121" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+39 577 577
+D1
+~
+~
+0 -1 550
+D2
+~
+~
+39 587 587
+D3
+~
+~
+0 -1 557
+S
+#557
+F4B - Western Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "112" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "120" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+39 578 578
+D1
+~
+~
+0 -1 556
+D2
+~
+~
+39 586 586
+D3
+~
+~
+0 -1 558
+S
+#558
+F4C - Western Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "113" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "119" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+39 579 579
+D1
+~
+~
+0 -1 557
+D2
+~
+~
+39 585 585
+D3
+~
+~
+0 -1 559
+S
+#559
+F4D - Western Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "114" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "118" has
+been placed on the southern oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+39 580 580
+D1
+~
+~
+0 -1 558
+D2
+~
+~
+39 584 584
+D3
+~
+~
+0 -1 560
+S
+#560
+F4E - Western Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "115" surrounded by a gold diamond
+shape has been placed on the northern oak door, while one with "117" has
+been placed on the southern oak door.  A "116" also mounted on a gold plate
+is on the western door.  Candles have been placed on both sides of the
+doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+39 581 581
+D1
+~
+~
+0 -1 559
+D2
+~
+~
+39 583 583
+D3
+~
+~
+39 582 582
+S
+#561
+F4A - Northern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "122" surrounded by a gold diamond
+shape has been placed on the eastern oak door, while one with "132" has
+been placed on the western oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent. 
+~
+0 2098188 0
+D0
+~
+~
+0 -1 562
+D1
+~
+~
+39 588 588
+D2
+~
+~
+0 -1 550
+D3
+~
+~
+0 -1 598
+S
+#562
+F4B - Northern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "123" surrounded by a gold diamond
+shape has been placed on the eastern oak door, while one with "131" has
+been placed on the western oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent. 
+~
+0 2098188 0
+D0
+~
+~
+0 -1 563
+D1
+~
+~
+39 589 589
+D2
+~
+~
+0 -1 561
+D3
+~
+~
+39 597 597
+S
+#563
+F4C - Northern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "124" surrounded by a gold diamond
+shape has been placed on the eastern oak door, while one with "130" has
+been placed on the western oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent. 
+~
+0 2098188 0
+D0
+~
+~
+0 -1 564
+D1
+~
+~
+39 590 590
+D2
+~
+~
+0 -1 562
+D3
+~
+~
+39 596 596
+S
+#564
+F4D - Northern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "125" surrounded by a gold diamond
+shape has been placed on the eastern oak door, while one with "129" has
+been placed on the western oak door.  Candles have been placed on both
+sides of the doorways, leaving the room with a relaxing scent. 
+~
+0 2098188 0
+D0
+~
+~
+0 -1 565
+D1
+~
+~
+39 591 591
+D2
+~
+~
+0 -1 563
+D3
+~
+~
+39 595 595
+S
+#565
+F4E - Northern Hallway~
+The beautiful red carpet covers up most of the beautiful oak flooring,
+flows nicely into the creamy walls.  Old black and white photos have been
+placed on both sides of the hallway.  A "126" surrounded by a gold diamond
+shape has been placed on the eastern oak door, while one with "128" has
+been placed on the western oak door.  A "127" also mounted on a gold plate
+is on the the northern door.  Candles have been placed on both sides of the
+doorways, leaving the room with a relaxing scent.  
+~
+0 2098188 0
+D0
+~
+~
+39 593 593
+D1
+~
+~
+39 592 592
+D2
+~
+~
+0 -1 564
+D3
+~
+~
+39 594 594
+S
+#566
+MegaPlex Apartment 100~
+~
+0 2098188 0
+D2
+~
+~
+39 566 551
+S
+#567
+MegaPlex Apartment 101~
+~
+0 2098188 0
+D2
+~
+~
+39 567 552
+S
+#568
+MegaPlex Apartment 102~
+~
+0 2098188 0
+D2
+~
+~
+39 568 553
+S
+#569
+MegaPlex Apartment 103~
+~
+0 2098188 0
+D2
+~
+~
+39 569 554
+S
+#570
+MegaPlex Apartment 104~
+~
+0 2098188 0
+D2
+~
+~
+39 570 555
+S
+#571
+MegaPlex Apartment 105~
+~
+0 2098188 0
+D3
+~
+~
+39 571 555
+S
+#572
+MegaPlex Apartment 106~
+~
+0 2098188 0
+D0
+~
+~
+39 572 555
+S
+#573
+MegaPlex Apartment 107~
+~
+0 2098188 0
+D0
+~
+~
+39 573 554
+S
+#574
+MegaPlex Apartment 108~
+~
+0 2098188 0
+D0
+~
+~
+39 574 553
+S
+#575
+MegaPlex Apartment 109~
+~
+0 2098188 0
+D0
+~
+~
+39 575 552
+S
+#576
+MegaPlex Apartment 110~
+~
+0 2098188 0
+D0
+~
+~
+39 578 551
+S
+#577
+MegaPlex Apartment 111~
+~
+0 2098188 0
+D2
+~
+~
+39 577 556
+S
+#578
+MegaPlex Apartment 112~
+~
+0 2098188 0
+D2
+~
+~
+39 578 557
+S
+#579
+MegaPlex Apartment 113~
+~
+0 2098188 0
+D2
+~
+~
+39 579 558
+S
+#580
+MegaPlex Apartment 114~
+~
+0 2098188 0
+D2
+~
+~
+39 580 559
+S
+#581
+MegaPlex Apartment 115~
+~
+0 2098188 0
+D2
+~
+~
+39 581 560
+S
+#582
+MegaPlex Apartment 116~
+~
+0 2098188 0
+D1
+~
+~
+39 582 560
+S
+#583
+MegaPlex Apartment 117~
+~
+0 2098188 0
+D0
+~
+~
+39 583 560
+S
+#584
+MegaPlex Apartment 118~
+~
+0 2098188 0
+D0
+~
+~
+39 584 559
+S
+#585
+MegaPlex Apartment 119~
+~
+0 2098188 0
+D0
+~
+~
+39 585 558
+S
+#586
+MegaPlex Apartment 120~
+~
+0 2098188 0
+D0
+~
+~
+39 586 557
+S
+#587
+MegaPlex Apartment 121~
+~
+0 2098188 0
+D0
+~
+~
+39 587 556
+S
+#588
+MegaPlex Apartment 122~
+~
+0 2098188 0
+D3
+~
+~
+39 588 561
+S
+#589
+MegaPlex Apartment 123~
+~
+0 2098188 0
+D3
+~
+~
+39 589 562
+S
+#590
+MegaPlex Apartment 124~
+~
+0 2098188 0
+D3
+~
+~
+39 590 563
+S
+#591
+MegaPlex Apartment 125~
+~
+0 2098188 0
+D3
+~
+~
+39 591 564
+S
+#592
+MegaPlex Apartment 126~
+~
+0 2098188 0
+D3
+~
+~
+39 592 565
+S
+#593
+MegaPlex Apartment 127~
+~
+0 2098188 0
+D2
+~
+~
+39 593 565
+S
+#594
+MegaPlex Apartment 128~
+~
+0 2098188 0
+D1
+~
+~
+39 594 565
+S
+#595
+MegaPlex Apartment 129~
+~
+0 2098188 0
+D1
+~
+~
+39 595 564
+S
+#596
+MegaPlex Apartment 130~
+~
+0 2098188 0
+D1
+~
+~
+39 596 563
+S
+#597
+MegaPlex Apartment 131~
+~
+0 2098188 0
+D1
+~
+~
+39 597 562
+S
+#598
+Vacant Residence~
+~
+0 4 0
+D1
+~
+~
+0 -1 561
+S
+#599
+The "Invoke me a Key for my stupid apartment" Place.~
+(Please? &Y;)&w)
+
+Koji
+
+Have a nice day!
+-Koji
+Leave unless you _know_ what you are doing. Do not _say_ anything.
+~
+0 2097164 0
+S
+#0
+
+
+#RESETS
+M 1 402 1 403
+O 1 402 1 403
+M 1 404 1 599
+M 1 403 1 401
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

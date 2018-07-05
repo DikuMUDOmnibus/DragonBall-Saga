@@ -1,0 +1,151 @@
+*********
+*CHANGES*
+*********
+
+========
+04.02.01 ::> Downloaded and Installed SMAUG 1.4a
+======== ::> Yeah! Compile errors!
+         ::> "Not wanting to deal with MUD" time.
+         ::> Fixed Compile errors.
+         ::> Run MUD for the first time.
+         ::> Fixed PC save "bug".
+
+========
+04.03.01 ::> Cleared out stock races and classes.
+======== ::> "Removed" class system.
+         ::> NEW RACE - Basic Saiyan information.
+         ::> Changed SCORE format.
+         ::> All races have been setup with their basic info.
+========
+04.09.01 ::> Got the auth system working. (I didn't want to use mpapply)
+======== ::> Got the save system working. (you can save now if your authed)
+         ::> Attack Modifier implemented. (needed for PL conversion)
+         ::> All major references to exp have been changed to PL.
+         ::> Removed movement system and used "max_move" for "current PL".
+         ::> Finally finished the conversion from Exp level to Powerlevel .
+         ::> Found out that a divide by zero error crashes the mud. So I
+                had to set the default PL of mobs to 1 so a builder who wasn't
+                thinking wouldn't kill the mud.
+         ::> Reformatted the prompt so it displays the "real" information.
+         ::> Got lifeforce working as a percent of your total HP.
+         ::> Removed hunger and thirst code because it annoys me.
+         ::> I think armor will work by preventing a % of damage, but I can't
+                test it because mobs can't seem to hit PC's...
+         ::> The races can now use their languages.
+========
+04.10.01 ::> Fixed bug in gain_exp().  now PC's won't gain 169,084,960 PL every
+========        every time they kill a mob.
+         ::> attmod = (float) (PL1 / PL2) doesn't really work does it?  Fixed
+                that syntax and now the fighting system works with PL's! (Was
+                having problems with who ever had the higher PL, even by 1
+                point, the lower PL person (mob or pc) would always miss the
+                other guy)
+         ::> Armor now prevents damage done to you. (tested it and it works!)
+         ::> Added "train" code. Now you can train your stats higher. I haven't
+                tested it yet because I've got more important stuff to do
+                first.
+         ::> Added grav training code.
+========
+04.11.01 ::> Removed almost all code referencing the old "AD&D" classes and
+========        races. Only stuff in the spell.c and skill.c still reference the
+                old guys, but I'll be wiping those files soon so I don't care.
+         ::> Sweet! I figured out how to add new fields to the PFile with out
+                screwing up the mud.  I added PL, MaxPrac, Train, MaxTrain
+                fields. Now current PL is linked to PL and not Max_Move, and
+                your training points are linked to Train and not Move.
+         ::> "Levels" are now set up so you can gain energy, pracs and trains
+                when your pl gets to certain levels.
+========
+04.12.01 ::> Immortals can now "die" just like normal PC's.  The only difference
+========        is that imms don't leave corpses.
+         ::> All PC's have the dodge and anticipate attack skills. Dodge is
+                affected by your dex and anticipate is affected by your int.
+         ::> Increased bare hand damage to 2d4 (it was 1d4) it was taking to
+                damn long to kill mobs.
+         ::> Lowered starting stats from 13 to 5 and gave all races str as
+                their prime attribute so str will start at 8.
+         ::> Installed a color patch.  Now color's display properly.
+         ::> Increased the maximum vnums allowed from 32k to 2bil.
+========
+04.13.01 ::> Added "GODSET" command because I needed more admin power then
+========        "MSET" had.  I will also be adding "GODSTAT" soon.
+         ::> Fixed up the "SCORE" command.  I will be adding color to it in the
+                next few days.
+========
+04.17.01 ::> I got practicing working they way I want it to (so imms can't learn
+========        everything)
+         ::> Added SSJ, SSJ2, SSJ3, and SSJ4 skills!
+========
+04.18.01 ::> Added 4 Icer transformations, supper Namek and Kaioken.
+======== ::> Changed how much PL you gain at high PL ranges.
+========
+04.19.01 ::> Tweaked the fighting and PL systems.  They should be more fair now.
+======== ::> Added enemies life bar to the fighting prompt.
+         ::> Added color to the "SCORE" command.
+         ::> Set up when PC's gain energy, trains and practices to reasonable
+                values.
+         ::> I've got practices working even closer to the way I want them to
+                work.  Just a few more hours...
+========
+04.23.01 ::> Added "OOC" channel for non-role-playing chat.
+======== ::> Made the "CHAT" and "OOC" channels colorful.
+========
+04.25.01 ::> Fixed a small bug with practice points.
+======== ::> Lot's of help file editing.
+         ::> Added color to the ANSI login screen.
+========
+04.26.01 ::> Added descriptions to players that are powered up with kaioken,
+========        ssj, super namek, and icer transforms.
+========
+04.29.01 ::> Powerlevel's are now using 'long doubles' instead of 'ints'.
+======== ::> More tweaks to the fighting system.
+         ::> Fixed some problems with high PL fighters attacking low PL
+                fighters.
+========
+04.30.01 ::> Added num_punct_ld() so all the powerlevel displays won't be so
+========        hard to read.
+         ::> Finally have skills and abilities working exactly how I want them
+                to.
+         ::> Fixed a crash bug.  If you tried to practice a skill or ability
+                that didn't exist while you were in the presence of a teacher,
+                the mud crashes.
+========
+05.01.01 ::> Added global message boards.
+========
+========
+05.03.01 ::> Uploaded the mud to our server.
+======== ::> Fixed a bug with the ssj skills.
+         ::> Setup all the races with basic skills.
+========
+05.04.01 ::> Players can now save if their name isn't authed, but they have to
+========        have a powerlevel over 4,000.
+========
+05.11.01 ::> Fixed a bug while setting mobs races it would spam the log channel
+========        with bug comments.
+========
+05.14.01 ::> Added moon phases.
+======== ::> Added moon phases to the "TIME" command.
+         ::> Tweaked the pl gained in combat.
+         ::> Changed the enemies life force bar to have more colors.
+         ::> Fixed a bug with the random number generators.
+========
+05.16.01 ::> OPEN BETA TESTING STAGE BEGINNING!
+========
+========
+05.17.01 ::> Fix a bug when talking on channels.
+========
+========
+05.18.01 ::> Fixed lots of bugs that I forgot to document.
+========
+========
+05.19.01 ::> Fixed lots of bugs that I forgot to document.
+========
+========
+05.20.01 ::> Tried a few things to fix the random crash bug.  Now we just get
+========        to wait and see...
+         ::> Finally pinned down the Oozaru bug.
+         ::> Setup 'pretitles' for immortals, so now I can give them their
+                "true" title.
+========
+05.21.01 ::> Fixed ssj bugs
+======== ::> 

@@ -1,0 +1,2597 @@
+#AREA   Planet Namek~
+
+
+
+#VERSION 250
+#AUTHOR Kalia~
+
+#RANGES
+0 0 0 0
+$
+
+#PLANET 5
+
+#RESETMSG A calm wind blows over the surface of the planet.~
+
+#FLAGS
+0
+
+#ECONOMY 0 127376826
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#5000
+namek green thief~
+the namekian thief~
+A short little green man loiters around here, up to no good.
+~
+~
+18874373 622594 -1000 C
+1 0 100 1d20+0 2d5+0
+0 250
+112 112 0
+7 100 100 15 25
+0 0 0 0 0
+3 3 0 0 1 1 2
+0 0 0 0 0 0 0 0
+#5001
+Mobzor~
+a mobzor~
+Mobzor is BUFF, attack at your OWN risk.
+~
+This is a vicious mobzor
+It ownz0rs you.
+Fight it at your own risk.
+Mobzor hates everyone.
+~
+16777219 3670400&1459648 1000 C
+51 0 60 500d50+50 6d15+10
+0 750000000000
+112 112 2
+100 100 100 100 100
+0 0 0 0 0
+4 4 0 0 1 1 5
+5 4 369360895 0 0 0 2101504 7
+> fight_prog 100~
+death
+~
+> death_prog 100~
+mpecho Mobz0r is super duper powerful and will never ever die EVER!!!!
+mpmload 5001
+~
+|
+#5002
+Captain Ginyu~
+Captain Ginyu~
+Captain Ginyu flies about here, wondering where his squad ran off to.
+~
+~
+16908353 524416&2048 -1000 C
+1 0 35 4d30+50 2d12+0
+1000 50000000000
+112 112 1
+80 100 100 55 60
+0 0 0 0 0
+0 0 0 0 1 1 4
+15 0 0 0 0 0 0 2
+> fight_prog 35~
+mpecho $I sends a devastating wave of destruction all around!
+scat 50
+scat 50
+scat 50
+~
+> fight_prog 50~
+mea $n $I lowers his shoulder and charges into you!
+mer $n $I lowers his shoulder and rams right at $n!
+bash
+~
+> fight_prog 35~
+mea $n $I fires a powerful beam of ki at you!
+mer $n $I lets loose a potent ki beam at $n!
+mpdamage $n 35
+~
+|
+#5003
+namek grocier~
+The Namek Grocier~
+The grocier sits here behind a long counter.
+~
+~
+83886147 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+3 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpecho $I says, 'Good day $n, can I interest you in some bottled water perhaps?'
+~
+|
+#5004
+namek tourist shop salesman~
+The Tourist shop owner~
+A salesman of the tourist shop is selling his wares here.
+~
+~
+83886147 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+100 5 25 5 5
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpecho $I looks up and notices you walk in.
+mpecho $I says, 'Hello there $n, have a look around, take all the time you need.  Got some fine wares today!'
+~
+|
+#5005
+Namekian guard~
+a namekian guard~
+A tall green man stands here, vigilant of who passes to and from the village.
+~
+~
+16777283 0 1000 C
+1 0 75 1d20+0 2d5+0
+0 1000000
+112 112 0
+70 75 50 90 13
+0 0 0 0 0
+3 3 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if isevil($n)
+  mea $n The Namekian guard emits a low growl in your direction.
+ mpechoaround $n The Namekian guard lets out a growl at $n.
+ else
+  mea $n The Namekian guard nods at you and shows a slight smile.
+  mpechoaround $n The Namekian guard nods and smiles at $n.
+endif
+~
+|
+#5006
+scarecrow~
+A scarecrow~
+A scarecrow is planted into the ground here, keeping birds away from the vegetables.
+~
+~
+83886083 0 0 C
+1 0 80 1d20+0 2d5+0
+0 500
+112 112 0
+13 20 8 20 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 2~
+mpecho $I sways slightly in a soft breeze.
+~
+> rand_prog 2~
+mpecho A small blackbird lands nearby, but quickly flies away at the sight of the scarecrow.
+~
+> rand_prog 2~
+mpecho A few pieces of straw fall from the scarecrow's loose sleeve.
+~
+|
+#5007
+namek worker~
+a Namekian field worker~
+A namekian worker is here, turning the soil.
+~
+~
+16908289 0 1000 C
+1 0 100 1d20+0 2d5+0
+0 5000
+112 112 0
+75 75 60 100 35
+0 0 0 0 0
+3 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#5008
+namek worker~
+a Namekian field worker~
+A tired Namekian worker rests here, leaning against its pitchfork.
+~
+~
+16908353 0 750 C
+1 0 100 1d20+0 2d5+0
+0 25000
+112 112 0
+85 60 75 95 40
+0 0 0 0 0
+0 0 0 0 1 1 1
+0 0 0 0 0 0 0 0
+> rand_prog 1~
+mpecho $I pulls out a small cloth and wipes the sweat from its forehead.
+~
+|
+#5009
+resting namek worker~
+A resting namek~
+An exhausted namek sits on the bed here during its work break.
+~
+~
+16777283 0 500 C
+1 0 100 1d20+0 2d5+0
+0 1250
+112 112 0
+14 14 14 20 14
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#5010
+Namek Village Elder~
+The Village Elder~
+The Village Elder is here lounging on a couch, teaching new pupils information from his journal.
+~
+~
+83887683&1 0 1000 C
+1 0 100 1d20+0 2d5+0
+0 100000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mea $n $I looks up from his book, noting your arrival.
+mer $n $I looks up from his book as $n enters.
+mpecho $I says, 'Nice to see you, $n, is there anything I can do for you today?'
+~
+|
+#5011
+namek child~
+a Namekian child~
+A young Namek splashes around in the shallow coast waters.
+~
+~
+16908353 0 1000 C
+1 0 100 1d20+0 2d5+0
+0 50
+112 112 0
+19 45 100 70 95
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#5012
+recoome~
+Recoome~
+The towering Recoome is making his way through the grasses, leaving destruction in his wake.
+~
+~
+131137 0 -1000 C
+1 0 45 4d20+50 4d5+15
+0 15000000000
+112 112 1
+100 100 100 95 55
+0 0 0 0 0
+0 0 0 0 1 1 3
+10 2 0 0 0 0 0 0
+> fight_prog 50~
+mpecho $I delivers a powerful combo!
+uppercut
+kick
+punch
+ener
+uppercut
+jab
+~
+> death_prog 100~
+mppurge belt
+~
+|
+#5013
+large crab~
+a large crab~
+A large crab is here, guarding its eggs from intruders.
+~
+~
+131171 0 -250 C
+1 0 65 1d20+0 4d5+5
+0 5000000
+112 112 0
+80 60 75 100 70
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 4096 0 0 0 0 0
+> greet_prog 100~
+mpecho $I rises slowly, spotting your intrusion..
+mpecho $I watches your movements carefully..
+mpecho $I senses danger for its young and attacks!
+~
+> fight_prog 15~
+mpecho $I thrusts its claw swiftly at $n!
+stun
+~
+> death_prog 1~
+mpoload 5022
+~
+|
+#5014
+fish school~
+a school of fish~
+A school of large fish is swimming around here.
+~
+~
+131139 0 50 C
+1 0 90 1d20+0 2d5+0
+0 25000
+112 112 0
+40 35 100 45 65
+0 0 0 0 0
+0 0 0 0 1 1 4
+0 0 0 0 0 0 0 0
+> fight_prog 25~
+mpmload 5014
+mpecho The fish summon another group of fish for aid!
+~
+|
+#5015
+Guldo~
+Guldo~
+Guldo is running around here, tormenting the island's inhabitants.
+~
+~
+131137 0 -1000 C
+1 0 85 1d20+0 2d5+0
+25000 10000000000
+112 112 1
+39 100 45 45 65
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 54 0 0 0 0 0
+> fight_prog 35~
+mpecho $I lanches a barrage of attacks!
+ener
+scatter 50
+ener
+mpecho $I takes a deep breath, looking exhausted.
+~
+|
+#5016
+ginyu wannabe~
+a Ginyu Force Wannabe~
+A Ginyu Force wannabe is here striking poses in an attempt to impress captain Ginyu.
+~
+~
+16908353 0 -750 C
+1 0 75 1d20+0 2d5+0
+0 25000000
+112 112 1
+60 45 60 60 95
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> rand_prog 8~
+mpecho The Ginyu Force Wannabe strikes a rather lame pose.
+~
+|
+#5017
+ginyu thug~
+a Ginyu Thug~
+A henchman hired by Captain Ginyu is securing the area here.
+~
+~
+131169 524288 -100 C
+1 0 70 1d20+5 2d5+2
+0 50000000
+112 112 0
+100 10 45 100 30
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 5~
+mpecho $I whips out his blackjack and whomps $n over the head!
+mpdamage $n 5
+~
+> fight_prog 10~
+mea $n $I slides on his brass knuckles and decks you across the face!
+mer $n $I slides on a pair of brass knuckles and smashes his fist on $n!
+mpdamage $n 10
+~
+|
+#5018
+Jeice~
+Jeice~
+Jeice is high in the air here, hurling a red ball of energy down upon an inhabitant of the island.
+~
+~
+196705 524288 -1000 C
+1 0 60 6d40+50 2d6+4
+0 25000000000
+112 112 1
+60 80 100 60 75
+0 0 0 0 0
+0 0 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> fight_prog 20~
+scat 35
+~
+> fight_prog 2~
+mpecho Jeice produces a bright red sphere in his hands, and hurls it at his opponent!
+mpdamage $n 30
+~
+|
+#5019
+Burter~
+Burter~
+Burter hovers just about the ground, watching Jeice.
+~
+~
+131169 524288 -1000 C
+1 0 60 2d20+50 3d8+2
+0 20000000000
+112 112 1
+80 60 100 90 50
+0 0 0 0 0
+0 0 0 0 1 1 2
+0 0 0 0 0 0 0 0
+> fight_prog 20~
+mea $n Burter elbows you in the gut!
+mer $n Burter sends and elbow into $n!
+mpdamage $n 8
+~
+> fight_prog 2~
+mpecho Burter pauses a few moments, and releases a powerful burst of energy!
+fina
+~
+|
+#5020
+Guru~
+Guru~
+A large Namek elder seems to be asleep in a giant throne here, coughing faintly.
+~
+~
+84017219 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#5021
+Training Dummy~
+a training dummy~
+A thick inflatable training dummy is hovering here, awaiting use from an aspiring warrior.
+~
+~
+150995011 0 0 C
+1 0 0 1d20+0 2d5+0
+0 999999999999999
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#5022
+Frieza~
+Frieza~
+Frieza hovers a few inches above the ground here, his arms crossed over his chest.
+~
+~
+131139 524416&16384 -1000 C
+1 0 30 5d30+50 2d12+2
+0 150000000000
+112 112 1
+100 100 100 100 100
+0 0 0 0 0
+5 5 0 0 1 1 4
+10 0 0 0 0 0 0 0
+> fight_prog 75~
+death
+~
+> fight_prog 50~
+dual
+~
+|
+#5097
+Yamma helper~
+Yamma's little helper~
+Yamma's little helper is floating around here.
+~
+~
+1 32768 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 100~
+mpforce kunzite say send me home
+~
+|
+#5098
+item guy~
+a newly created item guy~
+Some god abandoned a newly created item guy here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpoload 604
+mpoload 605
+mpoload 10014
+mpoload 5098
+~
+|
+#5099
+mob guy~
+a newly created mob guy~
+Some god abandoned a newly created mob guy here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+0 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+~
+|
+#0
+
+
+#OBJECTS
+#5000
+super duper scouter~
+The best scouter ever made~
+Someone left the world's best scouter here.~
+~
+65 0 131073
+0 0 7 0 0 0
+1 0 0 2147483647
+#5001
+droppings~
+A pile of bunny poop~
+There is a large pile of bunny droppings here, and it smells.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0 0
+> rand_prog 5~
+mpecho A foul stink rises from something nearby.
+~
+|
+#5002
+hat~
+Kalia's super duper hat~
+There is a really cool hat here~
+~
+9 8389889 17
+0 0 0 0 5000 5000
+1 0 0 0
+#5003
+sexy thong~
+A black silk thong~
+Someone left their thong here.. who coulda done that?~
+~
+9 1280 2049 1
+0 0 0 0 100 100
+1 0 0 0
+#5004
+ginyu armor~
+Captain Ginyu's Battle Armor~
+Captain Ginyu seems to have left his armor behind here.~
+~
+9 8704&32 1025
+0 0 0 0 1750 1750
+1 20000000 2000000 1000000000
+A
+3 5
+#5005
+dagger~
+A Runestone Dagger~
+A small yet powerful dagger lies here.~
+~
+5 8389891 8193
+12 0 0 11 0 0
+1 0 0 0
+A
+4 500
+A
+2 500
+A
+1 500
+A
+3 500
+#5006
+mobzor cookie~
+A delicious mobzor cookie~
+Mobz0r left his cookie here.. mmm does it look good!~
+~
+19 8192 1
+0 0 0 0 0 0
+1 10000000 1000000 0
+#5007
+mobzor cola~
+Refreshing mobzor cola~
+Mobzor left some cola behind here!~
+~
+17 8192 1
+2 2 15 0 0 0
+1 10000000 1000000 0
+#5008
+remote control~
+A small remote control~
+A small remote is left behind here.~
+~
+18 2 1
+1 0 0 0 0 0
+1 0 0 0
+#5009
+frieza scouter~
+Frieza's Custom Scouter~
+A custom-built scouter lies on the ground here.~
+~
+65 8704&32 131073
+0 0 7 0 0 0
+1 0 0 5000000
+#5010
+bottled water~
+A bottle of water~
+A bottle lies here on the ground.~
+~
+17 0 1
+1 1 0 0 0 0
+1 250 25 0
+#5011
+large water jug~
+A large water jug~
+A large piece of pottery has been left here.~
+~
+17 0 1
+5 5 0 0 0 0
+5 2000 200 0
+#5012
+teddy bear~
+A plush teddy bear~
+A cuddly teddy bear has been dropped on the ground here.~
+~
+9 0 16385
+0 0 0 0 0 0
+1 10000 1000 0
+#5013
+green shirt~
+A dark green T-shirt~
+A green shirt is folded neatly here.~
+~
+9 0 9
+0 0 0 0 25 25
+1 1500 150 0
+#5014
+fresh glass lemonade~
+A refreshing glass of lemonade~
+A glass with yellow liquid in it has been left here.~
+~
+17 0 1
+1 1 6 0 0 0
+1 500 50 0
+#5015
+green breadstick~
+A large green breadstick~
+A breadstick made on Namek has been tossed aside here.~
+~
+19 0 1
+0 0 0 0 0 0
+1 650 65 0
+#5016
+ankle bracelet~
+A sterling silver ankle bracelet~
+A flexible ring of silver shines on the ground.~
+~
+9 0 65
+0 0 0 0 5 5
+1 15000 1500 0
+#5017
+cloth turban~
+A cloth turban~
+A pile of cloth is lying here.~
+~
+9 0 17
+0 0 0 0 25 25
+1 100000 10000 0
+#5018
+bed~
+a bed~
+A large bunk bed is neatly kept in the corner here.~
+~
+12 0 0
+0 0 0 0 0 0
+750 0 0 0
+#5019
+well~
+a well~
+A very deep well here provides water for the Namekian village.~
+~
+25 0 0
+100 100 0 0 0 0
+500 0 0 0
+#5020
+pitchfork~
+a rusted pitchfork~
+A dull and rusty pitchfork is lying here.~
+~
+59 0&16 16385
+0 0 0 0 0 0
+15 500 50 0
+#5021
+crab eggs~
+crab eggs~
+Hundreds of small round balls lie on the floor here, lighting up the area.~
+~
+1 1 0
+0 0 -1 0 0 0
+1 0 0 0
+> rand_prog 25~
+mpecho The eggs all around the room sparkle, shining a beautiful display of colors.
+~
+|
+#5022
+egg~
+a small crab egg~
+A small glowing ball is on the floor here, radiating a brilliant light.~
+~
+1 1&16 16385
+0 0 -1 0 0 0
+1 0 0 0
+#5023
+antique watch~
+A small antique watch~
+A small golden watch stands out on the ground here.~
+~
+8 8195&16 4097
+0 0 0 0 0 0
+1 2500000 250000 0
+> rand_prog 1~
+mea $n You hear the sound of your watch ticking.
+mer $n You hear a faint ticking sound nearby.
+~
+|
+#5024
+Thick Steel Belt~
+a thick steel belt~
+A large coil of steel is lying here.~
+~
+9 1075833344 2049
+0 0 0 0 0 0
+400 0 0 0
+A
+1 120
+A
+2 35
+#5025
+A heavy lead bracer~
+a heavy lead bracer~
+A hollow cylindrical chunk of lead is on the ground here.~
+~
+9 0 4097
+0 0 0 0 250 250
+200 25000000 2500000 0
+A
+1 10
+A
+2 -20
+#0
+
+
+#ROOMS
+#5000
+A Large Crater~
+The ground here has been pounded in by the arrival and departure of the many
+transport vessels to Namek.  A large dust cloud still lingers in the air from
+the last landing.  The concrete slab used as a landing pad is cracked and worn,
+appearing as if it won't stand much longer.  Against the north end of the crater
+leans a sturdy wooden ladder serving as the only means of getting out of this
+hole in the ground.
+~
+0 0 1
+D4
+~
+~
+0 -1 5001
+S
+#5001
+Approaching a Village~
+The grass here is stamped down, forming a path leading north of the landing
+pad.  Along the sides of the path the ground is elevated, creating a 
+beautiful valley for travelers to move on.  Wonderful smelling Namekian flowers
+line the path on both the left and right, providing a nice atmosphere for
+visitors to the planet.  To the south the ground is heavily indented, forming
+a crater in which the only landing pad on Namek is located, and far to the
+north you think you can spot some sort of village.
+~
+0 0 1
+D0
+~
+~
+0 -1 5002
+D5
+~
+~
+0 -1 5000
+S
+#5002
+Entering a Village~
+As you move closer to the village, the noises and odors of the settlement
+surround you.  Looking around, a race of friendly green creatures roam
+freely about here, most waving at you as they pass.  They range from all
+different shapes and sizes and ages and shades of green.  Alongside the
+main path into and out of the village stands a young namek welcoming and
+wishing farewells to tourists.  A dirt path leads south back to the ship's
+landing pad, and north takes you into the heart of the village.
+~
+0 0 1
+D0
+~
+~
+0 -1 5003
+D2
+~
+~
+0 -1 5001
+S
+#5003
+The Village Square~
+Here you are in the heart of the Namekian village.  Right in the center of
+the area is a large well, serving as a freshwater storage for the residents.
+Small houses and huts line the side of the road, and local Nameks walk back
+and forth, most them either hard at work or on their break, resting under
+the large puffy-topped trees which seem to be popular on this planet.  Paths
+lead in every cardinal direction from here, the north path leading to the 
+elder's hut and the ocean, the west heading to the shops, the east a long
+trail, and to the south the exit to the village leading to the landing pad.
+~
+0 0 1
+D0
+~
+~
+0 -1 5015
+D1
+~
+~
+0 -1 5016
+D2
+~
+~
+0 -1 5002
+D3
+~
+~
+0 -1 5004
+S
+#5004
+A Path between two Huts~
+You are on a grassy path leading east and west between the village square
+and a small field where the village grows a variety of plants and crops.
+On either north or south side of the path lies a large hut, both with
+large open doors.  The northern hut only has a single word above the door,
+"WATER", while the southern hut is a bit more decorated, having an advertisement
+board outside the entrance.  The writing on the board however is smudged and 
+illegible, so the only way to find out the wares would be to go inside.
+~
+0 0 1
+D0
+~
+~
+0 -1 5005
+D1
+~
+~
+0 -1 5003
+D2
+~
+~
+0 -1 5006
+D3
+~
+~
+0 -1 5007
+S
+#5005
+The Namek Grocery~
+You step into the hut to see.. nothing but bottled water stocked on the shelves!
+Yes, shelves run along every wall of the hut, at all different heights, holding
+bottles and jugs and mugs of all different shapes and sizes, all sealed and
+filled with pure fresh water, waiting to be bought.  Just looking around
+this shop makes you thirsty, which the shopkeeper would be more than happy
+to help you with.
+~
+0 8 0
+D2
+~
+~
+0 -1 5004
+S
+#5006
+Tourist Gift Shop~
+This house seems a lot smaller from the inside.  All kinds of Namekian
+branded products are stocking the shelves and littering the floor of this
+room, making it appear as if some sort of weather disaster occured here.
+The products themselves seem to be made for those of different races.. charms,
+trinkets, toys, and consumable goods that non-residents to planet Namek may
+find unique.
+~
+0 8 0
+D0
+~
+~
+0 -1 5004
+S
+#5007
+Edge of a Small Field~
+Passing through an open rusted gate, you find yourself in a field where
+many nameks are hard at work growing all sorts of plants and produce.
+A short wire fence runs around the perimeter of the field, to keep out
+the many types of small animals that can be found on this planet.  There is
+a small shed you can spot far to the south, and the field spans out in
+several directions.
+~
+0 0 1
+D0
+~
+~
+0 -1 5008
+D1
+~
+~
+0 -1 5004
+D2
+~
+~
+0 -1 5009
+D3
+~
+~
+0 -1 5011
+D7
+~
+~
+0 -1 5010
+D9
+~
+~
+0 -1 5012
+S
+#5008
+In a Small Field~
+You are within a small field closed off by a wire fencing.  The persistant
+Namek sun beats down on you from above, causing a bead of sweat to roll down
+your forehead.  Nameks walk around here plowing the field, planting seeds,
+harvesting some of the plants, and take care of basically everything else
+here.  To the north, past the fence is a large mountain range, and the field
+extends to the south and westly directions.
+~
+0 0 1
+D2
+~
+~
+0 -1 5007
+D3
+~
+~
+0 -1 5010
+D9
+~
+~
+0 -1 5011
+S
+#5009
+In a Small Field~
+In this corner of the field, the larger plants are grown.  Some of the
+flowers are growing about 6 feet tall, and the area is covered with bushes
+and shrubberies of all sorts.  South of here lies the resting shack, but
+the door to get inside isn't here.. instead the wall is covered with
+beautiful vines of all different colors, each baring a different variety
+of wonderful smelling fruits.. too bad for the Nameks they don't eat.
+~
+0 0 1
+D0
+~
+~
+0 -1 5007
+D3
+~
+~
+0 -1 5012
+D7
+~
+~
+0 -1 5011
+S
+#5010
+In a Small Field~
+You are within a small field closed off by a wire fencing.  The persistant
+Namek sun beats down on your from above, causing a bead of sweat to roll down
+your forehead.  Nameks walk around here plowing the field, planting seeds,
+harvesting some of the plants, and take care of basically everything else
+here.  To the north, past the fence is a large mountain range, and the field
+extends to the south and eastly directions.
+~
+0 0 1
+D1
+~
+~
+0 -1 5008
+D2
+~
+~
+0 -1 5011
+D8
+~
+~
+0 -1 5007
+S
+#5011
+In a Small Field~
+The field extends in every direction except to the west from here, which
+the long wire fence runs along.  You seem to be almost directly in the 
+middle of the field, giving you a good sight of basically everything that
+is going on, such as what the field workers are doing.  To the east is the 
+gate back to the village, and all other directions lead to more of the field.
+~
+0 0 1
+D0
+~
+~
+0 -1 5010
+D1
+~
+~
+0 -1 5007
+D2
+~
+~
+0 -1 5012
+D6
+~
+~
+0 -1 5008
+D8
+~
+~
+0 -1 5009
+S
+#5012
+In a Small Field~
+You are in the southern end of the field.  Most of the traffic through
+here is Nameks going to the rest shack to the south, either on their breaks
+or going to fetch some farm tools to do their jobs.  Not much is being grown
+in this particular corner of the field, and some of the few small plants that
+are being grown here are a bit trampled from walks to the shed, which the 
+door to lies directly south from here.
+~
+0 0 1
+D0
+~
+~
+0 -1 5011
+D1
+~
+~
+0 -1 5009
+D2
+~
+~
+0 -1 5013
+D6
+~
+~
+0 -1 5007
+S
+#5013
+Within a Small Shack~
+You are inside a small storage shed used by the Nameks for field work.
+Gardening tools of all sorts align the walls, shovels, pitchforks, hoes,
+rakes, and a variety of other namekian inventions of all shapes and sizes.
+A large dull bulb hanging from the ceiling shines light on the room, although
+it isn't needed because enough light shines through the cracks in the walls.
+To the east is a small recently added-on room used for exhausted workers to
+take a break, and to the north is the exit back into the field.
+~
+0 8 0
+D0
+~
+~
+0 -1 5012
+D1
+~
+~
+0 -1 5014
+S
+#5014
+Worker's Quarters~
+This room has just recently been constructed.  The wooden walls aren't
+as decayed as the main room in the shack, and the room in general is in
+much better shape.  A few bunk beds are lined up against the southern wall,
+some occupied by overworked Nameks.  The lighting of the room is poor, but  
+good enough to see.  A table sits in the middle of the room with a deck of
+cards, for workers on their breaks.  The only exit is back west into the
+main room of the shack.
+~
+0 536871944 0
+D3
+~
+~
+0 -1 5013
+S
+#5015
+Leaving the Village~
+You are at the northern gates of the Namekian Village.  A watchman standing
+nearby warns you that there has been strange sightings nearby, and not to
+wander too far off.  To the north is a beach, where many nameks go to in
+their free time to find relaxation or get a tan.. provided that it is even
+possible for a namek to get a tan.  Along the western side of the path lies
+a solitary hut, bigger than the rest in the village, presumable being the
+residence of the village's eldest citizen.
+~
+0 0 1
+D0
+~
+~
+0 -1 5040
+D2
+~
+~
+0 -1 5003
+D7
+~
+~
+0 -1 5036
+S
+#5016
+A Winding Trail~
+You are along a recently-cut path between tall grasses.  The trail however
+winds in front of you, leaving you unable to see exactly where the path
+leads to. Fortunately there is only one path, or else this place would be a
+maze, as the grass on both sides is at least seven feet tall, and too thick
+and heavy to walk through.  From here you can either head west back to the
+Village Square, or southeast farther into the path.
+~
+0 0 1
+D3
+~
+~
+0 -1 5003
+D8
+~
+~
+0 -1 5017
+> rand_prog 10~
+mpecho Bugs scurry along the path between the grasses.
+~
+|
+S
+#5017
+A Winding Trail~
+Moving along the trail, some sort of heavy tracks are in the ground..
+none of the nameks you have seen are this big.  The grasses around here
+are knocked down and some is even uprooted from the ground!  Surely
+it is either a namekian maintainece crew here.. you'd hate to think of it
+being anything else.  Nearby you hear the grass shaking.. and see it moving..
+Maybe now would be a good time to get your wits about you.
+~
+0 2097152&8 1
+D2
+~
+~
+0 -1 5018
+D7
+~
+~
+0 -1 5016
+S
+#5018
+A Winding Trail~
+The ground here is slightly elevated.  Through a gap in the grasses you
+can spot the crater in which the ships land in, possibly even get to it 
+from here.  The grasses here are shorter than the rest of the trail, and
+to the southeast they seem to pretty much disappear altogether, and from 
+that direction you can hear the sounds of the ocean.
+~
+0 0 1
+D0
+~
+~
+0 -1 5017
+D8
+~
+~
+0 -1 5019
+D9
+~
+~
+0 -1 5000
+S
+#5019
+End of the Trail~
+Here the trail ends at the ocean shore.  The tall grass lining the sides
+of the path has been replaced with weeds and cattails.  The ocean water
+in front of you is calm, and stretches out as far as you can see.  Old 
+seashells lie in the sand and crabs scurry about, but there doesn't 
+appear to be any sort of humanoid tracks around here.  You can either head
+back to the trail from here, or head towards the ocean.
+~
+0 0 1
+D1
+~
+~
+0 -1 5023
+D7
+~
+~
+0 -1 5018
+> rand_prog 10~
+mpecho You catch a strong whiff of salt water.
+~
+|
+S
+#5020
+Flying above the Ocean~
+The movement of the water begins to pick up here.  Small waves move below
+you, and the clear water gives you a good view of the aquatic life below.
+A towering rock wall builds up along the west side of the coast, preventing
+any movement in that direction.  You can continue to move over the ocean to
+the north, east, south, or the northwest.
+~
+0 0 9
+D0
+~
+~
+0 -1 5037
+D1
+~
+~
+0 -1 5025
+D2
+~
+~
+0 -1 5021
+D7
+~
+~
+0 -1 5038
+S
+#5021
+Flying above the Ocean~
+The water here is rather deep.  The dark blue surface is completely calm,
+not a wave can be seen.  The serene beauty of it makes you feel at ease
+as you fly slowly, making sure not to disturb the perfection below you.
+A large cliff wall begins to rise along the west coast, making that way
+not an option.  To the east, the water pulls at you with a strong force.
+The shallow waters to the south lead back to the shore, and the ocean 
+extends to the north.
+~
+0 0 9
+D0
+~
+~
+0 -1 5020
+D1
+~
+~
+0 -1 5026
+D2
+~
+~
+0 -1 5023
+S
+#5022
+Flying above the Ocean~
+~
+0 4 9
+S
+#5023
+Shallow Waters~
+You are floating just above the surface of the water.  You can see the
+ground about two feet or so below, but the bottom of the ocean soon drops 
+off, and the current picks up, making this beach a not-so-great place to
+go swimming.  To the east, the water seems a little darker, covered in 
+some sort of white color.. you can't make it out from here.  To the north
+and south the waters are calm, and west takes you back onto land.
+~
+0 0 9
+D0
+~
+~
+0 -1 5021
+D1
+~
+~
+0 -1 5027
+D2
+~
+~
+0 -1 5024
+D3
+~
+~
+0 -1 5019
+S
+#5024
+Flying above the Ocean~
+The water here is rather deep.  The dark blue surface is completely calm,
+not a wave can be seen.  The serene beauty of it makes you feel at ease,
+as you fly slowly, making sure not to disturb the perfection below you.
+To the north, the water is much shallower, and to the east leads further
+out into the ocean.
+~
+0 0 9
+D0
+~
+~
+0 -1 5023
+D1
+~
+~
+0 -1 5028
+S
+#5025
+Flying above the Ocean~
+The movement of the water begins to pick up here.  Small waves move below
+you, every now and again you can spot a fish jumping out of the water.
+A solid wall of rock wraps around from far to the east, stretching around
+to the north.  The ocean spreads out in many directions from here, leading
+to the west, east, south, and northwest.
+~
+0 0 9
+D1
+~
+~
+0 -1 5029
+D2
+~
+~
+0 -1 5026
+D3
+~
+~
+0 -1 5020
+D7
+~
+~
+0 -1 5037
+S
+#5026
+Above Foamy Water~
+The water here is so coated in the thick white bubbles than you can't 
+see through it at all.   You can feel the coldness of the water reaching
+up at you.. stingingly cold, almost numbing.  You can also feel some sort
+of strong force pulling you downwards, toward the ocean surface.  The only
+way to find the cause of all this would be to plummet straight down, into
+the water below.
+~
+0 0 9
+D0
+~
+~
+0 -1 5025
+D1
+~
+~
+0 -1 5030
+D2
+~
+~
+0 -1 5027
+D3
+~
+~
+0 -1 5021
+D5
+~
+~
+0 -1 5033
+S
+#5027
+Above Foamy Water~
+The water here is a very dark shade of blue, and a thick covering of foam
+coats the entire surface.  You can sense the bottom of the ocean dropping
+even further to the north.  You can feel the cold breeze as it passes over
+the nearly freezing waters below.  The ocean is more calm where it extends
+to the east, west and south, and to the north the waters grow colder.
+~
+0 0 9
+D0
+~
+~
+0 -1 5026
+D1
+~
+~
+0 -1 5031
+D2
+~
+~
+0 -1 5028
+D3
+~
+~
+0 -1 5023
+S
+#5028
+Flying above the Ocean~
+The water here is rather deep.  The dark blue surface is completely calm,
+not a wave can be seen.  The serene beauty of it makes you feel at ease
+as you fly slowly, making sure not to disturb the perfection below you.
+The water northward is a much darker color, with some sort of whiteness
+floating on top.  The ocean also expands to the east and west.
+~
+0 0 9
+D0
+~
+~
+0 -1 5027
+D1
+~
+~
+0 -1 5032
+D3
+~
+~
+0 -1 5024
+S
+#5029
+Flying above the Ocean~
+The water here is actually moving, unlike the completely still waters to
+the southwest, although the waves are small and far between.  This area
+of the ocean has a generally more active atmosphere.. birds fly above you,
+fish are visibly swimming in small schools below you, and you can feel
+warmth from the water underneath.  The rocky wall to the east extends around
+to the north, blocking both those directions, and the ocean stretches to
+the south and west.
+~
+0 0 9
+D2
+~
+~
+0 -1 5030
+D3
+~
+~
+0 -1 5025
+S
+#5030
+Flying above the Ocean~
+The water here is rather deep.  The dark blue surface is completely calm,
+not a wave can be seen.  The serene beauty of it makes you feel at ease
+as you fly slowly, making sure not to disturb the perfection below you.
+The waters to the west feel colder, and you can feel the bottom of the
+ocean drop further.  The ocean also extends to the north and south.
+~
+0 0 9
+D0
+~
+~
+0 -1 5029
+D2
+~
+~
+0 -1 5031
+D3
+~
+~
+0 -1 5026
+S
+#5031
+Flying above the Ocean~
+The water here is rather deep.  The dark blue surface is completely calm,
+not a wave can be seen.  The serene beauty of it makes you feel at ease
+as you fly slowly, making sure not to disturb the perfection below you.
+Water laps against the impassible cliff wall to the east, and the calm blue
+water stretches north and south.  The water to the west however is darker,
+with a white foam floating on it.
+~
+0 0 9
+D0
+~
+~
+0 -1 5030
+D2
+~
+~
+0 -1 5032
+D3
+~
+~
+0 -1 5027
+S
+#5032
+Flying above the Ocean~
+The water here is rather deep.  The dark blue surface is completely calm,
+not a wave can be seen.  The serene beauty of it makes you feel at ease
+as you fly slowly, making sure not to disturb the perfection below you.
+To the east, a high cliff wall rises up from the water, making that direction
+impassible, and the ocean reaches further to the west and north.
+~
+0 0 9
+D0
+~
+~
+0 -1 5031
+D2
+~
+~
+0 -1 5071
+D3
+~
+~
+0 -1 5028
+S
+#5033
+Swimming above a Whirlpool~
+You are a few feet below the surface of the water.  Directly above a 
+thick covering of foam blocks your view, and heavily limits the light
+that comes down underwater.  Directly below you the water is moving 
+rapidly in a circular motion, you can feel it pulling on you, trying to
+draw you in.  From here you can either get back out of the water, or
+challenge the whirlpool.
+~
+0 2097152 8
+D4
+~
+~
+0 -1 5026
+D5
+~
+~
+0 -1 5034
+S
+#5034
+Deep Underwater~
+You are directly below the whirlpool.  The light down this far is even
+dimmer, you can't even see your outstretched arm without some sort of
+light source.  However, all over the ground here lies hundreds upon
+hundreds of small glowing balls.. what could they be?  Unfortunately,
+they are firmly stuck into the ground.  A trail of them leads to the
+southwest, into a small cave.
+~
+0 1 8
+D4
+~
+~
+0 -1 5033
+D9
+~
+~
+0 -1 5035
+S
+#5035
+A small underwater Cave~
+More of the shiny glowing balls are along the floor here.  Small crabs
+are crawling all around the cave.. along the walls, on the ceiling, and
+basically everywhere else.  As you look around, you notice small fragments
+of the balls lying around, littering the cave with small shards.  You don't
+have much time to inspect, however, as the very floor below you seems to
+move.
+~
+0 2097152&8 8
+D6
+~
+~
+0 -1 5034
+S
+#5036
+The Village Elder's House~
+You are inside a large fancy two room house.. well, to someone living on
+earth it may not be a large place, but to a Namek, it's a mansion.  The
+room you entered is a smaller sort of entrance hall, but the main room
+is where most of the action here takes place.  Bookshelves align the
+walls, providing all sorts of information that any Namek would need.  In
+the center of the room is a large table, surrounded by a dozen or so chairs,
+used for village council meetings.  A twin sized bed rests against the
+far corner.  The only place to go from here is back out to the village gates.
+~
+0 536871944 0
+D8
+~
+~
+0 -1 5015
+S
+#5037
+Flying above a River~
+The water here is moving quite rapidly.  Mid-sized waves roll over the
+surface of the ocean, sending some water up high enough to splash you.
+The rocky wall to the east stretches around to the north, and far to the
+west you can see another wall forming around that side of the ocean,
+creating a closed-in river up ahead to the west.  To the southeast and
+south is towards the ocean.
+~
+0 0 9
+D2
+~
+~
+0 -1 5020
+D3
+~
+~
+0 -1 5038
+D8
+~
+~
+0 -1 5025
+S
+#5038
+A River Valley~
+The water here is churning rather rapidly, as the waves below become
+rather monsterous in size.  Water travel through here would only be for
+the really daring and adventurous risky type, or someone really stupid.
+The rock walls close in from the east and west, becoming even narrower
+down the river northward.  Fortunately there isn't much risk of flying
+through, except getting tired and plummeting into the water below.  The
+calmer ocean leads to the southeast and east, and the river stretches on
+to the north.
+~
+0 0 9
+D0
+~
+~
+0 -1 5039
+D1
+~
+~
+0 -1 5037
+D8
+~
+~
+0 -1 5020
+S
+#5039
+A small strip of Sand~
+The beach here is rather small, comparatively to the rest of the island,
+anyway.  Here you can see the source of the turbulence of the water in 
+the river valley to the south.. some force is shoving the water southward
+against its natural flow, creating powerful large waves.  To the north,
+you can sense some sort of power, and it doesn't seem friendly.. perhaps
+Namek has an unwanted visitor?
+~
+0 0 1
+D0
+~
+~
+0 -1 5062
+D2
+~
+~
+0 -1 5038
+D7
+~
+~
+0 -1 5059
+S
+#5040
+The Village's Beach~
+You are at a rather crowded beach just north of the Namekian village.
+Small Nameks splash in the salt waters, and older citizens lounge around
+on beach chairs, holding conversation and enjoying some rays from the ever
+present Namekian suns.  The water is a beautiful shade of light blue, and
+the temperature is just perfect for swimming, not too cold nor too warm.
+To the south heads towards the village, and the ocean begins to the north
+and northwest directions.
+~
+0 0 1
+D0
+~
+~
+0 -1 5042
+D2
+~
+~
+0 -1 5015
+D7
+~
+~
+0 -1 5041
+S
+#5041
+Hovering above Powerful Waves~
+Enormous waves form at the edge of an island spotted to the west, and
+are moving east at very high speeds.  Fortunately for the village to the
+southeast, the waves are merely passing around that direction.  The waves,
+however seem to die off not too far away.. something which isn't exactly
+natural.  From here you can move ashore by going either west or northwest,
+get to the Namek village's beach to the southeast, or combat some more
+large waves to the north.
+~
+0 0 9
+D0
+~
+~
+0 -1 5048
+D3
+~
+~
+0 -1 5050
+D7
+~
+~
+0 -1 5049
+D8
+~
+~
+0 -1 5040
+S
+#5042
+Soaring above Deep Waters~
+You are flying directly above the crystal clear waters of Namek's largest
+ocean.  Looking down, your vision can penetrate very far into the depths
+of the water, but you can't manage to see the bottom, and are not able
+to judge how deep the water might be.  The current however is barely even
+existant, making the ocean safer than it seems.  To the south is a large
+beach, and the ocean extends to the north and east.
+~
+0 0 9
+D0
+~
+~
+0 -1 5043
+D1
+~
+~
+0 -1 5058
+D2
+~
+~
+0 -1 5040
+S
+#5043
+Soaring above Deep Waters~
+The open sky stretches out in every direction from here, creating a very
+beautiful background as you fly over the ocean.  Schools of fish swim
+underneath the waves below you, and birds share the sky with you.  All
+in all Namek is a wonderful place to behold.. well, for the peaceful type,
+anyway.  As far as you can see to the north, south, and west, there is
+nothing but the ocean and open air.
+~
+0 0 9
+D0
+~
+~
+0 -1 5044
+D2
+~
+~
+0 -1 5042
+D3
+~
+~
+0 -1 5048
+S
+#5044
+Soaring above Deep Waters~
+Not much sets the sections of the large Namek ocean apart from each other..
+they all contain the same deep clear blue waters, colorful schools of fish,
+selections of overhead birds.. generally they all have the same beautiful
+atmosphere.  To either the eastern or western directions, you can make out
+islands, probably home to more residents of the planet.  From here you can
+follow the ocean to the north or south.
+~
+0 0 9
+D0
+~
+~
+0 -1 5045
+D2
+~
+~
+0 -1 5043
+S
+#5045
+Nearing a Large Island~
+Far in the northern distance, you can spot a large island.  This island,
+however, has something different than the rest you've seen so far.. at
+least you THINK something is different, as you're a bit too far away to
+tell exactly what it is.. something mechanical?  The only way to find
+out would be to move in closer by moving north.. or if you'd rather not 
+find out, you can always head south towards the ocean.
+~
+0 0 9
+D0
+~
+~
+0 -1 5046
+D2
+~
+~
+0 -1 5044
+D8
+~
+~
+0 -1 5057
+S
+#5046
+Along a Rocky Shore~
+You are on the shore of a large island.  The sand here is littered with
+rocks, trash, and assorted scrap metal that was either discarded.. or
+something that's falling apart.  Far in the distance you can still spot
+a large dome shape to the north, as well as hear some sort of commotion
+going on in the same direction.  It sounds something like a commander
+yelling at his men.  The only other way to go is south, towards the ocean.
+~
+0 0 1
+D0
+~
+~
+0 -1 5047
+D2
+~
+~
+0 -1 5045
+S
+#5047
+Along the edge of a Large Island~
+Nearing the heart of the island, the dome shape becomes more visible..
+looks like some sort of craft or mechanical device, far beyond all the
+technology you've seen used by the nameks on this planet.  However, your
+attention is diverted by a rather large man striking ridiculous poses,
+with all sorts of little goons trying to imitate him, most of which are
+criticized heavily by the captain.  Most of them don't even seem to notice
+you, the rest look ready to pounce you.
+~
+0 2097152&8 1
+D2
+~
+~
+0 -1 5046
+S
+#5048
+Hovering above Powerful Waves~
+You are flying over some humongous tidal waves.. but for some reason, 
+they're heading out towards the ocean, away from the island you can spot 
+to the west.  This movement of water isn't natural, something nearby must
+be the cause of it.  Far to the west, in the direction of the island, you
+think you can feel something, but it's hard to tell at such a distance.
+To the east is the ocean, to the west is the island, and to the south
+the waves continue.
+~
+0 0 9
+D1
+~
+~
+0 -1 5043
+D2
+~
+~
+0 -1 5041
+D3
+~
+~
+0 -1 5049
+S
+#5049
+A Steep Slope~
+The ground here is elevated, giving you a view of this island.  The grass
+on the hilltops is all flat, pushed against the ground by fierce winds
+coming from somewhere below, although taller hills block that direction.
+From here you can see the water as it is being pushed away from the island,
+creating tidal waves out in the distance to the east and southeast.  To 
+the south is part of the island's beach, and to the west, the slops increase
+rapidly in altitude.
+~
+0 0 1
+D1
+~
+~
+0 -1 5048
+D2
+~
+~
+0 -1 5050
+D3
+~
+~
+0 -1 5052
+D8
+~
+~
+0 -1 5041
+S
+#5050
+Along a Broad Beach~
+The beach here is much larger than normal, due to the water being pushed
+out much further than it would normally be in low tide.  Something on this
+island must be rather powerful if it has enough force to push an entire 
+coast.  Further to the west you can feel some sort of strong power, more
+than likely the source of the ocean problems.  To the north heads uphill,
+the east heads back out to the waves, and southwest is a small field.
+~
+0 0 1
+D0
+~
+~
+0 -1 5049
+D1
+~
+~
+0 -1 5041
+D9
+~
+~
+0 -1 5051
+S
+#5051
+A Barren Field~
+Something completely unnatural has occured here.  The obvious obliteration
+of the region's wildlife is displayed with numerous signs about the area.
+Slain animals litter the ground with their corpses, shreds of plants cover
+the exposed dirt, and the trees have all fallen, spreading their bark and
+splinters all around the surroundings.  This scene however is only a small
+portion of the total disaster, which is somewhat visible to the north.
+~
+0 0 1
+D0
+~
+~
+0 -1 5053
+D6
+~
+~
+0 -1 5050
+S
+#5052
+A Cliff's Edge~
+You are on the peak of the cliff on this island.  Over the cliff edge
+to the south, you can see a bloody mess.. but you can't exactly spot what
+the cause of it might be.  Due to the steep edge's sudden drop, going that
+way would be a one way process.  To the north, the cliff isn't nearly as
+steep as it drops over Namek's ocean, from here you can spot a small yet
+very tall island.
+~
+0 0 1
+D0
+~
+~
+0 -1 5054
+D1
+~
+~
+0 -1 5049
+D2
+~
+~
+0 -1 5053
+S
+#5053
+Carnage~
+This place is a mess of blood and gore.  The once residents of this island
+have been completely annihilated right here.. all you can make out is 
+some tattered remains.  Throughout the area you can spot two different
+sets of bloody tracks all around, leaving nothing but destruction all
+around.  The power of whatever caused this mess must be the force pushing
+the ocean back.. an obviously not-so-friendly force.  The only escape is 
+to the south.
+~
+0 2097152&8 1
+D2
+~
+~
+0 -1 5051
+S
+#5054
+Over the Cliff's Edge~
+You are just below the cliff wall of the island to the south.  Waterfalls
+flow on both sides, creating a beautiful scene as the water flows north, 
+towards an island previously sighted far in the distance.  A path between
+the waterfalls leads to the northwest, where the suns seem to be shining
+down especially brightly.. or maybe that's just the reflection on the water.
+To the south is over the low cliff wall, up to some high hills.
+~
+0 0 9
+D2
+~
+~
+0 -1 5052
+D7
+~
+~
+0 -1 5055
+S
+#5055
+Approaching a tall Island~
+You are floating just above a strip of shallow water, being probably not
+even a foot deep.  The strip heads towards an island which is rather large
+height-wise, but small around in terms of circumference.  Looking up, you
+can spot what appears to be some structure on the top of the island.. but
+it is a bit difficult to tell from this distance, and with the side of the
+island blocking the view.  To the southeast is a larger island more on the
+main beaten path.
+~
+0 0 9
+D0
+~
+~
+0 -1 5056
+D8
+~
+~
+0 -1 5054
+S
+#5056
+Base of the Island~
+You are on a small ledge on the island, about three feet from the water's
+surface.  From here you can barely even see halfway up the island, as
+trying to look up that far puts a lot of strain on your neck, not to mention
+that the sun is beaming nearly straight down upon you.  The ledge you are
+standing on is the only stepping stone anywhere near your current altitude..
+the only way up to the next platform would be to fly.
+~
+0 0 1
+D2
+~
+~
+0 -1 5055
+D4
+~
+~
+0 -1 5064
+S
+#5057
+Between Islands~
+You are closing in on a small island to your east, and far northwest you
+can see another, much larger island, although you can't make out much 
+more than the shore.  The island to the east seems rather uninhabited by
+civilized culture, all you can spot are a few small creatures running
+about.  The water grows continually shallower towards the eastern beach,
+and deeper to the northwest.  You can also move around the small island
+by going south.
+~
+0 0 9
+D1
+~
+~
+0 -1 5060
+D2
+~
+~
+0 -1 5058
+D7
+~
+~
+0 -1 5045
+S
+#5058
+Near a Small Island~
+You are nearing a small island that you can see to the east.  The water
+here is growing increasingly shallower in that direction, as you can see
+the ocean floor not too far below the water's surface.  The island to the
+east seems rather empty of life except for a little bit of small wildlife
+romping around.  To the east is the shore, to the north moves along the 
+beach, and to the west the ocean grows deeper.
+~
+0 0 1
+D0
+~
+~
+0 -1 5057
+D1
+~
+~
+0 -1 5059
+D3
+~
+~
+0 -1 5042
+S
+#5059
+Along a Sandy Beach~
+You are on a thick strip of beach on a small island.  The especially
+grainy sand moves up rather far inland, making home to hundreds of small
+creatures, such as crustaceans and starfish.. as well as the dozens of
+discarded shells you could collect, if you had time.  A rather large rock
+formation blocks any northern movement along the shore, but you can move
+around the island to the southeast, or head towards the ocean to the west.
+~
+0 0 1
+D3
+~
+~
+0 -1 5058
+D8
+~
+~
+0 -1 5039
+S
+#5060
+Along a Sandy Beach~
+You are on a thick strip of beach on a small island.  The especially
+grainy sand moves up rather far inland, making home to hundreds of small
+creatures, such as crustaceans and starfish.. as well as the dozens of 
+discarded shells you could collect, if you had the time to.  A huge rock
+formation springs up to the south, blocking any passage that way, leaving
+you the only options of moving inland to the southeast, or to the west,
+towards the ocean.
+~
+0 0 1
+D3
+~
+~
+0 -1 5057
+D8
+~
+~
+0 -1 5061
+S
+#5061
+Edge of a Crater~
+You are on the northern end of the small island.  Most of the grass in
+this particular region is either dead or dying, replaced with quick
+sprouting weeds.  To the east is a large crater, which tracks lead out
+from, heading to the south from here, meaning something must have landed
+inside that crater.  To the south is the center of the island, and to the
+northwest is the beach, and heading out towards the ocean.
+~
+0 2097152&8 1
+D1
+~
+~
+0 -1 5070
+D2
+~
+~
+0 -1 5062
+D7
+~
+~
+0 -1 5060
+S
+#5062
+On a small Island~
+You are roughly in the middle of the little island.  Few animals are about,
+and few trees grow around here, most of the island is covered in short
+grasses and hills.  Most of the wildlife that is here, however, is oddly
+still, worried, and watching the surroundings.  Apparently something is
+wrong with this place.. you can spot small tracks leading in from the north,
+but these tracks aren't made from anything you've seen so far.  Nearby you
+can sense some sort of power..
+~
+0 0 1
+D0
+~
+~
+0 -1 5061
+D2
+~
+~
+0 -1 5039
+S
+#5063
+Inside a Ginyu pod~
+With the door to the craft open, there's enough light to actually see
+what's inside of this ship.  The pod seems rather small and cramped, only
+one person could have possibly fit inside of it during a flight.  Opposite
+of the pod's door is a large seat with consoles and controls all around it,
+most likely used to fly the ship, but given the pod's current condition it
+probably won't be flying any time soon.  The only way out of the pod is to
+climb out the door.
+~
+0 2057 0
+D4
+~
+~
+3 5008 5070
+S
+#5064
+About Halfway up the Island~
+You are on a small platform a little below the halfway altitude mark of
+the island.  Looking down, you can see just how steep the side of the
+island really is.. there's no way anyone could possibly get this high
+without flight, and the landing here is far too small to accomodate
+any sort of craft.  The side of the island blocks any good view except
+out to the ocean, you can barely even see the little ledge below you.
+The only way to continue up the island is a narrow ledge to the east.
+~
+0 0 1
+D1
+~
+~
+0 -1 5065
+D5
+~
+~
+0 -1 5056
+S
+#5065
+Below a Small Building~
+The ledge here is very narrow.. a simple misstep would send you crashing
+down into the water below, which would be an unfortunate accident, since 
+the water is a bit shallow.  The view here isn't too bad, you can see a 
+small bit of another island far to the south, and looking up you can spot
+a small dome-shaped building far above you.  Apparently someone has taken
+residence there.  The platform you are on spirals upwards towards the top
+of the island as it thins out.
+~
+0 0 1
+D3
+~
+~
+0 -1 5064
+D4
+~
+~
+0 -1 5066
+S
+#5066
+Nearing the top of the Island~
+Just about four fifths of the way up the island, the spiraling ledge
+comes to an end.  Looking up, you can see the top of the island not too
+far above you, the strenuous work of climbing the mountain has payed off.
+From here, however, you can't see much of what is on top of the island,
+for that you would have to continue upwards the rest of the way.
+~
+0 0 1
+D4
+~
+~
+0 -1 5067
+D5
+~
+~
+0 -1 5065
+S
+#5067
+Outside a Small Building~
+The view of Namek from here is wonderful.. you can spot several island
+chains from here, see the ocean spread out over the planet, or just sit
+back and watch the birds fly past.  Short grasses cover the ground here,
+providing comfort for you to lie down and take a rest, as most island 
+climbers would need after such an adventure.  However, the bulk of this
+island's top is occupied by a large unmarked dome-shaped building, which
+looks a smiliar to the houses in the Namekian village.  The only entrance
+to the building is through an uncovered doorway to the north, from where
+you can sense a welcoming presence.  The only other way to go is back
+down the island.
+~
+0 0 1
+D0
+~
+~
+0 -1 5068
+D5
+~
+~
+0 -1 5066
+S
+#5068
+Within Guru's Residence~
+Nothing inside this building is stirring at all.. not a noise can be heard,
+not a movement can be senses.  The blue floors are shined so well you can
+see your own reflection clearly staring back at you.  The place is dark,
+almost no light gets in through the round purple window on the domed ceiling,
+the main source of light enters through the doorway.  A larger room is to
+the east, but from here you can barely even make it out at all, much
+less judge what's inside.
+~
+0 1032 0
+D1
+~
+~
+0 -1 5069
+D2
+~
+~
+0 -1 5067
+S
+#5069
+Guru's Throne Room~
+A large throne sits against the far wall here, occupied by what seems to
+be a rather large green figure.. this must be the Namek elder, Guru.  He
+is obviously well-aged, as he seems to be sleeping.. although he notices
+everything that goes on inside his room.  The look on his face shows that
+he is happy to have a visitor, and his greeting expresses the same thing.
+Even though you have trouble seeing through the darkness of the room, the
+elder seems to not even be affected, as his old eyes have adjusted to the
+lack of light.  The only way out is back to the main room to the west.
+~
+0 1032 0
+D3
+~
+~
+0 -1 5068
+S
+#5070
+Within a Small Crater~
+The inside of the crater is actually much smaller than it looks from above.
+Directly in the center of this hole you can spot some sort of door, halfway
+submerged into the dirt ground here, as a cloud of dust still lingers in
+the air from the recent arrival.  The door has a purple window on it, but
+it is too dark to see anything inside, but you can tell that this must be 
+a spacepod of some sort.  Tracks lead out of the crater, to the west.
+~
+0 0 1
+D3
+~
+~
+0 -1 5061
+D5
+~
+~
+3 5008 5063
+S
+#5071
+A worn battlefield~
+The surroundings around you display nothing but destruction and devastation
+for miles.  All the grass is torn from the ground, the seas now remain
+waterless, jagged trunks of uprooted trees barely peek above the ground,
+and all native lifeforms have either been destroyed or evacuated.  Huge 
+craters are strewn all over, mountains have been reduced to rubble, hardly
+viewable due to dust in the air blocking most of the light overhead.  
+Obviously, some sort of battle must have taken place here, one of epic
+proportions, a conflict between two incredibly powerful opposing forces.
+~
+0 4 1
+D0
+~
+~
+0 -1 5032
+S
+#5072
+Floating in a void~
+~
+0 4 1
+S
+#5073
+Floating in a void~
+~
+0 4 1
+S
+#5074
+Floating in a void~
+~
+0 4 1
+S
+#5075
+Floating in a void~
+~
+0 4 1
+S
+#5076
+Floating in a void~
+~
+0 4 1
+S
+#5077
+Floating in a void~
+~
+0 4 1
+S
+#5078
+Floating in a void~
+~
+0 4 1
+S
+#5079
+Floating in a void~
+~
+0 4 1
+S
+#5080
+Floating in a void~
+~
+0 4 1
+S
+#5081
+Floating in a void~
+~
+0 4 1
+S
+#5082
+Floating in a void~
+~
+0 4 1
+S
+#5083
+Floating in a void~
+~
+0 4 1
+S
+#5084
+Floating in a void~
+~
+0 4 1
+S
+#5085
+Floating in a void~
+~
+0 4 1
+S
+#5086
+Floating in a void~
+~
+0 4 1
+S
+#5087
+Floating in a void~
+~
+0 4 1
+S
+#5088
+Floating in a void~
+~
+0 4 1
+S
+#5089
+Floating in a void~
+~
+0 4 1
+S
+#5090
+Floating in a void~
+~
+0 4 1
+S
+#5091
+Floating in a void~
+~
+0 4 1
+S
+#5092
+Floating in a void~
+~
+0 4 1
+S
+#5093
+Floating in a void~
+~
+0 4 1
+S
+#5094
+Floating in a void~
+~
+0 4 1
+S
+#5095
+Floating in a void~
+~
+0 4 1
+S
+#5096
+Floating in a void~
+~
+0 4 1
+S
+#5097
+Hell, Fire, and Brimstone.~
+As if picked up by the scruff of your neck by a mighty hand, you find
+yourself unceremoniously dumped at a strange gateway.  Here is the
+place which will determine your fate.  Whether you will be sent back
+to life as you once knew it, or proceed onto a far yet bleaker pathway.
+The time has come for you to plead your case and await judgement for the
+crimes that have been placed upon your head.  Speak wisely and choose
+your words carefully, for your testimony will be written in the ledgers
+of the Gods, and will determine the path you will ultimately travel.
+                L|J(_)
+            )    | (")      (
+            ,(.  |`/ \- y  (,`)
+           )' (' | \ /\/  ) (.
+          (' ),) | _W_   (,)' ).
+~
+0 1028&24 1
+> act_prog p is DEAD!!~
+mpat 1500 mptransfer $n 5097
+~
+> act_prog p explodes under the strain of the kaioken.~
+mpat 1500 mptransfer $n 5097
+mpforce $n look
+~
+> act_prog p explodes under the strain of using the Kaioken.~
+mpat 1500 mptransfer $n 5097
+mpforce $n look
+~
+|
+S
+#5098
+The Dojo of supreme butt kicking, or something like that..~
+Gravity chamber.. check!
+Healing tanks.. check!
+Sparring ring.. check!
+This room's got it all, baby!
+~
+0 872415236 1
+S
+#5099
+The super duper really secret room!!~
+This place is really secret
+Shhh, don't tell anyone
+Then again there isn't an exit or entrance anyway.  :)
+~
+0 807403524&24 1
+S
+#0
+
+
+#RESETS
+M 1 5003 1 5005
+G 1 5010 1
+G 1 5011 1
+M 1 5004 1 5006
+G 1 5013 1
+G 1 5015 1
+G 1 5012 1
+G 1 5014 1
+G 1 5017 1
+G 1 5016 1
+M 1 5005 1 5002
+M 1 5006 1 5010
+M 1 5007 1 5011
+D 0 5070 5 1
+M 1 5008 1 5009
+G 1 5020 3
+M 1 5009 1 5014
+O 1 5018 1 5014
+M 1 5010 1 5036
+M 1 5011 1 5040
+M 1 5015 1 5061
+G 1 5023 3
+M 1 5018 1 5053
+M 1 5019 1 5053
+G 1 5008 10
+M 1 5013 1 5035
+O 1 5021 1 5035
+G 1 5022 10
+M 1 5014 1 5033
+M 1 5017 2 5047
+M 1 5016 1 5047
+M 1 5002 1 5047
+E 1 5004 1 12
+M 1 5017 2 5047
+O 1 5009 1 5063
+D 0 5063 4 1
+M 1 5012 1 5017
+E 1 5024 1 13
+G 1 5025 1
+M 1 5020 1 5069
+M 1 5000 1 5003
+O 1 5019 1 5003
+M 1 5001 1 5099
+G 1 5006 1
+G 1 5007 1
+M 1 5098 1 5099
+M 1 5099 1 5099
+M 1 5021 1 5099
+O 1 5005 1 5099
+O 1 5000 1 5099
+O 1 5001 1 5099
+O 1 5003 1 5099
+O 1 5002 1 5099
+O 1 5008 1 5099
+O 1 5006 1 5099
+O 1 5007 1 5099
+O 1 5016 1 5099
+O 1 5012 1 5099
+M 1 5022 1 5071
+S
+
+
+#SHOPS
+ 5001    0  0  0  0  0   100  80         0 23    ; a mobzor
+ 5003    0  0  0  0  0   100  90         0 23    ; The Namek Grocier
+ 5004    0  0  0  0  0   100  90         0 23    ; The Tourist shop owner
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+M  5000 spec_thief
+S
+
+
+#$

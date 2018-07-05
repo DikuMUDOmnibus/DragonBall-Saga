@@ -1,0 +1,1613 @@
+#AREA   Fake Namek~
+
+
+
+#VERSION 252
+#AUTHOR Bardock~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 8
+
+#FLAGS
+2
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#40000
+Another Green Namek~
+Another Green Namek~
+Another green namek stands here behind a stand beside his friend
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+3 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+tell $n There are 4 dragon balls in this area you must find them
+tell $n all to get the prize, 3 of the dragon balls are on the
+tell $n Monsters that are within this area, the other one you
+tell $n must take the monsters clue's and find out where it is,
+tell $n now go brave warrior.
+~
+> speech_prog Vowels~
+tell $n Good job brave warrior you have defeated the giant and
+tell $n found the clue to my dragon ball you may have this, good
+tell $n luck to you $n
+give one $n
+~
+|
+#40001
+Green Namek~
+A Green Namek~
+A green namek stands here behind a stand.
+~
+~
+513 0 0 C
+1 0 0 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 1 10 10
+0 0 0 0 0
+3 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#40010
+Dinosaur monster creature~
+A blood thirsty dinosaur~
+A monstrous dinosaur with blood dripping from its fangs rests here.
+~
+~
+1 512 0 C
+1 0 75 1d20+0 2d5+0
+-1 200000000000
+112 112 0
+200 200 200 200 10
+0 0 0 0 0
+30 30 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+tell $n The dragon ball can be found at the nameks place.
+~
+|
+#40022
+Giant of Horrors~
+Giant of Horrors~
+The great Giant of Horrors hangs over you
+~
+~
+1 0 0 C
+1 0 400 40d20+0 2d5+0
+-1 300000000000
+112 112 1
+350 350 350 350 10
+0 0 0 0 0
+72 72 0 0 1 1 5
+85 65 0 0 0 0 0 0
+> death_prog 100~
+tell $n All of us have different features.  One of us is set in glass. 
+tell $n  One of us you'll find in a jet.  Another, you may see in 
+tell $n tin, and the fourth, boxed within. If the fifth you should 
+tell $n pursue, it can never fly away from you.  What are we?
+tell $n Tell your answer to the nameks at the start
+~
+|
+#40031
+Huge Scorpion~
+A huge scorpion~
+A huge scorpion stands here ready to attack.
+~
+~
+33 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 75000000000
+112 112 1
+200 200 200 200 100
+0 0 0 0 0
+66 66 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#40046
+Small Child~
+A Small child~
+A Small child about the age of ten walks around innocently.
+~
+~
+67108867 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> entry_prog 100~
+mpforce $n give two child
+mpforce $n give four child
+mpforce $n give six child
+mpforce $n give one child
+~
+> greet_prog 100~
+tell $n I got your dragon balls, I got you dragon balls, if you
+tell $n Want them back then ask me for my riddle, and i'll give
+tell $n you a riddle, you'll never figure out.
+~
+> speech_prog Riddle~
+tell $n Often talked of, never seen.  Ever coming, never been.
+tell $n Daily looked for, never here.  Still approaching, coming 
+tell $n  near. Thousands for its visit wait.  But, alas,
+tell $n for their fate, they will never find me here.
+~
+> speech_prog Tomorrow~
+give dragon $n
+give dragon $n
+give dragon $n
+give dragon $n
+tell $n To receive the item from the man behind the dragon balls,
+tell $n Just tell him to give you the prize.
+~
+|
+#40047
+Dark Thief~
+A dark Thief~
+A dark theif wears a heavy cloak hiding his face while watching the world
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 150000000000
+112 112 0
+200 200 200 200 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#40048
+Cute couple~
+A Cute couple~
+A cute couple walks around here hand in hand.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000000
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#40054
+Ice Creature~
+A massive Ice creature~
+A massive ice creature stands here shaking off the ice it shattered.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 225000000000
+112 112 0
+200 200 200 200 0
+0 0 0 0 0
+72 72 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#40055
+fakebardock~
+The great Bardock~
+The great saiyan Bardock stands here before you.
+~
+~
+1 524288&960 0 C
+1 0 100 1d20+0 2d5+0
+-1 400000000000000000
+112 112 1
+100 10 100 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog Give~
+if ovnuminv(40000) >= 1
+  if ovnuminv(40002) >= 1
+    if ovnuminv(40003) >= 1
+      if ovnuminv(40004) >= 1
+        Say Good job warrior you have collected the four dragon balls, here is your prize
+       mpoload 40099
+        give head $n
+        mpjunk all
+      else
+        say You're missing something.
+      endif
+    else
+      say You're missing something.
+    endif
+  else
+    say You're missing something.
+  endif
+else
+  say You're missing something.
+endif
+~
+|
+#0
+
+
+#OBJECTS
+#40000
+Four Star Dragon Ball~
+Four Star Dragon Ball~
+A bright shiny ball lays here on the ground with Four stars on it~
+~
+8 8193&256 1
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+Four~
+A large Orange ball has a mystical glow that anyone would become
+emamoured of, It has four red stars of beauty upon it, as you look into
+the divine radiance of the ball you see an orange mysterious swirl which is
+more elegant than a dream 
+~
+E
+One~
+~
+E
+four ball dragon~
+~
+E
+1~
+~
+#40001
+boulder rock~
+Huge Boulder~
+A huge boulder is here on the ground~
+~
+15 8192 0
+1000 0 0 0 0 0
+1 20000 2000
+ 0
+#40002
+Six Star Dragon Ball~
+Six Star Dragon Ball~
+A bright shiny ball lays here on the ground with Six stars on it~
+~
+8 8193 1
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+six~
+A large Orange ball has a mystical glow that anyone would become
+emamoured of, It has six red stars of beauty upon it, as you look into
+the divine radiance of the ball you see an orange mysterious swirl which is
+more elegant than a dream 
+~
+#40003
+Two Star Dragon Ball~
+Two Star Dragon Ball~
+A bright shiny ball lays here on the ground with Two stars on it~
+~
+8 8193 1
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+two~
+A large Orange ball has a mystical glow that anyone would become
+emamoured of, It has two red stars of beauty upon it, as you look into
+the divine radiance of the ball you see an orange mysterious swirl which is
+more elegant than a dream 
+~
+#40004
+One Star Dragon Ball~
+One Star Dragon Ball~
+A bright shiny ball lays here on the ground with One star on it~
+~
+8 8193 1
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+one~
+A large Orange ball has a mystical glow that anyone would become
+enamoured of, It has a single red star of beauty upon it, as you look into
+the divine radiance of the ball you see an orange mysterious swirl which is
+more elegant than a dream 
+~
+#40007
+Light ball energy~
+A brightly glowing, perfectly round, stone~
+A Bright glowing ball of energy lays here.~
+~
+1 3 16385
+0 0 -1 0 0 0
+1 -100 -10
+ 0
+#40054
+Shattered Ice Pieces~
+Shattered ice~
+Tons of shattered ice pieces are all over the ground.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#40099
+Bardock's blood stained headband~
+Bardock's blood stained headband~
+A headband soaked in blood has been left here on the ground.~
+~
+9 0 17
+0 0 0 0 50 50
+1 30000 3000
+ 1
+A
+2 5
+A
+3 5
+#0
+
+
+#ROOMS
+#40000
+Welcome to Planet "Namek"~
+Leaving the ship, a huge gust of wind and dust surrounds the landing pod
+as the sky above is a storm of wind and debris.  Soon after all the wind
+disappears and the sky becomes bright blue and the sun blazes down causing
+steamy visions on the ground.  
+~
+0 4 2
+D3
+~
+~
+0 -1 40001
+S
+#40001
+The entrance to a Small Village~
+In this village, the buildings have been smashed and battered from some
+sort of monster.  On the ground, there are huge footsteps that are filled
+with water.  In the distance at the end of the village is a fork, and
+straight ahead is a huge forest that is very dark within. 
+~
+0 1024 1
+D1
+~
+~
+0 -1 40000
+D3
+~
+~
+0 -1 40002
+S
+#40002
+A Fork in the Road~
+To the west stands the huge forest, which conceals everything within its
+dark bowels. Southward is a large cave opening that seems to be a dead end.
+The surrounding area is filled with grass and flowers extending in all
+directions with a small path leading in many directions 
+~
+0 2097156 2
+D1
+~
+~
+0 -1 40001
+D2
+~
+~
+0 -1 40012
+D3
+~
+~
+0 -1 40003
+S
+#40003
+Entrance to a Dark Forest~
+The forest ahead is very dense seeing into it is impossible. Trees and
+bushes are everywhere.  Around here there are millions of flies hovering
+over large mounds of grass and bushes.  There is a horrible stench of death
+and decay around as well.  The sky above is darker around here then
+anywhere else. 
+~
+0 2097156 2
+D1
+~
+~
+0 -1 40002
+D3
+~
+~
+0 -1 40004
+S
+#40004
+Dark Forest~
+Entering the Dark Forest the beaten down path becomes less and less
+visible. The shrills and moans of animals seem to fill the entire forest
+Looking around there seems to be no source of light other then the pinch of
+sun light that manages to find its way through the thick tree tops. 
+~
+0 2097156 2
+D1
+~
+~
+0 -1 40003
+D3
+~
+~
+0 -1 40005
+S
+#40005
+Dark Forest~
+Venturing along the Dark Forest the path becomes slightly more visible. 
+Upon looking at one of the trees claw and bite marks can be made out on the
+bark from where the animals have been driven to insanity.  There is a deep
+bellied growl coming from all around, and red eyes seem to be opening one
+at a time from behind the bushes. 
+~
+0 2097156 2
+D1
+~
+~
+0 -1 40004
+D2
+~
+~
+0 -1 40011
+D3
+~
+~
+0 -1 40006
+S
+#40006
+Dark Forest~
+The light from the sun has now reached its full magnitude exposing the
+entire forest floor to the naked eye.  Trees and other shrubs seemed to be
+knocked over gnawed or some way destroyed.  The sound of animal noises seem
+to have vanished with the increasing sunlight. There is one frightening
+sight and that is a deep rich puddle of blood.  
+~
+0 2097156 2
+D1
+~
+~
+0 -1 40005
+D9
+~
+~
+0 -1 40007
+S
+#40007
+The Mouth of the Cave~
+Here there is a huge opening to a cave, the cave's mouth is formed like
+that of a dinosaurs mouth.  Its massive fangs hang down low like huge
+stalagtites. Its lower fangs smaller then its upper ones are worn away
+from the wind and animal marks.  Inside the cave it is very dark and there
+is a stench of fire and death.  
+~
+0 2097157 13
+D3
+~
+~
+0 -1 40008
+D6
+~
+~
+0 -1 40006
+S
+#40008
+Inside a Dark Cave~
+In here there are stalactites everywhere making it hard to stand up
+completely.  The ground is drenched but even with a light its hard to see
+what it is.  There are also stalagmites that reach up high some even
+touching the top of the cave.  On the ground is a huge boulder that looks
+like it will move.  On the sides of the wall there are huge shadows from
+the stalactities and stalagmites.
+~
+0 2097157 13
+D1
+~
+~
+0 -1 40007
+D3
+~
+~
+0 -1 40009
+S
+#40009
+Inside a Dark Cave~
+Stepping inside the cave the sound of water dripping off the large rock
+formations hanging from the ceiling of the cave seems to leave an endless
+echo.  The large pools of murky water seem to be countless in number and in
+depth.  The cave seems to pick up on any and all noises subtle or not
+leaving it impossible to sneak up on anything.  The small amount of light
+that manages to reach this far back from the mouth of the cave illuminate
+the cave floor in just the slightest. 
+~
+0 2097157 13
+D1
+~
+~
+0 -1 40008
+D3
+~
+~
+0 -1 40010
+S
+#40010
+End of the Dark Cave~
+In this room there is a huge hole in the ceiling and the room here is
+much larger then the other rooms.  The light from the sky lights up the
+room completely showing the death that surrounds the area. There are bones
+of fallen warriors and animals, and the ground is covered in blood, at the
+end you see a huge monster the great dinosaur of this land that has killed
+millions of animals and people. Its fangs drip with blood and as the blood
+hits the ground it flames. 
+~
+0 2097153 13
+D1
+~
+~
+0 -1 40009
+S
+#40011
+Dark Forest~
+A small breeze brushes through the trees and brush, drawing attention to
+the fact that both have thinned dramatically here.  Off in the brush,
+hidden amongst the trees, eyes of various kinds of animals peer out at you.
+The path from the south is covered in animal foot and hoof prints, and
+continues north from here. 
+~
+0 2097156 2
+D0
+~
+~
+0 -1 40005
+D2
+~
+~
+0 -1 40023
+S
+#40012
+Entrance to a Dark Cave~
+The entrance to this cave is just like any other cave, a huge hole in
+the side of a mountain.  Flowers and grasslands surround the area, like
+before.  On the side of the path is a sign, but it is scratched out and is
+hard to read.  It says: "il Cave; Wa".  Many butterflies flutter about the
+sign, and a peacefulness can be felt here. 
+~
+0 2097156 13
+D0
+~
+~
+0 -1 40002
+D2
+~
+~
+0 -1 40013
+S
+#40013
+Evil Cave~
+The cave is very wide and tall, making it very easy to walk through. 
+The air is fresh and there are dark little red eyes on the ceiling,
+millions of them.  Sounds of waking bats echo through the cave.  There is a
+small breeze that moves through the cave softly. 
+~
+0 2097156 13
+D0
+~
+~
+0 -1 40012
+D2
+~
+~
+0 -1 40014
+S
+#40014
+Evil Cave~
+The cave is very wide and tall, making it very easy to walk through. 
+The air is fresh and there are dark little red eyes on the ceiling,
+millions of them.  Sounds of waking bats echo through the cave.  There is a
+small breeze that moves through the cave softly. 
+~
+0 2097156 13
+D0
+~
+~
+0 -1 40013
+D5
+~
+~
+0 -1 40015
+S
+#40015
+Deep within the Evil Cave~
+The cave suddenly gets dark and smaller, making it a more dangerous
+place.  The walls continue to close in, and the ceiling lowers.  The air is
+so thin it makes it hard to breathe, and the ground seems to be soft as if
+it was grass or dirt. 
+~
+0 2097156 13
+D4
+~
+~
+0 -1 40014
+D9
+~
+~
+0 -1 40016
+S
+#40016
+Deep within the Evil Cave~
+The cave suddenly gets dark and smaller, making it a more dangerous
+place.  The walls continue to close in, and the ceiling lowers.  The air is
+so thin it makes it hard to breathe, and the ground seems to be soft as if
+it was grass or dirt. 
+~
+0 2097156 13
+D2
+~
+~
+0 -1 40018
+D6
+~
+~
+0 -1 40015
+D9
+~
+~
+0 -1 40017
+S
+#40017
+Dead End~
+What a waste.  The only thing here is rock, and the ground is a hard and
+spiky rock floor.  The ceiling and walls are hard and spiky too.  Exiting
+this room would be wise. 
+~
+0 2097156 13
+D6
+~
+~
+0 -1 40016
+S
+#40018
+Deep within the Evil Cave~
+The cave suddenly gets dark and smaller, making it a more dangerous
+place.  The walls continue to close in, and the ceiling lowers.  The air is
+so thin it makes it hard to breathe, and the ground seems to be soft as if
+it was grass or dirt. 
+~
+0 2097156 13
+D0
+~
+~
+0 -1 40016
+D1
+~
+~
+0 -1 40019
+S
+#40019
+Back Outside??~
+The sun's light brightens the area, and it is no longer a dark cave . 
+Somehow, the cave led to a lower level cave on the massive mountain.  The
+ground is soft and wet, and a beautiful rainbow radiates the area.  Flowers
+and plants cover the ground, and little animals can be seen running around.
+Birds can also be seen flying through the many trees here. 
+~
+0 2097156 2
+D1
+~
+~
+0 -1 40020
+D3
+~
+~
+0 -1 40018
+S
+#40020
+Before a Huge Building~
+Fellow.  To the side is a small, flimsy mailbox.  Animals don't even dare
+to stop on the brick road which leads to the massive door.  A huge building
+is here, with a door on the western side.  The door stands about 15 feet
+high and wide.  The owner of this door is a very large 
+~
+0 2097156 2
+D1
+~
+~
+0 -1 40021
+D3
+~
+~
+0 -1 40019
+S
+#40021
+The First Larger Room of the Building~
+On the walls are huge pictures of a beautiful and happy family.  Heads
+of monsterous looking creatures are here, and they have huge marks from
+some sort of weapon.  To the east, above a door frame, is a picture of a
+huge man hanging over the other family.  The mother and child are both
+dead, and have bled recently.  The man has blood all over him, and his
+fists are caked in blood.  It appears that the mother and child had been
+beaten. 
+~
+0 2097156 0
+D1
+~
+~
+0 -1 40022
+D3
+~
+~
+0 -1 40020
+S
+#40022
+Slaughter Room~
+Blood and guts cake the room.  Human bodies have been mangled and thrown
+into a huge pile, some still fresh and others are completely bone.  On the
+side of the wall is a chair where a monster sits, and it is full of blood
+from the bodies. The ceiling drips with blood as people have been hung by
+huge meat hangers.  In the corner the first glimpse of the hideous
+monstrosity to make this bloody massacre can be seen. 
+~
+0 270532608 0
+D3
+~
+~
+0 -1 40021
+S
+#40023
+Dark Forest~
+The trees lighten up even more here, and small breezes brush over the
+ground, causing leaves to ruffle around.  The path leads only southward and
+northward.  To the south, animals can be seen.  The sky is filled with
+life, and animals move about happily here. 
+~
+0 2097156 2
+D0
+~
+~
+0 -1 40011
+D2
+~
+~
+0 -1 40024
+S
+#40024
+End of the Dark Forest~
+There is an abundance of wildlife here, and the sun softly shines
+through the few leaves over head.  Animals run around here freely, and
+sounds of birds can be heard above.  There seems to be a slight fog in the
+two directions the path leads. 
+~
+0 2097156 2
+D0
+~
+~
+0 -1 40023
+D2
+~
+~
+0 -1 40030
+D3
+~
+~
+0 -1 40025
+S
+#40025
+Deserted Road~
+With a flash of bright light the fog vanishes and the forst that was
+once there has gone with it.  A desert lies ahead, with many buildings
+lining the path.  Dust flutters the ground with each step, and the sun
+causes sweat to drop to the desert ground, only to evaporate from the hot
+sun.  
+~
+0 2097156 1
+D2
+~
+~
+0 -1 40032
+D3
+~
+~
+0 -1 40026
+S
+#40026
+Deserted Road~
+With a flash of bright light the fog vanishes and the forst that was
+once there has gone with it.  A desert lies ahead, with many buildings
+lining the path.  Dust flutters the ground with each step, and the sun
+causes sweat to drop to the desert ground, only to evaporate from the hot
+sun.  
+~
+0 2097156 1
+D1
+~
+~
+0 -1 40025
+D2
+~
+~
+0 -1 40027
+S
+#40027
+Deserted Road~
+With a flash of bright light the fog vanishes and the forst that was
+once there has gone with it.  A desert lies ahead, with many buildings
+lining the path.  Dust flutters the ground with each step, and the sun
+causes sweat to drop to the desert ground, only to evaporate from the hot
+sun. 
+~
+0 2097156 1
+D0
+~
+~
+0 -1 40026
+D2
+~
+~
+0 -1 40028
+S
+#40028
+Deserted Road~
+With a flash of bright light the fog vanishes and the forst that was
+once there has gone with it.  A desert lies ahead, with many buildings
+lining the path.  Dust flutters the ground with each step, and the sun
+causes sweat to drop to the desert ground, only to evaporate from the hot
+sun. 
+~
+0 2097156 1
+D0
+~
+~
+0 -1 40027
+D1
+~
+~
+0 -1 40033
+D2
+~
+~
+0 -1 40029
+S
+#40029
+Deserted Road~
+ With a flash of bright light the fog vanishes and the forest that was
+once there has gone with it.  A desert lies ahead, with many buildings
+lining the path.  Every step you take, dust flutters the ground.  The sun
+beats down on you, causing sweat to drop to the desert ground, only to
+evaporate from the hot sun.  
+~
+0 2097156 1
+D0
+~
+~
+0 -1 40028
+D2
+~
+~
+0 -1 40034
+S
+#40030
+Deserted Road~
+With a flash of bright light the fog vanishes and the forst that was
+once there has gone with it.  A desert lies ahead, with many buildings
+lining the path.  Dust flutters the ground with each step, and the sun
+causes sweat to drop to the desert ground, only to evaporate from the hot
+sun.  
+~
+0 2097156 1
+D2
+~
+~
+0 -1 40031
+D3
+~
+~
+0 -1 40032
+S
+#40031
+Dead End~
+ Many buildings surround the area as high and as far as the eye can see.
+Though the buildings are tall, the sun still beats down hard.  The air is
+very thin here, and an eerie feeling arises.  A huge scorpion suddenly
+lunges out at you in an attacking stance!  
+~
+0 2097152 1
+D0
+~
+~
+0 -1 40030
+S
+#40032
+Deserted Road~
+With a flash of bright light the fog vanishes and the forst that was
+once there has gone with it.  A desert lies ahead, with many buildings
+lining the path.  Dust flutters the ground with each step, and the sun
+causes sweat to drop to the desert ground, only to evaporate from the hot
+sun.  
+~
+0 2097156 1
+D0
+~
+~
+0 -1 40025
+D1
+~
+~
+0 -1 40030
+D9
+~
+~
+0 -1 40033
+S
+#40033
+Deserted Road~
+ With a flash of bright light the fog vanishes and the forest that was
+once there has gone with it.  A desert lies ahead, with many buildings
+lining the path.  Every step you take, dust flutters the ground.  The sun
+beats down on you, causing sweat to drop to the desert ground, only to
+evaporate from the hot sun.  
+~
+0 2097156 1
+D3
+~
+~
+0 -1 40028
+D6
+~
+~
+0 -1 40032
+S
+#40034
+Welcome to Dark City~
+"Welcome to the city of dreams, where there is never any sunlight. It's
+the perfect relaxing city." Reads a sign that is over head.  Another; sign
+says "Beware!  There are thieves in this city!"  .  The road leads off in a
+few directions.  One way leads to many people, as if it was a shopping
+market. 
+~
+0 2098180 1
+D1
+~
+~
+0 -1 40046
+D2
+~
+~
+0 -1 40035
+S
+#40035
+Dark Road~
+It suddenly gets darker, moving farther down the road.  Grass covers the
+area, and rain starts to patter on the ground.  A beautiful full moon gazes
+down on the area, and the night creatures can be seen in the darkness. 
+~
+0 2097157 1
+D0
+~
+~
+0 -1 40034
+D1
+~
+~
+0 -1 40036
+S
+#40036
+Dark Road~
+It suddenly gets darker, moving farther down the road.  Grass covers the
+area, and rain starts to patter on the ground.  A beautiful full moon gazes
+down on the area, and the night creatures can be seen in the darkness. 
+~
+0 2097157 1
+D1
+~
+~
+0 -1 40037
+D3
+~
+~
+0 -1 40035
+S
+#40037
+Dark Road~
+It suddenly gets darker, moving farther down the road.  Grass covers the
+area, and rain starts to patter on the ground.  A beautiful full moon gazes
+down on the area, and the night creatures can be seen in the darkness. 
+~
+0 2097157 1
+D1
+~
+~
+0 -1 40038
+D3
+~
+~
+0 -1 40036
+S
+#40038
+Opening to the Ice Cavern~
+The city vanishes from sight, and a massive chunk of ice with a
+crystalized hole in it replaces it. The ice has spread all over the area,
+and the shine from the ice stings any eye that looks at it.  A maze can be
+seen within the ice. 
+~
+0 2097157 1
+D8
+~
+~
+0 -1 40039
+S
+#40039
+Ice Cavern~
+A chill freezes the air here, making it hard to breathe.  There is no
+light source in the cavern, yet the room is very bright since the ice
+shines and glitters.  Keeping balance here is very hard, for the flooring
+is very slick.  It is also hard to see because the light radiating from the
+ice is so bright. 
+~
+0 2097156 1
+D1
+~
+~
+0 -1 40040
+D2
+~
+~
+0 -1 40045
+D7
+~
+~
+0 -1 40038
+S
+#40040
+Ice Cavern~
+A chill freezes the air here, making it hard to breathe.  There is no
+light source in the cavern, yet the room is very bright since the ice
+shines and glitters.  Keeping balance here is very hard, for the flooring
+is very slick.  It is also hard to see because the light radiating from the
+ice is so bright.
+~
+0 2097156 1
+D1
+~
+~
+0 -1 40041
+D3
+~
+~
+0 -1 40039
+S
+#40041
+Ice Cavern~
+A chill freezes the air here, making it hard to breathe.  There is no
+light source in the cavern, yet the room is very bright since the ice
+shines and glitters.  Keeping balance here is very hard, for the flooring
+is very slick.  It is also hard to see because the light radiating from the
+ice is so bright.
+~
+0 2097156 1
+D3
+~
+~
+0 -1 40040
+D8
+~
+~
+0 -1 40042
+S
+#40042
+Ice Cavern~
+A chill freezes the air here, making it hard to breathe.  There is no
+light source in the cavern, yet the room is very bright since the ice
+shines and glitters.  Keeping balance here is very hard, for the flooring
+is very slick.  It is also hard to see because the light radiating from the
+ice is so bright.
+~
+0 2097156 1
+D1
+~
+~
+0 -1 40049
+D7
+~
+~
+0 -1 40041
+D9
+~
+~
+0 -1 40043
+S
+#40043
+Ice Cavern~
+A chill freezes the air here, making it hard to breathe.  There is no
+light source in the cavern, yet the room is very bright since the ice
+shines and glitters.  Keeping balance here is very hard, for the flooring
+is very slick.  It is also hard to see because the light radiating from the
+ice is so bright.
+~
+0 2097156 1
+D3
+~
+~
+0 -1 40044
+D6
+~
+~
+0 -1 40042
+S
+#40044
+Ice Cavern~
+A chill freezes the air here, making it hard to breathe.  There is no
+light source in the cavern, yet the room is very bright since the ice
+shines and glitters.  Keeping balance here is very hard, for the flooring
+is very slick.  It is also hard to see because the light radiating from the
+ice is so bright.
+~
+0 2097156 1
+D1
+~
+~
+0 -1 40043
+D3
+~
+~
+0 -1 40045
+S
+#40045
+Ice Cavern~
+A chill freezes the air here, making it hard to breathe.  There is no
+light source in the cavern, yet the room is very bright since the ice
+shines and glitters.  Keeping balance here is very hard, for the flooring
+is very slick.  It is also hard to see because the light radiating from the
+ice is so bright.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 40039
+D1
+~
+~
+0 -1 40044
+S
+#40046
+Dark Alley~
+ It is difficult to walk here, since there is a lot of people here. 
+It's an easy place for a small child to steal from the people around here. 
+It is some sort of shopping market, with people of all sorts everywhere 
+~
+0 2097153 1
+D1
+~
+~
+0 -1 40047
+D3
+~
+~
+0 -1 40034
+S
+#40047
+Dark Alley~
+ It is difficult to walk here, since there is a lot of people here. 
+It's an easy place for a small child to steal from the people around here. 
+It is some sort of shopping market, with people of all sorts everywhere 
+~
+0 2097153 1
+D1
+~
+~
+0 -1 40048
+D3
+~
+~
+0 -1 40046
+S
+#40048
+Dark Alley Dead End~
+An eerie vibe is sent through the room as you enter.  It is very hard to
+see here, and now sounds of rattling chains and screaming children can be
+heard.  Tall, dark buildings surround the area, and dim lights shine
+through the windows here.  A huge door leads to a building here, but it is
+bolted shut. 
+~
+0 2097157 1
+D3
+~
+~
+0 -1 40047
+S
+#40049
+Dark Ice Cavern~
+The darkness consumes the light here, making it very hard to see.  It's
+even more slick than before, and the space gets smaller with each step. 
+With the darkness present, the cave gets even colder, making it near
+impossible to breathe. 
+~
+0 2097156 1
+D1
+~
+~
+0 -1 40050
+D3
+~
+~
+0 -1 40042
+S
+#40050
+Dark Ice Cavern~
+The darkness consumes the light here, making it very hard to see.  It's
+even more slick than before, and the space gets smaller with each step. 
+With the darkness present, the cave gets even colder, making it near
+impossible to breathe. 
+~
+0 2097152 1
+D2
+~
+~
+0 -1 40051
+D3
+~
+~
+0 -1 40049
+S
+#40051
+Frozen Slide~
+The ground here is slippery and very thin.  Another step, and it gives
+way, revealing a slide of pure ice.  It is smooth all around, making it
+impossible to stop. 
+~
+0 2097156 1
+D0
+~
+~
+0 -1 40050
+D2
+~
+~
+0 -1 40052
+> entry_prog 100~
+mpechoat $n You are unable to hold onto anything in the room as you start to slide southward.
+mpforce $n south
+~
+|
+S
+#40052
+Frozen Slide~
+The ground here is slippery and very thin.  Another step, and it gives
+way, revealing a slide of pure ice.  It is smooth all around, making it
+impossible to stop. 
+~
+0 2097156 1
+D0
+~
+~
+0 -1 40051
+D2
+~
+~
+0 -1 40053
+> entry_prog 100~
+mpechoat $n You are unable to hold onto anything in the room as you start to slide southward.
+mpforce $n south
+~
+|
+S
+#40053
+Frozen Slide~
+The ground here is slippery and very thin.  Another step, and it gives
+way, revealing a slide of pure ice.  It is smooth all around, making it
+impossible to stop. 
+~
+0 2097156 1
+D0
+~
+~
+0 -1 40052
+D2
+~
+~
+0 -1 40054
+> entry_prog 100~
+mpechoat $n You are unable to hold onto anything in the room as you start to slide southward.
+mpforce $n south
+~
+|
+S
+#40054
+Room of the Frozen Monster~
+The brightness from the ice returns, and it nearly blinds the room with
+its radiance.  A massive block of ice sits in the middle of the room, with
+a huge monster captured within it.  The eye of the monster suddenly opens,
+and the ice shatters into millions of pieces.  The monster stands tall, and
+shakes off the rest of the ice. 
+~
+0 2097156 1
+D2
+~
+~
+0 -1 40055
+S
+#40055
+The Void of Whiteness~
+In this room, miles of blank whiteness can be seen, and a bright yellow
+glow can be seen in the center.  Within the aura is a large saiyan with a
+huge scar on his cheek.  His clothes are ragged, as he barely escaped from
+a huge battle. 
+~
+0 2098180 1
+D2
+~
+~
+0 -1 40000
+S
+#40056
+Lifting Pod~
+~
+0 2097156 1
+D1
+~
+~
+0 -1 40054
+S
+#40057
+Lifting Pod~
+~
+0 2097156 1
+D0
+~
+~
+0 -1 40054
+S
+#40058
+Floating in a void~
+~
+0 2097156 1
+S
+#40059
+Floating in a void~
+~
+0 2097156 1
+S
+#40060
+Floating in a void~
+~
+0 2097156 1
+S
+#40061
+Floating in a void~
+~
+0 2097156 1
+S
+#40062
+Floating in a void~
+~
+0 2097156 1
+S
+#40063
+Floating in a void~
+~
+0 2097156 1
+S
+#40064
+Floating in a void~
+~
+0 2097156 1
+S
+#40065
+Floating in a void~
+~
+0 2097156 1
+S
+#40066
+Floating in a void~
+~
+0 2097156 1
+S
+#40067
+Floating in a void~
+~
+0 2097156 1
+S
+#40068
+Floating in a void~
+~
+0 2097156 1
+S
+#40069
+Floating in a void~
+~
+0 2097156 1
+S
+#40070
+Floating in a void~
+~
+0 2097156 1
+S
+#40071
+Floating in a void~
+~
+0 2097156 1
+S
+#40072
+Floating in a void~
+~
+0 2097156 1
+S
+#40073
+Floating in a void~
+~
+0 2097156 1
+S
+#40074
+Floating in a void~
+~
+0 2097156 1
+S
+#40075
+Floating in a void~
+~
+0 2097156 1
+S
+#40076
+Floating in a void~
+~
+0 2097156 1
+S
+#40077
+Floating in a void~
+~
+0 2097156 1
+S
+#40078
+Floating in a void~
+~
+0 2097156 1
+S
+#40079
+Floating in a void~
+~
+0 2097156 1
+S
+#40080
+Floating in a void~
+~
+0 2097156 1
+S
+#40081
+Floating in a void~
+~
+0 2097156 1
+S
+#40082
+Floating in a void~
+~
+0 2097156 1
+S
+#40083
+Floating in a void~
+~
+0 2097156 1
+S
+#40084
+Floating in a void~
+~
+0 2097156 1
+S
+#40085
+Floating in a void~
+~
+0 2097156 1
+S
+#40086
+Floating in a void~
+~
+0 2097156 1
+S
+#40087
+Floating in a void~
+~
+0 2097156 1
+S
+#40088
+Floating in a void~
+~
+0 2097156 1
+S
+#40089
+Floating in a void~
+~
+0 2097156 1
+S
+#40090
+Floating in a void~
+~
+0 2097156 1
+S
+#40091
+Floating in a void~
+~
+0 2097156 1
+S
+#40092
+Floating in a void~
+~
+0 2097156 1
+S
+#40093
+Floating in a void~
+~
+0 2097156 1
+S
+#40094
+Floating in a void~
+~
+0 2097156 1
+S
+#40095
+Floating in a void~
+~
+0 2097156 1
+S
+#40096
+Floating in a void~
+~
+0 2097156 1
+S
+#40097
+Floating in a void~
+~
+0 2097156 1
+S
+#40098
+Floating in a void~
+~
+0 2097156 1
+S
+#40099
+Bardock's Hole~
+Bardock's sexay room is really quite sexay.
+~
+0 1049612 0
+S
+#0
+
+
+#RESETS
+M 1 40031 1 40031
+G 1 40000 1
+M 1 40001 1 40001
+M 1 40000 1 40001
+G 1 40004 1
+M 1 40047 1 40046
+M 1 40048 1 40046
+M 1 40046 1 40034
+M 1 40055 1 40055
+O 1 40001 1 40008
+M 1 40022 1 40022
+G 1 40002 1
+M 1 40054 1 40054
+O 1 40054 1 40054
+M 1 40010 1 40010
+G 1 40003 1
+S
+
+
+#SHOPS
+ 40000    1  0  0  0  0   100  90         0 23    ; Another Green Namek
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

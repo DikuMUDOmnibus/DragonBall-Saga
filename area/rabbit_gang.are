@@ -1,0 +1,1028 @@
+#AREA   The Rabbit Gang's Head Quarters~
+
+
+
+#VERSION 252
+#AUTHOR Goku~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 4
+
+#RESETMSG You think you hear something moving in the darkness...~
+
+#FLAGS
+0 5
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#9200
+bat~
+a huge bat~
+A huge bat hangs from the top of the cavern.
+~
+~
+16908353 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9201
+rat~
+a huge rat~
+A huge rat is scurrying around looking for some food.
+~
+~
+16908357 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9202
+short rabbit gang guard~
+a short Rabbit Gang guard~
+A short Rabbit Gang guard is picking his nose.
+~
+~
+131137 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 2000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9203
+tall rabbit gang guard~
+a tall Rabbit Gang guard~
+A tall Rabbit Gang guard is playing with some sticks on the ground.
+~
+~
+131137 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 3000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9204
+fat rabbit gang guard~
+a fat Rabbit Gang guard~
+A fat Rabbit Gang guard is busy eating a Twinkie.
+~
+~
+131137 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 2500
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9205
+stong rabbit gang guard~
+a stong Rabbit Gang guard~
+A stong Rabbit Gang guard is starring off into nothing.
+~
+~
+131137 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 4000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9206
+rabbit gang commander~
+the Rabbit Gang commander~
+The Rabbit Gang commander is standing guard.
+~
+~
+131139 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 5000
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9207
+monster rabbit~
+Monster Rabbit~
+Monster Rabbit is sitting behind his desk nibbling on a carrot.
+~
+~
+131139 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 7500
+112 112 1
+10 10 10 10 10
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#9299
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#9200
+sign post note~
+a sign post~
+A small sign post with a note attached.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+sign post note~
+&O
+To any would be thieves:
+
+   This is the Rabbit Gang's main head quarters.  If you so chose
+to attempt to steal our treasures you will find your self lost and,
+most importantly, DEAD!
+
+   We have rebuilt this cavern into a maze and only we, the Rabbit
+Gang, know the way though.  There are patrol men, along with a few
+dangerous creatures, that walk the maze, always searching...
+
+   Any intruders in our head quarters will be KILLED on site!!!
+
+Love,
+   -The Rabbit Gang
+
+&cCommander: &CLove?
+&cMonster Carrot: &CUh, no.  I mean...hmm...
+&cMonster Carrot: &CHey!  Why are you writing this down?!?
+&cCommander: &CYou told me to write down everything you say...
+&cMonster Carrot: &CCUT IT OUT!!!
+&cCommander: &CYes sir!  Sorry sir!  Right away sir!
+~
+#9201
+black bunny ears~
+some black bunny ears~
+Some black bunny ears have been left on the ground.~
+~
+9 0 17
+0 0 0 0 5 5
+1 3000 300
+ 500
+A
+2 1
+#9202
+safe box~
+a safe box~
+A small steel safe box is on the ground.~
+~
+15 0 0
+9999 29 9203 0 0 0
+500 199980 50
+ 236
+#9203
+rabbit key~
+a small rabbit shaped key~
+A small rabbit shaped key has been droped on the ground.~
+~
+18 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+#9204
+golden bunny statue~
+a golden bunny statue~
+A small golden bunny statue has been carelessly left here.~
+~
+8 0 1
+0 0 0 0 0 0
+10 0 15
+ 1
+#9205
+lantern~
+a lantern~
+A small lantern has been left here on the ground.~
+~
+1 0 16385
+0 0 24 0 0 0
+3 2400 2
+ 0
+#9206
+250 zeni~
+250 zeni~
+A pile of zeni coins.~
+~
+20 0 1
+250 0 0 0 0 0
+1 0 0
+ 0
+#9299
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#9200
+Dark Cavern~
+   You are standing in a dark room and the only natural light comes from
+above you. The walls and floors are made of large, clean cut cobble stones.
+At the top of the cavern, overhead, you can see stalactites hanging down.
+
+~
+0 13 0
+D2
+~
+~
+0 -1 9201
+D4
+~
+~
+0 -1 9124
+S
+#9201
+The Beginning of the Maze~
+   This is the beginning of the Rabbit Gang's maze.  Only member of the
+Rabbit Gang themselves know the way though.  They have built this place to
+look exactly the same no matter which direction you travel.  You can leave
+and go back out side the cavern by heading north, or you can enter the maze
+by going west or east.  However, it is to dark in either direction to tell
+what lies beyond this room.
+
+~
+0 9 0
+D0
+~
+~
+0 -1 9200
+D1
+~
+~
+0 -1 9205
+D3
+~
+~
+0 -1 9202
+S
+#9202
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D1
+~
+~
+0 -1 9201
+D2
+~
+~
+0 -1 9203
+S
+#9203
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D0
+~
+~
+0 -1 9202
+D3
+~
+~
+0 -1 9204
+S
+#9204
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D1
+~
+~
+0 -1 9203
+S
+#9205
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D1
+~
+~
+0 -1 9206
+D3
+~
+~
+0 -1 9201
+S
+#9206
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D0
+~
+~
+0 -1 9207
+D1
+~
+~
+0 -1 9209
+D2
+~
+~
+0 -1 9213
+D3
+~
+~
+0 -1 9205
+S
+#9207
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D2
+~
+~
+0 -1 9206
+D3
+~
+~
+0 -1 9208
+S
+#9208
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D1
+~
+~
+0 -1 9207
+S
+#9209
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D0
+~
+~
+0 -1 9210
+D2
+~
+~
+0 -1 9211
+D3
+~
+~
+0 -1 9206
+S
+#9210
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D2
+~
+~
+0 -1 9209
+S
+#9211
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D0
+~
+~
+0 -1 9209
+D1
+~
+~
+0 -1 9212
+D3
+~
+~
+0 -1 9213
+S
+#9212
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D3
+~
+~
+0 -1 9211
+S
+#9213
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D0
+~
+~
+0 -1 9206
+D1
+~
+~
+0 -1 9211
+D2
+~
+~
+0 -1 9214
+D3
+~
+~
+0 -1 9226
+S
+#9214
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D0
+~
+~
+0 -1 9213
+D2
+~
+~
+0 -1 9215
+S
+#9215
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D0
+~
+~
+0 -1 9214
+D1
+~
+~
+0 -1 9216
+S
+#9216
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D0
+~
+~
+0 -1 9217
+D2
+~
+~
+0 -1 9219
+D3
+~
+~
+0 -1 9215
+S
+#9217
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D1
+~
+~
+0 -1 9218
+D2
+~
+~
+0 -1 9216
+S
+#9218
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D3
+~
+~
+0 -1 9217
+S
+#9219
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D0
+~
+~
+0 -1 9216
+D3
+~
+~
+0 -1 9220
+S
+#9220
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D1
+~
+~
+0 -1 9219
+D3
+~
+~
+0 -1 9221
+S
+#9221
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D0
+~
+~
+0 -1 9222
+D1
+~
+~
+0 -1 9220
+S
+#9222
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D0
+~
+~
+0 -1 9225
+D2
+~
+~
+0 -1 9221
+D3
+~
+~
+0 -1 9223
+S
+#9223
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D1
+~
+~
+0 -1 9222
+D2
+~
+~
+0 -1 9224
+S
+#9224
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D0
+~
+~
+0 -1 9223
+S
+#9225
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D0
+~
+~
+0 -1 9226
+D2
+~
+~
+0 -1 9222
+S
+#9226
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D1
+~
+~
+0 -1 9213
+D2
+~
+~
+0 -1 9225
+D3
+~
+~
+0 -1 9227
+S
+#9227
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D1
+~
+~
+0 -1 9226
+D2
+~
+~
+0 -1 9228
+S
+#9228
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D0
+~
+~
+0 -1 9227
+D2
+~
+~
+0 -1 9232
+D3
+~
+~
+0 -1 9229
+S
+#9229
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D1
+~
+~
+0 -1 9228
+D3
+~
+~
+0 -1 9230
+S
+#9230
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D1
+~
+~
+0 -1 9229
+D3
+~
+~
+0 -1 9231
+S
+#9231
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D1
+~
+~
+0 -1 9230
+S
+#9232
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D0
+~
+~
+0 -1 9228
+D2
+~
+~
+0 -1 9233
+S
+#9233
+The Rabbit Gang's Maze~
+   You are inside the Rabbit Gang's maze.  The walls and floors are made of
+large, clean cut cobble stones.  At the top of the cavern, overhead, you can
+see stalactites hanging down.  A few rocks, sticks and other debris cover
+the floor of this place.  You can hear strange sounds echoing throughout the
+entire cavern.
+
+~
+0 9 0
+D0
+~
+~
+0 -1 9232
+D5
+~
+~
+0 -1 9234
+S
+#9234
+Monster Rabbit's Room~
+   You are standing inside Monster Rabbit's main office.  He takes care of
+all his business in this very well furnished place.  There are many
+paintings, of many different things, hung up on the walls.  The largest, by
+far, is a oil painting of a huge carrot that hangs right behind a huge oak
+desk.  It looks like Monster Rabbit enjoys flowers and plants as well, since
+there are many of them though out the entire room.
+
+~
+0 12 0
+D2
+~
+~
+0 -1 9235
+D4
+~
+~
+0 -1 9233
+S
+#9235
+The Rabbit Gang's Treasure Vault~
+   This room is build completely out of steel.  Probably to keep would be
+thieves from robbing the Carrot Gang.  Think steel bars protect most
+everything in this room, even though there doesn't seem to be anything
+really worth taking.  However, there is a small sized safe box still out in
+the open.
+
+~
+0 12 0
+D0
+~
+~
+0 -1 9234
+S
+#9299
+Floating in a void~
+~
+0 2097165 0
+S
+#0
+
+
+#RESETS
+O 0 9200 1 9200
+M 0 9201 6 9203
+M 0 9201 6 9209
+M 0 9201 6 9220
+M 0 9201 6 9227
+M 0 9200 6 9205
+M 0 9200 6 9212
+M 0 9200 6 9220
+M 0 9200 6 9230
+M 2 9202 3 9204
+E 2 9205 1 0
+E 2 9201 1 6
+M 2 9202 3 9204
+E 2 9205 1 0
+E 2 9201 1 6
+M 2 9202 3 9219
+E 2 9205 1 0
+E 2 9201 1 6
+M 2 9203 3 9222
+E 2 9205 1 0
+E 2 9201 1 6
+M 2 9203 3 9215
+E 2 9205 1 0
+E 2 9201 1 6
+M 2 9203 3 9228
+E 2 9205 1 0
+E 2 9201 1 6
+M 2 9204 3 9210
+E 2 9205 1 0
+E 2 9201 1 6
+M 2 9204 3 9213
+E 2 9205 1 0
+E 2 9201 1 6
+M 2 9204 3 9227
+E 2 9205 1 0
+E 2 9201 1 6
+M 2 9205 3 9224
+E 2 9205 1 0
+E 2 9201 1 6
+M 2 9205 3 9231
+E 2 9205 1 0
+E 2 9201 1 6
+M 2 9205 3 9232
+E 2 9205 1 0
+E 2 9201 1 6
+M 2 9206 1 9233
+E 2 9205 1 0
+E 2 9201 1 6
+M 1 9207 1 9234
+E 1 9203 1 17
+O 0 9202 1 9235
+P 0 9206 1 0
+P 0 9204 1 0
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

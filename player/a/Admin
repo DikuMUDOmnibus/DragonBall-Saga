@@ -1,0 +1,147 @@
+#PLAYER
+Version        4
+Name           Admin~
+Creation_date  1013727801
+C_date_word    Thu Feb 14 15:03:21 2002
+~
+Sex            1
+Class          0
+Race           0
+Languages      -1 1
+Level          65
+UpgradeL       18
+Played         3372276
+Room           1201
+HpManaMove     100 100 99999 99999 100 100
+Zeni           469
+Exp            100000000000000
+PL             3000000000000000
+Rage           0
+Corespl	0
+Cores 0 0 0
+Fusionflags  0
+Fusions 0
+Fusiontimer  0
+Kairank	 0
+Evilmod	 0
+Height         72
+Weight         147
+Act            570455624&55808
+AffectedBy     524288&960
+Position       112
+Style          2
+Train          5
+MaxTrain       1
+XTrain         0
+TotalXTrain    0
+MaxEnergy      1
+Powerup        0
+SavingThrows   0 0 0 0 0
+Alignment      1000
+Favor          0
+Glory          0
+MGlory         0
+Hitroll        0
+Damroll        0
+Armor          100
+NaturalAC      0
+Deaf           1141112832
+ICEListen      ~
+Mentalstate    0
+Password       9c3a88f26d3623fcf0a4aa881518170c70f5e1d62e0d9f9fa7e9b3f07fa299b7~
+Pretitle       Supreme Kai~
+Title         &C, &Ythe Earth's greatest warrior~
+Homepage       ~
+Email          ~
+AuthedBy       Admin~
+Boards         0 Announce 0 General 0 Clan 0 RP 0 Ideas 0 Bugs 0 Personal 0 Admin 0 Building 0 Coding 0 Punish 0 TopAdmin 0 
+Bamfin         appears in a flash of bright light.~
+Bamfout        puts two fingers to his forehead and vanishes.~
+Restore_time   1096598284
+WizInvis       64
+Ghost          51
+Incog          64
+Flags          32770
+LastTax	 1047078699
+PKills         0
+PDeaths        0
+MKills         2
+MDeaths        0
+IllegalPK      0
+SparWins       0
+SparLoss       0
+Sparcount	   0
+Bounty         0
+Bowed          0
+Bkills         0
+B_timeleft     0
+BountyBy       ~
+Hunting        ~
+KaiTimer       0
+KaiMessage     (null)~
+Silence        0
+PK_timer       0
+Age            0
+Build          0
+Haircolor      9
+Orignalhaircolor 0
+Eyes           4
+Orignaleyes    0
+AuraPowerUp	 0
+Complexion     0
+Secondarycolor 0
+Hairstyle      0
+Hairlen        0
+Tail           1
+Suppress       0
+Spouse         ~
+Auction_PL     0
+NPromptCFG     0
+BPromptCFG     0
+AttrPerm       50 500 100 100 -4
+AttrAdd       0 0 0 0 0
+PermTStats     50 100 100 100
+AttrTrain      0 0 0 0
+AttrMod        0 0 0 0 0
+Condition      0 12 12 0
+LastIntrest    0 0
+Site           127.0.0.1
+LastOn         1117072888
+Skill        100.000000 'aggressive style'
+Skill        100.000000 'aid'
+Skill        100.000000 'berserk style'
+Skill        100.000000 'charge L1'
+Skill        100.000000 'charge L2'
+Skill        100.000000 'charge L3'
+Skill        100.000000 'charge L4'
+Skill        100.000000 'defensive style'
+Skill        100.000000 'evasive style'
+Skill        100.000000 'kick'
+Skill        100.000000 'meditate'
+Skill        100.000000 'punch'
+Skill        100.000000 'second attack'
+Skill        100.000000 'third attack'
+Ability      100.000000 'destructive wave'
+Ability      100.000000 'energy ball'
+Ability      100.000000 'final flash'
+Ability      100.000000 'fly'
+Ability      100.000000 'gallic gun'
+Ability      100.000000 'instant transmission'
+Ability      100.000000 'kaioken'
+Ability      100.000000 'kamehameha'
+Ability      100.000000 'scatter shot'
+Ability      100.000000 'sense'
+Ability      100.000000 'ssj1'
+Ability      100.000000 'ssj2'
+Ability      100.000000 'ssj3'
+Ability      100.000000 'ssj4'
+Ability      100.000000 'suppress'
+Tongue       100 'common'
+Tongue       100 'saiyan'
+Affect        -1  -1  30   1   1 0
+Affect        -1  -1  15   2   1 0
+Affect        -1  -1   8   3   1 0
+Affect        -1  -1  15   4   1 0
+End
+
+#END

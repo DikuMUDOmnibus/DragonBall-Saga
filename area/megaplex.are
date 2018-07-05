@@ -1,0 +1,6115 @@
+#AREA   South City Mega-Plex~
+
+
+
+#VERSION 252
+#AUTHOR Koji~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 4
+
+#RESETMSG Many of the maids hurry about the building, cleaning each and every room.~
+
+#FLAGS
+4 24
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#4497
+Entrance South City Megaplex Lady Beutiful~
+A beutiful lady~
+A beutiful receptionist is here, behind a large oak desk.
+~
+~
+67239939 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 2
+10 10 10 10 0
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Welcome $n to the South City Megaplex!
+mpechoat $n The beutiful receptionist beams a smile at you.
+mpsleep 6
+say If you're looking for your apartment, head in the northern direction.
+mpsleep 6
+mpecho &cThe beutiful receptionist continiues "If you're looking to buy an apartment, try &Whomebuy&c.
+smile $n
+mpsleep 4
+if clan($n) == Vesania
+fondle $n
+tell 0.$n Vesania r0x0rz j00 b0x0rz!!
+else
+endif
+~
+|
+#4498
+Elevator~
+The Elevator Operator~
+The Elevator Operator is here, operating the elevator.
+~
+The elevator operator seems to have been working here for a long time, for his
+body seems to be very badly out of shape, as if he does no physical work what so
+ever. A smile that was once constant, now only shines when one enters the room.
+His left eye always seems to be twitching, looking for intruders.
+~
+67239939 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 500000000
+112 112 0
+10 400 10 10 400
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> rand_prog 5~
+say Lost? Need help? Use 'look sign' to take a glance on what do to.
+mpsleep 3
+say Once you've figured out which floor you want, just says it. Ex: One,Two,Three...
+~
+> speech_prog 100 help~
+mpforce $n look sign
+mpsleep 14
+say I hope that helps.
+smile
+~
+> speech_prog 100 one~
+mptransfer $n 4001
+mpat $n mpforce $n look
+~
+> speech_prog two~
+mptransfer $n 4017
+mpat $n mpforce $n look
+~
+> speech_prog three~
+mptransfer $n 4033
+mpat $n mpforce $n look
+~
+> speech_prog four~
+mptransfer $n 4049
+mpat $n mpforce $n look
+~
+> speech_prog five~
+mptransfer $n 4065
+mpat $n mpforce $n look
+~
+> speech_prog six~
+mptransfer $n 4082
+mpat $n mpforce $n look
+~
+> speech_prog seven~
+mptransfer $n 4098
+mpat $n mpforce $n look
+~
+> speech_prog eight~
+mptransfer $n 4114
+mpat $n mpforce $n look
+~
+|
+#4499
+tager~
+a newly created tager~
+Some god abandoned a newly created tager here.
+~
+~
+1 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog 100 endround~
+mpforce koji tag
+mpforce koji quest End round!
+mpforce koji tag
+~
+> speech_prog 100 tsk~
+mpforce atari tag koji
+~
+|
+#0
+
+
+#OBJECTS
+#4000
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#4162
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4162 0 0 0 0 0
+1 0 0
+ 1
+#4163
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4163 0 0 0 0 0
+1 0 0
+ 1
+#4164
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4164 0 0 0 0 0
+1 0 0
+ 1
+#4165
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4165 0 0 0 0 0
+1 0 0
+ 1
+#4166
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4166 0 0 0 0 0
+1 0 0
+ 1
+#4167
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4167 0 0 0 0 0
+1 0 0
+ 1
+#4168
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4168 0 0 0 0 0
+1 0 0
+ 1
+#4169
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4169 0 0 0 0 0
+1 0 0
+ 1
+#4170
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4170 0 0 0 0 0
+1 0 0
+ 1
+#4171
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4171 0 0 0 0 0
+1 0 0
+ 1
+#4172
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4172 0 0 0 0 0
+1 0 0
+ 1
+#4173
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4173 0 0 0 0 0
+1 0 0
+ 1
+#4174
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4174 0 0 0 0 0
+1 0 0
+ 1
+#4175
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4175 0 0 0 0 0
+1 0 0
+ 1
+#4176
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4176 0 0 0 0 0
+1 0 0
+ 1
+#4177
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4177 0 0 0 0 0
+1 0 0
+ 1
+#4178
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4178 0 0 0 0 0
+1 0 0
+ 1
+#4179
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4179 0 0 0 0 0
+1 0 0
+ 1
+#4180
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4180 0 0 0 0 0
+1 0 0
+ 1
+#4181
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4181 0 0 0 0 0
+1 0 0
+ 1
+#4182
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4182 0 0 0 0 0
+1 0 0
+ 1
+#4183
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4183 0 0 0 0 0
+1 0 0
+ 1
+#4184
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4184 0 0 0 0 0
+1 0 0
+ 1
+#4185
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4185 0 0 0 0 0
+1 0 0
+ 1
+#4186
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4186 0 0 0 0 0
+1 0 0
+ 1
+#4187
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4187 0 0 0 0 0
+1 0 0
+ 1
+#4188
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4188 0 0 0 0 0
+1 0 0
+ 1
+#4189
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4189 0 0 0 0 0
+1 0 0
+ 1
+#4190
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4190 0 0 0 0 0
+1 0 0
+ 1
+#4191
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4191 0 0 0 0 0
+1 0 0
+ 1
+#4192
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4192 0 0 0 0 0
+1 0 0
+ 1
+#4193
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4193 0 0 0 0 0
+1 0 0
+ 1
+#4194
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4194 0 0 0 0 0
+1 0 0
+ 1
+#4195
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4195 0 0 0 0 0
+1 0 0
+ 1
+#4196
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4196 0 0 0 0 0
+1 0 0
+ 1
+#4197
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4197 0 0 0 0 0
+1 0 0
+ 1
+#4198
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4198 0 0 0 0 0
+1 0 0
+ 1
+#4199
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4199 0 0 0 0 0
+1 0 0
+ 1
+#4200
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4200 0 0 0 0 0
+1 0 0
+ 1
+#4201
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4201 0 0 0 0 0
+1 0 0
+ 1
+#4202
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4202 0 0 0 0 0
+1 0 0
+ 1
+#4203
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4203 0 0 0 0 0
+1 0 0
+ 1
+#4204
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4204 0 0 0 0 0
+1 0 0
+ 1
+#4205
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4205 0 0 0 0 0
+1 0 0
+ 1
+#4206
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4206 0 0 0 0 0
+1 0 0
+ 1
+#4207
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4207 0 0 0 0 0
+1 0 0
+ 1
+#4208
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4208 0 0 0 0 0
+1 0 0
+ 1
+#4209
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4209 0 0 0 0 0
+1 0 0
+ 1
+#4210
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4210 0 0 0 0 0
+1 0 0
+ 1
+#4211
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4211 0 0 0 0 0
+1 0 0
+ 1
+#4212
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4212 0 0 0 0 0
+1 0 0
+ 1
+#4213
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4213 0 0 0 0 0
+1 0 0
+ 1
+#4214
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4214 0 0 0 0 0
+1 0 0
+ 1
+#4215
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4215 0 0 0 0 0
+1 0 0
+ 1
+#4216
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4216 0 0 0 0 0
+1 0 0
+ 1
+#4217
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4217 0 0 0 0 0
+1 0 0
+ 1
+#4218
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4218 0 0 0 0 0
+1 0 0
+ 1
+#4219
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4219 0 0 0 0 0
+1 0 0
+ 1
+#4220
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4220 0 0 0 0 0
+1 0 0
+ 1
+#4221
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4221 0 0 0 0 0
+1 0 0
+ 1
+#4222
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4222 0 0 0 0 0
+1 0 0
+ 1
+#4223
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4223 0 0 0 0 0
+1 0 0
+ 1
+#4224
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4224 0 0 0 0 0
+1 0 0
+ 1
+#4225
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4225 0 0 0 0 0
+1 0 0
+ 1
+#4230
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4230 0 0 0 0 0
+1 0 0
+ 1
+#4251
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4251 0 0 0 0 0
+1 0 0
+ 1
+#4252
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4252 0 0 0 0 0
+1 0 0
+ 1
+#4253
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4253 0 0 0 0 0
+1 0 0
+ 1
+#4254
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4254 0 0 0 0 0
+1 0 0
+ 1
+#4255
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4255 0 0 0 0 0
+1 0 0
+ 1
+#4256
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4256 0 0 0 0 0
+1 0 0
+ 1
+#4257
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4257 0 0 0 0 0
+1 0 0
+ 1
+#4258
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4258 0 0 0 0 0
+1 0 0
+ 1
+#4259
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4259 0 0 0 0 0
+1 0 0
+ 1
+#4260
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4260 0 0 0 0 0
+1 0 0
+ 1
+#4261
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4261 0 0 0 0 0
+1 0 0
+ 1
+#4262
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4262 0 0 0 0 0
+1 0 0
+ 1
+#4263
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4263 0 0 0 0 0
+1 0 0
+ 1
+#4264
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4264 0 0 0 0 0
+1 0 0
+ 1
+#4265
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4265 0 0 0 0 0
+1 0 0
+ 1
+#4266
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4266 0 0 0 0 0
+1 0 0
+ 1
+#4267
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4267 0 0 0 0 0
+1 0 0
+ 1
+#4268
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4268 0 0 0 0 0
+1 0 0
+ 1
+#4269
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4269 0 0 0 0 0
+1 0 0
+ 1
+#4270
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4270 0 0 0 0 0
+1 0 0
+ 1
+#4271
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4271 0 0 0 0 0
+1 0 0
+ 1
+#4272
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4272 0 0 0 0 0
+1 0 0
+ 1
+#4273
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4273 0 0 0 0 0
+1 0 0
+ 1
+#4274
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4274 0 0 0 0 0
+1 0 0
+ 1
+#4275
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4275 0 0 0 0 0
+1 0 0
+ 1
+#4276
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4276 0 0 0 0 0
+1 0 0
+ 1
+#4277
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4277 0 0 0 0 0
+1 0 0
+ 1
+#4278
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4278 0 0 0 0 0
+1 0 0
+ 1
+#4279
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4279 0 0 0 0 0
+1 0 0
+ 1
+#4280
+house key~
+a house key~
+Somebody's house key lies here.~
+~
+8 1073741824 16385
+4280 0 0 0 0 0
+1 0 0
+ 1
+#4494
+Potato Hot~
+&rA &RH&ro&Rt &rP&Ro&rt&Ra&rt&Ro&w~
+The hot potato is here, whoever dropped it is out!~
+~
+19 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+> rand_prog 20~
+mpecho &RThe hot potato burns $n!
+~
+|
+#4495
+Newbie Blocker~
+&RK&roji's &RN&rewbie &RB&rlocker&w~
+OMFG! Super power has been left here! Blarg! Blarg! Blarg!~
+~
+9 267 513
+0 0 0 2147483647 0 0
+1 5000000 214748364
+ 0
+A
+1 500
+A
+2 500
+A
+3 500
+A
+4 500
+#4496
+newbie launcher~
+&RK&roji's &RN&rewbie &RL&rauncher~
+OMFG! Super power has been left here! Blarg! Blarg! Blarg!~
+~
+9 267 8193
+0 0 0 2147483647 0 0
+1 5000000 214748364
+ 0
+A
+1 500
+A
+2 500
+A
+3 500
+A
+4 500
+#4497
+Sign~
+A Sign~
+A sign is here, hung by a nail on the wall.~
+~
+45 0 1
+0 0 0 0 0 0
+1 0 0
+ 0
+E
+sign~
+The following floors you can go to. Just say the 'floor number' and our kind operator will take you to it :)
+
+Floor One   "One"
+Floor Two   "Two"
+Floor Three "Three"
+Floor Four  "Four"
+Floor Five  "Five"
+Floor Six   "Six"
+Floor Seven "Seven"
+Floor Eight "Eight"
+
+Example: One, Two, Three, Four, Five, Six, Seven.
+~
+#4498
+Sign Wall~
+A sign~
+&CA sign is here, hung by a nail in the elevator.~
+~
+45 0 0
+0 0 0 0 0 0
+15536 0 0
+ 0
+E
+sign~
+As you look upon the sign, you notice this text...
+
+&cThere are ten floors. To get to each floor, please say it and our kind elevator operator will bring you to it.
+
+&cUnfortunatly, our current operator isn't the smartest. So you must say the exact floor.
+
+   Floor one.............. "One"
+   Floor two.............. "Two"
+   Floor three............ "Three"
+   Floor four............. "Four"
+   Floor Five............. "Five"
+   Floor Six............ "Six"
+   Floor Seven.......... "Seven"
+   Floor Eight.......... "Eight"
+   Floor Nine.......... "Nine"
+   Floor Ten.......... "Ten"
+~
+#4499
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#4000
+Megaplex Entrance~
+The entrance to the South City MegaPlex is lined with a long, red
+carpet.  The enormous pillars support the hand carved roof, leaving it
+feeling very massive.  The lighting is very bright, and ranging in many
+different colours.  Two men stand at both sides of the doors, making sure
+no trouble enters the building.  All together, the entrance seems quite
+bizarre.  
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4001
+D2
+~
+~
+0 -1 9013
+S
+#4001
+Floor One Lobby~
+The elegant floor lobby is lined with a gigantic chandelier, that makes all
+others look tiny.  Candles burn softly on them, giving the room as nice, warm
+glow. Many beautiful couches and chairs are placed about the room, allowing
+people to sit down and relax.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4012
+D1
+~
+~
+0 -1 4002
+D2
+~
+~
+0 -1 4000
+D3
+~
+~
+0 -1 4007
+D8
+~
+~
+0 -1 4499
+S
+#4002
+Eastern Hallway - Floor One "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4162 4162
+D1
+~
+~
+0 -1 4003
+D2
+~
+~
+25166887 4171 4171
+D3
+~
+~
+0 -1 4001
+S
+#4003
+Eastern Hallway - Floor One "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4163 4163
+D1
+~
+~
+0 -1 4004
+D2
+~
+~
+25166887 4170 4170
+D3
+~
+~
+0 -1 4002
+S
+#4004
+Eastern Hallway - Floor One "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4164 4164
+D1
+~
+~
+0 -1 4005
+D2
+~
+~
+25166887 4169 4169
+D3
+~
+~
+0 -1 4003
+S
+#4005
+Eastern Hallway - Floor One "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4165 4165
+D1
+~
+~
+0 -1 4006
+D2
+~
+~
+25166881 4168 4168
+D3
+~
+~
+0 -1 4004
+S
+#4006
+Eastern Hallway - Floor One "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4166 4166
+D2
+~
+~
+25166887 4167 4167
+D3
+~
+~
+0 -1 4005
+S
+#4007
+Western Hallway - Floor One "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4172 4172
+D1
+~
+~
+0 -1 4001
+D2
+~
+~
+0 -1 4181
+D3
+~
+~
+0 -1 4008
+S
+#4008
+Western Hallway - Floor One "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4173 4173
+D1
+~
+~
+0 -1 4007
+D2
+~
+~
+25166887 4180 4180
+D3
+~
+~
+0 -1 4009
+S
+#4009
+Western Hallway - Floor One "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4174 4174
+D1
+~
+~
+0 -1 4008
+D2
+~
+~
+25166887 4179 4179
+D3
+~
+~
+0 -1 4010
+S
+#4010
+Western Hallway - Floor One "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4175 4175
+D1
+~
+~
+0 -1 4009
+D2
+~
+~
+25166887 4178 4178
+D3
+~
+~
+0 -1 4011
+S
+#4011
+Western Hallway - Floor One "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4176 4176
+D1
+~
+~
+0 -1 4010
+D2
+~
+~
+25166887 4177 4177
+S
+#4012
+Northern Hallway - Floor One "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4013
+D1
+~
+~
+25166887 4181 4181
+D2
+~
+~
+0 -1 4001
+D3
+~
+~
+25166887 4190 4190
+S
+#4013
+Northern Hallway - Floor One "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4014
+D1
+~
+~
+25166887 4182 4182
+D2
+~
+~
+0 -1 4012
+D3
+~
+~
+25166881 4189 4189
+S
+#4014
+Northern Hallway - Floor One "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4015
+D1
+~
+~
+25166887 4183 4183
+D2
+~
+~
+0 -1 4013
+D3
+~
+~
+25166887 4188 4188
+S
+#4015
+Northern Hallway - Floor One "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4016
+D1
+~
+~
+25166887 4184 4184
+D2
+~
+~
+0 -1 4014
+D3
+~
+~
+25166887 4187 4187
+S
+#4016
+Northern Hallway - Floor One "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D1
+~
+~
+25166887 4185 4185
+D2
+~
+~
+0 -1 4015
+D3
+~
+~
+25166881 4186 4186
+S
+#4017
+Floor Two Lobby~
+The elegant floor lobby is lined with a gigantic chandelier, that makes all
+others look tiny.  Candles burn softly on them, giving the room as nice, warm
+glow. Many beautiful couches and chairs are placed about the room, allowing
+people to sit down and relax.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4028
+D1
+~
+~
+0 -1 4018
+D3
+~
+~
+0 -1 4023
+D8
+~
+~
+0 -1 4499
+S
+#4018
+Eastern Hallway - Floor Two "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4191 4191
+D1
+~
+~
+0 -1 4019
+D2
+~
+~
+25166887 4200 4200
+D3
+~
+~
+0 -1 4017
+S
+#4019
+Eastern Hallway - Floor Two "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4192 4192
+D1
+~
+~
+0 -1 4020
+D2
+~
+~
+25166887 4199 4199
+D3
+~
+~
+0 -1 4018
+S
+#4020
+Eastern Hallway - Floor Two "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4193 4193
+D1
+~
+~
+0 -1 4021
+D2
+~
+~
+25166887 4198 4198
+D3
+~
+~
+0 -1 4019
+S
+#4021
+Eastern Hallway - Floor Two "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4194 4194
+D1
+~
+~
+0 -1 4022
+D2
+~
+~
+25166887 4197 4197
+D3
+~
+~
+0 -1 4020
+S
+#4022
+Eastern Hallway - Floor Two "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4195 4195
+D2
+~
+~
+25166881 4196 4196
+D3
+~
+~
+0 -1 4021
+S
+#4023
+Western Hallway - Floor Two "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166883 4210 4210
+D1
+~
+~
+0 -1 4017
+D2
+~
+~
+25166887 4201 4201
+D3
+~
+~
+0 -1 4024
+S
+#4024
+Western Hallway - Floor Two "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4209 4209
+D1
+~
+~
+0 -1 4023
+D2
+~
+~
+25166887 4202 4202
+D3
+~
+~
+0 -1 4025
+S
+#4025
+Western Hallway - Floor Two "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4208 4208
+D1
+~
+~
+0 -1 4024
+D2
+~
+~
+25166881 4203 4203
+D3
+~
+~
+0 -1 4026
+S
+#4026
+Western Hallway - Floor Two "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4207 4207
+D1
+~
+~
+0 -1 4025
+D2
+~
+~
+25166887 4204 4204
+D3
+~
+~
+0 -1 4027
+S
+#4027
+Western Hallway - Floor Two "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4206 4206
+D1
+~
+~
+0 -1 4026
+D2
+~
+~
+25166887 4205 4205
+S
+#4028
+Northern Hallway - Floor Two "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4029
+D1
+~
+~
+25166887 4211 4211
+D2
+~
+~
+0 -1 4017
+D3
+~
+~
+25166887 4220 4220
+S
+#4029
+Northern Hallway - Floor Two "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4030
+D1
+~
+~
+25166881 4212 4212
+D2
+~
+~
+0 -1 4028
+D3
+~
+~
+25166887 4219 4219
+S
+#4030
+Northern Hallway - Floor Two "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4031
+D1
+~
+~
+25166883 4213 4213
+D2
+~
+~
+0 -1 4029
+D3
+~
+~
+25166887 4218 4218
+S
+#4031
+Northern Hallway - Floor Two "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4032
+D1
+~
+~
+25166887 4214 4214
+D2
+~
+~
+0 -1 4030
+D3
+~
+~
+25166887 4217 4217
+S
+#4032
+Northern Hallway - Floor Two "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D1
+~
+~
+25166887 4215 4215
+D2
+~
+~
+0 -1 4031
+D3
+~
+~
+25166887 4216 4216
+S
+#4033
+Floor Three Lobby~
+The elegant floor lobby is lined with a gigantic chandelier, that makes all
+others look tiny.  Candles burn softly on them, giving the room as nice, warm
+glow. Many beautiful couches and chairs are placed about the room, allowing
+people to sit down and relax.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4044
+D1
+~
+~
+0 -1 4034
+D3
+~
+~
+0 -1 4039
+D8
+~
+~
+0 -1 4499
+S
+#4034
+Eastern Hallway - Floor Three "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4221 4221
+D1
+~
+~
+0 -1 4035
+D2
+~
+~
+25166887 4230 4230
+D3
+~
+~
+0 -1 4033
+S
+#4035
+Eastern Hallway - Floor Three "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4222 4222
+D1
+~
+~
+0 -1 4036
+D2
+~
+~
+0 -1 4229
+D3
+~
+~
+0 -1 4034
+S
+#4036
+Eastern Hallway - Floor Three "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4223 4223
+D1
+~
+~
+0 -1 4037
+D2
+~
+~
+0 -1 4228
+D3
+~
+~
+0 -1 4035
+S
+#4037
+Eastern Hallway - Floor Three "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4224 4224
+D1
+~
+~
+0 -1 4038
+D2
+~
+~
+0 -1 4227
+D3
+~
+~
+0 -1 4036
+S
+#4038
+Eastern Hallway - Floor Three "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4225 4225
+D2
+~
+~
+0 -1 4226
+D3
+~
+~
+0 -1 4037
+S
+#4039
+Western Hallway - Floor Three "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4240
+D1
+~
+~
+0 -1 4033
+D2
+~
+~
+0 -1 4231
+D3
+~
+~
+0 -1 4040
+S
+#4040
+Western Hallway - Floor Three "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4239
+D1
+~
+~
+0 -1 4039
+D2
+~
+~
+0 -1 4232
+D3
+~
+~
+0 -1 4041
+S
+#4041
+Western Hallway - Floor Three "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4238
+D1
+~
+~
+0 -1 4040
+D2
+~
+~
+0 -1 4233
+D3
+~
+~
+0 -1 4042
+S
+#4042
+Western Hallway - Floor Three "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4237
+D1
+~
+~
+0 -1 4041
+D2
+~
+~
+0 -1 4234
+D3
+~
+~
+0 -1 4043
+S
+#4043
+Western Hallway - Floor Three "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4236
+D1
+~
+~
+0 -1 4042
+D2
+~
+~
+0 -1 4235
+S
+#4044
+Northern Hallway - Floor Three "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4045
+D1
+~
+~
+0 -1 4241
+D2
+~
+~
+0 -1 4033
+D3
+~
+~
+0 -1 4250
+S
+#4045
+Northern Hallway - Floor Three "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4046
+D1
+~
+~
+0 -1 4242
+D2
+~
+~
+0 -1 4044
+D3
+~
+~
+0 -1 4249
+S
+#4046
+Northern Hallway - Floor Three "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4047
+D1
+~
+~
+0 -1 4243
+D2
+~
+~
+0 -1 4045
+D3
+~
+~
+0 -1 4248
+S
+#4047
+Northern Hallway - Floor Three "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4048
+D1
+~
+~
+0 -1 4244
+D2
+~
+~
+0 -1 4046
+D3
+~
+~
+0 -1 4247
+S
+#4048
+Northern Hallway - Floor Three "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D1
+~
+~
+0 -1 4245
+D2
+~
+~
+0 -1 4047
+D3
+~
+~
+0 -1 4246
+S
+#4049
+Floor Four Lobby~
+The elegant floor lobby is lined with a gigantic chandelier, that makes all
+others look tiny.  Candles burn softly on them, giving the room as nice, warm
+glow. Many beautiful couches and chairs are placed about the room, allowing
+people to sit down and relax.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4060
+D1
+~
+~
+0 -1 4050
+D3
+~
+~
+0 -1 4055
+D8
+~
+~
+0 -1 4499
+S
+#4050
+Eastern Hallway - Floor Four "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4251 4251
+D1
+~
+~
+0 -1 4051
+D2
+~
+~
+25166887 4260 4260
+D3
+~
+~
+0 -1 4049
+S
+#4051
+Eastern Hallway - Floor Four "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4252 4252
+D1
+~
+~
+0 -1 4052
+D2
+~
+~
+25166887 4259 4259
+D3
+~
+~
+0 -1 4050
+S
+#4052
+Eastern Hallway - Floor Four "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4253 4253
+D1
+~
+~
+0 -1 4053
+D2
+~
+~
+25166887 4258 4258
+D3
+~
+~
+0 -1 4051
+S
+#4053
+Eastern Hallway - Floor Four "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4254 4254
+D1
+~
+~
+0 -1 4054
+D2
+~
+~
+25166887 4257 4257
+D3
+~
+~
+0 -1 4052
+S
+#4054
+Eastern Hallway - Floor Four "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4255 4255
+D2
+~
+~
+25166887 4256 4256
+D3
+~
+~
+0 -1 4053
+S
+#4055
+Western Hallway - Floor Four "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4261 4261
+D1
+~
+~
+0 -1 4049
+D2
+~
+~
+25166887 4270 4270
+D3
+~
+~
+0 -1 4056
+S
+#4056
+Western Hallway - Floor Four "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4262 4262
+D1
+~
+~
+0 -1 4055
+D2
+~
+~
+25166887 4269 4269
+D3
+~
+~
+0 -1 4057
+S
+#4057
+Western Hallway - Floor Four "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4263 4263
+D1
+~
+~
+0 -1 4056
+D2
+~
+~
+25166887 4268 4268
+D3
+~
+~
+0 -1 4058
+S
+#4058
+Western Hallway - Floor Four "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4264 4264
+D1
+~
+~
+0 -1 4057
+D2
+~
+~
+25166887 4267 4267
+D3
+~
+~
+0 -1 4059
+S
+#4059
+Western Hallway - Floor Four "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+25166887 4265 4265
+D1
+~
+~
+0 -1 4058
+D2
+~
+~
+25166887 4266 4266
+S
+#4060
+Northern Hallway - Floor Four "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4061
+D1
+~
+~
+25166887 4271 4271
+D2
+~
+~
+0 -1 4049
+D3
+~
+~
+25166887 4280 4280
+S
+#4061
+Northern Hallway - Floor Four "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4062
+D1
+~
+~
+25166887 4272 4272
+D2
+~
+~
+0 -1 4060
+D3
+~
+~
+25166887 4279 4279
+S
+#4062
+Northern Hallway - Floor Four "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4063
+D1
+~
+~
+25166887 4273 4273
+D2
+~
+~
+0 -1 4061
+D3
+~
+~
+25166883 4278 4278
+S
+#4063
+Northern Hallway - Floor Four "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4064
+D1
+~
+~
+25166887 4274 4274
+D2
+~
+~
+0 -1 4062
+D3
+~
+~
+25166887 4277 4277
+S
+#4064
+Northern Hallway - Floor Four "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D1
+~
+~
+25166883 4275 4275
+D2
+~
+~
+0 -1 4063
+D3
+~
+~
+25166887 4276 4276
+S
+#4065
+Floor Five Lobby~
+The elegant floor lobby is lined with a gigantic chandelier, that makes all
+others look tiny.  Candles burn softly on them, giving the room as nice, warm
+glow. Many beautiful couches and chairs are placed about the room, allowing
+people to sit down and relax.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4077
+D1
+~
+~
+0 -1 4066
+D3
+~
+~
+0 -1 4071
+D8
+~
+~
+0 -1 4499
+S
+#4066
+Eastern Hallway - Floor Five "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4281
+D1
+~
+~
+0 -1 4067
+D2
+~
+~
+0 -1 4290
+D3
+~
+~
+0 -1 4065
+S
+#4067
+Eastern Hallway - Floor Five "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4282
+D1
+~
+~
+0 -1 4068
+D2
+~
+~
+0 -1 4289
+D3
+~
+~
+0 -1 4066
+S
+#4068
+Eastern Hallway - Floor Five "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4283
+D1
+~
+~
+0 -1 4069
+D2
+~
+~
+0 -1 4288
+D3
+~
+~
+0 -1 4067
+S
+#4069
+Eastern Hallway - Floor Five "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4284
+D1
+~
+~
+0 -1 4070
+D2
+~
+~
+0 -1 4287
+D3
+~
+~
+0 -1 4068
+S
+#4070
+Eastern Hallway - Floor Five "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4285
+D2
+~
+~
+0 -1 4286
+D3
+~
+~
+0 -1 4069
+S
+#4071
+Western Hallway - Floor Five "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4291
+D1
+~
+~
+0 -1 4065
+D2
+~
+~
+0 -1 4300
+D3
+~
+~
+0 -1 4072
+S
+#4072
+Western Hallway - Floor Five "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4292
+D1
+~
+~
+0 -1 4071
+D2
+~
+~
+0 -1 4299
+D3
+~
+~
+0 -1 4073
+S
+#4073
+Western Hallway - Floor Five "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4293
+D1
+~
+~
+0 -1 4072
+D2
+~
+~
+0 -1 4298
+D3
+~
+~
+0 -1 4074
+S
+#4074
+Western Hallway - Floor Five "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4294
+D1
+~
+~
+0 -1 4073
+D2
+~
+~
+0 -1 4297
+D3
+~
+~
+0 -1 4075
+S
+#4075
+Western Hallway - Floor Five "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4295
+D1
+~
+~
+0 -1 4074
+D2
+~
+~
+0 -1 4296
+S
+#4076
+Floating in a void~
+~
+0 2098180 0
+S
+#4077
+Northern Hallway - Floor Five "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4078
+D1
+~
+~
+0 -1 4301
+D2
+~
+~
+0 -1 4065
+D3
+~
+~
+0 -1 4310
+S
+#4078
+Northern Hallway - Floor Five "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4079
+D1
+~
+~
+0 -1 4302
+D2
+~
+~
+0 -1 4077
+D3
+~
+~
+0 -1 4309
+S
+#4079
+Northern Hallway - Floor Five "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4080
+D1
+~
+~
+0 -1 4303
+D2
+~
+~
+0 -1 4078
+D3
+~
+~
+0 -1 4308
+S
+#4080
+Northern Hallway - Floor Five "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4081
+D1
+~
+~
+0 -1 4304
+D2
+~
+~
+0 -1 4079
+D3
+~
+~
+0 -1 4307
+S
+#4081
+Northern Hallway - Floor Five "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D1
+~
+~
+0 -1 4305
+D2
+~
+~
+0 -1 4080
+D3
+~
+~
+0 -1 4306
+S
+#4082
+Floor Six Lobby~
+The elegant floor lobby is lined with a gigantic chandelier, that makes all
+others look tiny.  Candles burn softly on them, giving the room as nice, warm
+glow. Many beautiful couches and chairs are placed about the room, allowing
+people to sit down and relax.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4092
+D1
+~
+~
+0 -1 4083
+D3
+~
+~
+0 -1 4088
+D8
+~
+~
+0 -1 4499
+S
+#4083
+Eastern Hallway - Floor Six "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4311
+D1
+~
+~
+0 -1 4084
+D2
+~
+~
+0 -1 4320
+D3
+~
+~
+0 -1 4082
+S
+#4084
+Eastern Hallway - Floor Six "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4312
+D1
+~
+~
+0 -1 4085
+D2
+~
+~
+0 -1 4319
+D3
+~
+~
+0 -1 4083
+S
+#4085
+Eastern Hallway - Floor Six "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4313
+D1
+~
+~
+0 -1 4086
+D2
+~
+~
+0 -1 4318
+D3
+~
+~
+0 -1 4084
+S
+#4086
+Eastern Hallway - Floor Six "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4314
+D1
+~
+~
+0 -1 4087
+D2
+~
+~
+0 -1 4317
+D3
+~
+~
+0 -1 4085
+S
+#4087
+Eastern Hallway - Floor Six "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4315
+D2
+~
+~
+0 -1 4316
+D3
+~
+~
+0 -1 4086
+S
+#4088
+Western Hallway - Floor Six "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4321
+D1
+~
+~
+0 -1 4082
+D2
+~
+~
+0 -1 4330
+D3
+~
+~
+0 -1 4089
+S
+#4089
+Western Hallway - Floor Six "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4322
+D1
+~
+~
+0 -1 4088
+D2
+~
+~
+0 -1 4329
+D3
+~
+~
+0 -1 4090
+S
+#4090
+Western Hallway - Floor Six "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4323
+D1
+~
+~
+0 -1 4089
+D2
+~
+~
+0 -1 4328
+D3
+~
+~
+0 -1 4091
+S
+#4091
+Western Hallway - Floor Six "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4324
+D1
+~
+~
+0 -1 4090
+D2
+~
+~
+0 -1 4327
+D3
+~
+~
+0 -1 4097
+S
+#4092
+Northern Hallway - Floor Six "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4093
+D1
+~
+~
+0 -1 4331
+D2
+~
+~
+0 -1 4082
+D3
+~
+~
+0 -1 4340
+S
+#4093
+Northern Hallway - Floor Six "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4094
+D1
+~
+~
+0 -1 4332
+D2
+~
+~
+0 -1 4092
+D3
+~
+~
+0 -1 4339
+S
+#4094
+Northern Hallway - Floor Six "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4095
+D1
+~
+~
+0 -1 4333
+D2
+~
+~
+0 -1 4093
+D3
+~
+~
+0 -1 4338
+S
+#4095
+Northern Hallway - Floor Six "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4096
+D1
+~
+~
+0 -1 4334
+D2
+~
+~
+0 -1 4094
+D3
+~
+~
+0 -1 4337
+S
+#4096
+Northern Hallway - Floor Six "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D1
+~
+~
+0 -1 4335
+D2
+~
+~
+0 -1 4095
+D3
+~
+~
+0 -1 4336
+S
+#4097
+Western Hallway - Floor Six "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4325
+D1
+~
+~
+0 -1 4091
+D2
+~
+~
+0 -1 4326
+S
+#4098
+Floor Seven Lobby~
+The elegant floor lobby is lined with a gigantic chandelier, that makes all
+others look tiny.  Candles burn softly on them, giving the room as nice, warm
+glow. Many beautiful couches and chairs are placed about the room, allowing
+people to sit down and relax.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4109
+D1
+~
+~
+0 -1 4099
+D3
+~
+~
+0 -1 4104
+D8
+~
+~
+0 -1 4499
+S
+#4099
+Eastern Hallway - Floor Seven "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4341
+D1
+~
+~
+0 -1 4100
+D2
+~
+~
+0 -1 4350
+D3
+~
+~
+0 -1 4098
+S
+#4100
+Eastern Hallway - Floor Seven "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4342
+D1
+~
+~
+0 -1 4101
+D2
+~
+~
+0 -1 4349
+D3
+~
+~
+0 -1 4099
+S
+#4101
+Eastern Hallway - Floor Seven "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4343
+D1
+~
+~
+0 -1 4102
+D2
+~
+~
+0 -1 4348
+D3
+~
+~
+0 -1 4100
+S
+#4102
+Eastern Hallway - Floor Seven "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4344
+D1
+~
+~
+0 -1 4103
+D2
+~
+~
+0 -1 4347
+D3
+~
+~
+0 -1 4101
+S
+#4103
+Eastern Hallway - Floor Seven "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4345
+D2
+~
+~
+0 -1 4346
+D3
+~
+~
+0 -1 4102
+S
+#4104
+Western Hallway - Floor Seven "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4351
+D1
+~
+~
+0 -1 4098
+D2
+~
+~
+0 -1 4360
+D3
+~
+~
+0 -1 4105
+S
+#4105
+Western Hallway - Floor Seven "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4352
+D1
+~
+~
+0 -1 4104
+D2
+~
+~
+0 -1 4359
+D3
+~
+~
+0 -1 4106
+S
+#4106
+Western Hallway - Floor Seven "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4353
+D1
+~
+~
+0 -1 4105
+D2
+~
+~
+0 -1 4358
+D3
+~
+~
+0 -1 4107
+S
+#4107
+Western Hallway - Floor Seven "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4354
+D1
+~
+~
+0 -1 4106
+D2
+~
+~
+0 -1 4357
+D3
+~
+~
+0 -1 4108
+S
+#4108
+Western Hallway - Floor Seven "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4355
+D1
+~
+~
+0 -1 4107
+D2
+~
+~
+0 -1 4356
+S
+#4109
+Northern Hallway - Floor Seven "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098176 0
+D0
+~
+~
+0 -1 4110
+D1
+~
+~
+0 -1 4361
+D2
+~
+~
+0 -1 4098
+D3
+~
+~
+0 -1 4370
+S
+#4110
+Northern Hallway - Floor Seven "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4111
+D1
+~
+~
+0 -1 4362
+D2
+~
+~
+0 -1 4109
+D3
+~
+~
+0 -1 4369
+S
+#4111
+Northern Hallway - Floor Seven "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4112
+D1
+~
+~
+0 -1 4363
+D2
+~
+~
+0 -1 4110
+D3
+~
+~
+0 -1 4368
+S
+#4112
+Northern Hallway - Floor Seven "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4113
+D1
+~
+~
+0 -1 4364
+D2
+~
+~
+0 -1 4111
+D3
+~
+~
+0 -1 4367
+S
+#4113
+Northern Hallway - Floor Seven "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4365
+D2
+~
+~
+0 -1 4112
+D3
+~
+~
+0 -1 4366
+S
+#4114
+Floor Eight Lobby~
+The elegant floor lobby is lined with a gigantic chandelier, that makes all
+others look tiny.  Candles burn softly on them, giving the room as nice, warm
+glow. Many beautiful couches and chairs are placed about the room, allowing
+people to sit down and relax.
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4125
+D1
+~
+~
+0 -1 4115
+D3
+~
+~
+0 -1 4120
+D8
+~
+~
+0 -1 4499
+S
+#4115
+Eastern Hallway - Floor Eight "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4371
+D1
+~
+~
+0 -1 4116
+D2
+~
+~
+0 -1 4382
+D3
+~
+~
+0 -1 4114
+S
+#4116
+Eastern Hallway - Floor Eight "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4372
+D1
+~
+~
+0 -1 4117
+D2
+~
+~
+0 -1 4381
+D3
+~
+~
+0 -1 4115
+S
+#4117
+Eastern Hallway - Floor Eight "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4373
+D1
+~
+~
+0 -1 4118
+D2
+~
+~
+0 -1 4380
+D3
+~
+~
+0 -1 4116
+S
+#4118
+Eastern Hallway - Floor Eight "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4374
+D1
+~
+~
+0 -1 4119
+D2
+~
+~
+0 -1 4379
+D3
+~
+~
+0 -1 4117
+S
+#4119
+Eastern Hallway - Floor Eight "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4375
+D2
+~
+~
+0 -1 4378
+D3
+~
+~
+0 -1 4118
+S
+#4120
+Western Hallway - Floor Eight "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4376
+D1
+~
+~
+0 -1 4114
+D2
+~
+~
+0 -1 4390
+D3
+~
+~
+0 -1 4121
+S
+#4121
+Western Hallway - Floor Eight "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4377
+D1
+~
+~
+0 -1 4120
+D2
+~
+~
+0 -1 4389
+D3
+~
+~
+0 -1 4122
+S
+#4122
+Western Hallway - Floor Eight "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4383
+D1
+~
+~
+0 -1 4121
+D2
+~
+~
+0 -1 4388
+D3
+~
+~
+0 -1 4123
+S
+#4123
+Western Hallway - Floor Eight "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4384
+D1
+~
+~
+0 -1 4122
+D2
+~
+~
+0 -1 4387
+D3
+~
+~
+0 -1 4124
+S
+#4124
+Western Hallway - Floor Eight "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4385
+D1
+~
+~
+0 -1 4123
+D2
+~
+~
+0 -1 4386
+S
+#4125
+Northern Hallway - Floor Eight "A"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4126
+D1
+~
+~
+0 -1 4391
+D2
+~
+~
+0 -1 4114
+D3
+~
+~
+0 -1 4400
+S
+#4126
+Northern Hallway - Floor Eight "B"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4127
+D1
+~
+~
+0 -1 4392
+D2
+~
+~
+0 -1 4125
+D3
+~
+~
+0 -1 4399
+S
+#4127
+Northern Hallway - Floor Eight "C"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4128
+D1
+~
+~
+0 -1 4393
+D2
+~
+~
+0 -1 4126
+D3
+~
+~
+0 -1 4398
+S
+#4128
+Northern Hallway - Floor Eight "D"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4129
+D1
+~
+~
+0 -1 4394
+D2
+~
+~
+0 -1 4127
+D3
+~
+~
+0 -1 4397
+S
+#4129
+Northern Hallway - Floor Eight "E"~
+The floor is covered in a beautiful red oak, and lined through the middle with a
+very elegant red carpet. A brass knocker hangs on both the doors leading into
+the apartments. A very nice chandelier hangs from the ceiling, illuminating the
+room.
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4395
+D2
+~
+~
+0 -1 4128
+D3
+~
+~
+0 -1 4396
+S
+#4130
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4131
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4132
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4133
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4134
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4135
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4136
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4137
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4138
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4139
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4140
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4141
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4142
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4143
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4144
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4145
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4146
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4147
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4148
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4149
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4150
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4151
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4152
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4153
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4154
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4155
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4156
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4157
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4158
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4159
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4160
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4161
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4162
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4163
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4164
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4165
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4166
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4167
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4168
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4169
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4170
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4171
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4172
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4173
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4174
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4175
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4176
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4177
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4178
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4179
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4180
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4181
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4182
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4183
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4184
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4185
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4186
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4187
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4188
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4189
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4190
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4191
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4192
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4193
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4194
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4195
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4196
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4197
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4198
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4199
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4200
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4201
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4202
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4203
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4204
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4205
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4206
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4207
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4208
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4209
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4210
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4211
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4212
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4213
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4214
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4215
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4216
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4217
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4218
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4219
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4220
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4221
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4222
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4223
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4224
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4225
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4226
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4227
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4228
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4229
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4230
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4231
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4232
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4233
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4234
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4235
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4236
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4237
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4238
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4239
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4240
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4241
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4242
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4243
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4244
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4245
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4246
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4247
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4248
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4249
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4250
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4251
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4252
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4253
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4254
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4255
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4256
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4257
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4258
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4259
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4260
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4261
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4262
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4263
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4264
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4265
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4266
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4267
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4268
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4269
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4270
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4271
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4272
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4273
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4274
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4275
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4276
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4277
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4278
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4279
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4280
+An Empty Apartment~
+~
+0 1076888584 1
+S
+#4281
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4066
+S
+#4282
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4067
+S
+#4283
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4068
+S
+#4284
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4069
+S
+#4285
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4070
+S
+#4286
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4070
+S
+#4287
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4069
+S
+#4288
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4068
+S
+#4289
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4067
+S
+#4290
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4066
+S
+#4291
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4071
+S
+#4292
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4072
+S
+#4293
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4073
+S
+#4294
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4074
+S
+#4295
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4075
+S
+#4296
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4075
+S
+#4297
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4074
+S
+#4298
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4073
+S
+#4299
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4072
+S
+#4300
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4071
+S
+#4301
+Empty Apartment~
+~
+0 2098180 0
+D3
+~
+~
+0 -1 4077
+S
+#4302
+Empty Apartment~
+~
+0 2098180 0
+D3
+~
+~
+0 -1 4078
+S
+#4303
+Empty Apartment~
+~
+0 2098180 0
+D3
+~
+~
+0 -1 4079
+S
+#4304
+Empty Apartment~
+~
+0 2098180 0
+D3
+~
+~
+0 -1 4080
+S
+#4305
+Empty Apartment~
+~
+0 2098180 0
+D3
+~
+~
+0 -1 4081
+S
+#4306
+Empty Apartment~
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4081
+S
+#4307
+Empty Apartment~
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4080
+S
+#4308
+Empty Apartment~
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4079
+S
+#4309
+Empty Apartment~
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4078
+S
+#4310
+Empty Apartment~
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4077
+S
+#4311
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4083
+S
+#4312
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4084
+S
+#4313
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4085
+S
+#4314
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4086
+S
+#4315
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4087
+S
+#4316
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4087
+S
+#4317
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4086
+S
+#4318
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4085
+S
+#4319
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4084
+S
+#4320
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4083
+S
+#4321
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4088
+S
+#4322
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4089
+S
+#4323
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4090
+S
+#4324
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4091
+S
+#4325
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4097
+S
+#4326
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4097
+S
+#4327
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4091
+S
+#4328
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4090
+S
+#4329
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4089
+S
+#4330
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4088
+S
+#4331
+Empty Apartment~
+~
+0 2098180 0
+D3
+~
+~
+0 -1 4092
+S
+#4332
+Empty Apartment~
+~
+0 2098180 0
+D3
+~
+~
+0 -1 4093
+S
+#4333
+Empty Apartment~
+~
+0 2098180 0
+D3
+~
+~
+0 -1 4094
+S
+#4334
+Empty Apartment~
+~
+0 2098180 0
+D3
+~
+~
+0 -1 4095
+S
+#4335
+Empty Apartment~
+~
+0 2098180 0
+D3
+~
+~
+0 -1 4096
+S
+#4336
+Empty Apartment~
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4096
+S
+#4337
+Empty Apartment~
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4095
+S
+#4338
+Empty Apartment~
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4094
+S
+#4339
+Empty Apartment~
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4093
+S
+#4340
+Empty Apartment~
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4092
+S
+#4341
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4099
+S
+#4342
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4100
+S
+#4343
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4101
+S
+#4344
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4102
+S
+#4345
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4103
+S
+#4346
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4103
+S
+#4347
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4102
+S
+#4348
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4101
+S
+#4349
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4100
+S
+#4350
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4099
+S
+#4351
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4104
+S
+#4352
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4105
+S
+#4353
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4106
+S
+#4354
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4107
+S
+#4355
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4108
+S
+#4356
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4108
+S
+#4357
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4107
+S
+#4358
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4106
+S
+#4359
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4105
+S
+#4360
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4104
+S
+#4361
+Empty Apartment~
+~
+0 2098180 0
+D3
+~
+~
+0 -1 4109
+S
+#4362
+Empty Apartment~
+~
+0 2098180 0
+D3
+~
+~
+0 -1 4110
+S
+#4363
+Empty Apartment~
+~
+0 2098180 0
+D3
+~
+~
+0 -1 4111
+S
+#4364
+Empty Apartment~
+~
+0 2098180 0
+D3
+~
+~
+0 -1 4112
+S
+#4365
+Empty Apartment~
+~
+0 2098180 0
+D3
+~
+~
+0 -1 4113
+S
+#4366
+Empty Apartment~
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4113
+S
+#4367
+Empty Apartment~
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4112
+S
+#4368
+Empty Apartment~
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4111
+S
+#4369
+Empty Apartment~
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4110
+S
+#4370
+Empty Apartment~
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4109
+S
+#4371
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4115
+S
+#4372
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4116
+S
+#4373
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4117
+S
+#4374
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4118
+S
+#4375
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4119
+S
+#4376
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4120
+S
+#4377
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4121
+S
+#4378
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4119
+S
+#4379
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4118
+S
+#4380
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4117
+S
+#4381
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4116
+S
+#4382
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4115
+S
+#4383
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4122
+S
+#4384
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4123
+S
+#4385
+Empty Apartment~
+~
+0 2098180 0
+D2
+~
+~
+0 -1 4124
+S
+#4386
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4124
+S
+#4387
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4123
+S
+#4388
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4122
+S
+#4389
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4121
+S
+#4390
+Empty Apartment~
+~
+0 2098180 0
+D0
+~
+~
+0 -1 4120
+S
+#4391
+Empty Apartment~
+~
+0 2098180 0
+D3
+~
+~
+0 -1 4125
+S
+#4392
+Empty Apartment~
+~
+0 2098180 0
+D3
+~
+~
+0 -1 4126
+S
+#4393
+Empty Apartment~
+~
+0 2098180 0
+D3
+~
+~
+0 -1 4127
+S
+#4394
+Empty Apartment~
+~
+0 2098180 0
+D3
+~
+~
+0 -1 4128
+S
+#4395
+Empty Apartment~
+~
+0 2098180 0
+D3
+~
+~
+0 -1 4129
+S
+#4396
+Empty Apartment~
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4129
+S
+#4397
+Empty Apartment~
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4128
+S
+#4398
+Empty Apartment~
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4127
+S
+#4399
+Empty Apartment~
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4126
+S
+#4400
+Empty Apartment~
+~
+0 2098180 0
+D1
+~
+~
+0 -1 4125
+S
+#4499
+South City MegaPlex - Elevator~
+Large, flat ceiling lamps leave the elevator very bright. A clean-cut man stands
+to one side, beside the control panel, awaiting anyones command. The black
+walls and white tiled floors match perfectly, leaving this room with a very
+modern feeling.
+~
+0 2098180 0
+S
+#0
+
+
+#RESETS
+M 1 4498 1 4499
+O 1 4497 1 4499
+M 1 4497 1 4000
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

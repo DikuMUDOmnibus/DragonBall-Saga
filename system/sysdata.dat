@@ -1,0 +1,75 @@
+#SYSTEM
+MudName        DragonBall Saga~
+Highplayers    482
+Highplayertime Fri Jan 17 20:38:19 2003~
+CheckImmHost   1
+Nameresolving  1
+Waitforauth    1
+Readallmail    64
+Readmailfree   1
+Writemailfree  1
+Takeothersmail 64
+IMCMailVnum    0
+Muse           58
+Think          60
+Build          53
+Log            53
+Protoflag      59
+Invokeall      58
+Overridepriv   61
+Msetplayer     61
+Stunplrvsplr   80
+Stunregular    15
+Gougepvp       40
+Gougenontank   80
+Bashpvp        40
+Bashnontank    80
+Dodgemod       1
+Parrymod       1
+Tumblemod      4
+Damplrvsplr    100
+Damplrvsmob    100
+Dammobvsplr    100
+Dammobvsmob    100
+Forcepc        58
+Guildoverseer  ~
+Guildadvisor   ~
+Saveflags      1509
+Savefreq       10
+Bestowdif      10
+BanSiteLevel   58
+BanRaceLevel   58
+BanClassLevel  58
+MorphOpt       1
+PetSave        1
+IdentTries     20
+Pkloot         1
+Newbie_purge   7
+Regular_purge  90
+Autopurge      1
+Player_Limit   1
+Level_NoPlimit 51
+Check_Plimit   1
+AHelp          0
+RpChannel      1
+Supremekai     Netchi~
+Grandkai       Tarick~
+Northkai       Danny~
+Westkai        Zakul~
+Eastkai        Takeya~
+Southkai       Spuuq~
+Demonking      Narako~
+Demonwarlord1  Jax~
+Demonwarlord2  Rusty~
+Demonwarlord3  Ravel~
+Greaterdemon1  Natoe~
+Greaterdemon2  Jorf~
+Greaterdemon3  none~
+Greaterdemon4  none~
+Greaterdemon5  none~
+Greaterdemon6  none~
+Wizlock        0
+Locklev        50
+End
+
+#END

@@ -1,0 +1,1149 @@
+#AREA   Gero's Lab~
+
+
+
+#VERSION 252
+#AUTHOR Ubuu~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 4
+
+#RESETMSG You get an eerie feeling deep in your body.~
+
+#FLAGS
+0 15
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#2300
+Dr. Gero~
+Dr. Gero~
+Dr. Gero is here making some calculations.
+~
+~
+-2080374777 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 50000000
+112 112 1
+50 50 50 50 5
+0 0 0 0 0
+4 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> speech_prog leave 100~
+mpecho &W$I says, 'The password is superseventeen, guard it with your life.'
+~
+> speech_prog exit 100~
+mpecho &W$I says, 'The password is superseventeen, guard it with your life.'
+~
+> speech_prog out 100~
+mpecho &W$I says, 'The password is superseventeen, guard it with your life.'
+~
+|
+#2301
+A small deer~
+A small deer~
+A small deer is drinking from a shallow pool.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 100
+112 112 0
+6 5 5 5 5
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#2302
+invis card dropper~
+a newly created invis card dropper~
+An invis dropper mob is here to drop the card to get into the next part of Gero's basement
+~
+~
+75497475 0 0 C
+51 0 100 1d20+0 2d5+0
+-1 1
+112 112 0
+10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> time_prog 1~
+if ovnumroom(100729) == 0
+mpoload 100729
+drop storage
+endif
+~
+> time_prog 12~
+if ovnumroom(100729) == 0
+mpoload 100729
+drop storage
+endif
+~
+|
+#2399
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 1
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#2300
+a small red button~
+a small red button~
+A small red button is set into the wall here.~
+~
+39 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+> push_prog 100~
+mpecho _whi A small hatch hisses, releasing some air as it snaps quickly
+open
+mpopenpassage 2303 2305 5
+mpforce $n down
+mpclosepassage 2303 5
+mpat 2303 pull button
+~
+|
+#2301
+a small red button~
+a small red button~
+A small red button is set into the wall here.~
+~
+39 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+> push_prog 100~
+mpecho _whi A small hatch hisses, releasing some air as it snaps quickly
+open
+mptransfer $n 2303
+mpat 2305 pull button
+~
+|
+#2302
+Dr. Gero's computer~
+Dr. Gero's computer~
+An enormous computer stands here, beeping and clicking.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#2303
+A T-4 Techlevel Chip~
+A T-4 Techlevel Chip~
+A small microchip is lying here.~
+~
+9 10207490 4194305
+0 0 0 0 50 50
+1 500000 100000
+ 8000000
+A
+1 4
+A
+2 4
+A
+3 4
+A
+4 4
+> wear_prog 100~
+mpechoat $n &wYour systems start to work in better
+mpechoat $n &wconjunction as the chip is fitted into place.
+mpplmult $n 4
+~
+> remove_prog 100~
+mpechoat $n &wYour internal functions slow as the chip is removed.
+mpplmult $n 1
+~
+|
+#2304
+A T-3 Techlevel Chip~
+A T-3 Techlevel Chip~
+A small microchip is lying here.~
+~
+9 10207490 4194305
+0 0 0 0 70 70
+1 650000 200000
+ 50000000
+A
+1 8
+A
+3 8
+A
+4 8
+A
+2 8
+> wear_prog 100~
+mpechoat $n &wYour internal systems begin to function with
+mpechoat $n &weven greater efficiancy as the chip is installed.
+mpplmult $n 8
+~
+> remove_prog 100~
+mpechoat $n &wYour internal functions slow as the chip is removed.
+mpplmult $n 1
+~
+|
+#2305
+A T-2 Techlevel Chip~
+A T-2 Techlevel Chip~
+A small microchip is lying here.~
+~
+9 10207490 4194305
+0 0 0 0 85 85
+1 1000000 350000
+ 250000000
+A
+1 12
+A
+3 12
+A
+4 12
+A
+2 12
+> wear_prog 100~
+mpechoat $n &wYou feel a huge surge of energy creep into every
+mpechoat $n &wpart of your body as you fit the chip into place.
+mpplmult $n 12
+~
+> remove_prog 100~
+mpechoat $n &wYour internal functions slow as the chip is removed.
+mpplmult $n 1
+~
+|
+#2306
+A T-1 Techlevel Chip~
+A T-1 Techlevel Chip~
+A small microchip is lying here.~
+~
+9 10207490 4194305
+0 0 0 0 100 100
+1 1350000 500000
+ 800000000
+A
+1 16
+A
+3 16
+A
+4 16
+A
+2 16
+> wear_prog 100~
+mpechoat $n &GA soft green glow begins to radiate
+mpechoat $n &Gover your body as your true power is released.
+mpplmult $n 16
+~
+> remove_prog 100~
+mpechoat $n &wYour internal systems slow as the chip is removed.
+mpplmult $n 1
+~
+|
+#2307
+A large pile of scrap~
+A large pile of scrap~
+A large pile of scrap clutters the floor here.~
+~
+15 2 0
+2 0 0 0 0 0
+1 40 4
+ 0
+#2308
+A mechanically enhanced eyeball~
+A mechanically enhanced eyeball~
+A round piece of metal fused with some glass is rolling around here.~
+~
+9 1818625 131073
+0 0 0 0 0 0
+1 2500 100000
+ 5000000
+A
+3 1
+#2310
+A small shallow pool~
+A small shallow pool~
+A small shallow pool shimmers in the sunlight here.~
+~
+25 0 0
+99999 99999 0 0 0 0
+1 0 0
+ 0
+#2311
+S-1 Suppression Chip~
+An S-1 Suppression Chip~
+A small microchip is lying here.~
+~
+9 10207490 4194305
+0 0 0 0 50 50
+1 10000 1000
+ 100000
+> wear_prog 100~
+mpechoat $n You feel your systems slow as your techlevel decreases.
+mppldiv $n 3 4
+~
+> remove_prog 100~
+mpechoat $n Your systems speed up and surge back to normal.
+mpplmult $n 1
+~
+|
+#2312
+An S-2 Suppression Chip~
+An S-2 Suppression Chip~
+A small microchip is lying here.~
+~
+9 10207490 4194305
+0 0 0 0 50 50
+1 15000 1500
+ 300000
+> wear_prog 100~
+mpechoat $n You feel your systems slow as your techlevel decreases.
+mppldiv $n 2 3
+~
+> remove_prog 100~
+mpechoat $n Your systems speed up and surge back to normal.
+mpplmult $n 1
+~
+|
+#2313
+omega class techlevel chip~
+An Omega Class Techlevel Chip~
+A small microchip is lying here.~
+~
+9 10207233 4194305
+0 0 0 0 500 500
+1 3500000 1000000
+ 2000000000
+A
+1 20
+A
+2 20
+A
+3 20
+A
+4 20
+> wear_prog 100~
+mpechoat $n &RA dark red aura explodes around you as you as you initialize the chip!
+mpechoaround $n A dark red aura explodes around $n as $e initializes a microchip!
+mpplmult $n 20
+~
+> remove_prog 100~
+mpechoat $n Your techlevel returns to normal as you remove the chip.
+mpplmult $n 1
+~
+|
+#2399
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#2300
+Entrance to Gero's Lab~
+Standing on a huge ledge in the side of the cliff face you wabble a bit,
+trying to gain your composure as you gaze down at the jagged rocky peaks
+below, one slip could mean certain death.  Unusually placed here are a set
+of large, steel doors, undoubtedly opened by the small metal control panel
+which has been built into the rock face to the right of them.  Your only
+means  of escape are to try and breach the heavy doors which block your
+passage to  the north, or to fly down the treacherous cliff face to the
+rocky canyon below.
+~
+0 4 5
+D5
+~
+~
+0 -1 2309
+> speech_prog superseventeen 100~
+mpecho _whi The doors make a loud rurring sound as they slowly begin to open
+mpopenpassage 2300 2301 0
+mpforce $n north
+mpclosepassage 2300 0
+~
+|
+S
+#2301
+Inside Gero's Lab~
+Your footsteps echo off the thick steel walls as they strike the cold
+metal floor sending a slight, chilling vibration through your body.  As you
+survey your surrounds your senses are overwhelmed with a barrage of meters,
+gauges and a multitude of flashing lights and beeping machines.  You take
+care not to trip over the piles of loose wires and spare parts which litter
+the ground around you.  A loud humming sound can be heard from the west,
+almost distracting you from the funny looking white-haired man writing on a
+clipboard to the north.  A set of heavy steel doors blocks your exit to the
+south.
+~
+0 12 1
+D0
+~
+~
+0 -1 2302
+D3
+~
+~
+0 -1 2304
+> speech_prog superseventeen 100~
+mpecho _whi The doors make a loud rurring sound as they slowly begin to open
+mpopenpassage 2301 2300 2
+mpforce $n south
+mpclosepassage 2301 2
+~
+|
+S
+#2302
+Gero's Lab~
+This side of the room seems to be the hub of the entire lab.  Expensive
+looking moniters and complicated machines have been attached to several
+large pods built into the eastern wall, they appear to be big enough to fit
+a person. Also attracting your attention is a strange looking man jotting
+something onto a small brown clipboard as he mumbles discontentedly to
+himself, he looks important.
+~
+0 12 1
+D2
+~
+~
+0 -1 2301
+D3
+~
+~
+0 -1 2303
+S
+#2303
+Gero's Lab~
+This part of the lab seems to be warmer than the rest, a pleasent change
+from the dank chill that you had grown accustomed to.  You can make out what
+appears to be a small rectangular-shaped metal panel set into the floor
+beneath you, slightly elevated from the rest, a door of some sort ?  There
+is also a small red button set into the northern wall, it looks like it has
+been used recently.
+~
+0 12 1
+D1
+~
+~
+0 -1 2302
+D2
+~
+~
+0 -1 2304
+S
+#2304
+A Recharging Station~
+This part of the the lab has been sectioned off into several seperate
+booths, each containing several large plugs attached to tall round tank.  A
+loud humming sound stings your ears as you decide you better not stay in
+this sector for too long.  You can hear what appears to be mumbling echoing
+softly from the northeast.
+~
+0 536871180 1
+D0
+~
+~
+0 -1 2303
+D1
+~
+~
+0 -1 2301
+S
+#2305
+A Secret Bunker Below Gero's Lab~
+You have stumbled into a secret bunker deep in the bowels of the lab.
+The air here is a bit mustier and has a slight chill to it, sending a slight
+shiver throughout your body.  Exploring further you happen upon an
+impressive looking computer, judging from the size and the loud hum
+radiating from it, you determine that it must run the entire lab.  Gazing
+into the small display located on the eastern side of the machine you
+recognize only one word "CLASSIFIED", as you begin to turn your thoughts to
+the true intentions behind this diabolical contraption.
+~
+0 12 1
+D2
+~
+~
+0 -1 2306
+D3
+~
+~
+0 -1 2307
+D4
+~
+hatch~
+7 -1 2303
+S
+#2306
+Gero's Workstation~
+Your attention is automatically turned towards a large steel table in the
+center of the room.  Adorning this massive piece are various tools, circuits
+and what appear to be metal human bodyparts.  This room seems to have a very
+specific pourpose and you dont intend to stick around to find out what it
+may be.  A sizeable glass tank sits connect to a complicated looking
+computer directly south, while a steady beeping sound can be made out to the
+north.
+~
+0 12 1
+D0
+~
+~
+0 -1 2305
+S
+#2307
+A Large Scrap Heap~
+You wade your way through a varitable field of junk as you further your
+exploration of the eerie laboratory.  Pieces of scrap and metal lay
+scattered about the floor as if this part of the lab has not been visited in
+in many years. It might be wise to watch out for sharp edges and pointy ends
+protruding from the heap, much of the metal looks rusty and dangerous.
+~
+0 12 1
+D1
+~
+~
+0 -1 2305
+S
+#2308
+A Recharging Chamber~
+You awake to find yourself in a large metal chamber, your sensors reeling
+from the flood of new information that now flows through your highly
+advanced CPU.  You also notice you are attached to several thick cables,
+pumping raw energy through your newly activated body, you are now fully
+operational.
+~
+0 4 1
+D0
+~
+hatch~
+3 -1 2302
+> leave_prog 100~
+mpecho _whi You disconnect yourself from the chamber and step out into
+mpecho _whi the world for the first time, your sensors surging with new data
+mpat 2308 close hatch
+~
+|
+S
+#2309
+At the Base of a Large Cliff~
+You have arrived at a dead end.  A large cliff stops your passage to the
+north, making flight the only way to continue onward as the thought of
+climbing back over the jagged peaks and dense brush to the south rattles
+around in your mind making you even more determined to overcome this
+obstacle.  A plush forest beckons your attention in the southern direction
+as you rest momentarily, gathering your thoughts.
+~
+0 4 1
+D2
+~
+~
+0 -1 2310
+D4
+~
+~
+0 -1 2300
+S
+#2310
+A Thinning in the Trees~
+The trees are less dense here, opening up into a large rocky chasm.
+Light from the sun shines through the upper canopy above, creating a
+brilliant dancing display on the ground beneath you.  A large menacing
+looking cliff looms over the landscape to the north.
+~
+0 4 1
+D0
+~
+~
+0 -1 2309
+D9
+~
+~
+0 -1 2311
+> rand_prog 10~
+mpecho &GYou hear the sound of crickets chirping off in the distance.
+~
+|
+S
+#2311
+A Dense Forest~
+Dense patches of trees and foliage surround you completely, creating a
+quiet, serene environment.  A mat of dry pine needles crunches soflty
+underfoot as you make your way through the thick underbrush, trying to find
+your way through the vast expanse.  Small beams of light can be seen
+breaking through the upper foliage to the north, a way out perhaps ?
+~
+0 4 1
+D3
+~
+~
+0 -1 2312
+D6
+~
+~
+0 -1 2310
+> rand_prog 10~
+mpecho &GYou hear the sound of crickets chirping off in the distance.
+~
+|
+S
+#2312
+Entering a Small Forest~
+You are now in the middle of a heavily wooded forest, crawling with
+plants and exotic wildlife.  Small beads of water slowly trickle down and
+splash you from the thick green foliage above.  You can also recognize the
+faint chirping of a small bird ringing out in the distance, this sure looks
+like a good place for a rest.  The forest continues east while the exit can
+be found to the west.
+~
+0 4 1
+D1
+~
+~
+0 -1 2311
+D3
+~
+~
+0 -1 2313
+> rand_prog 10~
+mpecho &GYou hear the sound of crickets chirping off in the distance.
+~
+|
+S
+#2313
+The Edge of a Forest~
+You can hear the faint chirping of crickets sounding from the east as you
+stand on the edge of this densly populated forest.  It seems to be peacefull
+enough, but can you really be sure?  The woods seem to be thick and covered
+with heavy brush, further prodding your fears, proceed with caution. The
+forest entrance lies to the east while the path opens up into a small canyon
+further south.
+~
+0 4 1
+D1
+~
+~
+0 -1 2312
+D2
+~
+~
+0 -1 2314
+> rand_prog 10~
+mpecho &GYou hear the sound of crickets chirping off in the distance.
+~
+|
+S
+#2314
+A Small Valley~
+Small echoes ring throughout the valley, causing small pebbles and clouds
+of dust to fall from below.  A large crack in the face of the mountain
+allows passage to the southwest while you can make out what seems to be a
+heavily wooded forest to the north.
+~
+0 4 1
+D0
+~
+~
+0 -1 2313
+D9
+~
+~
+0 -1 2315
+S
+#2315
+An Opening in the Rock Face~
+Large stone walls ascend high above you as you enter a large crack in the
+face of the mountain.  Shadows dance and loom about you menacingly as they
+stretch out over the dry rocky ground beneath you, casting eerie images on
+the sides of the huge stone giant.  The atmosphere is further accented by
+small swirls of dust rising up like miniature tornadoes, like lonely dancers
+swaying in a strong breeze.
+~
+0 4 1
+D2
+~
+~
+0 -1 2167
+D6
+~
+~
+0 -1 2314
+S
+#2316
+Floating in a void~
+~
+0 2097156 1
+S
+#2317
+Floating in a void~
+~
+0 2097156 1
+S
+#2318
+Floating in a void~
+~
+0 2097156 1
+S
+#2319
+Floating in a void~
+~
+0 2097156 1
+S
+#2320
+Floating in a void~
+~
+0 2097156 1
+S
+#2321
+Floating in a void~
+~
+0 2097156 1
+S
+#2322
+Floating in a void~
+~
+0 2097156 1
+S
+#2323
+Floating in a void~
+~
+0 2097156 1
+S
+#2324
+Floating in a void~
+~
+0 2097156 1
+S
+#2325
+Floating in a void~
+~
+0 2097156 1
+S
+#2326
+Floating in a void~
+~
+0 2097156 1
+S
+#2327
+Floating in a void~
+~
+0 2097156 1
+S
+#2328
+Floating in a void~
+~
+0 2097156 1
+S
+#2329
+Floating in a void~
+~
+0 2097156 1
+S
+#2330
+Floating in a void~
+~
+0 2097156 1
+S
+#2331
+Floating in a void~
+~
+0 2097156 1
+S
+#2332
+Floating in a void~
+~
+0 2097156 1
+S
+#2333
+Floating in a void~
+~
+0 2097156 1
+S
+#2334
+Floating in a void~
+~
+0 2097156 1
+S
+#2335
+Floating in a void~
+~
+0 2097156 1
+S
+#2336
+Floating in a void~
+~
+0 2097156 1
+S
+#2337
+Floating in a void~
+~
+0 2097156 1
+S
+#2338
+Floating in a void~
+~
+0 2097156 1
+S
+#2339
+Floating in a void~
+~
+0 2097156 1
+S
+#2340
+Floating in a void~
+~
+0 2097156 1
+S
+#2341
+Floating in a void~
+~
+0 2097156 1
+S
+#2342
+Floating in a void~
+~
+0 2097156 1
+S
+#2343
+Floating in a void~
+~
+0 2097156 1
+S
+#2344
+Floating in a void~
+~
+0 2097156 1
+S
+#2345
+Floating in a void~
+~
+0 2097156 1
+S
+#2346
+Floating in a void~
+~
+0 2097156 1
+S
+#2347
+Floating in a void~
+~
+0 2097156 1
+S
+#2348
+Floating in a void~
+~
+0 2097156 1
+S
+#2349
+Floating in a void~
+~
+0 2097156 1
+S
+#2350
+Floating in a void~
+~
+0 2097156 1
+S
+#2351
+Floating in a void~
+~
+0 2097156 1
+S
+#2352
+Floating in a void~
+~
+0 2097156 1
+S
+#2353
+Floating in a void~
+~
+0 2097156 1
+S
+#2354
+Floating in a void~
+~
+0 2097156 1
+S
+#2355
+Floating in a void~
+~
+0 2097156 1
+S
+#2356
+Floating in a void~
+~
+0 2097156 1
+S
+#2357
+Floating in a void~
+~
+0 2097156 1
+S
+#2358
+Floating in a void~
+~
+0 2097156 1
+S
+#2359
+Floating in a void~
+~
+0 2097156 1
+S
+#2360
+Floating in a void~
+~
+0 2097156 1
+S
+#2361
+Floating in a void~
+~
+0 2097156 1
+S
+#2362
+Floating in a void~
+~
+0 2097156 1
+S
+#2363
+Floating in a void~
+~
+0 2097156 1
+S
+#2364
+Floating in a void~
+~
+0 2097156 1
+S
+#2365
+Floating in a void~
+~
+0 2097156 1
+S
+#2366
+Floating in a void~
+~
+0 2097156 1
+S
+#2367
+Floating in a void~
+~
+0 2097156 1
+S
+#2368
+Floating in a void~
+~
+0 2097156 1
+S
+#2369
+Floating in a void~
+~
+0 2097156 1
+S
+#2370
+Floating in a void~
+~
+0 2097156 1
+S
+#2371
+Floating in a void~
+~
+0 2097156 1
+S
+#2372
+Floating in a void~
+~
+0 2097156 1
+S
+#2373
+Floating in a void~
+~
+0 2097156 1
+S
+#2374
+Floating in a void~
+~
+0 2097156 1
+S
+#2375
+Floating in a void~
+~
+0 2097156 1
+S
+#2376
+Floating in a void~
+~
+0 2097156 1
+S
+#2377
+Floating in a void~
+~
+0 2097156 1
+S
+#2378
+Floating in a void~
+~
+0 2097156 1
+S
+#2379
+Floating in a void~
+~
+0 2097156 1
+S
+#2380
+Floating in a void~
+~
+0 2097156 1
+S
+#2381
+Floating in a void~
+~
+0 2097156 1
+S
+#2382
+Floating in a void~
+~
+0 2097156 1
+S
+#2383
+Floating in a void~
+~
+0 2097156 1
+S
+#2384
+Floating in a void~
+~
+0 2097156 1
+S
+#2385
+Floating in a void~
+~
+0 2097156 1
+S
+#2386
+Floating in a void~
+~
+0 2097156 1
+S
+#2387
+Floating in a void~
+~
+0 2097156 1
+S
+#2388
+Floating in a void~
+~
+0 2097156 1
+S
+#2389
+Floating in a void~
+~
+0 2097156 1
+S
+#2390
+Floating in a void~
+~
+0 2097156 1
+S
+#2391
+Floating in a void~
+~
+0 2097156 1
+S
+#2392
+Floating in a void~
+~
+0 2097156 1
+S
+#2393
+Floating in a void~
+~
+0 2097156 1
+S
+#2394
+Floating in a void~
+~
+0 2097156 1
+S
+#2395
+Floating in a void~
+~
+0 2097156 1
+S
+#2396
+Floating in a void~
+~
+0 2097156 1
+S
+#2397
+Floating in a void~
+~
+0 2097156 1
+S
+#2398
+Floating in a void~
+~
+0 2097156 1
+S
+#2399
+Floating in a void~
+~
+0 2097156 1
+S
+#0
+
+
+#RESETS
+O 1 2300 1 2303
+O 1 2301 1 2305
+O 1 2302 1 2305
+D 0 2305 4 2
+D 0 2308 0 1
+M 1 2301 1 2312
+O 1 2310 1 2312
+M 1 2302 1 2306
+M 1 100719 1 2307
+O 1 2307 1 2307
+M 1 2300 1 2302
+G 1 2313 1
+G 1 2306 1
+G 1 2305 1
+G 1 2304 1
+G 1 2303 1
+G 1 2312 1
+G 1 2311 1
+G 1 100702 1
+G 1 100705 1
+S
+
+
+#SHOPS
+ 2300    0 65  0  0  0   100  90         1  0    ; Dr. Gero
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

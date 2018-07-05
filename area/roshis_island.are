@@ -1,0 +1,1101 @@
+#AREA   Roshi's Island~
+
+
+
+#VERSION 252
+#AUTHOR Ubuu~
+
+#RANGES
+0 65 0 65
+$
+
+#PLANET 4
+
+#RESETMSG A soft breeze blows through the island~
+
+#FLAGS
+2 15
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#2008
+Master Roshi~
+Master Roshi~
+Master Roshi is here reading a dirty magazine.
+~
+~
+1027 128 1000 C
+1 0 100 0d0+0 1d5+0
+-1 6000000000
+112 112 1
+50 80 50 40 80
+0 0 0 0 0
+1 1 0 0 1 1 4
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+kamehameha
+~
+> death_prog 3~
+mpoload 2015
+~
+|
+#2009
+a saibaman~
+A Saibaman~
+A small, strange looking creature is lurking about here.
+~
+~
+16777219 0 -1000 C
+1 0 100 1d20+0 2d5+0
+-1 15000
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 1
+0 0 0 0 0 0 0 0
+#2010
+Turtle~
+Turtle~
+A giant turtle is lounging in the sand.
+~
+~
+3 0 1000 C
+1 0 100 0d0+0 1d5+0
+-1 7000
+112 112 0
+5 17 5 5 20
+0 0 0 0 0
+1 1 0 0 1 1 2
+0 0 327729 0 0 0 0 0
+> speech_prog 'pearl'~
+mpecho $I says, 'Legend has it that the Mermaid's Tear pearl can be found
+mpecho near here, at the bottom of the sea.  The Mermaid's Tear is the
+biggest
+mpecho pearl in the entire world.'
+~
+> speech_prog 'earrings'~
+mpecho $I says, 'It has been said that if the Mermaid's Tear was ever
+mpecho sacraficed, it would release a great power... though noone
+mpecho knows exactly to what extent.'
+~
+|
+#2011
+Puar~
+Puar~
+A small blue cat is floating here.
+~
+~
+3 524288 0 C
+1 0 100 0d0+0 1d5+0
+-1 5
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#2012
+A Saibaman~
+a saibaman~
+A small, strange looking creature is lurking about here.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 15000
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 1
+0 0 0 0 0 0 0 0
+#2013
+a saibaman~
+a saibaman~
+A small, strange looking creature is lurking about here.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 15000
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 1
+0 0 0 0 0 0 0 0
+#2014
+Oolong~
+Oolong~
+Oolong is staring off into space here.
+~
+~
+3 0 0 C
+1 0 100 0d0+0 1d5+0
+-1 7000
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+0 3 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#2015
+a hammerhead shark~
+a hammerhead shark~
+A giant hammerhead shark is here devouring a large fish.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 750
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+#2016
+a large ray~
+a large ray~
+A large ray glides by you.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 650
+112 112 0
+5 5 5 5 5
+0 0 0 0 0
+1 1 0 0 1 1 1
+0 0 0 0 0 0 0 0
+#2017
+a giant eel~
+a giant eel~
+A giant eel is coiled around the mermaids tear, ready to protect it.
+~
+~
+3 0 1000 C
+1 0 100 1d20+0 2d5+0
+-1 50000
+112 112 1
+6 6 7 5 6
+0 0 0 0 0
+1 1 0 0 1 1 2
+0 0 0 0 0 0 0 0
+#2018
+a swordfish~
+a swordfish~
+A swordfish swims around in circles.
+~
+~
+3 0 0 C
+1 0 100 1d20+0 2d5+0
+-1 10000
+112 112 0
+5 7 7 5 5
+0 0 0 0 0
+0 3 0 0 1 1 3
+0 0 0 0 0 0 0 0
+> fight_prog 10~
+mpecho The swordfish stabs you violently with it's nose
+mpdamage $n 1
+~
+|
+#0
+
+
+#OBJECTS
+#2010
+a saibaman seed~
+a saibaman seed~
+A small seed lies buried in the dirt.~
+~
+13 4194304 1
+0 0 0 0 0 0
+1 0 0
+ 0
+> drop_prog 100~
+mpecho A newly grown saibaman sprouts up from the ground
+mpmload 2009
+mppurge seed
+~
+|
+#2011
+A sunken pirate ship~
+a sunken pirate ship~
+The wreckage of a sunken pirate ship lies here, buried in the sand.~
+~
+15 0 0
+20 0 0 0 0 0
+1 400 40
+ 0
+#2012
+The Mermaids Tear Pearl~
+The Mermaids Tear Pearl~
+A gigantic pearl lies here, illuminating the entire room.~
+~
+8 1 1
+0 0 0 0 0 0
+5 0 0
+ 0
+> sac_prog 1~
+mpechoat $n &wAs the pearl is sacraficed, bright rays of light shine
+mpechoat $n &wdown from the heavens and reform into a beautifull pair
+mpechoat $n &wof earrings.
+mpoload 2013 $n
+~
+|
+#2013
+Mermaid's Tear Earrings~
+Mermaid's Tear Pearl Earrings~
+A magnificant pair of pearl earrings has been dropped here.~
+~
+9 1 65537
+0 0 0 0 200 200
+1 32500 3250
+ 1000000
+A
+3 5
+#2014
+a pirates gallion~
+a pirates gallion~
+A huge pile of coins is lying here.~
+~
+20 0 1
+3000 0 0 0 0 0
+1 0 0
+ 0
+#2015
+a masters karate gi~
+A Master's Karate Gi~
+An orange silk gi is lying here.~
+~
+9 0 1025
+0 0 0 0 1500 1500
+8 150000 100
+ 200000000
+#2016
+a television~
+a television~
+An old television sits here on a small T.V stand.~
+~
+13 0 0
+0 0 0 0 0 0
+1 0 0
+ 0
+#0
+
+
+#ROOMS
+#2125
+Shallow Waters~
+Colorfull shapes and images dance and frolic about on the smooth
+glass-like surface of the knee deep teal water, reflecting the suns gentle
+caress.  The sounds of far of seagulls and the crystal clear blue water
+gently pounding against the shore to the north calms and settles your mind
+and your spirit, causing you to breath a bit easier.  You  can make out a
+small pink house to the north.
+~
+0 0 1
+D0
+~
+~
+0 -1 2130
+D1
+~
+~
+0 -1 2126
+S
+#2126
+Shallow Waters~
+Colorfull shapes and images dance and frolic about on the smooth
+glass-like surface of the knee deep teal water, reflecting the suns gentle
+caress.  The sounds of far of seagulls and the crystal clear blue water
+gently pounding against the shore to the north calms and settles your mind
+and your spirit, causing you to breath a bit easier.  You can make out a
+small pink house to the north.
+~
+0 0 1
+D0
+~
+~
+0 -1 2128
+D1
+~
+~
+0 -1 2127
+D2
+~
+~
+0 -1 2156
+D3
+~
+~
+0 -1 2125
+S
+#2127
+Shallow Waters~
+Colorfull shapes and images dance and frolic about on the smooth
+glass-like surface of the knee deep teal water, reflecting the suns gentle
+caress.  The sounds of far of seagulls and the crystal clear blue water
+gently pounding against the shore to the north calms and settles your mind
+and your spirit, causing you to breath a bit easier.  You can make out a
+small pink house to the north.
+~
+0 0 1
+D0
+~
+~
+0 -1 2129
+D3
+~
+~
+0 -1 2126
+S
+#2128
+On the Shore~
+The ground is soft and wet here, causing your feet to sink into the sand
+slightly as you leave behind faint footprints that are washed away by the
+ebbing tide.  To the east and west lies more of the beautifull beach and you
+can make out what looks like a small house to the north.
+~
+0 0 1
+D0
+~
+~
+0 -1 2131
+D1
+~
+~
+0 -1 2129
+D2
+~
+~
+0 -1 2126
+D3
+~
+~
+0 -1 2130
+S
+#2129
+The Beach~
+The sand on this part of the beach is much hotter and more dry than the
+rest and makes a crunching noise under your feet.  Wind brushes past your
+face, rustling the leaves of a large palm tree that grows overhead as it
+whistles and rustles all around you.  A small house lies to the north.
+~
+0 0 1
+D0
+~
+~
+0 -1 2144
+D2
+~
+~
+0 -1 2127
+D3
+~
+~
+0 -1 2128
+S
+#2130
+The Beach~
+The sand on this part of the beach is much hotter and more dry than the
+rest and makes a crunching noise under your feet.  Wind brushes past your
+face, rustling the leaves of a large palm tree that grows overhead as it
+whistles and rustles all around you.  A small house lies to the north.
+~
+0 0 1
+D1
+~
+~
+0 -1 2128
+D2
+~
+~
+0 -1 2125
+S
+#2131
+In Front of Roshi's House~
+You find yourself in the shade of small two story house, painted
+completely pink with words "KAME HOUSE" in bold red letters on the front it
+is a strange sight indeed.  Further adding to the oddity is an old
+grey-haired man, sitting in a foldout lawnchair and reading the latest issue
+of "Legs", this is the legendary Master Roshi.
+~
+0 2097156 1
+D0
+~
+~
+0 -1 2132
+D2
+~
+~
+0 -1 2128
+S
+#2132
+Roshi's Living Room~
+This is Roshi's living room, the lighting here is even simpler than the
+decoir and is provided by a tall lamp which sits in the northeast corner of
+the room. The walls, like the outside of the house are all painted in the
+same bright pink color and are totally barren with the exception of a small
+hanging mirror on the eastern wall that has been placed over a small potted
+plant, giving the room a quaint and comfortable feel.  A small cutoff leads
+you north into the kitchen, while the front door is behind you to the south.
+~
+0 4 0
+D0
+~
+~
+0 -1 2133
+D2
+~
+~
+0 -1 2131
+S
+#2133
+The Kitchen~
+This is the average modern looking kitchen, a large green stove is set
+into the northern wall, complimenting the top of the counter which lies a
+few feet in front of it.  A variety of various pots and pans hang from a
+large rack mounted on the ceiling above you, catching the light from the
+small overhead lamps.  The door which leads you into the back yard is to the
+north.
+~
+0 4 0
+D0
+~
+door~
+1 -1 2135
+D2
+~
+~
+0 -1 2132
+D3
+~
+~
+0 -1 2134
+S
+#2134
+A Small Wooden Staircase~
+Your on a small wooden staircase that is in suprisingly good shape,
+despite the harsh sea air which blows in from the surounding area.  A
+passage leads up into a small room and the living area is further down the
+stairs.
+~
+0 4 0
+D1
+~
+~
+0 -1 2133
+D4
+~
+~
+0 -1 2143
+S
+#2135
+Behind Roshi's House~
+You are on a small trail of broken grass that leads to the northern
+shoreline. The smell of sea air suddenly fills your nostrils, giving way to
+nostalgic memories of childhood days at the beach, as well as thoughts of
+home. Kame's house lies to the south while the shoreline can be found
+further north.
+~
+0 4 1
+D0
+~
+~
+0 -1 2136
+D2
+~
+door~
+1 -1 2133
+S
+#2136
+A Clearing~
+The grass here has been cut into the shape of a large circle, making it a
+suitable place for training as well as a splendied campsite, ideal for the
+weary traveller to rest their tired bones.  The small trail continues north
+towards the shoreline, as well as south towards Kame house.
+~
+0 4 1
+D0
+~
+~
+0 -1 2137
+D2
+~
+~
+0 -1 2135
+S
+#2137
+On the Beach~
+The ground is soft and wet here, causing your feet to sink into the sand
+slightly as you leave behind faint footprints that are washed away by the
+ebbing tide.  To the east and west lies more of the beautifull beach and you
+can make out what looks like a small house to the south.
+~
+0 4 1
+D0
+~
+~
+0 -1 2140
+D1
+~
+~
+0 -1 2138
+D2
+~
+~
+0 -1 2136
+D3
+~
+~
+0 -1 2139
+S
+#2138
+The Beach~
+The sand on this part of the beach is much hotter and more dry than the
+rest and makes a crunching noise under your feet.  Wind brushes past your
+face, rustling the leaves of a large palm tree that grows overhead as it
+whistles and rustles all around you.  A small house lies to the north.
+~
+0 4 1
+D0
+~
+~
+0 -1 2141
+D3
+~
+~
+0 -1 2137
+S
+#2139
+The Beach~
+The sand on this part of the beach is much hotter and more dry than the
+rest and makes a crunching noise under your feet.  Wind brushes past your
+face, rustling the leaves of a large palm tree that grows overhead as it
+whistles and rustles all around you.  A small house lies to the north.
+~
+0 4 1
+D0
+~
+~
+0 -1 2142
+D1
+~
+~
+0 -1 2137
+S
+#2140
+A Dropoff~
+The calm shallow water underneath you gives way to a large, gaping chasm,
+its steep sloping sides jutting menacingly down and touch the sea floor,
+creating a rather ominous parrel.  The water remains shallow to the east and
+west.
+~
+0 4 1
+D1
+~
+~
+0 -1 2141
+D2
+~
+~
+0 -1 2137
+D3
+~
+~
+0 -1 2142
+D5
+~
+~
+0 -1 2146
+S
+#2141
+Shallow Waters~
+Colorfull shapes and images dance and frolic about on the smooth
+glass-like surface of the knee deep teal water, reflecting the suns gentle
+caress.  The sounds of far of seagulls and the crystal clear blue water
+gently pounding against the shore to the south calms and settles your mind
+and your spirit, causing you to breath a bit easier.  You can make out a
+small pink house to the south.
+~
+0 4 1
+D2
+~
+~
+0 -1 2138
+D3
+~
+~
+0 -1 2140
+S
+#2142
+Shallow Waters~
+Colorfull shapes and images dance and frolic about on the smooth
+glass-like surface of the knee deep teal water, reflecting the suns gentle
+caress.  The sounds of far of seagulls and the crystal clear blue water
+gently pounding against the shore to the south calms and settles your mind
+and your spirit, causing you to breath a bit easier.  You can make out a
+small pink house to the south.
+~
+0 4 1
+D1
+~
+~
+0 -1 2140
+D2
+~
+~
+0 -1 2139
+S
+#2143
+Upstairs Bedroom~
+This is rather plain looking room, meekly decorated with a large dressor
+topped with a simple tablelamp.  A small bed rests upon the creaky wooden
+floorboards near the center of the room, making the ambiance livable, but
+not luxurious.The wooden staircase to the west leads down into the living
+room.
+~
+0 536871172 0
+D5
+~
+~
+0 -1 2134
+S
+#2144
+Beside the House~
+Large blades of grass here sway lazily about in the soft breeze that
+blows in from the ocean, gently discarding the small glistening drops of dew
+that desperately cling to them.  For a moment you consider taking the time
+to treat yourself to a long, well-deserved nap, but then come back to your
+senses as you realize your journy is far from over.
+~
+0 4 1
+D1
+~
+~
+0 -1 2145
+D2
+~
+~
+0 -1 2129
+S
+#2145
+A Huge Crater~
+Your inside a massive crater, the ground around you is scorched and
+cracked, showing no signs of the former life it once posessed.  The walls
+have been carved into a large bowl shape, the aftermath of some great
+battle.
+~
+0 4 1
+D3
+~
+~
+0 -1 2144
+S
+#2146
+Under the Sea~
+You have made your way down the looming chasm and are now wavering in
+place near the sea floor, gentle currents swirling and careening about you
+as you take in your new environment.  A large school of rainbow colored fish
+swim by, stirring up a cloud of dust and bubbles all around you as you
+continue to try a seperate yourself from the large patch of seaweed  you
+have unknowingly become tangled in during your descent.
+~
+0 4 0
+D4
+~
+~
+0 -1 2140
+D6
+~
+~
+0 -1 2147
+S
+#2147
+Descending Into Darkness~
+The water is colder here, and the light much more dim, making your
+journey harder and longer than you originally expected.  A plethera of
+different fish, varying greatly in shape and size glide past you, creating a
+colorfull looking runway to help guide you further down into the murky ocean
+depths below.
+~
+0 4 0
+D0
+~
+~
+0 -1 2148
+D5
+~
+~
+0 -1 2149
+D9
+~
+~
+0 -1 2146
+S
+#2148
+A Small Alcove~
+You have ventured into a small rocky alcove, large spires of rock  jut up
+from the ocean floor making movement limited as do the large croppings of
+coral and seaweed which seem surround you from every angle.  A short passage
+to the south looks like your only means of departure from this crowded
+space.
+~
+0 4 0
+D2
+~
+~
+0 -1 2147
+S
+#2149
+A Narrow Passage~
+The walls here are very narrow, and seem to get closer together as you
+make your way further into its narrow reaches.  A few stray bubbles float up
+from small holes in a nearby rock, causing you put your guard up
+temporarily, who knows what hidden parrels lie ahead.
+~
+0 4 0
+D1
+~
+~
+0 -1 2150
+D4
+~
+~
+0 -1 2147
+S
+#2150
+Near a Large Chasm~
+Seaweed grows rampant here, partially obscuring your veiw. The only way
+to find your bearings is to feel your way through the thick tangled tendrils
+of the tough ocean vegitation. Below, you can make out a large fissure in
+the face of the ocean floor and what seems to be the wreckage of an old ship
+to the north.
+~
+0 4 0
+D0
+~
+~
+0 -1 2151
+D3
+~
+~
+0 -1 2149
+D5
+~
+~
+0 -1 2152
+S
+#2151
+Buried at Sea~
+You have stumbled upon the wreckage of a large and very old looking
+sailing ship, from the style and the amount of wear, you determine it has
+been here for quite some time now.  Artifacts from the once grand and
+unsinkable looking ship litter the landscape around you in every direction,
+illustrating exactly how severe whatever incident befell this proud vessel
+was.  Perhaps you should be wary of impending danger.
+~
+0 4 0
+D2
+~
+~
+0 -1 2150
+S
+#2152
+A Brightly Lit Cavern~
+Speckles of light shimmer and glisten about the cavern here, casting a
+radiant glow of unparalelled beauty all around you. Scanning the area
+further you notice an unusual amount of fish huddled around a large
+clamshell, perhaps you should move a bit closer for further inspection.
+~
+0 0 0
+D4
+~
+~
+0 -1 2150
+S
+#2153
+Inside the Wreckage~
+~
+0 2097156 1
+D0
+~
+~
+0 -1 2154
+S
+#2154
+A Lost Treasure ?~
+~
+0 2097156 1
+D2
+~
+~
+0 -1 2153
+D3
+~
+~
+0 -1 2155
+S
+#2155
+A Spiked Pit~
+~
+0 2097158 1
+S
+#2156
+Nearing Roshi's Island~
+You are nearing a small island to the north, the home of the legendary
+Master Roshi.  You can feel the incredible power surging all around you,
+overloading your senses with excitement and curiousity.  Your visit to this
+seldom visited sanctuary should be interesting to say the least.
+~
+0 4 9
+D0
+~
+~
+0 -1 2126
+D9
+~
+~
+0 -1 2157
+S
+#2157
+Soaring Above the Ocean~
+You are soaring high above the ocean surface, your flight stirring up
+large streams of wake on either side of you.  The smell of sea air fills
+your nose as random seagulls pass overhead, creating swiftly gliding shadows
+on the rippling blue face of the sea below.  You make sure to keep your
+balance, it looks like a long way down.
+~
+0 0 9
+D3
+~
+~
+0 -1 2158
+D6
+~
+~
+0 -1 2156
+S
+#2158
+Soaring Above the Ocean~
+You are soaring high above the ocean surface, your flight stirring up
+large streams of wake on either side of you.  The smell of sea air fills
+your nose as random seagulls pass overhead, creating swiftly gliding shadows
+on the rippling blue face of the sea below.  You make sure to keep your
+balance, it looks like a long way down.
+~
+0 0 9
+D1
+~
+~
+0 -1 2157
+D3
+~
+~
+0 -1 2159
+S
+#2159
+Soaring Above the Ocean~
+You are soaring high above the ocean surface, your flight stirring up
+large streams of wake on either side of you.  The smell of sea air fills
+your nose as random seagulls pass overhead, creating swiftly gliding shadows
+on the rippling blue face of the sea below.  You make sure to keep your
+balance, it looks like a long way down.
+~
+0 4 9
+D1
+~
+~
+0 -1 2158
+D9
+~
+~
+0 -1 2160
+S
+#2160
+Soaring Above the Ocean~
+You are soaring high above the ocean surface, your flight stirring up
+large streams of wake on either side of you.  The smell of sea air fills
+your nose as random seagulls pass overhead, creating swiftly gliding shadows
+on the rippling blue face of the sea below.  You make sure to keep your
+balance, it looks like a long way down.
+~
+0 0 9
+D3
+~
+~
+0 -1 2161
+D6
+~
+~
+0 -1 2159
+S
+#2161
+Soaring Above the Ocean~
+You are soaring high above the ocean surface, your flight stirring up
+large streams of wake on either side of you.  The smell of sea air fills
+your nose as random seagulls pass overhead, creating swiftly gliding shadows
+on the rippling blue face of the sea below.  You make sure to keep your
+balance, it looks like a long way down.
+~
+0 0 9
+D1
+~
+~
+0 -1 2160
+D3
+~
+~
+0 -1 2162
+S
+#2162
+Soaring Above the Ocean~
+You are soaring high above the ocean surface, your flight stirring up
+large streams of wake on either side of you.  The smell of sea air fills
+your nose as random seagulls pass overhead, creating swiftly gliding shadows
+on the rippling blue face of the sea below.  You make sure to keep your
+balance, it looks like a long way down.
+~
+0 0 9
+D1
+~
+~
+0 -1 2161
+D3
+~
+~
+0 -1 2163
+S
+#2163
+Soaring Above the Ocean~
+You are soaring high above the ocean surface, your flight stirring up
+large streams of wake on either side of you.  The smell of sea air fills
+your nose as random seagulls pass overhead, creating swiftly gliding shadows
+on the rippling blue face of the sea below.  You make sure to keep your
+balance, it looks like a long way down.
+~
+0 0 9
+D1
+~
+~
+0 -1 2162
+D3
+~
+~
+0 -1 2164
+S
+#2164
+Soaring Above the Ocean~
+You are soaring high above the ocean surface, your flight stirring up
+large streams of wake on either side of you.  The smell of sea air fills
+your nose as random seagulls pass overhead, creating swiftly gliding shadows
+on the rippling blue face of the sea below.  You make sure to keep your
+balance, it looks like a long way down.
+~
+0 0 9
+D1
+~
+~
+0 -1 2163
+D3
+~
+~
+0 -1 2165
+S
+#2165
+Soaring Above the Ocean~
+You are soaring high above the ocean surface, your flight stirring up
+large streams of wake on either side of you.  The smell of sea air fills
+your nose as random seagulls pass overhead, creating swiftly gliding shadows
+on the rippling blue face of the sea below.  You make sure to keep your
+balance, it looks like a long way down.
+~
+0 0 9
+D1
+~
+~
+0 -1 2164
+D3
+~
+~
+0 -1 2166
+S
+#2166
+Soaring Above the Ocean~
+You are soaring high above the ocean surface, your flight stirring up
+large streams of wake on either side of you.  The smell of sea air fills
+your nose as random seagulls pass overhead, creating swiftly gliding shadows
+on the rippling blue face of the sea below.  You make sure to keep your
+balance, it looks like a long way down.
+~
+0 0 9
+D1
+~
+~
+0 -1 2165
+D3
+~
+~
+0 -1 2167
+S
+#2167
+Earth~
+Having finally arrived on earth, you pause for a moment to survey the
+plush landscape around you.  A handfull of majestic looking mountains litter
+the area to the west, while a vast ocean stretches on as far as the eye can
+see to the east.  You can also make out a gigantic looking tower to  the
+north, breaking the skyline as a large patches of clouds slink mysteriously
+around it.
+~
+0 0 1
+D0
+~
+~
+0 -1 2315
+D1
+~
+~
+0 -1 2166
+D3
+~
+~
+0 -1 2124
+S
+#0
+
+
+#RESETS
+M 1 2012 1 2129
+G 1 2010 1
+M 1 2010 1 2130
+M 1 2008 1 2131
+M 1 2011 1 2132
+O 1 2016 1 2132
+D 0 2133 0 0
+D 0 2135 2 0
+M 1 2013 1 2136
+G 1 2010 1
+M 1 2014 1 2144
+M 1 2016 1 2146
+M 1 2015 1 2148
+M 1 2018 1 2150
+O 1 2011 1 2151
+P 0 2014 1 0
+M 1 2017 1 2152
+O 1 2012 1 2152
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+M  2011 spec_thief
+S
+
+
+#$
